@@ -1,0 +1,1490 @@
+"""B2C (son kullanıcı) tarafının servis katmanı.
+
+B2C arayüzü (frontend/ — Vite + React) üç endpoint çağırır:
+
+    GET  /api/b2c/locations          -> il / ilçe seçenekleri
+    POST /api/b2c/vehicle-defaults   -> seçilen araç için vites vb. varsayılanlar
+    POST /api/b2c/analyze            -> tek araç için tam analiz
+
+Bu modül o üçünün iş mantığını tutar. Fiyat tahmini için B2B tarafıyla
+AYNI merkezi motoru (services.price_estimator -> central_price_estimator)
+kullanır — B2C'ye özel ikinci bir tahmin mantığı bilerek yazılmadı, yoksa
+iki taraf zamanla birbirinden ayrışırdı.
+
+Veri kaynakları:
+  * Postgres `search_listing`  — analiz edilmiş arabam.com ilanları
+  * Galeri/galeri.db           — galeri ilanlarının günlük snapshot'ları
+                                 (fiyat trendi + bölgesel sinyal buradan)
+"""
+
+from __future__ import annotations
+
+import os
+import re
+import sys
+import threading
+import unicodedata
+from datetime import datetime, timedelta
+from typing import Any
+
+from django.core.cache import cache
+from django.db.models import Q
+
+# All reference data is opened read-only, outside the account database.
+from django.conf import settings
+from ..pricing.reference import readonly_connection
+
+_conn_local = threading.local()
+
+
+def _galeri_conn():
+    path = str(settings.B2C_GALLERY_DB)
+    conn = getattr(_conn_local, "conn", None)
+    if conn is None or getattr(_conn_local, "path", None) != path:
+        if conn is not None:
+            conn.close()
+        conn = readonly_connection(path)
+        _conn_local.conn = conn
+        _conn_local.path = path
+    return conn
+
+
+# Kiralık araç / "fiyat sorunuz" ilanları galeri verisinde 1.000 TL gibi
+# sahte fiyatlarla duruyor (bkz. gallery_listings örnekleri). Ortalamayı
+# bozmasınlar diye taban eşik.
+_MIN_REAL_PRICE = 50_000
+_MAX_REAL_PRICE = 25_000_000
+
+_TR_LOWER = str.maketrans("IİŞĞÜÖÇ", "ıişğüöç")
+
+
+def _norm(v: Any) -> str:
+    return re.sub(r"\s+", " ", str(v or "").strip()).translate(_TR_LOWER).lower()
+
+
+def _tr_key(v: str) -> str:
+    """Türkçe alfabetik sıralama için kaba anahtar."""
+    order = "aâbcçdefgğhıijklmnoöprsştuüvyz"
+    return "".join(
+        chr(48 + order.index(ch)) if ch in order else ch for ch in _norm(v)
+    )
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 1) İl / ilçe seçenekleri
+# ═══════════════════════════════════════════════════════════════════════════
+
+_LOCATIONS_CACHE_KEY = "b2c:locations:v2"
+_LOCATIONS_TTL = 60 * 60 * 6
+
+
+def _locations_from_galeri() -> dict[str, set[str]]:
+    """galeri.db `galleries` tablosunda il/ilçe ayrı ayrı ve temiz duruyor —
+    ana kaynak burası."""
+    out: dict[str, set[str]] = {}
+    try:
+        conn = _galeri_conn()
+        rows = conn.execute(
+            "SELECT city, district FROM galleries "
+            "WHERE city IS NOT NULL AND TRIM(city) <> ''"
+        ).fetchall()
+    except Exception:
+        return out
+    for row in rows:
+        city = str(row[0] or "").strip()
+        district = str(row[1] or "").strip()
+        if not city:
+            continue
+        out.setdefault(city, set())
+        if district:
+            out[city].add(district)
+    return out
+
+
+def _split_address(address: str) -> tuple[str, str]:
+    """`search_listing.address` arabam.com'un ham "konum" metnidir ve tek bir
+    formata sahip değil. Gözlenen biçimler:
+
+        "Kadıköy, İstanbul"
+        "Bostancı Mah., Kadıköy, İstanbul"
+        "İstanbul"
+
+    Kural: son parça il, ondan önceki parça ilçe. Tek parça varsa sadece il.
+    (Arabam Otomasyon/preprocess.standardize_location ile aynı mantık.)
+    """
+    parts = [p.strip() for p in str(address or "").split(",") if p.strip()]
+    if not parts:
+        return "", ""
+    if len(parts) == 1:
+        return parts[0], ""
+    return parts[-1], parts[-2]
+
+
+def _locations_from_listings() -> dict[str, set[str]]:
+    """Postgres `search_listing.address` — galeri verisinde olmayan il/ilçeleri
+    de yakalamak için ikinci kaynak."""
+    from ..models import Listing
+
+    out: dict[str, set[str]] = {}
+    try:
+        addresses = (
+            Listing.objects.exclude(address="")
+            .values_list("address", flat=True)
+            .distinct()[:200_000]
+        )
+    except Exception:
+        return out
+    for address in addresses:
+        city, district = _split_address(address)
+        if not city or len(city) > 40:
+            continue
+        out.setdefault(city, set())
+        if district and len(district) <= 40:
+            out[city].add(district)
+    return out
+
+
+def load_locations(force: bool = False) -> list[dict]:
+    """[{"city": "İstanbul", "districts": ["Ataşehir", ...]}, ...]
+
+    Galeri DB'si ana kaynak, `search_listing` adresleri üstüne ekleniyor.
+    Sonuç 6 saat cache'lenir — iki kaynak da gün içinde değişmiyor.
+    """
+    if not force:
+        cached = cache.get(_LOCATIONS_CACHE_KEY)
+        if cached is not None:
+            return cached
+
+    merged: dict[str, set[str]] = {}
+    for source in (_locations_from_galeri(), _locations_from_listings()):
+        for city, districts in source.items():
+            merged.setdefault(city, set()).update(districts)
+
+    result = [
+        {"city": city, "districts": sorted(merged[city], key=_tr_key)}
+        for city in sorted(merged, key=_tr_key)
+    ]
+    cache.set(_LOCATIONS_CACHE_KEY, result, _LOCATIONS_TTL)
+    return result
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 2) Araç varsayılanları (vites vb.)
+# ═══════════════════════════════════════════════════════════════════════════
+
+def vehicle_defaults(*, brand: str, series: str, engine: str = "",
+                     package: str | None = None, **_ignored) -> dict:
+    """Seçilen araç için `search_listing`'de en sık görülen vitesi döndürür.
+    Kullanıcı istediği zaman üzerine yazabilir — bu sadece ön doldurma."""
+    from ..models import Listing
+
+    gear_default = ""
+    try:
+        qs = Listing.objects.exclude(gear="")
+        if brand:
+            qs = qs.filter(brand__iexact=brand)
+        if series:
+            qs = qs.filter(Q(model__icontains=series) | Q(title__icontains=series))
+        if engine:
+            narrowed = qs.filter(title__icontains=engine)
+            if narrowed.exists():
+                qs = narrowed
+        counts: dict[str, int] = {}
+        for gear in qs.values_list("gear", flat=True)[:4000]:
+            gear = str(gear or "").strip()
+            if gear:
+                counts[gear] = counts.get(gear, 0) + 1
+        if counts:
+            gear_default = max(counts, key=counts.get)
+    except Exception:
+        gear_default = ""
+
+    return {"gear_default": gear_default}
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 3) Analiz
+# ═══════════════════════════════════════════════════════════════════════════
+
+_ANNUAL_KM = 15_000          # değer kaybı projeksiyonunda yıllık km varsayımı
+_TREND_DAYS = 90             # fiyat trendi penceresi
+_YEAR_TOLERANCE = 1          # emsal ilan seçiminde ±yıl
+
+
+def _galeri_rows(brand: str, series: str, year: int) -> list[tuple]:
+    """Galeri snapshot'larından bu araca benzeyen ilanlar.
+
+    `gallery_listings.model` "Marka Seri" biçiminde tutuluyor (ör. "Fiat Egea").
+    `city_district` kolonu pratikte boş olduğu için il/ilçe `galleries`
+    tablosundan JOIN ile alınıyor.
+    """
+    model_like = f"%{brand}%{series}%"
+    since = (datetime.now() - timedelta(days=_TREND_DAYS)).strftime("%Y-%m-%d")
+    try:
+        conn = _galeri_conn()
+        return conn.execute(
+            """
+            SELECT gl.snapshot_date, gl.price, gl.year_raw, gl.color,
+                   g.city, g.district
+              FROM gallery_listings gl
+              LEFT JOIN galleries g ON g.gallery_name = gl.gallery_name
+             WHERE gl.model LIKE ? COLLATE NOCASE
+               AND gl.snapshot_date >= ?
+               AND gl.price IS NOT NULL
+               AND gl.price BETWEEN ? AND ?
+               AND CAST(gl.year_raw AS INTEGER) BETWEEN ? AND ?
+            """,
+            (model_like, since, _MIN_REAL_PRICE, _MAX_REAL_PRICE,
+             year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE),
+        ).fetchall()
+    except Exception:
+        return []
+
+
+def _price_trend(rows: list[tuple]) -> list[dict]:
+    """Günlük ortalama ilan fiyatı. Frontend `snapshot_date` / `avg_price` /
+    `sample_count` bekliyor."""
+    buckets: dict[str, list[float]] = {}
+    for snapshot_date, price, *_ in rows:
+        if snapshot_date and price:
+            buckets.setdefault(str(snapshot_date), []).append(float(price))
+    return [
+        {
+            "snapshot_date": day,
+            "avg_price": round(sum(prices) / len(prices)),
+            "sample_count": len(prices),
+        }
+        for day, prices in sorted(buckets.items())
+        if len(prices) >= 3            # 1-2 ilanlık günler grafiği zıplatıyor
+    ]
+
+
+def _regional_signal(rows: list[tuple], city: str, district: str) -> dict:
+    """Seçilen ilin ortalaması ülke ortalamasının neresinde?
+
+    city/district boş bırakılabilir (B2C'de opsiyonel) — o durumda
+    label "Bölge seçilmedi" döner, analizin geri kalanı etkilenmez.
+    """
+    if not city:
+        return {
+            "city": "", "district": "",
+            "label": "Bölge belirtilmedi",
+            "confidence_pct": 0,
+        }
+
+    national = [float(p) for _, p, *_ in rows if p]
+    local = [
+        float(p) for _, p, _y, _c, row_city, row_district in rows
+        if p and _norm(row_city) == _norm(city)
+        and (not district or _norm(row_district) == _norm(district))
+    ]
+    # İlçe kırılımı çok inceyse il seviyesine düş.
+    if len(local) < 5 and district:
+        local = [
+            float(p) for _, p, _y, _c, row_city, _d in rows
+            if p and _norm(row_city) == _norm(city)
+        ]
+
+    if len(local) < 5 or not national:
+        return {
+            "city": city, "district": district,
+            "label": "Bu bölge için yeterli ilan verisi yok",
+            "confidence_pct": 0,
+        }
+
+    local_avg = sum(local) / len(local)
+    national_avg = sum(national) / len(national)
+    delta_pct = (local_avg - national_avg) / national_avg * 100 if national_avg else 0
+
+    if delta_pct >= 4:
+        label = f"{city} ülke ortalamasının %{abs(delta_pct):.1f} üzerinde — burada satmak avantajlı"
+    elif delta_pct <= -4:
+        label = f"{city} ülke ortalamasının %{abs(delta_pct):.1f} altında — burada almak avantajlı"
+    else:
+        label = f"{city} fiyatları ülke ortalamasıyla uyumlu"
+
+    return {
+        "city": city,
+        "district": district,
+        "label": label,
+        "confidence_pct": int(min(90, 40 + len(local))),
+    }
+
+
+def _color_adjustment(rows: list[tuple], color: str | None) -> dict | None:
+    """Renk, aynı modelin ortalamasına göre ne kadar prim/iskonto getiriyor?
+    Örneklem küçükse None döner (frontend `?.` ile güvenli okuyor)."""
+    if not color:
+        return None
+    same = [float(p) for _, p, _y, row_color, *_ in rows
+            if p and _norm(row_color) == _norm(color)]
+    everything = [float(p) for _, p, *_ in rows if p]
+    if len(same) < 8 or len(everything) < 20:
+        return None
+    base = sum(everything) / len(everything)
+    if not base:
+        return None
+    factor_pct = (sum(same) / len(same) - base) / base * 100
+    return {
+        "color": color,
+        "factor_pct": round(factor_pct, 1),
+        "sample_count": len(same),
+    }
+
+
+def _listing_matches(brand: str, series: str, year: int) -> int:
+    from ..models import Listing
+    try:
+        return (
+            Listing.objects.filter(brand__iexact=brand)
+            .filter(Q(model__icontains=series) | Q(title__icontains=series))
+            .filter(year__gte=year - _YEAR_TOLERANCE, year__lte=year + _YEAR_TOLERANCE)
+            .count()
+        )
+    except Exception:
+        return 0
+
+
+# ── Paket bilinmediğinde tahmin ─────────────────────────────────────────────
+#
+# central_price_estimator paket referansına dayanıyor: paket verilmezse
+# "Paket referansı bulunamadı." döner ve TÜM analiz belirsize düşer. B2C'de
+# paket opsiyonel olduğu için (son kullanıcı çoğu zaman paketini bilmez)
+# burada seriye/motora ait BÜTÜN paketler için tahmin çalıştırılıp medyan
+# alınıyor. Aralık, paketler arası gerçek yayılımı gösterir -- yani "hangi
+# paket olduğu bilinmiyor" belirsizliği fiyat aralığına dürüstçe yansır.
+
+def _engine_packages(category: str, brand: str, series: str, engine: str) -> list[str]:
+    from .arabam_vehicles_service import load_arabam_vehicles
+    try:
+        catalog = load_arabam_vehicles()
+    except Exception:
+        return []
+    for entry in catalog:
+        if entry.get("category") != category or _norm(entry.get("name")) != _norm(brand):
+            continue
+        for series_entry in entry.get("series") or []:
+            if _norm(series_entry.get("name")) != _norm(series):
+                continue
+            for engine_entry in series_entry.get("engines") or []:
+                if _norm(engine_entry.get("name")) != _norm(engine):
+                    variants = engine_entry.get("variants") or []
+                    if variants:
+                        continue
+                    continue
+                names = [v.get("name") for v in (engine_entry.get("variants") or [])]
+                if not names:
+                    names = [v.get("name") for v in (series_entry.get("variants") or [])]
+                return [n for n in names if n]
+    return []
+
+
+def _estimate_vehicle(*, category: str, brand: str, series: str, engine: str,
+                      package: str | None, year: int, km: float, damage: list,
+                      agir_hasar: bool, gear: str | None, **extra) -> dict:
+    """estimate_price sarmalayıcısı + paket bilinmiyorsa medyan geri düşüşü."""
+    from .price_estimator import estimate as estimate_price
+
+    result = estimate_price(
+        category=category, brand=brand, series=series, engine=engine,
+        package=package, year=year, km=km, damage=damage,
+        agir_hasar=agir_hasar, gear=gear, **extra,
+    )
+    if result.get("found") or package:
+        return result
+
+    candidates = _engine_packages(category, brand, series, engine)
+    priced: list[tuple[str, dict]] = []
+    for name in candidates[:20]:                # aşırı uzun serilerde sınır
+        try:
+            candidate = estimate_price(
+                category=category, brand=brand, series=series, engine=engine,
+                package=name, year=year, km=km, damage=damage,
+                agir_hasar=agir_hasar, gear=gear, **extra,
+            )
+        except Exception:
+            continue
+        if candidate.get("found") and candidate.get("tahmini_fiyat"):
+            priced.append((name, candidate))
+
+    if not priced:
+        return result
+
+    values = sorted(c["tahmini_fiyat"] for _, c in priced)
+    middle = len(values) // 2
+    median = values[middle] if len(values) % 2 else (values[middle - 1] + values[middle]) // 2
+
+    merged = dict(priced[len(priced) // 2][1])
+    # Aralık, paketler arası yayılım ile motorun kendi ±%18 bandının
+    # BİRLEŞİMİ. Sadece yayılımı almak, paketler birbirine yakın olduğunda
+    # "paketi bilmiyoruz" durumunu bilinen pakete göre DAHA DAR gösterirdi --
+    # daha az bilgi asla daha dar aralık üretmemeli.
+    band = 0.18
+    low = min(int(min(values)), int(median * (1 - band)))
+    high = max(int(max(values)), int(median * (1 + band)))
+    merged.update({
+        "found": True,
+        "tahmini_fiyat": int(median),
+        "estimated_low": int(round(low / 1000) * 1000),
+        "estimated_high": int(round(high / 1000) * 1000),
+        # Paket bilinmiyor -> güven düşük. Tek paket eşleştiğinde bile 45'i
+        # geçmiyor, çünkü hangi paket olduğu hâlâ doğrulanmış değil.
+        "confidence_pct": int(min(45, 25 + 4 * len(priced))),
+        "fallback_reason": (
+            f"Paket seçilmediği için {len(priced)} paketin tahmini hesaplanıp medyanı "
+            "alındı. Paketi seçerseniz tahmin belirgin şekilde daralır."
+        ),
+        "package_fallback": {"count": len(priced), "packages": [n for n, _ in priced]},
+    })
+    return merged
+
+def _decision(price: int | None, estimate_value: int | None) -> dict:
+    """İlan fiyatının tahmine göre sapmasından tek bir karar üretir.
+
+    Eşikler sabit ve açıkça yazılı (LLM yorumu yok) — aynı girdi her zaman
+    aynı kararı verir.
+    """
+    if not price or not estimate_value:
+        return {
+            "label": "Belirsiz",
+            "title": "Yeterli referans veri yok",
+            "score": 0.0,
+            "deviation_pct": 0.0,
+        }
+    deviation = (price - estimate_value) / estimate_value * 100
+
+    if deviation <= -12:
+        label, title = "Fırsat", "Piyasanın belirgin altında — fırsat"
+    elif deviation <= -4:
+        label, title = "Uygun", "Piyasanın hafif altında — uygun fiyat"
+    elif deviation < 6:
+        label, title = "Piyasa", "Piyasa değerine yakın"
+    elif deviation < 15:
+        label, title = "Pahalı", "Piyasanın üzerinde — pazarlık şart"
+    else:
+        label, title = "Çok pahalı", "Piyasanın belirgin üzerinde — uzak durun"
+
+    # ÖLÇEK: 0-10. Arayüz (decision-card > score-ring) puanı sabit "/10"
+    # ile basıyor -- 100'lük ölçek gönderilirse "65/10" gibi görünür.
+    # -25% sapma 10 puan, +25% sapma 0 puan, piyasa fiyatı 5 puan.
+    score = round(max(0.0, min(10.0, 5 - deviation / 5)), 1)
+    return {
+        "label": label,
+        "title": title,
+        "score": score,
+        "deviation_pct": round(deviation, 1),
+    }
+
+
+def _negotiation(price: int | None, estimate: dict) -> dict:
+    value = estimate.get("tahmini_fiyat")
+    low = estimate.get("estimated_low")
+    if not price or not value or not low:
+        return {
+            "available": False,
+            "reason": "Bu araç için yeterli referans veri bulunamadığından pazarlık planı çıkarılamadı.",
+            "note": "", "target_price": None, "opening_offer": None,
+            "ceiling_price": None, "potential_saving": None,
+        }
+    if price <= low:
+        return {
+            "available": False,
+            "reason": "İlan fiyatı zaten tahmini piyasa aralığının alt sınırında — pazarlık payı sınırlı.",
+            "note": "", "target_price": None, "opening_offer": None,
+            "ceiling_price": None, "potential_saving": None,
+        }
+
+    target = int(round(min(price, value * 0.96) / 1000) * 1000)
+    opening = int(round(max(low * 0.97, target * 0.94) / 1000) * 1000)
+    ceiling = int(round(min(price, value * 1.02) / 1000) * 1000)
+    return {
+        "available": True,
+        "reason": "",
+        "note": (
+            "Açılış teklifi tahmini aralığın alt sınırına, hedef fiyat tahmini "
+            "piyasa değerinin %4 altına konumlandırıldı. Tavan fiyatın üzerine "
+            "çıkmak bu araçta piyasa priminde alım demek."
+        ),
+        "target_price": target,
+        "opening_offer": opening,
+        "ceiling_price": ceiling,
+        "potential_saving": max(0, price - target),
+    }
+
+
+def _depreciation(*, category: str, brand: str, series: str, engine: str,
+                  package: str | None, year: int, km: float, damage: list,
+                  agir_hasar: bool, gear: str | None,
+                  current_value: int | None) -> dict:
+    """1 ve 3 yıl sonraki tahmini değer.
+
+    Ayrı bir "değer kaybı modeli" uydurmak yerine AYNI tahmin motoru
+    yeniden çağrılıyor: bugün X model yılı / Y km olan araç, n yıl sonra
+    (X-n) model yılı / (Y + n*15.000) km'lik bir araca denk gelir.
+    """
+    if not current_value:
+        return {
+            "available": False,
+            "reason": "Güncel değer hesaplanamadığı için projeksiyon yapılamadı.",
+            "note": "", "current_value": None,
+            "one_year_value": None, "one_year_loss": None,
+            "three_year_value": None, "three_year_loss": None,
+        }
+
+    def value_after(years: int) -> int | None:
+        try:
+            res = _estimate_vehicle(
+                category=category, brand=brand, series=series, engine=engine,
+                package=package, year=year - years, km=km + years * _ANNUAL_KM,
+                damage=damage, agir_hasar=agir_hasar, gear=gear,
+            )
+            return res.get("tahmini_fiyat")
+        except Exception:
+            return None
+
+    one = value_after(1)
+    three = value_after(3)
+    if not one or not three:
+        return {
+            "available": False,
+            "reason": "Daha eski model yılları için referans paket verisi bulunamadı.",
+            "note": "", "current_value": current_value,
+            "one_year_value": None, "one_year_loss": None,
+            "three_year_value": None, "three_year_loss": None,
+        }
+
+    return {
+        "available": True,
+        "reason": "",
+        # NOT: sayıyı ayrı formatla -- f-string'in tamamına .replace(",", ".")
+        # uygulamak cümledeki normal virgülleri de noktaya çevirirdi.
+        "note": (
+            f"Yılda {_ANNUAL_KM:,}".replace(",", ".")
+            + " km kullanım varsayımıyla, aynı tahmin motorunun bir ve üç yaş "
+              "büyük emsallere verdiği değerler."
+        ),
+        "current_value": current_value,
+        "one_year_value": one,
+        "one_year_loss": max(0, current_value - one),
+        "three_year_value": three,
+        "three_year_loss": max(0, current_value - three),
+    }
+
+
+def _listing_quality(*, km: float, year: int, damage: list, agir_hasar: bool,
+                     color: str | None, gear: str | None,
+                     city: str, deviation_pct: float,
+                     description: dict | None = None) -> dict:
+    """İlanın veri riski. Objektif, sabit eşikli kurallar — puan bunlardan
+    düşülerek hesaplanıyor, yorum katılmıyor."""
+    warnings: list[str] = []
+    score = 100
+    age = max(datetime.now().year - int(year), 0)
+
+    if agir_hasar:
+        warnings.append("Ağır hasar kaydı var — ekspertiz ve tramer sorgusu şart.")
+        score -= 35
+    changed = [d for d in damage if "değiş" in _norm(d.get("durum"))]
+    painted = [d for d in damage if "boya" in _norm(d.get("durum"))]
+    if len(changed) >= 3:
+        warnings.append(f"{len(changed)} parça değişmiş — yapısal onarım ihtimali yüksek.")
+        score -= 25
+    elif changed:
+        warnings.append(f"{len(changed)} parça değişmiş.")
+        score -= 10
+    if len(painted) >= 5:
+        warnings.append(f"{len(painted)} parça boyalı — geniş çaplı boya işlemi.")
+        score -= 15
+
+    if age and km / age > 35_000:
+        warnings.append(f"Yıllık ortalama {round(km / age):,} km — yoğun kullanım.".replace(",", "."))
+        score -= 10
+    if km >= 300_000:
+        warnings.append("300.000 km üzeri — büyük bakım kalemleri gündeme gelmiş olabilir.")
+        score -= 10
+
+    if deviation_pct <= -20:
+        warnings.append("Fiyat piyasanın çok altında — ilanda belirtilmeyen bir kusur olabilir.")
+        score -= 15
+
+    if not color:
+        warnings.append("Renk belirtilmedi — değerlemede renk primi hesaplanamadı.")
+        score -= 3
+    if not gear:
+        warnings.append("Vites tipi belirtilmedi — tahmin doğruluğu düşer.")
+        score -= 3
+    if not city:
+        warnings.append("İl seçilmedi — bölgesel fiyat farkı analize katılamadı.")
+        score -= 3
+
+    # ── Açıklama metninden gelen sinyaller ───────────────────────────────
+    if description and description.get("available"):
+        for contradiction in description.get("contradictions") or []:
+            warnings.append(
+                f"Çelişki: \u201c{contradiction['claim']}\u201d — {contradiction['conflict']}"
+            )
+        score -= 12 * len(description.get("contradictions") or [])
+        for flag in description.get("red_flags") or []:
+            if flag not in warnings:
+                warnings.append(flag)
+        if (description.get("score") or 0) <= 3:
+            warnings.append("İlan açıklaması çok zayıf — satıcı bilgi paylaşmaktan kaçınıyor olabilir.")
+            score -= 8
+        if description.get("missing"):
+            warnings.append(
+                "Açıklamada hiç değinilmemiş: " + ", ".join(description["missing"]).lower() + "."
+            )
+            score -= 3 * len(description["missing"])
+    else:
+        warnings.append("İlan açıklaması girilmedi — metin analizi yapılamadı.")
+        score -= 5
+
+    score = int(max(0, min(100, score)))
+    if score >= 80:
+        label = "Düşük risk"
+    elif score >= 55:
+        label = "Orta risk"
+    else:
+        label = "Yüksek risk"
+    return {"label": label, "score": score, "warnings": warnings}
+
+
+def _questions(*, damage: list, agir_hasar: bool, km: float, year: int,
+               package: str | None, color: str | None,
+               description: dict | None = None) -> list[dict]:
+    """Satıcıya sorulacaklar — verilmeyen/riskli alanlardan türetilir."""
+    out: list[dict] = []
+    age = max(datetime.now().year - int(year), 0)
+
+    if agir_hasar:
+        out.append({
+            "question": "Ağır hasar kaydı hangi olaydan kaynaklanıyor?",
+            "reason": " Onarım faturaları ve ekspertiz raporu talep edin; şasi/airbag kaydı varsa değer ciddi düşer.",
+        })
+    changed = [d.get("parca") for d in damage if "değiş" in _norm(d.get("durum"))]
+    if changed:
+        out.append({
+            "question": f"Değişen parçalar ({', '.join(str(c) for c in changed[:4])}) neden değişti?",
+            "reason": " Orijinal parça mı takıldı, işlem yetkili serviste mi yapıldı öğrenin.",
+        })
+    if not damage:
+        out.append({
+            "question": "Aracın tramer kaydı ve boya-değişen durumu nedir?",
+            "reason": " Hasar bilgisi girilmedi; tramer sorgusu olmadan tahmin hasarsız kabul edilerek yapıldı.",
+        })
+    if age >= 5 or km >= 150_000:
+        out.append({
+            "question": "Triger seti / kayışı ve debriyaj en son ne zaman değişti?",
+            "reason": " Bu yaş ve kilometrede yaklaşan büyük bakım kalemleri pazarlık kozudur.",
+        })
+    out.append({
+        "question": "Araç kaç kişinin üzerine kayıtlıydı ve ruhsatta hasar/rehin şerhi var mı?",
+        "reason": " Sık el değiştiren araçlar ile rehinli araçlar satışta değer kaybeder.",
+    })
+    if not package:
+        out.append({
+            "question": "Aracın tam donanım paketi nedir?",
+            "reason": " Paket seçilmediği için tahmin seri ortalaması üzerinden yapıldı.",
+        })
+    if not color:
+        out.append({
+            "question": "Aracın rengi nedir, boyasız mı?",
+            "reason": " Renk ikinci elde %5'e varan fark yaratabiliyor.",
+        })
+
+    # Açıklamadaki çelişkiler en öncelikli sorular -- başa alınır.
+    if description and description.get("available"):
+        priority: list[dict] = []
+        for contradiction in description.get("contradictions") or []:
+            priority.append({
+                "question": f"İlanda \u201c{contradiction['claim']}\u201d yazıyor — bunu teyit eder misiniz?",
+                "reason": f" {contradiction['conflict']} Bu çelişki netleşmeden fiyat konuşmayın.",
+            })
+        for topic in description.get("missing") or []:
+            priority.append({
+                "question": f"{topic} hakkında bilgi verir misiniz?",
+                "reason": " İlan açıklamasında bu konuya hiç değinilmemiş.",
+            })
+        out = priority + out
+
+    # Aynı soru iki kaynaktan gelebiliyor -- sırayı bozmadan tekille.
+    seen: set[str] = set()
+    unique: list[dict] = []
+    for item in out:
+        if item["question"] not in seen:
+            seen.add(item["question"])
+            unique.append(item)
+    return unique
+
+
+def _price_factors(estimate: dict, color_adjustment: dict | None,
+                   regional: dict) -> list[dict]:
+    """Tahmine uygulanan çarpanları yüzde etkisine çevirir. Motorun kendi
+    döndürdüğü katsayılar kullanılır — burada yeniden hesaplanmaz."""
+    factors: list[dict] = []
+
+    def add(label: str, factor: Any, note: str) -> None:
+        try:
+            pct = (float(factor) - 1) * 100
+        except (TypeError, ValueError):
+            return
+        if abs(pct) < 0.05:
+            return
+        factors.append({"label": label, "note": note, "effect_pct": round(pct, 1)})
+
+    add("Kilometre", estimate.get("km_factor"),
+        f"Referans {estimate.get('base_km') or '—'} km'ye göre")
+    add("Hasar durumu", estimate.get("damage_factor"),
+        "Boyalı/değişen parçaların toplam etkisi")
+    add("Vites", estimate.get("gear_factor"),
+        "Manuel araçlar ikinci elde daha yavaş satılıyor")
+
+    if color_adjustment:
+        factors.append({
+            "label": f"Renk: {color_adjustment['color']}",
+            "note": f"{color_adjustment['sample_count']} emsal galeri ilanına göre",
+            "effect_pct": color_adjustment["factor_pct"],
+        })
+    if regional.get("confidence_pct"):
+        factors.append({
+            "label": f"Bölge: {regional['city']}",
+            "note": regional["label"],
+            "effect_pct": 0.0,
+        })
+    return factors
+
+
+def analyze(payload: dict) -> dict:
+    """B2C tam analiz. `city` / `district` OPSİYONELDİR — verilmezse bölgesel
+    sinyal ve renk primi dışındaki her şey aynen hesaplanır."""
+    from .tco import compute_tco
+
+    category = str(payload.get("category") or "otomobil").strip() or "otomobil"
+    brand = str(payload.get("brand") or "").strip()
+    series = str(payload.get("series") or "").strip()
+    engine = str(payload.get("engine") or "").strip()
+    package = (str(payload.get("package")).strip() or None) if payload.get("package") else None
+    city = str(payload.get("city") or "").strip()
+    district = str(payload.get("district") or "").strip()
+    color = (str(payload.get("color")).strip() or None) if payload.get("color") else None
+    fuel = str(payload.get("fuel") or "").strip() or None
+    gear = str(payload.get("gear") or "").strip() or None
+    agir_hasar = str(payload.get("agir_hasar", False)).strip().lower() in {"1", "true", "evet", "yes"}
+    damage = payload.get("damage") or []
+    if not isinstance(damage, list):
+        raise ValueError("damage bir liste olmalıdır.")
+
+    year = int(payload["year"])
+    km = float(payload["km"])
+    price = int(float(payload["price"]))
+    description_text = str(payload.get("description") or "").strip()
+
+    estimate = _estimate_vehicle(
+        category=category, brand=brand, series=series, engine=engine,
+        package=package, year=year, km=km, damage=damage,
+        agir_hasar=agir_hasar, gear=gear, fuel=fuel, city=city or None,
+    )
+    value = estimate.get("tahmini_fiyat")
+
+    rows = _galeri_rows(brand, series, year)
+    trend = _price_trend(rows)
+    regional = _regional_signal(rows, city, district)
+    color_adjustment = _color_adjustment(rows, color)
+    decision = _decision(price, value)
+    description_analysis = description_insights(
+        description_text, damage=damage, agir_hasar=agir_hasar, km=km, year=year,
+        price=price,
+    )
+    similar = similar_listings(brand, series, year, price)
+
+    estimate_out = {
+        "tahmini_fiyat": value,
+        "estimated_low": estimate.get("estimated_low"),
+        "estimated_high": estimate.get("estimated_high"),
+        "confidence_pct": estimate.get("confidence_pct") or 0,
+        "color_adjustment": color_adjustment,
+        "fallback_reason": estimate.get("fallback_reason"),
+        "package_fallback": estimate.get("package_fallback"),
+    }
+
+    return {
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "vehicle": {
+            "brand": brand, "series": series, "engine": engine,
+            "package": package, "year": year, "km": km,
+            "color": color, "city": city, "district": district,
+            "price": price,
+        },
+        "estimate": estimate_out,
+        "decision": decision,
+        "negotiation": _negotiation(price, estimate),
+        "depreciation": _depreciation(
+            category=category, brand=brand, series=series, engine=engine,
+            package=package, year=year, km=km, damage=damage,
+            agir_hasar=agir_hasar, gear=gear, current_value=value,
+        ),
+        "listing_quality": _listing_quality(
+            km=km, year=year, damage=damage, agir_hasar=agir_hasar,
+            color=color, gear=gear, city=city,
+            deviation_pct=decision["deviation_pct"],
+            description=description_analysis,
+        ),
+        "description_analysis": description_analysis,
+        "similar_listings": similar,
+        "questions": _questions(
+            damage=damage, agir_hasar=agir_hasar, km=km, year=year,
+            package=package, color=color, description=description_analysis,
+        ),
+        "price_factors": _price_factors(estimate, color_adjustment, regional),
+        "price_trend": trend,
+        "regional_signal": regional,
+        "tco": compute_tco(engine=engine, year=year, estimated_value=value,
+                           annual_km=_ANNUAL_KM),
+        "data_sources": {
+            "gallery_matches": len(rows),
+            "listing_matches": _listing_matches(brand, series, year),
+            "trend_points": len(trend),
+            "similar_listings": len(similar),
+        },
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 4) İlan açıklaması — anlam çıkarımı
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# LLM KULLANILMIYOR. Açıklamadan çıkarılan her iddia, aşağıdaki adlandırılmış
+# regex kalıplarından birinin eşleşmesidir; her çelişki de kullanıcının forma
+# girdiği veri ile o iddianın karşılaştırılmasıdır. Aynı metin her zaman aynı
+# sonucu verir, "model bugün böyle yorumladı" durumu yoktur.
+
+_CLAIM_PATTERNS: list[tuple[str, str, str]] = [
+    # (anahtar, insan-okur etiket, regex)
+    ("hasarsiz",    "Hasarsız / kaza kaydı yok",
+     r"hasars[ıi]z|(hasar|kaza|tramer) kayd[ıi] (yok|bulunmamaktad[ıi]r|bulunmuyor)|tramersiz|tramer[ıi]? (yok|s[ıi]f[ıi]r)"),
+    ("boyasiz",     "Boyasız",
+     r"boyas[ıi]z|boya yok|hi[çc] boya|boyal[ıi] de[ğg]il"),
+    ("degisensiz",  "Değişensiz",
+     r"de[ğg]i[şs]ensiz|de[ğg]i[şs]en (yok|bulunmamaktad[ıi]r)|de[ğg]i[şs]eni yok"),
+    ("hatasiz",     "Hatasız / kusursuz",
+     r"hatas[ıi]z|kusursuz|s[ıi]f[ıi]r ayar[ıi]nda|s[ıi]f[ıi]r gibi"),
+    ("agir_hasar",  "Ağır hasar / pert kaydı",
+     # NOT: "pert" kelimesi \b (kelime sınırı) OLMADAN yazılırsa "eks-PERT-iz"
+     # / "ex-PERT-iz" içindeki alt-diziyle eşleşir -- 791 ilanlık örneklemde
+     # bu tek eksik \b, ilanların %43'ünü yanlışlıkla "ağır hasar" olarak
+     # işaretliyordu (gerçek oran %6). Asla \b'siz yazma.
+     r"a[ğg][ıi]r hasar|\bpert\b|hasar kay[ıi]tl[ıi]|[çc]ekme belge"),
+    ("bakimli",     "Bakımları yapılmış",
+     r"bak[ıi]ml[ıi]|bak[ıi]mlar[ıi] (yap[ıi]lm[ıi][şs]|tam|yeni)|yetkili serviste|periyodik bak[ıi]m"),
+    ("tek_el",      "Tek elden / ilk sahibinden",
+     r"tek el|ilk sahibinden|tek sahibinden|babadan kalma|ilk sahibi"),
+    ("garanti",     "Garantisi devam ediyor",
+     r"garantisi (devam|s[üu]r[üu]yor)|garanti kapsam[ıi]nda|fabrika garantili"),
+    ("masrafsiz",   "Masrafsız",
+     r"masrafs[ıi]z|masraf[ıi] yok|hi[çc]bir masraf"),
+    ("takas",       "Takas kabul ediyor",
+     r"takas (olur|yap[ıi]l[ıi]r|kabul)|takasa a[çc][ıi]k|takasl[ıi]"),
+    ("kredi",       "Kredi / senet imkânı",
+     r"kredi imkan|kredili|senetli|vade|taksit"),
+    ("degisen_var", "Metinde değişen parçadan söz ediliyor",
+     r"\d+\s*(par[çc]a|adet)?\s*de[ğg]i[şs]|de[ğg]i[şs]en(i)? (var|mevcut)"),
+    ("boya_var",    "Metinde boyadan söz ediliyor",
+     r"\d+\s*(par[çc]a|adet)?\s*boyal[ıi]|lokal boya|boyas[ıi] var"),
+    ("ekspertiz",   "Ekspertiz raporu var",
+     r"ekspertiz(li| rapor)"),
+    ("acil",        "Acil satış vurgusu",
+     r"acil|kelepir|f[ıi]rsat ka[çc]maz|pi[şs]man olmazs[ıi]n[ıi]z"),
+    ("pazarlik_yok","Pazarlık payı yok deniyor",
+     r"pazarl[ıi]k yok|tek fiyat|son fiyat"),
+    ("ticari",      "Ticari / filo kullanımı",
+     r"ticari kullan|filo|kiral[ıi]k|rent a car|[şs]irket ad[ıi]na"),
+    ("faturali",    "Faturalı / maliye kayıtlı",
+     r"\bfaturas[ıi]\s*(var|mevcut)|\bfatural[ıi]\b"),
+    ("yetki_belge", "Yetkili galeri belgesi paylaşılmış",
+     r"yetki belge(si)?\s*(no)?\s*[:.]?\s*\d"),
+    ("muayene",     "Muayene bilgisi paylaşılmış",
+     r"muayene(si)?\s*(bitiş|tarihi|durumu)?"),
+    ("kasko",       "Kasko değeri paylaşılmış",
+     r"kasko\s*(kodu|de[ğg]eri)?\s*[:.]?\s*\d"),
+    ("yedek_anahtar", "Yedek anahtar bilgisi var",
+     r"yedek anahtar[ıi]?\s*(mevcut|var)"),
+    ("minimizing",  "Olumsuz bilgi 'sadece/yalnızca' ile küçümsenmiş",
+     r"(sadece|yaln[ıi]zca)\s*(\d+\s*(par[çc]a|adet)?\s*)?(boya|de[ğg]i[şs])"),
+]
+
+# Galeri ilanlarının kalıp gibi tekrar ettiği "biz böyle araç almayız/satmayız"
+# cümleleri: bir claim regex'i (özellikle agir_hasar/degisen_var/boya_var)
+# aracın KENDİ durumuyla değil, galerinin genel satış politikasıyla eşleşmiş
+# olabilir. 791 ilanlık örneklemde bu, potansiyel çelişki adaylarının
+# %76'sını (17'de 13) oluşturuyordu -- cümle bazlı bu filtre olmadan
+# kullanıcıya sahte "çelişki" uyarısı gösterilir.
+_POLICY_SENTENCE = re.compile(
+    r"(almay[ıi]z|satmay[ıi]z|almamaktad[ıi]r|satmamaktad[ıi]r|"
+    r"al[ıi]p satm[ıi]yoruz|yap[ıi]lmamaktad[ıi]r|yapmamaktad[ıi]r|"
+    r"al[ıi]nmaz|sat[ıi]lmaz|takas(a)? almamaktad[ıi]r|"
+    r"al[ıi]m ve sat[ıi]m[ıi]n[ıi] yapm[ıi]yoruz|"
+    r"ile ([çc]al[ıi][şs]m[ıi]yoruz|ilgilenmiyoruz)|"
+    r"arac[ıi]?(lar[ıi])? (ile|ilgilenmiyoruz))",
+    re.I,
+)
+
+_KM_IN_TEXT = re.compile(r"(\d{1,3}(?:[.\s]\d{3})+|\d{4,7})\s*(?:bin\s*)?km", re.I)
+
+# "TRAMER 7500₺", "HASAR KAYDI 8.000 TL'DİR", "1.300 TL HASAR KAYDI VARDIR"
+# gibi ifadelerden somut TL tutarını çıkarır -- formdaki hasar/tramer
+# bilgisiyle büyüklük mertebesi karşılaştırması için.
+_TRAMER_AMOUNT = re.compile(
+    r"(?:tramer|hasar)[^.\n]{0,20}?(\d{1,3}(?:[.\s]\d{3})*)\s*(?:tl|₺)"
+    r"|(\d{1,3}(?:[.\s]\d{3})*)\s*(?:tl|₺)[^.\n]{0,20}?(?:tramer|hasar)",
+    re.I,
+)
+
+# Yapılandırılmış ekspertiz bloğu: "BOYA: ...", "DEĞİŞEN: ...", "TRAMER
+# BİLGİSİ: ..." gibi satır-bazlı key:value ifadeler. Bu format serbest metne
+# göre çok daha güvenilir -- 791 ilanlık örneklemde ilanların %43'ü
+# EKSPERTİZ/EXPERTİZ kelimesi geçen böyle bir blok içeriyordu.
+_EXPERTISE_LINE = re.compile(
+    r"^\s*(boya|de[ğg]i[şs]en|tramer(\s*bilgisi)?|hasar\s*kayd[ıi])\s*[:\-]\s*(.+)$",
+    re.I | re.M,
+)
+
+# Kredi/taksit/telefon/adres gibi araçla ilgisi olmayan "gürültü" satırları --
+# açıklamanın ne kadarının gerçekten araç bilgisi taşıdığını ölçmek için.
+_NOISE_PATTERNS = re.compile(
+    r"kredi|taksit|senet|vade|pe[şs]inat|0\s?5\d{2}[\s.\-]?\d{3}|"
+    r"whatsapp|showroom|plaza|şube|bay[ıi]i|iletişim|telefon",
+    re.I,
+)
+
+# ── Yapısal / güvenlik-kritik bileşenler ────────────────────────────────────
+# Form'daki damage listesi sadece "parça değişti/boyalı" düzeyinde soru
+# sorar; şase/podye/direk/airbag/motor/sandık gibi taşıyıcı-gövde ve
+# güvenlik sistemi bilgisi HİÇ formda yok. Bu yüzden bu bileşenler hakkında
+# açıklamada geçen bilgi, form ile karşılaştırılamaz -- ama tek başına çok
+# güçlü bir sinyaldir (pozitif ya da negatif). 791 ilanlık örneklemde bu
+# kelimeler neredeyse hep POZİTİF garanti cümlesi olarak geçiyordu
+# ("ŞASE PODYE AİRBAG ORJİNALDİR" gibi) -- gerçek negatif itiraf çok
+# nadir ama göründüğünde en ağır sinyaldir.
+#
+# Her bileşen kategorisi için: kelime geçen cümle _NEGATIVE_INDICATOR
+# taşıyorsa VE _STRUCTURAL_NEGATION (yok/değil/kesinlikle... vb) taşımıyorsa
+# "confirmed negatif" sayılır. Aksi halde (pozitif kelime veya negation'lı
+# olumsuzlama varsa) "confirmed pozitif/temiz" sayılır.
+_STRUCTURAL_COMPONENTS: list[tuple[str, str, float]] = [
+    # (key, kelime regex'i, negatif sinyalin fiyat etkisi %)
+    ("sase_podye_direk", r"\b[şs]ase\b|\b[şs]asi\b|\bpodye\b|\bdirek\b", -15.0),
+    ("airbag_acmis",     r"airbag|hava\s*yast[ıi][ğg][ıi]",              -10.0),
+    ("motor_degisti",    r"motor\s*(de[ğg]i[şs](ti|mi[şs])|komple\s*(yenilendi|de[ğg]i[şs]))", -6.0),
+    ("sandik_bagaj",     r"\bsand[ıi]k\b|bagaj\s*havuzu",                 -5.0),
+]
+
+_STRUCTURAL_POSITIVE = re.compile(
+    r"orjinal|orijinal|i[şs]lemsiz|hatas[ıi]z(d[ıi]r)?|sa[ğg]lam|har[ıi][çc]|temiz\b", re.I,
+)
+_STRUCTURAL_DAMAGE_WORD = re.compile(
+    r"hasar|kaynak(l[ıi])?|k[ıi]r[ıi]k|ezik|i[şs]lem\s*(var|mevcut|g[öo]r(m[üu][şs])?)|"
+    r"de[ğg]i[şs](mi[şs]|ti|en)|a[çc]m[ıi][şs]|patlam[ıi][şs]|oynanm[ıi][şs]|oynama",
+    re.I,
+)
+# NOT: "hatasız" _STRUCTURAL_POSITIVE'e taşındı (önceden sadece negation'da
+# vardı ve "1 DEĞİŞEN KAPUT HARİÇ HATASIZ ŞASE PODYE AİRBAG TEMİZ" gibi asıl
+# POZİTİF garanti cümlelerini negatif işaretliyordu). Ayrıca pasif çatı
+# "satılmamaktadır/alınmamaktadır" eksikti -- galeri politika cümlesi
+# "...tarafımızca alınıp satılmamaktadır" bu yüzden negatif kaçıyordu; artık
+# _POLICY_SENTENCE ile aynı cümle bazlı filtre burada da uygulanıyor.
+_STRUCTURAL_NEGATION = re.compile(
+    r"yok(tur)?|bulunmam|kesinlikle|de[ğg]il|olmayan|s[öo]z\s*konusu\s*(bile\s*)?de[ğg]il|"
+    r"almamaktad[ıi]r|satmamaktad[ıi]r|al[ıi]nmamaktad[ıi]r|sat[ıi]lmamaktad[ıi]r|"
+    r"almay[ıi]z|satmay[ıi]z",
+    re.I,
+)
+
+
+# Sadece aracın kendi durumunu değil, galerinin genel politikasını da
+# anlatabilecek claim'ler -- bunlar için eşleşen ifadenin cümlesi ayrıca
+# _POLICY_SENTENCE'a karşı kontrol edilir.
+_POLICY_SENSITIVE_CLAIMS = {"agir_hasar", "degisen_var", "boya_var", "hasarsiz"}
+
+
+def _sentence_around(text: str, start: int, end: int) -> str:
+    """Eşleşmenin bulunduğu tam cümleyi (önceki/sonraki nokta veya satır
+    sonuna kadar) döndürür -- kelime bazlı bağlam yerine cümle bazlı."""
+    left = max(text.rfind("\n", 0, start), text.rfind(".", 0, start))
+    right_candidates = [x for x in (text.find("\n", end), text.find(".", end)) if x != -1]
+    right = min(right_candidates) if right_candidates else len(text)
+    return text[left + 1:right + 1].strip()
+
+
+def _is_policy_sentence(text: str, pattern: str) -> bool:
+    """Verilen pattern'in eşleştiği HER cümle galeri-politikası mı (yani
+    aracın kendi durumuyla değil, galerinin genel satın alma/satış
+    kurallarıyla ilgili mi)? Hepsi politika cümlesiyse True -- bu durumda
+    claim aracın kendisine ait bir iddia sayılmaz."""
+    matches = list(re.finditer(pattern, text, re.I))
+    if not matches:
+        return False
+    for m in matches:
+        sentence = _sentence_around(text, m.start(), m.end())
+        if not _POLICY_SENTENCE.search(sentence):
+            return False
+    return True
+
+
+def _detect_claims(text: str) -> dict[str, str]:
+    """Metinde geçen iddialar. Anahtar -> etiket.
+
+    Politikaya-duyarlı claim'lerde (agir_hasar, degisen_var, boya_var,
+    hasarsiz) tüm eşleşmeler galeri politikası cümlesiyse ("ağır hasarlı
+    araç almayız" gibi) claim eklenmez -- aracın kendi durumuyla ilgisi yok.
+    """
+    low = _norm(text)
+    found: dict[str, str] = {}
+    for key, label, pattern in _CLAIM_PATTERNS:
+        if not re.search(pattern, low):
+            continue
+        if key in _POLICY_SENSITIVE_CLAIMS and _is_policy_sentence(low, pattern):
+            continue
+        found[key] = label
+    return found
+
+
+# "hasar_kaydı" / "hasar_kaydi" gibi tek harf (ı/i) farklı yazılan aynı
+# kavramı tek kanonik anahtara indirger -- yoksa aynı bilgi farklı ilanlarda
+# iki ayrı sözlük anahtarı olarak görünür.
+_EXPERTISE_KEY_CANON = {
+    "hasar_kaydı": "hasar_kaydi",
+    "tramer_bilgisi": "tramer",
+    "değişen": "degisen",
+    "deği̇şen": "degisen",
+    "degişen": "degisen",
+}
+
+
+def _extract_expertise_block(text: str) -> dict[str, str]:
+    """Yapılandırılmış 'BOYA: ...', 'DEĞİŞEN: ...', 'TRAMER: ...' satırlarını
+    çıkarır. Serbest metin regex'inden çok daha güvenilir -- galeri kendi
+    ekspertiz özetini bu formatta yazdıysa öncelikli veri kaynağıdır."""
+    out: dict[str, str] = {}
+    for m in _EXPERTISE_LINE.finditer(text):
+        # NFC normalize + "İ".lower()'ın ürettiği "i̇" (i + combining dot)
+        # dizisini düz "i"ye indirger -- yoksa anahtar adları "deği̇şen" gibi
+        # görünmez birleşik karakter taşır.
+        key = unicodedata.normalize("NFC", _norm(m.group(1))).replace("i̇", "i").replace(" ", "_")
+        key = _EXPERTISE_KEY_CANON.get(key, key)
+        value = m.group(3).strip()
+        if value:
+            out[key] = value
+    return out
+
+
+def _extract_tramer_amount(text: str) -> int | None:
+    """Metindeki ilk tramer/hasar TL tutarını sayıya çevirir (varsa)."""
+    m = _TRAMER_AMOUNT.search(text)
+    if not m:
+        return None
+    raw = m.group(1) or m.group(2)
+    digits = re.sub(r"[.\s]", "", raw or "")
+    try:
+        value = int(digits)
+    except ValueError:
+        return None
+    return value if 0 < value < 10_000_000 else None
+
+
+def _structural_findings(text: str) -> dict[str, list[dict]]:
+    """Şase/podye/direk/airbag/motor/sandık gibi form-dışı yapısal
+    bileşenler hakkında açıklamada geçen sinyalleri toplar.
+
+    Döner: {"negative": [{"key","sentence","pct"}], "positive": [{"key","sentence"}]}
+    Aynı bileşen birden fazla cümlede geçebilir -- her cümle ayrı
+    değerlendirilir (biri pozitif biri negatif olabilir, ör. "1 değişen
+    kaput hariç şase podye orijinal" gibi karma ilanlar için)."""
+    negative: list[dict] = []
+    positive: list[dict] = []
+    for key, word_pattern, pct in _STRUCTURAL_COMPONENTS:
+        seen_sentences: set[str] = set()
+        for m in re.finditer(word_pattern, text, re.I):
+            sentence = _sentence_around(text, m.start(), m.end())
+            if sentence in seen_sentences:
+                continue
+            seen_sentences.add(sentence)
+            has_damage_word = bool(_STRUCTURAL_DAMAGE_WORD.search(sentence))
+            has_negation = bool(_STRUCTURAL_NEGATION.search(sentence))
+            has_positive_word = bool(_STRUCTURAL_POSITIVE.search(sentence))
+            is_policy = bool(_POLICY_SENTENCE.search(sentence))
+            if has_damage_word and not has_negation and not has_positive_word and not is_policy:
+                negative.append({"key": key, "sentence": sentence, "pct": pct})
+            elif has_positive_word or has_negation or is_policy:
+                positive.append({"key": key, "sentence": sentence})
+    return {"negative": negative, "positive": positive}
+
+
+def _noise_ratio(text: str) -> float:
+    """Açıklamanın kredi/taksit/telefon/adres gibi araçla ilgisiz 'gürültü'
+    satırlarının oranı. 1.0'a yakınsa açıklama araç bilgisi taşımıyor
+    demektir."""
+    lines = [ln for ln in text.split("\n") if ln.strip()]
+    if not lines:
+        return 0.0
+    noisy = sum(1 for ln in lines if _NOISE_PATTERNS.search(ln))
+    return noisy / len(lines)
+
+
+def _km_claims(text: str) -> list[int]:
+    out: list[int] = []
+    for raw in _KM_IN_TEXT.findall(text or ""):
+        digits = re.sub(r"[.\s]", "", raw)
+        try:
+            value = int(digits)
+        except ValueError:
+            continue
+        if 1_000 <= value <= 2_000_000:
+            out.append(value)
+    return out
+
+
+# Toplam fiyat etkisi bu sınırların dışına çıkamaz. Negatif tavan çok daha
+# geniş tutuldu çünkü "ilanda yalan/eksik bilgi olma" riski, "iyi bakılmış
+# olma" ihtimalinden çok daha maliyetli bir hatadır -- galeriler zaten
+# hemen hep olumlu yazar, pozitif tarafta abartıya izin vermemek gerekir.
+_IMPACT_CAP_NEGATIVE = -20.0
+_IMPACT_CAP_POSITIVE = 6.0
+
+
+def _compute_price_impact(events: list[tuple[str, str, float]], price: int | None) -> dict | None:
+    """Açıklamadan çıkan sinyalleri tek bir yüzdelik fiyat etkisine indirger.
+
+    `price` verilmediyse (örn. B2C formu henüz fiyat girmemiş) sadece
+    kuralları ve toplam yüzdeyi döner, TL tutarı hesaplamaz."""
+    if not events:
+        return {
+            "total_pct": 0.0, "rules": [], "base_price": price,
+            "adjusted_price": price, "delta": 0 if price is not None else None,
+        }
+
+    rules = [{"key": k, "label": label, "pct": pct} for k, label, pct in events]
+    neg_sum = sum(pct for _, _, pct in events if pct < 0)
+    pos_sum = sum(pct for _, _, pct in events if pct > 0)
+    neg_capped = max(neg_sum, _IMPACT_CAP_NEGATIVE)
+    pos_capped = min(pos_sum, _IMPACT_CAP_POSITIVE)
+    total_pct = round(neg_capped + pos_capped, 1)
+
+    adjusted_price = None
+    delta = None
+    if price is not None and price > 0:
+        adjusted_price = round(price * (1 + total_pct / 100))
+        delta = adjusted_price - price
+
+    return {
+        "total_pct": total_pct,
+        "rules": rules,
+        "base_price": price,
+        "adjusted_price": adjusted_price,
+        "delta": delta,
+    }
+
+
+def description_insights(description: str, *, damage: list, agir_hasar: bool,
+                         km: float, year: int, price: int | None = None) -> dict:
+    """İlan açıklamasından anlam çıkarımı.
+
+    En değerli çıktı `contradictions`: metindeki iddia ile kullanıcının forma
+    girdiği veri çakışıyorsa (ör. "değişensiz" yazıyor ama 3 parça değişmiş
+    işaretli) bu, ilanda bilerek ya da bilmeyerek yanlış bilgi olduğunun
+    somut göstergesidir ve pazarlıkta doğrudan koz olur.
+
+    `price` verilirse `price_impact` alanı da hesaplanır: açıklamadaki
+    sinyallere göre form-tahminine göre ayrı bir "açıklamaya göre düzeltilmiş
+    fiyat" üretilir (bkz. _IMPACT_CAP_NEGATIVE / _IMPACT_CAP_POSITIVE).
+    """
+    from .description_quality import score_description
+
+    if not (description or "").strip():
+        return {
+            "available": False,
+            "score": 0,
+            "label": "Açıklama girilmedi",
+            "summary": "İlan açıklaması girilmediği için metin analizi yapılamadı.",
+            "claims": [], "contradictions": [], "red_flags": [],
+            "positives": [], "missing": [], "km_claims": [],
+            "expertise_block": {}, "tramer_amount": None, "noise_ratio": 0.0,
+            "price_impact": None,
+        }
+
+    text = description.strip()
+    # Fiyat etkisi kuralları burada birikir: (anahtar, insan-okur etiket, %).
+    # Aynı anahtar iki kez eklenmez (bkz. _add_impact).
+    impact_events: list[tuple[str, str, float]] = []
+    _impact_seen: set[str] = set()
+
+    def _add_impact(key: str, label: str, pct: float) -> None:
+        if key in _impact_seen:
+            return
+        _impact_seen.add(key)
+        impact_events.append((key, label, pct))
+
+    base = score_description(text)
+    claims = _detect_claims(text)
+    expertise_block = _extract_expertise_block(text)
+    tramer_amount = _extract_tramer_amount(text)
+    noise_ratio = round(_noise_ratio(text), 2)
+    structural = _structural_findings(text)
+
+    changed = [d for d in damage if "değiş" in _norm(d.get("durum"))]
+    painted = [d for d in damage if "boya" in _norm(d.get("durum"))]
+
+    contradictions: list[dict] = []
+
+    def clash(claim_key: str, detail: str) -> None:
+        if claim_key in claims:
+            contradictions.append({"claim": claims[claim_key], "conflict": detail})
+
+    if changed:
+        clash("degisensiz", f"Formda {len(changed)} parça değişmiş olarak işaretli.")
+        clash("hasarsiz", f"Formda {len(changed)} parça değişmiş olarak işaretli.")
+        clash("hatasiz", f"Formda {len(changed)} parça değişmiş olarak işaretli.")
+    if painted:
+        clash("boyasiz", f"Formda {len(painted)} parça boyalı olarak işaretli.")
+        clash("hatasiz", f"Formda {len(painted)} parça boyalı olarak işaretli.")
+    if agir_hasar:
+        clash("hasarsiz", "Formda ağır hasar kaydı var olarak işaretli.")
+        clash("hatasiz", "Formda ağır hasar kaydı var olarak işaretli.")
+    if not damage and not agir_hasar:
+        if "degisen_var" in claims:
+            contradictions.append({
+                "claim": claims["degisen_var"],
+                "conflict": "Formda hiçbir parça değişmiş işaretlenmemiş — hasar bilgisi eksik girilmiş olabilir.",
+            })
+            _add_impact("degisen_var", "Formda yok ama açıklamada değişen parça iddiası var", -3.0)
+        if "boya_var" in claims:
+            contradictions.append({
+                "claim": claims["boya_var"],
+                "conflict": "Formda hiçbir parça boyalı işaretlenmemiş — hasar bilgisi eksik girilmiş olabilir.",
+            })
+            _add_impact("boya_var", "Formda yok ama açıklamada boyalı parça iddiası var", -2.0)
+
+    # Aynı iddia birden çok kuralla çakışabiliyor ("Hatasız" hem değişen hem
+    # boya ile) -- kullanıcıya tek satır olarak, gerekçeleri birleştirilmiş
+    # halde gösterilir.
+    merged: dict[str, list[str]] = {}
+    for item in contradictions:
+        merged.setdefault(item["claim"], [])
+        if item["conflict"] not in merged[item["claim"]]:
+            merged[item["claim"]].append(item["conflict"])
+    contradictions = [
+        {"claim": claim, "conflict": " ".join(conflicts)}
+        for claim, conflicts in merged.items()
+    ]
+
+    # Metindeki km beyanı ile forma girilen km tutuyor mu?
+    km_claims = _km_claims(text)
+    for claimed in km_claims:
+        if km and abs(claimed - km) / max(km, 1) > 0.15:
+            contradictions.append({
+                "claim": f"Açıklamada {claimed:,} km yazıyor".replace(",", "."),
+                "conflict": f"Forma {int(km):,} km girildi — aradaki fark %15'ten fazla.".replace(",", "."),
+            })
+            _add_impact("km_contradiction", "Açıklama km'si form km'siyle %15'ten fazla farklı", -4.0)
+            break
+
+    red_flags = list(base.get("negatives") or [])
+    if "acil" in claims:
+        red_flags.append("Acil satış vurgusu var — aceleye getirilen satışlarda kusur saklama riski yüksektir.")
+        _add_impact("acil", "Acil satış vurgusu", -2.0)
+    if "pazarlik_yok" in claims:
+        red_flags.append("İlan pazarlık payı olmadığını söylüyor; teklif stratejinizi buna göre kurun.")
+    if "ticari" in claims:
+        red_flags.append("Ticari/filo kullanım işareti var — bu araçlar aynı yaş ve km'de daha yıpranmış olur.")
+        _add_impact("ticari", "Ticari/filo kullanım işareti", -3.0)
+    if "minimizing" in claims:
+        red_flags.append(
+            "Açıklamada olumsuz bilgi 'sadece/yalnızca' ile küçümsenerek verilmiş — "
+            "gerçek boyutunu satıcıya doğrudan sorun."
+        )
+        _add_impact("minimizing", "Olumsuz bilgi 'sadece/yalnızca' ile küçümsenmiş", -3.0)
+    if "agir_hasar" in claims and not agir_hasar:
+        red_flags.append("Açıklamada ağır hasar/pert ifadesi geçiyor ama formda işaretlenmemiş.")
+        _add_impact("agir_hasar_contradiction", "Formda yok ama açıklamada ağır hasar/pert iddiası var", -8.0)
+    if tramer_amount is not None and tramer_amount >= 50_000:
+        red_flags.append(
+            f"Açıklamada {tramer_amount:,} TL tramer/hasar kaydı geçiyor — bu, küçük bir "
+            "tramerin çok ötesinde bir tutar; ekspertiz şart.".replace(",", ".")
+        )
+        _add_impact("tramer_high", f"Yüksek tramer/hasar tutarı ({tramer_amount:,} TL)".replace(",", "."), -5.0)
+    elif tramer_amount is not None and tramer_amount >= 15_000:
+        _add_impact("tramer_mid", f"Orta düzey tramer/hasar tutarı ({tramer_amount:,} TL)".replace(",", "."), -2.0)
+    if noise_ratio >= 0.6:
+        red_flags.append(
+            "Açıklamanın büyük bölümü kredi/taksit/iletişim bilgisi — araç hakkında "
+            "somut bilgi az; satıcıyı arayıp teyit etmeniz gerekir."
+        )
+        _add_impact("noise_ratio", "Açıklamanın çoğu kredi/taksit/iletişim bilgisi, araç bilgisi az", -1.0)
+
+    # Yapısal/güvenlik-kritik bileşenler (form dışı): en ağır negatif sinyal.
+    for finding in structural["negative"]:
+        pct = finding["pct"]
+        label_map = {
+            "sase_podye_direk": "Şase/podye/direkte hasar veya işlem izi",
+            "airbag_acmis": "Airbag açmış/patlamış",
+            "motor_degisti": "Motor değişmiş/komple yenilenmiş",
+            "sandik_bagaj": "Sandık/bagaj havuzunda hasar",
+        }
+        label = label_map.get(finding["key"], finding["key"])
+        red_flags.append(
+            f"{label} — açıklamada geçiyor ('{finding['sentence'][:80]}'). "
+            "Bu form dışı, ekstra bir bulgu; mutlaka ekspertiz yaptırın."
+        )
+        _add_impact(finding["key"], label, pct)
+    if structural["positive"] and not structural["negative"]:
+        _add_impact(
+            "structural_clean",
+            "Şase/podye/airbag gibi kritik bölgeler 'orijinal/işlemsiz' olarak garanti edilmiş",
+            1.5,
+        )
+
+    positives = list(base.get("positives") or [])
+    for key, pct in (
+        ("garanti", 2.0), ("tek_el", 1.5), ("faturali", 1.0), ("ekspertiz", 1.0),
+        ("masrafsiz", 1.0), ("bakimli", 1.0),
+    ):
+        if key in claims:
+            positives.append(claims[key])
+            _add_impact(key, claims[key], pct)
+    for key in ("yetki_belge", "muayene", "kasko", "yedek_anahtar"):
+        if key in claims:
+            positives.append(claims[key])
+            _add_impact(key, claims[key], 0.5)
+    if tramer_amount is not None and tramer_amount < 15_000:
+        positives.append(f"Tramer/hasar kaydı düşük tutarlı ({tramer_amount:,} TL).".replace(",", "."))
+        _add_impact("tramer_low", f"Düşük tutarlı tramer/hasar kaydı ({tramer_amount:,} TL)".replace(",", "."), 1.0)
+
+    # Açıklamada HİÇ değinilmemiş kritik konular -> "satıcıya sorun" beslemesi
+    missing: list[str] = []
+    if not any(k in claims for k in ("hasarsiz", "degisensiz", "boyasiz", "degisen_var", "boya_var", "ekspertiz")):
+        missing.append("Hasar / tramer / boya-değişen durumu")
+    if "bakimli" not in claims:
+        missing.append("Bakım geçmişi")
+    if "tek_el" not in claims:
+        missing.append("Kaç el olduğu")
+    if "garanti" not in claims:
+        missing.append("Garanti durumu")
+
+    # Puan: description_quality'nin 1-10'u, çelişki başına -2.
+    score = int(max(1, min(10, (base.get("score") or 1) - 2 * len(contradictions))))
+    if contradictions:
+        label = "Çelişkili — dikkat"
+    elif score >= 8:
+        label = "Açıklama güçlü ve şeffaf"
+    elif score >= 5:
+        label = "Açıklama yeterli"
+    else:
+        label = "Açıklama zayıf"
+
+    if contradictions:
+        summary = (
+            f"Açıklamada {len(contradictions)} adet, girdiğiniz araç bilgisiyle "
+            "çelişen ifade bulundu. Bu maddeleri satıcıya doğrudan sorun — "
+            "pazarlıkta en güçlü kozunuz bunlar."
+        )
+    elif not missing:
+        summary = "Açıklama kritik konuların tamamına değinmiş; bilgi eksiği görünmüyor."
+    else:
+        summary = (
+            "Açıklama şu konulara hiç değinmemiş: " + ", ".join(missing).lower() + "."
+        )
+
+    price_impact = _compute_price_impact(impact_events, price)
+
+    return {
+        "available": True,
+        "score": score,
+        "label": label,
+        "summary": summary,
+        "claims": [{"key": k, "label": v} for k, v in claims.items()],
+        "contradictions": contradictions,
+        "red_flags": red_flags,
+        "positives": positives,
+        "missing": missing,
+        "km_claims": km_claims,
+        "suggestions": base.get("suggestions") or [],
+        "expertise_block": expertise_block,
+        "tramer_amount": tramer_amount,
+        "noise_ratio": noise_ratio,
+        "price_impact": price_impact,
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 5) Güncel benzer ilanlar
+# ═══════════════════════════════════════════════════════════════════════════
+
+def _parse_km(raw: Any) -> int | None:
+    digits = re.sub(r"[^\d]", "", str(raw or ""))
+    if not digits:
+        return None
+    try:
+        value = int(digits)
+    except ValueError:
+        return None
+    # Galeri verisinde "-" ve saçma yüksek değerler var; 1.5M üstü güvenilmez.
+    return value if 0 < value <= 1_500_000 else None
+
+
+def similar_listings(brand: str, series: str, year: int, price: int | None,
+                     limit: int = 12) -> list[dict]:
+    """Şu anda YAYINDA olan benzer ilanlar — galeri.db'nin EN SON snapshot'ından.
+
+    B2B tarafındaki "Yayındaki Benzer İlanları Bul" arabam.com'a canlı istek
+    atıyor ve production IP'si 403 yiyor (bkz. README). B2C'de o yola hiç
+    girilmiyor: veri zaten günlük olarak galeri.db'ye çekiliyor, en son
+    snapshot'tan okumak hem anında hem de engellenemez.
+    """
+    try:
+        conn = _galeri_conn()
+        rows = conn.execute(
+            """
+            SELECT gl.title, gl.model, gl.year_raw, gl.km_raw, gl.color,
+                   gl.price, gl.post_url, gl.post_age_days,
+                   g.city, g.district, gl.gallery_name
+              FROM gallery_listings gl
+              LEFT JOIN galleries g ON g.gallery_name = gl.gallery_name
+             WHERE gl.snapshot_date = (SELECT MAX(snapshot_date) FROM gallery_listings)
+               AND gl.model LIKE ? COLLATE NOCASE
+               AND gl.price BETWEEN ? AND ?
+               AND CAST(gl.year_raw AS INTEGER) BETWEEN ? AND ?
+             ORDER BY gl.price ASC
+             LIMIT 400
+            """,
+            (f"%{brand}%{series}%", _MIN_REAL_PRICE, _MAX_REAL_PRICE,
+             year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE),
+        ).fetchall()
+    except Exception:
+        return []
+
+    out: list[dict] = []
+    for (title, model, year_raw, km_raw, color, listing_price, post_url,
+         post_age_days, city, district, gallery_name) in rows:
+        try:
+            listing_year = int(str(year_raw).strip())
+        except (TypeError, ValueError):
+            continue
+        out.append({
+            "title": (title or model or "").strip(),
+            "model": (model or "").strip(),
+            "year": listing_year,
+            "km": _parse_km(km_raw),
+            "color": (color or "").strip() or None,
+            "price": int(listing_price),
+            "url": post_url or None,
+            "gallery": (gallery_name or "").strip() or None,
+            "city": (city or "").strip() or None,
+            "district": (district or "").strip() or None,
+            "post_age_days": post_age_days,
+            "price_diff": (int(listing_price) - price) if price else None,
+        })
+
+    # En ucuzdan değil, KULLANICININ İLANINA en yakınlardan başlayarak seç --
+    # amaç "en ucuz araba" listesi değil, gerçek emsal karşılaştırması.
+    if price:
+        out.sort(key=lambda r: abs(r["price"] - price))
+    return out[:limit]

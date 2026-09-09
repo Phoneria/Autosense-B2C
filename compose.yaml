@@ -1,0 +1,85 @@
+services:
+  web:
+    build:
+      context: .
+      target: web
+    restart: unless-stopped
+    environment:
+      B2C_DOMAIN: ${B2C_DOMAIN:?Set B2C_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      backend:
+        condition: service_healthy
+  backend:
+    build:
+      context: .
+      target: backend
+    restart: unless-stopped
+    environment:
+      B2C_DEBUG: "false"
+      B2C_SECRET_KEY: ${B2C_SECRET_KEY:?Set B2C_SECRET_KEY}
+      B2C_FRONTEND_URL: https://${B2C_DOMAIN}
+      B2C_ALLOWED_HOSTS: ${B2C_DOMAIN}
+      B2C_DATABASE_URL: postgresql://b2c:${B2C_DB_PASSWORD:?Use an URL-safe random password}@postgres:5432/b2c
+      B2C_REDIS_URL: redis://redis:6379/0
+      B2C_TRUSTED_PROXY_COUNT: "1"
+      B2C_EMAIL_BACKEND: django.core.mail.backends.smtp.EmailBackend
+      B2C_SMTP_HOST: ${B2C_SMTP_HOST:?Set B2C_SMTP_HOST}
+      B2C_SMTP_PORT: ${B2C_SMTP_PORT:-587}
+      B2C_SMTP_USER: ${B2C_SMTP_USER:-}
+      B2C_SMTP_PASSWORD: ${B2C_SMTP_PASSWORD:-}
+      B2C_SMTP_TLS: ${B2C_SMTP_TLS:-true}
+      B2C_FROM_EMAIL: ${B2C_FROM_EMAIL:?Set verified sender}
+      B2C_REFERENCE_DB: /app/data/listings.sqlite3
+      B2C_BASELINE_DB: /app/data/paket_fiyatlari.db
+      B2C_GALLERY_DB: /app/data/galeri.db
+    volumes:
+      - ./data:/app/data:ro
+    command: ["sh", "-c", "python manage.py migrate --noinput && exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 2 --timeout 120 --error-logfile -"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; r=urllib.request.Request('http://127.0.0.1:8000/api/b2c/csrf',headers={'Host':'${B2C_DOMAIN}','X-Forwarded-Proto':'https'}); urllib.request.urlopen(r,timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+      start_period: 30s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: b2c
+      POSTGRES_DB: b2c
+      POSTGRES_PASSWORD: ${B2C_DB_PASSWORD}
+    volumes:
+      - accounts_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U b2c -d b2c"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - rate_limits:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+volumes:
+  accounts_data:
+  rate_limits:
+  caddy_data:
+  caddy_config:

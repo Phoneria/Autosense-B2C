@@ -1,0 +1,20 @@
+{$B2C_DOMAIN} {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy same-origin
+        X-Frame-Options DENY
+    }
+    @backend path /api/* /_allauth/*
+    handle @backend {
+        header Cache-Control "private, no-store"
+        reverse_proxy backend:8000
+    }
+    handle {
+        root * /srv
+        # Auth pages contain link tokens: never cache HTML or enable access logs.
+        header Cache-Control "no-cache"
+        try_files {path} /index.html
+        file_server
+    }
+}

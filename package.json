@@ -1,0 +1,19 @@
+{
+  "name": "autosense-b2c",
+  "version": "1.0.0",
+  "description": "AutoSense B2C browser acceptance tests",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:https": "playwright test --config playwright.https.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0"
+  },
+  "private": true
+}

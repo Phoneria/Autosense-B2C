@@ -1,0 +1,4290 @@
+[
+  {
+    "slug": "bmc",
+    "name": "BMC",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "bmc-megastar",
+        "name": "Megastar",
+        "engines": [
+          {
+            "slug": "bmc-megastar-290-v-kombi",
+            "name": "290 V Kombi",
+            "variants": []
+          },
+          {
+            "slug": "bmc-megastar-290-v-kombi-van_",
+            "name": "290 V Kombi Van",
+            "variants": []
+          },
+          {
+            "slug": "bmc-megastar-290-v-panelvan_",
+            "name": "290 V Panelvan",
+            "variants": []
+          },
+          {
+            "slug": "bmc-megastar-360-v-panelvan_",
+            "name": "360 V Panelvan",
+            "variants": []
+          },
+          {
+            "slug": "bmc-megastar-400-vh-panelvan_",
+            "name": "400 VH Panelvan",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "chery",
+    "name": "Chery",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "chery-taxim",
+        "name": "Taxim",
+        "engines": [
+          {
+            "slug": "chery-taxim-1-5-lussa",
+            "name": "1.5 Lusso",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "chevrolet",
+    "name": "Chevrolet",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "chevrolet-express-van_",
+        "name": "Express Van",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "chevrolet-lumina",
+        "name": "Lumina",
+        "engines": [
+          {
+            "slug": "chevrolet-lumina-3-1",
+            "name": "3.1",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "chrysler",
+    "name": "Chrysler",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "chrysler-grand-voyager",
+        "name": "Grand Voyager",
+        "engines": [
+          {
+            "slug": "chrysler-grand-voyager-2-4-se",
+            "name": "2.4 SE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-2-5-crd-lx",
+            "name": "2.5 CRD LX",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-2-5-td-le",
+            "name": "2.5 TD LE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-2-8-crd-limited",
+            "name": "2.8 CRD Limited",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-2-8-crd-lx",
+            "name": "2.8 CRD LX",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-2-8-crd-se",
+            "name": "2.8 CRD SE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-grand-voyager-3-3",
+            "name": "3.3",
+            "variants": [
+              {
+                "slug": "chrysler-grand-voyager-3-3-le",
+                "name": "LE"
+              },
+              {
+                "slug": "chrysler-grand-voyager-3-3-limited",
+                "name": "Limited"
+              }
+            ]
+          },
+          {
+            "slug": "chrysler-grand-voyager-3-8-le",
+            "name": "3.8 LE",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "chrysler-voyager",
+        "name": "Voyager",
+        "engines": [
+          {
+            "slug": "chrysler-voyager-2-5-crd-se",
+            "name": "2.5 CRD SE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-voyager-2-5-td-le",
+            "name": "2.5 TD LE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-voyager-2-5-td-se",
+            "name": "2.5 TD SE",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-voyager-2-8-crd-lx",
+            "name": "2.8 CRD LX",
+            "variants": []
+          },
+          {
+            "slug": "chrysler-voyager-2-8-crd-se",
+            "name": "2.8 CRD SE",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "citroen",
+    "name": "Citroen",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "citroen-berlingo",
+        "name": "Berlingo",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "citroen-c15",
+        "name": "C15",
+        "engines": [
+          {
+            "slug": "citroen-c15-d",
+            "name": "D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "citroen-jumper",
+        "name": "Jumper",
+        "engines": [
+          {
+            "slug": "citroen-jumper-2-0-blue-hdi",
+            "name": "2.0 BlueHDI",
+            "variants": [
+              {
+                "slug": "citroen-jumper-2-0-blue-hdi-l4h2",
+                "name": "L4H2"
+              }
+            ]
+          },
+          {
+            "slug": "citroen-jumper-2-2-blue-hdi",
+            "name": "2.2 BlueHDI",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumper-2-2-hdi-l3h2",
+            "name": "2.2 HDI L3H2",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumper-2-2-hdi-l4h2",
+            "name": "2.2 HDI L4H2",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumper-27-c",
+            "name": "27 C",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumper-3-0-hdi",
+            "name": "3.0 HDI",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumper-35-lh",
+            "name": "35 LH",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "citroen-jumpy",
+        "name": "Jumpy",
+        "engines": [
+          {
+            "slug": "citroen-jumpy-1-5-bluehdi-space",
+            "name": "1.5 BlueHDI Space",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-1-5-bluehdi-spacetourer",
+            "name": "1.5 BlueHDI Spacetourer",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-1-6-bluehdi-spacetourer",
+            "name": "1.6 BlueHDI Spacetourer",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-1-6-hdi",
+            "name": "1.6 HDi",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-1-6-hdi-combi",
+            "name": "1.6 HDi Combi",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-1-9-d-confort",
+            "name": "1.9 D Confort",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-2-0-bluehdi",
+            "name": "2.0 BlueHDi",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-2-0-bluehdi-cityvan",
+            "name": "2.0 BlueHDI Cityvan",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-2-0-bluehdi-spacetourer",
+            "name": "2.0 BlueHDI Spacetourer",
+            "variants": []
+          },
+          {
+            "slug": "citroen-jumpy-2-0-hdi",
+            "name": "2.0 HDi",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "citroen-nemo",
+        "name": "Nemo",
+        "engines": [
+          {
+            "slug": "citroen-nemo-1-3-hdi-x",
+            "name": "1.3 HDi X",
+            "variants": []
+          },
+          {
+            "slug": "citroen-nemo-1-4-hdi",
+            "name": "1.4 HDi",
+            "variants": [
+              {
+                "slug": "citroen-nemo-1-4-hdi-1-4-hdi",
+                "name": "1.4 HDi"
+              },
+              {
+                "slug": "citroen-nemo-1-4-hdi-x",
+                "name": "X"
+              },
+              {
+                "slug": "citroen-nemo-1-4-hdi-x-pack",
+                "name": "X Pack"
+              }
+            ]
+          },
+          {
+            "slug": "citroen-nemo-combi-1-3-hdi",
+            "name": "Combi 1.3 HDi",
+            "variants": [
+              {
+                "slug": "citroen-nemo-combi-1-3-hdi-sx-plus",
+                "name": "SX Plus"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-3-hdi-sx-plus-vizyon",
+                "name": "SX Plus Vizyon"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-3-hdi-x",
+                "name": "X"
+              }
+            ]
+          },
+          {
+            "slug": "citroen-nemo-combi-1-4-hdi",
+            "name": "Combi 1.4 HDi",
+            "variants": [
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-combi-1-4-hdi",
+                "name": "Combi 1.4 HDi"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-sx",
+                "name": "SX"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-sx-plus",
+                "name": "SX Plus"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-sx-plus-sensodrive",
+                "name": "SX Plus Sensodrive"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-sx-plus-vizyon",
+                "name": "SX Plus Vizyon"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-sx-sensodrive",
+                "name": "SX Sensodrive"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-x",
+                "name": "X"
+              },
+              {
+                "slug": "citroen-nemo-combi-1-4-hdi-xtr-plus",
+                "name": "XTR Plus"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "dfm",
+    "name": "DFM",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "dfm-panelvan",
+        "name": "Panelvan",
+        "engines": [
+          {
+            "slug": "dfm-panelvan-1-0",
+            "name": "1.0",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "dfm-succe",
+        "name": "Succe",
+        "engines": [
+          {
+            "slug": "dfm-succe-1-6",
+            "name": "1.6",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "dacia",
+    "name": "Dacia",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "dacia-dokker",
+        "name": "Dokker",
+        "engines": [
+          {
+            "slug": "dacia-dokker-1-5-bluedci-ambiance",
+            "name": "1.5 BlueDCI Ambiance",
+            "variants": []
+          },
+          {
+            "slug": "dacia-dokker-1-5-dci-ambiance",
+            "name": "1.5 DCi Ambiance",
+            "variants": []
+          },
+          {
+            "slug": "dacia-dokker-1-5-dci-stepway",
+            "name": "1.5 DCi Stepway",
+            "variants": []
+          },
+          {
+            "slug": "dacia-dokker-1-6-eco-g-ambiance",
+            "name": "1.6 ECO-G Ambiance",
+            "variants": []
+          },
+          {
+            "slug": "dacia-dokker-1-6-mpi-ambiance",
+            "name": "1.6 MPi Ambiance",
+            "variants": []
+          },
+          {
+            "slug": "dacia-dokker-1-6-sce-eco-g-ambiance",
+            "name": "1.6 SCE Eco-G Ambiance",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "dacia-logan",
+        "name": "Logan",
+        "engines": [
+          {
+            "slug": "dacia-logan-1-5-dci-ambiance",
+            "name": "1.5 DCi Ambiance",
+            "variants": []
+          },
+          {
+            "slug": "dacia-logan-1-5-dci-van-ambiance",
+            "name": "1.5 DCI Van Ambiance",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "daihatsu",
+    "name": "Daihatsu",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "daihatsu-hijet",
+        "name": "Hijet",
+        "engines": [
+          {
+            "slug": "daihatsu-hijet-1-0",
+            "name": "1.0",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "faw",
+    "name": "Faw",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "faw-ca5024",
+        "name": "CA5024",
+        "engines": [
+          {
+            "slug": "faw-ca5024-1-0",
+            "name": "1.0",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "fiat",
+    "name": "Fiat",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "fiat-doblo",
+        "name": "Doblo",
+        "engines": [
+          {
+            "slug": "fiat-doblo-cargo",
+            "name": "Doblo Cargo",
+            "variants": [
+              {
+                "slug": "fiat-doblo-cargo-1-2",
+                "name": "1.2"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-3-ecojet",
+                "name": "1.3 Ecojet"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-4",
+                "name": "1.4"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-5-bluehdi",
+                "name": "1.5 BlueHDi"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-6-multijet",
+                "name": "1.6 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-9-d",
+                "name": "1.9 D"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-9-jtd",
+                "name": "1.9 JTD"
+              },
+              {
+                "slug": "fiat-doblo-cargo-1-9-multijet",
+                "name": "1.9 Multijet"
+              }
+            ]
+          },
+          {
+            "slug": "fiat-doblo-combi",
+            "name": "Doblo Combi",
+            "variants": [
+              {
+                "slug": "fiat-doblo-combi-1-2-pure-tech",
+                "name": "1.2 PureTech"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-3-ecojet",
+                "name": "1.3 Ecojet"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-4",
+                "name": "1.4"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-5-bluehdi",
+                "name": "1.5 BlueHDi"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-6-multijet",
+                "name": "1.6 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-9-d",
+                "name": "1.9 D"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-9-jtd",
+                "name": "1.9 JTD"
+              },
+              {
+                "slug": "fiat-doblo-combi-1-9-multijet",
+                "name": "1.9 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-combi-2-0-multijet",
+                "name": "2.0 Multijet"
+              }
+            ]
+          },
+          {
+            "slug": "fiat-doblo-combi-mix",
+            "name": "Doblo Combi Mix",
+            "variants": [
+              {
+                "slug": "fiat-doblo-combi-mix-1-3-multijet-maxi-active",
+                "name": "1.3 Multijet Maxi Active"
+              },
+              {
+                "slug": "fiat-doblo-combi-mix-1-9-multijet-maxi-active",
+                "name": "1.9 Multijet Maxi Active"
+              }
+            ]
+          },
+          {
+            "slug": "fiat-doblo-panorama",
+            "name": "Doblo Panorama",
+            "variants": [
+              {
+                "slug": "fiat-doblo-panorama-1-2",
+                "name": "1.2"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-3-jtd",
+                "name": "1.3 JTD"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-4",
+                "name": "1.4"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-6-multijet",
+                "name": "1.6 Multijet"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-9-d-elx",
+                "name": "1.9 D ELX"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-9-d-sx",
+                "name": "1.9 D SX"
+              },
+              {
+                "slug": "fiat-doblo-panorama-1-9-jtd",
+                "name": "1.9 JTD"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "fiat-ducato",
+        "name": "Ducato",
+        "engines": [
+          {
+            "slug": "fiat-ducato-10-m",
+            "name": "10 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-11-5-m",
+            "name": "11.5 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-12-m",
+            "name": "12 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-13-m",
+            "name": "13 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-15-m",
+            "name": "15 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-17-m",
+            "name": "17 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-2-8-jtd-camlivan_",
+            "name": "2.8 JTD Camlıvan",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-7-5-m",
+            "name": "7.5 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-8-m",
+            "name": "8 m³",
+            "variants": []
+          },
+          {
+            "slug": "fiat-ducato-9-5-m",
+            "name": "9.5 m³",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "fiat-fiorino",
+        "name": "Fiorino",
+        "engines": [
+          {
+            "slug": "fiat-fiorino-cargo",
+            "name": "Fiorino Cargo",
+            "variants": [
+              {
+                "slug": "fiat-fiorino-cargo-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-fiorino-cargo-1-4-fire",
+                "name": "1.4 Fire"
+              }
+            ]
+          },
+          {
+            "slug": "fiat-fiorino-combi",
+            "name": "Fiorino Combi",
+            "variants": [
+              {
+                "slug": "fiat-fiorino-combi-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-fiorino-combi-1-4-eko",
+                "name": "1.4 Eko"
+              }
+            ]
+          },
+          {
+            "slug": "fiat-fiorino-panorama",
+            "name": "Fiorino Panorama",
+            "variants": [
+              {
+                "slug": "fiat-fiorino-panorama-1-3-multijet",
+                "name": "1.3 Multijet"
+              },
+              {
+                "slug": "fiat-fiorino-panorama-1-4-fire",
+                "name": "1.4 Fire"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "fiat-palio-van_",
+        "name": "Palio Van",
+        "engines": [
+          {
+            "slug": "fiat-palio-van_-1-2-el",
+            "name": "1.2 EL",
+            "variants": []
+          },
+          {
+            "slug": "fiat-palio-van_-1-2-sl",
+            "name": "1.2 SL",
+            "variants": []
+          },
+          {
+            "slug": "fiat-palio-van_-1-3-multijet-active",
+            "name": "1.3 Multijet Active",
+            "variants": []
+          },
+          {
+            "slug": "fiat-palio-van_-1-3-multijet-el",
+            "name": "1.3 Multijet EL",
+            "variants": []
+          },
+          {
+            "slug": "fiat-palio-van_-sole-1-3-multijet-active",
+            "name": "Sole 1.3 Multijet Active",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "fiat-scudo",
+        "name": "Scudo",
+        "engines": [
+          {
+            "slug": "fiat-scudo-1-6-multijet-cargo",
+            "name": "1.6 Multijet Cargo",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-1-6-multijet-combimix",
+            "name": "1.6 Multijet Combimix",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-1-9-d-el-van_",
+            "name": "1.9 D EL Van",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-1-9-td-el-van_",
+            "name": "1.9 TD EL Van",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-jtd-el-van_",
+            "name": "2.0 JTD EL Van",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-multijet-combimix",
+            "name": "2.0 Multijet Combimix",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-multijet-l2h1",
+            "name": "2.0 Multijet L2H1",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-multijet-lounge",
+            "name": "2.0 Multijet Lounge",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-multijet-maxi-business",
+            "name": "2.0 Multijet Maxi Business",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-2-0-multijet-maxi-s2-business",
+            "name": "2.0 Multijet Maxi S2 Business",
+            "variants": []
+          },
+          {
+            "slug": "fiat-scudo-1-5-multijet-l2-business",
+            "name": "Scudo 1.5 Multijet L2 Business",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "fiat-ulysse",
+        "name": "Ulysse",
+        "engines": [
+          {
+            "slug": "fiat-ulysse-2-0-multijet-maxi-lounge",
+            "name": "2.0 Multijet Maxi Lounge",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "ford",
+    "name": "Ford",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "ford-e-serisi",
+        "name": "E Serisi",
+        "engines": [
+          {
+            "slug": "ford-e-serisi-e-150",
+            "name": "E150",
+            "variants": []
+          },
+          {
+            "slug": "ford-e-serisi-e-350",
+            "name": "E350",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-e-transit",
+        "name": "E-Transit",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "ford-fiesta-van_",
+        "name": "Fiesta Van",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "ford-tourneo-connect",
+        "name": "Tourneo Connect",
+        "engines": [
+          {
+            "slug": "ford-tourneo-connect-1-0-ecoboost",
+            "name": "1.0 EcoBoost",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-1-0-ecoboost-active",
+                "name": "Active"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-1-5-ecoblue",
+            "name": "1.5 EcoBlue",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-1-5-ecoblue-active",
+                "name": "Active"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-5-ecoblue-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-5-ecoblue-titanium",
+                "name": "Titanium"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-1-5-tdci",
+            "name": "1.5 TDCI",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-1-5-tdci-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-5-tdci-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-5-tdci-titanium-x",
+                "name": "Titanium X"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-1-6-tdci",
+            "name": "1.6 TDCI",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-1-6-tdci-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-6-tdci-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-6-tdci-titanium-x",
+                "name": "Titanium X"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-1-8-tdci",
+            "name": "1.8 TDCI",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-blackline",
+                "name": "Blackline"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-glx",
+                "name": "GLX"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-k200s",
+                "name": "K200S"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-k210-s-blackline",
+                "name": "K210 S Blackline"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-k210s",
+                "name": "K210S"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-k230l",
+                "name": "K230L"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-swb-silver",
+                "name": "SWB Silver"
+              },
+              {
+                "slug": "ford-tourneo-connect-1-8-tdci-trend",
+                "name": "Trend"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-110ps",
+            "name": "110PS",
+            "variants": []
+          },
+          {
+            "slug": "ford-tourneo-connect-2-0-ecoblue",
+            "name": "2.0 EcoBlue",
+            "variants": [
+              {
+                "slug": "ford-tourneo-connect-2-0-ecoblue-active",
+                "name": "Active"
+              },
+              {
+                "slug": "ford-tourneo-connect-2-0-ecoblue-titanium",
+                "name": "Titanium"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-connect-75ps",
+            "name": "75PS",
+            "variants": []
+          },
+          {
+            "slug": "ford-tourneo-connect-90ps",
+            "name": "90PS",
+            "variants": []
+          },
+          {
+            "slug": "ford-tourneo-connect-k210s-1-8",
+            "name": "K210S 1.8",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-tourneo-courier",
+        "name": "Tourneo Courier",
+        "engines": [
+          {
+            "slug": "ford-tourneo-courier-1-0-ecoboost",
+            "name": "1.0 EcoBoost",
+            "variants": [
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-active",
+                "name": "Active"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-color-line",
+                "name": "Color Line"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-titanium-plus",
+                "name": "Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-0-ecoboost-trend",
+                "name": "Trend"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-courier-1-5-eco-blue",
+            "name": "1.5 EcoBlue",
+            "variants": [
+              {
+                "slug": "ford-tourneo-courier-1-5-eco-blue-active",
+                "name": "Active"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-eco-blue-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-eco-blue-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-eco-blue-trend",
+                "name": "Trend"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-courier-1-5-tdci",
+            "name": "1.5 TDCi",
+            "variants": [
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-black-line",
+                "name": "Black Line"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-delux",
+                "name": "Delux"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-journey-delux",
+                "name": "Journey Delux"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-journey-titanium",
+                "name": "Journey Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-journey-titanium-plus",
+                "name": "Journey Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-journey-trend",
+                "name": "Journey Trend"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-titanium-plus",
+                "name": "Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-5-tdci-trend",
+                "name": "Trend"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-courier-1-6-tdci",
+            "name": "1.6 TDCi",
+            "variants": [
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-black-line",
+                "name": "Black Line"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-deluxe",
+                "name": "Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-journey-titanium",
+                "name": "Journey Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-journey-titanium-plus",
+                "name": "Journey Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-journey-trend",
+                "name": "Journey Trend"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-titanium",
+                "name": "Titanium"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-titanium-plus",
+                "name": "Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-courier-1-6-tdci-trend",
+                "name": "Trend"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-tourneo-custom",
+        "name": "Tourneo Custom",
+        "engines": [
+          {
+            "slug": "ford-tourneo-custom-2-0-ecoblue",
+            "name": "2.0 EcoBlue",
+            "variants": [
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-hibrit-titanium-plus",
+                "name": "320 L Hibrit Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-titanium",
+                "name": "320 L Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-titanium-plus",
+                "name": "320 L Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-trend",
+                "name": "320 L Trend"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-upgrade-titanium",
+                "name": "320 L Upgrade Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-l-upgrade-titanium-plus",
+                "name": "320 L Upgrade Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-s-titanium-plus",
+                "name": "320 S Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-s-trend",
+                "name": "320 S Trend"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-s-upragade-deluxe",
+                "name": "320 S Upragade Deluxe"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-ecoblue-320-s-upragade-titanium",
+                "name": "320 S Upragade Titanium"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-custom-2-0-tdci",
+            "name": "2.0 TDCi",
+            "variants": [
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-310-l-titanium",
+                "name": "310 L Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-310-l-titanium-plus",
+                "name": "310 L Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-320-l-titanium",
+                "name": "320 L Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-320-l-titanium-plus",
+                "name": "320 L Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-320-l-trend",
+                "name": "320 L Trend"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-0-tdci-320-s-trend",
+                "name": "320 S Trend"
+              }
+            ]
+          },
+          {
+            "slug": "ford-tourneo-custom-2-2-tdci",
+            "name": "2.2 TDCi",
+            "variants": [
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-l-titanium",
+                "name": "300 L Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-l-titanium-plus",
+                "name": "300 L Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-l-trend",
+                "name": "300 L Trend"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-s-titanium",
+                "name": "300 S Titanium"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-s-titanium-plus",
+                "name": "300 S Titanium Plus"
+              },
+              {
+                "slug": "ford-tourneo-custom-2-2-tdci-300-s-trend",
+                "name": "300 S Trend"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-transit",
+        "name": "Transit",
+        "engines": [
+          {
+            "slug": "ford-transit-100-l",
+            "name": "100 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-100-s",
+            "name": "100 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-100-v",
+            "name": "100 V",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-120",
+            "name": "120",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-120-v",
+            "name": "120 V",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-190-v",
+            "name": "190 V",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-280-m",
+            "name": "280 M",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-280-s",
+            "name": "280 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-300-l",
+            "name": "300 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-300-m",
+            "name": "300 M",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-300-s",
+            "name": "300 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-300-sf",
+            "name": "300 SF",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-300-t",
+            "name": "300 T",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-310-s",
+            "name": "310 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-330-l",
+            "name": "330 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-330-m",
+            "name": "330 M",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-330-s",
+            "name": "330 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-330-sf",
+            "name": "330 SF",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-e",
+            "name": "350 E",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-ed",
+            "name": "350 ED",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-el",
+            "name": "350 EL",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-hd",
+            "name": "350 HD",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-l",
+            "name": "350 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-lf",
+            "name": "350 LF",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-m",
+            "name": "350 M",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-350-mf",
+            "name": "350 MF",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-410-l",
+            "name": "410 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-430ed",
+            "name": "430 ED",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-440-e",
+            "name": "440 E",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-460-e",
+            "name": "460 E",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-transit-connect",
+        "name": "Transit Connect",
+        "engines": [
+          {
+            "slug": "ford-transit-connect-1-5-ecoblue-trend",
+            "name": "1.5 EcoBlue Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-1-6-tdci-trend",
+            "name": "1.6 TDCi Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-1-8-tdci-glx-50-yil",
+            "name": "1.8 TDCi GLX 50.Yıl",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-280-s",
+            "name": "280 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k200-s",
+            "name": "K200 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k210-s",
+            "name": "K210 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k210-s-blackline",
+            "name": "K210 S Blackline",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k210-s-deluxe",
+            "name": "K210 S Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k210-s-glx",
+            "name": "K210 S GLX",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k210-s-silver",
+            "name": "K210 S Silver",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k230-l",
+            "name": "K230 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-k230-l-deluxe",
+            "name": "K230 L Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t200-s",
+            "name": "T200 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t200-s-lx",
+            "name": "T200 S LX",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t220-l",
+            "name": "T220 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t220-l-lx",
+            "name": "T220 L LX",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t220-s",
+            "name": "T220 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t220-s-lx",
+            "name": "T220 S LX",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t230-l",
+            "name": "T230 L",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-connect-t230-l-lx",
+            "name": "T230 L LX",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-transit-courier",
+        "name": "Transit Courier",
+        "engines": [
+          {
+            "slug": "ford-transit-courier-1-0-ecoboost-deluxe",
+            "name": "1.0 EcoBoost Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-0-ecoboost-trend",
+            "name": "1.0 EcoBoost Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-5-ecoblue-deluxe",
+            "name": "1.5 EcoBlue Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-5-ecoblue-trend",
+            "name": "1.5 EcoBlue Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-5-tdci-deluxe",
+            "name": "1.5 TDCi Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-5-tdci-trend",
+            "name": "1.5 TDCi Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-courier-1-6-tdci-delux",
+            "name": "1.6 TDCi Delux",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-transit-custom",
+        "name": "Transit Custom",
+        "engines": [
+          {
+            "slug": "ford-transit-custom-310-l-delux",
+            "name": "310 L Delux",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-310-l-trend",
+            "name": "310 L Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-310-s-125-ps",
+            "name": "310 S 125 PS",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-310-s-delux",
+            "name": "310 S Delux",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-310-s-trend",
+            "name": "310 S Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-320-l-deluxe",
+            "name": "320 L Deluxe",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-320-l-trend",
+            "name": "320 L Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-320-s-delux",
+            "name": "320 S Delux",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-320-s-trend",
+            "name": "320 S Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-330-l-trend",
+            "name": "330 L Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-330-s-trend",
+            "name": "330 S Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-340-l-trend",
+            "name": "340 L Trend",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-custom-340-s-trend",
+            "name": "340 S Trend",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "ford-transit-kombi",
+        "name": "Transit Kombi",
+        "engines": [
+          {
+            "slug": "ford-transit-kombi-300-s",
+            "name": "300 S",
+            "variants": []
+          },
+          {
+            "slug": "ford-transit-kombi-330-s",
+            "name": "330 S",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "gaz",
+    "name": "GAZ",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "gaz-gazelle",
+        "name": "Gazelle",
+        "engines": [
+          {
+            "slug": "gaz-gazelle-2-4-d",
+            "name": "2.4 D",
+            "variants": []
+          },
+          {
+            "slug": "gaz-gazelle-2705",
+            "name": "2705",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "gaz-next",
+        "name": "Next",
+        "engines": [],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "hyundai",
+    "name": "Hyundai",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "hyundai-h-1",
+        "name": "H 1",
+        "engines": [
+          {
+            "slug": "hyundai-h-1-2-5-crdi",
+            "name": "2.5 CRDi",
+            "variants": []
+          },
+          {
+            "slug": "hyundai-h-1-2-5-vgt",
+            "name": "2.5 VGT",
+            "variants": [
+              {
+                "slug": "hyundai-h-1-2-5-vgt-aj-select",
+                "name": "AJ-Select"
+              },
+              {
+                "slug": "hyundai-h-1-2-5-vgt-aj-style",
+                "name": "AJ-Style"
+              },
+              {
+                "slug": "hyundai-h-1-2-5-vgt-aj-team",
+                "name": "AJ-Team"
+              },
+              {
+                "slug": "hyundai-h-1-2-5-vgt-harmony-team",
+                "name": "Harmony Team"
+              },
+              {
+                "slug": "hyundai-h-1-2-5-vgt-panorama-team",
+                "name": "Panorama Team"
+              },
+              {
+                "slug": "hyundai-h-1-2-5-vgt-style",
+                "name": "Style"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "hyundai-h-100",
+        "name": "H 100",
+        "engines": [
+          {
+            "slug": "hyundai-h-100-2-5-d",
+            "name": "2.5 D",
+            "variants": [
+              {
+                "slug": "hyundai-h-100-2-5-d-camlivan_",
+                "name": "Camlıvan"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-dlx-camlivan_",
+                "name": "DLX Camlıvan"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-dlx-panelvan_",
+                "name": "DLX Panelvan"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-grand-salon",
+                "name": "Grand Salon"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-panelvan_",
+                "name": "Panelvan"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-std-camlivan_",
+                "name": "STD Camlıvan"
+              },
+              {
+                "slug": "hyundai-h-100-2-5-d-std-panelvan_",
+                "name": "STD Panelvan"
+              }
+            ]
+          },
+          {
+            "slug": "hyundai-h-100-2-5-t-c",
+            "name": "2.5 T/C",
+            "variants": []
+          },
+          {
+            "slug": "hyundai-h-100-2-5-tci-chassis",
+            "name": "2.5 TCI",
+            "variants": []
+          },
+          {
+            "slug": "hyundai-h-100-2-6-d",
+            "name": "2.6 D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "hyundai-h-350",
+        "name": "H 350",
+        "engines": [
+          {
+            "slug": "hyundai-h-350-2-5-crdi",
+            "name": "2.5 CRDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "hyundai-starex",
+        "name": "Starex",
+        "engines": [
+          {
+            "slug": "hyundai-starex-2-5-crdi",
+            "name": "2.5 CRDI",
+            "variants": [
+              {
+                "slug": "hyundai-starex-2-5-crdi-multiway",
+                "name": "Multiway"
+              },
+              {
+                "slug": "hyundai-starex-2-5-crdi-space",
+                "name": "Space"
+              }
+            ]
+          },
+          {
+            "slug": "hyundai-starex-2-5-tci",
+            "name": "2.5 TCI",
+            "variants": [
+              {
+                "slug": "hyundai-starex-2-5-tci-multiway",
+                "name": "Multiway"
+              },
+              {
+                "slug": "hyundai-starex-2-5-tci-panelvan",
+                "name": "Panelvan"
+              },
+              {
+                "slug": "hyundai-starex-2-5-tci-space",
+                "name": "Space"
+              }
+            ]
+          },
+          {
+            "slug": "hyundai-starex-2-5-td",
+            "name": "2.5 TD",
+            "variants": []
+          },
+          {
+            "slug": "hyundai-starex-camli-van",
+            "name": "Camlı Van",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "hyundai-staria",
+        "name": "Staria",
+        "engines": [
+          {
+            "slug": "hyundai-staria-1-6-t-gdi-elite",
+            "name": "1.6 T-GDI Elite",
+            "variants": []
+          },
+          {
+            "slug": "hyundai-staria-2-2-crdi",
+            "name": "2.2 CRDI",
+            "variants": [
+              {
+                "slug": "hyundai-staria-2-2-crdi-elite",
+                "name": "Elite"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "isuzu",
+    "name": "Isuzu",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "isuzu-wfr",
+        "name": "WFR",
+        "engines": [],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "iveco-otoyol",
+    "name": "Iveco - Otoyol",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "iveco-otoyol-35",
+        "name": "35",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "iveco-otoyol-70",
+        "name": "70",
+        "engines": [],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "kia",
+    "name": "Kia",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "kia-besta",
+        "name": "Besta",
+        "engines": [
+          {
+            "slug": "kia-besta-2-2-d",
+            "name": "2.2 D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "kia-pregio",
+        "name": "Pregio",
+        "engines": [
+          {
+            "slug": "kia-pregio-2-7-d",
+            "name": "2.7 D",
+            "variants": []
+          },
+          {
+            "slug": "kia-pregio-3-panel-van_",
+            "name": "3 Panel Van",
+            "variants": []
+          },
+          {
+            "slug": "kia-pregio-panel-van-dlx",
+            "name": "Panel Van DLX",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "man",
+    "name": "MAN",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "man-tge",
+        "name": "TGE",
+        "engines": [
+          {
+            "slug": "man-tge-3-180",
+            "name": "3.180",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "maxus",
+    "name": "Maxus",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "maxus-e-deliver",
+        "name": "e-Deliver",
+        "engines": [
+          {
+            "slug": "maxus-e-deliver-e-deliver-7",
+            "name": "e-Deliver 7",
+            "variants": []
+          },
+          {
+            "slug": "maxus-e-deliver-e-deliver-9",
+            "name": "e-Deliver 9",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "mazda",
+    "name": "Mazda",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "mazda-e-2200",
+        "name": "E 2200",
+        "engines": [
+          {
+            "slug": "mazda-e-2200-2-2-d",
+            "name": "2.2 D",
+            "variants": []
+          },
+          {
+            "slug": "mazda-e-2200-glass-van-hd",
+            "name": "Glass Van HD",
+            "variants": []
+          },
+          {
+            "slug": "mazda-e-2200-panel-van_",
+            "name": "Panel Van",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "mercedes-benz",
+    "name": "Mercedes - Benz",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "mercedes-benz-citan",
+        "name": "Citan",
+        "engines": [
+          {
+            "slug": "mercedes-benz-citan-109-cdi",
+            "name": "109 CDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "mercedes-benz-sprinter",
+        "name": "Sprinter",
+        "engines": [
+          {
+            "slug": "mercedes-benz-sprinter-208-d",
+            "name": "208 D",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-210-d",
+            "name": "210 D",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-211-cdi",
+            "name": "211 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-213-cdi",
+            "name": "213 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-215-cdi",
+            "name": "215 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-313-cdi",
+            "name": "313 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-314-cdi",
+            "name": "314 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-315-cdi",
+            "name": "315 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-316-cdi",
+            "name": "316 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-317-cdi",
+            "name": "317 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-413-cdi",
+            "name": "413 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-417-cdi",
+            "name": "417 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-515-cdi",
+            "name": "515 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-sprinter-517-cdi",
+            "name": "517 CDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "mercedes-benz-v-serisi",
+        "name": "V Serisi",
+        "engines": [
+          {
+            "slug": "mercedes-benz-v-serisi-v-114-cdi",
+            "name": "V 114 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-v-serisi-v-250",
+            "name": "V 250",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-v-serisi-v-300d",
+            "name": "V 300 D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "mercedes-benz-van_eo",
+        "name": "Vaneo",
+        "engines": [
+          {
+            "slug": "mercedes-benz-van_eo-160",
+            "name": "160",
+            "variants": [
+              {
+                "slug": "mercedes-benz-van_eo-160-ambiente",
+                "name": "Ambiente"
+              }
+            ]
+          },
+          {
+            "slug": "mercedes-benz-van_eo-170-cdi",
+            "name": "170 CDI",
+            "variants": [
+              {
+                "slug": "mercedes-benz-van_eo-170-cdi-ambiente",
+                "name": "Ambiente"
+              },
+              {
+                "slug": "mercedes-benz-van_eo-170-cdi-trend",
+                "name": "Trend"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "mercedes-benz-viano",
+        "name": "Viano",
+        "engines": [
+          {
+            "slug": "mercedes-benz-viano-2-0-cdi",
+            "name": "2.0 CDI",
+            "variants": [
+              {
+                "slug": "mercedes-benz-viano-2-0-cdi-trend",
+                "name": "Trend"
+              }
+            ]
+          },
+          {
+            "slug": "mercedes-benz-viano-2-2-cdi",
+            "name": "2.2 CDI",
+            "variants": [
+              {
+                "slug": "mercedes-benz-viano-2-2-cdi-ambiente",
+                "name": "Ambiente"
+              },
+              {
+                "slug": "mercedes-benz-viano-2-2-cdi-ambiente-activity",
+                "name": "Ambiente Activity"
+              },
+              {
+                "slug": "mercedes-benz-viano-2-2-cdi-trend",
+                "name": "Trend"
+              },
+              {
+                "slug": "mercedes-benz-viano-2-2-cdi-trend-activity",
+                "name": "Trend Activity"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "mercedes-benz-vito",
+        "name": "Vito",
+        "engines": [
+          {
+            "slug": "mercedes-benz-vito-108-cdi",
+            "name": "108 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-109-cdi",
+            "name": "109 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-110-cdi",
+            "name": "110 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-110-d",
+            "name": "110 D",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-111-cdi",
+            "name": "111 CDI",
+            "variants": [
+              {
+                "slug": "mercedes-benz-vito-111-cdi-camlivan_",
+                "name": "Camlıvan"
+              },
+              {
+                "slug": "mercedes-benz-vito-111-cdi-kombi",
+                "name": "Kombi"
+              },
+              {
+                "slug": "mercedes-benz-vito-111-cdi-mixto",
+                "name": "Mixto"
+              },
+              {
+                "slug": "mercedes-benz-vito-111-cdi-panelvan_",
+                "name": "Panelvan"
+              },
+              {
+                "slug": "mercedes-benz-vito-111-cdi-tourer",
+                "name": "Tourer"
+              }
+            ]
+          },
+          {
+            "slug": "mercedes-benz-vito-112-cdi",
+            "name": "112 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-113",
+            "name": "113",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-113-cdi",
+            "name": "113 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-114",
+            "name": "114",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-114-bluetec",
+            "name": "114 BlueTec",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-114-cdi",
+            "name": "114 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-115-cdi",
+            "name": "115 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-116-bluetec",
+            "name": "116 BlueTec",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-116-cdi",
+            "name": "116 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-119-bluetec",
+            "name": "119 BlueTec",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-119-cdi",
+            "name": "119 CDI",
+            "variants": []
+          },
+          {
+            "slug": "mercedes-benz-vito-124-cdi",
+            "name": "124 CDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "mitsubishi",
+    "name": "Mitsubishi",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "mitsubishi-l-300",
+        "name": "L 300",
+        "engines": [
+          {
+            "slug": "mitsubishi-l-300-camli-van_",
+            "name": "Camlı Van",
+            "variants": []
+          },
+          {
+            "slug": "mitsubishi-l-300-city-van_",
+            "name": "City van",
+            "variants": []
+          },
+          {
+            "slug": "mitsubishi-l-300-panel-van_",
+            "name": "Panel van",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "nissan",
+    "name": "Nissan",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "nissan-serena",
+        "name": "Serena",
+        "engines": [
+          {
+            "slug": "nissan-serena-2-0-slx",
+            "name": "2.0 SLX",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "nissan-townstar",
+        "name": "Townstar",
+        "engines": [
+          {
+            "slug": "nissan-townstar-1-3-tce",
+            "name": "1.3 TCe",
+            "variants": [
+              {
+                "slug": "nissan-townstar-1-3-tce-visia",
+                "name": "Visia"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "nissan-townstar-ev",
+        "name": "Townstar EV",
+        "engines": [
+          {
+            "slug": "nissan-townstar-ev-platinium",
+            "name": "Platinium",
+            "variants": []
+          },
+          {
+            "slug": "nissan-townstar-ev-tekna",
+            "name": "Tekna",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "nissan-van_ette",
+        "name": "Vanette",
+        "engines": [
+          {
+            "slug": "nissan-van_ette-2-3-cargo",
+            "name": "2.3 Cargo",
+            "variants": []
+          },
+          {
+            "slug": "nissan-van_ette-2-3-d",
+            "name": "2.3 D",
+            "variants": []
+          },
+          {
+            "slug": "nissan-van_ette-cargo-kombi",
+            "name": "Cargo Kombi",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "opel",
+    "name": "Opel",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "opel-combo",
+        "name": "Combo",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "opel-combo-elektrik",
+        "name": "Combo Elektrik",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "opel-combo-life",
+        "name": "Combo Life",
+        "engines": [
+          {
+            "slug": "opel-combo-life-1-5-d",
+            "name": "1.5 D",
+            "variants": [
+              {
+                "slug": "opel-combo-life-1-5-d-edition",
+                "name": "Edition"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "opel-corsa-van_",
+        "name": "Corsa Van",
+        "engines": [
+          {
+            "slug": "opel-corsa-van_-1-3-cdti",
+            "name": "1.3 CDTI",
+            "variants": []
+          },
+          {
+            "slug": "opel-corsa-van_-1-7-dti",
+            "name": "1.7 DTI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "opel-movan_o",
+        "name": "Movano",
+        "engines": [
+          {
+            "slug": "opel-movan_o-2-2",
+            "name": "2.2",
+            "variants": []
+          },
+          {
+            "slug": "opel-movan_o-2-5-cdti",
+            "name": "2.5 CDTI",
+            "variants": []
+          },
+          {
+            "slug": "opel-movan_o-2-5-d",
+            "name": "2.5 D",
+            "variants": []
+          },
+          {
+            "slug": "opel-movan_o-2-8-dti",
+            "name": "2.8 DTI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "opel-vivaro",
+        "name": "Vivaro",
+        "engines": [
+          {
+            "slug": "opel-vivaro-1-5-d",
+            "name": "1.5 D",
+            "variants": [
+              {
+                "slug": "opel-vivaro-1-5-d-ultimate",
+                "name": "Ultimate"
+              }
+            ]
+          },
+          {
+            "slug": "opel-vivaro-1-9-dti-l1h1",
+            "name": "1.9 DTI",
+            "variants": []
+          },
+          {
+            "slug": "opel-vivaro-van_-1-9-dti-combi",
+            "name": "1.9 DTI Combi",
+            "variants": []
+          },
+          {
+            "slug": "opel-vivaro-van_-2-0-cdti-e",
+            "name": "2.0 CDTI",
+            "variants": []
+          },
+          {
+            "slug": "opel-vivaro-2-0-ultimate-xl",
+            "name": "2.0 Ultimate XL",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "opel-zafira-life",
+        "name": "Zafira Life",
+        "engines": [
+          {
+            "slug": "opel-zafira-life-2-0-d",
+            "name": "2.0 D",
+            "variants": [
+              {
+                "slug": "opel-zafira-life-2-0-d-elegance-xl",
+                "name": "Elegance XL"
+              },
+              {
+                "slug": "opel-zafira-life-2-0-d-ultimate-xl",
+                "name": "Ultimate XL"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "opel-zafira-e",
+        "name": "Zafira-e",
+        "engines": [
+          {
+            "slug": "opel-zafira-e-business",
+            "name": "Business",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "peugeot",
+    "name": "Peugeot",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "peugeot-206-van_",
+        "name": "206 Van",
+        "engines": [
+          {
+            "slug": "peugeot-206-van_-1-4-hdi",
+            "name": "1.4 HDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-bipper",
+        "name": "Bipper",
+        "engines": [
+          {
+            "slug": "peugeot-bipper-1-3-hdi",
+            "name": "1.3 HDI",
+            "variants": [
+              {
+                "slug": "peugeot-bipper-1-3-hdi-1-3-hdi",
+                "name": "1.3 HDI"
+              },
+              {
+                "slug": "peugeot-bipper-1-3-hdi-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "peugeot-bipper-1-3-hdi-comfort-plus",
+                "name": "Comfort Plus"
+              },
+              {
+                "slug": "peugeot-bipper-1-3-hdi-style",
+                "name": "Style"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-bipper-1-4",
+            "name": "1.4",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-bipper-1-4-hdi",
+            "name": "1.4 HDI",
+            "variants": [
+              {
+                "slug": "peugeot-bipper-1-4-hdi-1-4-hdi",
+                "name": "1.4 HDI"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-aktif",
+                "name": "Aktif"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-comfort-pack",
+                "name": "Comfort Pack"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-comfort-plus",
+                "name": "Comfort Plus"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-connect-pack",
+                "name": "Connect Pack"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-dinamik",
+                "name": "Dinamik"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-dinamik-plus",
+                "name": "Dinamik Plus"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-elegance",
+                "name": "Elegance"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-family",
+                "name": "Family"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-outdoor",
+                "name": "Outdoor"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-outdoor-plus",
+                "name": "Outdoor Plus"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-outdoor-style",
+                "name": "Outdoor Style"
+              },
+              {
+                "slug": "peugeot-bipper-1-4-hdi-sportif",
+                "name": "Sportif"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-boxer",
+        "name": "Boxer",
+        "engines": [
+          {
+            "slug": "peugeot-boxer-2-0-bluehdı-17m3",
+            "name": "2.0 BlueHDI (17M3)",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-270-c",
+            "name": "270 C",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-290-c",
+            "name": "290 C",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-320-m",
+            "name": "320 M",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-330-c",
+            "name": "330 C",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-330-hdi",
+            "name": "330 HDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-333-hdi",
+            "name": "333 HDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-335-hdi",
+            "name": "335 HDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-350-lh",
+            "name": "350 LH",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-350-lh-td",
+            "name": "350 LH TD",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-boxer-435-hdi",
+            "name": "435 HDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-expert",
+        "name": "Expert",
+        "engines": [
+          {
+            "slug": "peugeot-expert-1-5",
+            "name": "1.5",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-1-5-bluehdi",
+            "name": "1.5 BlueHDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-1-6-bluehdi",
+            "name": "1.6 BlueHDi",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-1-6-hdi",
+            "name": "1.6 HDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-1-9-d",
+            "name": "1.9 D",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-2-0-bluehdi",
+            "name": "2.0 BlueHDI",
+            "variants": []
+          },
+          {
+            "slug": "peugeot-expert-2-0-hdi",
+            "name": "2.0 HDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-expert-traveller",
+        "name": "Expert Traveller",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-partner",
+        "name": "Partner",
+        "engines": [
+          {
+            "slug": "peugeot-partner-1-4",
+            "name": "1.4",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-4-break-pack",
+                "name": "Break Pack"
+              },
+              {
+                "slug": "peugeot-partner-1-4-combi",
+                "name": "Combi"
+              },
+              {
+                "slug": "peugeot-partner-1-4-xr",
+                "name": "XR"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-5-bluehdi",
+            "name": "1.5 BlueHDI",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-5-bluehdi-comfort",
+                "name": "Comfort"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-6",
+            "name": "1.6",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-6-symbole",
+                "name": "Symbole"
+              },
+              {
+                "slug": "peugeot-partner-1-6-xt",
+                "name": "XT"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-6-bluehdi",
+            "name": "1.6 BlueHDI",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-6-bluehdi-active",
+                "name": "Active"
+              },
+              {
+                "slug": "peugeot-partner-1-6-bluehdi-allure",
+                "name": "Allure"
+              },
+              {
+                "slug": "peugeot-partner-1-6-bluehdi-comfort-pack",
+                "name": "Comfort Pack"
+              },
+              {
+                "slug": "peugeot-partner-1-6-bluehdi-zenith",
+                "name": "Zenith"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-6-hdi",
+            "name": "1.6 HDI",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-6-hdi-1-6-hdi",
+                "name": "1.6 HDI"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-access",
+                "name": "Access"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-active",
+                "name": "Active"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-adventure",
+                "name": "Adventure"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-allure",
+                "name": "Allure"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-comfort-pack",
+                "name": "Comfort Pack"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-outdoor",
+                "name": "Outdoor"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-premium",
+                "name": "Premium"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-premium-pack",
+                "name": "Premium Pack"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-premium-style",
+                "name": "Premium Style"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-premium-zenith",
+                "name": "Premium Zenith"
+              },
+              {
+                "slug": "peugeot-partner-1-6-hdi-zenith",
+                "name": "Zenith"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-9",
+            "name": "1.9",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-9-1-9",
+                "name": "1.9"
+              },
+              {
+                "slug": "peugeot-partner-1-9-comfort",
+                "name": "Comfort"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-1-9-d",
+            "name": "1.9 D",
+            "variants": [
+              {
+                "slug": "peugeot-partner-1-9-d-1-9-d",
+                "name": "1.9 D"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-combi",
+                "name": "Combi"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-combispace",
+                "name": "Combispace"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-profil",
+                "name": "Profil"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-riviera",
+                "name": "Riviera"
+              },
+              {
+                "slug": "peugeot-partner-1-9-d-weekender",
+                "name": "Weekender"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-partner-2-0-hdi",
+            "name": "2.0 HDI",
+            "variants": [
+              {
+                "slug": "peugeot-partner-2-0-hdi-2-0-hdi",
+                "name": "2.0 HDI"
+              },
+              {
+                "slug": "peugeot-partner-2-0-hdi-adventure",
+                "name": "Adventure"
+              },
+              {
+                "slug": "peugeot-partner-2-0-hdi-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "peugeot-partner-2-0-hdi-kombi",
+                "name": "Kombi"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "peugeot-rifter",
+        "name": "Rifter",
+        "engines": [
+          {
+            "slug": "peugeot-rifter-1-5-bluehdi",
+            "name": "1.5 BlueHDI",
+            "variants": [
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-active",
+                "name": "Active"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-active-comfort",
+                "name": "Active Comfort"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-active-pro",
+                "name": "Active Pro"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-active-skypack",
+                "name": "Active Skypack"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-allure",
+                "name": "Allure"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-gt",
+                "name": "GT"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-gt-line",
+                "name": "GT Line"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-plus-allure",
+                "name": "Plus Allure"
+              },
+              {
+                "slug": "peugeot-rifter-1-5-bluehdi-plus-gt-line",
+                "name": "Plus GT Line"
+              }
+            ]
+          },
+          {
+            "slug": "peugeot-rifter-1-6-bluehdi",
+            "name": "1.6 BlueHDI",
+            "variants": [
+              {
+                "slug": "peugeot-rifter-1-6-bluehdi-active-comfort",
+                "name": "Active Comfort"
+              },
+              {
+                "slug": "peugeot-rifter-1-6-bluehdi-active-stil",
+                "name": "Active Stil"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "piaggio",
+    "name": "Piaggio",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "piaggio-porter",
+        "name": "Porter",
+        "engines": [
+          {
+            "slug": "piaggio-porter-1-3",
+            "name": "1.3",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "pontiac",
+    "name": "Pontiac",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "pontiac-trans-sport",
+        "name": "Trans Sport",
+        "engines": [
+          {
+            "slug": "pontiac-trans-sport-2-3",
+            "name": "2.3",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "renault",
+    "name": "Renault",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "renault-express",
+        "name": "Express",
+        "engines": [
+          {
+            "slug": "renault-express-1-4",
+            "name": "1.4",
+            "variants": []
+          },
+          {
+            "slug": "renault-express-1.5-bluedci",
+            "name": "1.5 BlueDCI",
+            "variants": [
+              {
+                "slug": "renault-express-1.5-bluedci-joy",
+                "name": "Joy"
+              },
+              {
+                "slug": "renault-express-1.5-bluedci-touch",
+                "name": "Touch"
+              }
+            ]
+          },
+          {
+            "slug": "renault-express-1-9-d",
+            "name": "1.9 D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-express-combi",
+        "name": "Express Combi",
+        "engines": [
+          {
+            "slug": "renault-express-combi-1-5-bluedci",
+            "name": "1.5 BlueDCI",
+            "variants": [
+              {
+                "slug": "renault-express-combi-1-5-bluedci-joy",
+                "name": "Joy"
+              },
+              {
+                "slug": "renault-express-combi-1-5-bluedci-touch",
+                "name": "Touch"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-express-van_",
+        "name": "Express Van",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "renault-kangoo",
+        "name": "Kangoo",
+        "engines": [
+          {
+            "slug": "renault-kangoo-1-4",
+            "name": "1.4",
+            "variants": [
+              {
+                "slug": "renault-kangoo-1-4-pampa",
+                "name": "Pampa"
+              },
+              {
+                "slug": "renault-kangoo-1-4-rl",
+                "name": "RL"
+              },
+              {
+                "slug": "renault-kangoo-1-4-rn",
+                "name": "RN"
+              },
+              {
+                "slug": "renault-kangoo-1-4-rna",
+                "name": "RNA"
+              },
+              {
+                "slug": "renault-kangoo-1-4-rt",
+                "name": "RT"
+              },
+              {
+                "slug": "renault-kangoo-1-4-rte",
+                "name": "RTE"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-1-5",
+            "name": "1.5",
+            "variants": [
+              {
+                "slug": "renault-kangoo-1-5-bluedci-l-2-equilibre",
+                "name": "BlueDCI L2 Equilibre"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-1-5-dci",
+            "name": "1.5 dCi",
+            "variants": [
+              {
+                "slug": "renault-kangoo-1-5-dci-authentique",
+                "name": "Authentique"
+              },
+              {
+                "slug": "renault-kangoo-1-5-dci-exclusive",
+                "name": "Exclusive"
+              },
+              {
+                "slug": "renault-kangoo-1-5-dci-expression",
+                "name": "Expression"
+              },
+              {
+                "slug": "renault-kangoo-1-5-dci-joy",
+                "name": "Joy"
+              },
+              {
+                "slug": "renault-kangoo-1-5-dci-privilege",
+                "name": "Privilege"
+              },
+              {
+                "slug": "renault-kangoo-1-5-dci-touch",
+                "name": "Touch"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-1-9-d",
+            "name": "1.9 D",
+            "variants": [
+              {
+                "slug": "renault-kangoo-1-9-d-1-9-d",
+                "name": "1.9 D"
+              },
+              {
+                "slug": "renault-kangoo-1-9-d-rn",
+                "name": "RN"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-1-9-dti-rxe",
+            "name": "1.9 DTI RXE",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-kangoo-e-tech",
+        "name": "Kangoo E-tech",
+        "engines": [
+          {
+            "slug": "renault-kangoo-e-tech-iconic",
+            "name": "Iconic",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-kangoo-express",
+        "name": "Kangoo Express",
+        "engines": [
+          {
+            "slug": "renault-kangoo-express-1-4",
+            "name": "1.4",
+            "variants": [
+              {
+                "slug": "renault-kangoo-express-1-4-1-4",
+                "name": "1.4"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-express-1-5-dci",
+            "name": "1.5 dCi",
+            "variants": [
+              {
+                "slug": "renault-kangoo-express-1-5-dci-1-5-dci",
+                "name": "1.5 dCi"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-comfort",
+                "name": "Comfort"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-confort",
+                "name": "Confort"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-expression",
+                "name": "Expression"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-grand-confort",
+                "name": "Grand Confort"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-express-1-5-dci-maxi",
+            "name": "1.5 dCi Maxi",
+            "variants": [
+              {
+                "slug": "renault-kangoo-express-1-5-dci-maxi-1-5-dci-maxi",
+                "name": "1.5 dCi Maxi"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-maxi-frigo",
+                "name": "Frigo"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-maxi-grand-confort",
+                "name": "Grand Confort"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-maxi-joy",
+                "name": "Joy"
+              },
+              {
+                "slug": "renault-kangoo-express-1-5-dci-maxi-touch",
+                "name": "Touch"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-express-1-9-d",
+            "name": "1.9 D",
+            "variants": []
+          },
+          {
+            "slug": "renault-kangoo-express-1-9-dci",
+            "name": "1.9 dCi",
+            "variants": [
+              {
+                "slug": "renault-kangoo-express-1-9-dci-confort",
+                "name": "Confort"
+              },
+              {
+                "slug": "renault-kangoo-express-1-9-dci-grand-confort",
+                "name": "Grand Confort"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-express-1-9-dti",
+            "name": "1.9 DTi",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-kangoo-multix",
+        "name": "Kangoo Multix",
+        "engines": [
+          {
+            "slug": "renault-kangoo-multix-1-3-tce",
+            "name": "1.3 TCe",
+            "variants": [
+              {
+                "slug": "renault-kangoo-multix-1-3-tce-iconic",
+                "name": "Iconic"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-3-tce-techno",
+                "name": "Techno"
+              }
+            ]
+          },
+          {
+            "slug": "renault-kangoo-multix-1-4-authentique",
+            "name": "1.4 Authentique",
+            "variants": []
+          },
+          {
+            "slug": "renault-kangoo-multix-1-5-bluedcı-ıconıc",
+            "name": "1.5 BluedCi Iconic",
+            "variants": []
+          },
+          {
+            "slug": "renault-kangoo-multix-1-5-bluedci-touch",
+            "name": "1.5 BluedCi Touch",
+            "variants": []
+          },
+          {
+            "slug": "renault-kangoo-multix-1-5-dci",
+            "name": "1.5 dCi",
+            "variants": [
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-authentique",
+                "name": "Authentique"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-chromeline-edition",
+                "name": "Chromeline Edition"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-classic",
+                "name": "Classic"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-exclusive",
+                "name": "Exclusive"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-expression",
+                "name": "Expression"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-expression-chromeline",
+                "name": "Expression Chromeline"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-extreme",
+                "name": "Extreme"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-extreme-edition",
+                "name": "Extreme Edition"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-joy",
+                "name": "Joy"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-pampa",
+                "name": "Pampa"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-privilege",
+                "name": "Privilege"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-privilege-chromeline",
+                "name": "Privilege Chromeline"
+              },
+              {
+                "slug": "renault-kangoo-multix-1-5-dci-touch",
+                "name": "Touch"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-master",
+        "name": "Master",
+        "engines": [
+          {
+            "slug": "renault-master-2-3-dci",
+            "name": "2.3 dCi",
+            "variants": [
+              {
+                "slug": "renault-master-2-3-dci-11-m3",
+                "name": "11 m3"
+              },
+              {
+                "slug": "renault-master-2-3-dci-13-m3",
+                "name": "13 m3"
+              },
+              {
+                "slug": "renault-master-2-3-dci-15-m3",
+                "name": "15 m3"
+              },
+              {
+                "slug": "renault-master-2-3-dci-17-m3",
+                "name": "17 m3"
+              }
+            ]
+          },
+          {
+            "slug": "renault-master-2-5-d",
+            "name": "2.5 D",
+            "variants": []
+          },
+          {
+            "slug": "renault-master-2-5-dci",
+            "name": "2.5 dCi",
+            "variants": [
+              {
+                "slug": "renault-master-2-5-dci-10-m3",
+                "name": "10 m3"
+              },
+              {
+                "slug": "renault-master-2-5-dci-10-8-m3",
+                "name": "10.8 m3"
+              },
+              {
+                "slug": "renault-master-2-5-dci-12-m3",
+                "name": "12 m3"
+              },
+              {
+                "slug": "renault-master-2-5-dci-12-6-m3",
+                "name": "12.6 m3"
+              },
+              {
+                "slug": "renault-master-2-5-dci-2-5-dci",
+                "name": "2.5 dCi"
+              },
+              {
+                "slug": "renault-master-2-5-dci-8-m3",
+                "name": "8m3"
+              },
+              {
+                "slug": "renault-master-2-5-dci-9-1-m3",
+                "name": "9.1 m3"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "renault-trafic",
+        "name": "Trafic",
+        "engines": [],
+        "variants": []
+      },
+      {
+        "slug": "renault-trafic-multix",
+        "name": "Trafic Multix",
+        "engines": [
+          {
+            "slug": "renault-trafic-multix-1-6-dci",
+            "name": "1.6 dCi",
+            "variants": []
+          },
+          {
+            "slug": "renault-trafic-multix-1-9-dci",
+            "name": "1.9 dCi",
+            "variants": [
+              {
+                "slug": "renault-trafic-multix-1-9-dci-1-9-dci",
+                "name": "1.9 dCi"
+              },
+              {
+                "slug": "renault-trafic-multix-1-9-dci-confort",
+                "name": "Confort"
+              },
+              {
+                "slug": "renault-trafic-multix-1-9-dci-grand-confort",
+                "name": "Grand Confort"
+              }
+            ]
+          },
+          {
+            "slug": "renault-trafic-multix-2-0-dci",
+            "name": "2.0 dCi",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "seat",
+    "name": "Seat",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "seat-inca",
+        "name": "Inca",
+        "engines": [
+          {
+            "slug": "seat-inca-1-9-d-cargo",
+            "name": "1.9 D Cargo",
+            "variants": []
+          },
+          {
+            "slug": "seat-inca-1-9-d-cl-cargo",
+            "name": "1.9 D CL Cargo",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "skoda",
+    "name": "Skoda",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "skoda-fabia-praktik",
+        "name": "Fabia Praktik",
+        "engines": [
+          {
+            "slug": "skoda-fabia-praktik-1-2",
+            "name": "1.2",
+            "variants": []
+          },
+          {
+            "slug": "skoda-fabia-praktik-1-4-tdi",
+            "name": "1.4 TDi",
+            "variants": []
+          },
+          {
+            "slug": "skoda-fabia-praktik-1-9-sdi",
+            "name": "1.9 SDi",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "skoda-forman-praktik",
+        "name": "Forman Praktik",
+        "engines": [],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "suzuki",
+    "name": "Suzuki",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "suzuki-carry",
+        "name": "Carry",
+        "engines": [
+          {
+            "slug": "suzuki-carry-blind-van_",
+            "name": "Blind Van",
+            "variants": []
+          },
+          {
+            "slug": "suzuki-carry-glass-van_",
+            "name": "Glass Van",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "temsa",
+    "name": "Temsa",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "temsa-maxus",
+        "name": "Maxus",
+        "engines": [
+          {
+            "slug": "temsa-maxus-panelvan_",
+            "name": "Panelvan",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "tenax",
+    "name": "Tenax",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "tenax-v35",
+        "name": "V35",
+        "engines": [],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "toyota",
+    "name": "Toyota",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "toyota-hi-ace",
+        "name": "Hi-Ace",
+        "engines": [
+          {
+            "slug": "toyota-hi-ace-117-l",
+            "name": "117 L",
+            "variants": []
+          },
+          {
+            "slug": "toyota-hi-ace-2-4-d",
+            "name": "2.4 D",
+            "variants": []
+          },
+          {
+            "slug": "toyota-hi-ace-2-4-ld",
+            "name": "2.4 LD",
+            "variants": []
+          },
+          {
+            "slug": "toyota-hi-ace-95-l",
+            "name": "95 L",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "toyota-proace-city",
+        "name": "Proace City",
+        "engines": [
+          {
+            "slug": "toyota-proace-city-1-5-d",
+            "name": "1.5 D",
+            "variants": [
+              {
+                "slug": "toyota-proace-city-1-5-d-dream",
+                "name": "Dream"
+              },
+              {
+                "slug": "toyota-proace-city-1-5-d-flame-x-pack",
+                "name": "Flame X-Pack"
+              },
+              {
+                "slug": "toyota-proace-city-1-5-d-passion-x-pack",
+                "name": "Passion X-Pack"
+              },
+              {
+                "slug": "toyota-proace-city-1-5-d-vision",
+                "name": "Vision"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "toyota-proace-city-cargo",
+        "name": "Proace City Cargo",
+        "engines": [
+          {
+            "slug": "toyota-proace-city-cargo-1-5-d",
+            "name": "1.5 D",
+            "variants": [
+              {
+                "slug": "toyota-proace-city-cargo-1-5-d-dream",
+                "name": "Dream"
+              },
+              {
+                "slug": "toyota-proace-city-cargo-1-5-d-vision",
+                "name": "Vision"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "toyota-proace-max",
+        "name": "Proace Max",
+        "engines": [
+          {
+            "slug": "toyota-proace-max-2-2-d",
+            "name": "2.2 D",
+            "variants": []
+          }
+        ],
+        "variants": []
+      }
+    ]
+  },
+  {
+    "slug": "volkswagen",
+    "name": "Volkswagen",
+    "category": "minivan-panelvan",
+    "series": [
+      {
+        "slug": "volkswagen-caddy",
+        "name": "Caddy",
+        "engines": [
+          {
+            "slug": "volkswagen-caddy-1-0-tsi",
+            "name": "1.0 TSI",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-4-tsi-comfortline",
+            "name": "1.4 TSI Comfortline",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-6",
+            "name": "1.6",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-6-tdi",
+            "name": "1.6 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caddy-1-6-tdi-comfortline",
+                "name": "Comfortline"
+              },
+              {
+                "slug": "volkswagen-caddy-1-6-tdi-cross",
+                "name": "Cross"
+              },
+              {
+                "slug": "volkswagen-caddy-1-6-tdi-team",
+                "name": "Team"
+              },
+              {
+                "slug": "volkswagen-caddy-1-6-tdi-trendline",
+                "name": "Trendline"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-caddy-1-6-tdi-maxi-van_",
+            "name": "1.6 TDI Maxi Van",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-9-d",
+            "name": "1.9 D",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-9-sdi",
+            "name": "1.9 SDI",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-9-sdi-premium",
+            "name": "1.9 SDI Premium",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-1-9-tdi",
+            "name": "1.9 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-1-9-tdi",
+                "name": "1.9 TDI"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-d-line",
+                "name": "D Line"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-kombi",
+                "name": "Kombi"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-kombi-life",
+                "name": "Kombi Life"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-kombi-team",
+                "name": "Kombi Team"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-life-plus",
+                "name": "Life Plus"
+              },
+              {
+                "slug": "volkswagen-caddy-1-9-tdi-maxi-kombi",
+                "name": "Maxi Kombi"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-caddy-1-9-tdi-maxi-van_",
+            "name": "1.9 TDI Maxi Van",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-2-0-sdi-kombi",
+            "name": "2.0 SDi Kombi",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-2-0-sdi-panel-van_",
+            "name": "2.0 SDi Panel Van",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-caddy-2-0-tdi",
+            "name": "2.0 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-2-0-tdi",
+                "name": "2.0 TDI"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-alltrack",
+                "name": "Alltrack"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-cargo",
+                "name": "Cargo"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-cargo-maxi",
+                "name": "Cargo Maxi"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-comfortline",
+                "name": "Comfortline"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-exclusive",
+                "name": "Exclusive"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-impression",
+                "name": "Impression"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-life",
+                "name": "Life"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-sportline",
+                "name": "Sportline"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-style",
+                "name": "Style"
+              },
+              {
+                "slug": "volkswagen-caddy-2-0-tdi-trendline",
+                "name": "Trendline"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-caddy-2-0-tdi-maxi-van_",
+            "name": "2.0 TDI Maxi Van",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-caravelle",
+        "name": "Caravelle",
+        "engines": [
+          {
+            "slug": "volkswagen-caravelle-1-9-tdi",
+            "name": "1.9 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caravelle-1-9-tdi-trendline",
+                "name": "Trendline"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-caravelle-2-0-tdi",
+            "name": "2.0 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-bmt-comfortline",
+                "name": "BMT Comfortline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-bmt-trendline",
+                "name": "BMT Trendline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-comfortline",
+                "name": "Comfortline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-highline",
+                "name": "Highline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-life",
+                "name": "Life"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-scr-bmt-comfortline",
+                "name": "SCR BMT Comfortline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-scr-bmt-highline",
+                "name": "SCR BMT Highline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-scr-bmt-team",
+                "name": "SCR BMT Team"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-scr-bmt-trendline",
+                "name": "SCR BMT Trendline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-0-tdi-trendline",
+                "name": "Trendline"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-caravelle-2-5-tdi",
+            "name": "2.5 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-caravelle-2-5-tdi-2-5-tdi",
+                "name": "2.5 TDI"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-5-tdi-comfortline",
+                "name": "Comfortline"
+              },
+              {
+                "slug": "volkswagen-caravelle-2-5-tdi-trendline",
+                "name": "Trendline"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-crafter",
+        "name": "Crafter",
+        "engines": [
+          {
+            "slug": "volkswagen-crafter-2-0-tdi-panelvan_",
+            "name": "2.0 TDI Panelvan",
+            "variants": [
+              {
+                "slug": "volkswagen-crafter-2-0-tdi-panelvan_-midline",
+                "name": "Midline"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-crafter-2-5-tdi-panelvan_",
+            "name": "2.5 TDI Panelvan",
+            "variants": [
+              {
+                "slug": "volkswagen-crafter-2-5-tdi-panelvan_-konfor",
+                "name": "Konfor"
+              },
+              {
+                "slug": "volkswagen-crafter-2-5-tdi-panelvan_-midline",
+                "name": "Midline"
+              },
+              {
+                "slug": "volkswagen-crafter-2-5-tdi-panelvan_-trend",
+                "name": "Trend"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-id-buzz",
+        "name": "ID. Buzz",
+        "engines": [
+          {
+            "slug": "volkswagen-id-buzz-pro",
+            "name": "Pro",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-lt",
+        "name": "LT",
+        "engines": [
+          {
+            "slug": "volkswagen-lt-35-tdi",
+            "name": "35 TDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-multivan_",
+        "name": "MultiVan",
+        "engines": [
+          {
+            "slug": "volkswagen-multivan_-1-9-tdi",
+            "name": "1.9 TDI",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-multivan_-2-5-tdi",
+            "name": "2.5 TDI",
+            "variants": []
+          }
+        ],
+        "variants": []
+      },
+      {
+        "slug": "volkswagen-transporter",
+        "name": "Transporter",
+        "engines": [
+          {
+            "slug": "volkswagen-transporter-1-9-tdi",
+            "name": "1.9 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-transporter-1-9-tdi-camli-van_",
+                "name": "Camlı Van"
+              },
+              {
+                "slug": "volkswagen-transporter-1-9-tdi-camli-van_-sportline",
+                "name": "Camlı Van Sportline"
+              },
+              {
+                "slug": "volkswagen-transporter-1-9-tdi-city-van_",
+                "name": "City Van"
+              },
+              {
+                "slug": "volkswagen-transporter-1-9-tdi-panel-van_",
+                "name": "Panel Van"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-transporter-2-0-bitdi",
+            "name": "2.0 BITDI",
+            "variants": [
+              {
+                "slug": "volkswagen-transporter-2-0-bitdi-camli-van_",
+                "name": "Camlı Van"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-bitdi-city-van_",
+                "name": "City Van"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-transporter-2-0-tdi",
+            "name": "2.0 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-camli-van_",
+                "name": "Camlı Van"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-camli-van_-comfortline",
+                "name": "Camlı Van Comfortline"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-city-van_",
+                "name": "City Van"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-city-van_-comfortline",
+                "name": "City Van Comfortline"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-kombi",
+                "name": "Kombi"
+              },
+              {
+                "slug": "volkswagen-transporter-2-0-tdi-panelvan_",
+                "name": "Panelvan"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-transporter-2-4",
+            "name": "2.4",
+            "variants": []
+          },
+          {
+            "slug": "volkswagen-transporter-2-5-tdi",
+            "name": "2.5 TDI",
+            "variants": [
+              {
+                "slug": "volkswagen-transporter-2-5-tdi-camli-van_",
+                "name": "Camlı Van"
+              },
+              {
+                "slug": "volkswagen-transporter-2-5-tdi-camli-van-highline",
+                "name": "Camlı Van Highline"
+              },
+              {
+                "slug": "volkswagen-transporter-2-5-tdi-camli-van_-sportline",
+                "name": "Camlı Van Sportline"
+              },
+              {
+                "slug": "volkswagen-transporter-2-5-tdi-city-van_",
+                "name": "City Van"
+              },
+              {
+                "slug": "volkswagen-transporter-2-5-tdi-panel-van_",
+                "name": "Panel Van"
+              }
+            ]
+          },
+          {
+            "slug": "volkswagen-transporter-3-2",
+            "name": "3.2",
+            "variants": [
+              {
+                "slug": "volkswagen-transporter-3-2-camli-van-business",
+                "name": "Camlı Van Business"
+              }
+            ]
+          }
+        ],
+        "variants": []
+      }
+    ]
+  }
+]

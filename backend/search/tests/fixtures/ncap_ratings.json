@@ -1,0 +1,6428 @@
+[
+  {
+    "model": "search.ncaprating",
+    "pk": 1,
+    "fields": {
+      "year": "2016",
+      "make_model": "Toyota Prius",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "82%",
+      "pedestrian": "77%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 2,
+    "fields": {
+      "year": "2016",
+      "make_model": "Mercedes-Benz E-Class/CLS-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "90%",
+      "pedestrian": "77%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 3,
+    "fields": {
+      "year": "2016",
+      "make_model": "Volkswagen Tiguan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "84%",
+      "pedestrian": "72%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 4,
+    "fields": {
+      "year": "2016",
+      "make_model": "Hyundai Ioniq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "80%",
+      "pedestrian": "70%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 5,
+    "fields": {
+      "year": "2016",
+      "make_model": "Subaru Levorg",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "83%",
+      "pedestrian": "75%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 6,
+    "fields": {
+      "year": "2016",
+      "make_model": "Alfa Romeo Giulia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "98%",
+      "child_occupant": "81%",
+      "pedestrian": "69%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 7,
+    "fields": {
+      "year": "2016",
+      "make_model": "SEAT Ateca",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "84%",
+      "pedestrian": "71%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 8,
+    "fields": {
+      "year": "2016",
+      "make_model": "Ford Edge",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "76%",
+      "pedestrian": "67%",
+      "safety_assist": "89%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 9,
+    "fields": {
+      "year": "2016",
+      "make_model": "Audi Q2",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "86%",
+      "pedestrian": "70%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 10,
+    "fields": {
+      "year": "2016",
+      "make_model": "Renault Scenic",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "82%",
+      "pedestrian": "67%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 11,
+    "fields": {
+      "year": "2016",
+      "make_model": "Peugeot 3008/5008",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "85%",
+      "pedestrian": "67%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 12,
+    "fields": {
+      "year": "2016",
+      "make_model": "Kia Niro",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "83%",
+      "child_occupant": "80%",
+      "pedestrian": "57%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 13,
+    "fields": {
+      "year": "2016",
+      "make_model": "SsangYong XLV",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "62%",
+      "pedestrian": "65%",
+      "safety_assist": "43%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 14,
+    "fields": {
+      "year": "2016",
+      "make_model": "SsangYong Tivoli",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "62%",
+      "pedestrian": "65%",
+      "safety_assist": "43%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 15,
+    "fields": {
+      "year": "2016",
+      "make_model": "Toyota Hilux",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "85%",
+      "child_occupant": "82%",
+      "pedestrian": "73%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 16,
+    "fields": {
+      "year": "2016",
+      "make_model": "Suzuki Ignis",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "79%",
+      "child_occupant": "79%",
+      "pedestrian": "67%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 17,
+    "fields": {
+      "year": "2016",
+      "make_model": "Suzuki Baleno",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "80%",
+      "child_occupant": "73%",
+      "pedestrian": "65%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 18,
+    "fields": {
+      "year": "2016",
+      "make_model": "FIAT Egea",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "82%",
+      "child_occupant": "60%",
+      "pedestrian": "62%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 19,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volvo XC60",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "98%",
+      "child_occupant": "87%",
+      "pedestrian": "76%",
+      "safety_assist": "95%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 20,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volkswagen Arteon",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "85%",
+      "pedestrian": "85%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 21,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volvo V90",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 22,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volvo S90",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 23,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volkswagen T-Roc",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 24,
+    "fields": {
+      "year": "2017",
+      "make_model": "Subaru XV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "89%",
+      "pedestrian": "84%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 25,
+    "fields": {
+      "year": "2017",
+      "make_model": "Subaru Impreza",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "89%",
+      "pedestrian": "82%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 26,
+    "fields": {
+      "year": "2017",
+      "make_model": "Mercedes-Benz X-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "80%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 27,
+    "fields": {
+      "year": "2017",
+      "make_model": "Jaguar F-Pace",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 28,
+    "fields": {
+      "year": "2017",
+      "make_model": "Kia Stinger",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "81%",
+      "pedestrian": "78%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 29,
+    "fields": {
+      "year": "2017",
+      "make_model": "Toyota C-HR",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "77%",
+      "pedestrian": "76%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 30,
+    "fields": {
+      "year": "2017",
+      "make_model": "Opel/Vauxhall Insignia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 31,
+    "fields": {
+      "year": "2017",
+      "make_model": "Mitsubishi Eclipse Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "78%",
+      "pedestrian": "80%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 32,
+    "fields": {
+      "year": "2017",
+      "make_model": "Honda Civic (reassessment)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "75%",
+      "pedestrian": "75%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 33,
+    "fields": {
+      "year": "2017",
+      "make_model": "DS 7 Crossback",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 34,
+    "fields": {
+      "year": "2017",
+      "make_model": "Range Rover Velar",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "74%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 35,
+    "fields": {
+      "year": "2017",
+      "make_model": "Alfa Romeo Stelvio",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "84%",
+      "pedestrian": "71%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 36,
+    "fields": {
+      "year": "2017",
+      "make_model": "Volkswagen Polo",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "85%",
+      "pedestrian": "76%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 37,
+    "fields": {
+      "year": "2017",
+      "make_model": "Jaguar E-Pace",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 38,
+    "fields": {
+      "year": "2017",
+      "make_model": "Land Rover Discovery",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "80%",
+      "pedestrian": "75%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 39,
+    "fields": {
+      "year": "2017",
+      "make_model": "Audi Q5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "86%",
+      "pedestrian": "73%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 40,
+    "fields": {
+      "year": "2017",
+      "make_model": "BMW 5 Series",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 41,
+    "fields": {
+      "year": "2017",
+      "make_model": "Mazda CX-5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "80%",
+      "pedestrian": "78%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 42,
+    "fields": {
+      "year": "2017",
+      "make_model": "SEAT Arona",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "80%",
+      "pedestrian": "77%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 43,
+    "fields": {
+      "year": "2017",
+      "make_model": "Porsche Cayenne",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "80%",
+      "pedestrian": "73%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 44,
+    "fields": {
+      "year": "2017",
+      "make_model": "SEAT Ibiza",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "77%",
+      "pedestrian": "76%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 45,
+    "fields": {
+      "year": "2017",
+      "make_model": "Renault Koleos",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "79%",
+      "pedestrian": "62%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 46,
+    "fields": {
+      "year": "2017",
+      "make_model": "Skoda Karoq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "79%",
+      "pedestrian": "73%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 47,
+    "fields": {
+      "year": "2017",
+      "make_model": "BMW 6 Series GT",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 48,
+    "fields": {
+      "year": "2017",
+      "make_model": "BMW X3 / X4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "84%",
+      "pedestrian": "70%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 49,
+    "fields": {
+      "year": "2017",
+      "make_model": "Hyundai i30",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "84%",
+      "pedestrian": "64%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 50,
+    "fields": {
+      "year": "2017",
+      "make_model": "Skoda Kodiaq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "77%",
+      "pedestrian": "71%",
+      "safety_assist": "54%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 51,
+    "fields": {
+      "year": "2017",
+      "make_model": "Jeep Compass",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "83%",
+      "pedestrian": "64%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 52,
+    "fields": {
+      "year": "2017",
+      "make_model": "Opel/Vauxhall Grandland X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "87%",
+      "pedestrian": "63%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 53,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford Fiesta",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "84%",
+      "pedestrian": "64%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 54,
+    "fields": {
+      "year": "2017",
+      "make_model": "Hyundai KONA",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "85%",
+      "pedestrian": "62%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 55,
+    "fields": {
+      "year": "2017",
+      "make_model": "MINI Countryman",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "80%",
+      "pedestrian": "64%",
+      "safety_assist": "51%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 56,
+    "fields": {
+      "year": "2017",
+      "make_model": "Mercedes-Benz C-Class Cabriolet",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "79%",
+      "pedestrian": "66%",
+      "safety_assist": "53%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 57,
+    "fields": {
+      "year": "2017",
+      "make_model": "Opel/Vauxhall Crossland X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "84%",
+      "pedestrian": "62%",
+      "safety_assist": "57%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 58,
+    "fields": {
+      "year": "2017",
+      "make_model": "Citroën C3 Aircross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "82%",
+      "pedestrian": "64%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 59,
+    "fields": {
+      "year": "2017",
+      "make_model": "Toyota Yaris",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "80%",
+      "pedestrian": "63%",
+      "safety_assist": "57%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 60,
+    "fields": {
+      "year": "2017",
+      "make_model": "Honda Civic",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "92%",
+      "child_occupant": "67%",
+      "pedestrian": "75%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 61,
+    "fields": {
+      "year": "2017",
+      "make_model": "Opel/Vauxhall Ampera-e",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "73%",
+      "pedestrian": "75%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 62,
+    "fields": {
+      "year": "2017",
+      "make_model": "Nissan Micra",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "79%",
+      "pedestrian": "68%",
+      "safety_assist": "49%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 63,
+    "fields": {
+      "year": "2017",
+      "make_model": "Citroën C3",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "88%",
+      "child_occupant": "83%",
+      "pedestrian": "59%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 64,
+    "fields": {
+      "year": "2017",
+      "make_model": "Kia Rio",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "85%",
+      "child_occupant": "84%",
+      "pedestrian": "62%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 65,
+    "fields": {
+      "year": "2017",
+      "make_model": "Kia Stonic",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "85%",
+      "child_occupant": "84%",
+      "pedestrian": "62%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 66,
+    "fields": {
+      "year": "2017",
+      "make_model": "Suzuki Swift",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "83%",
+      "child_occupant": "75%",
+      "pedestrian": "69%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 67,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford Mustang (reassessment)",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "72%",
+      "child_occupant": "32%",
+      "pedestrian": "78%",
+      "safety_assist": "61%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 68,
+    "fields": {
+      "year": "2017",
+      "make_model": "Kia Picanto",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "79%",
+      "child_occupant": "64%",
+      "pedestrian": "54%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 69,
+    "fields": {
+      "year": "2017",
+      "make_model": "Citroën e-Mehari",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "74%",
+      "child_occupant": "78%",
+      "pedestrian": "48%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 70,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford Grand C-MAX",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "76%",
+      "child_occupant": "60%",
+      "pedestrian": "59%",
+      "safety_assist": "29%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 71,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford C-MAX",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "76%",
+      "child_occupant": "60%",
+      "pedestrian": "59%",
+      "safety_assist": "29%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 72,
+    "fields": {
+      "year": "2017",
+      "make_model": "Toyota Aygo",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "74%",
+      "child_occupant": "63%",
+      "pedestrian": "64%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 73,
+    "fields": {
+      "year": "2017",
+      "make_model": "Dacia Duster",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "71%",
+      "child_occupant": "66%",
+      "pedestrian": "56%",
+      "safety_assist": "37%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 74,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford Ka+",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "73%",
+      "child_occupant": "61%",
+      "pedestrian": "57%",
+      "safety_assist": "29%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 75,
+    "fields": {
+      "year": "2017",
+      "make_model": "Alfa Romeo Giulietta",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "72%",
+      "child_occupant": "56%",
+      "pedestrian": "59%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 76,
+    "fields": {
+      "year": "2017",
+      "make_model": "FIAT Doblò",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "75%",
+      "child_occupant": "46%",
+      "pedestrian": "57%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 77,
+    "fields": {
+      "year": "2017",
+      "make_model": "MG ZS",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "71%",
+      "child_occupant": "51%",
+      "pedestrian": "59%",
+      "safety_assist": "29%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 78,
+    "fields": {
+      "year": "2017",
+      "make_model": "Opel/Vauxhall Karl",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "61%",
+      "child_occupant": "60%",
+      "pedestrian": "58%",
+      "safety_assist": "25%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 79,
+    "fields": {
+      "year": "2017",
+      "make_model": "FIAT 500",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "66%",
+      "child_occupant": "49%",
+      "pedestrian": "53%",
+      "safety_assist": "27%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 80,
+    "fields": {
+      "year": "2017",
+      "make_model": "DS 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "69%",
+      "child_occupant": "37%",
+      "pedestrian": "55%",
+      "safety_assist": "29%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 81,
+    "fields": {
+      "year": "2017",
+      "make_model": "Ford Mustang",
+      "safety_equipment": "Standard",
+      "overall_rating": "2",
+      "adult_occupant": "72%",
+      "child_occupant": "32%",
+      "pedestrian": "64%",
+      "safety_assist": "16%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 82,
+    "fields": {
+      "year": "2017",
+      "make_model": "FIAT Punto",
+      "safety_equipment": "Standard",
+      "overall_rating": "0",
+      "adult_occupant": "51%",
+      "child_occupant": "43%",
+      "pedestrian": "52%",
+      "safety_assist": "0%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 83,
+    "fields": {
+      "year": "2018",
+      "make_model": "Mercedes-Benz A-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "91%",
+      "pedestrian": "92%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 84,
+    "fields": {
+      "year": "2018",
+      "make_model": "Lexus ES",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "90%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 85,
+    "fields": {
+      "year": "2018",
+      "make_model": "Audi Q3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "86%",
+      "pedestrian": "76%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 86,
+    "fields": {
+      "year": "2018",
+      "make_model": "Volvo XC40",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "71%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 87,
+    "fields": {
+      "year": "2018",
+      "make_model": "Audi A6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 88,
+    "fields": {
+      "year": "2018",
+      "make_model": "Volvo S60",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "84%",
+      "pedestrian": "74%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 89,
+    "fields": {
+      "year": "2018",
+      "make_model": "Volvo V60",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "84%",
+      "pedestrian": "74%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 90,
+    "fields": {
+      "year": "2018",
+      "make_model": "Peugeot 508",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "86%",
+      "pedestrian": "71%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 91,
+    "fields": {
+      "year": "2018",
+      "make_model": "Audi A7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 92,
+    "fields": {
+      "year": "2018",
+      "make_model": "Mazda 6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "91%",
+      "pedestrian": "66%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 93,
+    "fields": {
+      "year": "2018",
+      "make_model": "Hyundai NEXO",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "67%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 94,
+    "fields": {
+      "year": "2018",
+      "make_model": "Hyundai Santa Fe",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "88%",
+      "pedestrian": "67%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 95,
+    "fields": {
+      "year": "2018",
+      "make_model": "Volkswagen Touareg",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "86%",
+      "pedestrian": "72%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 96,
+    "fields": {
+      "year": "2018",
+      "make_model": "Jaguar I-PACE",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "81%",
+      "pedestrian": "73%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 97,
+    "fields": {
+      "year": "2018",
+      "make_model": "BMW X5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "86%",
+      "pedestrian": "75%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 98,
+    "fields": {
+      "year": "2018",
+      "make_model": "Nissan LEAF",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "86%",
+      "pedestrian": "71%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 99,
+    "fields": {
+      "year": "2018",
+      "make_model": "Ford Focus",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "87%",
+      "pedestrian": "72%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 100,
+    "fields": {
+      "year": "2018",
+      "make_model": "Ford Tourneo Connect",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "92%",
+      "child_occupant": "79%",
+      "pedestrian": "65%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 101,
+    "fields": {
+      "year": "2018",
+      "make_model": "Opel/Vauxhall Combo",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "81%",
+      "pedestrian": "58%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 102,
+    "fields": {
+      "year": "2018",
+      "make_model": "Citroën Berlingo",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "81%",
+      "pedestrian": "58%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 103,
+    "fields": {
+      "year": "2018",
+      "make_model": "Peugeot Rifter",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "81%",
+      "pedestrian": "58%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 104,
+    "fields": {
+      "year": "2018",
+      "make_model": "Toyota PROACE CITY",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "81%",
+      "pedestrian": "58%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 105,
+    "fields": {
+      "year": "2018",
+      "make_model": "Suzuki Jimny",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "73%",
+      "child_occupant": "84%",
+      "pedestrian": "52%",
+      "safety_assist": "50%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 106,
+    "fields": {
+      "year": "2018",
+      "make_model": "Jeep Wrangler",
+      "safety_equipment": "Standard",
+      "overall_rating": "1",
+      "adult_occupant": "50%",
+      "child_occupant": "69%",
+      "pedestrian": "49%",
+      "safety_assist": "32%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 107,
+    "fields": {
+      "year": "2018",
+      "make_model": "FIAT Panda",
+      "safety_equipment": "Standard",
+      "overall_rating": "0",
+      "adult_occupant": "45%",
+      "child_occupant": "16%",
+      "pedestrian": "47%",
+      "safety_assist": "7%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 108,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz CLA",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "91%",
+      "pedestrian": "91%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 109,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW Z4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "91%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 110,
+    "fields": {
+      "year": "2019",
+      "make_model": "Tesla Model 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "86%",
+      "pedestrian": "74%",
+      "safety_assist": "94%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 111,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW 3 Series",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "87%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 112,
+    "fields": {
+      "year": "2019",
+      "make_model": "Subaru Forester",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "91%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 113,
+    "fields": {
+      "year": "2019",
+      "make_model": "Tesla Model X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "98%",
+      "child_occupant": "81%",
+      "pedestrian": "72%",
+      "safety_assist": "94%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 114,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW 4 Series Coupé",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "83%",
+      "pedestrian": "93%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 115,
+    "fields": {
+      "year": "2019",
+      "make_model": "Volkswagen T-Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "86%",
+      "pedestrian": "81%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 116,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mazda 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "98%",
+      "child_occupant": "87%",
+      "pedestrian": "81%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 117,
+    "fields": {
+      "year": "2019",
+      "make_model": "Skoda Scala",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "81%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 118,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mazda CX-30",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "99%",
+      "child_occupant": "86%",
+      "pedestrian": "80%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 119,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW 4 Series Convertible",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "80%",
+      "pedestrian": "93%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 120,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-EQ EQA",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "90%",
+      "pedestrian": "81%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 121,
+    "fields": {
+      "year": "2019",
+      "make_model": "SEAT Tarraco",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "84%",
+      "pedestrian": "79%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 122,
+    "fields": {
+      "year": "2019",
+      "make_model": "Lexus UX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "85%",
+      "pedestrian": "82%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 123,
+    "fields": {
+      "year": "2019",
+      "make_model": "Toyota Corolla",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "84%",
+      "pedestrian": "86%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 124,
+    "fields": {
+      "year": "2019",
+      "make_model": "Toyota RAV4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "87%",
+      "pedestrian": "85%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 125,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz B-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "90%",
+      "pedestrian": "78%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 126,
+    "fields": {
+      "year": "2019",
+      "make_model": "Skoda Kamiq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 127,
+    "fields": {
+      "year": "2019",
+      "make_model": "Volkswagen Golf",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "89%",
+      "pedestrian": "76%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 128,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz GLA",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "90%",
+      "pedestrian": "79%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 129,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-EQ EQB",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "91%",
+      "pedestrian": "78%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 130,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz GLE",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "90%",
+      "pedestrian": "78%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 131,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-EQ EQC",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "90%",
+      "pedestrian": "75%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 132,
+    "fields": {
+      "year": "2019",
+      "make_model": "Nissan Juke",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 133,
+    "fields": {
+      "year": "2019",
+      "make_model": "Renault Clio",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "89%",
+      "pedestrian": "72%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 134,
+    "fields": {
+      "year": "2019",
+      "make_model": "Ford Focus",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "87%",
+      "pedestrian": "72%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 135,
+    "fields": {
+      "year": "2019",
+      "make_model": "Audi A1",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "85%",
+      "pedestrian": "73%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 136,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz GLB",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "88%",
+      "pedestrian": "78%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 137,
+    "fields": {
+      "year": "2019",
+      "make_model": "Ford Mondeo",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "87%",
+      "pedestrian": "70%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 138,
+    "fields": {
+      "year": "2019",
+      "make_model": "Renault Captur",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "83%",
+      "pedestrian": "75%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 139,
+    "fields": {
+      "year": "2019",
+      "make_model": "Ford Kuga",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "86%",
+      "pedestrian": "82%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 140,
+    "fields": {
+      "year": "2019",
+      "make_model": "Skoda Octavia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "88%",
+      "pedestrian": "73%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 141,
+    "fields": {
+      "year": "2019",
+      "make_model": "Ford Puma",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "84%",
+      "pedestrian": "77%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 142,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW 2 Series Gran Coupé",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "76%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 143,
+    "fields": {
+      "year": "2019",
+      "make_model": "Renault Arkana",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "83%",
+      "pedestrian": "75%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 144,
+    "fields": {
+      "year": "2019",
+      "make_model": "Range Rover Evoque",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "72%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 145,
+    "fields": {
+      "year": "2019",
+      "make_model": "Mercedes-Benz G-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "83%",
+      "pedestrian": "78%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 146,
+    "fields": {
+      "year": "2019",
+      "make_model": "Honda CR-V",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "83%",
+      "pedestrian": "70%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 147,
+    "fields": {
+      "year": "2019",
+      "make_model": "Audi e-tron (Q8 e-tron)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "85%",
+      "pedestrian": "71%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 148,
+    "fields": {
+      "year": "2019",
+      "make_model": "Audi Q7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "86%",
+      "pedestrian": "71%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 149,
+    "fields": {
+      "year": "2019",
+      "make_model": "Audi Q8",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "87%",
+      "pedestrian": "71%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 150,
+    "fields": {
+      "year": "2019",
+      "make_model": "SsangYong Korando",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "68%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 151,
+    "fields": {
+      "year": "2019",
+      "make_model": "MG HS",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "81%",
+      "pedestrian": "64%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 152,
+    "fields": {
+      "year": "2019",
+      "make_model": "BMW 1 Series",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "87%",
+      "pedestrian": "76%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 153,
+    "fields": {
+      "year": "2019",
+      "make_model": "MG ZS EV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "64%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 154,
+    "fields": {
+      "year": "2019",
+      "make_model": "Ford Explorer",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "86%",
+      "pedestrian": "61%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 155,
+    "fields": {
+      "year": "2019",
+      "make_model": "Porsche Taycan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "83%",
+      "pedestrian": "70%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 156,
+    "fields": {
+      "year": "2019",
+      "make_model": "Citroën C5 Aircross",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "87%",
+      "child_occupant": "86%",
+      "pedestrian": "58%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 157,
+    "fields": {
+      "year": "2019",
+      "make_model": "Peugeot 208",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "86%",
+      "pedestrian": "56%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 158,
+    "fields": {
+      "year": "2019",
+      "make_model": "Peugeot 2008",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "84%",
+      "pedestrian": "62%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 159,
+    "fields": {
+      "year": "2019",
+      "make_model": "Opel/Vauxhall Corsa",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "84%",
+      "child_occupant": "86%",
+      "pedestrian": "66%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 160,
+    "fields": {
+      "year": "2019",
+      "make_model": "Kia Ceed",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "52%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 161,
+    "fields": {
+      "year": "2019",
+      "make_model": "DS 3 Crossback",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "87%",
+      "child_occupant": "86%",
+      "pedestrian": "54%",
+      "safety_assist": "63%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 162,
+    "fields": {
+      "year": "2019",
+      "make_model": "SEAT Alhambra",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "89%",
+      "child_occupant": "78%",
+      "pedestrian": "59%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 163,
+    "fields": {
+      "year": "2019",
+      "make_model": "Volkswagen Sharan",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "89%",
+      "child_occupant": "78%",
+      "pedestrian": "59%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 164,
+    "fields": {
+      "year": "2019",
+      "make_model": "Jeep Cherokee",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "78%",
+      "pedestrian": "56%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 165,
+    "fields": {
+      "year": "2019",
+      "make_model": "Jeep Renegade",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "82%",
+      "child_occupant": "84%",
+      "pedestrian": "55%",
+      "safety_assist": "58%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 166,
+    "fields": {
+      "year": "2019",
+      "make_model": "Skoda CITIGO",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "81%",
+      "child_occupant": "83%",
+      "pedestrian": "46%",
+      "safety_assist": "55%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 167,
+    "fields": {
+      "year": "2019",
+      "make_model": "SEAT Mii",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "81%",
+      "child_occupant": "83%",
+      "pedestrian": "46%",
+      "safety_assist": "55%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 168,
+    "fields": {
+      "year": "2019",
+      "make_model": "Volkswagen up!",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "81%",
+      "child_occupant": "83%",
+      "pedestrian": "46%",
+      "safety_assist": "55%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 169,
+    "fields": {
+      "year": "2019",
+      "make_model": "Aiways U5",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "73%",
+      "child_occupant": "70%",
+      "pedestrian": "45%",
+      "safety_assist": "55%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 170,
+    "fields": {
+      "year": "2020",
+      "make_model": "MAZDA 2 Hybrid",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "81%",
+      "pedestrian": "78%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 171,
+    "fields": {
+      "year": "2020",
+      "make_model": "Cupra Leon",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "88%",
+      "pedestrian": "71%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 172,
+    "fields": {
+      "year": "2020",
+      "make_model": "Audi A3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "81%",
+      "pedestrian": "68%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 173,
+    "fields": {
+      "year": "2020",
+      "make_model": "Honda e",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "82%",
+      "pedestrian": "62%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 174,
+    "fields": {
+      "year": "2020",
+      "make_model": "Hyundai i10",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "69%",
+      "child_occupant": "75%",
+      "pedestrian": "52%",
+      "safety_assist": "59%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 175,
+    "fields": {
+      "year": "2020",
+      "make_model": "Isuzu D-MAX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "86%",
+      "pedestrian": "69%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 176,
+    "fields": {
+      "year": "2020",
+      "make_model": "Kia Sorento",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "85%",
+      "pedestrian": "63%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 177,
+    "fields": {
+      "year": "2020",
+      "make_model": "Land Rover Defender",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "85%",
+      "pedestrian": "71%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 178,
+    "fields": {
+      "year": "2020",
+      "make_model": "SEAT Leon",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "88%",
+      "pedestrian": "71%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 179,
+    "fields": {
+      "year": "2020",
+      "make_model": "Honda Jazz",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "83%",
+      "pedestrian": "80%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 180,
+    "fields": {
+      "year": "2020",
+      "make_model": "Mazda MX-30",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "68%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 181,
+    "fields": {
+      "year": "2020",
+      "make_model": "Volkswagen ID.3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "89%",
+      "pedestrian": "71%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 182,
+    "fields": {
+      "year": "2020",
+      "make_model": "Toyota Yaris",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "81%",
+      "pedestrian": "78%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 183,
+    "fields": {
+      "year": "2021",
+      "make_model": "Nissan X Trail",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "90%",
+      "pedestrian": "70%",
+      "safety_assist": "95%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 184,
+    "fields": {
+      "year": "2021",
+      "make_model": "Hyundai i20",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "82%",
+      "pedestrian": "76%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 185,
+    "fields": {
+      "year": "2021",
+      "make_model": "Dacia Jogger",
+      "safety_equipment": "Standard",
+      "overall_rating": "1",
+      "adult_occupant": "70%",
+      "child_occupant": "69%",
+      "pedestrian": "41%",
+      "safety_assist": "39%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 186,
+    "fields": {
+      "year": "2021",
+      "make_model": "Ford Tourneo Connect",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "82%",
+      "pedestrian": "69%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 187,
+    "fields": {
+      "year": "2021",
+      "make_model": "Volkswagen ID.5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "76%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 188,
+    "fields": {
+      "year": "2021",
+      "make_model": "BMW iX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 189,
+    "fields": {
+      "year": "2021",
+      "make_model": "Dacia Spring",
+      "safety_equipment": "Standard",
+      "overall_rating": "1",
+      "adult_occupant": "49%",
+      "child_occupant": "56%",
+      "pedestrian": "39%",
+      "safety_assist": "32%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 190,
+    "fields": {
+      "year": "2021",
+      "make_model": "FIAT 500e",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "80%",
+      "pedestrian": "67%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 191,
+    "fields": {
+      "year": "2021",
+      "make_model": "Genesis G70",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "76%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 192,
+    "fields": {
+      "year": "2021",
+      "make_model": "Genesis GV70",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "64%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 193,
+    "fields": {
+      "year": "2021",
+      "make_model": "Mercedes-EQ EQS",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "91%",
+      "pedestrian": "76%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 194,
+    "fields": {
+      "year": "2021",
+      "make_model": "MG Marvel R",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "75%",
+      "pedestrian": "55%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 195,
+    "fields": {
+      "year": "2021",
+      "make_model": "Nissan Qashqai",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "91%",
+      "pedestrian": "70%",
+      "safety_assist": "95%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 196,
+    "fields": {
+      "year": "2021",
+      "make_model": "Nissan Townstar",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "78%",
+      "child_occupant": "87%",
+      "pedestrian": "67%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 197,
+    "fields": {
+      "year": "2021",
+      "make_model": "Renault ZOE",
+      "safety_equipment": "Standard",
+      "overall_rating": "0",
+      "adult_occupant": "43%",
+      "child_occupant": "52%",
+      "pedestrian": "41%",
+      "safety_assist": "14%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 198,
+    "fields": {
+      "year": "2021",
+      "make_model": "Volkswagen Caddy",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "82%",
+      "pedestrian": "69%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 199,
+    "fields": {
+      "year": "2021",
+      "make_model": "Skoda Fabia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "81%",
+      "pedestrian": "70%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 200,
+    "fields": {
+      "year": "2021",
+      "make_model": "Ford Mustang Mach-E",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "86%",
+      "pedestrian": "69%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 201,
+    "fields": {
+      "year": "2021",
+      "make_model": "Hyundai BAYON",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "82%",
+      "pedestrian": "76%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 202,
+    "fields": {
+      "year": "2021",
+      "make_model": "Hyundai IONIQ 5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "86%",
+      "pedestrian": "63%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 203,
+    "fields": {
+      "year": "2021",
+      "make_model": "Hyundai TUCSON",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "87%",
+      "pedestrian": "66%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 204,
+    "fields": {
+      "year": "2021",
+      "make_model": "Toyota Yaris Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "84%",
+      "pedestrian": "78%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 205,
+    "fields": {
+      "year": "2021",
+      "make_model": "Audi Q4 e-tron",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "66%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 206,
+    "fields": {
+      "year": "2021",
+      "make_model": "Lynk & Co 01",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "87%",
+      "pedestrian": "71%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 207,
+    "fields": {
+      "year": "2021",
+      "make_model": "NIO ES8",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "84%",
+      "pedestrian": "72%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 208,
+    "fields": {
+      "year": "2021",
+      "make_model": "Subaru Outback",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "89%",
+      "pedestrian": "84%",
+      "safety_assist": "95%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 209,
+    "fields": {
+      "year": "2021",
+      "make_model": "Toyota Mirai",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 210,
+    "fields": {
+      "year": "2021",
+      "make_model": "Opel/Vauxhall Mokka",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "73%",
+      "child_occupant": "75%",
+      "pedestrian": "58%",
+      "safety_assist": "64%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 211,
+    "fields": {
+      "year": "2021",
+      "make_model": "Renault Kangoo",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "78%",
+      "child_occupant": "87%",
+      "pedestrian": "67%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 212,
+    "fields": {
+      "year": "2021",
+      "make_model": "Citroën C4",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "83%",
+      "pedestrian": "57%",
+      "safety_assist": "63%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 213,
+    "fields": {
+      "year": "2021",
+      "make_model": "Genesis G80",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "91%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 214,
+    "fields": {
+      "year": "2021",
+      "make_model": "Genesis GV80",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "66%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 215,
+    "fields": {
+      "year": "2021",
+      "make_model": "Dacia Logan",
+      "safety_equipment": "Standard",
+      "overall_rating": "2",
+      "adult_occupant": "70%",
+      "child_occupant": "72%",
+      "pedestrian": "41%",
+      "safety_assist": "42%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 216,
+    "fields": {
+      "year": "2021",
+      "make_model": "Dacia Sandero Stepway",
+      "safety_equipment": "Standard",
+      "overall_rating": "2",
+      "adult_occupant": "70%",
+      "child_occupant": "72%",
+      "pedestrian": "41%",
+      "safety_assist": "42%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 217,
+    "fields": {
+      "year": "2021",
+      "make_model": "Volkswagen ID.4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "76%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 218,
+    "fields": {
+      "year": "2021",
+      "make_model": "Skoda ENYAQ iV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "89%",
+      "pedestrian": "71%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 219,
+    "fields": {
+      "year": "2021",
+      "make_model": "Cupra Formentor",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "88%",
+      "pedestrian": "68%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 220,
+    "fields": {
+      "year": "2021",
+      "make_model": "Polestar 2",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "80%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 221,
+    "fields": {
+      "year": "2022",
+      "make_model": "Tesla Model Y",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "98%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 222,
+    "fields": {
+      "year": "2022",
+      "make_model": "Tesla Model S",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "91%",
+      "pedestrian": "85%",
+      "safety_assist": "98%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 223,
+    "fields": {
+      "year": "2022",
+      "make_model": "Lexus NX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "83%",
+      "safety_assist": "91%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 224,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mercedes-EQ EQE",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "91%",
+      "pedestrian": "83%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 225,
+    "fields": {
+      "year": "2022",
+      "make_model": "Lexus RX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "89%",
+      "safety_assist": "91%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 226,
+    "fields": {
+      "year": "2022",
+      "make_model": "Wey Coffee 01",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "94%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 227,
+    "fields": {
+      "year": "2022",
+      "make_model": "smart #1",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "89%",
+      "pedestrian": "71%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 228,
+    "fields": {
+      "year": "2022",
+      "make_model": "Wey Coffee 02",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 229,
+    "fields": {
+      "year": "2022",
+      "make_model": "GWM Wey 05 (Coffee 01)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "94%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 230,
+    "fields": {
+      "year": "2022",
+      "make_model": "GWM Wey 03 (Coffee 02)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 231,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mercedes-Benz C-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "80%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 232,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mercedes-Benz Citan Tourer",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "93%",
+      "pedestrian": "69%",
+      "safety_assist": "90%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 233,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mercedes-Benz T-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "93%",
+      "pedestrian": "69%",
+      "safety_assist": "90%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 234,
+    "fields": {
+      "year": "2022",
+      "make_model": "ORA Funky Cat",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "83%",
+      "pedestrian": "74%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 235,
+    "fields": {
+      "year": "2022",
+      "make_model": "MAZDA CX-60",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "91%",
+      "pedestrian": "89%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 236,
+    "fields": {
+      "year": "2022",
+      "make_model": "Subaru Solterra",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "91%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 237,
+    "fields": {
+      "year": "2022",
+      "make_model": "Hyundai IONIQ 6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "97%",
+      "child_occupant": "87%",
+      "pedestrian": "66%",
+      "safety_assist": "90%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 238,
+    "fields": {
+      "year": "2022",
+      "make_model": "Toyota bZ4X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "91%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 239,
+    "fields": {
+      "year": "2022",
+      "make_model": "NIO ET7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "95%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 240,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mercedes-Benz GLC",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "90%",
+      "pedestrian": "74%",
+      "safety_assist": "84%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 241,
+    "fields": {
+      "year": "2022",
+      "make_model": "GWM ORA 03 (Funky Cat)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "83%",
+      "pedestrian": "74%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 242,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volvo C40 Recharge",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "89%",
+      "pedestrian": "70%",
+      "safety_assist": "89%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 243,
+    "fields": {
+      "year": "2022",
+      "make_model": "Cupra Born",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "73%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 244,
+    "fields": {
+      "year": "2022",
+      "make_model": "BMW 2 Series Active Tourer",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "81%",
+      "pedestrian": "79%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 245,
+    "fields": {
+      "year": "2022",
+      "make_model": "BMW X1",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "89%",
+      "pedestrian": "76%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 246,
+    "fields": {
+      "year": "2022",
+      "make_model": "Honda Civic",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 247,
+    "fields": {
+      "year": "2022",
+      "make_model": "Nissan Ariya",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "89%",
+      "pedestrian": "74%",
+      "safety_assist": "93%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 248,
+    "fields": {
+      "year": "2022",
+      "make_model": "Maxus MIFA 9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "73%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 249,
+    "fields": {
+      "year": "2022",
+      "make_model": "Lucid Air",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "91%",
+      "pedestrian": "78%",
+      "safety_assist": "84%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 250,
+    "fields": {
+      "year": "2022",
+      "make_model": "Renault Scenic E-Tech",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "89%",
+      "pedestrian": "77%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 251,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volvo EC40 (formerly C40 Recharge)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "89%",
+      "pedestrian": "70%",
+      "safety_assist": "89%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 252,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Multivan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "89%",
+      "pedestrian": "69%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 253,
+    "fields": {
+      "year": "2022",
+      "make_model": "BMW X2",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "88%",
+      "pedestrian": "76%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 254,
+    "fields": {
+      "year": "2022",
+      "make_model": "Kia EV6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "86%",
+      "pedestrian": "64%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 255,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Golf",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "87%",
+      "pedestrian": "74%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 256,
+    "fields": {
+      "year": "2022",
+      "make_model": "Toyota Corolla Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "83%",
+      "pedestrian": "87%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 257,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen ID. Buzz",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "87%",
+      "pedestrian": "60%",
+      "safety_assist": "90%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 258,
+    "fields": {
+      "year": "2022",
+      "make_model": "Chery Omoda 5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "87%",
+      "pedestrian": "68%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 259,
+    "fields": {
+      "year": "2022",
+      "make_model": "Jeep Grand Cherokee",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "89%",
+      "pedestrian": "81%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 260,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Taigo",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "84%",
+      "pedestrian": "71%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 261,
+    "fields": {
+      "year": "2022",
+      "make_model": "Genesis GV60",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "63%",
+      "safety_assist": "88%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 262,
+    "fields": {
+      "year": "2022",
+      "make_model": "BYD Atto 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "89%",
+      "pedestrian": "69%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 263,
+    "fields": {
+      "year": "2022",
+      "make_model": "Renault Austral",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "83%",
+      "pedestrian": "69%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 264,
+    "fields": {
+      "year": "2022",
+      "make_model": "Land Rover Discovery Sport",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "89%",
+      "pedestrian": "71%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 265,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Amarok",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "90%",
+      "pedestrian": "74%",
+      "safety_assist": "84%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 266,
+    "fields": {
+      "year": "2022",
+      "make_model": "Ford Ranger",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "90%",
+      "pedestrian": "74%",
+      "safety_assist": "84%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 267,
+    "fields": {
+      "year": "2022",
+      "make_model": "Renault Rafale",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "83%",
+      "pedestrian": "69%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 268,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Polo",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "80%",
+      "pedestrian": "70%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 269,
+    "fields": {
+      "year": "2022",
+      "make_model": "Isuzu D-MAX Crew Cab",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "86%",
+      "pedestrian": "69%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 270,
+    "fields": {
+      "year": "2022",
+      "make_model": "Land Rover Range Rover",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "87%",
+      "pedestrian": "72%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 271,
+    "fields": {
+      "year": "2022",
+      "make_model": "Skoda Octavia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "84%",
+      "pedestrian": "68%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 272,
+    "fields": {
+      "year": "2022",
+      "make_model": "Renault Megane E-Tech",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "88%",
+      "pedestrian": "65%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 273,
+    "fields": {
+      "year": "2022",
+      "make_model": "Land Rover Range Rover Sport",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "85%",
+      "pedestrian": "69%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 274,
+    "fields": {
+      "year": "2022",
+      "make_model": "Renault Espace",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "83%",
+      "pedestrian": "69%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 275,
+    "fields": {
+      "year": "2022",
+      "make_model": "Kia Sportage",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "86%",
+      "pedestrian": "66%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 276,
+    "fields": {
+      "year": "2022",
+      "make_model": "Alfa Romeo Tonale",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "85%",
+      "pedestrian": "67%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 277,
+    "fields": {
+      "year": "2022",
+      "make_model": "MG 4 Electric",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "80%",
+      "pedestrian": "75%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 278,
+    "fields": {
+      "year": "2022",
+      "make_model": "SEAT Arona",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "83%",
+      "pedestrian": "65%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 279,
+    "fields": {
+      "year": "2022",
+      "make_model": "SEAT Ibiza",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "82%",
+      "pedestrian": "66%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 280,
+    "fields": {
+      "year": "2022",
+      "make_model": "Kia Niro",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "91%",
+      "child_occupant": "84%",
+      "pedestrian": "75%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 281,
+    "fields": {
+      "year": "2022",
+      "make_model": "DS 4",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "85%",
+      "child_occupant": "86%",
+      "pedestrian": "74%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 282,
+    "fields": {
+      "year": "2022",
+      "make_model": "BMW i4",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "87%",
+      "child_occupant": "87%",
+      "pedestrian": "71%",
+      "safety_assist": "64%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 283,
+    "fields": {
+      "year": "2022",
+      "make_model": "Honda HR-V",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "75%",
+      "pedestrian": "72%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 284,
+    "fields": {
+      "year": "2022",
+      "make_model": "Toyota Aygo X",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "78%",
+      "child_occupant": "78%",
+      "pedestrian": "74%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 285,
+    "fields": {
+      "year": "2022",
+      "make_model": "Citroën C5 X",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "87%",
+      "pedestrian": "69%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 286,
+    "fields": {
+      "year": "2022",
+      "make_model": "Mobilize Limo",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "79%",
+      "pedestrian": "69%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 287,
+    "fields": {
+      "year": "2022",
+      "make_model": "DS 9",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "86%",
+      "pedestrian": "67%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 288,
+    "fields": {
+      "year": "2022",
+      "make_model": "Peugeot 408",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "84%",
+      "pedestrian": "78%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 289,
+    "fields": {
+      "year": "2022",
+      "make_model": "BMW 2 Series Coupé",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "82%",
+      "child_occupant": "81%",
+      "pedestrian": "67%",
+      "safety_assist": "64%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 290,
+    "fields": {
+      "year": "2022",
+      "make_model": "Opel/Vauxhall Astra",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "82%",
+      "pedestrian": "67%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 291,
+    "fields": {
+      "year": "2022",
+      "make_model": "Peugeot 308",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "84%",
+      "pedestrian": "68%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 292,
+    "fields": {
+      "year": "2022",
+      "make_model": "Ford Puma",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "75%",
+      "child_occupant": "84%",
+      "pedestrian": "70%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 293,
+    "fields": {
+      "year": "2022",
+      "make_model": "Volkswagen Touran",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "77%",
+      "child_occupant": "81%",
+      "pedestrian": "62%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 294,
+    "fields": {
+      "year": "2023",
+      "make_model": "NIO ET5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "85%",
+      "pedestrian": "83%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 295,
+    "fields": {
+      "year": "2023",
+      "make_model": "Volkswagen ID.7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "88%",
+      "pedestrian": "83%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 296,
+    "fields": {
+      "year": "2023",
+      "make_model": "smart #3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "86%",
+      "pedestrian": "84%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 297,
+    "fields": {
+      "year": "2023",
+      "make_model": "NIO EL7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 298,
+    "fields": {
+      "year": "2023",
+      "make_model": "BYD Dolphin",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "85%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 299,
+    "fields": {
+      "year": "2023",
+      "make_model": "Mercedes-EQ EQE SUV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "90%",
+      "pedestrian": "80%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 300,
+    "fields": {
+      "year": "2023",
+      "make_model": "Lexus RZ",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "87%",
+      "pedestrian": "84%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 301,
+    "fields": {
+      "year": "2023",
+      "make_model": "BYD Seal",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 302,
+    "fields": {
+      "year": "2023",
+      "make_model": "BYD Seal U",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "86%",
+      "pedestrian": "83%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 303,
+    "fields": {
+      "year": "2023",
+      "make_model": "BMW 5 Series",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "85%",
+      "pedestrian": "86%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 304,
+    "fields": {
+      "year": "2023",
+      "make_model": "XPeng P7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "81%",
+      "pedestrian": "81%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 305,
+    "fields": {
+      "year": "2023",
+      "make_model": "Kia EV9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "88%",
+      "pedestrian": "76%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 306,
+    "fields": {
+      "year": "2023",
+      "make_model": "BYD Tang",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "87%",
+      "pedestrian": "80%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 307,
+    "fields": {
+      "year": "2023",
+      "make_model": "XPeng G9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 308,
+    "fields": {
+      "year": "2023",
+      "make_model": "Honda ZR-V",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "86%",
+      "pedestrian": "81%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 309,
+    "fields": {
+      "year": "2023",
+      "make_model": "Vinfast VF8",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "89%",
+      "pedestrian": "77%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 310,
+    "fields": {
+      "year": "2023",
+      "make_model": "Hyundai KONA",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "83%",
+      "pedestrian": "64%",
+      "safety_assist": "60%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 311,
+    "fields": {
+      "year": "2024",
+      "make_model": "Mercedes-Benz E-Class",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "90%",
+      "pedestrian": "84%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 312,
+    "fields": {
+      "year": "2024",
+      "make_model": "Zeekr X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "90%",
+      "pedestrian": "84%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 313,
+    "fields": {
+      "year": "2024",
+      "make_model": "Zeekr 001",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "88%",
+      "pedestrian": "84%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 314,
+    "fields": {
+      "year": "2024",
+      "make_model": "Skoda Superb",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 315,
+    "fields": {
+      "year": "2024",
+      "make_model": "Volkswagen Passat",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 316,
+    "fields": {
+      "year": "2024",
+      "make_model": "Audi Q6 e-tron",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "92%",
+      "pedestrian": "81%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 317,
+    "fields": {
+      "year": "2024",
+      "make_model": "Mazda CX-80",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "88%",
+      "pedestrian": "84%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 318,
+    "fields": {
+      "year": "2024",
+      "make_model": "Maxus eTERRON 9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "85%",
+      "pedestrian": "84%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 319,
+    "fields": {
+      "year": "2024",
+      "make_model": "MG P9 EV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "85%",
+      "pedestrian": "84%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 320,
+    "fields": {
+      "year": "2024",
+      "make_model": "Porsche Macan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "90%",
+      "pedestrian": "83%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 321,
+    "fields": {
+      "year": "2024",
+      "make_model": "Deepal S07",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "87%",
+      "pedestrian": "74%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 322,
+    "fields": {
+      "year": "2024",
+      "make_model": "NIO EL6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 323,
+    "fields": {
+      "year": "2024",
+      "make_model": "Maxus MIFA 7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "87%",
+      "pedestrian": "81%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 324,
+    "fields": {
+      "year": "2024",
+      "make_model": "Cupra Tavascan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "86%",
+      "pedestrian": "80%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 325,
+    "fields": {
+      "year": "2024",
+      "make_model": "Toyota C-HR",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "86%",
+      "pedestrian": "86%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 326,
+    "fields": {
+      "year": "2024",
+      "make_model": "Skoda Kodiaq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "83%",
+      "pedestrian": "82%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 327,
+    "fields": {
+      "year": "2024",
+      "make_model": "XPeng G6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 328,
+    "fields": {
+      "year": "2024",
+      "make_model": "MG HS",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "83%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 329,
+    "fields": {
+      "year": "2024",
+      "make_model": "Volvo EX30",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 330,
+    "fields": {
+      "year": "2024",
+      "make_model": "Deepal S07 (reassessment)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "87%",
+      "pedestrian": "74%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 331,
+    "fields": {
+      "year": "2024",
+      "make_model": "Volkswagen Tiguan",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "88%",
+      "pedestrian": "84%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 332,
+    "fields": {
+      "year": "2024",
+      "make_model": "Subaru Impreza",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "90%",
+      "pedestrian": "84%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 333,
+    "fields": {
+      "year": "2024",
+      "make_model": "Subaru Crosstrek",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "90%",
+      "pedestrian": "85%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 334,
+    "fields": {
+      "year": "2024",
+      "make_model": "Ford Explorer",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "86%",
+      "pedestrian": "80%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 335,
+    "fields": {
+      "year": "2024",
+      "make_model": "Ford Capri",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "86%",
+      "pedestrian": "80%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 336,
+    "fields": {
+      "year": "2024",
+      "make_model": "Subaru Forester",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "89%",
+      "pedestrian": "86%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 337,
+    "fields": {
+      "year": "2024",
+      "make_model": "MINI Countryman",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "87%",
+      "pedestrian": "81%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 338,
+    "fields": {
+      "year": "2024",
+      "make_model": "Leapmotor C10",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "85%",
+      "pedestrian": "77%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 339,
+    "fields": {
+      "year": "2024",
+      "make_model": "Audi A5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "88%",
+      "pedestrian": "78%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 340,
+    "fields": {
+      "year": "2024",
+      "make_model": "Audi A6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "88%",
+      "pedestrian": "78%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 341,
+    "fields": {
+      "year": "2024",
+      "make_model": "Lexus LBX",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "83%",
+      "pedestrian": "79%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 342,
+    "fields": {
+      "year": "2024",
+      "make_model": "Honda CR-V",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "85%",
+      "child_occupant": "86%",
+      "pedestrian": "76%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 343,
+    "fields": {
+      "year": "2024",
+      "make_model": "Hyundai Santa Fe",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "84%",
+      "child_occupant": "88%",
+      "pedestrian": "70%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 344,
+    "fields": {
+      "year": "2024",
+      "make_model": "Alpine A290",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 345,
+    "fields": {
+      "year": "2024",
+      "make_model": "Renault 5",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 346,
+    "fields": {
+      "year": "2024",
+      "make_model": "Renault 4 E-Tech Electric",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "85%",
+      "pedestrian": "73%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 347,
+    "fields": {
+      "year": "2024",
+      "make_model": "Nissan Micra",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "80%",
+      "pedestrian": "77%",
+      "safety_assist": "68%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 348,
+    "fields": {
+      "year": "2024",
+      "make_model": "MG ZS Hybrid",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "75%",
+      "child_occupant": "82%",
+      "pedestrian": "73%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 349,
+    "fields": {
+      "year": "2024",
+      "make_model": "Renault Captur",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 350,
+    "fields": {
+      "year": "2024",
+      "make_model": "Mitsubishi ASX",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 351,
+    "fields": {
+      "year": "2024",
+      "make_model": "Renault Symbioz",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "73%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 352,
+    "fields": {
+      "year": "2024",
+      "make_model": "Mitsubishi Grandis",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "73%",
+      "child_occupant": "80%",
+      "pedestrian": "76%",
+      "safety_assist": "69%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 353,
+    "fields": {
+      "year": "2024",
+      "make_model": "Ford Tourneo Custom",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "75%",
+      "child_occupant": "86%",
+      "pedestrian": "77%",
+      "safety_assist": "53%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 354,
+    "fields": {
+      "year": "2024",
+      "make_model": "Dacia Duster",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "70%",
+      "child_occupant": "84%",
+      "pedestrian": "60%",
+      "safety_assist": "57%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 355,
+    "fields": {
+      "year": "2024",
+      "make_model": "Jeep Avenger",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "79%",
+      "child_occupant": "70%",
+      "pedestrian": "59%",
+      "safety_assist": "53%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 356,
+    "fields": {
+      "year": "2024",
+      "make_model": "Ford Tourneo Courier",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "62%",
+      "child_occupant": "80%",
+      "pedestrian": "81%",
+      "safety_assist": "54%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 357,
+    "fields": {
+      "year": "2024",
+      "make_model": "Dacia Bigster",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "69%",
+      "child_occupant": "85%",
+      "pedestrian": "60%",
+      "safety_assist": "57%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 358,
+    "fields": {
+      "year": "2024",
+      "make_model": "Suzuki Swift",
+      "safety_equipment": "Standard",
+      "overall_rating": "3",
+      "adult_occupant": "67%",
+      "child_occupant": "65%",
+      "pedestrian": "76%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 359,
+    "fields": {
+      "year": "2025",
+      "make_model": "Mercedes-Benz CLA",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "89%",
+      "pedestrian": "93%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 360,
+    "fields": {
+      "year": "2025",
+      "make_model": "Tesla Model 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "93%",
+      "pedestrian": "89%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 361,
+    "fields": {
+      "year": "2025",
+      "make_model": "Firefly Firefly",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "96%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "86%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 362,
+    "fields": {
+      "year": "2025",
+      "make_model": "Tesla Model Y",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "93%",
+      "pedestrian": "86%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 363,
+    "fields": {
+      "year": "2025",
+      "make_model": "smart #5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "93%",
+      "pedestrian": "84%",
+      "safety_assist": "92%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 364,
+    "fields": {
+      "year": "2025",
+      "make_model": "BYD Seal 6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "90%",
+      "pedestrian": "84%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 365,
+    "fields": {
+      "year": "2025",
+      "make_model": "Mercedes-Benz CLE Coupé",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "89%",
+      "pedestrian": "87%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 366,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volvo EX90",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "93%",
+      "pedestrian": "82%",
+      "safety_assist": "86%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 367,
+    "fields": {
+      "year": "2025",
+      "make_model": "Leapmotor B10",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "93%",
+      "pedestrian": "84%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 368,
+    "fields": {
+      "year": "2025",
+      "make_model": "MAZDA CX-5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "89%",
+      "pedestrian": "93%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 369,
+    "fields": {
+      "year": "2025",
+      "make_model": "Lynk & Co 02",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "83%",
+      "safety_assist": "89%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 370,
+    "fields": {
+      "year": "2025",
+      "make_model": "Polestar 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "93%",
+      "pedestrian": "79%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 371,
+    "fields": {
+      "year": "2025",
+      "make_model": "Zeekr 7X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "90%",
+      "pedestrian": "78%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 372,
+    "fields": {
+      "year": "2025",
+      "make_model": "Togg T10X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 373,
+    "fields": {
+      "year": "2025",
+      "make_model": "IM IM6",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "83%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 374,
+    "fields": {
+      "year": "2025",
+      "make_model": "IM IM5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "85%",
+      "pedestrian": "85%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 375,
+    "fields": {
+      "year": "2025",
+      "make_model": "Hongqi EHS7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "85%",
+      "pedestrian": "82%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 376,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen T-Roc",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "87%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 377,
+    "fields": {
+      "year": "2025",
+      "make_model": "Audi A6 e-tron",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "91%",
+      "pedestrian": "75%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 378,
+    "fields": {
+      "year": "2025",
+      "make_model": "Voyah Courage",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "88%",
+      "pedestrian": "76%",
+      "safety_assist": "87%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 379,
+    "fields": {
+      "year": "2025",
+      "make_model": "Polestar 4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 380,
+    "fields": {
+      "year": "2025",
+      "make_model": "Togg T10F",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "95%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 381,
+    "fields": {
+      "year": "2025",
+      "make_model": "MAZDA 6e",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "93%",
+      "child_occupant": "93%",
+      "pedestrian": "74%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 382,
+    "fields": {
+      "year": "2025",
+      "make_model": "MG MGS6 EV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "92%",
+      "child_occupant": "85%",
+      "pedestrian": "84%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 383,
+    "fields": {
+      "year": "2025",
+      "make_model": "Deepal S05",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "94%",
+      "child_occupant": "87%",
+      "pedestrian": "78%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 384,
+    "fields": {
+      "year": "2025",
+      "make_model": "GEELY STARRAY EM-i",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "86%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 385,
+    "fields": {
+      "year": "2025",
+      "make_model": "Porsche Cayenne",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "89%",
+      "pedestrian": "81%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 386,
+    "fields": {
+      "year": "2025",
+      "make_model": "GEELY EX5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "87%",
+      "pedestrian": "83%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 387,
+    "fields": {
+      "year": "2025",
+      "make_model": "Cupra Terramar",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "82%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 388,
+    "fields": {
+      "year": "2025",
+      "make_model": "OMODA 9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "81%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 389,
+    "fields": {
+      "year": "2025",
+      "make_model": "Lynk & Co 08",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "78%",
+      "safety_assist": "81%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 390,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen ID.4",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "84%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 391,
+    "fields": {
+      "year": "2025",
+      "make_model": "Lucid Gravity",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "93%",
+      "pedestrian": "80%",
+      "safety_assist": "85%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 392,
+    "fields": {
+      "year": "2025",
+      "make_model": "Cupra Formentor",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "86%",
+      "pedestrian": "79%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 393,
+    "fields": {
+      "year": "2025",
+      "make_model": "MG MG4 EV URBAN",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "85%",
+      "pedestrian": "85%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 394,
+    "fields": {
+      "year": "2025",
+      "make_model": "MINI Cooper E",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 395,
+    "fields": {
+      "year": "2025",
+      "make_model": "BYD Sealion 7",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "93%",
+      "pedestrian": "76%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 396,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen Tayron",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "85%",
+      "pedestrian": "83%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 397,
+    "fields": {
+      "year": "2025",
+      "make_model": "MG MGS5 EV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "82%",
+      "pedestrian": "82%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 398,
+    "fields": {
+      "year": "2025",
+      "make_model": "Aion V",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 399,
+    "fields": {
+      "year": "2025",
+      "make_model": "Audi Q4 e-tron",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "91%",
+      "child_occupant": "87%",
+      "pedestrian": "79%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 400,
+    "fields": {
+      "year": "2025",
+      "make_model": "Cupra BORN",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "89%",
+      "child_occupant": "87%",
+      "pedestrian": "76%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 401,
+    "fields": {
+      "year": "2025",
+      "make_model": "Audi Q3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "87%",
+      "child_occupant": "86%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 402,
+    "fields": {
+      "year": "2025",
+      "make_model": "Subaru Solterra",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 403,
+    "fields": {
+      "year": "2025",
+      "make_model": "SEAT Leon",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "86%",
+      "pedestrian": "81%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 404,
+    "fields": {
+      "year": "2025",
+      "make_model": "Toyota bZ4X",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 405,
+    "fields": {
+      "year": "2025",
+      "make_model": "Cupra Leon",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "86%",
+      "pedestrian": "82%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 406,
+    "fields": {
+      "year": "2025",
+      "make_model": "Skoda Enyaq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 407,
+    "fields": {
+      "year": "2025",
+      "make_model": "Skoda Elroq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 408,
+    "fields": {
+      "year": "2025",
+      "make_model": "EXLANTIX ET",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "76%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 409,
+    "fields": {
+      "year": "2025",
+      "make_model": "Hyundai NEXO",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "90%",
+      "child_occupant": "85%",
+      "pedestrian": "76%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 410,
+    "fields": {
+      "year": "2025",
+      "make_model": "Hyundai IONIQ 9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "83%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 411,
+    "fields": {
+      "year": "2025",
+      "make_model": "Skoda Octavia",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "82%",
+      "pedestrian": "81%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 412,
+    "fields": {
+      "year": "2025",
+      "make_model": "BMW X3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "84%",
+      "pedestrian": "77%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 413,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen ID.3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "87%",
+      "pedestrian": "78%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 414,
+    "fields": {
+      "year": "2025",
+      "make_model": "Audi Q5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "85%",
+      "child_occupant": "86%",
+      "pedestrian": "79%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 415,
+    "fields": {
+      "year": "2025",
+      "make_model": "MINI Aceman",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "87%",
+      "pedestrian": "77%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 416,
+    "fields": {
+      "year": "2025",
+      "make_model": "EXLANTIX ES",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "88%",
+      "child_occupant": "82%",
+      "pedestrian": "77%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 417,
+    "fields": {
+      "year": "2025",
+      "make_model": "EBRO s800",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 418,
+    "fields": {
+      "year": "2025",
+      "make_model": "Chery Tiggo 8 (reassessment)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 419,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen Golf",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "80%",
+      "child_occupant": "86%",
+      "pedestrian": "85%",
+      "safety_assist": "79%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 420,
+    "fields": {
+      "year": "2025",
+      "make_model": "Hongqi E-HS9",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "87%",
+      "pedestrian": "73%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 421,
+    "fields": {
+      "year": "2025",
+      "make_model": "BYD Dolphin Surf",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "86%",
+      "pedestrian": "76%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 422,
+    "fields": {
+      "year": "2025",
+      "make_model": "MINI Cooper",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "82%",
+      "pedestrian": "81%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 423,
+    "fields": {
+      "year": "2025",
+      "make_model": "Hongqi EHS5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "81%",
+      "child_occupant": "85%",
+      "pedestrian": "74%",
+      "safety_assist": "82%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 424,
+    "fields": {
+      "year": "2025",
+      "make_model": "EBRO s700",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 425,
+    "fields": {
+      "year": "2025",
+      "make_model": "Chery Tiggo 7 (reassessment)",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "82%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 426,
+    "fields": {
+      "year": "2025",
+      "make_model": "MG MGS9 PHEV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "85%",
+      "pedestrian": "74%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 427,
+    "fields": {
+      "year": "2025",
+      "make_model": "Kia EV5",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "85%",
+      "pedestrian": "74%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 428,
+    "fields": {
+      "year": "2025",
+      "make_model": "Mitsubishi Eclipse Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "86%",
+      "pedestrian": "82%",
+      "safety_assist": "70%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 429,
+    "fields": {
+      "year": "2025",
+      "make_model": "JAECOO 7 PHEV",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "81%",
+      "child_occupant": "80%",
+      "pedestrian": "80%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 430,
+    "fields": {
+      "year": "2025",
+      "make_model": "Audi A3",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "86%",
+      "child_occupant": "81%",
+      "pedestrian": "76%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 431,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen ID.Buzz",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "84%",
+      "child_occupant": "85%",
+      "pedestrian": "70%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 432,
+    "fields": {
+      "year": "2025",
+      "make_model": "Cadillac Optiq",
+      "safety_equipment": "Standard",
+      "overall_rating": "5",
+      "adult_occupant": "83%",
+      "child_occupant": "81%",
+      "pedestrian": "76%",
+      "safety_assist": "74%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 433,
+    "fields": {
+      "year": "2025",
+      "make_model": "BMW 1 Series",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "78%",
+      "child_occupant": "84%",
+      "pedestrian": "85%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 434,
+    "fields": {
+      "year": "2025",
+      "make_model": "BMW 2 Series Gran Coupé",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "78%",
+      "child_occupant": "86%",
+      "pedestrian": "85%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 435,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen Caravelle",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "86%",
+      "child_occupant": "86%",
+      "pedestrian": "79%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 436,
+    "fields": {
+      "year": "2025",
+      "make_model": "Ford Tourneo Custom",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "86%",
+      "child_occupant": "86%",
+      "pedestrian": "79%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 437,
+    "fields": {
+      "year": "2025",
+      "make_model": "Toyota Yaris Cross",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "85%",
+      "pedestrian": "83%",
+      "safety_assist": "76%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 438,
+    "fields": {
+      "year": "2025",
+      "make_model": "Chery Tiggo 4",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 439,
+    "fields": {
+      "year": "2025",
+      "make_model": "EBRO s400",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "85%",
+      "pedestrian": "78%",
+      "safety_assist": "80%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 440,
+    "fields": {
+      "year": "2025",
+      "make_model": "Kia EV3",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "83%",
+      "child_occupant": "84%",
+      "pedestrian": "77%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 441,
+    "fields": {
+      "year": "2025",
+      "make_model": "Chery Tiggo 8",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "81%",
+      "child_occupant": "77%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 442,
+    "fields": {
+      "year": "2025",
+      "make_model": "Chery Tiggo 7",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "77%",
+      "pedestrian": "80%",
+      "safety_assist": "78%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 443,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen Multivan",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "77%",
+      "child_occupant": "87%",
+      "pedestrian": "78%",
+      "safety_assist": "75%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 444,
+    "fields": {
+      "year": "2025",
+      "make_model": "Renault Clio",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "79%",
+      "child_occupant": "82%",
+      "pedestrian": "80%",
+      "safety_assist": "73%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 445,
+    "fields": {
+      "year": "2025",
+      "make_model": "Kia EV4",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "84%",
+      "child_occupant": "85%",
+      "pedestrian": "77%",
+      "safety_assist": "67%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 446,
+    "fields": {
+      "year": "2025",
+      "make_model": "Ford Tourneo Courier",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "85%",
+      "child_occupant": "78%",
+      "pedestrian": "78%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 447,
+    "fields": {
+      "year": "2025",
+      "make_model": "Toyota Urban Cruiser",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "77%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 448,
+    "fields": {
+      "year": "2025",
+      "make_model": "Suzuki e VITARA",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "77%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 449,
+    "fields": {
+      "year": "2025",
+      "make_model": "Alpine A390",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "74%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "77%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 450,
+    "fields": {
+      "year": "2025",
+      "make_model": "Opel/Vauxhall Grandland",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 451,
+    "fields": {
+      "year": "2025",
+      "make_model": "Peugeot 5008",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 452,
+    "fields": {
+      "year": "2025",
+      "make_model": "Peugeot 3008",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 453,
+    "fields": {
+      "year": "2025",
+      "make_model": "Citroën C5 Aircross",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "85%",
+      "pedestrian": "79%",
+      "safety_assist": "62%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 454,
+    "fields": {
+      "year": "2025",
+      "make_model": "Toyota Yaris",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "72%",
+      "child_occupant": "84%",
+      "pedestrian": "83%",
+      "safety_assist": "72%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 455,
+    "fields": {
+      "year": "2025",
+      "make_model": "Jeep Compass",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "80%",
+      "child_occupant": "85%",
+      "pedestrian": "74%",
+      "safety_assist": "66%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 456,
+    "fields": {
+      "year": "2025",
+      "make_model": "DS N°8",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "76%",
+      "child_occupant": "85%",
+      "pedestrian": "80%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 457,
+    "fields": {
+      "year": "2025",
+      "make_model": "Kia PV5 Passenger",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "83%",
+      "child_occupant": "85%",
+      "pedestrian": "64%",
+      "safety_assist": "65%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 458,
+    "fields": {
+      "year": "2025",
+      "make_model": "Volkswagen Caddy",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "72%",
+      "child_occupant": "80%",
+      "pedestrian": "80%",
+      "safety_assist": "71%"
+    }
+  },
+  {
+    "model": "search.ncaprating",
+    "pk": 459,
+    "fields": {
+      "year": "2025",
+      "make_model": "MG 3",
+      "safety_equipment": "Standard",
+      "overall_rating": "4",
+      "adult_occupant": "74%",
+      "child_occupant": "73%",
+      "pedestrian": "81",
+      "safety_assist": ""
+    }
+  }
+]

@@ -1,0 +1,15 @@
+*
+!Dockerfile
+!backend/
+!backend/**
+!frontend/
+!frontend/**
+!deploy/
+!deploy/Caddyfile
+**/__pycache__
+**/*.pyc
+**/.env*
+frontend/node_modules
+frontend/dist
+frontend/*.tsbuildinfo
+backend/*.sqlite3

@@ -1,0 +1,11 @@
+Merhaba,
+
+{% if code %}Autosense hesabınızı kullanmak için aşağıdaki doğrulama kodunu tarayıcıdaki açık pencereye girin:
+
+{{ code }}
+
+Kod 15 dakika geçerlidir.{% else %}Autosense hesabınızı kullanmak için aşağıdaki bağlantıdan e-posta adresinizi doğrulayın:
+
+{{ activate_url }}
+
+Bağlantı 24 saat geçerlidir.{% endif %} Bu isteği siz yapmadıysanız bu e-postayı dikkate almayın.
