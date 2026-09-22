@@ -1,0 +1,167 @@
+{
+  "hedef_id": "ford-ranger-3-2-tdci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR soğutucusu çatlayınca soğutma suyu motorun içine kaçar; dışarıdan sızıntı görülmeden antifriz eksilir.",
+      "km_araligi": null,
+      "kaynak_url": "https://unsealed4x4.com.au/ford-ranger-3-2l-common-problems-and-solutions/",
+      "kaynak_alinti": "When (not if) this part fails, water from your cooling system goes into your engine.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Değişken geometrili turbonun VNT aktüatörü P5AT motorda bilinen bir aşınma parçasıdır.",
+      "km_araligi": null,
+      "kaynak_url": "https://turbosdirect.com.au/blogs/turbo-replacement-guides/ford-ranger-px-3-2l-p5at-turbo-diagnosis-replacement-guide",
+      "kaynak_alinti": "VNT actuator fault — the variable nozzle actuator (also called the turbo solenoid or wastegate actuator) is a known wear item on the P5AT.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Common-rail enjektörleri yüksek kilometrelerde içten aşınarak sarsıntı ve siyah duman yapar.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://torquebot.io/blog/ford-ranger-32-common-problems",
+      "kaynak_alinti": "The high-pressure common-rail injectors are reliable up to high mileage but eventually wear internally.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "DPF tıkanması ani güç kaybına ve aracın limp (düşük güç) moduna girmesine yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.enginefinder.co.za/blog/problems/ford-ranger-3-2-tdci-engine-problems/",
+      "kaynak_alinti": "Sudden power loss and engine running in 'limp' mode (reduced power).",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik şanzımanda soğuk çalıştırmadan sonra üçüncü vites üstüne geçmeme şikâyeti görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://atco.com.tr/ford-otomatik-sanziman-tamiri/ford-ranger-otomatik-sanziman-tamiri/",
+      "kaynak_alinti": "üçüncü vitesten sonra vites atmıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri aşınınca soğuk çalıştırmada motorun önünden tıkırtı/çıtırtı sesi gelir.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.enginefinder.co.za/blog/problems/ford-ranger-3-2-tdci-engine-problems/",
+      "kaynak_alinti": "A faint ticking or rattling from the front of the engine, especially on cold start.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Motorun üzerine oturan kablo demeti sürtünerek aşınır ve kısa devre kaynaklı elektrik arızası yapar.",
+      "km_araligi": null,
+      "kaynak_url": "https://unsealed4x4.com.au/ford-ranger-3-2l-common-problems-and-solutions/",
+      "kaynak_alinti": "Engine harness sits directly on the engine",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yuksek-basinc-pompasi",
+      "iddia": "Bir kısım 3.2 sahibi, yakıt sisteminde metal partikülle ortaya çıkan erken HPFP aşınması bildiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://torquebot.io/blog/ford-ranger-32-common-problems",
+      "kaynak_alinti": "A smaller number of 3.2 owners report early HPFP wear, often presenting as metallic contamination in the fuel system.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "3.198 cc dizel motor 200 beygir güç ve 470 Nm tork üreterek güçlü bir çekiş sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/ford-ranger-wildtrak/",
+      "kaynak_alinti": "3198 cc hacmindeki dizel motor 200 beygir güç ve 470 Nm tork üretiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "Arazi kabiliyeti yüksek; engel aşma testlerinin tamamından başarıyla çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/ford-ranger-wildtrak/",
+      "kaynak_alinti": "engel aşma testleri başta olmak üzere hepsinden başarıyla ayrıldı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Ranger, Euro NCAP testlerinde sınıfında 5 yıldız alan tek model olarak öne çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoloji.com/ilksurus/ford-ranger-22-tdci/sayfa/genel",
+      "kaynak_alinti": "Euro NCAP testlerinden sınıfının tek 5 yıldız alan modeli",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Rölantide ve 90 km/s hızda kabin içine en az ses alan pikaplardan biri.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-ranger--811688?p=2",
+      "kaynak_alinti": "rölanti ve 90 km/h süratte içerisine en az ses alan amarok ve ranger oldu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "4x4 versiyonlar ikinci elde 4x2'ye göre daha kolay alıcı buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-ford-ranger-kulubu--13996312-93",
+      "kaynak_alinti": "4x4 hem ikinci eli daha iyidir hemde seni yarı yolda bırakmaz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Günlük kullanımda tüketim 10,5-11,5 litre; fabrika değeri 8,7 litrenin belirgin üzerinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/ford-ranger-wildtrak/",
+      "kaynak_alinti": "Biz yaptığımız günlük kullanımlar sırasında 10.5 ile 11.5 litre arasında değişen tüketimi notlarımıza yazdık.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "mtv-vergi-yuksek",
+      "iddia": "3.198 cc motor yüksek MTV dilimine giriyor; 3.2 Wildtrak'ın vergisi 2.0'lınınkinin katı oluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-ranger-wildtrak-3-2-vergi-sorunsali--121448930",
+      "kaynak_alinti": "3.2 motorlu Wildtrak'ların Vergi 14bin TL",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka yaşam alanı dar ve koltuk sırtları dik; uzun yolda arka yolcular için yorucu.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-ranger-kotu-bir-heves-mi-olur.15553/",
+      "kaynak_alinti": "Uzun yolculuk iyi modellerde bile yorucu. Özellikle arka yaşam alanları çok dar ve koltuklar dik.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Arka makas süspansiyon nedeniyle kasa boşken sürekli zıplama hissi oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-ranger-kotu-bir-heves-mi-olur.15553/",
+      "kaynak_alinti": "Makaslı araçlar olduğu için boşken sürekli bir zıplama oluyor. Binek araç ile yol gitmeye alıştıysanız canınız sıkılabilir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yürütme maliyeti yüksek; yakıtın yanı sıra parça ve bakım kalemleri de pahalı.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-ranger-kotu-bir-heves-mi-olur.15553/",
+      "kaynak_alinti": "Yürütme maliyetleri yüksek tek problem yakıt değil.",
+      "guven": "orta"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "hedef_id": "opel-corsa-1-4",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Corsa D'de surekli su eksiltme ve fark edilmeyen hararet sonucu su hortumunun sismesi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d--6240745",
+      "kaynak_alinti": "sürekli su eksiltme, farkedilemeyen hararet sorunundan dolayı bir bakmışsınız su hortumunuz şişmiş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "sanziman-yagi",
+      "iddia": "Otomatik Corsa D'de motor suyu eksiliyorsa sanziman sogutucusunun kontrolu oneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d--6240745",
+      "kaynak_alinti": "motor suyunda eksilme farkettiyseniz şanzıman soğutucuyu kontrol ettirin",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Easytronic sanzimanli Corsa'da baski balatanin cok kisa surede bitmesi sikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/easytronic--421247",
+      "kaynak_alinti": "cok kısa surelerde baskı balatanın bitmesi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Easytronic sanziman vites gecislerinde takiliyor ve rahatsiz edici kasilmalar yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/easytronic--421247",
+      "kaynak_alinti": "takılabilir ve kimi zaman rahatsız edici kasılmalarla vites arttırabilir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Yuksek km'li Corsa C'de direksiyon kutusunun komple degistirildigi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-c--877391",
+      "kaynak_alinti": "direksiyon kutusu komple ön takım gazlı 4 amortisör + kule ve takozları fren diskleri",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Yuksek km'li Corsa C'de dort amortisor, kule ve takozlarin topluca degismesi gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-c--877391",
+      "kaynak_alinti": "direksiyon kutusu komple ön takım gazlı 4 amortisör + kule ve takozları fren diskleri",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Kullanicilar Corsa'da beklenmedik elektronik arizalar yasandigini belirtiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/opel-corsa/",
+      "kaynak_alinti": "bilinenin aksine fazla yakan, ilk kalkışta hantal, olmadık elektronik sorunlar çıkaran",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Dis olculerine gore ic hacmi genis; 190 cm uzerindeki suruculer bile rahat ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa--41609",
+      "kaynak_alinti": "özellikle 190 cm'nin üzerindekilerin bile çok rahat edebilecekleri kadar geniş bir iç hacime sahip olması",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.4 Twinport sakin kullanimda sehir ici 7-7,5 lt/100 km ortalama tuketim veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/twinport--871103",
+      "kaynak_alinti": "istanbul şehiriçinde çok yoğun trafikte olmamak ve sakin kullanım şartıyla 7-75lt/100km ortalama tüketime sahip",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "16 yillik kullanimda birkac ufak ariza disinda sorun cikarmadigi aktariliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-c--877391",
+      "kaynak_alinti": "16 senedir hiç abartmıyorum 1 2 ufak arızadan gayri bir problem çıkartmayan alman canavarı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Pedal yuksekligi ve vites kolu konumu sayesinde kullanimi rahat bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa--41609",
+      "kaynak_alinti": "ideal pedal yüksekliği ve rahat vitesi ile kullanması rahat olduğu kadar da zevkli bir arabadır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Rakiplerine gore yol tutusu basarili bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d--6240745",
+      "kaynak_alinti": "rakiplerine göre yol tutuşu fena değil",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parca fiyatlari segmentine gore nispeten pahali bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa--41609",
+      "kaynak_alinti": "yedek parçası tüm yabancı arabalar gözününde bulundurulduğu takdirde istisna yaratmadığı gibi 'nispeten pahalı' segmentinde bile yer alabilir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Motor gucu zaten dusuk; Easytronic sanziman performansi daha da azaltiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/easytronic--421247",
+      "kaynak_alinti": "arabanin zaten az olan gücünü daha da azaltan bir sistemdir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Giris seviyesi Essentia pakette arka fren kampana ve yalnizca 2 hava yastigi var.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d--6240745",
+      "kaynak_alinti": "arka fren kampana, arka kapılarda manuel cam açma, 2 hava yastığı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Bozuk yolda ve cukurlarda kabine yansiyan sesler rahatsiz edici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/opel-corsa/",
+      "kaynak_alinti": "Yol tutuşu iyi denebilirsede çukurlarda çıkardığı seslerle insanı deliye çevirir",
+      "guven": "dusuk"
+    }
+  ]
+}

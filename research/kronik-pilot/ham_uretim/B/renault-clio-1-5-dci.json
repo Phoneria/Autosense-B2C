@@ -1,0 +1,149 @@
+{
+  "hedef_id": "renault-clio-1-5-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "\"Enjeksiyonu kontrol ettirin\" uyarısı ve enjektör devresi arızası yaygın; çekiş kaybı yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/enjeksiyon",
+      "kaynak_alinti": "2 aydır enjeksiyon arızası veriyor ve çekiş problemi yaşıyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "100.000 km sonrası EGR valfi kurum bağlayıp silkeleme ve enjeksiyon uyarı lambası yapıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/egr-valfini-temizledim.101221/",
+      "kaynak_alinti": "içi resimdeki gibi kurum bağlamış",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo hortumundan yağ kaçırma tekrarlıyor; orijinal parça takılsa da sorun birkaç ayda geri geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-5-dci-turbo-borusu-yaglanmasi--156460331",
+      "kaynak_alinti": "Turbo hortumu yağ kaçırmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kullanımda DPF tıkanıyor; sürekli rejenerasyon ve arıza lambası şikayeti yaygın.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio-4-partikul-filtresi.96479/",
+      "kaynak_alinti": "10-15 dakika yüksek devirde kullandığımda arıza ışığı sönüyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "EDC otomatik şanzımanda \"vites kutusunu kontrol ettiriniz\" uyarısı ve şanzıman beyni arızası sık.",
+      "km_araligi": "75.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/edc-sanziman",
+      "kaynak_alinti": "Clio 4 aracımda vites kutusunu kontrol ettiriniz hatası veriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "EDC şanzımanın kavraması 200.000 km civarında zayıflıyor, vites ayırma çatallarıyla birlikte değişiyor.",
+      "km_araligi": "120.000-200.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-1-5-dci-edc-250-000-km-kullanici-deneyimi--149107088",
+      "kaynak_alinti": "kavramanın zayıfladığını hissetmeye başladım. Özel serviste kavrama, vites ayırma çatalları ve şanzıman kulağı değişti.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "140.000 km'de klima kompresöründe gaz kaçağı, 195.000 km'de kompresörün komple değişimi bildirilmiş.",
+      "km_araligi": "140.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-1-5-dci-edc-250-000-km-kullanici-deneyimi--149107088",
+      "kaynak_alinti": "140.000 km'de klima kompresörü kaçağı tamir edildi. (600 TL)",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön amortisör körüklerinden direksiyon çevirirken ve tümsekten geçerken gıcırtı sesi geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-kullanan-var-mi-kronik-sorunlari--144475304",
+      "kaynak_alinti": "Kronik ön teker amortisör körüklerinin gıcırtı yapması",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi 5,5-6,5 l/100 km, uzun yolda 4 l/100 km civarı tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/rekor-yakit-tuketimi-clio-4-1-5-dci--133743824",
+      "kaynak_alinti": "Araç normalde şehir içi 5.5-ila 6.3 arasinda gidip geliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "K9K 1.5 dCi düzenli bakımla 200.000 km üzerini motor arızası çıkarmadan tamamlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-clio--124702?p=40",
+      "kaynak_alinti": "Bakımını düzenli ve hakkıyla yaptırırsanız en az 200000km yolda bırakmaz sorun yaşatmaz",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Triger ve V kayışı dahil ağır bakım, filtre ve işçilikle birlikte tek kalemde ucuza yapılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio-4-1-5-dci-agir-bakimi-yaptirdim-ne-kadar-tuttu.98997/",
+      "kaynak_alinti": "300(İçcilik)+95(Mazot-Yağ-Hava-Polen Filtresi)+240 (Triger+V Kayışı)+Motor Yağı (Beleş Aldım) =635 TL",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "2018-2019 dizel Clio'lar, daha yeni 2020-2022 benzinli TCe Clio'lardan daha pahalı işlem görüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-clio-1-0-tce-vs-renault-clio-1-5-dci--8045973",
+      "kaynak_alinti": "2018 2019 dizel cliolar suan 2020 2022 clio tce lerden daha pahali",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "65 bg giriş seviyesi dCi versiyonunun gücü yetersiz; yokuşta ve yüksek hızda zorlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-1-5-dci-turbo-sorunumu-mu-var--42791457",
+      "kaynak_alinti": "65 beygir gücü olan araca 1000nm tork koysan o araba 65 beygir olarak kalır",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabinde trim gıcırtıları ve yüksek hızda rüzgar sesi kullanıcılarca kronik olarak tanımlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-kullanan-var-mi-kronik-sorunlari--144475304",
+      "kaynak_alinti": "Rüzgar sesi kronik sorun. Aynaların ve ön camdaki kelebek camın yapısı ve rüzgar direnci ile alakalı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk diz mesafesi dar, arka yolcular için alan kısıtlı.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-clio--124702?p=40",
+      "kaynak_alinti": "Arka koltuk diz mesafesi çok dar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "EDC şanzıman beyni yalnızca sıfır orijinal bulunuyor, ikinci el seçeneği yok ve maliyeti yüksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-1-5-dci-edc-250-000-km-kullanici-deneyimi--149107088",
+      "kaynak_alinti": "Şanzıman beyni sıfır ve orijinal parça olarak temin edilebiliyor sadece. İkinci el tavsiye edilmiyor",
+      "guven": "orta"
+    }
+  ]
+}

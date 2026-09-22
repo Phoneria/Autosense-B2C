@@ -279,3 +279,53 @@ def test_seller_prose_cannot_override_catalog_identity():
     text = SAHIBINDEN_TEXT + "\nAçıklama\nVasıta / Otomobil / BMW / 3 Serisi / 320d / Standart"
     result = parse_pasted_listing_text(text)
     assert result["series_name"] == "5 Serisi"
+
+
+def test_full_arabam_page_reads_location_and_description():
+    """arabam.com ilan sayfası: konum etiketsiz tek satırda ("Fevzi Çakmak Mh.
+    Esenler, İstanbul") ve "Açıklama" başlığı önce sekme menüsünde geçiyor."""
+    from pathlib import Path
+    text = (Path(__file__).parent / "fixtures" / "listing_text" / "arabam_egea.txt").read_text()
+    result = parse_pasted_listing_text(text)
+
+    assert result["source"] == "arabam.com"
+    assert (result["city"], result["district"]) == ("İstanbul", "Esenler")
+    assert result["description"].startswith("ARACIMDA DEĞİŞEN YOK")
+    assert result["description"].endswith("PAZARLIK USULÜNCE OLUR.")
+    assert "Boya, Değişen ve Tramer" not in result["description"]
+    assert (result["year"], result["km"], result["price"]) == (2024, 115000, 950000)
+    assert (result["fuel"], result["color"], result["gear"]) == ("Dizel", "Beyaz", "Manuel")
+    assert result["damage_map"]["sag_arka_camurluk"] == "lokal_boyali"
+    assert result["damage_map"]["arka_kaput"] == "lokal_boyali"
+    assert result["agir_hasar"] is False
+
+
+from pathlib import Path
+
+SAHIBINDEN_PATH = Path(__file__).parent / "fixtures/listing_text/sahibinden_superb.txt"
+
+
+def test_sahibinden_glued_labels_are_parsed():
+    """sahibinden.com etiket ve değeri aynı satırda boşluksuz veriyor
+    ("Yıl2011", "KM270.000", "RenkBeyaz") -- bu alanlar da dolmalı."""
+    text = SAHIBINDEN_PATH.read_text(encoding="utf-8")
+    result = parse_pasted_listing_text(text)
+    assert result["brand_name"] == "Skoda" and result["series_name"].lower() == "superb"
+    assert result["year"] == 2011
+    assert result["km"] == 270000
+    assert result["price"] == 1050000
+    assert result["color"] == "Beyaz"
+    assert result["fuel"] == "LPG & Benzin"
+    assert result["gear"] == "Manuel"
+    assert result["agir_hasar"] is False
+    assert (result["city"], result["district"]) == ("Van", "İpekyolu")
+    assert result["damage_map"] == {"sol_arka_kapi": "lokal_boyali", "sol_arka_camurluk": "lokal_boyali"}
+
+
+def test_glued_label_does_not_swallow_ordinary_words():
+    """"Markalı araç" gibi bir satır "Marka" etiketi sanılmamalı."""
+    from search.services.listing_url_lookup import _find_field_values
+    values = _find_field_values(["Markalı araç arıyorsanız", "Yıl2018", "Renkbeyaz metalik"])
+    assert values["marka"] == ""
+    assert values["yil"] == "2018"
+    assert values["renk"] == ""

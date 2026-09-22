@@ -1,0 +1,428 @@
+{
+  "surum": 1,
+  "secim_kurali": {
+    "populer_adet": 10,
+    "kuyruk_adet": 10,
+    "uzun_kuyruk_ilan_araligi": [
+      5,
+      150
+    ],
+    "max_medyan_yil": 2020,
+    "kategoriler": [
+      "arazi-suv-pick-up",
+      "otomobil"
+    ]
+  },
+  "hedefler": [
+    {
+      "id": "volkswagen-passat-1-6",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.6",
+      "etiket": "Volkswagen Passat 1.6",
+      "yil_araligi": [
+        2011,
+        2020
+      ],
+      "medyan_yil": 2016,
+      "ilan_sayisi": 13841,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.6",
+        "Volkswagen Passat 1.6 Comfortline",
+        "Volkswagen Passat 1.6 Exclusive",
+        "Volkswagen Passat 1.6 FSi Comfortline",
+        "Volkswagen Passat 1.6 FSi Trendline"
+      ]
+    },
+    {
+      "id": "renault-clio-1-5-dci",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Clio 1.5 dCi",
+      "yil_araligi": [
+        2008,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "ilan_sayisi": 11339,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.5 dCi Alize",
+        "Renault Clio 1.5 dCi Authentique",
+        "Renault Clio 1.5 dCi Dynamique",
+        "Renault Clio 1.5 dCi Executive",
+        "Renault Clio 1.5 dCi Expression"
+      ]
+    },
+    {
+      "id": "opel-astra-1-6",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.6",
+      "etiket": "Opel Astra 1.6",
+      "yil_araligi": [
+        1999,
+        2017
+      ],
+      "medyan_yil": 2012,
+      "ilan_sayisi": 10351,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.6 CD",
+        "Opel Astra 1.6 CDTI Business",
+        "Opel Astra 1.6 CDTI Cosmo",
+        "Opel Astra 1.6 CDTI Design",
+        "Opel Astra 1.6 CDTI Dynamic"
+      ]
+    },
+    {
+      "id": "ford-focus-1-6",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.6",
+      "etiket": "Ford Focus 1.6",
+      "yil_araligi": [
+        2006,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "ilan_sayisi": 10209,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.6 Ambiente",
+        "Ford Focus 1.6 Collection",
+        "Ford Focus 1.6 Comfort",
+        "Ford Focus 1.6 Ghia",
+        "Ford Focus 1.6 SCTi Titanium"
+      ]
+    },
+    {
+      "id": "renault-megane-1-5-dci",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Megane",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Megane 1.5 dCi",
+      "yil_araligi": [
+        2007,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "ilan_sayisi": 9534,
+      "ornek_ilan_metinleri": [
+        "Renault Megane 1.5 dCi Authentique",
+        "Renault Megane 1.5 dCi Dynamique",
+        "Renault Megane 1.5 dCi Exception",
+        "Renault Megane 1.5 dCi Expression",
+        "Renault Megane 1.5 dCi Expression Plus"
+      ]
+    },
+    {
+      "id": "bmw-5-serisi-520i",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "5 Serisi",
+      "motor": "520i",
+      "etiket": "BMW 5 Serisi 520i",
+      "yil_araligi": [
+        2014,
+        2023
+      ],
+      "medyan_yil": 2018,
+      "ilan_sayisi": 9175,
+      "ornek_ilan_metinleri": [
+        "BMW 5 Serisi 520i 50th Year M Edition",
+        "BMW 5 Serisi 520i Comfort",
+        "BMW 5 Serisi 520i Comfort Plus",
+        "BMW 5 Serisi 520i Edition M Sport",
+        "BMW 5 Serisi 520i Executive"
+      ]
+    },
+    {
+      "id": "honda-civic-1-6i-vtec",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Honda",
+      "seri": "Civic",
+      "motor": "1.6i VTEC",
+      "etiket": "Honda Civic 1.6i VTEC",
+      "yil_araligi": [
+        2006,
+        2020
+      ],
+      "medyan_yil": 2014,
+      "ilan_sayisi": 7868,
+      "ornek_ilan_metinleri": [
+        "Honda Civic 1.6i VTEC Black Edition",
+        "Honda Civic 1.6i VTEC Dream",
+        "Honda Civic 1.6i VTEC ES",
+        "Honda Civic 1.6i VTEC Eco Elegance",
+        "Honda Civic 1.6i VTEC Eco Executive"
+      ]
+    },
+    {
+      "id": "toyota-corolla-1-6",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.6",
+      "etiket": "Toyota Corolla 1.6",
+      "yil_araligi": [
+        1996,
+        2020
+      ],
+      "medyan_yil": 2014,
+      "ilan_sayisi": 7300,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.6 Active",
+        "Toyota Corolla 1.6 Advance",
+        "Toyota Corolla 1.6 Comfort",
+        "Toyota Corolla 1.6 Comfort Extra",
+        "Toyota Corolla 1.6 Comfort Verso"
+      ]
+    },
+    {
+      "id": "renault-fluence-1-5-dci",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Fluence",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Fluence 1.5 dCi",
+      "yil_araligi": [
+        2011,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "ilan_sayisi": 6892,
+      "ornek_ilan_metinleri": [
+        "Renault Fluence 1.5 dCi Authentique",
+        "Renault Fluence 1.5 dCi Bold Edition",
+        "Renault Fluence 1.5 dCi Business",
+        "Renault Fluence 1.5 dCi Dynamique",
+        "Renault Fluence 1.5 dCi Elegance"
+      ]
+    },
+    {
+      "id": "volkswagen-golf-1-6",
+      "katman": "populer",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.6",
+      "etiket": "Volkswagen Golf 1.6",
+      "yil_araligi": [
+        2004,
+        2018
+      ],
+      "medyan_yil": 2014,
+      "ilan_sayisi": 6551,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.6",
+        "Volkswagen Golf 1.6 CL",
+        "Volkswagen Golf 1.6 Comfortline",
+        "Volkswagen Golf 1.6 D CL",
+        "Volkswagen Golf 1.6 FSi Comfortline"
+      ]
+    },
+    {
+      "id": "dodge-nitro-2-8-crd",
+      "katman": "uzun-kuyruk",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Dodge",
+      "seri": "Nitro",
+      "motor": "2.8 CRD",
+      "etiket": "Dodge Nitro 2.8 CRD",
+      "yil_araligi": [
+        2008,
+        2009
+      ],
+      "medyan_yil": 2009,
+      "ilan_sayisi": 150,
+      "ornek_ilan_metinleri": [
+        "Dodge Nitro 2.8 CRD R/T",
+        "Dodge Nitro 2.8 CRD SXT"
+      ]
+    },
+    {
+      "id": "ford-ranger-3-2-tdci",
+      "katman": "uzun-kuyruk",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Ranger",
+      "motor": "3.2 TDCi",
+      "etiket": "Ford Ranger 3.2 TDCi",
+      "yil_araligi": [
+        2014,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "ilan_sayisi": 143,
+      "ornek_ilan_metinleri": [
+        "Ford Ranger 3.2 TDCi Wild Trak"
+      ]
+    },
+    {
+      "id": "peugeot-106-gti",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "106",
+      "motor": "GTI",
+      "etiket": "Peugeot 106 GTI",
+      "yil_araligi": [
+        1998,
+        2001
+      ],
+      "medyan_yil": 2001,
+      "ilan_sayisi": 134,
+      "ornek_ilan_metinleri": [
+        "Peugeot 106 GTI"
+      ]
+    },
+    {
+      "id": "ssangyong-korando-sports-2-0-e-xdi",
+      "katman": "uzun-kuyruk",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ssangyong",
+      "seri": "Korando Sports",
+      "motor": "2.0 e-XDI",
+      "etiket": "Ssangyong Korando Sports 2.0 e-XDI",
+      "yil_araligi": [
+        2012,
+        2017
+      ],
+      "medyan_yil": 2015,
+      "ilan_sayisi": 127,
+      "ornek_ilan_metinleri": [
+        "Ssangyong Korando Sports 2.0 e-XDI"
+      ]
+    },
+    {
+      "id": "bmw-z-serisi-z4",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "Z Serisi",
+      "motor": "Z4",
+      "etiket": "BMW Z Serisi Z4",
+      "yil_araligi": [
+        2003,
+        2022
+      ],
+      "medyan_yil": 2012,
+      "ilan_sayisi": 118,
+      "ornek_ilan_metinleri": [
+        "BMW Z Serisi Z4 2.0",
+        "BMW Z Serisi Z4 2.0i sDrive",
+        "BMW Z Serisi Z4 2.3i sDrive",
+        "BMW Z Serisi Z4 2.5",
+        "BMW Z Serisi Z4 20i sDrive Design Pure Traction"
+      ]
+    },
+    {
+      "id": "mercedes-benz-280-s",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "280",
+      "motor": "S",
+      "etiket": "Mercedes - Benz 280 S",
+      "yil_araligi": [
+        1969,
+        1983
+      ],
+      "medyan_yil": 1973,
+      "ilan_sayisi": 112,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz 280 S"
+      ]
+    },
+    {
+      "id": "renault-r-11-gts",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 11",
+      "motor": "GTS",
+      "etiket": "Renault R 11 GTS",
+      "yil_araligi": [
+        1988,
+        1990
+      ],
+      "medyan_yil": 1988,
+      "ilan_sayisi": 108,
+      "ornek_ilan_metinleri": [
+        "Renault R 11 GTS"
+      ]
+    },
+    {
+      "id": "seat-ibiza-1-6-tdi",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Seat",
+      "seri": "Ibiza",
+      "motor": "1.6 TDI",
+      "etiket": "Seat Ibiza 1.6 TDI",
+      "yil_araligi": [
+        2012,
+        2014
+      ],
+      "medyan_yil": 2014,
+      "ilan_sayisi": 90,
+      "ornek_ilan_metinleri": [
+        "Seat Ibiza 1.6 TDI CR Reference",
+        "Seat Ibiza 1.6 TDI CR Style"
+      ]
+    },
+    {
+      "id": "dacia-logan-1-6",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Logan",
+      "motor": "1.6",
+      "etiket": "Dacia Logan 1.6",
+      "yil_araligi": [
+        2006,
+        2015
+      ],
+      "medyan_yil": 2007,
+      "ilan_sayisi": 81,
+      "ornek_ilan_metinleri": [
+        "Dacia Logan 1.6 Ambiance",
+        "Dacia Logan 1.6 Laureate",
+        "Dacia Logan 1.6 MCV Ambiance",
+        "Dacia Logan 1.6 Prestige"
+      ]
+    },
+    {
+      "id": "fiat-stilo-1-6",
+      "katman": "uzun-kuyruk",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Stilo",
+      "motor": "1.6",
+      "etiket": "Fiat Stilo 1.6",
+      "yil_araligi": [
+        2003,
+        2005
+      ],
+      "medyan_yil": 2005,
+      "ilan_sayisi": 69,
+      "ornek_ilan_metinleri": [
+        "Fiat Stilo 1.6 Active",
+        "Fiat Stilo 1.6 Dynamic"
+      ]
+    }
+  ]
+}

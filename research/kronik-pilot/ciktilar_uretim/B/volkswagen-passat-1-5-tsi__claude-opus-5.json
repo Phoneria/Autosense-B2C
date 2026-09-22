@@ -1,0 +1,152 @@
+{
+  "hedef_id": "volkswagen-passat-1-5-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "2020 model 1.5 TSi'de kavrama 77.000 km'de değiştirildi, 110.000 km'de yeniden arızalandı.",
+      "km_araligi": "77.000-110.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-passat-kavrama-sorunu",
+      "kaynak_alinti": "Passat 1,5 TSİ 2020 Passat aracım var vites geçişi sebebi ile ses sorunu ile bayiye gittim bayi kavrama değişecek dedi araç 110bin km'de aracın 1 yıl önce 77binde kavraması yetkili servis tarafından değiştirildi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "2021 model Passat'ta 120.000 km sonrası kavrama bozulunca araç kalkışlarda titreyerek hareket ediyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-passatta-kronik-kavrama-sorunu-ve-yetersiz-servis-destegi",
+      "kaynak_alinti": "Araçta ki sıkıntı şu an servis formunda da yazdığı gibi kavrama sorunu. Araç kalkışlarda titreyerek kalkıyor ve bu da motora Zarar veriyor ve aşırı bir yakıt tüketimi yapıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "1.5 TSi'li VAG araçlarda 120.000 km civarında mekatronik arızası ve 2-4-6 vites kaybı bildiriliyor.",
+      "km_araligi": "120.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/26792-1-5-tsi-kullananlarin-tecrubeleri/",
+      "kaynak_alinti": "mekatronik arızası verdi 2-4-6 vitesler var kronik. 120 bin bakımı zaten 100 bin tutuyor,her şeyi değişiyor,kayışlar,diskler balatalar,bujiler,bobinler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.5 TSi'de iki periyodik bakım arasında 1-1,3 litreye varan yağ eksiltme kronik olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/26792-1-5-tsi-kullananlarin-tecrubeleri/",
+      "kaynak_alinti": "Kronik olan Tsi motorlarda yağ eksiltme vardır. yaklaşık 2 bakım arası kullanıma göre 1-1.3 litre arası yağ eklemesi yapıyorlardı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "2020 model 1.5 TSi Passat'ta 25.000 km'de soğutma sistemi arızalandı; 50.000 km'de de aynı şikayet var.",
+      "km_araligi": "25.000-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-kronik-hava-sogutma-arizasi",
+      "kaynak_alinti": "2020 model 4 sene boyunca tüm bakımlarını serviste yaptırdığım Volkswagen Passat 1.5 TSİ aracın 25 binde soğutma sistemi bozuldu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "1.5 TSi motorda 40.000 km civarında devirdaim (su pompası) değişimi gerektiği bildirilmiş.",
+      "km_araligi": "40.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/26792-1-5-tsi-kullananlarin-tecrubeleri/",
+      "kaynak_alinti": "son bakımdan 9.650 km sonra 750 ml yağ eksiltti onun dışında 40 bin de devirdaim değişti. titreme gözlemlemedim saat gibi yağ eksiltme dışında sorun yok",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "2021 model 1.5 TSi'de 25.000 km'de sunroof çerçevesi darbe almadan çatladı; markada kronik sorun.",
+      "km_araligi": "25.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-passat-sunroof-catlagi-kronik-sorun-ve-hukuki-tehdit",
+      "kaynak_alinti": "Volkswagen Passat 1,5 TSİ 2021 model, daha 25 bin kilometrede olan aracımın sunroof çerçevesinde herhangi bir darbe almadan çatlak oluştu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi 6,7 litre, şehir dışı 4,5 litre tüketimle benzinli D segmentine göre ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2021-volkswagen-passat-1-5-tsi-impression-inceleme/",
+      "kaynak_alinti": "Şehir içi kullanımda 6,7 litre ve şehir dışı kullanımda 4,5 litre yakıt tüketim",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Geniş ve konforlu iç yaşam alanıyla D segmentinin standartlarını belirliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2021-volkswagen-passat-1-5-tsi-impression-inceleme/",
+      "kaynak_alinti": "Geniş ve konforlu iç yaşam alanıyla D segmentinin standartlarını belirleyen",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "150 PS güç ve 250 Nm tork üreten 1.5 TSi tatmin edici performans ve seri sürüş dinamiği sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2021-volkswagen-passat-1-5-tsi-impression-inceleme/",
+      "kaynak_alinti": "Tatmin edici performansı ve seri sürüş dinamikleriyle dikkat çekiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Geniş ve rahat yüzeyli koltuklar tüm yolculara konforlu bir yolculuk sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2021-volkswagen-passat-1-5-tsi-impression-inceleme/",
+      "kaynak_alinti": "Lizard kumaş kaplamalı koltuklar geniş ve rahat yüzeyleri ile tüm yolcuların konforlu bir yolculuk",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Variant gövdede bagaj hacmi 690 litre, koltuklar katlandığında yaklaşık 1.920 litreye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-passat-variant-1.5-etsi-inceleme-alinir-mi-fiyat-donanim-ve-kullanici-yorumlari-2026",
+      "kaynak_alinti": "Bagaj Hacmi: 690 litre (koltuklar katlandığında ~1.920 litre)",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "1.5 TSi'de 120.000 km bakımında kayış, disk, balata, buji ve bobin değişimiyle fatura 100 bin TL'yi buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/26792-1-5-tsi-kullananlarin-tecrubeleri/",
+      "kaynak_alinti": "120 bin bakımı zaten 100 bin tutuyor,her şeyi değişiyor,kayışlar,diskler balatalar,bujiler,bobinler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Kavrama değişimi yetkili serviste indirimli 37.000 TL, yan sanayide bakım dahil 17.000 TL fiyatlandı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-passat-kavrama-sorunu",
+      "kaynak_alinti": "Kullanıcı hatası dediler yüzde 15 indirim ile 37000 TL fiyat verdiler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "1.5 TSi benzinli motorun sesi, dizel versiyondan kaçan kullanıcıyı pişman edecek kadar yüksek bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/15-tsi-benzinli-passatin-yuksek-motor-sesi-hayal-kirikligi-yaratti",
+      "kaynak_alinti": "1.5 TSI Passat aldım. Dizel motorun sesinden rahatsız olduğum için benzinli tercih ettim, fakat keşke etmeseydim.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Sakin kullanımda bile Passat'ta karma tüketim 7-7,5 litre seviyesinde kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/passat-1-5-tsi-yakit-tuketimi--140673965",
+      "kaynak_alinti": "Sakin kullanımda passatta karma tüketim 7-7.5 litre olabilir",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

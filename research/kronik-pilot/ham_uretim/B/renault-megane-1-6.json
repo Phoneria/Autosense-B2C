@@ -1,0 +1,167 @@
+{
+  "hedef_id": "renault-megane-1-6",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.6 16V benzinli motorda 25.000 km'de bile sürekli yağ eksiltme şikayeti var.",
+      "km_araligi": "25.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-4-joy-1-6-16v-115-bg-yag-eksiltme-kronik-sorun.101683/",
+      "kaynak_alinti": "2017 Sedan Megane 4 Joy 1.6 16V 115 bg  motor sürekli yağ eksiltiyor. Şuan da 25.000 de aracım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı koptuğunda supaplar pistonla çarpışıp üst kapakta ağır motor hasarı oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikariza.com.tr/renault-megane-1-6-sport-tourer-triger-kayisi-kopmasi-ve-supap-egilmesi-28323/",
+      "kaynak_alinti": "Triger kayışının kopması veya ciddi diş atlaması supapların pistonlarla çarpıştığı bir yapı nedeniyle üst kapakta ağır hasara yol açar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat kutusunun altından kartere doğru kronik yağ kaçağı yapıyor.",
+      "km_araligi": "58.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-kronik-yag-cozumu-resimli.82198/",
+      "kaynak_alinti": "Termostat kutusunun altından kartere doğru yağ kaçağı ise ; düz blok yüzeyine oturtulan termostat kutusunun alın kısmı sadece ufak bir contayla sızdırmazlığı sağlıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Külbütör kapağında conta kullanılmadığı için 60.000 km civarında kronik yağ kaçağı başlıyor.",
+      "km_araligi": "58.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-kronik-yag-cozumu-resimli.82198/",
+      "kaynak_alinti": "Külbütör kapağındaki kaçak yağın sebebi: Kapağın oturma yüzeyinin çok düzgün olmaması yani hassas pürüzlülükte işlenmemesi ve herhangi bir conta kullanılmaması.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Sürekli LPG kullanımında 100.000 km civarında subaplar yanıyor ve değişim gerekiyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-3-1-6-16v-cvt-silkeme-sorunu.107351/",
+      "kaynak_alinti": "Benim ustam sorunun sübap kaynaklı olduğunu ve eğer araç sürekli LPG'de kullanılırsa 100 bin kmde sübapların değiştirilmesi gerekir dedi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik vitesli modellerde vites kutusu hatası ve seyir halinde boşa alma sık görülüyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/megane-2-otomatik-vites-sorunu--68402924",
+      "kaynak_alinti": "bende 2008 hb otomatik megane 2 mevcut. bu aralar normal seyirde giderken araç vitesi boşa alıyor 5 saniye kadar sonra tekrar vitese geçiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Megane 2 1.6'da kısa süreli elektrik kesintileri ve elektronik arıza uyarıları yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-elektrik-kesme-sorunu.103849/",
+      "kaynak_alinti": "aracım Megane 2 1.6 HB dinamik 2006 model.  Aracım kısa süreli  elektrik kesiyor ve bunu ne gittiğim tamircim, ne oto elektrikçi ne de 15 yıl Renault servisinde çalışmış diğer tamirci çözebildi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "2004-2006 arası Megane'larda kapı kollarının kaplaması soyuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-iinin-olumsuz-yonleri-ve-kronik-sorunlari-nelerdir.27084/",
+      "kaynak_alinti": "kapı kolları soyulması 2004 - 2006 arası bütün meganelarda olmus neredeyse ama servis ücretsiz değiştiiyor bildiğim kadarıyla.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Kullanıcılar ESP'siz paketlerde bile yol tutuşunu çok başarılı buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-iinin-olumsuz-yonleri-ve-kronik-sorunlari-nelerdir.27084/",
+      "kaynak_alinti": "Ama konfor,genişlik,esp olmamısına rağmen yol tutuş bence çok çok güzel.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Geniş iç hacmiyle aile kullanımına uygun, diz ve omuz mesafesi rahat.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-1-6-16v-ile-ilgili-bilgiler.110481/",
+      "kaynak_alinti": "Konforlu bir araç, geniş ve aile kullanımına uygun.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi oldukça büyük, tek dezavantajı bagaj giriş ağzının dar olması.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-iinin-olumsuz-yonleri-ve-kronik-sorunlari-nelerdir.27084/",
+      "kaynak_alinti": "bagajı oldukça büyük ama tek dezavantajı bagajın giriş kısmı pek geniş değil bazen bavul veya büyük paket yerleştirirken sıkıntı yaratabiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon bozuk yol ve kasisleri yutuyor, kabinde sarsıntı hissedilmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-1-6-privilege-nasil-bilirsiniz--128053990",
+      "kaynak_alinti": "Araba donanım olarak gayet güzel ve konforlu. Tümsek çukur bozuk yol vs sarsıntı yok.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Megane 3 1.6'da yol ve motor sesi kabin içinde makul seviyede kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-hb-1-6-16-touch-plus--105055163",
+      "kaynak_alinti": "Yol sesi makul ölçüde hatta daha iyi diyebilirim.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "1.6 benzinli şehir içinde 10-12 litre yakıyor, LPG'de de tüketim yüksek kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-1-6-16v-ile-ilgili-bilgiler.110481/",
+      "kaynak_alinti": "Yakıt tüketimi biraz fazla. Üzerinde 1.6 motor var sonuçta. Hem LPG den hem de benzinden ciddi tüketimi oluyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Megane 2 kabininde torpido ve konsol kaynaklı tıkırtı sesleri kronikleşmiş durumda.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-2-lerde-kronik-sesler-ve-cozumlerinizi-alalim-arkadaslar.72798/",
+      "kaynak_alinti": "hepinizinde bildiği gibi megane 2 lerde bircok yerinde taktuk vs sesler var kronik olarak",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç malzeme kalitesi, donanım zenginliğinin gerisinde kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-hb-1-6-16-touch-plus--105055163",
+      "kaynak_alinti": "Araçtan kalite akmıyor ama donanım olarak çok dolu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.6 benzinli dizel versiyona göre hantal kalıyor, LPG'de çekiş daha da düşüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-1-6-privilege-nasil-bilirsiniz--128053990",
+      "kaynak_alinti": "Dizele göre hantaldır yanlız ve mutlaka tüp ister",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Megane 2'nin bazı donanım paketlerinde ESP bulunmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-iinin-olumsuz-yonleri-ve-kronik-sorunlari-nelerdir.27084/",
+      "kaynak_alinti": "Ama konfor,genişlik,esp olmamısına rağmen yol tutuş bence çok çok güzel.",
+      "guven": "dusuk"
+    }
+  ]
+}

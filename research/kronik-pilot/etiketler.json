@@ -1,0 +1,29 @@
+{
+  "surum": 1,
+  "not": "Kapali etiket setleri. Model bu listelerin DISINA cikamaz. Yeni etiket ihtiyaci cikarsa once buraya elle eklenir, sonra uretim tekrar calistirilir.",
+  "kronik": [
+    "motor-yag-tuketimi", "motor-triger-zinciri", "motor-triger-kayisi", "motor-kayis-gergi",
+    "silindir-kapak-conta", "enjektor", "yuksek-basinc-pompasi", "turbo", "egr",
+    "dpf-partikul-filtresi", "adblue-scr", "katalizor", "yakit-pompasi", "su-pompasi",
+    "termostat", "radyator-hortum", "mars-alternator", "aku-sarj", "debriyaj", "volan-dmf",
+    "manuel-sanziman", "otomatik-sanziman", "dsg-dct-mekatronik", "cvt-kayis", "sanziman-yagi",
+    "diferansiyel-4x4", "direksiyon-kutusu", "amortisor-salincak", "rotil-rot",
+    "fren-diski-balata", "abs-esp-sensor", "klima-kompresor", "klima-radyator",
+    "elektrik-tesisat", "multimedya-ekran", "cam-krikosu", "kilit-aktuator",
+    "kaporta-pas", "boya-kalitesi", "tavan-su-kacagi", "koltuk-doseme-asinma"
+  ],
+  "iyi": [
+    "yakit-ekonomisi", "yedek-parca-bulunurluk", "yedek-parca-ucuz", "servis-yaygin",
+    "ikinci-el-deger-korur", "dayanikli-motor", "genis-ic-hacim", "bagaj-hacmi",
+    "konfor-suspansiyon", "sessiz-kabin", "yol-tutus", "performans", "guvenlik-donanim",
+    "surus-kolayligi", "bakim-maliyeti-dusuk", "sehir-ici-kullanisli", "uzun-yol-konforu",
+    "cekis-gucu", "arazi-kabiliyeti"
+  ],
+  "kotu": [
+    "yakit-tuketimi-yuksek", "yedek-parca-pahali", "yedek-parca-zor-bulunur", "servis-az",
+    "ikinci-el-deger-kaybi", "bakim-maliyeti-yuksek", "ic-malzeme-kalitesi",
+    "dar-arka-koltuk", "kucuk-bagaj", "sert-suspansiyon", "gurultulu-kabin",
+    "yetersiz-performans", "zayif-guvenlik-donanim", "mtv-vergi-yuksek",
+    "sigorta-kasko-pahali", "agir-direksiyon", "gorus-acisi-kisitli"
+  ]
+}

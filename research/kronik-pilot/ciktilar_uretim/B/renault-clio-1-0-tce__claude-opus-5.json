@@ -1,0 +1,161 @@
+{
+  "hedef_id": "renault-clio-1-0-tce",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo atık kapağı (wastegate) tıkırtısı 1.0 TCe'nin en yaygın kronik şikayeti.",
+      "km_araligi": "40.000-80.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/turbo",
+      "kaynak_alinti": "Turbo Atık Kapağındaki Tıkırtı Sorunu İçin Hızlı Ve Kalıcı Çözüm İsteniyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "\"Yağ seviyesini tamamlayınız\" uyarısı ve yağ eksilmesi düşük km'den itibaren tekrarlıyor.",
+      "km_araligi": "1.000-70.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/yag-seviyesini-tamamlayiniz-uyarisi",
+      "kaynak_alinti": "Renault Evlation 1.0 aracımda yaklaşık iki yıldır 'Yağ seviyesi tamamlayınız' uyarısı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Easy Link multimedya ekranı donuyor, kapanıyor veya \"sistem kilitlendi\" uyarısı veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/multimedya",
+      "kaynak_alinti": "Renault Easy Link Multimedya Donma Ve Kapanma, Yüksek Tespit Ücreti Ve Sorumluluk Reddi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj pedalında kavrama noktası yükselmesi 20.000 km altında bile servise gidiyor.",
+      "km_araligi": "1.400-40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/debriyaj",
+      "kaynak_alinti": "Araç 2023 model 16.000 km'de debriyaj pedalı yukarıda kavrama şikayeti ile servise başvurduk.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Volan arızası 35.000 km civarında görülebiliyor ve garanti dışı bırakılabiliyor.",
+      "km_araligi": "35.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/clio/debriyaj",
+      "kaynak_alinti": "2023 model Renault Clio aracım 35 bin kilometredeyken volan arızası verdi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "X-Tronic CVT'de gaz kesildiğinde silkeleme ve gaza tepkisizlik şikayetleri var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio5-kronik-arizasi-bol-sorunlu-bir-arac-mi--146973632",
+      "kaynak_alinti": "CVT şanzıman sebebi ile ayağımı gazdan çektiğinde araç çok fazla silkeme yapıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "\"Enjeksiyon kontrol ettirin\" ve emisyon uyarısıyla aracın yolda kalması tekrarlıyor.",
+      "km_araligi": "13.000-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/renault-clio-5-10-tce-kronik-turbo-ses-sorunu",
+      "kaynak_alinti": "Renault Clio 1.0 Tce aracımı 3 Eylül 2026 tarihinde kullanırken 'egzoz emisyonu kontrol ettirin' ve 'enjeksiyon kontrol ettirin' uyarıları aldım.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Start-stop sistemi arızası 3.000 km gibi çok düşük kilometrede ortaya çıkabiliyor.",
+      "km_araligi": "3.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/clio5-kronik-arizasi-bol-sorunlu-bir-arac-mi--146973632",
+      "kaynak_alinti": "Kronik start-stop arızası 3.ay 3000 km deyken bende de baş gösterdi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Clio 5, Euro NCAP çarpışma testlerinden en yüksek not olan 5 yıldızı aldı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.milliyet.com.tr/otomobil/yeni-clioya-euro-ncaptan-5-yildiz-1588291",
+      "kaynak_alinti": "Yeni Clio, bağımsız kuruluş EuroNCAP tarafından gerçekleştirilen çarpışma testleri sonrasında en yüksek not olan beş \"yıldız\" aldı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "391 litrelik bagaj hacmiyle B segmentinin en geniş bagajlarından birine sahip.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabam.com/blog/otomobil-testleri/yeni-renault-clio-test-surus-izlenimleri/amp",
+      "kaynak_alinti": "Yeni Clio'nun bagaj hacmi 391 litreye ulaşırken, iç saklama hacmindeki 26 litrelik artış segmentindeki en yüksek seviyeyi işaret ediyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "100 HP'lik 1.0 TCe motor şehir içi trafikte yeterli ve kullanışlı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://dogankabak.com.tr/2022/03/renault-clio-incelemesi/",
+      "kaynak_alinti": "100 beygir gücündeki turbo beslemeli motor konu şehir içi trafik olduğunda gayet başarılı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Manuel kullanıcılar uzun yolda 4,5-6 lt/100 km gibi düşük tüketim bildiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-5-1-0-tce-yakit--144417292",
+      "kaynak_alinti": "Şehiriçi 6 litre civarı, şehirler arası 4.5 litre yakıyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Yaygın servis ağı ve uygun parça maliyeti Clio'nun öne çıkan sahiplik avantajı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sozcu.com.tr/satilirken-asla-zarar-etmeyen-ikinci-el-araclar-iste-otomobil-piyasasinin-en-saglam-modelleri-p244260",
+      "kaynak_alinti": "Renault Clio ve Megane: Yaygın servis ağı, uygun parça maliyeti ve 1.5 dCi dizel motor seçeneği sayesinde Renault modelleri Türkiye'de değerini uzun süre koruyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Şehir içi ve X-Tronic kullanımda tüketim 9-10 lt/100 km'ye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-5-1-0-tce-yakit--144417292",
+      "kaynak_alinti": "2021 1.0 tce hiç 9 lt altına düşemedim istanbul trafiği",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Garanti bitince yetkili serviste sadece arıza tespiti için 7.000 TL üzeri ücret isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/cozulemeyen-renault-clio-10-tce-turbo-sesi-video",
+      "kaynak_alinti": "Merhabalar aracım 2020 Renault Clio 1.0 tce bu sesi duyalı iki gün oluyor garantisi bittiği için servise gittiğimde arıza aramaya 7 bin tl dediler",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Yüklü haldeyken rampada zorlanıyor, yokuşlarda güç yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimarsivi.com/konu/1-0-tce-clio-alinir-mi.1141768/",
+      "kaynak_alinti": "odun fln da yapmıştık bagaj dolu rampayı çıkamadı desem yeridir gitmesi için zorluyorsun",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Arka kabinde ön tarafa göre daha sert ve düşük kaliteli plastikler kullanılmış.",
+      "km_araligi": null,
+      "kaynak_url": "https://dogankabak.com.tr/2022/03/renault-clio-incelemesi/",
+      "kaynak_alinti": "Arka tarafta ön tarafa göre daha kalitesiz ve sert malzemeler kullanılmış olsa da, kullanışlılık ve hacim olarak bizleri şaşırttı",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

@@ -1,0 +1,170 @@
+{
+  "hedef_id": "peugeot-106-gti",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Motor üst kapak contası sık sık yanıyor, araç alınır alınmaz triger setiyle birlikte değiştirilmesi öneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/106-gti-kronik-sorunlar-ve-cozumler--46141773",
+      "kaynak_alinti": "Sık sık yanar, yeni aldığınız bir araçta bu parçayı ve triger setinide işinizi garantiye almak için hemen değiştirmenizde fayda vardır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Gaza yüklenince kadran ışıklarının parlaması veya ara sıra ABS ikazı alternatör arızasına işaret ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/106-gti-kronik-sorunlar-ve-cozumler--46141773",
+      "kaynak_alinti": "gazı yüklendiğinizde kadran ışıklarında bir artış oluyorsa veya abs ikazı arada sırada uyarı veriyorsa",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "sanziman-yagi",
+      "iddia": "Şanzımanda sürekli terleme görülüyor, keçe kontrolüne rağmen kolay kesilmeyen bir sorun.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/106-gti-kronik-sorunlar-ve-cozumler--46141773",
+      "kaynak_alinti": "Bu aslında naparsanız yapın kolay kolay kesilmeyen bir sorundur ama keçelerin kontrol edilmesi önemlidir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "manuel-sanziman",
+      "iddia": "Hafiflik için ince tasarlanan şanzıman sert kullanımda narin kalıp sıkıntı çıkarıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://beezacupra2.wordpress.com/2024/09/11/peugeot-106-gti-nasildir/",
+      "kaynak_alinti": "Şanzıman sert kullanımlarda hafif olması için tasarlanmış ince yapısından dolayı sıkıntı çıkartabiliyor, biraz narin ve kırılgan",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "rotil-rot",
+      "iddia": "Direksiyonu çevirirken gelen lak luk sesi dağılan rot başlarından kaynaklanıyor, sık bozulan parça.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/106-gti-kronik-sorunlar-ve-cozumler--46141773",
+      "kaynak_alinti": "rot başlarınız dağılmış demektir, ucuz ama sıkça bozulan bir parçadır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön sol amortisörden gelen lok lok sesi çok yaygın, sıfır kilometre araçta bile görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/106-gti-kronik-sorunlar-ve-cozumler--46141773",
+      "kaynak_alinti": "Doğaldır 0 km 106 da bile olur, kontrol ettirin ama fazlada üstüne masrafa girmeyin",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Sıkışık trafikte hararet 90 dereceyi geçip 100 dereceye yaklaşıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/peugeot-106-gti--266021?p=8",
+      "kaynak_alinti": "hararet sorunu vardır, sıkısık trafikte hararet 90 dereceyi gecer, 100 dereceye doğru yaklasır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Hafif gövde nedeniyle frenler yetersiz kalıyor ve tekerlekler kızaklamaya meyilli.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/peugeot-106-gti--266021?p=8",
+      "kaynak_alinti": "fren performansı karoserin hafif kalmasından dolayı iyi değildir, yere basması az kaldığından duramaz",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1587 cc 118 HP motorla 0-100 km/s hızlanma 8,7 saniye, azami hız 205 km/s.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabateknikbilgi.com/otomobiller/1996-2003-peugeot-106-gti/",
+      "kaynak_alinti": "0-100 Km Hızlanma; 8.7 s",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Kısa aks aralığı ve hafifliği sayesinde handling başarılı, gerçek go-kart hissi veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://beezacupra2.wordpress.com/2024/09/11/peugeot-106-gti-nasildir/",
+      "kaynak_alinti": "Başarılı handling, yeterli frenler, hafiflik, yol tutuşu",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça fiyatları abartılı değil ve parçalar kolay bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/peugeot-106-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Yedek parça fiyatları abartılı değil ve kolay bulunuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Küçük boyutları sayesinde şehir içinde her yere girip çıkabiliyor ve park kolaylığı sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/peugeot-106-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "şehir içinde adeta fare gibi her yere girip çıkabiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Düzenli bakım yapıldığında motor genellikle uzun ömürlü oluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoyedekmarket.com/blog/icerik/peugeot-106-gti-tarihi",
+      "kaynak_alinti": "Düzenli bakımla, motor genellikle uzun ömürlüdür",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalıtımı çok zayıf, motor ve yol sesi kabine olduğu gibi giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/peugeot-106-gti-nasil-araba-alinir-mi-kullanici-yorumlari/",
+      "kaynak_alinti": "Ses yalıtımı çok zayıftır. Motor ve yol sesini olduğu gibi içeriye alır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltukta yetişkin bir yolcunun oturması çok zor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/peugeot-106-gti-nasil-araba-alinir-mi-kullanici-yorumlari/",
+      "kaynak_alinti": "İç genişliği ise arka tarafa yetişkin bir insanın oturması çok zordur",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Sacı zayıf, ortalama bir kazada A sütunu ile tavan birleşiminden gövde kırılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://beezacupra2.wordpress.com/2024/09/11/peugeot-106-gti-nasildir/",
+      "kaynak_alinti": "Sacı pek mukavemetli olmadığı gibi, ortalama bir kazada A sütunu ile tavan bağlantı noktasında araba kırılıyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Aracın kondisyonuna göre tüketim 100 km'de 10-15 litreye kadar çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/peugeot-106-gti-yakit-tuketimi.9795/",
+      "kaynak_alinti": "Aracın kondisyonuna göre 10-15 lt gibi geniş bir aralık söylenebilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yaşlanmış ve modifiye edilmiş örnekler sürekli arıza verip sanayiye girip çıkmaya zorluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/peugeot-106-gti-nasil-araba-alinir-mi-kullanici-yorumlari/",
+      "kaynak_alinti": "Haftanın yarısını sanayide yarısını yollarda geçirirsiniz.",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

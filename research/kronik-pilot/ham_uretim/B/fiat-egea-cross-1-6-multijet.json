@@ -1,0 +1,158 @@
+{
+  "hedef_id": "fiat-egea-cross-1-6-multijet",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Servis araliklari arasinda motor yagi eksilmesi Egea Cross sahiplerinde tekrar eden bir sikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/kronik",
+      "kaynak_alinti": "her yıl düzenli olarak yağ yakma sorunu yaşıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusu kaynakli takilma ve agirlasma sorunu Egea'da yaygin sekilde bildiriliyor.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/16-multijet",
+      "kaynak_alinti": "Direksiyon takılmaları yaşanmaktadır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Ince boya ve vernik atmasi dusuk kilometreli araclarda bile sik goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/boya/egea",
+      "kaynak_alinti": "normal kullanımda kesinlikle kabul edilemeyecek seviyede boya ve vernik bozulmaları oluştu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DCT kuru kavrama paketi yogun sehir trafiginde erken yorulup sanziman arizasina yol aciyor.",
+      "km_araligi": "60.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/fiat-egea-1.6-multijet/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Kuru kavrama paketi yoğun dur-kalk trafiğinde ısınarak normalden erken yorulur.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Kisa mesafe sehir ici kullanimda DPF rejenerasyonu tamamlanmayip filtre tikaniyor.",
+      "km_araligi": "60.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/fiat-egea-1.6-multijet/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Filtre kendini temizleyemez, yanmayan yakıt motor yağına karışır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Common-rail enjektor arizasi degisim sonrasi bile tekrarlayabiliyor.",
+      "km_araligi": "120.000-250.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/16-multijet",
+      "kaynak_alinti": "Yedi ay önce enjektör değiştirdim, ancak tekrar enjektör sorunu yaşıyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "10 inc multimedya ekraninda donma ve dokunmatigin calismamasi sikayeti tekrarliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/egea-cross-ekran-sorunu",
+      "kaynak_alinti": "2023 Egea Cross Lounge aracımın 10 inç tablet ekranının dokunmatiği çalışmıyor ve Android Auto'ya da bağlanmıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "On suspansiyon elemanlarindan erken ses gelmesi yaygin bir sikayet.",
+      "km_araligi": "40.000-100.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/fiat-egea-1.6-multijet/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Egea'nın ön süspansiyon elemanlarından erken ses gelmesi yaygın bir şikâyettir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 1.6 Multijet ile 100 km'de 4 litre civari tuketim elde edilebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2022-fiat-egea-cross-1-6-multijet-130-beygir-modeli-ile-yakit-ekonomisi--154879982",
+      "kaynak_alinti": "Full paket Fiat Egea Cross ile yaptığım yolculukta aracımın tüketimi 4.1 litre çıktı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Tofas'in Turkiye genelindeki yaygin yetkili servis agi sahiplik avantaji olarak oven puanliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/fiat-egea-cross-1.6-multijet-alinir-mi-sorunlar-yakit-tuketimi-ve-kullanici-yorumlari-2026",
+      "kaynak_alinti": "Tofaş'ın Türkiye genelindeki yaygın yetkili servis ağı ve uygun yedek parça fiyatları, kullanıcı yorumlarında en sık övülen başlıklar arasında.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Periyodik bakim maliyeti sinifina gore dusuk kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/fiat-egea-crossun-urban-paketiyle-3000-km-yapan-birinden-aracin-arti-ve-eksileri",
+      "kaynak_alinti": "düşük bakım maliyeti",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Yuksek likidite sayesinde ikinci elde segment ortalamasina yakin veya daha iyi deger koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.trinkoto.com/blog/fiat-egea-cross-degeri",
+      "kaynak_alinti": "Egea Cross, yüksek likiditesi sayesinde segment ortalamasına yakın ya da biraz daha iyi bir değer kaybı eğilimi gösterir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk diz mesafesi ve ic hacim segment beklentisinin uzerinde ferah.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/fiat-egea-cross--6611407?p=56",
+      "kaynak_alinti": "iç hacim özellikle arka koltukta beklenenden ferah",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekanda sert ve dusuk kaliteli plastikler kullaniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://yandex.com.tr/yacevap/c/otomobil/q/egea-cross-1-6-multijet-kronik-sorunlari-nelerdir-581044539",
+      "kaynak_alinti": "İç mekanda kullanılan plastik malzemelerin kalitesinin düşük olması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kapi ve kabin ses yalitimi zayif, icerideki yol ve kapi sesi belirgin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/fiat-egea-cross-yeni-aracta-yalitim-sorunu-ve-cozum-beklentisi",
+      "kaynak_alinti": "Ön kapı yalıtımları olmadığını ve kapıyı açıp kapatırken davul gibi ses geldiğini",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon ayari sert tarafta kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/fiat-egea-cross--6611407?p=56",
+      "kaynak_alinti": "suspansiyon yapısı biraz sert, ama bu da yol tutuşuna katkı sağlıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Camlar cabuk buharlanip surus sirasinda gorusu kisitliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/fiat-egea-cross--6611407?p=52",
+      "kaynak_alinti": "camlar çok çabuk buhar oluyor",
+      "guven": "dusuk"
+    }
+  ]
+}

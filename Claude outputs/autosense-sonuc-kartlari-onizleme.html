@@ -1,0 +1,542 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoSense sonuç kartları — statik önizleme</title>
+<style>/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+@layer theme{:root,:host{--font-sans:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--spacing:.25rem;--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before{box-sizing:border-box;border:0 solid;margin:0;padding:0}::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.visible{visibility:visible}.start{inset-inline-start:var(--spacing)}}:root{--ink:#202522;--muted:#747b77;--line:#e5e2df;--paper:#f8f7f5;--green:#ef6c28;--green-soft:#fff0e7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--paper);color:var(--ink);font-family:var(--font-geist-sans),Arial,sans-serif;margin:0}button,select,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.topbar{z-index:20;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);background:#1f2422f5;border-bottom:1px solid #343a37;justify-content:space-between;align-items:center;height:72px;padding:0 max(28px,50vw - 590px);display:flex;position:sticky;top:0}.brand-logo,.footer-logo{align-items:center;width:172px;height:44px;display:flex;overflow:hidden}.brand-logo img,.footer-logo img{width:172px;height:auto;display:block}.trust-note{color:#c9cfcc;font-size:12px}.trust-note span{color:#ef6c28;margin-right:6px;font-size:9px}.ghost-button{color:#fff;cursor:pointer;background:0 0;border:1px solid #4a504d;border-radius:10px;padding:9px 14px;font-size:12px;font-weight:650;text-decoration:none}.hero{justify-content:space-between;align-items:flex-end;gap:60px;max-width:1180px;margin:auto;padding:68px 0 50px;display:flex}.eyebrow{color:var(--green);letter-spacing:.16em;font-size:10px;font-weight:800;line-height:1;display:block}.hero h1{letter-spacing:-.065em;max-width:650px;margin:14px 0 0;font-size:clamp(48px,6vw,76px);font-weight:670;line-height:.95}.hero h1 i{color:var(--green);font-family:Georgia,serif;font-weight:400}.hero>p{max-width:380px;color:var(--muted);margin:0 0 4px;font-size:16px;line-height:1.6}.analysis-shell{border:1px solid var(--line);background:#fff;border-radius:22px;max-width:1180px;margin:0 auto 90px;overflow:hidden;box-shadow:0 24px 70px #1c392e0f}.section-heading{border-bottom:1px solid var(--line);justify-content:space-between;align-items:center;padding:28px 34px 22px;display:flex}.section-heading>div,.damage-title>div{align-items:center;gap:12px;display:flex}.section-heading h2,.damage-title h2{letter-spacing:-.02em;margin:0;font-size:16px}.section-heading p{color:var(--muted);margin:0;font-size:12px}.step{background:var(--green-soft);width:28px;height:28px;color:var(--green);border-radius:8px;place-items:center;font-size:10px;font-weight:800;display:grid}.form-grid{grid-template-columns:minmax(0,1.35fr) minmax(450px,.9fr);display:grid}.vehicle-form{border-right:1px solid var(--line);padding:30px 34px 26px}.fields-grid{gap:14px;margin-bottom:18px;display:grid}.fields-grid.three{grid-template-columns:repeat(3,1fr)}.fields-grid.two{grid-template-columns:repeat(2,1fr)}.field{flex-direction:column;gap:8px;display:flex}.field>span{justify-content:space-between;font-size:11px;font-weight:720;display:flex}.field em{color:#99918c;text-transform:uppercase;letter-spacing:.07em;font-size:9px;font-style:normal;font-weight:600}.field select,.field input,.field textarea{width:100%;color:var(--ink);background:#fcfbfa;border:1px solid #dfdcd8;border-radius:10px;outline:none;transition:all .2s}.field select,.field input{height:44px;padding:0 12px}.field textarea{resize:vertical;min-height:93px;padding:12px 13px;line-height:1.45}.field select:focus,.field input:focus,.field textarea:focus{background:#fff;border-color:#ef9a6c;box-shadow:0 0 0 3px #ef6c281a}.field select:disabled{opacity:.55}.input-unit{position:relative}.input-unit span{color:#8b9893;font-size:11px;position:absolute;top:50%;right:12px;transform:translateY(-50%)}.input-unit input{padding-right:40px}.check-field{height:44px;color:var(--ink);cursor:pointer;background:#fcfbfa;border:1px solid #dfdcd8;border-radius:10px;align-items:center;gap:10px;margin-top:19px;padding:0 13px;font-size:11px;font-weight:720;display:flex}.check-field input{width:17px;height:17px;accent-color:var(--green);margin:0}.damage-panel{background:#fcfbfa;padding:28px 26px 30px}.damage-title{justify-content:space-between;align-items:center;margin-bottom:22px;display:flex}.damage-title>span{color:#8b8986;text-transform:uppercase;letter-spacing:.08em;font-size:9px}.car-direction{text-align:center;color:#9a9692;letter-spacing:.15em;width:410px;max-width:100%;margin:0 auto 9px;font-size:9px}.car-map{grid-template:"front front front"38px"left-front hood right-front"80px"left-door-front roof right-door-front"72px"left-door-rear roof right-door-rear"72px"left-rear trunk right-rear"80px"rear rear rear"38px/105px 180px 105px;gap:7px;width:404px;max-width:100%;margin:auto;display:grid}.car-part{color:#fff;cursor:pointer;background:#4caf68;border:1px solid #363f3a47;border-radius:8px;padding:6px;font-size:9px;font-weight:700;line-height:1.15;transition:transform .15s,filter .15s,background .15s}.car-part[style*=front],.car-part[style*=rear]{border-radius:15px}.car-part:hover{filter:brightness(.96);transform:translateY(-1px)}.car-part:focus-visible{outline-offset:2px;outline:3px solid #ef6c2852}.car-part.original{background:#4caf68}.car-part.local{color:#3a3321;background:#f0c44d}.car-part.painted{background:#ef7d32}.car-part.changed{background:#cf4f4a}.legend{color:var(--muted);grid-template-columns:repeat(2,max-content);justify-content:center;gap:8px 22px;margin:20px auto 13px;font-size:10px;display:grid}.legend span{align-items:center;gap:7px;display:flex}.legend i{background:#4caf68;border-radius:3px;width:10px;height:10px}.legend i.local{background:#f0c44d}.legend i.painted{background:#ef7d32}.legend i.changed{background:#cf4f4a}.reset{color:#756f6a;cursor:pointer;background:0 0;border:0;border-bottom:1px solid #b9b3ae;margin:auto;padding:0;font-size:10px;display:block}.submit-row{border-top:1px solid var(--line);justify-content:flex-end;align-items:center;padding:22px 34px;display:flex}.primary-button{background:var(--green);color:#fff;cursor:pointer;border:0;border-radius:11px;justify-content:space-between;align-items:center;gap:36px;min-width:230px;padding:14px 16px 14px 20px;font-size:12px;font-weight:730;transition:all .2s;display:flex;box-shadow:0 8px 20px #ef6c2833}.primary-button:hover{background:#d95b1e;transform:translateY(-1px)}.primary-button:disabled{cursor:not-allowed;opacity:.62;transform:none}.primary-button span{font-size:18px}.form-error{color:#a5411d;background:#fff4ee;border:1px solid #f3c5b1;border-radius:10px;margin:0 34px 18px;padding:12px 14px;font-size:11px}.empty-results{text-align:center;background:#fbfaf8;border:1px dashed #d8d2cd;border-radius:18px;max-width:1180px;margin:0 auto 88px;padding:52px}.empty-results>span{background:var(--green-soft);width:35px;height:35px;color:var(--green);border-radius:10px;place-items:center;margin:0 auto 14px;font-size:10px;font-weight:800;display:grid}.empty-results h2{margin:0;font-size:18px}.empty-results p{color:var(--muted);margin:8px 0 0;font-size:11px}.results{opacity:.5;background:#f2efec;border-top:1px solid #e1ddd9;padding:82px max(28px,50vw - 590px) 100px;transition:opacity .3s}.results.visible{opacity:1}.results-heading{justify-content:space-between;align-items:end;margin-bottom:24px;display:flex}.results-heading h2{letter-spacing:-.04em;margin:10px 0 0;font-size:26px}.updated{color:var(--muted);font-size:10px}.updated span{background:#ef6c28;border-radius:50%;width:6px;height:6px;margin-right:6px;display:inline-block}.decision-card{background:var(--ink);color:#fff;border-radius:18px;grid-template-columns:1.05fr 1fr;display:grid;overflow:hidden;box-shadow:0 18px 44px #20252224}.decision-main{border-right:1px solid #ffffff1f;align-items:center;gap:23px;padding:34px;display:flex}.score-ring{text-align:center;border:5px solid #ef7f42;border-radius:50%;flex:none;place-content:center;width:92px;height:92px;display:grid;box-shadow:inset 0 0 0 5px #373d3a}.score-ring strong{font-size:28px;line-height:1}.score-ring span{color:#aeb5b1;margin-top:3px;font-size:9px}.deal-badge{color:#ffc4a4;letter-spacing:.12em;background:#61341e;border-radius:5px;margin-bottom:9px;padding:5px 8px;font-size:8px;font-weight:800;display:inline-block}.decision-main h2{letter-spacing:-.035em;margin:0 0 7px;font-size:21px}.decision-main p{color:#b6bcb9;max-width:400px;margin:0;font-size:11px;line-height:1.6}.decision-main p strong{color:#ffae82}.price-comparison{grid-template-columns:1fr 1fr;align-content:center;gap:22px 25px;padding:30px 34px;display:grid}.price-comparison div>span{color:#9da5a1;margin-bottom:5px;font-size:9px;display:block}.price-comparison div>strong{font-size:14px}.source-strip{color:#847d78;background:#fff;border:1px solid #e2dcd7;border-radius:12px;align-items:center;gap:22px;margin-top:12px;padding:13px 18px;font-size:9px;display:flex}.source-strip span{text-transform:uppercase;letter-spacing:.08em;margin-right:auto;font-weight:750}.source-strip strong{color:#4e514f}.result-grid{grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px;display:grid}.result-card{border:1px solid var(--line);background:#fff;border-radius:15px;padding:24px}.card-top{align-items:center;gap:11px;margin-bottom:20px;display:flex}.card-top h3{margin:0 0 3px;font-size:14px}.card-top p{color:#8c8986;margin:0;font-size:9px}.card-icon{border-radius:9px;flex:none;place-items:center;width:34px;height:34px;font-size:14px;font-weight:750;display:grid}.card-icon.orange{background:var(--green-soft);color:var(--green)}.count{background:var(--green-soft);width:23px;height:23px;color:var(--green);border-radius:50%;place-items:center;margin-left:auto;font-size:9px;font-weight:800;display:grid}.card-empty{color:#98938f;text-align:center;margin:0;padding:30px 10px;font-size:10px}.result-meta{flex-direction:column;align-items:flex-end;gap:10px;display:flex}.result-actions{align-items:center;gap:7px;display:flex}.result-actions button{color:var(--ink);cursor:pointer;background:#fff;border:1px solid #d8d1cc;border-radius:8px;padding:7px 10px;font-size:9px;font-weight:700}.result-actions button:hover{background:#fff8f4;border-color:#ef9a6c}.result-actions small{color:var(--muted);font-size:8px}.negotiation-grid,.depreciation-grid{grid-template-columns:repeat(3,1fr);gap:8px;display:grid}.negotiation-grid>div,.depreciation-grid>div{border:1px solid var(--line);background:#fcfbfa;border-radius:10px;padding:13px 10px}.negotiation-grid .target{background:#fff6f1;border-color:#f0a47c}.negotiation-grid span,.depreciation-grid span{color:var(--muted);margin-bottom:6px;font-size:8px;display:block}.negotiation-grid strong,.depreciation-grid strong{font-size:11px}.depreciation-grid small{color:#b65320;margin-top:5px;font-size:8px;display:block}.card-note{color:var(--muted);margin:13px 0 0;font-size:8px;line-height:1.5}.card-note strong{color:var(--ink)}.factor-list>div{border-top:1px solid #eeecea;justify-content:space-between;align-items:center;padding:10px 0;display:flex}.factor-list p{margin:0}.factor-list strong,.factor-list small{display:block}.factor-list strong{font-size:10px}.factor-list small{max-width:260px;color:var(--muted);margin-top:3px;font-size:8px}.factor-list>div>span{text-align:right;min-width:52px;font-size:10px;font-weight:800}.factor-list .positive{color:#3c8d56}.factor-list .negative{color:#c45732}.factor-list .neutral{color:#8c8986}.quality-score{background:var(--ink);color:#fff;border-radius:50%;place-items:center;width:38px;height:38px;margin-left:auto;font-size:12px;font-weight:800;display:grid}.quality-status{align-items:center;gap:12px;display:flex}.quality-status strong{width:110px;font-size:10px}.quality-status i{background:#eee9e6;border-radius:6px;flex:1;height:6px;overflow:hidden}.quality-status b{background:var(--green);border-radius:6px;height:100%;display:block}.quality-warnings{margin:16px 0 0;padding:0;list-style:none}.quality-warnings li{color:var(--muted);border-top:1px solid #eeecea;padding:8px 0;font-size:9px}.quality-warnings li:before{content:"!";width:16px;height:16px;color:var(--green);background:#fff0e7;border-radius:50%;place-items:center;margin-right:7px;font-size:8px;font-weight:800;display:inline-grid}.quality-clean{color:#3c8d56;margin:16px 0 0;font-size:9px}.questions ul{margin:0;padding:0;list-style:none}.questions li{border-top:1px solid #eeecea;gap:12px;padding:12px 0;display:flex}.questions li>span{color:#bbb5b0;font-size:9px;font-weight:700}.questions li p{color:#8c8884;margin:0;font-size:9px;line-height:1.45}.questions li strong{color:var(--ink);margin-bottom:2px;font-size:10px;display:block}.trend-kpis{grid-template-columns:1.05fr .85fr 1.1fr;gap:7px;margin-bottom:18px;display:grid}.trend-kpis>div{border:1px solid var(--line);background:#fcfbfa;border-radius:10px;min-width:0;padding:11px}.trend-kpis span,.trend-kpis strong,.trend-kpis small{display:block}.trend-kpis span{color:var(--muted);margin-bottom:6px;font-size:7.5px}.trend-kpis strong{white-space:nowrap;font-size:10px}.trend-kpis small{color:#938d89;margin-top:4px;font-size:7.5px}.trend-kpis .up{color:#3c8d56}.trend-kpis .down{color:#c45732}.trend-kpis .flat{color:#777}.trend-chart{grid-template-columns:45px 1fr;gap:8px;height:150px;display:grid}.trend-axis{color:#928d89;text-align:right;flex-direction:column;justify-content:space-between;padding:0 0 4px;font-size:7px;display:flex}.trend-plot{border-bottom:1px solid #d8d3cf;min-width:0;position:relative}.trend-grid-lines{flex-direction:column;justify-content:space-between;display:flex;position:absolute;inset:0}.trend-grid-lines i{border-top:1px dashed #e6e2df;display:block}.trend-points{align-items:flex-end;gap:3px;display:flex;position:absolute;inset:0 3px}.trend-point{flex:1;height:100%;position:relative}.trend-point>i{background:linear-gradient(#ef8d59,#f7d8c8);border-radius:2px;width:2px;min-height:12%;position:absolute;bottom:0;left:50%;transform:translate(-50%)}.trend-point b{background:#ef8d59;border:2px solid #fff;border-radius:50%;width:8px;height:8px;position:absolute;top:-4px;left:50%;transform:translate(-50%);box-shadow:0 0 0 1px #ef8d59}.trend-point b.current{background:var(--green);width:10px;height:10px;top:-5px;box-shadow:0 0 0 2px #ffd6bf}.trend-dates{color:#928d89;justify-content:space-between;margin:6px 0 0 53px;font-size:7.5px;display:flex}.trend-explanation{color:var(--muted);border-top:1px solid #eeecea;margin:14px 0 0;padding-top:12px;font-size:8.5px;line-height:1.55}.trend-explanation strong{color:var(--ink)}.wide-card{grid-column:1/3}.listing-row{color:inherit;border-top:1px solid #eeecea;grid-template-columns:1fr 55px 140px;align-items:center;padding:11px 0;font-size:10px;text-decoration:none;display:grid}.listing-row:hover{background:#fffbf8}.listing-car{align-items:center;gap:11px;display:flex}.listing-car>span{color:#8d8580;background:#f4f1ef;border-radius:8px;place-items:center;width:27px;height:27px;display:grid}.listing-car p{margin:0}.listing-car strong,.listing-car small{display:block}.listing-car small{color:#938d89;margin-top:3px;font-size:8px}.listing-row>strong{text-align:right}.listing-row>.up,.listing-row>.down{border-radius:5px;justify-self:center;padding:4px 6px;font-size:8px;font-weight:750}.listing-row>.up{color:#b44d46;background:#faeae7}.listing-row>.down{color:#b65320;background:#fff0e7}.total-cost{border-top:1px solid #eeecea;justify-content:space-between;align-items:end;padding:14px 0 18px;display:flex}.total-cost span{color:var(--muted);font-size:9px}.total-cost strong{font-size:18px}.total-cost small{color:#928b87;font-size:8px;font-weight:500}.cost-lines>div{grid-template-columns:46px 1fr 76px;align-items:center;gap:8px;margin:10px 0;font-size:8px;display:grid}.cost-lines i{background:#eee9e6;border-radius:4px;height:4px;overflow:hidden}.cost-lines b{background:var(--green);border-radius:4px;height:100%;display:block}.cost-lines strong{text-align:right;font-size:8px}.signal-status{background:#fff8f4;border-radius:10px;align-items:center;gap:12px;padding:18px;display:flex}.signal-dot{background:var(--green);border-radius:50%;width:11px;height:11px;box-shadow:0 0 0 5px #ffe4d5}.signal-status strong{font-size:10px}.signal-status p{color:var(--muted);margin:3px 0 0;font-size:8px}.signal-stats{grid-template-columns:repeat(3,1fr);margin:16px 0;display:grid}.signal-stats>div{border-right:1px solid var(--line);padding:0 10px}.signal-stats>div:first-child{padding-left:0}.signal-stats>div:last-child{border:0}.signal-stats span,.signal-stats strong{display:block}.signal-stats span{color:#938d89;font-size:8px}.signal-stats strong{margin-top:4px;font-size:10px}.disclaimer{color:#9d9793;margin:0;font-size:7.5px;line-height:1.5}footer{color:#8e8985;justify-content:space-between;align-items:center;max-width:1180px;min-height:110px;margin:auto;font-size:9px;display:flex}.footer-logo{background:#252a27;border-radius:8px;width:142px;height:40px;padding:0 5px}.footer-logo img{width:132px}footer p{margin:0}@media (max-width:900px){.hero,.analysis-shell,.empty-results{margin-left:20px;margin-right:20px}.hero{padding-top:48px}.form-grid{grid-template-columns:1fr}.vehicle-form{border-right:0;border-bottom:1px solid var(--line)}.damage-panel{padding-bottom:34px}.decision-card{grid-template-columns:1fr}.decision-main{border-bottom:1px solid #ffffff1f;border-right:0}.result-grid{grid-template-columns:1fr}.wide-card{grid-column:auto}.results{padding-left:20px;padding-right:20px}footer{margin:0 20px}}@media (max-width:620px){.topbar{height:62px;padding:0 18px}.brand-logo{width:138px;height:38px}.brand-logo img{width:138px}.trust-note{display:none}.hero{padding:40px 0 28px;display:block}.hero h1{font-size:45px}.hero>p{margin-top:24px;font-size:14px}.analysis-shell{border-radius:15px;margin-bottom:58px}.section-heading,.vehicle-form,.submit-row{padding-left:20px;padding-right:20px}.section-heading p{display:none}.fields-grid.three,.fields-grid.two{grid-template-columns:1fr}.fields-grid.three>.field:last-child{grid-column:auto}.damage-panel{padding-left:14px;padding-right:14px}.damage-title>span{display:none}.car-map{grid-template-rows:34px 67px 60px 60px 67px 34px;grid-template-columns:78px 132px 78px;gap:6px;width:316px}.car-part{font-size:8px}.submit-row{flex-direction:column;align-items:stretch;gap:18px}.form-error{margin-left:20px;margin-right:20px}.primary-button{width:100%}.source-strip{flex-direction:column;align-items:flex-start;gap:7px}.source-strip span{margin-right:0}.results{padding-top:58px;padding-bottom:70px}.results-heading{flex-direction:column;align-items:start;gap:10px}.decision-main{align-items:flex-start;padding:25px 20px}.score-ring{width:70px;height:70px}.score-ring strong{font-size:21px}.decision-main h2{font-size:18px}.price-comparison{padding:25px 20px}.result-card{padding:20px}.listing-row{grid-template-columns:1fr 45px}.listing-row>strong{grid-column:1/3;margin-top:7px}.signal-stats{grid-template-columns:1fr}.signal-stats>div{border-right:0;border-bottom:1px solid var(--line);justify-content:space-between;padding:8px 0;display:flex}.empty-results{padding:38px 20px}footer{flex-wrap:wrap;gap:15px;padding:25px 0}footer p{order:3;width:100%}.result-meta{align-items:flex-start}.negotiation-grid,.depreciation-grid{grid-template-columns:1fr}.result-actions{flex-wrap:wrap}.trend-kpis{grid-template-columns:1fr 1fr}.trend-kpis>div:last-child{grid-column:1/3}.trend-chart{grid-template-columns:40px 1fr}.trend-dates{margin-left:48px}}.regional-confidence{background:var(--green-soft);min-height:150px;color:var(--green);border-radius:14px;flex-direction:column;justify-content:center;align-items:center;gap:8px;display:flex}.regional-confidence strong{letter-spacing:-.04em;font-size:38px}.regional-confidence span{text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:750}@media print{.topbar,.hero,.analysis-shell,.empty-results,footer,.result-actions{display:none!important}.results{background:#fff;border:0;padding:24px}.results-heading{break-after:avoid}.result-card,.decision-card{break-inside:avoid;box-shadow:none}.result-grid{grid-template-columns:1fr 1fr}.wide-card{grid-column:1/3}}@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}.trend-chart{grid-template-columns:62px 1fr}.trend-dates{margin-left:70px}@media (max-width:620px){.trend-chart{grid-template-columns:58px 1fr}.trend-dates{margin-left:66px}}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   AutoSense B2C — Vite sürümü ekleri
+   Yukarısı önceki build'in derlenmiş CSS'idir (birebir korundu).
+   Aşağısı yalnızca yeni bileşenler içindir.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root { --font-geist-sans: "Geist"; }
+
+footer {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 20px; max-width: 1180px; margin: 0 auto; padding: 30px 0 40px;
+  color: var(--muted); font-size: 10px;
+}
+footer p { margin: 0; }
+.disclaimer { color: var(--muted); font-size: 9px; margin: 22px 0 0; text-align: center; }
+
+/* ── Trend: çizgi grafiği ──────────────────────────────────────────────
+   Önceki sürüm bar grafiğiydi (.trend-point/.trend-points). Zaman serisi
+   için çizgi doğru form: bitişik günler arasındaki eğim doğrudan okunuyor,
+   56 ölçümde bar'lar birbirine giriyordu. */
+.trend-plot { overflow: visible; }
+.trend-svg { display: block; overflow: visible; }
+.trend-gridline { stroke: #e6e2df; stroke-width: 1; stroke-dasharray: 3 4; }
+.trend-line { fill: none; stroke: var(--green); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.trend-crosshair { stroke: #c8c2bd; stroke-width: 1; stroke-dasharray: 2 3; }
+.trend-dot { fill: var(--green); stroke: #fff; stroke-width: 2; }
+.trend-dot.current { stroke-width: 2.5; }
+.trend-tooltip {
+  position: absolute; top: -6px; pointer-events: none; z-index: 4;
+  background: var(--ink); color: #fff; border-radius: 8px;
+  padding: 7px 10px; box-shadow: 0 8px 20px #2025222e; white-space: nowrap;
+}
+.trend-tooltip strong { display: block; font-size: 11px; }
+.trend-tooltip span { display: block; margin-top: 2px; font-size: 8px; color: #b6bcb9; }
+
+/* ── Açıklama analizi ───────────────────────────────────────────────── */
+.contradiction-list { margin-top: 16px; display: grid; gap: 8px; }
+.contradiction-list > div {
+  display: grid; grid-template-columns: 62px 1fr; gap: 12px; align-items: start;
+  background: #fff4ee; border: 1px solid #f3c5b1; border-radius: 10px; padding: 12px 14px;
+}
+.contradiction-list > div > span {
+  background: #a5411d; color: #fff; border-radius: 5px; padding: 4px 6px;
+  font-size: 8px; font-weight: 800; letter-spacing: .1em; text-align: center;
+  text-transform: uppercase;
+}
+.contradiction-list p { margin: 0; color: #7d4a35; font-size: 9px; line-height: 1.5; }
+.contradiction-list strong { display: block; color: #a5411d; font-size: 10px; margin-bottom: 3px; }
+
+.insight-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 18px; }
+.insight-columns h4 {
+  margin: 0 0 9px; font-size: 9px; font-weight: 750; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em;
+}
+.insight-columns .card-empty { padding: 8px 0; text-align: left; }
+.chip-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.chip-list li {
+  background: var(--green-soft); color: #b4531f; border-radius: 6px;
+  padding: 5px 8px; font-size: 9px; font-weight: 650;
+}
+.chip-list.muted li { background: #f2efec; color: #7d7873; }
+
+/* ── Yayındaki benzer ilanlar ──────────────────────────────────────── */
+.listing-head {
+  display: grid; grid-template-columns: 1fr 55px 140px; gap: 0;
+  padding-bottom: 8px; color: var(--muted); font-size: 8px;
+  text-transform: uppercase; letter-spacing: .08em; font-weight: 750;
+}
+.listing-head span:nth-child(2) { text-align: center; }
+.listing-head span:last-child { text-align: right; }
+.listing-row:first-of-type { border-top: 1px solid var(--line); }
+
+@media (max-width: 900px) {
+  .insight-columns { grid-template-columns: 1fr; }
+  .contradiction-list > div { grid-template-columns: 1fr; }
+  .listing-head, .listing-row { grid-template-columns: 1fr 46px 92px; }
+}
+
+.estimate-note {
+  margin: 12px 0 0; padding: 12px 16px; font-size: 9px; line-height: 1.55;
+  color: #7d7873; background: #fff; border: 1px solid var(--line); border-radius: 12px;
+}
+.estimate-note strong { color: var(--ink); }
+
+.listing-autofill { margin-bottom: 28px; padding: 20px; border: 1px solid #ddd; border-radius: 16px; }
+.listing-autofill .primary-button { margin-top: 12px; }
+.listing-autofill p { margin: 12px 0 0; font-size: 14px; }
+.vehicle-fields { border: 0; padding: 0; margin: 0; min-width: 0; }
+
+/* Account pages share the analysis palette, with comfortably sized controls. */
+.auth-layout { min-height:100vh; display:grid; grid-template-columns:minmax(320px, 1fr) minmax(400px, 1fr); background:#fcfaf7; }
+.auth-story { background:#242b27; color:#fff; padding:48px 9%; display:flex; flex-direction:column; justify-content:space-between; gap:64px; }
+.auth-story .brand-logo { display:flex; align-items:center; flex-shrink:0; }
+.auth-story .eyebrow { color:#f5a778; font-size:11px; }
+.auth-story h1 { font-size:clamp(48px,5vw,78px); line-height:1.08; letter-spacing:-.05em; margin:24px 0; }
+.auth-story h1 i { font-style:normal; color:#f4a575; }
+.auth-story p { color:#c7cec8; font-size:16px; line-height:1.8; max-width:390px; }
+.auth-story-foot { color:#aab5ad; font-size:12px; }
+.auth-panel { display:flex; align-items:center; justify-content:center; padding:64px 32px; }
+.auth-card { width:100%; max-width:420px; }
+.auth-card>.eyebrow { font-size:10px; }
+.auth-card h2 { font-size:34px; line-height:1.2; letter-spacing:-.035em; font-weight:650; margin:18px 0 14px; }
+.auth-intro { color:#716f68; font-size:15px; line-height:1.7; margin-bottom:30px; }
+.auth-form { display:grid; gap:18px; }
+.auth-form .field { gap:8px; }
+.auth-form .field>span { font-size:13px; font-weight:600; }
+.auth-form input { font-size:16px; padding:13px 14px; min-height:49px; background:#fff; border:1px solid #d5d4cf; border-radius:9px; width:100%; }
+.auth-form input:focus { outline:2px solid #be5c29; outline-offset:2px; }
+.auth-card .primary-button { display:flex; justify-content:center; align-items:center; gap:20px; font-size:14px; min-height:49px; width:100%; border-radius:9px; }
+.auth-forgot { justify-self:end; font-size:13px; text-decoration:underline; }
+.auth-switch { font-size:13px; color:#716f68; text-align:center; margin:24px 0 0; line-height:1.7; }
+.auth-switch a { color:#9a421b; text-decoration:underline; text-underline-offset:3px; font-weight:600; }
+.auth-hint { font-size:12px; color:#716f68; margin-top:-8px; line-height:1.6; }
+.auth-error,.auth-success { padding:12px 14px; border-radius:8px; font-size:13px; line-height:1.6; overflow-wrap:anywhere; }
+.auth-error { background:#fff0eb; color:#983715; border:1px solid #e4b8a9; }
+.auth-success { background:#eaf2e9; color:#355b36; border:1px solid #c0d6bd; }
+.resend-form { margin-top:24px; }
+.secondary-button { border:1px solid #bbbcb4; border-radius:9px; min-height:48px; padding:10px 16px; font-size:13px; cursor:pointer; }
+button:disabled { opacity:.6; cursor:wait; }
+a:focus-visible,button:focus-visible { outline:2px solid #be5c29; outline-offset:4px; }
+.auth-loading { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:32px; text-align:center; }
+.account-nav { display:flex; align-items:center; gap:18px; font-size:12px; min-width:0; }
+.account-nav>span { overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+.account-nav button { border:1px solid #d2d1c9; padding:8px 12px; border-radius:7px; white-space:nowrap; cursor:pointer; }
+@media(max-width:760px) { .auth-layout { grid-template-columns:1fr; } .auth-story { padding:24px; gap:0; } .auth-story>div,.auth-story-foot { display:none; } .auth-panel { padding:42px 24px; align-items:flex-start; } .auth-card h2 { font-size:30px; } .account-nav { gap:8px; } .account-nav>span { max-width:120px; font-size:10px; } .account-nav button { font-size:11px; padding:8px; } }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Sonuç kartları — renk kimliği
+   Her kart bir --tone üçlüsü taşır; kartın içindeki ikon, sayaç, ilerleme
+   çubuğu, çip ve vurgular bu üçlüden türer. Kart zemini beyaz kalır, renk
+   yalnızca aksan olarak durur. HERO VE FORM BU BLOĞUN DIŞINDADIR.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.result-card{ --tone:#e0641f; --tone-soft:#fff1e8; --tone-line:#f6d3bd; --tone-text:#bc4c0c;
+  position:relative; overflow:hidden; border-color:var(--tone-line) }
+.result-card::before{ content:""; position:absolute; top:0; left:0; right:0;
+  height:3px; background:var(--tone) }
+
+.result-card.tone-orange{ --tone:#e0641f; --tone-soft:#fff1e8; --tone-line:#f6d3bd; --tone-text:#bc4c0c }
+.result-card.tone-violet{ --tone:#6a58bd; --tone-soft:#f1effb; --tone-line:#d8d2f1; --tone-text:#6a58bd }
+.result-card.tone-rose  { --tone:#bd4a41; --tone-soft:#fdefed; --tone-line:#f1ccc6; --tone-text:#b0433a }
+.result-card.tone-gold  { --tone:#8c6410; --tone-soft:#fbf3e1; --tone-line:#ecdeb3; --tone-text:#8c6410 }
+.result-card.tone-teal  { --tone:#1c7169; --tone-soft:#e9f4f2; --tone-line:#c1e0db; --tone-text:#1c7169 }
+.result-card.tone-blue  { --tone:#2c63a8; --tone-soft:#edf3fa; --tone-line:#c9def2; --tone-text:#2c63a8 }
+.result-card.tone-green { --tone:#3a8055; --tone-soft:#ecf5ef; --tone-line:#cae3d3; --tone-text:#357450 }
+.result-card.tone-slate { --tone:#4c5f70; --tone-soft:#eff2f5; --tone-line:#d3dae1; --tone-text:#4c5f70 }
+.result-card.tone-plum  { --tone:#93497e; --tone-soft:#f8eef5; --tone-line:#e7cedf; --tone-text:#93497e }
+
+/* Başlık bloğu */
+.result-card .card-icon,
+.result-card .card-icon.orange{ background:var(--tone-soft); color:var(--tone) }
+.result-card .count{ background:var(--tone-soft); color:var(--tone) }
+.result-card .quality-score{ background:var(--tone) }
+
+/* İlerleme çubukları */
+.result-card .quality-status b,
+.result-card .cost-lines b{ background:var(--tone) }
+
+/* Pazarlık: hedef fiyat kutusu */
+.result-card .negotiation-grid .target{ background:var(--tone-soft); border-color:var(--tone-line) }
+
+/* Uyarı ve soru işaretleri */
+.result-card .quality-warnings li:before{ background:var(--tone-soft); color:var(--tone) }
+.result-card.questions li>span{ color:var(--tone); font-weight:800 }
+
+/* Açıklama analizi: iddia çipleri */
+.result-card .chip-list li{ background:var(--tone-soft); color:var(--tone) }
+.result-card .chip-list.muted li{ background:#f2efec; color:#7d7873 }
+
+/* Bölgesel sinyal */
+.result-card .signal-status{ background:var(--tone-soft) }
+.result-card .signal-dot{ background:var(--tone); box-shadow:0 0 0 5px #fff }
+
+/* Değer kaybı: kayıp rakamı kartın tonunda */
+.result-card.tone-rose .depreciation-grid small{ color:var(--tone) }
+
+/* Trend grafiği */
+.result-card .trend-line{ stroke:var(--tone) }
+.result-card .trend-dot{ fill:var(--tone) }
+.result-card .trend-point b{ background:var(--tone); box-shadow:0 0 0 1px var(--tone) }
+.result-card .trend-point b.current{ background:var(--tone); box-shadow:0 0 0 2px var(--tone-line) }
+.result-card .trend-point>i{ background:linear-gradient(var(--tone), var(--tone-soft)) }
+
+/* Benzer ilanlar */
+.result-card .listing-car>span{ background:var(--tone-soft); color:var(--tone) }
+.result-card .listing-row:hover{ background:var(--tone-soft) }
+
+/* .card-note 8px olduğu için vurgular tonda değil koyu kalır (kontrast) */
+
+/* ── Renk dozu: çerçeve, başlık ve iç metrik kutuları ────────────────
+   --tone   : dolgu ve grafik (kontrast eşiği 3:1)
+   --tone-text : metin (kontrast eşiği 4.5:1, kendi soft zemininde de geçerli)
+   Kart zemini beyaz kalır; renklenen şey çerçeve, başlık ve iç kutulardır. */
+
+.result-card .card-top h3{ color:var(--tone-text) }
+.result-card .card-icon,
+.result-card .card-icon.orange,
+.result-card .count,
+.result-card .chip-list li,
+.result-card .listing-car>span,
+.result-card .quality-warnings li:before{ color:var(--tone-text) }
+.result-card.questions li>span{ color:var(--tone-text) }
+
+/* İç metrik kutuları nötr griden kartın tonuna */
+.result-card .negotiation-grid>div,
+.result-card .depreciation-grid>div,
+.result-card .trend-kpis>div{ background:var(--tone-soft); border-color:var(--tone-line) }
+.result-card .negotiation-grid>div>span,
+.result-card .depreciation-grid>div>span,
+.result-card .trend-kpis span{ color:#6b635d }
+
+/* Hedef fiyat, artık renkli kardeşleri arasında da ayrışsın */
+.result-card .negotiation-grid .target{ background:#fff; border-color:var(--tone);
+  box-shadow:inset 0 0 0 1px var(--tone) }
+
+/* Çubuk kanalları */
+.result-card .quality-status i,
+.result-card .cost-lines i{ background:var(--tone-soft) }
+
+/* Bölgesel istatistik ayraçları */
+.result-card .signal-stats>div{ border-right-color:var(--tone-line) }
+
+/* Değer kaybı: kayıp rakamı */
+.result-card.tone-rose .depreciation-grid small{ color:var(--tone-text) }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   1) Topbar hesap alanı — koyu zeminde açık metin
+   .topbar zemini #1f2422; .account-nav renk tanımlamadığı için metin
+   body'den --ink (#202522) miras alıyordu, yani koyu üstüne koyu.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.topbar .account-nav{ color:#e6e9e7 }
+.topbar .account-nav>span{ color:#c9cfcc }
+.topbar .account-nav button{ color:#fff; background:0 0; border-color:#5a615d }
+.topbar .account-nav button:hover{ background:#ffffff14; border-color:#7d847f }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   2) Sonuç bölümü tipografi tabanı
+   Orijinal tasarımda 7.5–9px metinler vardı; okunabilirlik için taban 10px,
+   içerik metinlerinde 11px'e çekildi. Ölçek korunuyor, sadece kaydırıldı.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results .card-top p{ font-size:11px; color:#6b635d }
+.results .card-top h3{ font-size:15px }
+.results .count{ font-size:11px; width:25px; height:25px }
+.results .card-empty{ font-size:12px }
+.results .card-note{ font-size:11px; line-height:1.6 }
+.results .result-actions button{ font-size:11px; padding:8px 12px }
+.results .result-actions small{ font-size:10px }
+.results .updated{ font-size:11px }
+.results .deal-badge{ font-size:10px }
+.results .decision-main p{ font-size:12px }
+.results .price-comparison div>span{ font-size:11px }
+.results .price-comparison div>strong{ font-size:16px }
+.results .source-strip{ font-size:11px }
+.results .quality-warnings li{ font-size:11px }
+.results .quality-clean{ font-size:11px }
+.results .questions li>span{ font-size:11px }
+.results .questions li p{ font-size:11px; line-height:1.55 }
+.results .questions li strong{ font-size:12px }
+.results .trend-kpis span{ font-size:10px }
+.results .trend-kpis strong{ font-size:12px }
+.results .trend-kpis small{ font-size:10px }
+.results .trend-axis{ font-size:10px }
+.results .trend-dates{ font-size:10px }
+.results .trend-explanation{ font-size:11px; line-height:1.6 }
+.results .listing-row{ font-size:12px }
+.results .listing-car small{ font-size:11px }
+.results .listing-row>.up,.results .listing-row>.down{ font-size:11px }
+.results .total-cost span{ font-size:11px }
+.results .total-cost small{ font-size:11px }
+.results .cost-lines>div{ font-size:11px }
+.results .cost-lines strong{ font-size:11px }
+.results .signal-status strong{ font-size:12px }
+.results .signal-status p{ font-size:11px }
+.results .signal-stats span{ font-size:11px }
+.results .signal-stats strong{ font-size:13px }
+.results .contradiction-list p{ font-size:11px }
+.results .contradiction-list strong{ font-size:12px }
+.results .chip-list li{ font-size:11px }
+.results .disclaimer{ font-size:10px }
+.results .estimate-note{ font-size:11px }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   3) Grafikler
+   Semantik renkler kart tonundan BAĞIMSIZDIR: iyi/orta/kötü ve artı/eksi
+   her kartta aynı anlama gelmeli. Kart tonu yalnızca nötr aksanlarda
+   (kanal, kutu zemini, sayaç) kullanılıyor.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results{
+  --pos:#2f7346; --pos-fill:#3a8055; --pos-soft:#ecf5ef;
+  --neg:#a83f27; --neg-fill:#c1503f; --neg-soft:#fdefed;
+  --mid:#7d5a0e; --mid-fill:#c08a1e; --mid-soft:#fbf3e1;
+  --axis:#c9c3bd; --meta:#6b635d;
+}
+
+/* ── Pazarlık merdiveni ──────────────────────────────────────────────── */
+.ladder-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:18px }
+.ladder-headline span{ font-size:11px; color:var(--meta); width:100% }
+.ladder-headline strong{ font-size:26px; letter-spacing:-.03em; color:var(--tone-text) }
+.ladder-headline em{ font-style:normal; font-size:11px; color:var(--meta) }
+.ladder-axis{ position:relative; height:26px; margin:0 10px 16px }
+.ladder-line{ position:absolute; left:0; right:0; top:12px; height:2px; background:var(--axis); border-radius:2px }
+.ladder-band{ position:absolute; top:5px; height:16px; background:var(--tone-soft);
+  border:1px solid var(--tone-line); border-radius:4px }
+.ladder-stop{ position:absolute; top:13px; width:13px; height:13px; margin:-6.5px 0 0 -6.5px;
+  border-radius:50%; background:#fff; border:2px solid var(--axis) }
+.ladder-stop.is-target{ width:19px; height:19px; margin:-9.5px 0 0 -9.5px;
+  background:var(--tone); border-color:#fff; box-shadow:0 0 0 2px var(--tone) }
+.ladder-stop.is-listing{ border-radius:3px; background:var(--ink); border-color:#fff;
+  box-shadow:0 0 0 2px var(--ink) }
+.ladder-legend{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px;
+  margin:0; padding:0; list-style:none }
+.ladder-legend li{ display:grid; grid-template-columns:12px minmax(0,1fr) auto; align-items:center;
+  gap:9px; border:1px solid var(--line); border-radius:9px; padding:9px 11px }
+.ladder-legend li i{ width:11px; height:11px; border-radius:50%; background:#fff; border:2px solid var(--axis) }
+.ladder-legend li span{ font-size:11px; color:var(--meta) }
+.ladder-legend li strong{ font-size:12px }
+.ladder-legend li.is-target{ background:var(--tone-soft); border-color:var(--tone-line) }
+.ladder-legend li.is-target i{ background:var(--tone); border-color:var(--tone) }
+.ladder-legend li.is-target strong{ color:var(--tone-text) }
+.ladder-legend li.is-listing i{ background:var(--ink); border-color:var(--ink); border-radius:3px }
+
+/* ── Etki çubukları (tornado) ────────────────────────────────────────── */
+.fbars{ display:grid; gap:14px }
+.fbar-head{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:6px }
+.fbar-head strong{ font-size:12px }
+.fbar-val{ font-size:12px; font-weight:800; white-space:nowrap }
+.fbar-val.is-pos{ color:var(--pos) }
+.fbar-val.is-neg{ color:var(--neg) }
+.fbar-val.is-zero{ color:var(--meta) }
+.fbar-track{ position:relative; height:12px; background:#f4f1ef; border-radius:4px; overflow:hidden }
+.fbar-zero{ position:absolute; left:50%; top:0; bottom:0; width:1px; background:#cfc9c3 }
+.fbar-fill{ position:absolute; top:2px; bottom:2px; border-radius:3px }
+.fbar-fill.is-pos{ background:var(--pos-fill) }
+.fbar-fill.is-neg{ background:var(--neg-fill) }
+.fbar>small{ display:block; margin-top:6px; font-size:11px; line-height:1.5; color:var(--meta) }
+.fbar-scale{ display:flex; justify-content:space-between; border-top:1px solid #eeecea;
+  padding-top:8px; font-size:10px; color:#8b8580 }
+
+/* ── Değer kaybı sütunları ───────────────────────────────────────────── */
+.depr-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:16px }
+.depr-headline span{ font-size:11px; color:var(--meta); width:100% }
+.depr-headline strong{ font-size:26px; letter-spacing:-.03em; color:var(--tone-text) }
+.depr-headline em{ font-style:normal; font-size:11px; color:var(--meta) }
+.depr-plot{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px }
+.depr-col{ text-align:center; min-width:0 }
+.depr-bar{ display:flex; flex-direction:column; height:118px; border:1px solid var(--tone-line);
+  border-radius:8px; overflow:hidden; background:#fff }
+.depr-keep{ display:block; background:var(--tone-soft); box-shadow:inset 0 2px 0 var(--tone) }
+.depr-loss{ display:block; background:repeating-linear-gradient(135deg,#f7f4f1 0 5px,#e9e1db 5px 10px) }
+.depr-col>strong{ display:block; margin-top:10px; font-size:13px }
+.depr-col>span{ display:block; margin-top:3px; font-size:11px; color:var(--meta) }
+.depr-col>small{ display:block; margin-top:3px; font-size:11px; font-weight:750; color:var(--neg) }
+.depr-col>small.is-base{ color:#8b8580; font-weight:500 }
+.depr-key{ display:flex; align-items:center; gap:7px; margin:16px 0 0; font-size:11px; color:var(--meta) }
+.depr-key i{ width:13px; height:13px; border-radius:3px; border:1px solid var(--tone-line); flex:none }
+.depr-key i:not(:first-child){ margin-left:8px }
+
+/* ── Skor göstergesi ─────────────────────────────────────────────────── */
+.gauge{ display:flex; flex-direction:column; align-items:center; gap:7px; flex:none; width:124px }
+.gauge svg{ width:124px; height:auto; display:block }
+.gauge-track{ fill:none; stroke:#edeae7; stroke-width:10; stroke-linecap:round }
+.gauge-fill{ fill:none; stroke-width:10; stroke-linecap:round }
+.gauge-tick{ fill:#fff; stroke:#c3bdb7; stroke-width:1 }
+.gauge-value{ font-size:26px; font-weight:800; fill:var(--ink) }
+.gauge-max{ font-size:10px; fill:#7d7873 }
+.gauge>strong{ font-size:12px; text-align:center; line-height:1.35 }
+.gauge.is-good .gauge-fill{ stroke:var(--pos-fill) }
+.gauge.is-good>strong{ color:var(--pos) }
+.gauge.is-mid .gauge-fill{ stroke:var(--mid-fill) }
+.gauge.is-mid>strong{ color:var(--mid) }
+.gauge.is-bad .gauge-fill{ stroke:var(--neg-fill) }
+.gauge.is-bad>strong{ color:var(--neg) }
+
+/* ── İlan kalitesi: puan kırılımı ────────────────────────────────────── */
+.quality-body{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:20px; align-items:start }
+.deduct h4{ margin:0 0 8px; font-size:10px; font-weight:800; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--meta) }
+.deduct-row{ display:grid; grid-template-columns:minmax(0,1fr) 76px 32px; align-items:center;
+  gap:10px; padding:8px 0; border-top:1px solid #eeecea }
+.deduct-row>span{ font-size:11px; line-height:1.45 }
+.deduct-row>i{ display:block; height:8px; border-radius:4px; background:var(--tone-soft); overflow:hidden }
+.deduct-row>i>b{ display:block; height:100%; border-radius:4px; background:var(--tone) }
+.deduct-row>strong{ text-align:right; font-size:12px; font-weight:800; color:var(--tone-text) }
+.deduct .quality-warnings{ margin-top:12px }
+
+/* ── Bölgesel fiyat ölçeği ───────────────────────────────────────────── */
+.rscale-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:18px }
+.rscale-headline strong{ font-size:30px; letter-spacing:-.035em }
+.rscale-headline span{ font-size:12px; font-weight:750 }
+.rscale.is-low .rscale-headline strong,.rscale.is-low .rscale-headline span{ color:var(--pos) }
+.rscale.is-high .rscale-headline strong,.rscale.is-high .rscale-headline span{ color:var(--neg) }
+.rscale.is-flat .rscale-headline strong,.rscale.is-flat .rscale-headline span{ color:#54504c }
+.rscale-axis{ position:relative; height:52px; margin:0 4px }
+.rscale-line{ position:absolute; left:0; right:0; top:38px; height:2px; background:var(--axis); border-radius:2px }
+.rscale-neutral{ position:absolute; top:31px; height:16px; background:#efece9; border-radius:4px }
+.rscale-center{ position:absolute; left:50%; top:27px; width:2px; height:22px; margin-left:-1px; background:#b0aaa4 }
+.rscale-marker{ position:absolute; top:0; transform:translateX(-50%); text-align:center; width:max-content }
+.rscale-marker b{ display:block; font-size:11px; font-weight:750; margin-bottom:5px }
+.rscale-marker:after{ content:""; display:block; width:16px; height:16px; margin:0 auto;
+  border-radius:50%; border:3px solid #fff; background:currentColor; box-shadow:0 0 0 1px currentColor }
+.rscale.is-low .rscale-marker{ color:var(--pos-fill) }
+.rscale.is-high .rscale-marker{ color:var(--neg-fill) }
+.rscale.is-flat .rscale-marker{ color:#7d7873 }
+.rscale-marker b{ color:var(--ink) }
+.rscale-ends{ display:flex; justify-content:space-between; font-size:10px; color:#8b8580; margin-top:4px }
+.rscale-conf{ display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:10px;
+  margin-top:18px; border-top:1px solid #eeecea; padding-top:14px; font-size:11px; color:var(--meta) }
+.rscale-conf i{ display:block; height:8px; border-radius:4px; background:var(--tone-soft); overflow:hidden }
+.rscale-conf i b{ display:block; height:100%; border-radius:4px; background:var(--tone) }
+.rscale-conf strong{ font-size:12px; color:var(--tone-text) }
+
+/* ── Açıklama analizi ────────────────────────────────────────────────── */
+.desc-head{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:22px; align-items:center; margin-bottom:6px }
+.desc-summary p{ margin:0 0 12px; font-size:12px; line-height:1.65; color:#54504c }
+.desc-counts{ display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none }
+.desc-counts li{ display:flex; align-items:baseline; gap:7px; border:1px solid var(--line);
+  border-radius:9px; padding:8px 12px }
+.desc-counts strong{ font-size:16px }
+.desc-counts span{ font-size:11px; color:var(--meta) }
+.desc-counts .is-flag{ background:var(--neg-soft); border-color:#f1ccc6 }
+.desc-counts .is-flag strong{ color:var(--neg) }
+.desc-counts .is-missing{ background:#f5f2f0; border-color:#e2ddd8 }
+.desc-counts .is-claim{ background:var(--tone-soft); border-color:var(--tone-line) }
+.desc-counts .is-claim strong{ color:var(--tone-text) }
+.impact{ margin-top:18px; border:1px solid var(--tone-line); border-radius:12px; padding:16px 18px }
+.impact-head{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:14px }
+.impact-head span{ font-size:11px; color:var(--meta) }
+.impact-head strong{ font-size:20px; font-weight:800 }
+.impact-head .is-pos{ color:var(--pos) }
+.impact-head .is-neg{ color:var(--neg) }
+.impact-head .is-zero{ color:var(--meta) }
+.impact-prices{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center; gap:12px; margin-bottom:18px }
+.impact-prices>div{ border:1px solid var(--line); border-radius:10px; padding:11px 13px }
+.impact-prices>div>span{ display:block; font-size:11px; color:var(--meta); margin-bottom:4px }
+.impact-prices>div>strong{ font-size:14px }
+.impact-prices .is-adj{ background:var(--tone-soft); border-color:var(--tone-line) }
+.impact-prices .is-adj small{ display:block; margin-top:4px; font-size:11px; font-weight:750 }
+.impact-prices small.is-pos{ color:var(--pos) }
+.impact-prices small.is-neg{ color:var(--neg) }
+.impact-arrow{ font-style:normal; font-size:17px; color:#a49d97 }
+.impact-arrow:before{ content:"→" }
+.sgrid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px }
+.sgroup{ border:1px solid var(--line); border-radius:12px; padding:14px 16px }
+.sgroup h4{ display:flex; align-items:center; gap:8px; margin:0 0 10px; font-size:10px;
+  font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--meta) }
+.sgroup h4 b{ min-width:20px; height:20px; display:grid; place-items:center; border-radius:50%;
+  font-size:10px; background:#f2efec; color:#4f4a46 }
+.sgroup ul{ display:grid; gap:8px; margin:0; padding:0; list-style:none }
+.sgroup li{ position:relative; padding-left:16px; font-size:11px; line-height:1.55; color:#4f4a46 }
+.sgroup li:before{ content:""; position:absolute; left:0; top:6px; width:7px; height:7px;
+  border-radius:2px; background:#c3bdb7 }
+.sgroup.is-flag{ background:var(--neg-soft); border-color:#f1ccc6 }
+.sgroup.is-flag h4{ color:var(--neg) }
+.sgroup.is-flag h4 b{ background:#f8ded9; color:var(--neg) }
+.sgroup.is-flag li:before{ background:var(--neg-fill) }
+.sgroup.is-positive{ background:var(--pos-soft); border-color:#cae3d3 }
+.sgroup.is-positive h4{ color:var(--pos) }
+.sgroup.is-positive h4 b{ background:#dcecdf; color:var(--pos) }
+.sgroup.is-positive li:before{ background:var(--pos-fill) }
+.sgroup.is-claim{ background:var(--tone-soft); border-color:var(--tone-line) }
+.sgroup.is-claim h4{ color:var(--tone-text) }
+.sgroup.is-claim h4 b{ background:#fff; color:var(--tone-text) }
+.sgroup.is-claim li:before{ background:var(--tone) }
+.sgroup.is-missing{ background:#f7f5f3 }
+
+/* ── Dar ekran ───────────────────────────────────────────────────────── */
+@media (max-width:620px){
+  .ladder-legend,.sgrid{ grid-template-columns:1fr }
+  .quality-body,.desc-head{ grid-template-columns:1fr; gap:16px; justify-items:center }
+  .deduct,.desc-summary{ width:100% }
+  .impact-prices{ grid-template-columns:1fr; gap:8px }
+  .impact-arrow{ transform:rotate(90deg); justify-self:center }
+  .depr-bar{ height:96px }
+  .depr-plot{ gap:7px }
+  .deduct-row{ grid-template-columns:minmax(0,1fr) 52px 30px; gap:8px }
+  .rscale-headline strong{ font-size:26px }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   4) Sonuç bölümü kontrast düzeltmesi
+   Tipografi tabanı büyüyünce eski gri tonları AA eşiğinin altında kaldı.
+   Aşağıdaki değerler headless Chromium'da ölçüldü: her biri hem beyazda hem
+   de bulunduğu soft zeminde >= 4.5:1. Kapsam yalnızca .results — hero, form
+   ve hasar şeması dokunulmadan kalıyor.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results{ --muted:#676d6a }
+.results .source-strip{ color:#726c67 }
+.results .card-empty,
+.results .disclaimer,
+.results .questions li p,
+.results .trend-axis,
+.results .trend-dates,
+.results .trend-kpis small,
+.results .listing-car small,
+.results .total-cost small{ color:#6f6b68 }
+.results .fbar-scale,
+.results .rscale-ends,
+.results .depr-col>small.is-base{ color:#716c68 }
+.results .gauge-max{ fill:#706c68 }
+.results .chip-list.muted li{ color:#706c68 }
+.results .factor-list .neutral{ color:#6f6c6a }
+.results .trend-kpis .flat{ color:#6b635d }
+.results .quality-clean,
+.results .factor-list .positive,
+.results .trend-kpis .up{ color:#34794a }
+.results .factor-list .negative,
+.results .trend-kpis .down{ color:#b24f2e }
+.results .listing-row>.up{ color:#b24c45 }
+.results .listing-row>.down{ color:#b1511f }
+.results .depreciation-grid small{ color:#b1511f }
+
+/* 10px altında kalan son üç etiket */
+.results .score-ring span{ font-size:10px }
+.results .contradiction-list>div>span{ font-size:10px }
+.results .listing-head span{ font-size:10px }
+.results .signal-stats span{ color:#6e6a67 }
+.results .listing-row>.up{ color:#ae4a44 }
+
+/* ── Grafik rötuşları (ölçüm sonrası) ────────────────────────────────── */
+.results .signal-stats{ grid-template-columns:repeat(2,1fr) }
+.rscale-marker:before{ content:""; display:block; width:2px; height:22px; margin:0 auto;
+  background:currentColor; opacity:.45 }
+.rscale-marker:after{ margin-top:0 }
+.depr-bar{ max-width:132px; margin:0 auto }
+.wide-card .fbars{ max-width:840px }
+</style></head><body>
+<main><p style="max-width:1180px;margin:24px auto 0;font:13px/1.6 system-ui;color:#555">Statik önizleme — üç senaryo alt alta: (1) dolu analiz, (2) yüksek riskli araç, (3) veri eksik / boş durumlar.</p>
+<section class="results visible" id="results"><div class="results-heading"><div><span class="updated"><span></span>13.09.2026 09:30:00</span><h2>Analiz sonucu</h2></div><div class="result-meta"><div class="result-actions"><button type="button">PDF / Yazdır</button><button type="button">Paylaş</button></div></div></div><div class="decision-card"><div class="decision-main"><div class="score-ring"><strong>4</strong><span>/10</span></div><div><span class="deal-badge">PAHALI</span><h2>İlan fiyatı piyasanın üzerinde</h2><p>İlan fiyatı, AutoSense tahminine göre <strong>%7,7 üzerinde</strong>.</p></div></div><div class="price-comparison"><div><span>İlan fiyatı</span><strong>745.000 TL</strong></div><div><span>Tahmini piyasa değeri</span><strong>692.000 TL</strong></div><div><span>Tahmin aralığı</span><strong>651.000 – 733.000 TL</strong></div><div><span>Güven / renk etkisi</span><strong>%78 · renk %2.4</strong></div></div></div><div class="source-strip"><span>Canlı veri kaynakları</span><strong>41 galeri ilanı</strong><strong>128 analiz edilmiş ilan</strong><strong>4 fiyat trendi noktası</strong><strong>2 yayındaki emsal</strong></div><div class="result-grid"><article class="result-card tone-orange"><div class="card-top"><span class="card-icon orange">⇄</span><div><h3>Pazarlık planı</h3><p>Veri destekli teklif aralığı</p></div></div><div class="ladder"><div class="ladder-headline"><span>Hedefe inebilirseniz kazanç</span><strong>55.000 TL</strong><em>ilan fiyatının %7,4&#x27;i</em></div><div class="ladder-axis"><i class="ladder-band" style="left:41.03942652329749%;width:49.28315412186379%"></i><i class="ladder-line"></i><span class="ladder-stop is-open" style="left:9.67741935483871%"></span><span class="ladder-stop is-target" style="left:41.03942652329749%"></span><span class="ladder-stop is-ceiling" style="left:60.752688172043015%"></span><span class="ladder-stop is-listing" style="left:90.32258064516128%"></span></div><ul class="ladder-legend"><li class="is-open"><i></i><span>Açılış teklifi</span><strong>655.000 TL</strong></li><li class="is-target"><i></i><span>Hedef fiyat</span><strong>690.000 TL</strong></li><li class="is-ceiling"><i></i><span>Tavan fiyat</span><strong>712.000 TL</strong></li><li class="is-listing"><i></i><span>İlan fiyatı</span><strong>745.000 TL</strong></li></ul></div><p class="card-note">Hedef fiyat, aynı yaş ve km bandındaki emsallerin medyanına dayanır.</p></article><article class="result-card tone-violet"><div class="card-top"><span class="card-icon orange">±</span><div><h3>Fiyatı etkileyen kalemler</h3><p>Tahmine uygulanan artı ve eksi etkiler</p></div></div><div class="fbars"><div class="fbar"><div class="fbar-head"><strong>Hasar durumu</strong><span class="fbar-val is-neg">−%9,4</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:50%"></i></div><small>Boyalı/değişen parçaların toplam etkisi</small></div><div class="fbar"><div class="fbar-head"><strong>Kilometre</strong><span class="fbar-val is-neg">−%6,2</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:32.97872340425532%"></i></div><small>Referans 95.000 km&#x27;ye göre</small></div><div class="fbar"><div class="fbar-head"><strong>Renk: Beyaz</strong><span class="fbar-val is-pos">+%2,4</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-pos" style="left:50%;width:12.76595744680851%"></i></div><small>41 emsal galeri ilanına göre</small></div><div class="fbar"><div class="fbar-head"><strong>Vites</strong><span class="fbar-val is-neg">−%2,1</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:11.170212765957446%"></i></div><small>Manuel araçlar ikinci elde daha yavaş satılıyor</small></div><div class="fbar"><div class="fbar-head"><strong>Bölge: İstanbul</strong><span class="fbar-val is-zero">%0</span></div><div class="fbar-track"><i class="fbar-zero"></i></div><small>İstanbul ülke ortalamasının %5,8 üzerinde</small></div><div class="fbar-scale"><span>−%9,4</span><span>0</span><span>+%9,4</span></div></div></article><article class="result-card tone-rose"><div class="card-top"><span class="card-icon orange">↘</span><div><h3>Değer kaybı projeksiyonu</h3><p>Yaş grubuna göre tahmini ikinci el değeri</p></div></div><div class="depr"><div class="depr-headline"><span>3 yılda tahmini değer kaybı</span><strong>−164.000 TL</strong><em>bugünkü değerin %23,7&#x27;i</em></div><div class="depr-plot"><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:0%"></i><i class="depr-keep" style="height:100%"></i></div><strong>692.000 TL</strong><span>Bugün</span><small class="is-base">başlangıç</small></div><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:8.815028901734095%"></i><i class="depr-keep" style="height:91.1849710982659%"></i></div><strong>631.000 TL</strong><span>1 yıl sonra</span><small class="">−61.000 TL</small></div><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:23.699421965317924%"></i><i class="depr-keep" style="height:76.30057803468208%"></i></div><strong>528.000 TL</strong><span>3 yıl sonra</span><small class="">−164.000 TL</small></div></div><p class="depr-key"><i class="depr-keep"></i> kalan değer<i class="depr-loss"></i> kaybedilen değer</p></div><p class="card-note">Yaş grubunun geçmiş yıllardaki ortalama değer kaybına göre.</p></article><article class="result-card tone-gold"><div class="card-top"><span class="card-icon orange">◆</span><div><h3>İlan kalitesi ve belirsizlik</h3><p>Veri riski ve açıklama sinyalleri</p></div></div><div class="quality-body"><div class="gauge is-mid"><svg viewBox="0 0 120 72" role="img" aria-label="62 / 100 — Orta risk"><path class="gauge-track" d="M10 60 A50 50 0 0 1 110 60"></path><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke-dasharray="97.3893722612836 157.07963267948966"></path><circle class="gauge-tick" cx="67.82172325201155" cy="10.615582970243118" r="2.4"></circle><circle class="gauge-tick" cx="100.45084971874738" cy="30.61073738537635" r="2.4"></circle><text class="gauge-value" x="60" y="54" text-anchor="middle">62</text><text class="gauge-max" x="60" y="68" text-anchor="middle">/ 100</text></svg><strong>Orta risk</strong></div><div class="deduct"><h4>100 puandan ne götürdü?</h4><div class="deduct-row"><span>3 parça değişmiş — yapısal onarım ihtimali yüksek.</span><i><b style="width:100%"></b></i><strong>−25</strong></div><div class="deduct-row"><span>Çelişki: “değişensiz” — formda 3 parça değişmiş işaretli.</span><i><b style="width:48%"></b></i><strong>−12</strong></div><div class="deduct-row"><span>Yıllık ortalama 18.285 km — yoğun kullanım.</span><i><b style="width:40%"></b></i><strong>−10</strong></div><div class="deduct-row"><span>Açıklamada hiç değinilmemiş: bakım geçmişi, lastik durumu.</span><i><b style="width:24%"></b></i><strong>−6</strong></div><ul class="quality-warnings"><li>Takas kabul edilmiyor.</li></ul></div></div></article><article class="result-card wide-card tone-teal"><div class="card-top"><span class="card-icon orange">¶</span><div><h3>Açıklama analizi</h3><p>İlan metninden çıkarılan anlam ve çelişkiler</p></div></div><div class="desc-head"><div class="gauge is-bad"><svg viewBox="0 0 120 72" role="img" aria-label="4 / 10 — Çelişkili — dikkat"><path class="gauge-track" d="M10 60 A50 50 0 0 1 110 60"></path><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke-dasharray="62.83185307179587 157.07963267948966"></path><circle class="gauge-tick" cx="67.82172325201155" cy="10.615582970243118" r="2.4"></circle><circle class="gauge-tick" cx="100.45084971874738" cy="30.61073738537635" r="2.4"></circle><text class="gauge-value" x="60" y="54" text-anchor="middle">4</text><text class="gauge-max" x="60" y="68" text-anchor="middle">/ 10</text></svg><strong>Çelişkili — dikkat</strong></div><div class="desc-summary"><p>Açıklamada 1 adet, girdiğiniz araç bilgisiyle çelişen ifade bulundu. Bu maddeleri satıcıya doğrudan sorun — pazarlıkta en güçlü kozunuz bunlar.</p><ul class="desc-counts"><li class="is-flag"><strong>1</strong><span>çelişki</span></li><li class="is-missing"><strong>3</strong><span>değinilmemiş konu</span></li><li class="is-claim"><strong>3</strong><span>iddia</span></li></ul></div></div><div class="contradiction-list"><div><span>Çelişki</span><p><strong>“değişensiz”</strong> Formda 3 parça değişmiş olarak işaretli.</p></div></div><div class="impact"><div class="impact-head"><span>Metindeki sinyallerin fiyata etkisi</span><strong class="is-neg">−%4,5</strong></div><div class="impact-prices"><div><span>İlan fiyatı</span><strong>745.000 TL</strong></div><i class="impact-arrow" aria-hidden="true"></i><div class="is-adj"><span>Metne göre düzeltilmiş</span><strong>711.500 TL</strong><small class="is-neg">−33.500 TL</small></div></div><div class="fbars"><div class="fbar"><div class="fbar-head"><strong>Değişen parça beyanı</strong><span class="fbar-val is-neg">−%3,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:50%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Pazarlıksız ibaresi</strong><span class="fbar-val is-neg">−%2</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:28.57142857142857%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Garanti devam ediyor</strong><span class="fbar-val is-pos">+%1,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-pos" style="left:50%;width:21.428571428571427%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Takas kabul edilmiyor</strong><span class="fbar-val is-neg">−%0,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:7.142857142857142%"></i></div></div><div class="fbar-scale"><span>−%3,5</span><span>0</span><span>+%3,5</span></div></div></div><div class="sgrid"><section class="sgroup is-flag"><h4>Çelişki ve uyarı<b>2</b></h4><ul><li>Takas kabul edilmiyor.</li><li>Fiyat pazarlıksız yazıyor.</li></ul></section><section class="sgroup is-positive"><h4>Olumlu sinyal<b>2</b></h4><ul><li>Servis bakım kayıtları var.</li><li>Garanti devam ediyor.</li></ul></section><section class="sgroup is-claim"><h4>İlanın iddiası<b>3</b></h4><ul><li>Değişensiz</li><li>Bakımları yapıldı</li><li>Tek elden</li></ul></section><section class="sgroup is-missing"><h4>Değinilmemiş<b>3</b></h4><ul><li>Bakım geçmişi</li><li>Lastik durumu</li><li>Tramer tutarı</li></ul></section></div></article><article class="result-card questions tone-blue"><div class="card-top"><span class="card-icon orange">?</span><div><h3>Satıcıya mutlaka sorun</h3><p>Açıklamada belirtilmeyen ve çelişen konular</p></div><span class="count">2</span></div><ul><li><span>01</span><p><strong>İlanda “değişensiz” yazıyor — bunu teyit eder misiniz?</strong> Formda 3 parça değişmiş işaretli. Bu çelişki netleşmeden fiyat konuşmayın.</p></li><li><span>02</span><p><strong>Bakım geçmişi hakkında bilgi verir misiniz?</strong> İlan açıklamasında bu konuya hiç değinilmemiş.</p></li></ul></article><article class="result-card tone-green"><div class="card-top"><span class="card-icon orange">◎</span><div><h3>Bölgesel fiyat sinyali</h3><p>Seçtiğiniz bölgenin ülke ortalamasına göre konumu</p></div></div><div class="rscale is-high"><div class="rscale-headline"><strong>+%5,8</strong><span>İstanbul / Kadıköy · Burada satmak avantajlı</span></div><div class="rscale-axis"><i class="rscale-neutral" style="left:25%;width:50%"></i><i class="rscale-line"></i><i class="rscale-center"></i><span class="rscale-marker" style="left:86.25%" title="İstanbul / Kadıköy"></span></div><div class="rscale-ends"><span>−%8 ucuz</span><span>ülke ort.</span><span>+%8 pahalı</span></div><div class="rscale-conf"><span>Sinyal güveni</span><i><b style="width:74%"></b></i><strong>%74</strong></div></div><div class="signal-stats"><div><span>Emsal galeri ilanı</span><strong>41</strong></div><div><span>Yayındaki emsal</span><strong>2</strong></div></div></article><article class="result-card wide-card tone-orange"><div class="card-top"><span class="card-icon orange">₺</span><div><h3>Piyasa fiyat trendi</h3><p>Galeri ilanlarındaki ortalama fiyatın zaman içindeki hareketi</p></div></div><div class="market-trend"><div class="trend-kpis"><div><span>Güncel ortalama</span><strong>692.000 TL</strong><small>55 ilan</small></div><div><span>Dönem değişimi</span><strong class="up">+32.000 TL</strong><small class="up">+%4.8</small></div><div><span>En düşük – yüksek</span><strong>660.000 – 692.000 TL</strong><small>4 ölçüm tarihi</small></div></div><div class="trend-chart"><div class="trend-axis"><span>692.000</span><span>676.000</span><span>660.000</span></div><div class="trend-plot" role="img" aria-label="01 Mar ile 01 Eyl arasındaki ortalama ilan fiyatları. Başlangıç 660.000 TL, bitiş 692.000 TL."></div></div><div class="trend-dates"><span>01 Mar</span><span>01 Eyl</span></div><p class="trend-explanation">Ortalama ilan fiyatı bu dönemde <strong>660.000 TL</strong> seviyesinden <strong>692.000 TL</strong> seviyesine yükseldi.</p></div></article><article class="result-card wide-card tone-slate"><div class="card-top"><span class="card-icon orange">≡</span><div><h3>Yayındaki benzer ilanlar</h3><p>Aynı model ve yakın model yılındaki güncel galeri ilanları</p></div><span class="count">2</span></div><div class="listing-head"><span>İlan</span><span>Fark</span><span>Fiyat</span></div><a class="listing-row" href="https://example.com/1" target="_blank" rel="noopener noreferrer"><div class="listing-car"><span>2019</span><p><strong>Fiat Egea 1.3 Multijet Urban</strong><small>121.000 km · Beyaz · İstanbul · 12 gündür yayında</small></p></div><span class="down">-46b</span><strong>699.000 TL</strong></a><div class="listing-row"><div class="listing-car"><span>2019</span><p><strong>Fiat Egea 1.3 Multijet Easy</strong><small>139.000 km · Gri · İstanbul · 3 gündür yayında</small></p></div><span class="up">+17b</span><strong>762.000 TL</strong></div><p class="card-note">Fark sütunu, ilanın sizin girdiğiniz <strong>745.000 TL</strong> fiyatına göre farkını bin TL cinsinden gösterir. Veriler en son galeri taramasından gelir.</p></article><article class="result-card wide-card tone-plum"><div class="card-top"><span class="card-icon orange">◷</span><div><h3>Yıllık sahip olma maliyeti</h3><p>15.000 km/yıl varsayımıyla</p></div></div><div class="total-cost"><span>Tahmini toplam</span><strong>74.200 TL <small>/ yıl</small></strong></div><div class="cost-lines"><div><span>Yakıt</span><i><b style="width:100%"></b></i><strong>42.000 TL</strong></div><div><span>MTV</span><i><b style="width:15.238095238095239%"></b></i><strong>6.400 TL</strong></div><div><span>Sigorta</span><i><b style="width:42.38095238095238%"></b></i><strong>17.800 TL</strong></div><div><span>Bakım</span><i><b style="width:19.047619047619047%"></b></i><strong>8.000 TL</strong></div></div><p class="card-note">2026 tarifesi; muafiyetler hariç.</p></article></div><p class="disclaimer">Tüm değerler istatistiksel tahmindir; ekspertiz raporu, tramer sorgusu veya resmî değerleme yerine geçmez.</p></section>
+<section class="results visible" id="results"><div class="results-heading"><div><span class="updated"><span></span>13.09.2026 09:30:00</span><h2>Analiz sonucu</h2></div><div class="result-meta"><div class="result-actions"><button type="button">PDF / Yazdır</button><button type="button">Paylaş</button></div></div></div><div class="decision-card"><div class="decision-main"><div class="score-ring"><strong>4</strong><span>/10</span></div><div><span class="deal-badge">PAHALI</span><h2>İlan fiyatı piyasanın üzerinde</h2><p>İlan fiyatı, AutoSense tahminine göre <strong>%7,7 üzerinde</strong>.</p></div></div><div class="price-comparison"><div><span>İlan fiyatı</span><strong>745.000 TL</strong></div><div><span>Tahmini piyasa değeri</span><strong>692.000 TL</strong></div><div><span>Tahmin aralığı</span><strong>651.000 – 733.000 TL</strong></div><div><span>Güven / renk etkisi</span><strong>%78 · renk %2.4</strong></div></div></div><div class="source-strip"><span>Canlı veri kaynakları</span><strong>41 galeri ilanı</strong><strong>128 analiz edilmiş ilan</strong><strong>4 fiyat trendi noktası</strong><strong>2 yayındaki emsal</strong></div><div class="result-grid"><article class="result-card tone-orange"><div class="card-top"><span class="card-icon orange">⇄</span><div><h3>Pazarlık planı</h3><p>Veri destekli teklif aralığı</p></div></div><div class="ladder"><div class="ladder-headline"><span>Hedefe inebilirseniz kazanç</span><strong>55.000 TL</strong><em>ilan fiyatının %7,4&#x27;i</em></div><div class="ladder-axis"><i class="ladder-band" style="left:41.03942652329749%;width:49.28315412186379%"></i><i class="ladder-line"></i><span class="ladder-stop is-open" style="left:9.67741935483871%"></span><span class="ladder-stop is-target" style="left:41.03942652329749%"></span><span class="ladder-stop is-ceiling" style="left:60.752688172043015%"></span><span class="ladder-stop is-listing" style="left:90.32258064516128%"></span></div><ul class="ladder-legend"><li class="is-open"><i></i><span>Açılış teklifi</span><strong>655.000 TL</strong></li><li class="is-target"><i></i><span>Hedef fiyat</span><strong>690.000 TL</strong></li><li class="is-ceiling"><i></i><span>Tavan fiyat</span><strong>712.000 TL</strong></li><li class="is-listing"><i></i><span>İlan fiyatı</span><strong>745.000 TL</strong></li></ul></div><p class="card-note">Hedef fiyat, aynı yaş ve km bandındaki emsallerin medyanına dayanır.</p></article><article class="result-card tone-violet"><div class="card-top"><span class="card-icon orange">±</span><div><h3>Fiyatı etkileyen kalemler</h3><p>Tahmine uygulanan artı ve eksi etkiler</p></div></div><div class="fbars"><div class="fbar"><div class="fbar-head"><strong>Hasar durumu</strong><span class="fbar-val is-neg">−%9,4</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:50%"></i></div><small>Boyalı/değişen parçaların toplam etkisi</small></div><div class="fbar"><div class="fbar-head"><strong>Kilometre</strong><span class="fbar-val is-neg">−%6,2</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:32.97872340425532%"></i></div><small>Referans 95.000 km&#x27;ye göre</small></div><div class="fbar"><div class="fbar-head"><strong>Renk: Beyaz</strong><span class="fbar-val is-pos">+%2,4</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-pos" style="left:50%;width:12.76595744680851%"></i></div><small>41 emsal galeri ilanına göre</small></div><div class="fbar"><div class="fbar-head"><strong>Vites</strong><span class="fbar-val is-neg">−%2,1</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:11.170212765957446%"></i></div><small>Manuel araçlar ikinci elde daha yavaş satılıyor</small></div><div class="fbar"><div class="fbar-head"><strong>Bölge: İstanbul</strong><span class="fbar-val is-zero">%0</span></div><div class="fbar-track"><i class="fbar-zero"></i></div><small>İstanbul ülke ortalamasının %5,8 üzerinde</small></div><div class="fbar-scale"><span>−%9,4</span><span>0</span><span>+%9,4</span></div></div></article><article class="result-card tone-rose"><div class="card-top"><span class="card-icon orange">↘</span><div><h3>Değer kaybı projeksiyonu</h3><p>Yaş grubuna göre tahmini ikinci el değeri</p></div></div><div class="depr"><div class="depr-headline"><span>3 yılda tahmini değer kaybı</span><strong>−164.000 TL</strong><em>bugünkü değerin %23,7&#x27;i</em></div><div class="depr-plot"><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:0%"></i><i class="depr-keep" style="height:100%"></i></div><strong>692.000 TL</strong><span>Bugün</span><small class="is-base">başlangıç</small></div><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:8.815028901734095%"></i><i class="depr-keep" style="height:91.1849710982659%"></i></div><strong>631.000 TL</strong><span>1 yıl sonra</span><small class="">−61.000 TL</small></div><div class="depr-col"><div class="depr-bar"><i class="depr-loss" style="height:23.699421965317924%"></i><i class="depr-keep" style="height:76.30057803468208%"></i></div><strong>528.000 TL</strong><span>3 yıl sonra</span><small class="">−164.000 TL</small></div></div><p class="depr-key"><i class="depr-keep"></i> kalan değer<i class="depr-loss"></i> kaybedilen değer</p></div><p class="card-note">Yaş grubunun geçmiş yıllardaki ortalama değer kaybına göre.</p></article><article class="result-card tone-gold"><div class="card-top"><span class="card-icon orange">◆</span><div><h3>İlan kalitesi ve belirsizlik</h3><p>Veri riski ve açıklama sinyalleri</p></div></div><div class="quality-body"><div class="gauge is-bad"><svg viewBox="0 0 120 72" role="img" aria-label="28 / 100 — Yüksek risk"><path class="gauge-track" d="M10 60 A50 50 0 0 1 110 60"></path><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke-dasharray="43.98229715025711 157.07963267948966"></path><circle class="gauge-tick" cx="67.82172325201155" cy="10.615582970243118" r="2.4"></circle><circle class="gauge-tick" cx="100.45084971874738" cy="30.61073738537635" r="2.4"></circle><text class="gauge-value" x="60" y="54" text-anchor="middle">28</text><text class="gauge-max" x="60" y="68" text-anchor="middle">/ 100</text></svg><strong>Yüksek risk</strong></div><div class="deduct"><h4>100 puandan ne götürdü?</h4><div class="deduct-row"><span>Ağır hasar kaydı var — ekspertiz ve tramer sorgusu şart.</span><i><b style="width:100%"></b></i><strong>−35</strong></div><div class="deduct-row"><span>Fiyat piyasanın çok altında — ilanda belirtilmeyen bir kusur olabilir.</span><i><b style="width:42.857142857142854%"></b></i><strong>−15</strong></div><div class="deduct-row"><span>300.000 km üzeri — büyük bakım kalemleri gündeme gelmiş olabilir.</span><i><b style="width:28.57142857142857%"></b></i><strong>−10</strong></div><div class="deduct-row"><span>Renk belirtilmedi — değerlemede renk primi hesaplanamadı.</span><i><b style="width:8.571428571428571%"></b></i><strong>−3</strong></div></div></div></article><article class="result-card wide-card tone-teal"><div class="card-top"><span class="card-icon orange">¶</span><div><h3>Açıklama analizi</h3><p>İlan metninden çıkarılan anlam ve çelişkiler</p></div></div><div class="desc-head"><div class="gauge is-bad"><svg viewBox="0 0 120 72" role="img" aria-label="4 / 10 — Çelişkili — dikkat"><path class="gauge-track" d="M10 60 A50 50 0 0 1 110 60"></path><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke-dasharray="62.83185307179587 157.07963267948966"></path><circle class="gauge-tick" cx="67.82172325201155" cy="10.615582970243118" r="2.4"></circle><circle class="gauge-tick" cx="100.45084971874738" cy="30.61073738537635" r="2.4"></circle><text class="gauge-value" x="60" y="54" text-anchor="middle">4</text><text class="gauge-max" x="60" y="68" text-anchor="middle">/ 10</text></svg><strong>Çelişkili — dikkat</strong></div><div class="desc-summary"><p>Açıklamada 1 adet, girdiğiniz araç bilgisiyle çelişen ifade bulundu. Bu maddeleri satıcıya doğrudan sorun — pazarlıkta en güçlü kozunuz bunlar.</p><ul class="desc-counts"><li class="is-flag"><strong>1</strong><span>çelişki</span></li><li class="is-missing"><strong>3</strong><span>değinilmemiş konu</span></li><li class="is-claim"><strong>3</strong><span>iddia</span></li></ul></div></div><div class="contradiction-list"><div><span>Çelişki</span><p><strong>“değişensiz”</strong> Formda 3 parça değişmiş olarak işaretli.</p></div></div><div class="impact"><div class="impact-head"><span>Metindeki sinyallerin fiyata etkisi</span><strong class="is-neg">−%4,5</strong></div><div class="impact-prices"><div><span>İlan fiyatı</span><strong>745.000 TL</strong></div><i class="impact-arrow" aria-hidden="true"></i><div class="is-adj"><span>Metne göre düzeltilmiş</span><strong>711.500 TL</strong><small class="is-neg">−33.500 TL</small></div></div><div class="fbars"><div class="fbar"><div class="fbar-head"><strong>Değişen parça beyanı</strong><span class="fbar-val is-neg">−%3,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:50%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Pazarlıksız ibaresi</strong><span class="fbar-val is-neg">−%2</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:28.57142857142857%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Garanti devam ediyor</strong><span class="fbar-val is-pos">+%1,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-pos" style="left:50%;width:21.428571428571427%"></i></div></div><div class="fbar"><div class="fbar-head"><strong>Takas kabul edilmiyor</strong><span class="fbar-val is-neg">−%0,5</span></div><div class="fbar-track"><i class="fbar-zero"></i><i class="fbar-fill is-neg" style="right:50%;width:7.142857142857142%"></i></div></div><div class="fbar-scale"><span>−%3,5</span><span>0</span><span>+%3,5</span></div></div></div><div class="sgrid"><section class="sgroup is-flag"><h4>Çelişki ve uyarı<b>2</b></h4><ul><li>Takas kabul edilmiyor.</li><li>Fiyat pazarlıksız yazıyor.</li></ul></section><section class="sgroup is-positive"><h4>Olumlu sinyal<b>2</b></h4><ul><li>Servis bakım kayıtları var.</li><li>Garanti devam ediyor.</li></ul></section><section class="sgroup is-claim"><h4>İlanın iddiası<b>3</b></h4><ul><li>Değişensiz</li><li>Bakımları yapıldı</li><li>Tek elden</li></ul></section><section class="sgroup is-missing"><h4>Değinilmemiş<b>3</b></h4><ul><li>Bakım geçmişi</li><li>Lastik durumu</li><li>Tramer tutarı</li></ul></section></div></article><article class="result-card questions tone-blue"><div class="card-top"><span class="card-icon orange">?</span><div><h3>Satıcıya mutlaka sorun</h3><p>Açıklamada belirtilmeyen ve çelişen konular</p></div><span class="count">2</span></div><ul><li><span>01</span><p><strong>İlanda “değişensiz” yazıyor — bunu teyit eder misiniz?</strong> Formda 3 parça değişmiş işaretli. Bu çelişki netleşmeden fiyat konuşmayın.</p></li><li><span>02</span><p><strong>Bakım geçmişi hakkında bilgi verir misiniz?</strong> İlan açıklamasında bu konuya hiç değinilmemiş.</p></li></ul></article><article class="result-card tone-green"><div class="card-top"><span class="card-icon orange">◎</span><div><h3>Bölgesel fiyat sinyali</h3><p>Seçtiğiniz bölgenin ülke ortalamasına göre konumu</p></div></div><div class="rscale is-low"><div class="rscale-headline"><strong>−%11,4</strong><span>Van · Burada almak avantajlı</span></div><div class="rscale-axis"><i class="rscale-neutral" style="left:36.666666666666664%;width:26.666666666666668%"></i><i class="rscale-line"></i><i class="rscale-center"></i><span class="rscale-marker" style="left:12%" title="Van"></span></div><div class="rscale-ends"><span>−%15 ucuz</span><span>ülke ort.</span><span>+%15 pahalı</span></div><div class="rscale-conf"><span>Sinyal güveni</span><i><b style="width:45%"></b></i><strong>%45</strong></div></div><div class="signal-stats"><div><span>Emsal galeri ilanı</span><strong>41</strong></div><div><span>Yayındaki emsal</span><strong>2</strong></div></div></article><article class="result-card wide-card tone-orange"><div class="card-top"><span class="card-icon orange">₺</span><div><h3>Piyasa fiyat trendi</h3><p>Galeri ilanlarındaki ortalama fiyatın zaman içindeki hareketi</p></div></div><div class="market-trend"><div class="trend-kpis"><div><span>Güncel ortalama</span><strong>692.000 TL</strong><small>55 ilan</small></div><div><span>Dönem değişimi</span><strong class="up">+32.000 TL</strong><small class="up">+%4.8</small></div><div><span>En düşük – yüksek</span><strong>660.000 – 692.000 TL</strong><small>4 ölçüm tarihi</small></div></div><div class="trend-chart"><div class="trend-axis"><span>692.000</span><span>676.000</span><span>660.000</span></div><div class="trend-plot" role="img" aria-label="01 Mar ile 01 Eyl arasındaki ortalama ilan fiyatları. Başlangıç 660.000 TL, bitiş 692.000 TL."></div></div><div class="trend-dates"><span>01 Mar</span><span>01 Eyl</span></div><p class="trend-explanation">Ortalama ilan fiyatı bu dönemde <strong>660.000 TL</strong> seviyesinden <strong>692.000 TL</strong> seviyesine yükseldi.</p></div></article><article class="result-card wide-card tone-slate"><div class="card-top"><span class="card-icon orange">≡</span><div><h3>Yayındaki benzer ilanlar</h3><p>Aynı model ve yakın model yılındaki güncel galeri ilanları</p></div><span class="count">2</span></div><div class="listing-head"><span>İlan</span><span>Fark</span><span>Fiyat</span></div><a class="listing-row" href="https://example.com/1" target="_blank" rel="noopener noreferrer"><div class="listing-car"><span>2019</span><p><strong>Fiat Egea 1.3 Multijet Urban</strong><small>121.000 km · Beyaz · İstanbul · 12 gündür yayında</small></p></div><span class="down">-46b</span><strong>699.000 TL</strong></a><div class="listing-row"><div class="listing-car"><span>2019</span><p><strong>Fiat Egea 1.3 Multijet Easy</strong><small>139.000 km · Gri · İstanbul · 3 gündür yayında</small></p></div><span class="up">+17b</span><strong>762.000 TL</strong></div><p class="card-note">Fark sütunu, ilanın sizin girdiğiniz <strong>745.000 TL</strong> fiyatına göre farkını bin TL cinsinden gösterir. Veriler en son galeri taramasından gelir.</p></article><article class="result-card wide-card tone-plum"><div class="card-top"><span class="card-icon orange">◷</span><div><h3>Yıllık sahip olma maliyeti</h3><p>15.000 km/yıl varsayımıyla</p></div></div><div class="total-cost"><span>Tahmini toplam</span><strong>74.200 TL <small>/ yıl</small></strong></div><div class="cost-lines"><div><span>Yakıt</span><i><b style="width:100%"></b></i><strong>42.000 TL</strong></div><div><span>MTV</span><i><b style="width:15.238095238095239%"></b></i><strong>6.400 TL</strong></div><div><span>Sigorta</span><i><b style="width:42.38095238095238%"></b></i><strong>17.800 TL</strong></div><div><span>Bakım</span><i><b style="width:19.047619047619047%"></b></i><strong>8.000 TL</strong></div></div><p class="card-note">2026 tarifesi; muafiyetler hariç.</p></article></div><p class="disclaimer">Tüm değerler istatistiksel tahmindir; ekspertiz raporu, tramer sorgusu veya resmî değerleme yerine geçmez.</p></section>
+<section class="results visible" id="results"><div class="results-heading"><div><span class="updated"><span></span>13.09.2026 09:30:00</span><h2>Analiz sonucu</h2></div><div class="result-meta"><div class="result-actions"><button type="button">PDF / Yazdır</button><button type="button">Paylaş</button></div></div></div><div class="decision-card"><div class="decision-main"><div class="score-ring"><strong>4</strong><span>/10</span></div><div><span class="deal-badge">PAHALI</span><h2>İlan fiyatı piyasanın üzerinde</h2><p>İlan fiyatı, AutoSense tahminine göre <strong>%7,7 üzerinde</strong>.</p></div></div><div class="price-comparison"><div><span>İlan fiyatı</span><strong>745.000 TL</strong></div><div><span>Tahmini piyasa değeri</span><strong>692.000 TL</strong></div><div><span>Tahmin aralığı</span><strong>651.000 – 733.000 TL</strong></div><div><span>Güven / renk etkisi</span><strong>%78 · renk %2.4</strong></div></div></div><div class="source-strip"><span>Canlı veri kaynakları</span><strong>41 galeri ilanı</strong><strong>128 analiz edilmiş ilan</strong><strong>4 fiyat trendi noktası</strong><strong>2 yayındaki emsal</strong></div><div class="result-grid"><article class="result-card tone-orange"><div class="card-top"><span class="card-icon orange">⇄</span><div><h3>Pazarlık planı</h3><p>Veri destekli teklif aralığı</p></div></div><p class="card-empty">Yeterli emsal olmadığı için pazarlık planı çıkarılamadı.</p></article><article class="result-card tone-violet"><div class="card-top"><span class="card-icon orange">±</span><div><h3>Fiyatı etkileyen kalemler</h3><p>Tahmine uygulanan artı ve eksi etkiler</p></div></div><p class="card-empty">Tahmine belirgin bir düzeltme uygulanmadı.</p></article><article class="result-card tone-rose"><div class="card-top"><span class="card-icon orange">↘</span><div><h3>Değer kaybı projeksiyonu</h3><p>Yaş grubuna göre tahmini ikinci el değeri</p></div></div><p class="card-empty">Bu yaş grubu için değer kaybı serisi yok.</p></article><article class="result-card tone-gold"><div class="card-top"><span class="card-icon orange">◆</span><div><h3>İlan kalitesi ve belirsizlik</h3><p>Veri riski ve açıklama sinyalleri</p></div></div><div class="quality-body"><div class="gauge is-good"><svg viewBox="0 0 120 72" role="img" aria-label="92 / 100 — Düşük risk"><path class="gauge-track" d="M10 60 A50 50 0 0 1 110 60"></path><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke-dasharray="144.5132620651305 157.07963267948966"></path><circle class="gauge-tick" cx="67.82172325201155" cy="10.615582970243118" r="2.4"></circle><circle class="gauge-tick" cx="100.45084971874738" cy="30.61073738537635" r="2.4"></circle><text class="gauge-value" x="60" y="54" text-anchor="middle">92</text><text class="gauge-max" x="60" y="68" text-anchor="middle">/ 100</text></svg><strong>Düşük risk</strong></div><p class="quality-clean">Belirgin bir veri riski tespit edilmedi.</p></div></article><article class="result-card wide-card tone-teal"><div class="card-top"><span class="card-icon orange">¶</span><div><h3>Açıklama analizi</h3><p>İlan metninden çıkarılan anlam ve çelişkiler</p></div></div><p class="card-empty">İlan açıklamasını yapıştırırsanız metni analiz eder, girdiğiniz araç bilgileriyle çelişen ifadeleri işaretlerim.</p></article><article class="result-card questions tone-blue"><div class="card-top"><span class="card-icon orange">?</span><div><h3>Satıcıya mutlaka sorun</h3><p>Açıklamada belirtilmeyen ve çelişen konular</p></div><span class="count">0</span></div><p class="card-empty">Temel konular açıklamada belirtilmiş görünüyor.</p></article><article class="result-card tone-green"><div class="card-top"><span class="card-icon orange">◎</span><div><h3>Bölgesel fiyat sinyali</h3><p>Seçtiğiniz bölgenin ülke ortalamasına göre konumu</p></div></div><div class="signal-status"><span class="signal-dot"></span><div><strong>Bölge belirtilmedi</strong><p>İl ve ilçe opsiyoneldir; seçerseniz bölgesel karşılaştırma da yapılır.</p></div></div><div class="signal-stats"><div><span>Emsal galeri ilanı</span><strong>41</strong></div><div><span>Yayındaki emsal</span><strong>2</strong></div></div></article><article class="result-card wide-card tone-orange"><div class="card-top"><span class="card-icon orange">₺</span><div><h3>Piyasa fiyat trendi</h3><p>Galeri ilanlarındaki ortalama fiyatın zaman içindeki hareketi</p></div></div><div class="market-trend"><div class="trend-kpis"><div><span>Güncel ortalama</span><strong>692.000 TL</strong><small>55 ilan</small></div><div><span>Dönem değişimi</span><strong class="up">+32.000 TL</strong><small class="up">+%4.8</small></div><div><span>En düşük – yüksek</span><strong>660.000 – 692.000 TL</strong><small>4 ölçüm tarihi</small></div></div><div class="trend-chart"><div class="trend-axis"><span>692.000</span><span>676.000</span><span>660.000</span></div><div class="trend-plot" role="img" aria-label="01 Mar ile 01 Eyl arasındaki ortalama ilan fiyatları. Başlangıç 660.000 TL, bitiş 692.000 TL."></div></div><div class="trend-dates"><span>01 Mar</span><span>01 Eyl</span></div><p class="trend-explanation">Ortalama ilan fiyatı bu dönemde <strong>660.000 TL</strong> seviyesinden <strong>692.000 TL</strong> seviyesine yükseldi.</p></div></article><article class="result-card wide-card tone-slate"><div class="card-top"><span class="card-icon orange">≡</span><div><h3>Yayındaki benzer ilanlar</h3><p>Aynı model ve yakın model yılındaki güncel galeri ilanları</p></div><span class="count">0</span></div><p class="card-empty">Bu model ve yıl aralığı için şu anda yayında eşleşen ilan bulunamadı.</p></article><article class="result-card wide-card tone-plum"><div class="card-top"><span class="card-icon orange">◷</span><div><h3>Yıllık sahip olma maliyeti</h3><p>15.000 km/yıl varsayımıyla</p></div></div><div class="total-cost"><span>Tahmini toplam</span><strong>74.200 TL <small>/ yıl</small></strong></div><div class="cost-lines"><div><span>Yakıt</span><i><b style="width:100%"></b></i><strong>42.000 TL</strong></div><div><span>MTV</span><i><b style="width:15.238095238095239%"></b></i><strong>6.400 TL</strong></div><div><span>Sigorta</span><i><b style="width:42.38095238095238%"></b></i><strong>17.800 TL</strong></div><div><span>Bakım</span><i><b style="width:19.047619047619047%"></b></i><strong>8.000 TL</strong></div></div><p class="card-note">2026 tarifesi; muafiyetler hariç.</p></article></div><p class="disclaimer">Tüm değerler istatistiksel tahmindir; ekspertiz raporu, tramer sorgusu veya resmî değerleme yerine geçmez.</p></section>
+</main></body></html>

@@ -1,0 +1,125 @@
+{
+  "hedef_id": "skoda-superb-1-6-tdi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "2016 model dizel Superb'de P200200 kodlu DPF arızası ve yaklaşık 265.000 TL değişim maliyeti bildirildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/ekspertiz-sonrasi-tespit-edilmeyen-dpf-arizasi-nedeniyle-magduriyet",
+      "kaynak_alinti": "Oysa araçta P200200 arıza kodu veren ciddi bir DPF problemi var ve bu parçanın değişim maliyetinin yaklaşık 265.000 TL tuttuğunu öğrendim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "1.6 TDI'da triger ve devirdaim değişimine rağmen yüksek yükte hararetin 120 dereceye çıktığı bildirildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/superb-dcx-1-6-tdi-rolanti-dalgalanmasi-ve-hararet-acill-yardim--161078891",
+      "kaynak_alinti": "aracım normal kullanımda hararet 90 da sabit lakin rampada ve düz yolda dip gaz yapınca hararet 120 lere kadar çıkıyor normal kullanıma döününce 90 a geri geliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "2016 model 1.6 TDI Superb'de silindir üst kapak contası değiştirilmiş.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/superb-dcx-1-6-tdi-rolanti-dalgalanmasi-ve-hararet-acill-yardim--161078891",
+      "kaynak_alinti": "bunlara istinaden araçta yapılan işlemler silindir üst kapak contası değişti",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "2016 model 1.6 TDI Superb'de kavrama ve volant birlikte değiştirilmiş.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/superb-dcx-1-6-tdi-rolanti-dalgalanmasi-ve-hararet-acill-yardim--161078891",
+      "kaynak_alinti": "triger devirdaim değişti kavrama volant değişti",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "1.6 TDI Superb'lerde akü değişimine rağmen çalışmama ve Start&Stop arızası görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/skoda-superb-2014-calismama-sorunu--163813137",
+      "kaynak_alinti": "Sonrasında frene basıp tekrar start stop tuşuna bastığımızda aracın normalde çalışması gerekirken kontak kapanıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "İkinci el Superb'de ekspertizde atlanan turbo ötmesi şikayeti bildirildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/ekspertizde-gormezden-gelinen-turbo-ve-kaporta-sorunlari-nedeniyle-5000-tl-ucret-iadesi-talebi",
+      "kaynak_alinti": "Bu kontrolde araçta turbo ötmesi olduğu, kaportada birkaç yerde boya atması bulunduğu ve özellikle kaputta olmak üzere iki bölgede kuru çekiç işlemine rastlandığı ortaya çıktı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Küçük stepneyle birlikte 625 litre net bagaj hacmi sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-skoda-superb-2015-2016-ana-konu-2016-turkiye-yilin-otomobili--92219074",
+      "kaynak_alinti": "722 litre bürüt, küçük stepne ile 625 litre net bagaj hacmine sahip skoda superb sadece kendi sınıfı ve üst sınıfların değil, otomobil dünyasının sw olmayan araçlarda en büyük bagaj hacmini sunuyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka diz mesafesi 350 mm ile Mercedes S-Serisi'nin 344 mm'lik değerini geçiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-skoda-superb-2015-2016-ana-konu-2016-turkiye-yilin-otomobili--92219074",
+      "kaynak_alinti": "Superb de arkada sunduğ 350 mm lik diz mesafesiyle mercedes in s serisinde sunduğu 344 mm lik mesafeyi yakalayıp geride bıraktı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "VW Passat'a göre 100 km'de 0,1 litre daha düşük yakıt tüketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-skoda-superb-2015-2016-ana-konu-2016-turkiye-yilin-otomobili--92219074",
+      "kaynak_alinti": "En çok karşılaştırıldığı vw passat tan 20 kilo(donanıma ve motora göre artıyor) ağır olmasına karşı 100 km de 0,1 litre daha düşük yakıt tüketimine sahip.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Kullanıcılar aracın en belirgin özelliği olarak konforu öne çıkarıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-skoda-superb-2015-2016-ana-konu-2016-turkiye-yilin-otomobili--92219074",
+      "kaynak_alinti": "Makam aracı olduğunu destekleyen önemli detaylardan biri de bu. ''Konfor'' bu araba için en önemli söz.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "DPF ünitesinin değişim maliyeti yaklaşık 265.000 TL olarak bildirildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/ekspertiz-sonrasi-tespit-edilmeyen-dpf-arizasi-nedeniyle-magduriyet",
+      "kaynak_alinti": "Oysa araçta P200200 arıza kodu veren ciddi bir DPF problemi var ve bu parçanın değişim maliyetinin yaklaşık 265.000 TL tuttuğunu öğrendim.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Tek bir kronik arıza için yetkili serviste yüksek tutarlı ödemeler yapıldığı bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-superbte-tekrarlayan-motor-ariza-ikaz-lambasi-ve-kalici-cozum-talebi",
+      "kaynak_alinti": "Geçen yıl yine yetkili servisinize bakım, parça değişimi ve bu arızanın giderilmesi de dahil olmak üzere oldukça yüksek meblağlarda ödemeler yaptım.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kötü yollarda ön konsol ve torpido kapağından zırıltı sesleri geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-skoda-superb-2015-2016-ana-konu-2016-turkiye-yilin-otomobili--92219074",
+      "kaynak_alinti": "Kötü yollarda ön konsoldan gelen zırıltı sesleri. Bu sesler torpidonun sağ yan kapağından (sağ kapı içine gelen bölge) kaynaklanıyor olabilir.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

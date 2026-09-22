@@ -1,0 +1,161 @@
+{
+  "hedef_id": "citroen-c5-aircross-1-5-bluehdi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "7 mm eksantrik zinciri 30-60 bin km'de ses yapıp uzuyor, geri çağırma kapsamında değişiyor.",
+      "km_araligi": "30.000-60.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/triger",
+      "kaynak_alinti": "2020 trafiğe çıkışlı ve sürekli servis bakımlı olan c5 Aircross un daha 37500 km olmasına rağmen triger setinden ses gelmektedir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Zincir sesi soğuk çalıştırmada başlıyor; 2023 öncesi 7 mm zincirler 8 mm ile değiştiriliyor.",
+      "km_araligi": "50.000-80.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/psa-1-5-dizel-motorlarda-eksantrik-zinciri-problemi--160411525",
+      "kaynak_alinti": "2023 sonrası üretimlerde daha kalın zincir kullanarak bu sorunu çözmüşler",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue depo, sensör ve enjektör arızası 10 bin km'nin altında bile görülüyor.",
+      "km_araligi": "10.000-80.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/adblue",
+      "kaynak_alinti": "2024 model Citroen c5 Aircross Shine Bold paket aracım, henüz 9800 km'de olmasına rağmen kronik AdBlue kimyasal miktarı arızası vermektedir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kısa mesafe kullanımda DPF tıkanması ve arıza uyarısı sık bildiriliyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/motor-arizasi",
+      "kaynak_alinti": "DPF Arızası Nedeniyle Yaşadığım Büyük Mağduriyet",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "60 bin km civarında turbo değişimi gerekebiliyor ve maliyeti yüksek.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/periyodik-bakim",
+      "kaynak_alinti": "2024 Kasım'da 59.000 km'de turbosu İstanbul Maltepe Değer Oto Citroen yetkili servisinde 31.000 TL'ye değiştirildi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "EAT8 şanzımanda düşük hızda silkeleme ve vites sonrası gaz kesme şikayetleri var.",
+      "km_araligi": "2.500-15.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/sanziman",
+      "kaynak_alinti": "2023 c5 shine bold paket aldım. Araç şu an 2600 km'de. Araç kullanırken her vites attıktan sonra hızlanırken sanki vites atacak gibi gaz kesiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı kendiliğinden kapanıp açılıyor, donma ve USB sorunları görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c5-aircross/ariza",
+      "kaynak_alinti": "multimedya/araç ekranı kendi kendine sürekli kapanıp açılmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Siyah tavan boyasında kabarma ve pul pul kalkma şikayetleri tekrar ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross-magdurlari--6990005",
+      "kaynak_alinti": "siyah katmanın iki kısmında 5 cm çapında boya kalkması",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Hidrolik yastıklı süspansiyon kullanıcılarca uçan halı konforuna benzetiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862",
+      "kaynak_alinti": "test sürüşü gerçekleştirdim ve gerçekten 'uçan halı' konforunda diyebilirim.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.5 BlueHDi uzun yolda 5,5-6 L/100 km ortalama tüketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862?p=17",
+      "kaynak_alinti": "5.5-6 litre ortalama",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Otoyol hızlarında yol sesi çok düşük, kabin izolasyonu iyi.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862",
+      "kaynak_alinti": "yol sesi yok denecek kadar az",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj 580 litre, arka koltuklar yatırılınca 1.630 litreye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-inceleme/citroen-c5-aircross-suv-incelemesi/",
+      "kaynak_alinti": "Citroën C5 Aircross bagaj hacmi 580 litrelik depolama alanı sunuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Ön koltuklar ve yatabilen arka koltuklar uzun yolda oldukça konforlu bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862?p=24",
+      "kaynak_alinti": "arka koltukların yatıyor olması çok hoşuma gitti. hayvan gibi alan oluyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "45 bin km bakımı balata değişimiyle birlikte 20.800 TL tuttu.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862?p=24",
+      "kaynak_alinti": "45 bin bakımında (normal bakım + ön ve arka balata değişimi) 20.800 ? para verdim",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Gösterge ve multimedya ekran arayüzleri kullanıcılarca çok yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862?p=24",
+      "kaynak_alinti": "kadran ve multimedya ekranları tek kelime ile rezalet",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Geri görüş kamerası çözünürlüğü çok düşük, yağmur ve karda görüş iyice azalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c5-aircross--5343862?p=24",
+      "kaynak_alinti": "aracın kamera sistemi 'rezalet'. yemin ederim rezalet bir çözünürlük var",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Arızalı parçalar Fransa'dan geldiği için servis bekleme süresi aylara çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/yedek-parca",
+      "kaynak_alinti": "Parçaların Fransa'dan sipariş edileceği söylendi, ancak yaklaşık 2 aydır ne arayan var ne de parça takıldı.",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

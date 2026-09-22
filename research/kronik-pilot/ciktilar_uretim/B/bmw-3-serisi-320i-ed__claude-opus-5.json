@@ -1,0 +1,170 @@
+{
+  "hedef_id": "bmw-3-serisi-320i-ed",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "N13 motorda her 4-5 bin km'de bir litre yag ekleme uyarisi veren yag eksiltme cok yaygin.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-f30-320-ied-her-4-5-bin-km-de-yag-eksiltmesi--146026693",
+      "kaynak_alinti": "her 5 bin km de bir yağ eksiltme uyarısı vermeye başladı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat/sogutma suyu flansi arizasi kronik; kisa surede birden fazla kez degisebiliyor.",
+      "km_araligi": "50.000-70.000 km",
+      "kaynak_url": "http://www.techturkey.com/forum/karsilastirmalar/237301-n13_motor_kronik_problemleri_hakkinda.html",
+      "kaynak_alinti": "bizim araçlarda termostat, devirdaim ve yüksek basınç pompası kronik demiyim ömrü kısa",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su pompasi) omru kisa; arizasi su eksiltme ve hararetle kendini gosteriyor.",
+      "km_araligi": "50.000-70.000 km",
+      "kaynak_url": "http://www.techturkey.com/forum/karsilastirmalar/237301-n13_motor_kronik_problemleri_hakkinda.html",
+      "kaynak_alinti": "Ortalama 50-70 bin km arasında çıkartıyor bu arızaları",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo oring/keçelerinden su kacagi ve turbo basinc valfi arizasi sik goruluyor.",
+      "km_araligi": "80.000-120.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-f30-320-ied-alinir-mi--149707199-4",
+      "kaynak_alinti": "Turbo oringlerinden ve arka kecelerinden su kaçakları olacaktır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri seti sorunlu; soguk calistirmada metalik zincir sesi tipik belirtisi.",
+      "km_araligi": null,
+      "kaynak_url": "https://autopartia.com/blog/bmw-n13-zincir-seti",
+      "kaynak_alinti": "Soğuk çalıştırmada metalik ses",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "Kapi kilitlerinde boslugun olusmasi ve kilit arizasi F30 320i ED'de kronik kabul ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-f30-320i-ed-baslica-kronikleri-ve-genel-sorunlari",
+      "kaynak_alinti": "Bir diğer kronik sorun kapı kilitlerindeki boşluk.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Belli bir sure sonra direksiyon kutusunda bosluk olusuyor ve ses yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-f30-320i-ed-baslica-kronikleri-ve-genel-sorunlari",
+      "kaynak_alinti": "Araçta belli bir süre sonra direksiyon kutusunda çok ufak bir boşluk oluşabiliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Radyator borulari ve turbo hortumlari yaslanip degisim gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-f30-320-ied-alinir-mi--149707199-4",
+      "kaynak_alinti": "turbo hortumları boruları, turbo basınç valfi vs değişmesi gerekiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.6 turbo motor uzun yolda 100 km'de 4,5-8 litre gibi dusuk tuketim veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320-i-ed-hakkinda-fikirleriniz--124673600",
+      "kaynak_alinti": "Şehir içinde 9 lt nin üzerini görmedim. Şehir dışı 100 km'de 4.5 litre",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "170 hp motor ozellikle Sport modda tatmin edici hizlanma ve surus keyfi sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320-i-ed-hakkinda-fikirleriniz--124673600",
+      "kaynak_alinti": "Performansı 0-100 dehşet zaten, sürüş keyfi oldukça yüksek bir araç",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "8 ileri otomatik sanziman akici calisiyor, vites gecisleri hissedilmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/bmw-320i-ed-kullanici-yorumlari-bmw-320i-ed-alinir-mi",
+      "kaynak_alinti": "8 ileri otomatik şanzıman da çok akıcı ve geçişleri hissettirmiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Arka itisli sasi sayesinde surus dinamikleri segment icinde begeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/bmw-320i-ed-kullanici-yorumlari-bmw-320i-ed-alinir-mi",
+      "kaynak_alinti": "Deri döşemeler ve ahşap kaplamalar çok zarif. Aracın sürüş dinamikleri mükemmel",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Kapi acik kalmasi gibi durumlarda gorsel ve sesli uyari veren surucu destek donanimi mevcut.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320-i-ed-hakkinda-fikirleriniz--124673600",
+      "kaynak_alinti": "Kapılar açıksa araç hareket etmeden görsel ve sesli uyarıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic kapi kollarinda erime/soyulma ve kabinde citirti sesleri yaygin sikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/320/ic-kapi-kolu",
+      "kaynak_alinti": "Kapı iç kolunda erimeler mevcut. Böyle bir kalite olur mu?",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalitimi zayif; 100 km/s uzerinde yol ve ruzgar sesi kabine giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320-i-ed-hakkinda-fikirleriniz--124673600",
+      "kaynak_alinti": "100 km'de yol sesi ve rüzgar sesi olduğu gibi içeride",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Fabrika run-flat lastiklerle suspansiyon sert; kucuk yol pursuzleri kabine yansiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320-i-ed-hakkinda-fikirleriniz--124673600",
+      "kaynak_alinti": "Çok sert, çok konforsuz, en ufak pürüzü anında hissettiriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Kronik arizalar nedeniyle bakim-onarim masrafi kisa surede yuksek rakamlara ulasabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-f30-320-ied-alinir-mi--149707199-4",
+      "kaynak_alinti": "Ben 2 senede 30 bin TL para harcadım",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Sehir ici tuketim 1.6 motora ragmen 10-11 litreye cikabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2016-bmw-3-20i-ed-basimdan-gecen-tum-sorunlar--135867762",
+      "kaynak_alinti": "1.6 benzinli bir motor, eco pro modunda şehir içi nasıl 11 litrenin altına düşmez?",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

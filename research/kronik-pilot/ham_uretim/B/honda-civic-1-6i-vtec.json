@@ -1,0 +1,158 @@
+{
+  "hedef_id": "honda-civic-1-6i-vtec",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "cvt-kayis",
+      "iddia": "CVT sanzimanda 80.000-140.000 km arasi zincir uzamasi ve kopmasi bildiriliyor.",
+      "km_araligi": "80.000-140.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/honda/garanti-sonrasi-sanziman-zinciri-kopmasi-ve-yuksek-onarim-ucreti-magduriyeti",
+      "kaynak_alinti": "2018 model Honda Civic 1.6 Elegance aracımda, 21 Ağustos tarihinde 140.000 kilometredeyken şanzıman zinciri koptu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cvt-kayis",
+      "iddia": "R16 motorlu FC5'lerde CVT zinciri, paleti veya kasnak bilyalari 80-90 bin kmde sorun cikariyor.",
+      "km_araligi": "80.000-90.000 km",
+      "kaynak_url": "https://otopark.com/forum/threads/2016-2021-yillari-arasinda-uretilen-civic-lerde-cvt-sanziman-sorunu.16111/",
+      "kaynak_alinti": "özellikle R16 motor kodlu FC5'lerde ya zincir ya palet yada kasnak bilyaları ile ilgili problemler oluyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "10.000 kmde kullanima gore 0,3 ile 1 litre arasi motor yagi eksiltmesi yaygin.",
+      "km_araligi": "10.000 km bakim araligi basina",
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "0W-20 yağ ile 10.000 km'de kullanıma bağlı olarak 0.3L ile 1L arası yağ eksiltmesi mevcut aracın.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "100.000 kme yaklasan araclarda VTEC ust kapak contasindan yag sizintisi goruluyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "100.000 kilometreye yaklaşmış her FC5 VTEC contasından ciddi derecede yağ sızdırır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "Gergi kutugu ve alternator kayis bilyalari 50.000 km sonrasi ses yapmaya basliyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "Alternatör sistemine bağlı tüm bilyalar maksimum 50.000km sonra ötmeye başlar.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima kompresor bilyasinin ses yapmasi neredeyse her aracta goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "Klima kompresör bilyası bozulup kedi gibi ötmeyen Honda Civic piyasada bulamazsınız.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-radyator",
+      "iddia": "Klima gaz kacagi ve sogutma performansi dusmesi yillarca tekrar eden bir sikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/klima",
+      "kaynak_alinti": "2016 model Honda Civic aracımda yaklaşık 2021 yılından bu yana giderilemeyen klima gazı kaçağı problemi yaşamaktayım.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "2017-2019 uretimlerde tavan kenari ve arka cam cevresinde boya kalkmasi yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/honda-civic-1.6-i-vtec-fc5-alinir-mi-sorunlar-yakit-tuketimi-ve-yorumlar-2026",
+      "kaynak_alinti": "özellikle 2017-2019 üretimi araçlarda boya kalitesidir. Tavan kenarları, arka cam çevresi ve yağmur oluklarının bulunduğu bölgelerde boya kalkması yaşandığı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Atmosferik R16 VTEC motor uzun omurlu; kullanicilar tek eksisini yag eksiltmesi olarak goruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "20 senelik ölümsüz bu motorun belki de kendi içindeki tek eksisi yağ eksiltmesidir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 100 kmde 5-6 litre civari tuketimle sinifina gore ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/honda-civic-16-vtec-kullanici-yorumlari-honda-civic-16-vtec-alinir-mi",
+      "kaynak_alinti": "1.6 i-VTEC motor uzun yolda inanılmaz ekonomik",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "519 litrelik bagaj hacmi sinifinin ustunde ve aile kullanimina uygun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/honda-civic-sedan-1-6-i-vtec-2-el-incelemesi/",
+      "kaynak_alinti": "519 litrelik yükleme alanı ve konforlu yaşam alanı ile yolculuk konforu konusunda oldukça yetenekli",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk alani genis, cocuklu aile kullanimi icin rahat bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/turkiyede-cok-sevilen-honda-civicin-sifiri-neden-artik-getirilmiyor",
+      "kaynak_alinti": "Arka koltuğu çocuklu aileye yetti, bagajı günlük hayatı taşıdı, otomatik şanzıman isteyen kullanıcıya cevap verdi, lpg seçeneğiyle yakıt maliyetinden korkan insanın da hesabına uydu.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Kullanicilar yol tutusunu basarili, virajlarda guven verici buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2014/07/honda-civic-kullanici-yorumlari.html",
+      "kaynak_alinti": "Yol tutuşu başarılı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "100 km/s uzerinde ruzgar ve asfalt sesi kabine belirgin sekilde giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "Arabada ses yalıtımına dair bir çaba, bir malzeme, bir özen veya bir düşünce yok. 100'den sonra gelen rüzgar ve asfalt sesi inanılmaz fazla.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic malzemeler cabuk yipraniyor ve plastik kalitesi dusuk bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://techolay.net/sosyal/konu/honda-civic-fc5-kronik-sorunlari-9-yilda-yasadiklarim.181706/",
+      "kaynak_alinti": "Aracın iç malzemeleri çok kolay yıpranıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "125 HP atmosferik motor gunluk kullanimda yeterli ama performans arayana hitap etmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/honda-civic-16-vtec-kullanici-yorumlari-honda-civic-16-vtec-alinir-mi",
+      "kaynak_alinti": "1.6L motor günlük kullanım için yeterli ama performans beklentisi olanlara hitap etmiyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Bazi kaporta ve cam parcalari stokta bulunmayip aylarca beklenebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/yedek-parca",
+      "kaynak_alinti": "Türkiye'de ve Avrupa'da hiç stokta cam olmadığı ve sipariş vermesi durumunda ortalama 3 ayda geleceği bilgisi verildi.",
+      "guven": "orta"
+    }
+  ]
+}

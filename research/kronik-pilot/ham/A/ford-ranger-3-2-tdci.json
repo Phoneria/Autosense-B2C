@@ -1,0 +1,167 @@
+{
+  "hedef_id": "ford-ranger-3-2-tdci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Yüksek kilometrelerde turbo ve VNT aktüatör arızası görülür, araç güç kaybıyla limp moda geçer.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve soğutucusu kurumlanarak tıkanır; motor arıza lambası ve güç kaybı yapar.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Ağırlıklı şehir içi kullanımda DPF rejenerasyonu tamamlanmaz, filtre tıkanır.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektörlerde kaçırma ve püskürtme bozukluğu görülür; kötü yakıtla sorun erkene çeker.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Manuel versiyonda çift kütleli volan ve debriyaj, yüklü/çekici kullanımda erken yorulur.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı periyodik değişim gerektirir; ihmal edilirse kopmayla ağır motor hasarı oluşur.",
+      "km_araligi": "150.000-200.000 km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim pompasından sızıntı ve soğutma suyu kaybı bildirilen bir sorundur.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "Kasa altı, şasi ve kasa köşelerinde yük/çamur temasına bağlı paslanma görülebilir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "3.2 litre 5 silindirli motor yaklaşık 200 PS ve 470 Nm ile güçlü çekiş ve römork kapasitesi sunar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "Düşük vites kademesi, yüksek yerden yüksekliği ve iyi su geçme kabiliyetiyle arazide başarılıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Ford'un Türkiye'deki geniş yetkili servis ve bayi ağı sayesinde servis erişimi kolaydır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "5 silindirli 3.2 TDCi, düşük devirde tork üreten ve yüksek kilometrelere dayanan bir blok olarak bilinir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Pickup sınıfındaki talep nedeniyle ikinci elde değerini görece iyi korur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "3.2 litre hacim ve yüksek ağırlık nedeniyle şehir içi tüketim belirgin şekilde yüksektir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Arka makas süspansiyon nedeniyle kasa boşken arka aks sekmeli ve sert bir sürüş verir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Büyük gövde ve uzun kasa nedeniyle dar alanda manevra ve park zordur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "5 enjektörlü büyük hacimli motor ve DPF/turbo onarımları bakım maliyetini yükseltir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin içinde sert plastik kullanımı yaygındır, malzeme hissi binek araçların gerisindedir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    }
+  ]
+}

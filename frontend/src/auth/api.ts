@@ -71,7 +71,7 @@ export async function authRequest(path: string, body?: Record<string, string>, m
   const r = await request(`/_allauth/browser/v1/${path}`, { method, headers: { "Content-Type": "application/json" }, ...(body ? { body: JSON.stringify(body) } : {}) });
   const data: AuthResponse = r.headers.get("content-type")?.includes("application/json") ? await r.json() : { status: r.status };
   if (r.status === 429) throw new ApiError("Çok fazla deneme yaptınız. Lütfen biraz bekleyip tekrar deneyin.", 429);
-  if (r.status !== 401 && !r.ok) throw new ApiError(annotate(detailedMessage(data.errors) || statusMessage(r.status), r.status), r.status, data.errors?.[0]?.code || "");
+  if (r.status !== 401 && !r.ok) throw new ApiError(annotate(detailedMessage(data.errors) || (data as { detail?: string }).detail || statusMessage(r.status), r.status), r.status, data.errors?.[0]?.code || "");
   if (data.errors?.length) throw new ApiError(annotate(detailedMessage(data.errors), r.status), r.status, data.errors[0].code);
   await refreshCsrf();
   return data;

@@ -1,0 +1,170 @@
+{
+  "hedef_id": "bmw-3-serisi-320d",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "N47 motorda motor arkasındaki triger zinciri uzayıp gergiyi aşıyor, soğukta tıkırtı yapıyor.",
+      "km_araligi": "100.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320d-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Zincir, motorun arka tarafında konumlandırılmıştır ve zamanla uzayarak gergisinin kapasitesini aşabilir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "Zincir seti değişiminde yağ pompası paletleri aşınmışsa 4. silindir yataklarında hasar oluşuyor.",
+      "km_araligi": "100.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320d-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Yağ pompası paletlerinin aşınması durumunda yeterli yağ basıncı sağlanamamakta, bu da özellikle 4. silindir yataklarında ciddi hasarlara yol açabilmektedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Uzun süre yüksek hızda kullanımda turbo zorlanıyor, 80.000 km civarında arıza bildirimleri var.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "http://www.techturkey.com/forum/dizel/73827-e90_320d_turbo_problemi.html",
+      "kaynak_alinti": "Uzun süre yüksek hızda devaml gidilirse turbo zorlanıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "N47 motorlu 320d'lerde enjektörlerin erken tıkanması veya arızalanması raporlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320d-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Özellikle N47 motorlu modellerde enjektörlerin erken tıkanması veya arızalanması raporlanmaktadır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Sadece şehir içi kısa mesafe kullanımda DPF rejenerasyon yapamadığı için tıkanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320d-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "DPF'in düzgün rejenerasyon yapabilmesi için periyodik uzun yol sürüşleri gerekmektedir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusu arızasında 60-80 km/s arası balanssızlık gibi direksiyon titremesi görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "http://www.techturkey.com/forum/archive/index.php/t-238769.html",
+      "kaynak_alinti": "Direksiyon kutusu arızası... 60-80 km aras arabada balans varmış gibi direksiyon titrer",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "E90 otomatik şanzımanda belirli vites geçişlerinde boşa düşme ve gecikme şikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://atco.com.tr/bmw-otomatik-sanziman-tamiri/bmw-320d-otomatik-sanziman-tamiri/",
+      "kaynak_alinti": "Belirli vites geçişlerinde boşa düşme",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "koltuk-doseme-asinma",
+      "iddia": "Kapı kolları ve iç trim parçaları yıllar içinde soyulup eriyor, kronik olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/bmw-320d--3099739?p=31",
+      "kaynak_alinti": "iç kapı tutamakları yıllar geçtikçe yıpranıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 110-130 km/s bandında ortalama 5,5-5,8 lt/100 km tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/bmw-320d--3099739?p=31",
+      "kaynak_alinti": "uzun yolda 110-130 bandında giderseniz ortalama (şehir içi-dışı) 5.5-5.8 lt/100 km tüketimi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "184 hp N47 motorla sürüş dinamikleri ve hızlanma kullanıcılar tarafından tatminkar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "http://www.techturkey.com/forum/archive/index.php/t-238769.html",
+      "kaynak_alinti": "Sürüş dinamikleri çok iyiydi... Gidişi oldukça tatminkar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Sert süspansiyon ve arkadan itiş sayesinde virajlarda yanal eğim az, yol tutuşu övülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320d-alinir-mi--151266145",
+      "kaynak_alinti": "güzel yol tutan",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Kabin içi ses yalıtımı dizel bir araca göre sessiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320d-alinir-mi--151266145",
+      "kaynak_alinti": "dizel arabaya göre gayet sessiz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "ZF otomatik şanzıman kullanıcılar tarafından çok başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/bmw-320d--3099739?p=28",
+      "kaynak_alinti": "muhteşem",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Zincir, yağ pompası ve tork konvertörü değişimi toplamda çok yüksek bütçe gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-320d-alinir-mi--151266145",
+      "kaynak_alinti": "50-60 bin lira kenara ayırılması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "agir-direksiyon",
+      "iddia": "E90 direksiyonu şehir içi manevralarda aşırı sert bulunuyor, kol yoruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-3-20d-e-90-direksiyon-sertligi--104238065",
+      "kaynak_alinti": "acayip sert",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "E90 kasada arka koltuk diz mesafesi dar, F30 ile birlikte genişletilmiştir.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/2014/08/30/joker-bmw-320d-e90-f30/",
+      "kaynak_alinti": "dar arka koltuk",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan malzeme kalitesi ve deri kaplama kullanıcılarca zayıf bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/bmw-320d--3099739?p=10",
+      "kaynak_alinti": "poor quality",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sigorta-kasko-pahali",
+      "iddia": "Kasko ve sigorta primleri segment ortalamasına göre pahalı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/bmw-320d--3099739?p=28",
+      "kaynak_alinti": "Kasko ve sigortası pahalıdır",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

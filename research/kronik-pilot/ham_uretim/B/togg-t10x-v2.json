@@ -1,0 +1,149 @@
+{
+  "hedef_id": "togg-t10x-v2",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "12V akü kısa sürede boşalıyor; araç yolda kalıyor ve uyarı tekrar tekrar veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/12v-aku-sorunu",
+      "kaynak_alinti": "Togg T10X aracımı yaklaşık 1 yıldır kullanıyorum ve bu süre içinde araçta 12v akü bitme sorunu yaşamaya devam ediyorum...Bu problem şu ana kadar yaklaşık 12 kez tekrarlandı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "OBC (şarj ünitesi) arızası yaygın; araç AC ile şarj olmuyor ve parça haftalarca bekleniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/obc-arizasi",
+      "kaynak_alinti": "yaklaşık 20 gündür aracı AC ile şarj edemedim",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Seyir halindeyken gösterge ve orta konsol ekranları kararıp kapanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/ekran-gitti",
+      "kaynak_alinti": "ekranlar gitti, sürüş halindeyken gösterge paneli ve tüm ekranlar gitti",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "Kapılar yavaş kapatıldığında kilit tam oturmuyor, kapı tam kapanmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/bir-suredir-togg-t10x-kullanan-bir-eksi-sozluk-yazarinin-aracla-ilgili-izlenimleri",
+      "kaynak_alinti": "yavaş kapatırsanız kapılar tam kapanmıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Arka amortisörlerden gıcırtı geliyor, değişimden kısa süre sonra tekrar patlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/arka-amortisor",
+      "kaynak_alinti": "arka amortisörler bu kez patladı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Plastik tampon ile kaput arasında güneşte belirgin renk tonu farkı görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/bir-suredir-togg-t10x-kullanan-bir-eksi-sozluk-yazarinin-aracla-ilgili-izlenimleri",
+      "kaynak_alinti": "güneşli havalarda plastik tampon ve kaput arasında bariz bir ton farkı göze çarpıyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima çalışmıyor; eksi derecelerde kabine sıcak hava üflemediği bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/klima-sorunu",
+      "kaynak_alinti": "Havalar eksi dereceye düştüğünde sıcak hava üflemiyor, araç tamamen soğuk kalıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Euro NCAP'ten 5 yıldız aldı; yetişkin yolcu korumasında %94 puanladı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.euroncap.com/en/results/togg/t10x/56128",
+      "kaynak_alinti": "protection was good for all critical body regions of both the driver and the front passenger",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Periyodik bakım 40.000 km veya 2 yılda bir yapıldığı için bakım gideri çok düşük.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/bir-suredir-togg-t10x-kullanan-bir-eksi-sozluk-yazarinin-aracla-ilgili-izlenimleri",
+      "kaynak_alinti": "bakımlarının 40.000 km ya da 2 yılda bir yapılması büyük tasarruf sağlıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon konforu kullanıcılar tarafından sınıfının üstünde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/bir-suredir-togg-t10x-kullanan-bir-eksi-sozluk-yazarinin-aracla-ilgili-izlenimleri",
+      "kaynak_alinti": "aracın süspansiyonlarına bayıldım. bugüne kadar kullandığım en başarılı ve konforlu araçtı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "130 km/s hızda kabin içi sessiz kalıyor, rüzgar sesi 125 km/s sonrası başlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/togg-t10x-test-surusu-izlenimlerim.15565/",
+      "kaynak_alinti": "130km/h'de yanınızdaki kişiyle rahat konuşup sessiz seyahat edebiliyorsunuz.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "İç mekan ferah, koltuklar gövdeyi sararak iyi destek veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/togg-t10x-test-surusu-izlenimlerim.15565/",
+      "kaynak_alinti": "Aracın içi mekanı gayet ferah",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Kritik parçalar (OBC, amortisör) haftalarca, bazen 2 aydan uzun süre bekleniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/obc-arizasi",
+      "kaynak_alinti": "7 hafta geçmesine rağmen hâlâ parçanın gelmedi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "servis-az",
+      "iddia": "Yetkili servis ağı seyrek; randevu ve onarım süreleri haftalarca uzuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/togg-servisinin-parca-eksikligi-ve-uzun-bekleme-sureci",
+      "kaynak_alinti": "Yerli olduğu söylenen bir otomobilin bu kadar kritik bir parçasının hiçbir yerde bulunmaması",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Isı pompası olmadığı için kışın menzil %15-30 düşüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://osarj.com.tr/togg-menzil/",
+      "kaynak_alinti": "Kış aylarında menzil düşüşü genellikle %15–30 aralığındadır",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Klima menfezlerinin plastik yönlendiricileri elde kalacak kadar kolay kırılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/togg/t10x/klima-sorunu",
+      "kaynak_alinti": "Klima menfezi yönlendirme tuşları elimi attığım anda adeta elimde kalıyor.",
+      "guven": "orta"
+    }
+  ]
+}

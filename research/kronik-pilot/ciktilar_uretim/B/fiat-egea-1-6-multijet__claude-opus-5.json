@@ -1,0 +1,161 @@
+{
+  "hedef_id": "fiat-egea-1-6-multijet",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "2021-2023 model 1.6 Multijet'lerde 60.000 km civarinda turbo arizasi yaygin sekilde bildiriliyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/turbo",
+      "kaynak_alinti": "2022 model Fiat Egea 1.6 Multijet aracımın tüm periyodik bakımları yetkili serviste yapıldı. En son 60.000 bakımı Antalya Konyaaltı'nda bulunan Fiat Bilaller servisinde yapılmıştı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "1.6 Multijet DCT otomatiklerde 20.000-40.000 km'de sanziman titremesi ve baski balata arizasi goruluyor.",
+      "km_araligi": "20.000-40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/otomatik-sanziman",
+      "kaynak_alinti": "2023 model Fiat Egea 1.6 dizel otomatik aracımı 1 yıl önce yaklaşık 40 bin kilometrede satın aldım...",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "20.000-30.000 km'de direksiyon kutusundan ses gelmesi ve direksiyon takilmasi sik bildiriliyor.",
+      "km_araligi": "20.000-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/direksiyon-arizasi",
+      "kaynak_alinti": "2019 model Egea HB 1.6 Multijet aracımda 22 bin kilometreden bu yana direksiyon takılmaları yaşanmaktadır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Sehir ici kullanimda partikul filtresi tikanmasi ve tekrarlayan DPF uyarisi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/partikul-filtresi",
+      "kaynak_alinti": "2022 model Fiat Egea Urban 1.6 Multijet otomatik aracımı yaklaşık 6 aydır kullanıyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "80.000 km sonrasi EGR valfi ve emme yollarinin kurumlanmasi guc kaybina yol aciyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/fiat-egea-1.6-multijet/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Düşük devirli şehir kullanımında emme kanalları ve EGR valfi kurumla kaplanır, valf açık veya kapalı pozisyonda takılabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektor arizasi degisim sonrasi kisa surede tekrarlayabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/16-multijet",
+      "kaynak_alinti": "Yedi ay önce enjektör değiştirdim, ancak tekrar enjektör sorunu yaşıyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "1.6 Multijet'te yakit sistemi kaynakli kronik ariza bildirimleri var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/kronik-sorun",
+      "kaynak_alinti": "Fiat Egea 1.6 Multijet aracımda yaklaşık 3 yıldır yakıt sistemiyle ilgili kronik bir sorun yaşıyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Sogutma sisteminden radyator suyu eksilmesi sikayeti bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/16-multijet",
+      "kaynak_alinti": "15 Mart 2024 tarihinde aracımı radyatör suyu eksiltiyor diye İstanbul Küçükyalı Birmot Fiat Servisine götürdüm.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma kullanimda ortalama 6,5 litre civari tuketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/fiat-egea-sedan-1-6-dizel-otomatik-degerlendirme-ve-yakit-tuketimi--123405704",
+      "kaynak_alinti": "ortalamada 6.5 civarında gösteriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk diz mesafesi ve ic hacim sinif ortalamasinin uzerinde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.focusclubtr.com/topic/17037-fiat-egea-16-multijet-arac%C4%B1mla-ilgili-izlenimlerim/",
+      "kaynak_alinti": "İç hacmi oldukça geniş, arka koltuk diz mesafesi sınıfındaki çoğu aracın gerisinde kalmaz",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi sinifina gore genis bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/fiat-egea-1-6-lounge-test-ettik--111880671",
+      "kaynak_alinti": "Bagaj çok iyi fakat o bagaj kapağının kolları flunce.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Filo kullaniminda 160.000 km'ye sorunsuz ulasan 1.6 dizel otomatik ornekleri var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2020-sifir-1-6-multijet-otomatik-egea-alinir-mi--145606597",
+      "kaynak_alinti": "Bizim şirkette dizel otomatik egealar var, en yüksek km olanı 160 bin, sıfır sorun.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.6 dizel motor fiyat sinifina gore guclu bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2020-sifir-1-6-multijet-otomatik-egea-alinir-mi--145606597",
+      "kaynak_alinti": "Motor şanzıman güzel, bu fiyatlara güçlü motoru olan ve güzel vitesi olan araba alıyorsunuz.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic malzeme kalitesi rakiplerine gore zayif, sert plastik kullanimi yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.focusclubtr.com/topic/17037-fiat-egea-16-multijet-arac%C4%B1mla-ilgili-izlenimlerim/",
+      "kaynak_alinti": "Aracın malzeme kalitesi focus ile kıyaslandığında genel olarak zayıf",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Motor sesi ve titresim kabin icinde belirgin sekilde hissediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2020-sifir-1-6-multijet-otomatik-egea-alinir-mi--145606597",
+      "kaynak_alinti": "Yakıtı şehir içinde biraz fazla. Motor baya gürültülü ve sarsıntılı. Malzeme kalitesi fiyatına göre idare eder.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "EGR ve partikul temizligi gibi islemler yuksek servis faturasi cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/16-multijet",
+      "kaynak_alinti": "Aracın arızası için bana eğer ve partikül temizliği yapılması gerektiği söylendi ve bu işlem için 6.000 TL ücret alındı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Euro NCAP sonuclari ve koltuk dayanimi kullanici forumlarinda elestiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/fiat-egea-nin-1-6-multijet-motoru-ile-bilegi-bukulmuyor--148071046",
+      "kaynak_alinti": "Gel gelelim euro ncap testinde şoför koltuğu dibinden kırılıyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

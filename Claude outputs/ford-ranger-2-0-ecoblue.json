@@ -1,0 +1,167 @@
+{
+  "hedef_id": "ford-ranger-2-0-ecoblue",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "10 ileri otomatik şanzımanda vuruntu, boşa düşme ve 57.000 km civarında komple arıza bildiriliyor.",
+      "km_araligi": "50.000-105.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-ranger-wildtrak-otomatik-sanziman-arizasi",
+      "kaynak_alinti": "Ford Wildtrak 2020 model 10 ileri otomatik vites aracım 57.000 km'de şanzıman dağıttı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue deposu dolu olmasına rağmen \"AdBlue ekleyin, motor çalışmayacak\" uyarısı tekrarlıyor.",
+      "km_araligi": "17.000-115.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/adblue-deposu-doluyken-surekli-ariza-uyarisi-aliyorum",
+      "kaynak_alinti": "2019 model 2020 çıkışlı Ranger 2.0 ecoblue 4x2 aracım 115 bin km. De olup, addblue deposu dolu olduğu halde '' AdBlue ekleyin... Motor çalışmayacak '' uyarısı vermektedir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arızası hem ilk kilometrelerde hem 70.000 km civarında sık bildiriliyor.",
+      "km_araligi": "0-70.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/garanti-kapsami-disinda-turbo-arizasi-icin-115-bin-lira-talebi-ve-ikame-arac-yok",
+      "kaynak_alinti": "2023 model Ford Ranger Wildtrak aracımın turbosu arıza verdi ve aracı Aydın Kuşadası Kahyalıoğlu Ford yetkili servisine götürdük.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikül filtresi kaynaklı motor arıza lambası servis müdahalesine rağmen tekrar tekrar yanıyor.",
+      "km_araligi": "19.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-rangerda-bitmeyen-motor-ariza-uyarisi-ve-servis-cilesi",
+      "kaynak_alinti": "2023 model Ranger model aracımın geçtiğimiz hafta motor arıza lambası yandı. Ankara Tan Oto ya götürdüğümde partikül filtresi temizlenirken yarım kalmış dendi ve motor arıza uyarısı kapatılıp aracım teslim edildi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Göstergede sarı anahtar simgesi ve \"el kitabına bakın\" uyarısı tekrarlıyor, serviste arıza kodu çıkmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ranger-20-wildtrakta-sari-anahtar-uyarisi",
+      "kaynak_alinti": "2020 Ranger 2.0 Wildtrak aracımda sarı anahtar simgesi çıkarak ekranda 'el kitabına bakın' uyarısı veriyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Akü iki yıl dolmadan bitiyor, yeni akü takılsa da start-stop sistemi devreye girmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-ranger-start-stop-sistemi-surekli-arizali-teknik-destek-talebi",
+      "kaynak_alinti": "2020 model Ford Ranger 2.0 aracımda yaklaşık iki aydır start-stop sistemi devreye girmiyor. Aracımın aküsünü yeni ve standartlara uygun şekilde değiştirdim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Yeni kasa multimedya sisteminde Apple CarPlay sürekli kopuyor ve ani yüksek ses oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/yeni-kasa-ford-ranger-multimedya-problemi-carplay-kopma-sorunu",
+      "kaynak_alinti": "2023 model yeni kasa Ford Ranger multimedya sisteminde sürekli problem yaşıyorum. Apple CarPlay sürekli kopuyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "koltuk-doseme-asinma",
+      "iddia": "18.000 km'de sürücü koltuğu derisinin yan yüzeyinde çatlama ve yırtılma oluşuyor.",
+      "km_araligi": "18.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-ranger-on-koltuk-deri-deformasyonu",
+      "kaynak_alinti": "Aracım Ford Ranger 2021 model, 18.000 km'de ve üç yıllık garanti süresinin bitmesine 2 ay 3 gün var. Şoför koltuğunun yan tarafında, resimde görüldüğü gibi çatlamalar ve hatta yırtılmalar mevcut.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "800 mm sudan geçme derinliği ve 235 mm yerden yükseklikle güçlü arazi kabiliyeti sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ford.com.tr/ticari-araclar/ranger",
+      "kaynak_alinti": "800 mm sudan geçme derinliği, 235 mm yerden yükseklik ve etkileyici yaklaşma/kalkış açılarıyla",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "3,5 tona kadar römork çekme ve 1 tona kadar yük taşıma kapasitesi var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ford.com.tr/ticari-araclar/ranger",
+      "kaynak_alinti": "Yeni Ford Ranger®, 3,5 tona kadar çekme ve 1 tona kadar taşıma kapasitesiyle",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "2.0 EcoBlue Bi-Turbo 205 PS ve 500 Nm tork üreterek yüklü kullanımda güçlü performans veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ford.com.tr/ticari-araclar/ranger",
+      "kaynak_alinti": "2.0 L EcoBlue (170 PS ve 405 Nm tork veya Bi-Turbo 205 PS ve 500 Nm tork)",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Çarpışma sonrası frenleme ile sürücü, ön, yan ve orta hava yastıkları sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ford.com.tr/ticari-araclar/ranger",
+      "kaynak_alinti": "çarpışma sonrası frenleme teknolojisi, sürücü, ön, yan ve orta hava yastıkları",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "2023 yeni kasada konfor ve donanım seviyesi üst segment otomobillere yakın bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/?q=ford+ranger+wildtrak",
+      "kaynak_alinti": "2023 yılında çıkan yeni kasası muhteşem olan araç. konfor ve donanım olarak üst segment bir arabayı aratmaz.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Sağ arka stop lambası yetkili serviste 95.000 TL, işçilik ve KDV ile 120.000 TL'ye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-ranger-sag-arka-stop-lambasi-icin-fahis-fiyat-ve-ilgisiz-servis",
+      "kaynak_alinti": "bana arka stop lambasının 95 bin TL olduğunu, işçilik ve KDV ile birlikte toplam tutarın yaklaşık 120 bin TL'yi bulacağını söylediler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Kaporta ve tampon parçaları tedarik edilemediği için araç serviste aylarca bekleyebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-otosanin-parca-tedarik-sorunu",
+      "kaynak_alinti": "Parça tedarik sorunundan dolayı aracım Ford Kar Otomotiv'de 2 ay bekledi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yeni kasa Ranger'da kabin içi trim gıcırtıları sık bildirilen bir rahatsızlık.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/2023-ford-ranger-trim-sesi-video",
+      "kaynak_alinti": "2023 Ford Ranger aracımdan gelen çıldırtıcı 'trim sesi' ama buna trim sesi diyemem çünkü bu bam başka bir seviye gibi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Garanti dışı AdBlue arızasında sadece arıza tespiti için 10.500 TL talep edildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/adblue-uyarisi-ve-yuksek-ariza-tespit-ucreti-magduriyeti",
+      "kaynak_alinti": "Sorun açıkça ortadayken, yetkili servisimize başvurduğumda yalnızca arıza tespiti için 10.500₺ talep edildi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Bayi çıkışlı aksesuarlar altı ay dolmadan soldu, arka kapama su ve toz alıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/yeni-ford-rangerin-solan-aksesuarlari-ve-su-alan-kapamasi",
+      "kaynak_alinti": "Orijinal kaportada hiçbir bozulma olmazken sonradan takılan aksesuarların çoğu daha altı ay geçmeden soldu. 2. Yaptıkları arka rollback kapama en baştan beri su ve toz alıyor.",
+      "guven": "dusuk"
+    }
+  ]
+}

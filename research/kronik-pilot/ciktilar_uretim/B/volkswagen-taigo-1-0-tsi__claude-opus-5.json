@@ -1,0 +1,161 @@
+{
+  "hedef_id": "volkswagen-taigo-1-0-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "10.000 km gibi düşük kilometrelerde bile yağ eksiltme şikayeti çok yaygın.",
+      "km_araligi": "3.000-20.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/garanti-altindaki-volkswagen-taigoda-yag-kaybi-ve-ucret-talebi-magduriyeti",
+      "kaynak_alinti": "henüz 10 bin kilometrede olmasına ve garanti kapsamında olmasına rağmen yağ eksiltme/yağ problemi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya sisteminde donma, 10 saniyeye varan gecikme ve telefon bağlantısı kopması yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/taigo/yazilim",
+      "kaynak_alinti": "yaklaşık 10 saniyeyi bulan gecikmeler",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "DSG'li araçlarda düşük km'de şanzımandan tak sesi ve vites geçişlerinde titreme bildiriliyor.",
+      "km_araligi": "0-20.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/maslak-dogustan-alinan-yeni-taigoda-medya-donmasi-ve-sanzimandan-gelen-anormal-sesler",
+      "kaynak_alinti": "şanzımandan 'tak' diye gelen anormal bir ses var",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "12V akünün şarj edilmemesi ve Start/Stop hatası uyarısı düşük km'de görülüyor.",
+      "km_araligi": "12.500 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/taigo/start-stop-hatasi",
+      "kaynak_alinti": "12V akü şarj edilmiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "25.000 km'de radyatör dış etken olmadan kendiliğinden delindi.",
+      "km_araligi": "25.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/radyator-sorunu-dusuk-kilometrede-kendiliginden-delik-ve-garanti-reddi",
+      "kaynak_alinti": "delindiğini tespit edildi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "11.000 km'de arka tekerlek/balata bölgesinden gıcırdama sesi geliyor.",
+      "km_araligi": "11.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-taigoda-arka-suspansiyon-gicirtisi-sorunu-yetkili-servis-tarafindan-cozulmedi",
+      "kaynak_alinti": "Araç p (Park) konumundayken araba binerken, inerken veya arka koltuğa yolcu bindiğinde, arka tekerlek/balata bölgesinden rahatsız edici düzeyde bir gıcırdama sesi geliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Sıfır araçlarda kapıda boya mikron farkı ve tavanda ton farkı bildiriliyor.",
+      "km_araligi": "0 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/adana-aykandan-aldigimiz-taigo-kapisinin-boya-micronu-farkli-cikti-video",
+      "kaynak_alinti": "Bizim yaptığımız eksperi doğrular şekilde micron farklılığı göze çarpıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 100 km'de 5 litre civarı ortalama tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/taigo-kullananicilari-ana-forum--154441487-7",
+      "kaynak_alinti": "380 km yol geldim. Yakıt ortalaması yol bilgisayarına göre tam 5.0 gösterdi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.0 115 bg motor, hacmine rağmen atik ve yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-taigo--6870296?p=10",
+      "kaynak_alinti": "1.0 motorlara çok aşina değilim ama 1.0 115 bg motor gayet atik",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj segmentine göre geniş; üç büyük bavul rahat sığıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-taigo--6870296?p=5",
+      "kaynak_alinti": "kocaman büyük bir bagajı var. en az 3 tane büyük bavul rahat sığar.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Güvenlik donanımı üst segment VW modelleriyle neredeyse aynı seviyede bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-taigo--6870296?p=3",
+      "kaynak_alinti": "güvenlik paketi passat'la neredeyse aynı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci el ilan fiyatları dönem dönem sıfır araç fiyatının üzerine çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/taigo-kullananicilari-ana-forum--154441487-102",
+      "kaynak_alinti": "sadece sarı sitedeki ilanlar da değil dönem dönem bizzat DOD 2. El sitesindeki ikinci el ilanları bile sıfır fiyatını geçiyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç malzeme kalitesi fiyat seviyesine göre zayıf, sert plastikler eleştiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-taigo--6870296?p=2",
+      "kaynak_alinti": "Dacia Stepway gibi, tam da o kalitede ama 700 bin tl olanı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka diz mesafesi dar; sahiplerin en sık dile getirdiği memnuniyetsizlik bu.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/taigo-kullananicilari-ana-forum--154441487-147",
+      "kaynak_alinti": "Arka diz mesafesi hariç memnun olmadığım hiç bir konu yok",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Sadece multimedya ekranı değişimi için yaklaşık 80 bin TL parça ücreti isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-taigo-multimedya-ekrani-aniden-arizalandi-ve-80-bin-tl-ucret-itirazi",
+      "kaynak_alinti": "Servis, ekranın değişmesi gerektiğini, beynin hasarlı olmadığı için de sadece ekran için yaklaşık 80 bin tl talep edildiğini iletti.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste birinci yıl periyodik bakımı için 11 bin TL ödendiği bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/taigo-kullananicilari-ana-forum--154441487-147",
+      "kaynak_alinti": "Birinci yıl bakımı için 11 bin TL ödedim bugün",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Tavan ve kapı kaplamalarından gelen trim sesleri kabinde rahatsız edici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/taigo-kullananicilari-ana-forum--154441487",
+      "kaynak_alinti": "Tavan ön kısım, tavan ayna çevresi ve kapılardan trim sesi",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

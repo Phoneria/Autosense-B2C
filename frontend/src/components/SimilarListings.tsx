@@ -58,7 +58,7 @@ export default function SimilarListings({
                   </p>
                 </div>
                 <span className={cheaper ? "down" : "up"}>
-                  {diff === 0 ? "aynı" : `${cheaper ? "" : "+"}${Math.round(diff / 1000)}b`}
+                  {diff === 0 ? "aynı" : `${cheaper ? "-" : "+"}${num(Math.abs(diff))} TL`}
                 </span>
                 <strong>{tl(listing.price)}</strong>
               </Row>
@@ -66,7 +66,7 @@ export default function SimilarListings({
           })}
           <p className="card-note">
             Fark sütunu, ilanın sizin girdiğiniz <strong>{tl(price)}</strong> fiyatına göre
-            farkını bin TL cinsinden gösterir. Veriler en son galeri taramasından gelir.
+            farkını gösterir. Veriler en son galeri taramasından gelir.
           </p>
         </>
       )}

@@ -1,0 +1,167 @@
+{
+  "hedef_id": "dacia-sandero-stepway-1-0-tce",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "Arka kapılardan içeri su sızması ve sol arka paspas altında su birikmesi kronikleşmiş durumda.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-stepway-arka-kapilardan-su-girisi-ucretsiz-onarim-talebi",
+      "kaynak_alinti": "2022 model Dacia Stepway sahibiyim. Aracımla ilgili sosyal medya gruplarını takip ettiğimde, birçok kullanıcıda olduğu gibi benim aracımda da kronik hâle gelmiş bir problem olan arka iki kapıdan su alma sorunu olduğunu gördüm.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "Yağış sonrası sol arka taban bölümünde su birikmesi sıfır kilometre araçlarda dahi görülüyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-sandero-stepway-extremda-surekli-su-alma-sorunu-ve-servis-cozum-sunmuyor",
+      "kaynak_alinti": "Özellikle yağışlı havalarda aracın sol arto taban bölümünde su birikiyor, bu durum hem konforu hem de aracın uzun vadeli sağlığını olumsuz etkiliyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "CVT otomatik şanzımanda vites geçişlerinde belirgin sarsıntı ve silkeleme şikayeti yaygın.",
+      "km_araligi": "0-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/otomatik",
+      "kaynak_alinti": "3. Viteste belirgin bir şekilde sarsıntı (silkeleme) sorunu yaşıyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı seyir halinde kendiliğinden kapanıyor ve donuyor; radyo kafası değişimi çözmüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/multimedya-sistemi-surekli-kapaniyor-onarim-sorunu-cozulmedi",
+      "kaynak_alinti": "Araçta seyir halindeyken ekran kendiliğinden kapanıyor ve multimedia sistemi düzgün çalışmıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "2022 model 1.0 Turbo'da yaklaşık 18.000 km'de debriyaj seti ve volan değişimi gerekti.",
+      "km_araligi": "15.000-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/debriyaj-seti",
+      "kaynak_alinti": "Baskı balata, debriyaj seti, volan derken 58.000 TL masraf çıkarılarak",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Sıfır teslimlerde gizli boya ve boya kalkması şikayetleri tekrar ediyor.",
+      "km_araligi": "0-10.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/stepway-extreme",
+      "kaynak_alinti": "Sıfır ve boyasız aldığım araçta gizli boya, değer kaybı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Düşük kilometrede birden fazla ikaz lambasının aynı anda yanması bildiriliyor.",
+      "km_araligi": "0-25.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/ariza-lambalari",
+      "kaynak_alinti": "5–6 farklı ikaz lambası aynı anda yanmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "2022 model Stepway'de tekrarlayan akü şarj/zayıf akü uyarısı sonrası araç çalışmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/kronik",
+      "kaynak_alinti": "İlk olarak \"akü şarj oluyor\", \"akü zayıf\" gibi uyarılar almaya başladım ve kısa bir süre sonra aracımız hiç çalışmadı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "B segmenti ölçülerine göre iç hacim geniş ve ferah bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-sandero-stepway--2125274?p=20",
+      "kaynak_alinti": "iç hacmi b sınıfına göre geniş ve ferah",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "410 litrelik bagaj hacmi sınıfının üzerinde bir kapasite sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/dacia-sandero-stepway-test-surus-izlenimleri/",
+      "kaynak_alinti": "Bagaj kapasitesi 410 lt",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Elektrik takviyeli direksiyon önceki nesile göre yüzde 36 daha az güç gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/dacia-sandero-stepway-test-surus-izlenimleri/",
+      "kaynak_alinti": "Yeni elektrik takviyeli ayarlanabilir direksiyon kullanımda önceki nesile göre yüzde 36 daha az güç gerektiriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Kullanıcılara göre bakımı ucuz ve yedek parça fiyatları makul seviyede.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dacia-sandero-stepway-nasil-bilirsiniz--127121203",
+      "kaynak_alinti": "bakimi ucuz, parcasi da makul",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Yüksek görüş açısı ve yerden yüksekliği şehir içi kullanımda avantaj sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-sandero-stepway--2125274?p=20",
+      "kaynak_alinti": "yerden yüksekliği ise harika",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Otomatik 1.0 TCe'de şehir içi tüketim 9-10 lt/100 km seviyesine çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/modelleri?page=4",
+      "kaynak_alinti": "Dacia Stepway 2023 model otomatik 1.0 aldım yakıt tüketimi çok geldi. 6000 km de şu anda. Ortalama 100km/9.3lt gösteriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis periyodik bakım ve parça fiyatları özel servise göre çok yüksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/sandero/servis-bakim",
+      "kaynak_alinti": "Dacia yetkili servis periyodik bakım fiyatları gerçekten çok yüksek!",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin içi malzemeler tamamen sert plastikten oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-sandero-stepway--2125274?p=20",
+      "kaynak_alinti": "iç aksam sert plastik",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Euro NCAP'te elektronik destek eksikleri nedeniyle sadece 2 yıldız aldı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.donanimhaber.com/yeni-dacia-sandero-stepway-euro-ncap-ten-2-yildiz-aldi--132300",
+      "kaynak_alinti": "Çarpışma koruması konusunda kötü bir performans sergilemeyen Sandero Stepway'in ortalama puanı elektronik destek konusundaki eksikleri nedeniyle 2 yıldıza kadar düştü",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Düşük devirde tork yetersiz; 0-40 km/s hızlanma tembel bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-sandero-stepway--2125274?p=18",
+      "kaynak_alinti": "0-40km/s hızlanması çok tembel",
+      "guven": "orta"
+    }
+  ]
+}

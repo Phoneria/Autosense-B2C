@@ -1,0 +1,152 @@
+{
+  "hedef_id": "volkswagen-passat-1-6",
+  "yontem": "A",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DQ200 7 ileri kuru debriyajlı DSG'de mekatronik arızası ve kalkışta sarsıntı yaygındır.",
+      "km_araligi": "80.000-150.000 km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve soğutucusu kurumdan tıkanır, güç kaybı ve motor arıza lambası yapar.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Ağırlıklı şehir içi kullanımda DPF tıkanır, rejenerasyon tamamlanmaz.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "1.6 TDI enjektörlerinde püskürtme bozulması rölanti titremesi ve zor çalışmaya yol açar.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Değişken kanatlı turboda kanat/aktüatör tutukluğu nedeniyle güç kaybı görülür.",
+      "km_araligi": "130.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Çift kütleli volan aşınır; rölantide takırtı ve kalkışta titreme yapar.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Triger kayışından tahrikli su pompası ve termostat gövdesinde soğutma suyu kaçağı olur.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı seti periyodunda değişmezse kopma ve motor hasarı riski yüksektir.",
+      "km_araligi": "120.000-150.000 km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.6 TDI, D segmenti gövdeye rağmen uzun yolda 5 litre civarı tüketimle gider.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Passat Türkiye'de talebi yüksek bir modeldir, ikinci elde değerini iyi korur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Volkswagen yetkili ve özel servis ağı Türkiye genelinde çok yaygındır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Yerli ve muadil yedek parça bulunurluğu her segmentte çok geniştir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Geniş iç hacim ve dengeli süspansiyonuyla uzun yolda yorucu olmayan bir araçtır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "105-120 HP güç, dolu araçta ve yokuşta D segmenti gövde için zayıf kalır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "DSG yağ bakımı, triger seti ve DPF/EGR bakımları toplamda maliyeti yükseltir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Orijinal DSG, turbo ve enjektör parçaları segment ortalamasına göre pahalıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

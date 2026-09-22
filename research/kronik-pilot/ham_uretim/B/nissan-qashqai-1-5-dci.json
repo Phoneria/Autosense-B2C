@@ -1,0 +1,167 @@
+{
+  "hedef_id": "nissan-qashqai-1-5-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "150.000 km civarinda turbo arizasi bu motorda sik goruluyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://eksisozluk.com/nissan-qashqai--830724?p=18",
+      "kaynak_alinti": "dci motorun 150 bin ortalamada turbo arızası yapması bu motorun hastalığıdır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayisi 100.000 km'de degismezse disleri atlayip motora zarar veriyor.",
+      "km_araligi": "100.000-130.000 km",
+      "kaynak_url": "https://otopark.com/forum/threads/nissan-qashqai-1-5-dci-motordan-gelen-garip-ses.9932/",
+      "kaynak_alinti": "Qashqai 1.5 dci'larda triger değişim periyodu 100.000 km'de birmiş",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektorler 150.000-200.000 km bandinda omrunu tamamlayip zor calisma ve titreme yapiyor.",
+      "km_araligi": "150.000-200.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/nissan-qashqai-1.5-dci-alinir-mi-kronik-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Enjektörler genellikle 150.000–200.000 km bandında ömrünü tamamlayabiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "80.000-160.000 km arasinda DPF dolumu ve yag seyrelmesi goruluyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/nissan-qashqai-1.5-dci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "DPF (partikül filtresi) dolumu ve yağ seyrelmesi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "80.000-160.000 km arasinda EGR valfi ve emme yollari kurumlaniyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/nissan-qashqai-1.5-dci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "EGR valfi ve emme yollarının kurumlanması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "rotil-rot",
+      "iddia": "Rot, rotil ve salincak parcalari kisa surelerde tek tek degisiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-qashqai--830724?p=18",
+      "kaynak_alinti": "rot, rotil, z-bar, salıncak, fişek kısa sürelerde parça parça değiştiriyorsunuz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Kaput, tavan ve bagaj kapaginda darbe olmadan kendiliginden boya atmasi yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/2014-qashqai",
+      "kaynak_alinti": "2014 model beyaz Nissan Qashqai aracımın kaputunda, tavanında ve bagaj kapağında yaklaşık 1 yıl önce fark ettiğim boya atma sorunu yaşamaktayım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Ayna katlama motorlarinda tekrarlayan ariza bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-qashqai--830724?p=15",
+      "kaynak_alinti": "aynaları katlayan motorlarla ilgili 3 kere problem",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma tuketim 3,8 lt/100 km; gercek kullanimda 5-5,5 litre seviyesinde kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/nissan-qashqai-1-5-dci-startstop-tekna-en-cok-ikinci-eli-olan-crossover/",
+      "kaynak_alinti": "Şehir içi 4,2 ve şehir dışı 3,6 litrelik tüketim değeri sunan araç, karma tüketimde ise 3,8 litrelik bir yakıt tüketim verisini sunuyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Renault ortakligi sayesinde yedek parca Turkiye'nin her ilcesinde bulunabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/nissan-qashqai-1.5-dci-alinir-mi-kronik-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Renault ortaklığı sayesinde Türkiye'nin her ilçesinde bulunabilen yedek parça ağı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk yasam alani ve ic mekan fonksiyonelligi sinifina gore genis.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/qashqai-kulubu--35427532",
+      "kaynak_alinti": "arka yaşam alanı ve buradaki fonksiyonellik müthiş",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "260 Nm tork sehir ici ve yokusta rahat cekis sagliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/nissan-qashqai-1-5-dci-startstop-tekna-en-cok-ikinci-eli-olan-crossover/",
+      "kaynak_alinti": "110 HP güç ve 260 NM tork değeri sunana araç, dizel motorların tork keyfini size doya doya yaşatıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Surus konforu kullanicilar tarafindan sinifina gore iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/nissan-qashqai-15-dci-alinir-mi",
+      "kaynak_alinti": "iç mekan kalitesi ve sürüş konforu oldukça iyi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis bakim maliyeti premium Alman markalari seviyesinde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/nissan-qashqai-nasil-bir-arac--123851892",
+      "kaynak_alinti": "Qq ların bakımı da serviste audi bmw düzeyünde",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "110 PS motor yokusta ve hizlanmada yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/nissan-qashqai-15-dci-alinir-mi",
+      "kaynak_alinti": "1.5 dCi motorun performansı bana biraz yetersiz geldi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "110 km/s uzerinde ruzgar sesi artiyor, ses yalitimi yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-qashqai--830724?p=18",
+      "kaynak_alinti": "ses yalıtımı dizel araç için yetersiz kalıyor ayrıca 110 km üzeri rüzgar sesi baya baya alıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Dis olcusune gore bagaj hacmi hatchback seviyesinde kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/nissan-qashqai-nasil-bir-arac--123851892",
+      "kaynak_alinti": "Bagajı hb araç kadardır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekan malzeme ve iscilik kalitesi sinif standardinin gerisinde kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-qashqai--830724?p=15",
+      "kaynak_alinti": "iç mekan, kompakt otomobillerde artık yükselmeye başlayan kalite ve işçilikten uzak",
+      "guven": "dusuk"
+    }
+  ]
+}

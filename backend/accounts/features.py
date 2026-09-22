@@ -1,6 +1,6 @@
 from allauth.account.models import EmailAddress
 
-FEATURES = frozenset({"analysis", "lookup_text", "vehicle_options", "locations", "vehicle_defaults"})
+FEATURES = frozenset({"analysis", "lookup_text", "vehicle_options", "locations", "vehicle_defaults", "vehicle_traits", "regional_deals", "vehicle_guide"})
 
 def feature_access(user):
     allowed = bool(user and user.is_authenticated and user.is_active and EmailAddress.objects.filter(user=user, email__iexact=user.email, verified=True).exists())

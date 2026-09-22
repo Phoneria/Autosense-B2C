@@ -1,0 +1,158 @@
+{
+  "hedef_id": "seat-leon-1-6-tdi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Soğuk motorda rölantide ciddi sarsıntı yapan enjektör arızası 60-135 bin km arasında sık bildiriliyor.",
+      "km_araligi": "60.000-135.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/seat-leon-1-6-tdi-enjektor-sorunu--100602361",
+      "kaynak_alinti": "motor soğukken özellikle kırmızı ışııkta durup,frene bastığımda ciddi anlamda sallanıyordu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG'li 1.6 TDI'de uzun süre bekleyen araç soğuk havada çalıştırılınca şanzıman hatası veriyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.otoarizacozum.com/leon-ariza-ve-cevaplari/",
+      "kaynak_alinti": "2014 model 161 bin km de Seat Leon 1.6 Tdı dsg aracımı 2-3 hafta kadar hiç çalıştırmamıştım. Bugün soğuk havada çalıştırınca D ye aldım ve şanzıman hatası verdi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "DSG kuru kavrama soğukken kaçırıyor; kavrama ve volan malzemesi tek başına 33 bin TL.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/leon-1-6-tdi-dsg-kavrama-kacirmasi.16387/",
+      "kaynak_alinti": "Güncel maliyeti kavrama + volant sadece malzeme 33 bin TL",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Kısa mesafe kullanımda DPF tıkanıyor; rejenerasyon sırasında rölanti tüketimi 1 litreye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/seat-leon-1-6-tdi-110-bg-euro6-dizel-partikul-filtresi-gizli-temizligi--130857670",
+      "kaynak_alinti": "işlem sırasında 0.9-1 lt oluyo rolantide yakıt, normalde 0,3- 0,4 lt",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR sistemi kurumla dolarak valfin çalışmasını engelliyor ve motor arıza lambası yakıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://yoldakiusta.com/motor-arizalari/1-6-tdi-motor-kronik-sorunlari-588.html",
+      "kaynak_alinti": "Egzoz gazı geri dönüşüm sistemi kurumla dolarak valfin çalışmasını engelliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo kaynaklı ani güç kaybı ve motor arıza lambası 60.000 km civarında görülebiliyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/12956-turbo-arizasi/",
+      "kaynak_alinti": "motor arıza lambası yaktı ve sanki turbo devre dışı kalmış gibi çekiş problemi yaşadım",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı, devirdaimle birlikte 120.000 km civarında değişmesi gereken kritik bakım kalemi.",
+      "km_araligi": "120.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/8547-golf-7-1-6-tdi-agir-bakim-triger-devirdaim-degisimi/",
+      "kaynak_alinti": "triger değişimi için 1700 tl devirdaim de değişirse 2380 tl fiyat verdi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "Yağ pompası kayışı aşınan bir parça; iki trigerde bir, en geç 300.000 km'de değişmeli.",
+      "km_araligi": "300.000 km'ye kadar",
+      "kaynak_url": "https://otopark.com/forum/threads/1-6-tdi-yag-pompasi-kayisi-degisim-periyodu.16384/",
+      "kaynak_alinti": "2 trigerde bir değişmesi iyi olur, max. 300 bine kadar değişmesi lazım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehirlerarası yolda 100 km'de 4 litrenin altına inen tüketim kullanıcılarca sık bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2013/07/seat-leon-kullanici-yorumlari.html",
+      "kaynak_alinti": "Sehirlerarasi yolda 115 km de devir saatim 2000 de yakıt tüketimim 3.8",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yüksek hızlı virajlarda arka aksın kayma limiti yüksek, viraj performansı beğeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/seat-leon-1-6-tdi-dsg.9600/",
+      "kaynak_alinti": "Benim şu an ki görüşüm Leon ile gayet sıkı viraj dönülebiliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.6 TDI'nin hızlanması ve tork dağılımı kullanıcılar tarafından başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2016/08/seat-leon-kullanici-yorumlari-2.html",
+      "kaynak_alinti": "Bu motor bu kasaya çok iyi olmuş. Yakıt/performans harika.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk diz ve baş mesafesi Golf 7'den belirgin şekilde daha geniş.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/seat-leon-1-6-tdi-dsg.9600/",
+      "kaynak_alinti": "Leon'un diz ve baş mesafesi Golf'ten çok net şekilde daha iyi. Çünkü koltuk minderleri daha ince.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "DSG şanzıman seri vites geçişleriyle günlük kullanımı kolaylaştırıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://yorumoto.com/seat-leon-2016-419355",
+      "kaynak_alinti": "DSG şanzıman ile seri vites geçişleri.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Arka süspansiyon sert; 17 inç jantla kasis ve bozuk yolda kullanım rahatsız edici.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/seat-leon-1-6-tdi-dsg.9600/",
+      "kaynak_alinti": "Özellikle Leon un arka süspansiyon sistemi Golf ten hem daha sert hem daha sesli. 16 jant ile belki feci bir problem değil ama 17 ile çekilmez.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabine dizel motor sesi ve depodaki yakıtın çalkalanma sesi giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2016/08/seat-leon-kullanici-yorumlari-2.html",
+      "kaynak_alinti": "yakıt deposundan gelen ses, maalesef bu ses insanı rahatsız ediyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "DSG mekatronik ünitesi için sadece yedek parça fiyatı 61.000 TL'ye çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/seat/leon/dsg",
+      "kaynak_alinti": "Mekatronik arızası olduğu söylendi ve şanzıman beyni değişimi için sadece yedek parça için 61.000 TL fiyat çıkarıldı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Standart periyodik bakım paketi 6.250 TL + KDV ve mazot filtresi bu fiyata dahil değil.",
+      "km_araligi": null,
+      "kaynak_url": "https://otodoktor.com/arac-bakim-fiyat-listesi/seat-leon-1-6-tdi/",
+      "kaynak_alinti": "Mazot (yakıt) filtresi bu fiyata dahil değildir; ihtiyaç halinde ayrıca fiyatlandırılır.",
+      "guven": "orta"
+    }
+  ]
+}

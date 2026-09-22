@@ -1,0 +1,161 @@
+{
+  "hedef_id": "opel-astra-1-6",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "LPG'li 1.6 motorlarda 5.000 km'de 1-1,5 litre yağ eksiltme kronik olarak görülüyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/2006-opel-1-6-yag-yakma-problemi--100814100",
+      "kaynak_alinti": "Astra g lpg de kronik olarak yağ yakar.5000km de 1-1.5lt eksiltme normal karşılanır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat arızası kronik; orijinal parçayla değişimden 2 yıl sonra bile tekrarlayabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-termostat-arizasi.120764/",
+      "kaynak_alinti": "Hocam astraların kronik sorunlarından birisi de bu, ben orjinal gm ile değiştirmeme rağmen 2 yıl sonra yine yandı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Astra H 1.6 benzinlide ateşleme bobini sık arızalanıyor; tekleme ve çekiş kaybı yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelyedekparcaonline.com/blog/icerik/astra-h-1-6-benzinli-motorlarda-atesleme-bobini-kronik-sorunlari",
+      "kaynak_alinti": "Astra H 1.6 benzinli motorlarda ateşleme bobinleri sık sık arızalanabilir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Bozuk yolda direksiyon kutusundan gelen tıkırtı sesi kronik bir şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-direksiyon-kutusu-sorunu.44252/",
+      "kaynak_alinti": "opelin kronik sorunu bu sorun etme bozuk yolda teybin sesini aç ses gelmiyor!",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su) pompasından su sızdırma tekrar eden bir soğutma sistemi arızası.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-devirdaim-sorunu.118053/",
+      "kaynak_alinti": "astra h lpg li aracımın bi türlü su arızaları bitmiyor bu seferde devirdaim pompasının oradan kayışa bile sıçrayan bi su işemesi var",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "1.6 benzinli motorda eksantrik dişlisi arızası kronikler arasında sayılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/atmosferik-benzinli-opel-astralarin-kronik-sorunu-icin-cozum-oneriniz--145695479",
+      "kaynak_alinti": "Astra 1.6 Benzinli motorun kronik arızaları ise; Termostat arızası, eksantrik dişlisi arızası, yağ soğutucu arızası, subap erimesi arızası vb.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Easytronic şanzıman vites geçişlerini sert hissettiriyor, seyir halinde boşa atabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-h--2439851?p=6",
+      "kaynak_alinti": "easytronic şanzımanı şans işi, her vites geçişini iliklerine kadar hissettirip yolda giderken aniden kendini boşa atabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "CIM modülü arızalanınca direksiyon merkezindeki korna çalışmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-h--2439851?p=6",
+      "kaynak_alinti": "cim modulü canınızı sıkacaktır. benim sıkıyor mesela korna çalmıyor malesef.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça ve servis erişimi kolay, parça fiyatları uygun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "Aynı zamanda yedek parça ve servis konusunda da erişimi oldukça kolay, parça fiyatları uygun bir model.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu aynı fiyat sınıfındaki rakiplerinin çoğundan daha iyi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/opel-astra-h-2004-2013-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Yol tutuş olarak aynı fiyata satılan rakiplerinin hemen hepsinden daha iyidir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Uzun yolda konforlu bir yolculuk sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/opel-astra-h-2004-2013-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Uzun yolda ise çok konforlu bir yolculuk imkanı sağlıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.6 atmosferik benzinli motor kendini kanıtlamış bir ünite.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "1.6 litre hacmindeki atmosferik yapıdaki benzinli motoru kendini kanıtlamış",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Bakım maliyeti düşük ve parçası kolay bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-h--2439851?p=4",
+      "kaynak_alinti": "Düşük yakıt tüketimi ve bakım maliyeti yanında parçasının kolay bulunması da kendisini fiyat/performans aracı yapıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "1.6 atmosferik benzinli motor günümüz standartlarına göre fazla yakıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "Yakıt tüketim değerleri aracın bugün için biraz fazla yakıt tükettiğini gösteriyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "agir-direksiyon",
+      "iddia": "Direksiyonu ağır, araç hantal hissettiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-h--2439851?p=4",
+      "kaynak_alinti": "Ağırdır, hantaldır, direksiyonu da ağırdır. Virajda korku değil keyif verir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka diz mesafesi dar, kalabalık aile kullanımında sınırda kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/opel-astra-h-2004-2013-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Arka diz mesafesinin ise çok geniş olduğu söylenemez.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Klima açıkken sollama ve rampa performansı belirgin şekilde düşüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/atmosferik-benzinli-opel-astralarin-kronik-sorunu-icin-cozum-oneriniz--145695479",
+      "kaynak_alinti": "Sollamaya çıkmadan klimayı kesinlikle kapatın.",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

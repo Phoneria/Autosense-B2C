@@ -1,0 +1,301 @@
+﻿sira,id,etiket,yil_araligi,ilan_sayisi,durum
+1,renault-clio-1-0-tce,Renault Clio 1.0 TCe,2021-2025,17270,CEKILDI
+2,fiat-egea-1-3-multijet,Fiat Egea 1.3 Multijet,2017-2023,13817,CEKILDI
+3,volkswagen-passat-1-6-tdi-bluemotion,Volkswagen Passat 1.6 TDi BlueMotion,2013-2020,12545,CEKILDI
+4,renault-megane-1-3-tce,Renault Megane 1.3 TCe,2021-2025,11338,CEKILDI
+5,fiat-egea-1-6-multijet,Fiat Egea 1.6 Multijet,2017-2024,10370,CEKILDI
+6,renault-megane-1-5-dci,Renault Megane 1.5 dCi,2007-2019,9231,CEKILDI
+7,bmw-5-serisi-520i,BMW 5 Serisi 520i,2014-2023,9175,CEKILDI
+8,renault-clio-1-5-dci,Renault Clio 1.5 dCi,2006-2019,9038,CEKILDI
+9,fiat-egea-1-4-fire,Fiat Egea 1.4 Fire,2019-2024,8780,CEKILDI
+10,opel-astra-1-6,Opel Astra 1.6,1998-2016,7925,CEKILDI
+11,honda-civic-1-6i-vtec,Honda Civic 1.6i VTEC,2006-2020,7868,CEKILDI
+12,opel-corsa-1-2,Opel Corsa 1.2,2016-2025,7544,CEKILDI
+13,renault-megane-1-5-blue-dci,Renault Megane 1.5 Blue DCI,2020-2023,7444,CEKILDI
+14,toyota-corolla-1-6,Toyota Corolla 1.6,1996-2020,7300,CEKILDI
+15,renault-fluence-1-5-dci,Renault Fluence 1.5 dCi,2011-2016,6892,CEKILDI
+16,hyundai-i20-1-4-mpi,Hyundai i20 1.4 MPI,2017-2023,6677,CEKILDI
+17,ford-focus-1-6-tdci,Ford Focus 1.6 TDCi,2007-2016,6093,CEKILDI
+18,fiat-linea-1-3-multijet,Fiat Linea 1.3 Multijet,2011-2016,6069,CEKILDI
+19,ford-focus-1-5-ecoblue,Ford Focus 1.5 EcoBlue,2020-2025,6007,CEKILDI
+20,toyota-corolla-1-8-hybrid,Toyota Corolla 1.8 Hybrid,2020-2024,5872,CEKILDI
+21,renault-symbol-1-5-dci,Renault Symbol 1.5 dCi,2009-2018,5799,CEKILDI
+22,bmw-3-serisi-320i,BMW 3 Serisi 320i,2009-2025,5704,CEKILDI
+23,hyundai-tucson-1-6-crdi,Hyundai Tucson 1.6 CRDi,2019-2024,5434,CEKILDI
+24,peugeot-3008-1-5-bluehdi,Peugeot 3008 1.5 BlueHDI,2019-2023,5331,CEKILDI
+25,nissan-micra-1-2,Nissan Micra 1.2,2006-2018,5272,CEKILDI
+26,toyota-corolla-1-5,Toyota Corolla 1.5,2021-2025,5146,CEKILDI
+27,volkswagen-golf-1-6-tdi,Volkswagen Golf 1.6 TDi,2011-2018,5011,CEKILDI
+28,volkswagen-tiguan-1-5-tsi,Volkswagen Tiguan 1.5 TSI,2020-2024,4942,CEKILDI
+29,volkswagen-passat-1-5-tsi,Volkswagen Passat 1.5 TSi,2020-2022,4939,CEKILDI
+30,fiat-egea-cross-1-4-fire,Fiat Egea Cross 1.4 Fire,2021-2025,4880,CEKILDI
+31,ford-focus-1-5-tdci,Ford Focus 1.5 TDCi,2015-2021,4842,CEKILDI
+32,volkswagen-t-roc-1-5-tsi,Volkswagen T-Roc 1.5 TSI,2020-2025,4816,CEKILDI
+33,toyota-corolla-1-4-d-4d,Toyota Corolla 1.4 D-4D,2009-2017,4747,CEKILDI
+34,dacia-duster-1-5-dci,Dacia Duster 1.5 dCi,2012-2018,4624,CEKILDI
+35,peugeot-2008-1-2-puretech,Peugeot 2008 1.2 PureTech,2020-2025,4358,CEKILDI
+36,renault-megane-1-6,Renault Megane 1.6,2000-2018,4343,CEKILDI
+37,nissan-qashqai-1-3-dig-t,Nissan Qashqai 1.3 DIG-T,2020-2025,4247,CEKILDI
+38,volkswagen-polo-1-0-tsi,Volkswagen Polo 1.0 TSi,2018-2024,4041,CEKILDI
+39,opel-astra-1-3-cdti,Opel Astra 1.3 CDTI,2007-2013,4027,CEKILDI
+40,skoda-octavia-1-6-tdi,Skoda Octavia 1.6 TDI,2013-2019,4002,CEKILDI
+41,skoda-superb-1-6-tdi,Skoda SuperB 1.6 TDI,2013-2020,4000,CEKILDI
+42,mercedes-benz-e-180,Mercedes - Benz E 180,2014-2024,3879,CEKILDI
+43,volkswagen-tiguan-1-4-tsi,Volkswagen Tiguan 1.4 TSI,2011-2017,3813,CEKILDI
+44,volkswagen-passat-1-4-tsi-bluemotion,Volkswagen Passat 1.4 TSi BlueMotion,2012-2018,3765,CEKILDI
+45,citroen-c3-1-2-puretech,Citroen C3 1.2 PureTech,2020-2024,3747,CEKILDI
+46,skoda-superb-1-5-tsi,Skoda SuperB 1.5 TSI,2020-2024,3623,CEKILDI
+47,dacia-duster-1-3-tce,Dacia Duster 1.3 Tce,2020-2024,3611,CEKILDI
+48,opel-corsa-1-4,Opel Corsa 1.4,1998-2018,3594,CEKILDI
+49,volkswagen-jetta-1-6-tdi,Volkswagen Jetta 1.6 TDi,2011-2015,3506,CEKILDI
+50,nissan-qashqai-1-6-dci,Nissan Qashqai 1.6 dCi,2014-2018,3466,CEKILDI
+51,honda-civic-1-5-i-vtec,Honda Civic 1.5 i-VTEC,2017-2024,3364,CEKILDI
+52,citroen-c5-aircross-1-5-bluehdi,Citroen C5 Aircross 1.5 BlueHDI,2020-2024,3292,CEKILDI
+53,opel-astra-1-4-t,Opel Astra 1.4 T,2012-2020,3260,CEKILDI
+54,opel-corsa-1-3-cdti,Opel Corsa 1.3 CDTI,2004-2014,3257,CEKILDI
+55,ford-fiesta-1-4-tdci,Ford Fiesta 1.4 TDCi,2004-2012,3247,CEKILDI
+56,togg-t10x-v2,TOGG T10X V2,2023-2025,3236,CEKILDI
+57,volkswagen-polo-1-4-tdi,Volkswagen Polo 1.4 TDi,2014-2017,3160,CEKILDI
+58,dacia-duster-1-5-bluedci,Dacia Duster 1.5 BlueDCI,2019-2022,3111,CEKILDI
+59,skoda-scala-1-0-tsi,Skoda Scala 1.0 TSI,2021-2024,3087,CEKILDI
+60,nissan-qashqai-1-5-dci,Nissan Qashqai 1.5 dCi,2011-2020,3082,CEKILDI
+61,volkswagen-taigo-1-0-tsi,Volkswagen Taigo 1.0 TSI,2022-2025,3021,CEKILDI
+62,kia-sportage-1-6,Kia Sportage 1.6,2012-2017,2966,CEKILDI
+63,seat-leon-1-6-tdi,Seat Leon 1.6 TDI,2012-2019,2945,CEKILDI
+64,opel-crossland-1-2-t,Opel Crossland 1.2 T,2021-2024,2928,CEKILDI
+65,bmw-3-serisi-320d,BMW 3 Serisi 320d,2006-2016,2903,CEKILDI
+66,opel-mokka-1-2-t,Opel Mokka 1.2 T,2022-2025,2898,CEKILDI
+67,chevrolet-captiva-2-0-d,Chevrolet Captiva 2.0 D,2008-2012,2880,CEKILDI
+68,dacia-sandero-stepway-1-0-tce,Dacia Sandero Stepway 1.0 Tce,2022-2025,2875,CEKILDI
+69,volkswagen-golf-1-4-tsi,Volkswagen Golf 1.4 TSi,2009-2017,2870,CEKILDI
+70,bmw-3-serisi-320i-ed,BMW 3 Serisi 320i ED,2013-2016,2772,CEKILDI
+71,mercedes-benz-e-200-d,Mercedes - Benz E 200 d,2020-2023,2684,CEKILDI
+72,citroen-c4-x-1-2-puretech,Citroen C4 X 1.2 PureTech,2023-2025,2644,CEKILDI
+73,volkswagen-polo-1-4,Volkswagen Polo 1.4,2001-2012,2538,CEKILDI
+74,fiat-egea-cross-1-6-multijet,Fiat Egea Cross 1.6 Multijet,2022-2025,2485,CEKILDI
+75,dacia-sandero-1-5-dci,Dacia Sandero 1.5 dCi,2013-2018,2455,CEKILDI
+76,ford-ranger-2-0-ecoblue,Ford Ranger 2.0 EcoBlue,2020-2025,2450,CEKILDI
+77,hyundai-i20-1-0-t-gdi,Hyundai i20 1.0 T-GDI,2023-2025,2436,CEKILDI
+78,mitsubishi-l-200-4x4,Mitsubishi L 200 4x4,2008-2021,2381,CEKILDI
+79,opel-astra-1-6-cdti,Opel Astra 1.6 CDTI,2015-2018,2332,CEKILDI
+80,mercedes-benz-e-200,Mercedes - Benz E 200,1994-2016,2292,CEKILDI
+81,renault-r-9-1-4-broadway,Renault R 9 1.4 Broadway,1991-1998,2289,CEKILDI
+82,renault-clio-1-0-sce,Renault Clio 1.0 SCe,2020-2023,2280,KALDI
+83,bmw-1-serisi-116i,BMW 1 Serisi 116i,2008-2014,2260,KALDI
+84,peugeot-408-1-2-puretech,Peugeot 408 1.2 PureTech,2023-2025,2254,KALDI
+85,hyundai-i30-1-6-crdi,Hyundai i30 1.6 CRDi,2010-2017,2089,KALDI
+86,bmw-3-serisi-316i,BMW 3 Serisi 316i,1997-2014,2073,KALDI
+87,bmw-5-serisi-525d-xdrive,BMW 5 Serisi 525d xDrive,2012-2015,2069,KALDI
+88,peugeot-2008-1-5-bluehdi,Peugeot 2008 1.5 BlueHDI,2020-2023,2069,KALDI
+89,ford-focus-1-6-ti-vct,Ford Focus 1.6 Ti-VCT,2012-2017,2066,KALDI
+90,renault-clio-1-4,Renault Clio 1.4,1998-2006,2024,KALDI
+91,hyundai-accent-blue-1-6-crdi,Hyundai Accent Blue 1.6 CRDI,2013-2018,2023,KALDI
+92,peugeot-208-1-2-puretech,Peugeot 208 1.2 PureTech,2015-2023,2019,KALDI
+93,ford-focus-1-6,Ford Focus 1.6,2001-2011,2018,KALDI
+94,opel-insignia-1-6-cdti,Opel Insignia 1.6 CDTI,2015-2020,2015,KALDI
+95,bmw-5-serisi-520d,BMW 5 Serisi 520d,2008-2015,1972,KALDI
+96,citroen-c-elys-e-1-5-bluehdi,Citroen C-Elysée 1.5 BlueHDI,2020-2023,1972,KALDI
+97,nissan-qashqai-1-2-dig-t,Nissan Qashqai 1.2 DIG-T,2014-2018,1958,KALDI
+98,renault-clio-1-5-dci-sporttourer,Renault Clio 1.5 dCi SportTourer,2014-2019,1949,KALDI
+99,bmw-1-serisi-118i,BMW 1 Serisi 118i,2015-2023,1926,KALDI
+100,peugeot-301-1-6-hdi,Peugeot 301 1.6 HDi,2013-2018,1924,KALDI
+101,opel-corsa-1-4-twinport,Opel Corsa 1.4 Twinport,2007-2013,1903,KALDI
+102,opel-corsa-1-2-twinport,Opel Corsa 1.2 Twinport,2005-2014,1895,KALDI
+103,hyundai-tucson-1-6-t-gdi,Hyundai Tucson 1.6 T-GDi,2015-2025,1884,KALDI
+104,citroen-c-elys-e-1-6-hdi,Citroen C-Elysée 1.6 HDi,2013-2017,1847,KALDI
+105,tofas-sahin-1-6,Tofaş Şahin 1.6,1991-1996,1840,KALDI
+106,renault-clio-1-2,Renault Clio 1.2,2005-2017,1834,KALDI
+107,honda-cr-v-1-6-i-dtec,Honda CR-V 1.6 i-DTEC,2014-2018,1831,KALDI
+108,volkswagen-golf-1-2-tsi,Volkswagen Golf 1.2 TSi,2013-2016,1827,KALDI
+109,kia-sportage-1-6-crdi,Kia Sportage 1.6 CRDI,2019-2021,1815,KALDI
+110,skoda-octavia-1-0-e-tec,Skoda Octavia 1.0 e-Tec,2020-2024,1810,KALDI
+111,hyundai-bayon-1-4-mpi,Hyundai Bayon 1.4 MPI,2021-2024,1790,KALDI
+112,volkswagen-amarok-3-0-tdi,Volkswagen Amarok 3.0 TDI,2017-2025,1780,KALDI
+113,peugeot-206-1-4,Peugeot 206 1.4,2002-2009,1777,KALDI
+114,volkswagen-polo-1-6,Volkswagen Polo 1.6,1997-2001,1757,KALDI
+115,nissan-juke-1-6,Nissan Juke 1.6,2012-2018,1753,KALDI
+116,renault-taliant-1-0-t,Renault Taliant 1.0 T,2021-2023,1716,KALDI
+117,volvo-xc90-2-0-b5,Volvo XC90 2.0 B5,2020-2025,1665,KALDI
+118,mitsubishi-l-200-4x2,Mitsubishi L 200 4x2,1999-2021,1662,KALDI
+119,mercedes-benz-cla-200,Mercedes - Benz CLA 200,2013-2024,1647,KALDI
+120,citroen-c3-aircross-1-2-puretech,Citroen C3 Aircross 1.2 PureTech,2021-2024,1632,KALDI
+121,peugeot-308-1-2-puretech,Peugeot 308 1.2 PureTech,2015-2024,1616,KALDI
+122,nissan-juke-1-0-dig-t,Nissan Juke 1.0 DIG-T,2021-2025,1605,KALDI
+123,opel-vectra-2-0,Opel Vectra 2.0,1993-1999,1602,KALDI
+124,peugeot-3008-1-6-bluehdi,Peugeot 3008 1.6 BlueHDi,2015-2018,1584,KALDI
+125,bmw-3-serisi-318i,BMW 3 Serisi 318i,1999-2018,1569,KALDI
+126,bmw-x3-20i-sdrive,BMW X3 20i sDrive,2016-2025,1539,KALDI
+127,peugeot-3008-1-2-hybrid,Peugeot 3008 1.2 Hybrid,2024-2025,1536,KALDI
+128,volkswagen-vw-cc-1-4-tsi,Volkswagen VW CC 1.4 TSi,2012-2016,1515,KALDI
+129,volkswagen-polo-1-6-tdi,Volkswagen Polo 1.6 TDi,2012-2019,1494,KALDI
+130,fiat-palio-1-2,Fiat Palio 1.2,2001-2006,1486,KALDI
+131,hyundai-bayon-1-0-t-gdi,Hyundai Bayon 1.0 T-GDI,2024-2025,1463,KALDI
+132,bmw-1-serisi-116d,BMW 1 Serisi 116d,2015-2021,1461,KALDI
+133,renault-symbol-1-2,Renault Symbol 1.2,2011-2015,1459,KALDI
+134,byd-seal-u-dm-i-1-5-phev,BYD Seal U DM-i 1.5 Phev,2024-2025,1442,KALDI
+135,hyundai-ix35-1-6-gdi,Hyundai ix35 1.6 GDI,2012-2015,1433,KALDI
+136,volvo-s60-1-6-d,Volvo S60 1.6 D,2012-2015,1396,KALDI
+137,volkswagen-passat-2-0-tdi-bluemotion,Volkswagen Passat 2.0 TDi BlueMotion,2012-2020,1394,KALDI
+138,toyota-c-hr-1-8-hybrid,Toyota C-HR 1.8 Hybrid,2017-2025,1391,KALDI
+139,hyundai-i20-1-4-crdi,Hyundai i20 1.4 CRDi,2012-2019,1390,KALDI
+140,mg-hs-1-5-t-gdi,MG HS 1.5 T-GDI,2023-2024,1383,KALDI
+141,peugeot-508-1-5-bluehdi,Peugeot 508 1.5 BlueHDI,2020-2023,1380,KALDI
+142,toyota-corolla-cross-1-8-hybrid,Toyota Corolla Cross 1.8 Hybrid,2022-2025,1373,KALDI
+143,renault-clio-0-9-tce,Renault Clio 0.9 TCe,2015-2020,1371,KALDI
+144,toyota-corolla-1-33,Toyota Corolla 1.33,2014-2017,1365,KALDI
+145,renault-kadjar-1-5-dci,Renault Kadjar 1.5 dCi,2015-2018,1361,KALDI
+146,ford-fiesta-1-5-tdci,Ford Fiesta 1.5 TDCi,2013-2017,1350,KALDI
+147,kia-sportage-1-6-t-gdi,Kia Sportage 1.6 T-GDI,2016-2025,1347,KALDI
+148,nissan-qashqai-1-6,Nissan Qashqai 1.6,2009-2013,1346,KALDI
+149,skoda-kamiq-1-0-tsi,Skoda Kamiq 1.0 TSI,2021-2025,1330,KALDI
+150,volkswagen-polo-1-2-tsi,Volkswagen Polo 1.2 TSi,2014-2017,1328,KALDI
+151,ford-c-max-1-6-tdci,Ford C-Max 1.6 TDCi,2005-2013,1319,KALDI
+152,hyundai-getz-1-4-dohc,Hyundai Getz 1.4 DOHC,2007-2010,1316,KALDI
+153,volkswagen-t-cross-1-0-tsi,Volkswagen T-Cross 1.0 TSI,2022-2025,1313,KALDI
+154,ford-puma-1-0-ecoboost,Ford Puma 1.0 EcoBoost,2020-2024,1311,KALDI
+155,chery-tiggo-8-pro-1-6-tgdi,Chery Tiggo 8 Pro 1.6 TGDI,2023-2024,1305,KALDI
+156,porsche-cayenne-3-0-diesel,Porsche Cayenne 3.0 Diesel,2011-2016,1293,KALDI
+157,mercedes-benz-e-220-d,Mercedes - Benz E 220 D,2016-2025,1275,KALDI
+158,chery-omoda-5-1-6-t-gdi,Chery Omoda 5 1.6 T-GDI,2023-2024,1273,KALDI
+159,volkswagen-golf-1-0-etsi,Volkswagen Golf 1.0 eTSI,2021-2023,1270,KALDI
+160,suzuki-vitara-1-4-boosterjet-hibrit,Suzuki Vitara 1.4 Boosterjet Hibrit,2022-2025,1260,KALDI
+161,renault-r-19-1-6-europa,Renault R 19 1.6 Europa,1997-2001,1253,KALDI
+162,chery-tiggo-7-pro-1-6-tgdi,Chery Tiggo 7 Pro 1.6 TGDI,2023-2024,1240,KALDI
+163,renault-r-12-toros,Renault R 12 Toros,1989-1998,1240,KALDI
+164,jeep-renegade-1-6-multijet,Jeep Renegade 1.6 MultiJet,2015-2020,1239,KALDI
+165,ford-kuga-1-5-ecoboost,Ford Kuga 1.5 EcoBoost,2015-2025,1229,KALDI
+166,volkswagen-golf-1-6,Volkswagen Golf 1.6,1997-2011,1222,KALDI
+167,mercedes-benz-e-250-cdi,Mercedes - Benz E 250 CDI,2011-2015,1203,KALDI
+168,seat-ateca-1-5-ecotsi,Seat Ateca 1.5 EcoTSI,2020-2025,1201,KALDI
+169,audi-q3-35-tfsi,Audi Q3 35 TFSI,2021-2025,1199,KALDI
+170,toyota-yaris-1-33,Toyota Yaris 1.33,2011-2016,1181,KALDI
+171,toyota-auris-1-4-d-4d,Toyota Auris 1.4 D-4D,2008-2013,1178,KALDI
+172,skoda-karoq-1-5-tsi,Skoda Karoq 1.5 TSI,2020-2025,1170,KALDI
+173,subaru-xv-1-6,Subaru XV 1.6,2013-2022,1170,KALDI
+174,seat-arona-1-0-ecotsi,Seat Arona 1.0 EcoTSI,2021-2024,1143,KALDI
+175,volkswagen-amarok-2-0-bi-tdi,Volkswagen Amarok 2.0 Bi-TDI,2013-2016,1139,KALDI
+176,mercedes-benz-cla-180-d,Mercedes - Benz CLA 180 D,2014-2018,1134,KALDI
+177,hyundai-i20-1-2-mpi,Hyundai i20 1.2 MPI,2014-2025,1133,KALDI
+178,volkswagen-jetta-1-4-tsi-bluemotion,Volkswagen Jetta 1.4 TSi BlueMotion,2015-2017,1130,KALDI
+179,renault-captur-1-5-dci,Renault Captur 1.5 dCi,2013-2018,1126,KALDI
+180,fiat-tempra-1-6,Fiat Tempra 1.6,1992-1998,1123,KALDI
+181,hyundai-accent-1-3,Hyundai Accent 1.3,1998-2005,1120,KALDI
+182,honda-jazz-1-4,Honda Jazz 1.4,2004-2012,1118,KALDI
+183,isuzu-d-max-1-9-d,Isuzu D-Max 1.9 D,2019-2025,1105,KALDI
+184,volkswagen-jetta-1-4-tsi,Volkswagen Jetta 1.4 TSi,2008-2015,1105,KALDI
+185,isuzu-d-max-2-5,Isuzu D-Max 2.5,2007-2017,1093,KALDI
+186,toyota-auris-1-6,Toyota Auris 1.6,2008-2016,1093,KALDI
+187,renault-austral-1-3-hybrid,Renault Austral 1.3 Hybrid,2023-2025,1090,KALDI
+188,skoda-octavia-1-5-e-tec,Skoda Octavia 1.5 e-Tec,2021-2024,1086,KALDI
+189,chevrolet-cruze-1-6,Chevrolet Cruze 1.6,2010-2012,1085,KALDI
+190,ford-kuga-1-5-ecoblue,Ford Kuga 1.5 EcoBlue,2020-2022,1078,KALDI
+191,ford-ecosport-1-0-ecoboost,Ford EcoSport 1.0 EcoBoost,2018-2022,1070,KALDI
+192,ford-fiesta-1-4,Ford Fiesta 1.4,2004-2012,1069,KALDI
+193,volkswagen-bora-1-6,Volkswagen Bora 1.6,1999-2004,1069,KALDI
+194,volkswagen-jetta-1-2-tsi,Volkswagen Jetta 1.2 TSi,2012-2015,1046,KALDI
+195,bmw-x5-25d-xdrive,BMW X5 25d xDrive,2014-2018,1045,KALDI
+196,ford-fiesta-1-6,Ford Fiesta 1.6,2008-2017,1040,KALDI
+197,citroen-c4-1-2-puretech,Citroen C4 1.2 PureTech,2021-2025,1038,KALDI
+198,ford-puma-1-0-ecoboost-hybrid,Ford Puma 1.0 EcoBoost Hybrid,2024-2025,1038,KALDI
+199,nissan-skystar-4x2,Nissan Skystar 4x2,1998-2009,1035,KALDI
+200,nissan-x-trail-1-6-dci,Nissan X-Trail 1.6 dCi,2015-2018,1032,KALDI
+201,dacia-sandero-0-9-tce,Dacia Sandero 0.9 TCe,2013-2020,1017,KALDI
+202,seat-ibiza-1-0-ecotsi,Seat Ibiza 1.0 EcoTSI,2016-2025,1017,KALDI
+203,tofas-dogan-slx,Tofaş Doğan SLX,1993-1997,1014,KALDI
+204,opel-astra-1-4,Opel Astra 1.4,1997-2011,1013,KALDI
+205,honda-city-1-5-i-vtec,Honda City 1.5 i-VTEC,2021-2024,1010,KALDI
+206,nissan-qashqai-1-5-e-power,Nissan Qashqai 1.5 e-Power,2023-2025,994,KALDI
+207,ford-kuga-1-5-tdci,Ford Kuga 1.5 TDCi,2017-2019,993,KALDI
+208,kia-stonic-1-4-mpi,Kia Stonic 1.4 MPI,2021-2023,989,KALDI
+209,seat-leon-1-2-tsi,Seat Leon 1.2 TSI,2013-2018,987,KALDI
+210,fiat-500-ailesi-500l-1-3-mjet,Fiat 500 Ailesi 500L 1.3 Mjet,2013-2020,986,KALDI
+211,audi-q7-3-0-tdi-quattro,Audi Q7 3.0 TDI Quattro,2008-2014,983,KALDI
+212,hyundai-accent-era-1-4,Hyundai Accent Era 1.4,2008-2012,976,KALDI
+213,audi-q2-35-tfsi,Audi Q2 35 TFSI,2020-2025,969,KALDI
+214,renault-captur-1-3-tce,Renault Captur 1.3 TCe,2020-2024,966,KALDI
+215,bmw-4-serisi-418i-gran-coupe,BMW 4 Serisi 418i Gran Coupe,2015-2018,965,KALDI
+216,hyundai-getz-1-5-crdi,Hyundai Getz 1.5 CRDi,2005-2011,962,KALDI
+217,volvo-s90-2-0-d-b5,Volvo S90 2.0 D B5,2021-2023,961,KALDI
+218,bmw-2-serisi-218i-gran-coupe,BMW 2 Serisi 218i Gran Coupe,2020-2024,952,KALDI
+219,fiat-albea-sole-1-3-multijet,Fiat Albea Sole 1.3 Multijet,2008-2012,939,KALDI
+220,renault-symbol-1-4,Renault Symbol 1.4,2005-2010,939,KALDI
+221,hyundai-accent-era-1-5-crdi-vgt,Hyundai Accent Era 1.5 CRDi-VGT,2007-2011,934,KALDI
+222,cupra-formentor-1-5-tsi,Cupra Formentor 1.5 TSI,2022-2024,932,KALDI
+223,opel-astra-1-2-t,Opel Astra 1.2 T,2020-2025,927,KALDI
+224,renault-r-19-1-4-europa,Renault R 19 1.4 Europa,1996-1999,926,KALDI
+225,volkswagen-tiguan-2-0-tdi,Volkswagen Tiguan 2.0 TDI,2009-2017,919,KALDI
+226,mini-cooper-1-5,Mini Cooper 1.5,2017-2025,909,KALDI
+227,volkswagen-golf-1-5-etsi,Volkswagen Golf 1.5 eTSI,2023-2025,904,KALDI
+228,fiat-uno-70-s,Fiat Uno 70 S,1995-1999,901,KALDI
+229,volkswagen-passat-2-0-tdi,Volkswagen Passat 2.0 TDi,2006-2021,889,KALDI
+230,ford-escort-1-6,Ford Escort 1.6,1994-1998,885,KALDI
+231,audi-q5-2-0-tdi-quattro,Audi Q5 2.0 TDI Quattro,2009-2016,877,KALDI
+232,hyundai-getz-1-3,Hyundai Getz 1.3,2004-2006,874,KALDI
+233,nissan-navara-2-3-dci,Nissan Navara 2.3 dCi,2016-2021,873,KALDI
+234,dacia-logan-1-5-dci-mcv,Dacia Logan 1.5 dCi MCV,2009-2016,870,KALDI
+235,bmw-2-serisi-216d-gran-coupe,BMW 2 Serisi 216d Gran Coupe,2020-2023,867,KALDI
+236,renault-fluence-1-6,Renault Fluence 1.6,2010-2013,855,KALDI
+237,kia-ceed-1-6-crdi,Kia Ceed 1.6 CRDi,2011-2017,853,KALDI
+238,hyundai-tucson-1-6-gdi,Hyundai Tucson 1.6 GDi,2015-2018,852,KALDI
+239,tofas-sahin-s,Tofaş Şahin S,1995-1998,843,KALDI
+240,bmw-5-serisi-520d-xdrive,BMW 5 Serisi 520d xDrive,2017-2023,833,KALDI
+241,nissan-juke-1-5-dci,Nissan Juke 1.5 dCi,2012-2018,832,KALDI
+242,hyundai-elantra-1-6-mpi,Hyundai Elantra 1.6 MPI,2019-2024,830,KALDI
+243,bmw-x1-xdrive25e,BMW X1 xDrive25e,2025-2025,825,KALDI
+244,volvo-xc60-2-0-d4,Volvo XC60 2.0 D4,2013-2018,822,KALDI
+245,opel-grandland-1-2-t,Opel Grandland 1.2 T,2022-2025,807,KALDI
+246,chevrolet-aveo-1-4,Chevrolet Aveo 1.4,2006-2012,806,KALDI
+247,hyundai-elantra-1-6,Hyundai Elantra 1.6,1999-2005,801,KALDI
+248,citroen-c3-1-4-hdi,Citroen C3 1.4 HDi,2004-2011,791,KALDI
+249,peugeot-206-1-4-hdi,Peugeot 206 1.4 HDi,2003-2011,790,KALDI
+250,dacia-sandero-1-0-tce,Dacia Sandero 1.0 TCe,2021-2025,789,KALDI
+251,volkswagen-polo-1-0,Volkswagen Polo 1.0,2015-2024,787,KALDI
+252,honda-hr-v-1-5-e-hev,Honda HR-V 1.5 e-HEV,2022-2025,781,KALDI
+253,fiat-linea-1-4-fire,Fiat Linea 1.4 Fire,2011-2017,779,KALDI
+254,hyundai-kona-1-6-crdi,Hyundai Kona 1.6 CRDI,2019-2020,765,KALDI
+255,ford-fiesta-1-25,Ford Fiesta 1.25,1998-2016,764,KALDI
+256,opel-vectra-1-6,Opel Vectra 1.6,1997-2006,762,KALDI
+257,opel-insignia-1-6-t,Opel Insignia 1.6 T,2009-2015,759,KALDI
+258,chery-tiggo-8-pro-max-exceptional,Chery Tiggo 8 Pro Max Exceptional,2024-2025,754,KALDI
+259,mercedes-benz-e-350-cdi,Mercedes - Benz E 350 CDI,2011-2012,743,KALDI
+260,volkswagen-passat-1-6,Volkswagen Passat 1.6,2000-2010,743,KALDI
+261,renault-r-9-1-4,Renault R 9 1.4,1986-1996,738,KALDI
+262,citroen-c4-1-6-hdi,Citroen C4 1.6 HDi,2006-2015,737,KALDI
+263,skoda-superb-1-5-tsi-hybrid,Skoda SuperB 1.5 TSI Hybrid,2024-2025,737,KALDI
+264,land-rover-discovery-sport-2-0-td4,Land Rover Discovery Sport 2.0 TD4,2015-2019,734,KALDI
+265,renault-captur-1-2-tce,Renault Captur 1.2 TCe,2013-2016,731,KALDI
+266,skoda-scala-1-6-tdi,Skoda Scala 1.6 TDI,2020-2023,731,KALDI
+267,bmw-x3-20d-xdrive,BMW X3 20d xDrive,2009-2025,729,KALDI
+268,mg-zs-1-0-t-gdi,MG ZS 1.0 T-GDI,2022-2024,726,KALDI
+269,bmw-x1-20i-sdrive,BMW X1 20i sDrive,2023-2025,721,KALDI
+270,fiat-marea-1-6,Fiat Marea 1.6,1998-2005,721,KALDI
+271,volkswagen-jetta-1-6,Volkswagen Jetta 1.6,2006-2010,713,KALDI
+272,volkswagen-jetta-1-2-tsi-bluemotion,Volkswagen Jetta 1.2 TSi BlueMotion,2015-2017,709,KALDI
+273,volkswagen-passat-1-9-tdi,Volkswagen Passat 1.9 TDi,1999-2004,709,KALDI
+274,fiat-albea-1-3-multijet,Fiat Albea 1.3 Multijet,2004-2008,708,KALDI
+275,mercedes-benz-e-220-cdi,Mercedes - Benz E 220 CDI,2001-2011,707,KALDI
+276,hyundai-accent-era-1-5-crdi,Hyundai Accent Era 1.5 CRDi,2009-2012,706,KALDI
+277,nissan-navara-2-5-tdi,Nissan Navara 2.5 TDI,2006-2013,704,KALDI
+278,volkswagen-scirocco-1-4-tsi,Volkswagen Scirocco 1.4 TSi,2010-2016,701,KALDI
+279,peugeot-207-1-4,Peugeot 207 1.4,2008-2011,699,KALDI
+280,honda-cr-v-1-5-vtec,Honda CR-V 1.5 VTEC,2018-2022,697,KALDI
+281,fiat-palio-1-4,Fiat Palio 1.4,1998-2001,692,KALDI
+282,peugeot-301-1-5-bluehdi,Peugeot 301 1.5 BlueHDI,2019-2020,692,KALDI
+283,audi-q3-1-4-tfsi,Audi Q3 1.4 TFSi,2014-2025,685,KALDI
+284,renault-clio-1-3-tce,Renault Clio 1.3 TCe,2020-2020,684,KALDI
+285,skoda-octavia-1-5-mhev,Skoda Octavia 1.5 Mhev,2024-2025,677,KALDI
+286,bmw-x1-16d-sdrive,BMW X1 16d sDrive,2018-2021,676,KALDI
+287,kia-sorento-2-5-crdi,Kia Sorento 2.5 CRDi,2006-2009,676,KALDI
+288,hyundai-accent-1-5,Hyundai Accent 1.5,1995-2001,671,KALDI
+289,mini-cooper-1-5-d,Mini Cooper 1.5 D,2015-2017,670,KALDI
+290,opel-grandland-1-5-d,Opel Grandland 1.5 D,2022-2023,669,KALDI
+291,volkswagen-polo-1-2-tdi,Volkswagen Polo 1.2 TDi,2012-2014,663,KALDI
+292,dacia-lodgy-1-5-bluedci,Dacia Lodgy 1.5 BlueDCI,2019-2021,658,KALDI
+293,kia-rio-1-4-cvvt,Kia Rio 1.4 CVVT,2012-2023,657,KALDI
+294,ford-mondeo-2-0-tdci,Ford Mondeo 2.0 TDCi,2004-2015,656,KALDI
+295,volkswagen-amarok-2-0-tdi,Volkswagen Amarok 2.0 TDI,2011-2025,655,KALDI
+296,bmw-ix1-edrive20,BMW iX1 eDrive20,2024-2025,646,KALDI
+297,volvo-s40-1-6-d,Volvo S40 1.6 D,2006-2012,646,KALDI
+298,bmw-x1-18i-sdrive,BMW X1 18i sDrive,2016-2022,637,KALDI
+299,honda-cr-v-2-0i,Honda CR-V 2.0i,1999-2011,635,KALDI
+300,peugeot-207-1-4-hdi,Peugeot 207 1.4 HDi,2007-2011,629,KALDI

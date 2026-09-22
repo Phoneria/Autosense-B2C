@@ -1,0 +1,161 @@
+{
+  "hedef_id": "opel-astra-1-4-t",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "70.000 km civarında turbo hatası ve zengin karışım arızası bildiriliyor.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/1-4-turbo-motor-bas-ma-gelenler.122153/",
+      "kaynak_alinti": "meşhur turbo hatası ile zengin karışım hatası verdi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.4 Turbo motorda yağ eksiltme ve egzozdan duman atma şikayeti görülüyor.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/1-4-turbo-motor-bas-ma-gelenler.122153/",
+      "kaynak_alinti": "araçtan yaklaşık 1.5 litre yağ çıktı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "50.000 km civarında devirdaim (su pompası) kaçırması ve su eksiltme görülüyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-j-1-4-t-devirdaim-su-pompasi-degisimi.166894/",
+      "kaynak_alinti": "Kilometresi 50 binde olan Astra J 1.4 T aracımda uzun zamandır su eksiltme olayı vardı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat gövdesinin çatlaması hararet yapmaya yol açan kronik bir sorun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/opel-astra-j-1-4-turbo-hararet-sorunu.138639/",
+      "kaynak_alinti": "Skintiniz termostat govdesi muhtemelen",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zincirinin erken uzaması motoru zamanından önce bakıma sokuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opellcenter.com/blog/opel-astra-14-turbo-kronik-sorunlari",
+      "kaynak_alinti": "Triger zincirinin erken uzaması motorun zamanından önce bakım gerektirmesine yol açıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Ateşleme bobini arızası tekleme, ESP hatası ve çekişten düşmeye yol açıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/opel-astra-j-1-4t-tekleme--153659523",
+      "kaynak_alinti": "Bobin kaynaklı bir sorun. Kesinlikle bobin + 4 buji değişti sorun ortadan kalktı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Active Select otomatik şanzımanda kalkışta gecikme ve vuruntu şikayeti yaygın.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/astra-j-1-4t-cosmo-active-select-otomatik-sanziman-sorunu--156423015",
+      "kaynak_alinti": "Dur kalk trafikte ilerlerken kalkışta gaza basınca vites sanki boştaymış gibi araç hareketine etki etmiyor, 5-6 sn. sonra hafif bir vuruntu ile tak vites geçiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj pedalı sınıfına göre sert; set değişiminden sonra da sertlik sürüyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-j-1-4-turbo-debriyaj-sertligi.140879/",
+      "kaynak_alinti": "Bizim araçların debriyajı biraz serttir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "140 HP 1.4 Turbo motor canlı; yüksek hızlara zorlanmadan çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-j-1-4-cosmo140-hp--3532783",
+      "kaynak_alinti": "saatte 180 km hıza hiç zorlanmadan selam çakabiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "İç hacim sınıfına göre geniş; 5 kişi rahat yolculuk edebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-j-1-4-cosmo140-hp--3532783",
+      "kaynak_alinti": "aracın içinin genişliği gayet tatminkardır ve geniştir. 5 kişi rahat bir şekilde yolculuk yapar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu ve frenleme mesafesi kullanıcılar tarafından başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-4-turbo.11491/",
+      "kaynak_alinti": "Yol tutuşu iyi, frenleme mesafesi iyi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "AFL adaptif far donanımı gece sürüşünde yorgunluğu belirgin azaltıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-j-1-4-cosmo140-hp--3532783",
+      "kaynak_alinti": "afl farlarıyla gece yolculuğu hiç yorucu gelmiyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Bakım maliyetleri rakip Japon markalara kıyasla düşük bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-4-turbo.11491/",
+      "kaynak_alinti": "İç mekan genişliği fena değil, bakım maliyetleri Honda'ya göre düşük",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Şehir içi tüketim 10-11 litreyi buluyor, ekonomik sayılmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-j-1-4-sport-140-hp--2690860",
+      "kaynak_alinti": "şehir içi 10lt/100km altını görmesi zor araç",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan plastiklerinin zamanla ses çıkarması yaygın şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-j-1-4-sport-140-hp--2690860",
+      "kaynak_alinti": "aracın içindeki bazı plastik aksamların arada sırada ses çıkarması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "18 inç jantlı versiyonlarda süspansiyon aşırı sert bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-4-turbo.11491/",
+      "kaynak_alinti": "Konforu iyi değil, özellikle 18\" jantlarla aşırı sert bir araba",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabinde iç kaplamalardan gelen trim sesleri şikayet konusu.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-4-turbo.11491/",
+      "kaynak_alinti": "Her tarafından trim sesi geliyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

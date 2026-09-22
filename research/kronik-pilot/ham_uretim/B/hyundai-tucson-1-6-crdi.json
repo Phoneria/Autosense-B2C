@@ -1,0 +1,149 @@
+{
+  "hedef_id": "hyundai-tucson-1-6-crdi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Dizel partikül filtresi tekrar tekrar tıkanıyor; 42.000 km'deki araçta bir yıl içinde üç kez DPF arızası görüldü.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-dizel-partikul-filtresi-arizasi-surekli-tekrarliyor",
+      "kaynak_alinti": "2023 model Hyundai Tucson dizel Elite Plus aracım daha 42.000 km'de olmasına rağmen bu yıl içerisinde üç kez dizel partikül filtresi arızası verdi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikül filtresi değişiminden 8 ay sonra arıza tekrarlıyor; 100.000 km'den sonra garanti bitince masraf sahibe kalıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-partikul-filtresi-arizasi-ve-yuksek-degisim-maliyeti",
+      "kaynak_alinti": "Servisteki usta bu sorunun kronik olduğunu, araç 100 bini geçtiği için garantinin bittiğini ve değişim yapılamayacağını söyledi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Motor yağına dizel karışıyor ve yağ seviyesi sürekli yükseliyor; servis sadece fazla yağı alıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-dizel-motor-yag-seviyesi-surekli-artiyor-ve-dizel-karisiyor",
+      "kaynak_alinti": "2024 model dizel Hyundai Tucson aracımda yaklaşık iki yıldır motor yağ seviyesinde sürekli artış ve motor yağına dizel karışması sorunu yaşıyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "Dur-kalk trafiğinde ve rampada çift kavramalı DCT şanzımanda aşırı titreme ve kalkışta zorlanma yaygın.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-sanziman-titremesi-ve-cozulmeyen-kavrama-sorunu-magduriyeti",
+      "kaynak_alinti": "2021 model Hyundai Tucson 1.6 CRDİ Elite marka aracımda 2024 Ekim ayından bu yana trafikte dur-kalklarda ve rampalarda aşırı titreme ile hareketlenmede zorlanma sorunu yaşıyorum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Kavrama seti 52.000 km'de aracı yolda bırakacak şekilde arızalanıp değişti, 60-65.000 km'de sorun tekrarladı.",
+      "km_araligi": "50.000-90.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-assan-tucson-sanziman-sorunlari-ve-garanti-magduriyeti",
+      "kaynak_alinti": "52.000 km'de yolda kaldım ve kavramalar garanti kapsamında değiştirildi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DPF ve çift kavrama arızaları 90.000 km civarında birlikte başlayıp garanti sınırında kronikleşiyor.",
+      "km_araligi": "90.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-dpf-ve-dct-arizalarinda-garanti-reddi-ve-fahis-ucret",
+      "kaynak_alinti": "2021 model Hyundai Tucson 1.6 CRDi DCT aracımda, garanti süresi devam ederken ve yaklaşık 90.000 km civarında başlayıp 6–7 aydır devam eden kronik DPF (partikül filtresi) ve çift kavrama (DCT) arızaları bulunmaktadır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "2019-2020 model araçlarda arka koltuk altından gelen yakıt pompası uğultusu bilinen bir sorun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-yakit-pompasindan-gelen-ses",
+      "kaynak_alinti": "Biraz araştırma yaptık ve Tucson'larda kronik bir yakıt pompası sorunu olduğu servisleri bu sorunu garanti kapsamında değiştirdiği bilgisini aldık.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Garanti biter bitmez 50.000 km'de PM sensörü ve şanzıman arızası peş peşe çıkabiliyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/garanti-sonrasi-pes-pese-sanziman-ve-sensor-arizalari-ve-yetkili-servisin-cevapsizligi",
+      "kaynak_alinti": "Araç şu an 50.000 kilometrede ve garantisi yaklaşık 6 ay önce bitti. Yaklaşık 40 gün önce önce pm sensörü, yaklaşık 10 gün sonra da şanzıman arızası verdi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Gerçek tüketim uzun yolda 4,7-5,5 lt, şehir içinde 5,9-6,2 lt aralığında bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/hyundai-tucson-1.6-crdi-alinir-mi-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Kullanıcı bildirimlerine göre şehir içinde 5,9-6,2 lt, uzun yolda 4,7-5,5 lt aralığında gerçek tüketim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Uzun yolculuklarda yormayan koltuklar ve üç bölgeli klima kullanıcılar tarafından sıkça övülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/hyundai-tucson-1.6-crdi-alinir-mi-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Uzun yolculuklarda yormayan koltuklar, ferah arka diz mesafesi ve üç bölgeli klima.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltukta ferah diz mesafesi sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/hyundai-tucson-1.6-crdi-alinir-mi-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Uzun yolculuklarda yormayan koltuklar, ferah arka diz mesafesi ve üç bölgeli klima.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Hyundai'nin Türkiye'deki yedek parça tedarik hızı segmentin en iyileri arasında gösteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/hyundai-tucson-1.6-crdi-alinir-mi-sorunlar-ve-kullanici-yorumlari",
+      "kaynak_alinti": "Hyundai'nin Türkiye'deki parça tedarik hızının segmentin en iyilerinden olduğu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Ses yalıtımı başarılı; dizel motor sesi kabine neredeyse hiç gelmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/tucson-16-dizel-kullanici-yorumlari-tucson-16-dizel-alinir-mi",
+      "kaynak_alinti": "Ses yalıtımı çok başarılı; motor sesi kabine neredeyse hiç gelmiyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Garanti dışı kalan DPF ve DCT onarımı için 168.000-180.000 TL arası bedel talep edilebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-dpf-ve-dct-arizalarinda-garanti-reddi-ve-fahis-ucret",
+      "kaynak_alinti": "Aracımı ancak 29 Aralık 2025'te Gençler Oto'ya teslim edebildim ve tarafıma yaklaşık 180.000 TL onarım bedeli çıkarıldı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Partikül filtresi değişimi tek başına yaklaşık 300 bin TL'lik bir masraf olarak fiyatlandırılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-tucson-partikul-filtresi-arizasi-ve-yuksek-degisim-maliyeti",
+      "kaynak_alinti": "Ayrıca partikül filtresi için yaklaşık 300 bin tl civarında bir masraf çıkacağını belirttiler.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Şehir içi dur-kalk trafiğinde yakıt tüketimi belirgin şekilde artıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/tucson-16-dizel-kullanici-yorumlari-tucson-16-dizel-alinir-mi",
+      "kaynak_alinti": "Özellikle dur-kalk trafikte tüketim ciddi anlamda artıyor.",
+      "guven": "dusuk"
+    }
+  ]
+}

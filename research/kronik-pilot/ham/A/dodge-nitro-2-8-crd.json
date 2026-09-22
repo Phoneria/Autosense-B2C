@@ -1,0 +1,140 @@
+{
+  "hedef_id": "dodge-nitro-2-8-crd",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "VM kaynaklı 2.8 CRD motorda EGR valfi kurumla tıkanır; güç kaybı ve rölanti düzensizliği yapar.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Ağırlıklı şehir içi kullanımda DPF dolar ve rejenerasyon tamamlanamaz, arıza lambası yanar.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Değişken geometrili turbonun kanatçıkları kurumdan tutukluk yapar, çekişte düşüş görülür.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "2.8 CRD'de silindir kapağı çatlaması ve conta tahliyesi bilinen ve pahalı bir arızadır.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Common-rail enjektörlerde geri dönüş kaçağı artar; soğukta zor çalışma ve titrek rölanti yapar.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Motor triger kayışıyla çalışır; periyodik değişim atlanırsa ağır motor hasarı riski vardır.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "Yüksek dizel torku düşük devirde güçlü çekiş ve iyi römork kapasitesi sağlar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "4x4 aktarma ve yüksek yerden yükseklik ile hafif arazi ve kötü yol koşullarında başarılıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Kare gövde ve düz zemin sayesinde bagaj hacmi geniş ve kullanışlıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "Sınıfına göre güçlü 2.8 dizel, otomatik şanzımanla yeterli hızlanma ve uzun yol temposu sunar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Dodge Türkiye'de çok sınırlı satıldığından motor ve kaporta parçaları zor bulunur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "servis-az",
+      "iddia": "Markanın yetkili servis ağı Türkiye'de yok denecek kadar azdır, özel servise bağımlısınız.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Alıcı kitlesi dar olduğu için satışı uzun sürer ve ikinci elde değer kaybı yüksektir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "mtv-vergi-yuksek",
+      "iddia": "2.8 litre motor hacmi üst MTV dilimine girdiğinden yıllık vergi yükü ağırdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabinde sert ve ucuz plastikler baskındır; montaj kalitesi rakiplerinin gerisinde kalır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    }
+  ]
+}

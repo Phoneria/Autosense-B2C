@@ -1,0 +1,161 @@
+{
+  "hedef_id": "hyundai-i20-1-0-t-gdi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Yakit pompasi arizasi tekrarlayip araci yolda birakiyor; geri cagirma kapsamina alindi.",
+      "km_araligi": "30.000-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/i20/i20-yakit-pompasi",
+      "kaynak_alinti": "2021 model, henüz 46.000 km'deki 1.0 motor Hyundai i20 aracım, yakıt pompası arızası nedeniyle üçüncü kez yolda bıraktı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DCT sanzimanda vites gecislerinde vuruntu ve kalkista silkeleme sikayeti yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/i20/sanziman",
+      "kaynak_alinti": "vites geçişlerinde belirgin vuruntu ve kalkışlarda sürekli bir silkeleme sorunu yaşıyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Soguk calistirmada ve gaza basinca sanzimandan inleme/vinlama sesi geliyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/i20/motor",
+      "kaynak_alinti": "Aracımda özellikle soğuk motorun ilk çalışmasında ve gaza basma esnasında belirgin bir inleme/vınlama ses",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Geri gorus kamerasi kendiliginden calismayi birakiyor; garanti disi degisim cok pahali.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/i20/yetkili-servis-bakim",
+      "kaynak_alinti": "Hyundai i20 aracımda yaklaşık bir aydır geri görüş kamerası kendi kendine kapanıp açılma sorunu yaşıyorum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Atesleme bobini arizasi erken kilometrede guc kaybi ve motor ariza lambasi yakiyor.",
+      "km_araligi": "10.000-30.000 km",
+      "kaynak_url": "https://www.hyundaiclubtr.com/konu/3bindeki-i20-1-0-t-gdi-motor-isigi-yakti.51920/",
+      "kaynak_alinti": "Bir anda silkeleme ve güçten düşme oldu sonrasında motor ışığını yaktı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Direkt enjeksiyon nedeniyle karbon birikmesi rolanti dalgalanmasi ve cekis dusmesi yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikariza.com.tr/hyundai-i20-1-0-t-gdi-gdi-karbon-birikmesi-ve-cekis-dusmesi-29627/",
+      "kaynak_alinti": "Rölantide hafif dalgalanma, özellikle düşük devirde gaz verildiğinde anlık boğulma hissi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Dusuk kilometrede aku patlamasi ve elektrik sisteminin tamamen devre disi kalmasi bildiriliyor.",
+      "km_araligi": "30.000 km alti",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/i20/kronik",
+      "kaynak_alinti": "aracı çalıştırmak için kontağı çevirdiğim anda aniden şiddetli bir patlama sesi geldi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma kullanimda 6.5 lt/100 km, uzun yolda 5.3-5.4 lt seviyesinde tuketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/test-yeni-hyundai-i20-1-0-t-gdi-100-bg-dct/",
+      "kaynak_alinti": "Testimiz boyunca karma tüketim olarak 6.5 lt/100 km'lik bir yakıt tüketimi ile dolaştık.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.0 turbo motor dusuk devirde canli ve atak; 1.4 MPI'ya gore belirgin ustun.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/hyundai-i20-1-0-t-gdi--149690137",
+      "kaynak_alinti": "1.0 t-gdi çok daha canlı atik ve performanslı hissettirir. Düşük devirde rahat kullanım sağlar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Hyundai SmartSense ile carpisma onleme, serit takip ve yorgunluk uyarisi sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/test-yeni-hyundai-i20-1-0-t-gdi-100-bg-dct/",
+      "kaynak_alinti": "Ön çarpışma önleme yardımcısı ve şerit takip asistanı gibi sürüşe aktif müdahale eden sistemlerin yanında, sürücü yorgunluk uyarısı, uzak far asistanı gibi destek sistemleri de güvenlik adına sunulan donanımlar.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi onceki nesle gore 25 litre artarak 351 litreye cikti.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/test-yeni-hyundai-i20-1-0-t-gdi-100-bg-dct/",
+      "kaynak_alinti": "Önceki nesline göre 25 litre artarak 351 litreye ulaşan bagaj hacmi sunan yeni Hyundai i20'de bagajı ilk açtığınızda ufak gibi dursa da, bagaj rafını kaldırdığınızda altında da ciddi bir alanın yer aldığını görüyorsunuz.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Kullanicilar yol tutusunu sinifinin ustunde buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/hyundai-modelleri/i20-yorumlari",
+      "kaynak_alinti": "yol tutuşu mükemmel",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon sert; yoldaki en kucuk cukur bile kabinde belirgin hissediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/hyundai-modelleri/i20-yorumlari",
+      "kaynak_alinti": "sert süspansiyonlarıydı yoldaki en ufak çukur hissediliyordu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Konsolda tamamen sert plastik kullanilmis; onceki nesle gore malzeme kalitesi dusmus.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/test-yeni-hyundai-i20-1-0-t-gdi-100-bg-dct/",
+      "kaynak_alinti": "Önceki nesilde konsolda yumuşak plastik yer yer kullanılırken, yeni Hyundai i20'de tamamen sert plastik malzeme kullanılmış.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yuksek hizda ruzgar ve asfalt sesi kabinde rahatsiz edici seviyede.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/hyundai-modelleri/i20-yorumlari",
+      "kaynak_alinti": "aşırı rüzgar ve asvalt sesinden rahatsız olduğum için katlanamadığım için sattım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Basit plastik parcalar bile cok pahali; camurluk ust bakaliti 8.500 TL.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-yedek-parca-bulunamiyor-ve-fiyati-sasirtiyor",
+      "kaynak_alinti": "Servisi aradığımda ellerinde olmadığını, 30 gün içinde geleceğini ve fiyatının 8.500,00 TL olduğunu öğrenince şok oldum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Elite disi donanim seviyelerinde yan ve perde hava yastigi bulunmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/hyundai-i20-1-0-t-gdi--149690137",
+      "kaynak_alinti": "Elite model haricinde yan/perde hava yastığı olmayan bir arabayı bedava verseler almam",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

@@ -1,0 +1,149 @@
+{
+  "hedef_id": "fiat-egea-1-3-multijet",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör arızası yaygın; soğuk ilk çalıştırmada titreme, vuruntu ve beyaz duman görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/enjektor",
+      "kaynak_alinti": "Fiat Egea 1.3 Multijet 2016 model aracım yaklaşık 2 aydır özellikle sabah ilk çalıştırmada titreyerek çalışıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikül filtresi tıkanması sık; 50.000 km civarında rejenerasyon uyarısı ve arıza lambası yanıyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/partikul-filtresi",
+      "kaynak_alinti": "50.000 km'ye ulaştığımda partikül filtresiyle ilgili bir sorun yaşamaya başladım",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "60.000 km sonrası turbo arızası yoğunlaşıyor; bazı araçlarda turbo birden fazla kez değişiyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/fiat-egea-turbo-sorunlari-70-bin-kilometrede-dort-kez-degistirildi-ve-aciklama-talebi",
+      "kaynak_alinti": "Son 2 yıl içinde, turbo arızası özellikle 60.000 km'den sonra yoğunlaştı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfinin kurumla tıkanması bu motorda en sık dile getirilen sorunlardan biri.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/fiat-egea-1.3-multijet-kronik-sorunlari",
+      "kaynak_alinti": "EGR valfinin kirlenmesi Egea 1.3 Multijet'te en sık dile getirilen problemlerden biridir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj ve baskı balata 90.000-120.000 km arasında erken yıpranıyor, pedaldan ses geliyor.",
+      "km_araligi": "90.000-120.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/fiat-egea-1.3-multijet-kronik-sorunlari",
+      "kaynak_alinti": "Debriyaj ve baskı balata nispeten erken yıpranabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri 100.000 km sonrası ses yapmaya ve kopma riski taşımaya başlıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-3-multijet-triger-zincir-degisim-zamani-yardim--130469575",
+      "kaynak_alinti": "Eğer aracınız Fiat ise hemen değiştirin. Çünkü 100.000 den sonra kopma riski var",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Kapı, çamurluk ve kaputta vernik atması ve boya bozulması şikayetleri tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/boya/egea",
+      "kaynak_alinti": "kapılarda, çamurluklarda ve motor kaputunda ciddi şekilde vernik atmaları oluştu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranında donma ve görüntü kaybı (siyah ekran) arızası bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/multimedya",
+      "kaynak_alinti": "2022 model Fiat Egea marka aracımda multimedya sistemiyle ilgili bir sorun yaşadım... siyah ekran var ses var ama görüntü yok.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Ortalama 4,1 lt/100 km tüketim ile sınıfının en ekonomik dizel motorlarından.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-egea-1-3-multijet-alinir-mi/",
+      "kaynak_alinti": "Şehir içi (100 km'de) 5,2 lt / Şehir dışı (100 km'de) 3,5 lt / Ortalama (100 km'de) 4,1 lt",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça fiyatları rakip marka ve modellere göre belirgin şekilde uygun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-egea-1-3-multijet-alinir-mi/",
+      "kaynak_alinti": "Yedek parça fiyatları ise diğer marka model araçlara göre çok daha uygundur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Periyodik bakım maliyetleri öngörülebilir ve kontrol edilebilir seviyede kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otokiyas.tr/blog/100-000-km-boyunca-fiat-egea-1-3-multijet-bakim-dokumu",
+      "kaynak_alinti": "1.3 Multijet, sunduğu ekonomik yakıt tüketiminin yanı sıra, nispeten öngörülebilir ve kontrol edilebilir bakım maliyetleriyle de dikkat çekmektedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "520 litrelik bagaj hacmi ortalama bir ailenin ihtiyacının üzerinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-egea-1-3-multijet-alinir-mi/",
+      "kaynak_alinti": "Fiat Egea 520 litrelik bagaj hacmi ile normal bir aileni ihtiyacından daha büyük bir bagaj hacmine",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon ayarı yumuşak; koltuklar ve sürüş konforu kullanıcılarca beğeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/sosyal-otomobil-fiat-egea-easy-1-3-multijet.8029/",
+      "kaynak_alinti": "Koltukları rahat, süspansiyon son derece konforlu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Düşük viteslerde ve 120 km/s üzerinde motor sesi kabine belirgin şekilde giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/fiat-egeada-dusuk-viteslerde-asiri-motor-sesi-sorunu",
+      "kaynak_alinti": "Birinci viteste ve ikinci viteste motor sesi çok veriyor içeriye. 3. Vitesten sonra ses azalıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekanda kullanılan plastikler kalitesiz bulunuyor ve zamanla gıcırtı sesi yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/fiat-egea-nin-asiri-kalitesiz-olmasi--126696031",
+      "kaynak_alinti": "Kullanılan plastik rezalet, gösterge tablosu suzuki maruti'den hallice.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "95 hp motor 0-100 km/s hızlanmayı 11,7 saniyede yapıyor; dolu araçla rampada zorlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-egea-1-3-multijet-alinir-mi/",
+      "kaynak_alinti": "0'dan 100 km/h hıza 11.7 saniyede ulaşabilmektedir",
+      "guven": "orta"
+    }
+  ]
+}

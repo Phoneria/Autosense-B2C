@@ -1,0 +1,161 @@
+{
+  "hedef_id": "opel-astra-1-6",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Eksantrik dişlisi arızası garanti kapsamında değişse bile 7-8 ay sonra tekrarlayabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/opel-astra-eksantrik-disli-arizasi.141108/",
+      "kaynak_alinti": "garanti kapsamında eksantirik dişlisi değiştirilererek sorunum çözülmüştü.Bu parça değiştikten 7-8 ay sonra aynı sorun tekrar başladı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "Kısa mesafeli şehir içi kullanımda EGR valfinde kurum birikimi ve arıza yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-astra-1.6-cdti-alinir-mi-kronik-sorunlar-kullanici-yorumlari-ve-ikinci-el-rehberi-2026",
+      "kaynak_alinti": "kısa mesafeli ve düşük devirli şehir içi kullanım, EGR valfinde kurum birikimine ve partikül filtresinin (DPF) rejenerasyon yapamamasına yol açabiliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kısa mesafe kullanımda DPF tıkanması ve rejenerasyon sorunu yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/opel-astra-1-6-cdti",
+      "kaynak_alinti": "Astra dizelde şehir içi kısa mesafe kullanımında DPF tarafı benim için en büyük",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat arızasında motor ısınmıyor, uzun yolda hararet 50 dereceye kadar düşüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/1-6-cdti-astra-j-termostat-degisimi.176833/",
+      "kaynak_alinti": "Araç bir türlü ısınmıyor, ısınsa bile özellikle uzun yolda gazdan ayağımı çekince hararet düşmeye başlıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su pompası) tekrar tekrar kaçırıyor; iki kez değişmesine rağmen sorun sürüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-tekrarlayan-devirdaim-sorunu.118866/",
+      "kaynak_alinti": "Arkadaşlar merhaba aracımda 2 Sefer devirdaim değişti ve yine kaçırmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "1.6 CDTI'de turbo hortumlarında zamanla çatlama ve sızdırma görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-astra-1.6-cdti-alinir-mi-kronik-sorunlar-kullanici-yorumlari-ve-ikinci-el-rehberi-2026",
+      "kaynak_alinti": "turbo hortumlarında zamanla çatlama veya sızdırma yaşandığını; bunun performans kaybına ve tüketim artışına yol açabildiğini",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "1.6 motorlu Astra'larda kronik beyin (elektronik ünite) problemleri bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "bu araçlar için kronik olarak beyin problemleri olduğu forum sayfalarında konuşulmaktadır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Astra H'de direksiyon kutusundan gelen tıkırtı sesi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/astra-h-direksiyon-kutusu-sorunu--31762631",
+      "kaynak_alinti": "2004 Astra H arabamdan tıkırtı sesi geliyor,ön düzendendir diye tahmin etmiştim ama zannedersem direksiyon kutusundan kaynaklı problem",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça ve servis erişimi kolay, parça fiyatları uygun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "yedek parça ve servis konusunda da erişimi oldukça kolay, parça fiyatları uygun bir model.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Türkiye'de Opel servis ağı yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-astra-1.6-atmosferik-alinir-mi-kronik-sorunlar-ve-yorumlar",
+      "kaynak_alinti": "yaygın servis ağı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.6 benzinli uzun yolda 6,5-6,8 litre ortalama tüketim veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/opel-astra-j-hb-1-6-115hp-uzun-yol-yakit-tuketim-verileri--128740353",
+      "kaynak_alinti": "Kastamonu-İstanbul arasını klima açık 6.5 litre tüketim ile geldim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Otoyolda oturaklı, yüksek hızda güven veren bir yol tutuşu var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-astra-1.6-atmosferik-alinir-mi-kronik-sorunlar-ve-yorumlar",
+      "kaynak_alinti": "otoyolda oturaklı, yüksek hızda güven veren bir araç",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.6 CDTI uzun ömürlü, dayanıklı bir dizel motor olarak biliniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/opel-astra-1-6-cdti",
+      "kaynak_alinti": "Soğukken traktör gibi çalışıyor, ısınınca sessizleşiyor uzun ömürlü bir dizel ama torku Focus kadar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "1.6 atmosferik benzinli günümüz standartlarına göre fazla yakıt tüketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "aracın bugün için biraz fazla yakıt tükettiğini gösteriyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Süspansiyon sert; yol tutuşu iyi olsa da konfordan ödün veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-h--2439851?p=4",
+      "kaynak_alinti": "sert süspansiyonları sayesinde yol tutuşu harika olan araba",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "110 beygirlik 1.6 CDTI, ağır kasa için rampada yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/opel-astra-1-6-cdti",
+      "kaynak_alinti": "Kasa ağır olduğu için 1.6 CDTI en az 136 bg olmalıydı, 110 bg'lik versiyon rampada",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Kalabalık aileler için iç mekan ve yükleme alanı sınırda kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-astra-1-61998-2009-uygun-fiyatli-c-segmenti-araba/",
+      "kaynak_alinti": "Gündelik işleriniz için oldukça uygun olan araç, kalabalık aileler için iç mekan ve yükleme alanı konusunda sınırda kalabilir.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

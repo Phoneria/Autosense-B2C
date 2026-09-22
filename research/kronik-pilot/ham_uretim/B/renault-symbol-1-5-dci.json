@@ -1,0 +1,158 @@
+{
+  "hedef_id": "renault-symbol-1-5-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör arızası ve bakır conta kaçağı kronik; tekleme, siyah duman ve yakıt tüketimi artışı yapıyor.",
+      "km_araligi": "80.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/renault-symbol-1.5-dci-kronik-sorunlar-yakit-tuketimi-ve-bakim-rehberi",
+      "kaynak_alinti": "Enjektör arızası ve bakır conta (rondela) kaçağı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "170.000 km sonrası turbo hortumu patlaması ve turbo arızası görülüyor; ıslık sesi ve güç kaybı ilk belirti.",
+      "km_araligi": "170.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/renault-symbol-1-5dci-90bg-tavsiye--134241950",
+      "kaynak_alinti": "170 bin civarı turbo hortumu patlattı 260bin de turbo ketti",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurumlanması kronik; yılda bir kez temizlenmesi gerekiyor, aksi halde çekiş ve tüketim bozuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otomobiloji.com/renault-1-5-dci-motor-sorunlari-ve-cozumu/",
+      "kaynak_alinti": "EGR supabını yılda bir kez temizlemek faydalı olacaktır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "120-150 bin km civarında debriyaj baskı-balata seti bitiyor, vites geçişlerinde zorlanma başlıyor.",
+      "km_araligi": "120.000-150.000 km",
+      "kaynak_url": "https://arizacoz.com/renault-symbol-kronik-sorunlar-ve-cozumleri/",
+      "kaynak_alinti": "120–150 bin km civarında baskı balata bitmesi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "manuel-sanziman",
+      "iddia": "2013 model ve sonrasında ara ara geri vitese geçmeme sorunu bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-symbol-1-5dci-90bg-tavsiye--134241950",
+      "kaynak_alinti": "Kronik geri vites sorunu var 2013 modellerde ara ara geri vitese geçmez",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Teyp ekranı araç ısındıktan sonra silikleşip okunmaz hale geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/symbol/teyp-ekrani-silik",
+      "kaynak_alinti": "Kronik olan teyp ekranı araç ısındıktan sonra siliniyor kısa sürede",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Korna ile birleşik far kolu arızalanıyor, farlar açıkken korna çalışmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-symbol--1587318?p=26",
+      "kaynak_alinti": "kornanın olduğu far kolunun arızalanması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cam-krikosu",
+      "iddia": "Ön cam kriko mekanizmalarında dişli kırılması sık görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arizacoz.com/renault-symbol-kronik-sorunlar-ve-cozumleri/",
+      "kaynak_alinti": "Ön cam mekanizmalarında dişli kırılması sık görülür",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karışık kullanımda 5 litre/100 km civarı tüketim, şehir dışında 4 litrenin altına inebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/symbol-1-5-dci-90-hp-yakit-tuketimi--140964871",
+      "kaynak_alinti": "ben 5 litre ortalama ile şehiriçi-dışı karışık geziyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parçası her yerde bulunuyor ve parça fiyatları ucuz.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-symbol--1587318?p=26",
+      "kaynak_alinti": "arabanın her şeyi ucuz. parçası bol",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Sınıfına göre çok geniş ve derin bagaj, tam boy stepneye rağmen hacmini koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-symbol--1587318?p=26",
+      "kaynak_alinti": "çok geniş. altta tam boy stepne olmasına karşın hem derin hem de uzun",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon yumuşak, bozuk yollarda darbeleri iyi emiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabalar.com.tr/test/renault-symbol-1-5-dci-almak-mantikli-mi",
+      "kaynak_alinti": "Süspansiyon sistemi yumuşaktır, bozuk yollarda darbeleri iyi emer",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Düzenli bakımla 140.000 km üzerinde mekanik sorun yaşamadan kullanan sahipler var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/symbol-1-5-dci-tavsiyeleriniz--152851745",
+      "kaynak_alinti": "İkisi de 140 bini geçti. Mekanik olarak henüz sorun yaşamadık",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalıtımı zayıf; 90 km/s üzerinde rüzgar sesi kabine belirgin şekilde giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-symbol--1587318?p=26",
+      "kaynak_alinti": "90 km/s hızdan sonra içeri ciddi anlamda rüzgar sesi alıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç donanım plastikleri kalitesiz; direksiyon ve vites topuzu 100.000 km'ye gelmeden soyuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoajanda.com/2-elde-symbol-alirken-nelere-dikkat-etmeli/",
+      "kaynak_alinti": "Genel olarak Renault markasının bir çoğunda görülen iç donanım plastikleri çok kalitesiz, bu yüzden iç aksam aracın daha önce nasıl kullanıldığı ile ilgili bilgi verecektir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Frenleri ve yol tutuşu zayıf; yüksek hızda şeritte kararlı durmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoajanda.com/2-elde-symbol-alirken-nelere-dikkat-etmeli/",
+      "kaynak_alinti": "Symbol ile bilinmesi gereken en önemli zayıf nokta ise frenleri ve yol tutuşunun çok zayıf olmasıdır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Enjektör temizliği ve değişimi ayrı ayrı masraf çıkarıyor, dizel bakım maliyetini yükseltiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoajanda.com/2-elde-symbol-alirken-nelere-dikkat-etmeli/",
+      "kaynak_alinti": "Aldığınız aracın enjektör temizliği ve onarımı 800 TL civarında. Enjektör değişimi gerekirse 1.400 Lira + işçilik civarındadır.",
+      "guven": "dusuk"
+    }
+  ]
+}

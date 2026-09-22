@@ -9,7 +9,7 @@ from accounts.models import User
 
 ENDPOINTS = [
     ("get", "/api/arabam-vehicles"), ("get", "/api/b2c/vehicles"),
-    ("get", "/api/b2c/locations"), ("post", "/api/b2c/vehicle-defaults"),
+    ("get", "/api/b2c/locations"), ("post", "/api/b2c/vehicle-defaults"), ("get", "/api/b2c/regional-deals"),
     ("post", "/api/b2c/lookup-text"), ("post", "/api/b2c/analyze"),
 ]
 PAYLOAD = {"brand":"Fiat", "series":"Egea", "engine":"1.3 Multijet", "package":"Easy", "year":2023, "km":100000, "price":1200000}
@@ -72,6 +72,8 @@ def test_frontend_damage_labels_and_optional_location_are_preserved(user):
 
 
 def test_analysis_rate_limit_is_enforced(user):
+    from accounts import billing
+    billing.choose_plan(user, "premium")
     c = Client()
     c.force_login(user)
     with patch("search.views.b2c.analyze", return_value={}):

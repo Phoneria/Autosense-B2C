@@ -66,7 +66,7 @@ def reload_estimators() -> None:
         _baseline_cache_mtime = None
 
 
-def _predict_baseline(category, brand, series, engine, package, year, km, damage, heavy, gear) -> dict[str, Any]:
+def _predict_baseline(category, brand, series, engine, package, year, km, damage, heavy, gear, min_samples=None) -> dict[str, Any]:
     damage = list(damage)
     if heavy:
         damage.append({"parca": "Genel", "durum": "Ağır Hasarlı"})
@@ -74,7 +74,7 @@ def _predict_baseline(category, brand, series, engine, package, year, km, damage
     entry = None
     for candidate in candidates:
         if candidate:
-            entry = baseline.lookup_paket(_load_baseline(), brand, series, candidate, year, category=category)
+            entry = baseline.lookup_paket(_load_baseline(), brand, series, candidate, year, category=category, min_samples=min_samples)
         if entry is not None:
             break
     if entry is None:
@@ -89,12 +89,12 @@ def estimate_price(
     fuel: str | None = None, city: str | None = None,
     seller_type: str | None = None, body_type: str | None = None,
     engine_cc: float | int | None = None, engine_hp: float | int | None = None,
-    damage_known: bool = True,
+    damage_known: bool = True, min_samples: int | None = None,
 ) -> dict[str, Any]:
     """Herkesin kullandığı kanonik tahmin sözleşmesi."""
     damage, heavy = list(damage or []), _truthy(agir_hasar)
     brand, series = _text(brand), _text(series)
-    base = _predict_baseline(category, brand, series, engine, package, int(year), float(km), damage, heavy, gear)
+    base = _predict_baseline(category, brand, series, engine, package, int(year), float(km), damage, heavy, gear, min_samples=min_samples)
     base_price = base.get("tahmini_fiyat") if base.get("found") else None
 
     if base_price:

@@ -1,0 +1,158 @@
+{
+  "hedef_id": "opel-astra-1-6",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "1.6 Twinport motorlarda EGR valfi kurum tutup tıkanır; rölanti dalgalanması ve stop etme yapar.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Plastik termostat gövdesi çatlayıp su sızdırır ve motor ısısı düzensizleşir.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Zincirli 1.6 Ecotec motorlarda zincir uzaması soğukta tıkırtı sesine yol açar.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cam-krikosu",
+      "iddia": "Ön kapı cam krikoları takılır veya kopar; cam açık kalır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Astra H kuşağında direksiyon altı elektronik modül kaynaklı gösterge ve sinyal arızaları görülür.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Easytronic yarı otomatik şanzımanda aktüatör ve debriyaj arızası maliyetli bir kronik sorundur.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön salıncak burçları erken aşınır; bozuk yolda tok ses ve direksiyonda titreşim yapar.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim pompası salmastradan sızdırarak antifriz kaybına neden olabilir.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Türkiye'de çok satılan bir model olduğu için her parçası kolay bulunur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yan sanayi parça seçeneği bol ve fiyatları rakiplerine göre uygundur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Opel'i bilen özel servis ve usta ağı Türkiye geneline yayılmıştır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.6 benzinli Ecotec motor, düzenli bakımda yüksek kilometrelere sorunsuz çıkabilen basit bir yapıdadır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Şasi ve süspansiyon ayarı sayesinde yüksek hızda oturaklı ve güvenli bir yol tutuşu sunar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Atmosferik 1.6 benzinli, aracın ağırlığına göre şehir içinde yüksek yakıt tüketir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Özellikle son kuşakta artan ağırlık nedeniyle 1.6 atmosferik motor tam yükte yetersiz kalır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin plastikleri sert ve zamanla gıcırdamaya başlar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Kalın direkler ve küçük arka cam nedeniyle geri manevrada görüş kısıtlıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "dusuk"
+    }
+  ]
+}

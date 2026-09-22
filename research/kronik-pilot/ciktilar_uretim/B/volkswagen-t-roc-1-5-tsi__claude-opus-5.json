@@ -1,0 +1,170 @@
+{
+  "hedef_id": "volkswagen-t-roc-1-5-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG şanzıman çok düşük kilometrelerde bile arıza veriyor; 2.800-43.000 km arası vakalar bildiriliyor.",
+      "km_araligi": "2.800-43.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/t-roc/sanziman",
+      "kaynak_alinti": "Sıfır aldığım Volkswagen T-Roc aracım 2800 km'de şanzıman arızası verdi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "40.000 km sonrası soğutma sıvısı eksiltme ve su pompası/termostat gövdesi sızıntısı görülüyor.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-t-roc-1.5-tsi-alinir-mi-kronik-sorunlar-yorumlar-ve-ikinci-el-rehberi",
+      "kaynak_alinti": "yaklaşık 40.000 km'den sonra soğutma sıvısı (su) eksiltme sorunu yaşadıklarını iddia etmiştir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.5 TSI periyodik bakımlar arasında 200 ml ile 1 litre arası yağ eksiltebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "periyodik bakımlar arasında yaklaşık 200 ml ile 1 litre arasında yağ eksiltme",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Far yükseklik ayarı ve sinyal lambası hataları yıllarca tekrarlayan elektrik arızası olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/t-roc/ariza",
+      "kaynak_alinti": "2023 model Volkswagen T‑Roc aracım 2 yıldır ara ara 'far yükseklik ayarı hatası' veriyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima sistemi ilk sezondan itibaren gaz kaçırıyor ve tekrar tekrar gaz dolumu gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/t-roc/ariza",
+      "kaynak_alinti": "Volkswagen T‑Roc aracımın kliması ilk kullanım sezonundan beri gaz kaybediyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön takımda ses, amortisörlerde kaçak ve rot başlarında boşluk tekrar eden şikayetler arasında.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikuzman.com/volkswagen-t-roc-15-tsi-kronik-sorunlari-sikayetler",
+      "kaynak_alinti": "Ön takımda meydana gelen sesler, amortisörlerdeki kaçaklar ve rot başlarındaki boşluklar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya sistemi donuyor, kablosuz CarPlay ve sensör okumalarında hatalar çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikuzman.com/volkswagen-t-roc-15-tsi-kronik-sorunlari-sikayetler",
+      "kaynak_alinti": "multimedya sistemindeki donmalar, sensörlerdeki hatalı okumalar ve elektronik park frenindeki sorunlar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Kaput ve arka tamponda erken boya atması şikayeti tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/t-roc",
+      "kaynak_alinti": "kaputunda ve arka tamponunda gözle görülebilir şekilde boya atması",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma ortalama 6,5 litre, uzun yolda 5,4 litre civarına iniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/t-roc-kullanici-kulubu--144606665-9",
+      "kaynak_alinti": "2500 km.nin karma ortalaması 6.5 litre,Konya-Antalya gidiş-dönüş ortalama 5.4 litre,şehiriçi ise ortalama 7.5 litre",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "150 PS'lik 1.5 TSI sollamalarda ve hızlanmalarda kullanıcıları tatmin ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabazzi.com/yorumlar/t-roc/46/250.html",
+      "kaynak_alinti": "Motor performansı, sollamalarda ve yüksek verdiği güven tatmin edici.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Şerit takip, kör nokta uyarısı ve adaptif hız sabitleme gibi sürücü destek sistemleri sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/volkswagen-t-roc-almak-icin-5-sebep/",
+      "kaynak_alinti": "Çarpışma önleme sistemi, ani frenleme sistemi, şerit takip asistanı, kör nokta uyarı asistanı ve adaptif hız sabitleme sistemi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci elde talep gördüğü için satışı kısa sürede ve kolay yapılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/volkswagen-t-roc-almak-icin-5-sebep/",
+      "kaynak_alinti": "T-Roc modelini tercih etmeniz halinde ihtiyaç duyduğunuz anda kısa sürede rahatça satabilirsiniz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Aynı platformdaki Golf'e göre iç hacim ve pratiklik açısından tercih ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-golf-1-5-e-tsi-life-vs-t-roc-1-5-tsi-life--159441562",
+      "kaynak_alinti": "Daha pratik olsun daha çok iç hacmi olsun denilirse troc",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabinde istisnasız her yer sert plastik; malzeme kalitesi fiyatına göre zayıf bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/t-roc-alinir-mi--154157079",
+      "kaynak_alinti": "Istisnasız her yer takır takır sert plastik",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalıtımı zayıf; otoban hızlarında rüzgar ve yol gürültüsü kabine doluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/t-roc-aracta-yalitim-ve-dsg-sanziman-sorunlari-hayal-kirikligi-yaratti",
+      "kaynak_alinti": "Dışarının tüm sesi araç içerisinde. Tüm rüzgar sesi aracın içinde.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Bagaj kağıt üzerindeki litre değerine göre gerçek kullanımda küçük kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/t-roc-alinir-mi--154157079",
+      "kaynak_alinti": "Bagajı da bence kağıt üzerinde açıklanan litreye göre, gerçek kullanımda küçük",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Süspansiyon sert; büyük jantlı versiyonlarda çukurlarda küt küt ses geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/t-roc-alinir-mi--154157079",
+      "kaynak_alinti": "çukurlarda küt küt ses geliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Arka görüş açısı kısıtlı olduğundan park sensörü olmadan manevra zorlaşıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otosorular.com/volkswagen-t-roc-15-tsi-alinir-mi-deneyimler",
+      "kaynak_alinti": "Arka görüş açısı kısıtlı olduğu için park sensörleri şart.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

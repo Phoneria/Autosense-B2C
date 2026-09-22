@@ -1,0 +1,167 @@
+{
+  "hedef_id": "opel-corsa-1-3-cdti",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kısa mesafe kullanımda DPF tıkanması yaygın; rejenerasyon tamamlanmazsa güç kaybı ve pahalı onarım çıkıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.arabahaberim.com/opel-corsa-cdti-dpf-problemi-8027.html",
+      "kaynak_alinti": "Hareket halinde anlık tüketimin yükselmesi, aracın sarsıntılı çalışmaya başlaması ve rolantinin yükselmesi ile bu temizlik kolayca anlaşılıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbodan yağ kaçağı ve değişken kanat mekanizmasının kurum nedeniyle sıkışması belirgin güç kaybına yol açıyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/2006-opel-corsa-1-3-dizel-turbo-arizasi--54357402",
+      "kaynak_alinti": "aracımda son 2-3 ay içinde performansında düşüş olmuştu vede yetkili opel servisine götürdüğümde bana turbo paletleri yağ kaçırıyor dediler",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurum bağladığında performans düşüyor ve yakıt tüketimi artıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opellcenter.com/blog/opel-corsa-13-cdti-kronik-sorunlar",
+      "kaynak_alinti": "EGR valfi kurum bağladığında ise performans düşüklüğü ve yakıt tüketiminde artış görülebilir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Yaylı volan arızası yaygın; baskı-balata değişiminde volanın da birlikte değişmesi öneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d-1-3-cdti--6776233",
+      "kaynak_alinti": "oynar/yaylı volant var...her baskı balata değişiminde değişmesi tavsiye ediliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Dikkatli kullanımda bile debriyaj ömrü yaklaşık 60.000 km ile sınırlı kalıyor.",
+      "km_araligi": "60.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/corsa-1-3-cdti-kronik-sorunu-var-mi--34939594",
+      "kaynak_alinti": "debriyaj = dikkatli kullanımda bile max 60 bin km gidiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör kaynaklı motor teklemesi ve rölantide düzensiz çalışma sık bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opellcenter.com/blog/opel-corsa-13-cdti-kronik-sorunlar",
+      "kaynak_alinti": "motor teklemesi ve enjektör kaynaklı düzensiz çalışma",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusundan gelen tıkırtı ve titreşim tekrar eden bir şikayet; revizyon gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/corsa-1-3-cdti-kronik-sorunu-var-mi--34939594",
+      "kaynak_alinti": "direksiyon kutusu = revizyondan geçilerek ses ve titreme yapması önlenir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri uzaması soğuk çalıştırmada metalik sesle kendini gösteriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-corsa-1.3-cdti-alinir-mi-kronik-sorunlar-kullanici-yorumlari-ve-ikinci-el-alim-rehberi",
+      "kaynak_alinti": "Zincir uzaması genellikle soğuk çalıştırmada metalik bir sesle kendini gösterir",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi 5-7, şehir dışı 4-5 litre tüketimle sınıfının en ekonomik dizellerinden biri.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d-1-3-cdti--6776233",
+      "kaynak_alinti": "şehir içi 5-6-7 şehir dışı 4-5 litre yakıyor genel olarak",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "B segmenti hatchback'ler arasında en geniş iç hacimli modellerden biri.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d-1-3-cdti--6776233",
+      "kaynak_alinti": "b segment hb otomobiller arasında iç hacmi en geniş olan modellerin başında gelir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Yedek parça ve servis erişimi Türkiye'de oldukça kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/opel-corsa-1-3-cdti-easytronic-75-000-tl-ile-sehir-otomobili/",
+      "kaynak_alinti": "Yedek parça ve servis konusunda erişimi oldukça kolay bir model",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Düzenli bakımla motor uzun süre sorunsuz gidiyor; sahipler sağlamlığını övüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/opel-corsa-d-1-3-cdti.99483/",
+      "kaynak_alinti": "2 yıldır hiç sıkıntı yok",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Şehir içinde atik ve ferah; şehir otomobili olarak çok kullanışlı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d-1-3-cdti--6776233",
+      "kaynak_alinti": "şehir içinde ve dışında gayet atik ve seri bir araba",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Orijinal Opel logolu parçalar aynı üreticinin muadilinin birkaç katı fiyata satılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa-d-1-3-cdti--6776233",
+      "kaynak_alinti": "opel logolu ürün ile filtron'unki aynı...opel olan 150 filtron 30-40 tl",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Turbo devreye girene kadar düşük devirlerde belirgin bir boşluk hissediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opellcenter.com/blog/opel-corsa-13-cdti-kronik-sorunlar",
+      "kaynak_alinti": "turbo devreye girene kadar hissedilen boşluk, özellikle şehir içi trafikte sürücüyü zorlayabilir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Süspansiyon sert ayarlanmış; yol tutuş iyi ama konfor bundan zarar görüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/opel-corsa-1-3-cdti-test-surusu-ve-yorumlari/",
+      "kaynak_alinti": "Sert süspansiyona sahip olan model yol tutuş konusunda iyi yol kat etmiş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Uzun boylu yolcular arka koltukta baş ve diz mesafesi sıkıntısı yaşıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/opel-corsa-1-3-cdti-test-surusu-ve-yorumlari/",
+      "kaynak_alinti": "Uzun boylu bireyler baş ve diz mesafesi konusunda sıkıntı yaşayabiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Kısa boylu sürücüler aracın önündeki birkaç metreyi göremediği için park ederken zorlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/opel-corsa-d-1-3-cdti.99483/",
+      "kaynak_alinti": "boyunuz bira kısaysa başlangıçta aracın 3 4 metre ilerisini gördüğünüzden sıkıntı yaşayabilirsiniz",
+      "guven": "dusuk"
+    }
+  ]
+}

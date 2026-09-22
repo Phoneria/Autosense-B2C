@@ -225,3 +225,957 @@ a:focus-visible,button:focus-visible { outline:2px solid #be5c29; outline-offset
 
 /* Değer kaybı: kayıp rakamı */
 .result-card.tone-rose .depreciation-grid small{ color:var(--tone-text) }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   1) Topbar hesap alanı — koyu zeminde açık metin
+   .topbar zemini #1f2422; .account-nav renk tanımlamadığı için metin
+   body'den --ink (#202522) miras alıyordu, yani koyu üstüne koyu.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.topbar .account-nav{ color:#e6e9e7 }
+.topbar .account-nav>span{ color:#c9cfcc }
+.topbar .account-nav button{ color:#fff; background:0 0; border-color:#5a615d }
+.topbar .account-nav button:hover{ background:#ffffff14; border-color:#7d847f }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   2) Sonuç bölümü tipografi tabanı
+   Orijinal tasarımda 7.5–9px metinler vardı; okunabilirlik için taban 10px,
+   içerik metinlerinde 11px'e çekildi. Ölçek korunuyor, sadece kaydırıldı.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results .card-top p{ font-size:11px; color:#6b635d }
+.results .card-top h3{ font-size:15px }
+.results .count{ font-size:11px; width:25px; height:25px }
+.results .card-empty{ font-size:12px }
+.results .card-note{ font-size:11px; line-height:1.6 }
+.results .result-actions button{ font-size:11px; padding:8px 12px }
+.results .result-actions small{ font-size:10px }
+.results .updated{ font-size:11px }
+.results .deal-badge{ font-size:10px }
+.results .decision-main p{ font-size:12px }
+.results .price-comparison div>span{ font-size:11px }
+.results .price-comparison div>strong{ font-size:16px }
+.results .source-strip{ font-size:11px }
+.results .quality-warnings li{ font-size:11px }
+.results .quality-clean{ font-size:11px }
+.results .questions li>span{ font-size:11px }
+.results .questions li p{ font-size:11px; line-height:1.55 }
+.results .questions li strong{ font-size:12px }
+.results .trend-kpis span{ font-size:10px }
+.results .trend-kpis strong{ font-size:12px }
+.results .trend-kpis small{ font-size:10px }
+.results .trend-axis{ font-size:10px }
+.results .trend-dates{ font-size:10px }
+.results .trend-explanation{ font-size:11px; line-height:1.6 }
+.results .listing-row{ font-size:12px }
+.results .listing-car small{ font-size:11px }
+.results .listing-row>.up,.results .listing-row>.down{ font-size:11px }
+.results .total-cost span{ font-size:11px }
+.results .total-cost small{ font-size:11px }
+.results .cost-lines>div{ font-size:11px }
+.results .cost-lines strong{ font-size:11px }
+.results .signal-status strong{ font-size:12px }
+.results .signal-status p{ font-size:11px }
+.results .signal-stats span{ font-size:11px }
+.results .signal-stats strong{ font-size:13px }
+.results .contradiction-list p{ font-size:11px }
+.results .contradiction-list strong{ font-size:12px }
+.results .chip-list li{ font-size:11px }
+.results .disclaimer{ font-size:10px }
+.results .estimate-note{ font-size:11px }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   3) Grafikler
+   Semantik renkler kart tonundan BAĞIMSIZDIR: iyi/orta/kötü ve artı/eksi
+   her kartta aynı anlama gelmeli. Kart tonu yalnızca nötr aksanlarda
+   (kanal, kutu zemini, sayaç) kullanılıyor.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results{
+  --pos:#2f7346; --pos-fill:#3a8055; --pos-soft:#ecf5ef;
+  --neg:#a83f27; --neg-fill:#c1503f; --neg-soft:#fdefed;
+  --mid:#7d5a0e; --mid-fill:#c08a1e; --mid-soft:#fbf3e1;
+  --axis:#c9c3bd; --meta:#6b635d;
+}
+
+/* ── Pazarlık merdiveni ──────────────────────────────────────────────── */
+.ladder-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:18px }
+.ladder-headline span{ font-size:11px; color:var(--meta); width:100% }
+.ladder-headline strong{ font-size:26px; letter-spacing:-.03em; color:var(--tone-text) }
+.ladder-headline em{ font-style:normal; font-size:11px; color:var(--meta) }
+.ladder-axis{ position:relative; height:26px; margin:0 10px 16px }
+.ladder-line{ position:absolute; left:0; right:0; top:12px; height:2px; background:var(--axis); border-radius:2px }
+.ladder-band{ position:absolute; top:5px; height:16px; background:var(--tone-soft);
+  border:1px solid var(--tone-line); border-radius:4px }
+.ladder-stop{ position:absolute; top:13px; width:13px; height:13px; margin:-6.5px 0 0 -6.5px;
+  border-radius:50%; background:#fff; border:2px solid var(--axis) }
+.ladder-stop.is-target{ width:19px; height:19px; margin:-9.5px 0 0 -9.5px;
+  background:var(--tone); border-color:#fff; box-shadow:0 0 0 2px var(--tone) }
+.ladder-stop.is-listing{ border-radius:3px; background:var(--ink); border-color:#fff;
+  box-shadow:0 0 0 2px var(--ink) }
+.ladder-legend{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px;
+  margin:0; padding:0; list-style:none }
+.ladder-legend li{ display:grid; grid-template-columns:12px minmax(0,1fr) auto; align-items:center;
+  gap:9px; border:1px solid var(--line); border-radius:9px; padding:9px 11px }
+.ladder-legend li i{ width:11px; height:11px; border-radius:50%; background:#fff; border:2px solid var(--axis) }
+.ladder-legend li span{ font-size:11px; color:var(--meta) }
+.ladder-legend li strong{ font-size:12px }
+.ladder-legend li.is-target{ background:var(--tone-soft); border-color:var(--tone-line) }
+.ladder-legend li.is-target i{ background:var(--tone); border-color:var(--tone) }
+.ladder-legend li.is-target strong{ color:var(--tone-text) }
+.ladder-legend li.is-listing i{ background:var(--ink); border-color:var(--ink); border-radius:3px }
+
+/* ── Etki çubukları (tornado) ────────────────────────────────────────── */
+.fbars{ display:grid; gap:14px }
+.fbar-head{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:6px }
+.fbar-head strong{ font-size:12px }
+.fbar-val{ font-size:12px; font-weight:800; white-space:nowrap }
+.fbar-val.is-pos{ color:var(--pos) }
+.fbar-val.is-neg{ color:var(--neg) }
+.fbar-val.is-zero{ color:var(--meta) }
+.fbar-track{ position:relative; height:12px; background:#f4f1ef; border-radius:4px; overflow:hidden }
+.fbar-zero{ position:absolute; left:50%; top:0; bottom:0; width:1px; background:#cfc9c3 }
+.fbar-fill{ position:absolute; top:2px; bottom:2px; border-radius:3px }
+.fbar-fill.is-pos{ background:var(--pos-fill) }
+.fbar-fill.is-neg{ background:var(--neg-fill) }
+.fbar>small{ display:block; margin-top:6px; font-size:11px; line-height:1.5; color:var(--meta) }
+.fbar-scale{ display:flex; justify-content:space-between; border-top:1px solid #eeecea;
+  padding-top:8px; font-size:10px; color:#8b8580 }
+
+/* ── Değer kaybı sütunları ───────────────────────────────────────────── */
+.depr-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:16px }
+.depr-headline span{ font-size:11px; color:var(--meta); width:100% }
+.depr-headline strong{ font-size:26px; letter-spacing:-.03em; color:var(--tone-text) }
+.depr-headline em{ font-style:normal; font-size:11px; color:var(--meta) }
+.depr-plot{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px }
+.depr-col{ text-align:center; min-width:0 }
+.depr-bar{ display:flex; flex-direction:column; height:118px; border:1px solid var(--tone-line);
+  border-radius:8px; overflow:hidden; background:#fff }
+.depr-keep{ display:block; background:var(--tone-soft); box-shadow:inset 0 2px 0 var(--tone) }
+.depr-loss{ display:block; background:repeating-linear-gradient(135deg,#f7f4f1 0 5px,#e9e1db 5px 10px) }
+.depr-col>strong{ display:block; margin-top:10px; font-size:13px }
+.depr-col>span{ display:block; margin-top:3px; font-size:11px; color:var(--meta) }
+.depr-col>small{ display:block; margin-top:3px; font-size:11px; font-weight:750; color:var(--neg) }
+.depr-col>small.is-base{ color:#8b8580; font-weight:500 }
+.depr-key{ display:flex; align-items:center; gap:7px; margin:16px 0 0; font-size:11px; color:var(--meta) }
+.depr-key i{ width:13px; height:13px; border-radius:3px; border:1px solid var(--tone-line); flex:none }
+.depr-key i:not(:first-child){ margin-left:8px }
+
+/* ── Skor göstergesi ─────────────────────────────────────────────────── */
+.gauge{ display:flex; flex-direction:column; align-items:center; gap:7px; flex:none; width:124px }
+.gauge svg{ width:124px; height:auto; display:block }
+.gauge-track{ fill:none; stroke:#edeae7; stroke-width:10; stroke-linecap:round }
+.gauge-fill{ fill:none; stroke-width:10; stroke-linecap:round }
+.gauge-tick{ fill:#fff; stroke:#c3bdb7; stroke-width:1 }
+.gauge-value{ font-size:26px; font-weight:800; fill:var(--ink) }
+.gauge-max{ font-size:10px; fill:#7d7873 }
+.gauge>strong{ font-size:12px; text-align:center; line-height:1.35 }
+.gauge.is-good .gauge-fill{ stroke:var(--pos-fill) }
+.gauge.is-good>strong{ color:var(--pos) }
+.gauge.is-mid .gauge-fill{ stroke:var(--mid-fill) }
+.gauge.is-mid>strong{ color:var(--mid) }
+.gauge.is-bad .gauge-fill{ stroke:var(--neg-fill) }
+.gauge.is-bad>strong{ color:var(--neg) }
+
+/* ── İlan kalitesi: puan kırılımı ────────────────────────────────────── */
+.quality-body{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:20px; align-items:start }
+.deduct h4{ margin:0 0 8px; font-size:10px; font-weight:800; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--meta) }
+.deduct-row{ display:grid; grid-template-columns:minmax(0,1fr) 76px 32px; align-items:center;
+  gap:10px; padding:8px 0; border-top:1px solid #eeecea }
+.deduct-row>span{ font-size:11px; line-height:1.45 }
+.deduct-row>i{ display:block; height:8px; border-radius:4px; background:var(--tone-soft); overflow:hidden }
+.deduct-row>i>b{ display:block; height:100%; border-radius:4px; background:var(--tone) }
+.deduct-row>strong{ text-align:right; font-size:12px; font-weight:800; color:var(--tone-text) }
+.deduct .quality-warnings{ margin-top:12px }
+
+/* ── Bölgesel fiyat ölçeği ───────────────────────────────────────────── */
+.rscale-headline{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; margin-bottom:18px }
+.rscale-headline strong{ font-size:30px; letter-spacing:-.035em }
+.rscale-headline span{ font-size:12px; font-weight:750 }
+.rscale.is-low .rscale-headline strong,.rscale.is-low .rscale-headline span{ color:var(--pos) }
+.rscale.is-high .rscale-headline strong,.rscale.is-high .rscale-headline span{ color:var(--neg) }
+.rscale.is-flat .rscale-headline strong,.rscale.is-flat .rscale-headline span{ color:#54504c }
+.rscale-axis{ position:relative; height:52px; margin:0 4px }
+.rscale-line{ position:absolute; left:0; right:0; top:38px; height:2px; background:var(--axis); border-radius:2px }
+.rscale-neutral{ position:absolute; top:31px; height:16px; background:#efece9; border-radius:4px }
+.rscale-center{ position:absolute; left:50%; top:27px; width:2px; height:22px; margin-left:-1px; background:#b0aaa4 }
+.rscale-marker{ position:absolute; top:0; transform:translateX(-50%); text-align:center; width:max-content }
+.rscale-marker b{ display:block; font-size:11px; font-weight:750; margin-bottom:5px }
+.rscale-marker:after{ content:""; display:block; width:16px; height:16px; margin:0 auto;
+  border-radius:50%; border:3px solid #fff; background:currentColor; box-shadow:0 0 0 1px currentColor }
+.rscale.is-low .rscale-marker{ color:var(--pos-fill) }
+.rscale.is-high .rscale-marker{ color:var(--neg-fill) }
+.rscale.is-flat .rscale-marker{ color:#7d7873 }
+.rscale-marker b{ color:var(--ink) }
+.rscale-ends{ display:flex; justify-content:space-between; font-size:10px; color:#8b8580; margin-top:4px }
+.rscale-conf{ display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:10px;
+  margin-top:18px; border-top:1px solid #eeecea; padding-top:14px; font-size:11px; color:var(--meta) }
+.rscale-conf i{ display:block; height:8px; border-radius:4px; background:var(--tone-soft); overflow:hidden }
+.rscale-conf i b{ display:block; height:100%; border-radius:4px; background:var(--tone) }
+.rscale-conf strong{ font-size:12px; color:var(--tone-text) }
+
+/* ── Açıklama analizi ────────────────────────────────────────────────── */
+.desc-head{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:22px; align-items:center; margin-bottom:6px }
+.desc-summary p{ margin:0 0 12px; font-size:12px; line-height:1.65; color:#54504c }
+.desc-counts{ display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none }
+.desc-counts li{ display:flex; align-items:baseline; gap:7px; border:1px solid var(--line);
+  border-radius:9px; padding:8px 12px }
+.desc-counts strong{ font-size:16px }
+.desc-counts span{ font-size:11px; color:var(--meta) }
+.desc-counts .is-flag{ background:var(--neg-soft); border-color:#f1ccc6 }
+.desc-counts .is-flag strong{ color:var(--neg) }
+.desc-counts .is-missing{ background:#f5f2f0; border-color:#e2ddd8 }
+.desc-counts .is-claim{ background:var(--tone-soft); border-color:var(--tone-line) }
+.desc-counts .is-claim strong{ color:var(--tone-text) }
+.impact{ margin-top:18px; border:1px solid var(--tone-line); border-radius:12px; padding:16px 18px }
+.impact-head{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:14px }
+.impact-head span{ font-size:11px; color:var(--meta) }
+.impact-head strong{ font-size:20px; font-weight:800 }
+.impact-head .is-pos{ color:var(--pos) }
+.impact-head .is-neg{ color:var(--neg) }
+.impact-head .is-zero{ color:var(--meta) }
+.impact-prices{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center; gap:12px; margin-bottom:18px }
+.impact-prices>div{ border:1px solid var(--line); border-radius:10px; padding:11px 13px }
+.impact-prices>div>span{ display:block; font-size:11px; color:var(--meta); margin-bottom:4px }
+.impact-prices>div>strong{ font-size:14px }
+.impact-prices .is-adj{ background:var(--tone-soft); border-color:var(--tone-line) }
+.impact-prices .is-adj small{ display:block; margin-top:4px; font-size:11px; font-weight:750 }
+.impact-prices small.is-pos{ color:var(--pos) }
+.impact-prices small.is-neg{ color:var(--neg) }
+.impact-arrow{ font-style:normal; font-size:17px; color:#a49d97 }
+.impact-arrow:before{ content:"→" }
+.sgrid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px }
+.sgroup{ border:1px solid var(--line); border-radius:12px; padding:14px 16px }
+.sgroup h4{ display:flex; align-items:center; gap:8px; margin:0 0 10px; font-size:10px;
+  font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--meta) }
+.sgroup h4 b{ min-width:20px; height:20px; display:grid; place-items:center; border-radius:50%;
+  font-size:10px; background:#f2efec; color:#4f4a46 }
+.sgroup ul{ display:grid; gap:8px; margin:0; padding:0; list-style:none }
+.sgroup li{ position:relative; padding-left:16px; font-size:11px; line-height:1.55; color:#4f4a46 }
+.sgroup li:before{ content:""; position:absolute; left:0; top:6px; width:7px; height:7px;
+  border-radius:2px; background:#c3bdb7 }
+.sgroup.is-flag{ background:var(--neg-soft); border-color:#f1ccc6 }
+.sgroup.is-flag h4{ color:var(--neg) }
+.sgroup.is-flag h4 b{ background:#f8ded9; color:var(--neg) }
+.sgroup.is-flag li:before{ background:var(--neg-fill) }
+.sgroup.is-positive{ background:var(--pos-soft); border-color:#cae3d3 }
+.sgroup.is-positive h4{ color:var(--pos) }
+.sgroup.is-positive h4 b{ background:#dcecdf; color:var(--pos) }
+.sgroup.is-positive li:before{ background:var(--pos-fill) }
+.sgroup.is-claim{ background:var(--tone-soft); border-color:var(--tone-line) }
+.sgroup.is-claim h4{ color:var(--tone-text) }
+.sgroup.is-claim h4 b{ background:#fff; color:var(--tone-text) }
+.sgroup.is-claim li:before{ background:var(--tone) }
+.sgroup.is-missing{ background:#f7f5f3 }
+
+/* ── Dar ekran ───────────────────────────────────────────────────────── */
+@media (max-width:620px){
+  .ladder-legend,.sgrid{ grid-template-columns:1fr }
+  .quality-body,.desc-head{ grid-template-columns:1fr; gap:16px; justify-items:center }
+  .deduct,.desc-summary{ width:100% }
+  .impact-prices{ grid-template-columns:1fr; gap:8px }
+  .impact-arrow{ transform:rotate(90deg); justify-self:center }
+  .depr-bar{ height:96px }
+  .depr-plot{ gap:7px }
+  .deduct-row{ grid-template-columns:minmax(0,1fr) 52px 30px; gap:8px }
+  .rscale-headline strong{ font-size:26px }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   4) Sonuç bölümü kontrast düzeltmesi
+   Tipografi tabanı büyüyünce eski gri tonları AA eşiğinin altında kaldı.
+   Aşağıdaki değerler headless Chromium'da ölçüldü: her biri hem beyazda hem
+   de bulunduğu soft zeminde >= 4.5:1. Kapsam yalnızca .results — hero, form
+   ve hasar şeması dokunulmadan kalıyor.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.results{ --muted:#676d6a }
+.results .source-strip{ color:#726c67 }
+.results .card-empty,
+.results .disclaimer,
+.results .questions li p,
+.results .trend-axis,
+.results .trend-dates,
+.results .trend-kpis small,
+.results .listing-car small,
+.results .total-cost small{ color:#6f6b68 }
+.results .fbar-scale,
+.results .rscale-ends,
+.results .depr-col>small.is-base{ color:#716c68 }
+.results .gauge-max{ fill:#706c68 }
+.results .chip-list.muted li{ color:#706c68 }
+.results .factor-list .neutral{ color:#6f6c6a }
+.results .trend-kpis .flat{ color:#6b635d }
+.results .quality-clean,
+.results .factor-list .positive,
+.results .trend-kpis .up{ color:#34794a }
+.results .factor-list .negative,
+.results .trend-kpis .down{ color:#b24f2e }
+.results .listing-row>.up{ color:#b24c45 }
+.results .listing-row>.down{ color:#b1511f }
+.results .depreciation-grid small{ color:#b1511f }
+
+/* 10px altında kalan son üç etiket */
+.results .score-ring span{ font-size:10px }
+.results .contradiction-list>div>span{ font-size:10px }
+.results .listing-head span{ font-size:10px }
+.results .signal-stats span{ color:#6e6a67 }
+.results .listing-row>.up{ color:#ae4a44 }
+
+/* ── Grafik rötuşları (ölçüm sonrası) ────────────────────────────────── */
+.results .signal-stats{ grid-template-columns:repeat(2,1fr) }
+.rscale-marker:before{ content:""; display:block; width:2px; height:22px; margin:0 auto;
+  background:currentColor; opacity:.45 }
+.rscale-marker:after{ margin-top:0 }
+.depr-bar{ max-width:132px; margin:0 auto }
+.wide-card .fbars{ max-width:840px }
+
+/* ── Araca özel bilgiler kartı (VehicleTraits.tsx) ─────────────────────────
+   Kaynak linki her satırda görünür durur: iddia doğrulanabilir olmazsa
+   kartın bir değeri yok. */
+.traits-picker { display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding-bottom: 16px; border-bottom: 1px solid #eeecea; margin-bottom: 4px; }
+.traits-picker label { font-size: 9px; font-weight: 750; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em; }
+.traits-picker select { flex: 1; min-width: 220px; max-width: 420px; height: 38px;
+  padding: 0 11px; font-size: 11px; color: var(--ink); background: #fcfbfa;
+  border: 1px solid #dfdcd8; border-radius: 10px; outline: none; }
+.traits-picker select:focus { background: #fff; border-color: #ef9a6c;
+  box-shadow: 0 0 0 3px #ef6c281a; }
+.traits-years { font-size: 9px; color: var(--muted); }
+
+/* Üç liste yan yana; her biri kendi içinde küçük bir kart gibi durur. */
+.trait-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px; margin-top: 18px; align-items: start; }
+.trait-col { border: 1px solid var(--line); background: #fcfbfa;
+  border-radius: 12px; padding: 14px 14px 6px; min-width: 0; }
+.trait-col-head { margin-bottom: 4px; }
+.trait-col-head h4 { margin: 0; font-size: 11px; font-weight: 750; }
+.trait-col-head span { display: block; margin-top: 3px; font-size: 8px;
+  color: var(--muted); line-height: 1.4; }
+.trait-col-kronik { background: #fff7f5; border-color: #f0d5cd; }
+.trait-col-kronik .trait-col-head h4 { color: #b44d46; }
+.trait-col-iyi { background: #f7fbf8; border-color: #cfe3d5; }
+.trait-col-iyi .trait-col-head h4 { color: #3c8d56; }
+.trait-col-kotu { background: #f3f2f1; border-color: #d6d2ce; }
+.trait-col-kotu .trait-col-head h4 { color: var(--ink); }
+.trait-col-kotu .trait-main p { color: #2b2f2d; }
+.trait-col-empty { margin: 12px 0 14px; font-size: 9px; color: #98938f; }
+.traits-count { font-size: 9px; color: var(--muted); margin-left: auto; }
+
+.trait-list { margin: 0; padding: 0; list-style: none; }
+.trait-row { padding: 10px 0; border-top: 1px solid #eae6e3; }
+.trait-col .trait-row:first-child { border-top: 0; }
+.trait-main { min-width: 0; }
+.trait-main p { margin: 4px 0 0; font-size: 10px; line-height: 1.5; }
+.trait-tag { display: inline-block; font-size: 7.5px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .07em; color: var(--green);
+  background: var(--green-soft); border-radius: 5px; padding: 3px 6px; }
+.trait-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px;
+  margin-top: 6px; }
+.trait-km { font-size: 8px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+.trait-conf { font-size: 7.5px; color: var(--muted); white-space: nowrap; }
+.trait-meta a { font-size: 7.5px; color: #8d8580; text-decoration: underline;
+  max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.trait-meta a:hover { color: var(--green); }
+.trait-source-lock { font-size: 7.5px; font-weight: 700; color: #a8792f; background: #fdf3e0;
+  border: 1px solid #eeddb0; border-radius: 4px; padding: 1px 6px; cursor: pointer; white-space: nowrap; }
+.trait-source-lock:hover { background: #f8e7bf; }
+/* Tek kaynağa dayanan iddia görsel olarak da zayıf dursun. */
+.trait-row.trait-dusuk .trait-main p { color: #6d6a67; }
+
+@media (max-width: 1000px) {
+  .trait-columns { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .traits-picker select { min-width: 0; max-width: none; }
+  .traits-count { margin-left: 0; }
+}
+/* Yazdırmada üç sütun yan yana kalsın, sayfa şişmesin. */
+@media print {
+  .trait-columns { grid-template-columns: repeat(3, 1fr); }
+  .trait-col { break-inside: avoid; }
+}
+.traits-error { font-size: 9px; color: #a5411d; }
+
+/* ── Sade sonuç görünümü: özet + açılır bölümler ─────────────── */
+.decision-card .decision-main p{ font-size:14px; line-height:1.55; margin:8px 0 0 }
+.simple-action{ background:#ffffff14; border-radius:10px; padding:10px 12px }
+.simple-action span{ display:block; color:#ffc4a4; font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; margin-bottom:3px }
+.simple-bar{ grid-column:1 / -1 }
+.simple-bar-track{ position:relative; height:10px; border-radius:99px; background:linear-gradient(90deg,#3fae6a,#e8c547 50%,#e0543f) }
+.simple-bar-mark{ position:absolute; top:50%; width:16px; height:16px; border-radius:50%; transform:translate(-50%,-50%); border:3px solid #202522 }
+.simple-bar-mark.listing, .simple-bar-legend i.listing{ background:#fff }
+.simple-bar-mark.estimate, .simple-bar-legend i.estimate{ background:#ef7f42 }
+.simple-bar-labels{ display:flex; justify-content:space-between; font-size:11px; color:#ffffffa6; margin-top:8px }
+.simple-bar-legend{ display:flex; gap:16px; font-size:11px; color:#ffffffcc; margin-top:8px }
+.simple-bar-legend i{ display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:middle }
+.acc-intro{ color:var(--muted); font-size:13px; margin:22px 0 10px }
+.acc-list{ display:grid; gap:10px }
+.acc{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden }
+.acc > summary{ list-style:none; cursor:pointer; display:flex; align-items:center; gap:14px; padding:16px 18px }
+.acc > summary::-webkit-details-marker{ display:none }
+.acc > summary:hover{ background:#faf8f6 }
+.acc-icon{ flex:none; display:grid; place-content:center; width:36px; height:36px; border-radius:10px; background:var(--green-soft); color:var(--green); font-size:16px; font-weight:800 }
+.acc-text{ display:flex; flex-direction:column; gap:2px; min-width:0; flex:1 }
+.acc-text strong{ font-size:15px }
+.acc-text small{ color:var(--muted); font-size:12px }
+.acc-chip{ flex:none; background:var(--paper); border:1px solid var(--line); border-radius:99px; padding:5px 10px; font-size:12px; font-weight:700; white-space:nowrap }
+.acc-arrow{ flex:none; font-size:18px; color:var(--muted); transition:transform .2s }
+.acc[open] .acc-arrow{ transform:rotate(180deg) }
+.acc-body{ border-top:1px solid var(--line); padding:18px; display:grid; gap:16px }
+.acc-body .result-card{ border:0; padding:0; border-radius:0 }
+.acc-questions{ list-style:none; margin:0; padding:0; display:grid; gap:12px }
+.acc-questions li{ display:flex; gap:12px }
+.acc-questions li > span{ color:var(--green); font-weight:800; font-size:12px }
+.acc-questions p{ margin:0; font-size:13px; line-height:1.5; color:var(--muted) }
+.acc-questions strong{ display:block; color:var(--ink) }
+.acc-sub{ border-top:1px dashed var(--line); padding-top:16px }
+.acc-facts{ display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; margin:0 }
+.acc-facts div{ background:var(--paper); border-radius:10px; padding:10px 12px }
+.acc-facts dt{ color:var(--muted); font-size:11px }
+.acc-facts dd{ margin:3px 0 0; font-weight:700; font-size:14px }
+@media (max-width:640px){
+  .acc > summary{ flex-wrap:wrap; padding:14px }
+  .acc-chip{ order:3; margin-left:50px }
+}
+@media print{
+  .acc-intro, .acc-arrow{ display:none }
+  .acc{ break-inside:avoid }
+}
+
+/* ── Renkli açılır bölümler ─────────────────────────────────── */
+.acc-orange{ --c:#ef6c28; --c-soft:#fff0e7 }
+.acc-blue{ --c:#2f6fe4; --c-soft:#eaf1ff }
+.acc-gold{ --c:#c98a00; --c-soft:#fff6dc }
+.acc-rose{ --c:#e0457b; --c-soft:#ffecf2 }
+.acc-teal{ --c:#0e9f9a; --c-soft:#e3f7f6 }
+.acc-violet{ --c:#7c4ddb; --c-soft:#f1ebff }
+.acc-red{ --c:#d9433b; --c-soft:#ffecea }
+.acc-plum{ --c:#a8458f; --c-soft:#f9eaf5 }
+.acc-green{ --c:#2e9e5b; --c-soft:#e6f6ec }
+.acc-slate{ --c:#4f6478; --c-soft:#edf1f5 }
+.acc{ border-left:5px solid var(--c); transition:box-shadow .2s, transform .2s }
+.acc:hover{ box-shadow:0 8px 22px color-mix(in srgb, var(--c) 18%, transparent); transform:translateY(-1px) }
+.acc > summary:hover{ background:var(--c-soft) }
+.acc .acc-icon{ background:var(--c); color:#fff }
+.acc .acc-chip{ background:var(--c-soft); border-color:color-mix(in srgb, var(--c) 30%, transparent); color:var(--c) }
+.acc .acc-arrow{ color:var(--c) }
+.acc[open]{ border-color:color-mix(in srgb, var(--c) 45%, transparent); box-shadow:0 10px 28px color-mix(in srgb, var(--c) 16%, transparent) }
+.acc[open] > summary{ background:linear-gradient(90deg, var(--c-soft), #fff) }
+.acc[open] .acc-body{ border-top-color:color-mix(in srgb, var(--c) 25%, transparent); background:linear-gradient(180deg, color-mix(in srgb, var(--c-soft) 55%, #fff), #fff 140px) }
+.acc .acc-questions li > span{ color:var(--c) }
+.acc .acc-facts div{ background:var(--c-soft) }
+.acc-intro{ color:var(--ink); font-weight:600 }
+@media print{ .acc{ box-shadow:none; transform:none } }
+
+/* ── Sekmeler, hesap rozeti, kanıt şeridi ─────────────────────── */
+.tabbar{ position:sticky; top:72px; z-index:15; display:flex; gap:8px; overflow-x:auto; padding:10px max(28px,50vw - 590px); background:#fffffff2; border-bottom:1px solid var(--line); backdrop-filter:blur(10px) }
+.tabbar button{ --c:#ef6c28; display:flex; align-items:center; gap:8px; white-space:nowrap; border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:99px; padding:9px 16px; font-size:13px; font-weight:700; cursor:pointer; transition:all .15s }
+.tabbar button span{ display:grid; place-content:center; width:22px; height:22px; border-radius:50%; background:color-mix(in srgb, var(--c) 14%, #fff); color:var(--c); font-size:12px }
+.tabbar .tab-scenario{ --c:#7c4ddb } .tabbar .tab-cost{ --c:#0e9f9a } .tabbar .tab-profile{ --c:#2f6fe4 }
+.tabbar button:hover{ border-color:var(--c) }
+.tabbar button.active{ background:var(--c); border-color:var(--c); color:#fff }
+.tabbar button.active span{ background:#ffffff33; color:#fff }
+.account-badge{ display:flex; align-items:center; gap:8px; background:#ffffff12 !important; border:1px solid #5a615d; border-radius:99px !important; padding:5px 6px 5px 5px !important; cursor:pointer; color:#fff }
+.account-plan{ border-radius:99px; padding:4px 10px; font-size:11px; font-weight:800; letter-spacing:.04em; background:#6b7280; color:#fff }
+.plan-basic .account-plan{ background:#4f6478 } .plan-pro .account-plan{ background:#7c4ddb } .plan-premium .account-plan{ background:linear-gradient(90deg,#ef6c28,#e0457b) }
+.account-credits{ font-size:12px; color:#e6e9e7 } .account-credits b{ color:#ffc4a4; font-size:14px }
+.account-credits small{ margin-left:5px; color:#9fe3c0; font-size:10px }
+.account-credits.empty b{ color:#ff8a80 }
+.account-reset{ font-size:11px; color:#c9cfcc; font-variant-numeric:tabular-nums; padding-right:6px }
+.credit-hint{ margin:10px 0 0; font-size:12px; color:var(--muted) } .credit-hint b{ color:var(--ink) }
+.credit-hint button{ border:0; background:none; color:var(--green); font-weight:700; cursor:pointer; padding:0 }
+.submit-row{ flex-direction:column; align-items:flex-end }
+.evidence-strip{ grid-column:1 / -1; display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding:12px; border-radius:12px; background:#ffffff10; border:1px solid #ffffff1f }
+.evidence-badge{ border-radius:99px; padding:4px 10px; font-size:11px; font-weight:800 }
+.evidence-strip.strong .evidence-badge{ background:#2e9e5b; color:#fff }
+.evidence-strip.medium .evidence-badge{ background:#e8c547; color:#202522 }
+.evidence-strip.weak .evidence-badge{ background:#e0543f; color:#fff }
+.evidence-items{ display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12px; color:#ffffffcc }
+.evidence-items b{ color:#fff }
+.evidence-notes{ margin:0; padding-left:18px; font-size:13px; line-height:1.6; color:var(--ink) }
+.tab-page{ max-width:1180px; margin:0 auto 80px; padding:40px 20px 0 }
+.tab-head{ margin-bottom:24px } .tab-head h1{ margin:6px 0 8px; font-size:32px; letter-spacing:-.02em } .tab-head p{ margin:0; color:var(--muted); font-size:14px; max-width:760px; line-height:1.55 }
+.tab-subtitle{ font-size:15px; margin:22px 0 12px }
+.ghost-button{ border:1px solid var(--line); background:#fff; border-radius:11px; padding:12px 16px; font-weight:700; cursor:pointer; color:var(--ink) }
+.profile-summary{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px }
+.profile-summary div{ background:linear-gradient(135deg,#2f6fe4,#7c4ddb); color:#fff; border-radius:14px; padding:16px }
+.profile-summary div:nth-child(2){ background:linear-gradient(135deg,#ef6c28,#e0457b) }
+.profile-summary div:nth-child(3){ background:linear-gradient(135deg,#0e9f9a,#2e9e5b) }
+.profile-summary div:nth-child(4){ background:linear-gradient(135deg,#4f6478,#202522) }
+.profile-summary span{ display:block; font-size:11px; opacity:.85 } .profile-summary strong{ font-size:20px }
+.billing-note{ background:#fff6dc; border:1px solid #f0dd9c; border-radius:12px; padding:12px 14px; font-size:13px; line-height:1.55; margin:16px 0 }
+.billing-ok{ background:#e6f6ec; border:1px solid #b6e2c6; color:#1f6b3f; border-radius:10px; padding:10px 14px; font-size:13px; font-weight:700 }
+.plan-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px }
+.plan-card{ --c:#4f6478; background:#fff; border:1px solid var(--line); border-top:6px solid var(--c); border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:8px }
+.plan-card.plan-pro{ --c:#7c4ddb } .plan-card.plan-premium{ --c:#ef6c28 }
+.plan-card.active{ box-shadow:0 0 0 2px var(--c), 0 14px 30px color-mix(in srgb, var(--c) 20%, transparent) }
+.plan-name{ color:var(--c); font-weight:800; letter-spacing:.06em; text-transform:uppercase; font-size:12px }
+.plan-price{ font-size:26px } .plan-credits{ margin:0; font-size:13px; color:var(--muted) } .plan-credits b{ color:var(--c); font-size:18px }
+.plan-card ul{ margin:4px 0 8px; padding-left:18px; font-size:13px; line-height:1.7; flex:1 }
+.plan-card button, .pack-card button{ border:0; border-radius:10px; padding:11px; font-weight:800; cursor:pointer; background:var(--c, #0e9f9a); color:#fff }
+.plan-card button:disabled, .pack-card button:disabled{ opacity:.55; cursor:default }
+.pack-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px }
+.pack-card{ --c:#0e9f9a; background:#e3f7f6; border:1px solid #bfe8e5; border-radius:14px; padding:16px; display:flex; flex-direction:column; align-items:flex-start; gap:4px }
+.pack-card strong{ font-size:28px; color:var(--c) } .pack-card span{ font-size:12px; color:var(--muted) } .pack-card small{ font-weight:700; margin-bottom:6px }
+.pack-card button{ align-self:stretch }
+.scenario-presets{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:#f1ebff; border:1px solid #dccdfb; border-radius:14px; padding:12px 14px }
+.scenario-presets span{ font-weight:800; font-size:12px; color:#7c4ddb; margin-right:4px }
+.scenario-presets button{ border:1px solid #cdb8f7; background:#fff; color:#5a33b0; border-radius:99px; padding:7px 12px; font-size:12px; font-weight:700; cursor:pointer }
+.scenario-presets button:hover{ background:#7c4ddb; color:#fff }
+.scenario-layout, .cost-layout{ display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr); gap:20px; align-items:start; margin-top:14px }
+.scenario-editor, .cost-form{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:6px 20px 20px }
+.scenario-editor .damage-panel{ border:1px solid var(--line); border-radius:14px; margin-top:6px }
+.scenario-actions{ display:flex; flex-wrap:wrap; justify-content:flex-end; gap:10px; margin-top:16px }
+.scenario-results{ position:sticky; top:140px; display:grid; gap:10px }
+.scenario-results .tab-subtitle{ margin-top:0 }
+.scenario-card{ --c:#4f6478; background:#fff; border:1px solid var(--line); border-left:5px solid var(--c); border-radius:14px; padding:14px 16px }
+.scenario-card.base{ --c:#202522; background:#202522; color:#fff } .scenario-card.base p{ color:#ffffffb3 }
+.scenario-card.up{ --c:#2e9e5b } .scenario-card.down{ --c:#e0543f }
+.scenario-card strong{ display:block; font-size:22px; margin-top:4px }
+.scenario-card p{ margin:4px 0 0; font-size:12px; color:var(--muted) }
+.scenario-tag{ font-size:12px; font-weight:700; color:var(--c) } .scenario-card.base .scenario-tag{ color:#ffc4a4 }
+.scenario-card-top{ display:flex; justify-content:space-between; gap:8px }
+.scenario-card-top button{ border:0; background:none; font-size:18px; cursor:pointer; color:var(--muted) }
+.scenario-diff{ display:inline-block; margin-top:4px; padding:3px 8px; border-radius:99px; font-size:12px; font-weight:800; background:color-mix(in srgb, var(--c) 14%, #fff); color:var(--c) }
+.cost-result{ position:sticky; top:140px; display:grid; gap:12px }
+.cost-total{ background:linear-gradient(135deg,#0e9f9a,#2f6fe4); color:#fff; border-radius:16px; padding:20px }
+.cost-total > span{ font-size:12px; opacity:.85 } .cost-total > strong{ display:block; font-size:34px; margin:4px 0 12px }
+.cost-sub{ display:flex; gap:12px } .cost-sub div{ background:#ffffff22; border-radius:10px; padding:8px 12px } .cost-sub span{ display:block; font-size:11px; opacity:.85 }
+.cost-breakdown{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; display:grid; gap:12px }
+.cost-row{ --c:#4f6478 }
+.cost-fuel{ --c:#ef6c28 } .cost-mtv{ --c:#7c4ddb } .cost-kasko{ --c:#2f6fe4 } .cost-traffic{ --c:#0e9f9a } .cost-maintenance{ --c:#c98a00 }
+.cost-parking{ --c:#a8458f } .cost-toll{ --c:#e0457b } .cost-tires{ --c:#2e9e5b } .cost-inspection{ --c:#d9433b } .cost-loan{ --c:#202522 }
+.cost-row-top{ display:flex; justify-content:space-between; font-size:13px } .cost-row-top em{ margin-left:6px; font-size:10px; font-style:normal; background:#fff6dc; color:#8a6300; border-radius:99px; padding:2px 6px }
+.cost-row i{ display:block; height:8px; border-radius:99px; background:#f1efec; margin-top:6px; overflow:hidden } .cost-row i b{ display:block; height:100%; background:var(--c); border-radius:99px }
+.cost-row small{ display:block; margin-top:4px; font-size:11px; color:var(--muted) }
+.cost-placeholder{ background:#fff; border:1px dashed #cfd8d6; border-radius:16px; padding:28px; text-align:center } .cost-placeholder p{ color:var(--muted); font-size:13px }
+@media (max-width:900px){
+  .scenario-layout, .cost-layout{ grid-template-columns:1fr }
+  .scenario-results, .cost-result{ position:static }
+  .tabbar{ top:62px; padding:8px 12px }
+  .account-nav>span{ display:none }
+  .account-reset{ display:none }
+}
+
+/* ── Bölgesel fırsatlar (Premium) ───────────────────────────── */
+.tabbar .tab-regional{ --c:#e0457b }
+.tabbar .tab-regional span{ background:linear-gradient(135deg,#ef6c28,#e0457b); color:#fff }
+.premium-lock{ max-width:560px; background:linear-gradient(160deg,#fff0e7,#ffecf2); border:1px solid #f5c6d6; border-radius:20px; padding:28px; display:grid; gap:10px; justify-items:start }
+.premium-lock-icon{ display:grid; place-content:center; width:48px; height:48px; border-radius:14px; background:linear-gradient(135deg,#ef6c28,#e0457b); color:#fff; font-size:22px }
+.premium-lock h2{ margin:4px 0 0 } .premium-lock ul{ margin:0; padding-left:18px; line-height:1.8; font-size:14px } .premium-lock small{ color:var(--muted) }
+.regional-controls{ display:flex; flex-wrap:wrap; align-items:flex-end; gap:14px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:14px 16px }
+.regional-controls .field{ min-width:240px }
+.regional-view{ display:flex; gap:6px; background:var(--paper); border-radius:12px; padding:4px }
+.regional-view button{ border:0; background:none; border-radius:9px; padding:10px 14px; font-weight:700; cursor:pointer; color:var(--muted) }
+.regional-view button.active{ background:#e0457b; color:#fff }
+.muted{ color:var(--muted); font-weight:500 }
+.district-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px }
+.district-tile{ --bg:#edf1f5; --fg:#4f6478; text-align:left; border:2px solid transparent; background:var(--bg); color:var(--fg); border-radius:14px; padding:12px; cursor:pointer; display:grid; gap:2px; transition:transform .15s }
+.district-tile:hover{ transform:translateY(-2px) }
+.district-tile strong{ color:var(--ink); font-size:14px } .district-tile small{ color:var(--muted); font-size:11px }
+.district-diff{ font-size:20px; font-weight:800 }
+.district-tile.selected{ border-color:var(--fg); box-shadow:0 8px 20px color-mix(in srgb, var(--fg) 25%, transparent) }
+.t-great{ --bg:#d7f2e2; --fg:#1f7a45 } .t-good{ --bg:#e9f7ef; --fg:#2e9e5b } .t-flat{ --bg:#f3f1ee; --fg:#6b7280 } .t-bad{ --bg:#fff0e7; --fg:#d9651f } .t-worse{ --bg:#ffe5e2; --fg:#c9362d }
+.regional-filters{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; align-items:end; margin:18px 0 10px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px }
+.regional-check{ display:flex; align-items:center; gap:8px; font-size:13px; font-weight:600; height:44px }
+.regional-filter-chip{ font-size:13px } .regional-filter-chip button{ border:0; background:none; color:#e0457b; font-weight:700; cursor:pointer }
+.deal-table-wrap{ overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:14px }
+.deal-table{ width:100%; border-collapse:collapse; font-size:13px; min-width:760px }
+.deal-table th{ text-align:left; font-size:11px; color:var(--muted); font-weight:700; padding:12px; border-bottom:1px solid var(--line); background:var(--paper) }
+.deal-table td{ padding:12px; border-bottom:1px solid var(--line); vertical-align:top }
+.deal-table td small{ display:block; color:var(--muted); font-size:11px; margin-top:2px }
+.deal-row{ cursor:pointer } .deal-row:hover{ background:var(--bg) }
+.deal-row td:first-child{ border-left:4px solid var(--fg) }
+.deal-diff{ display:inline-block; background:var(--bg); color:var(--fg); border-radius:99px; padding:4px 10px; font-weight:800 }
+.deal-toggle{ color:var(--muted) }
+.deal-detail td{ background:#fbfaf8 }
+.deal-listings{ display:grid; gap:8px; margin-top:8px }
+.deal-listing{ display:grid; grid-template-columns:1fr auto auto; gap:12px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 12px }
+.deal-listing small{ display:block; color:var(--muted) }
+.deal-listing-price{ text-align:right } .deal-listing-price span{ display:block; font-size:11px; font-weight:700 }
+.deal-listing-price .below{ color:#2e9e5b } .deal-listing-price .above{ color:#d9433b }
+.deal-listing a{ color:#e0457b; font-weight:700; text-decoration:none; white-space:nowrap }
+.model-compare{ margin-top:18px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; display:grid; gap:14px }
+.model-compare .field{ max-width:360px }
+.model-bars{ display:grid; gap:8px }
+.model-bar{ display:grid; grid-template-columns:140px 1fr 80px 160px; gap:12px; align-items:center; font-size:13px }
+.model-bar-name{ font-weight:700 }
+.model-bar-track{ position:relative; height:14px; background:#f3f1ee; border-radius:99px }
+.model-bar-track::after{ content:""; position:absolute; left:50%; top:-3px; bottom:-3px; width:2px; background:#c8c3bd }
+.model-bar-track i{ position:absolute; top:0; bottom:0; background:var(--fg); border-radius:99px }
+.model-bar-value{ font-weight:800; color:var(--fg) } .model-bar small{ color:var(--muted) }
+
+/* ── Bölgesel Fırsatlar: model→şehir / şehir→model sıralama listesi ── */
+.regional-picker-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px }
+.city-rank-list{ display:grid; gap:8px; margin-top:6px }
+.city-rank-row{ display:grid; grid-template-columns:28px 1fr 120px 90px auto; align-items:center; gap:12px;
+  width:100%; text-align:left; background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  cursor:pointer; font:inherit; color:inherit; transition:transform .15s, box-shadow .15s }
+.city-rank-row:hover{ transform:translateY(-1px); box-shadow:0 8px 20px #0000000f }
+.city-rank-pos{ width:28px; height:28px; border-radius:50%; background:var(--paper); color:var(--muted);
+  display:grid; place-items:center; font-size:12px; font-weight:800 }
+.city-rank-city{ font-weight:700; font-size:14px }
+.city-rank-city small{ display:block; color:var(--muted); font-weight:500; font-size:11px; margin-top:2px }
+.city-rank-price{ font-weight:800; font-size:13px }
+.city-rank-diff{ --bg:#f3f1ee; --fg:#6b7280; background:var(--bg); color:var(--fg); border-radius:8px;
+  padding:5px 9px; font-size:11px; font-weight:800; text-align:center; justify-self:start }
+.city-rank-row small{ color:var(--muted); font-size:11px; white-space:nowrap }
+
+/* ── İl/model detay pop-up'ı ── */
+.modal-overlay{ position:fixed; inset:0; background:#1a1d1bcc; display:flex; align-items:center; justify-content:center;
+  padding:20px; z-index:100 }
+.modal-card{ background:#fff; border-radius:18px; max-width:640px; width:100%; max-height:86vh; overflow-y:auto;
+  padding:26px 28px; box-shadow:0 30px 80px #00000030 }
+.modal-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:16px }
+.modal-head h2{ margin:6px 0 4px; font-size:20px }
+.modal-head p{ margin:0; color:var(--muted); font-size:12px }
+.modal-head p b{ --bg:#f3f1ee; --fg:#6b7280; background:var(--bg); color:var(--fg); border-radius:6px; padding:2px 7px; font-weight:800 }
+.modal-close{ border:0; background:var(--paper); border-radius:50%; width:32px; height:32px; font-size:18px; line-height:1;
+  cursor:pointer; color:var(--muted); flex:none }
+.modal-close:hover{ background:#eee9e6 }
+.modal-kpis{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:16px }
+.modal-kpis div{ border:1px solid var(--line); background:var(--paper); border-radius:10px; padding:10px 12px }
+.modal-kpis span{ display:block; color:var(--muted); font-size:10px; margin-bottom:4px }
+.modal-kpis strong{ font-size:13px }
+@media (max-width:700px){
+  .model-bar{ grid-template-columns:100px 1fr 64px } .model-bar small{ display:none }
+  .deal-listing{ grid-template-columns:1fr } .deal-listing-price{ text-align:left }
+  .city-rank-row{ grid-template-columns:24px 1fr 90px; grid-template-areas:"pos city diff" "pos price price" "pos meta meta" }
+  .city-rank-row small{ grid-column:2/4 }
+  .modal-kpis{ grid-template-columns:1fr }
+}
+
+/* ── Araç Rehberi ───────────────────────────────────────────── */
+.tabbar .tab-guide{ --c:#c98a00 }
+.guide-search{ position:relative; max-width:560px; margin-bottom:18px }
+.guide-search input{ width:100%; height:50px; border-radius:14px; border:2px solid #f0dd9c; background:#fffdf5; padding:0 16px; font-size:15px; outline:none }
+.guide-search input:focus{ border-color:#c98a00; background:#fff }
+.guide-search-results{ position:absolute; z-index:10; left:0; right:0; top:56px; background:#fff; border:1px solid var(--line); border-radius:14px; box-shadow:0 18px 40px #0000001f; overflow:hidden }
+.guide-search-results button{ display:block; width:100%; text-align:left; border:0; background:#fff; padding:10px 14px; cursor:pointer; border-bottom:1px solid var(--line) }
+.guide-search-results button:hover{ background:#fff6dc }
+.guide-search-results small{ display:block; color:var(--muted); font-size:12px }
+.guide-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px }
+.guide-list{ background:#fff; border:1px solid var(--line); border-top:6px solid var(--c); border-radius:16px; padding:16px }
+.guide-list h3{ margin:0; color:var(--c) } .guide-list > p{ margin:2px 0 10px; font-size:12px; color:var(--muted) }
+.guide-list ol{ list-style:none; margin:0; padding:0; display:grid; gap:4px }
+.guide-list li button{ display:grid; grid-template-columns:26px 1fr auto; gap:10px; align-items:center; width:100%; text-align:left; border:0; background:none; padding:7px 6px; border-radius:10px; cursor:pointer }
+.guide-list li button:hover{ background:color-mix(in srgb, var(--c) 10%, #fff) }
+.guide-rank{ display:grid; place-content:center; width:24px; height:24px; border-radius:8px; background:color-mix(in srgb, var(--c) 15%, #fff); color:var(--c); font-weight:800; font-size:12px }
+.guide-name{ font-size:13px; font-weight:700 } .guide-name small{ display:block; font-weight:500; color:var(--muted); font-size:11px }
+.guide-list b{ color:var(--c); font-size:13px; white-space:nowrap }
+.guide-model-head{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:12px; margin:18px 0 14px }
+.guide-model-head h1{ margin:4px 0 0; font-size:34px }
+.guide-trend{ border-radius:99px; padding:8px 14px; font-weight:800 }
+.guide-trend.up{ background:#ffecf2; color:#c2305f } .guide-trend.down{ background:#eaf1ff; color:#2f6fe4 } .guide-trend.flat{ background:#f3f1ee; color:#6b7280 }
+.guide-kpis{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px }
+.guide-kpi{ --c:#ef6c28; border-radius:14px; padding:14px; color:#fff; background:linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 70%, #202522)) }
+.guide-kpi.k1{ --c:#7c4ddb } .guide-kpi.k2{ --c:#2e9e5b } .guide-kpi.k3{ --c:#0e9f9a } .guide-kpi.k4{ --c:#2f6fe4 } .guide-kpi.k5{ --c:#e0457b }
+.guide-kpi span{ display:block; font-size:11px; opacity:.9 } .guide-kpi strong{ display:block; font-size:22px; margin:2px 0 } .guide-kpi small{ font-size:11px; opacity:.8 }
+.guide-charts{ display:grid; grid-template-columns:1fr 1fr; gap:14px }
+.guide-chart-card{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px }
+.guide-chart-card.wide{ grid-column:1 / -1 }
+.guide-chart-card h3{ margin:0 } .guide-chart-card > p{ margin:2px 0 8px; font-size:12px; color:var(--muted) }
+.weekly-chart svg{ width:100%; height:auto; display:block }
+.wc-grid{ stroke:#ece8e3; stroke-dasharray:3 4 } .wc-base{ stroke:#b9b2aa; stroke-dasharray:5 4 }
+.wc-label{ font-size:11px; fill:#8b857f }
+.wc-legend{ display:flex; flex-wrap:wrap; gap:14px; font-size:12px; margin-top:6px }
+.wc-legend i{ display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:middle }
+.guide-lock{ display:flex; flex-wrap:wrap; align-items:center; gap:16px; background:linear-gradient(160deg,#fff0e7,#ffecf2); border:1px solid #f5c6d6; border-radius:16px; padding:18px }
+.guide-lock > div{ flex:1; min-width:240px } .guide-lock p{ margin:4px 0 0; font-size:13px; color:var(--muted) }
+.guide-compare{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; display:grid; gap:12px }
+.guide-compare-controls{ display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end }
+.guide-compare-controls .field{ min-width:220px }
+.guide-compare-table{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px }
+.guide-compare-table div{ border-left:4px solid var(--c); background:var(--paper); border-radius:10px; padding:10px 12px; display:grid; gap:2px; font-size:12px }
+.guide-compare-table strong{ color:var(--c); font-size:14px }
+.guide-similar{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px }
+.guide-similar button{ text-align:left; border:1px solid #f0dd9c; background:#fffdf5; border-radius:12px; padding:12px; cursor:pointer; display:grid; gap:2px }
+.guide-similar button:hover{ border-color:#c98a00 } .guide-similar small{ color:var(--muted) }
+.guide-engines{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px }
+.guide-engines button{ border:1px solid #bfe8e5; background:#e3f7f6; color:#0b6f6b; border-radius:12px; padding:8px 12px; cursor:pointer; text-align:left; font-weight:700 }
+.guide-engines button small{ display:block; font-weight:500; font-size:11px; color:var(--muted) }
+.guide-engines button.active{ background:#0e9f9a; color:#fff; border-color:#0e9f9a } .guide-engines button.active small{ color:#ffffffcc }
+.guide-model .traits-card{ margin-top:0 }
+@media (max-width:800px){ .guide-charts{ grid-template-columns:1fr } }
+
+/* ── Plan kilitleri ─────────────────────────────────────────── */
+.tab-lock{ font-style:normal; font-size:10px; font-weight:800; border-radius:99px; padding:2px 7px; background:#f3f1ee; color:#6b7280; margin-left:2px }
+.tabbar .tab-regional .tab-lock{ background:linear-gradient(90deg,#ef6c28,#e0457b); color:#fff }
+.tabbar .tab-scenario .tab-lock, .tabbar .tab-guide .tab-lock{ background:#f1ebff; color:#7c4ddb }
+.tabbar button.locked:not(.active){ opacity:.85 }
+.tabbar button.active .tab-lock{ background:#ffffff33; color:#fff }
+.premium-lock.lock-pro{ background:linear-gradient(160deg,#f1ebff,#eaf1ff); border-color:#d5c8f5 }
+.lock-pro .premium-lock-icon{ background:linear-gradient(135deg,#7c4ddb,#2f6fe4) }
+
+/* ── Kilitli bölüm: bulanık iskelet + yükseltme kartı ────────── */
+.locked-panel{ position:relative; min-height:210px; border-radius:14px; overflow:hidden; background:linear-gradient(160deg,#fbfaf8,#f3f1ee); border:1px solid var(--line) }
+.locked-panel.compact{ min-height:150px }
+.locked-ghost{ position:absolute; inset:0; padding:18px; filter:blur(5px); opacity:.55; user-select:none; pointer-events:none }
+.locked-overlay{ position:relative; display:grid; gap:8px; justify-items:center; text-align:center; padding:26px 18px }
+.locked-overlay strong{ font-size:17px } .locked-overlay p{ margin:0; font-size:13px; color:var(--muted) }
+.locked-badge{ border-radius:99px; padding:5px 12px; font-size:11px; font-weight:800; color:#fff; background:#7c4ddb }
+.locked-badge.plan-premium{ background:linear-gradient(90deg,#ef6c28,#e0457b) }
+.locked-overlay .primary-button{ min-width:0; gap:14px; padding:11px 14px 11px 18px }
+.ghost-listings{ display:grid; gap:10px }
+.ghost-listings > div{ display:grid; grid-template-columns:1fr 90px; gap:8px; background:#fff; border-radius:10px; padding:12px; align-items:center }
+.g-title{ display:block; height:12px; width:70%; border-radius:6px; background:#d9d4ce }
+.g-meta{ display:block; height:9px; width:45%; border-radius:6px; background:#e7e3de; margin-top:6px }
+.g-price{ display:block; height:16px; border-radius:6px; background:#c9c3bc }
+.ghost-curve{ width:100%; height:120px } .ghost-curve path{ fill:none; stroke:#c9c3bc; stroke-width:6 } .ghost-curve circle{ fill:#a8a19a }
+.ghost-facts{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px }
+.ghost-facts div{ background:#fff; border-radius:10px; padding:12px }
+.ghost-facts span{ display:block; height:9px; width:60%; border-radius:6px; background:#e2ded8 }
+.ghost-facts b{ display:block; height:14px; width:80%; border-radius:6px; background:#c9c3bc; margin-top:8px }
+.ghost-charts{ display:flex; align-items:flex-end; gap:8px; height:150px }
+.ghost-charts i{ flex:1; background:linear-gradient(180deg,#cfc8c1,#e7e3de); border-radius:6px 6px 0 0 }
+/* Pazarlık: sade 3 adım */
+.deal-line{ margin:0 0 12px; font-size:15px; line-height:1.6 }
+.deal-steps{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:10px }
+.deal-steps li{ --c:#ef6c28; display:flex; align-items:center; gap:10px; background:color-mix(in srgb, var(--c) 8%, #fff); border:1px solid color-mix(in srgb, var(--c) 25%, #fff); border-radius:12px; padding:12px }
+.deal-steps .step-target{ --c:#2e9e5b } .deal-steps .step-ceiling{ --c:#d9433b }
+.deal-steps span{ flex:none; display:grid; place-content:center; width:26px; height:26px; border-radius:50%; background:var(--c); color:#fff; font-weight:800; font-size:13px }
+.deal-steps small{ display:block; font-size:11px; color:var(--muted) } .deal-steps strong{ font-size:16px }
+.deal-saving{ margin:12px 0 0; font-size:13px; color:#1f6b3f; background:#e6f6ec; border-radius:10px; padding:9px 12px }
+@media (max-width:640px){ .deal-steps{ grid-template-columns:1fr } .ghost-facts{ grid-template-columns:1fr 1fr } }
+
+/* ── Üst menü, hesap menüsü, plan onayı, birleşik bölüm ─────── */
+.topbar{ gap:18px }
+.top-nav{ display:flex; gap:6px; flex:1; justify-content:center; overflow-x:auto }
+.top-nav button{ --c:#ef6c28; display:flex; align-items:center; gap:8px; white-space:nowrap; border:1px solid transparent; background:none; color:#d7dbd9; border-radius:99px; padding:9px 15px; font-size:13px; font-weight:700; cursor:pointer }
+.top-nav .tab-guide{ --c:#e8b23a } .top-nav .tab-regional{ --c:#f07ea5 }
+.top-nav button span{ display:grid; place-content:center; width:22px; height:22px; border-radius:50%; background:#ffffff1a; color:var(--c); font-size:12px }
+.top-nav button:hover{ background:#ffffff14; color:#fff }
+.top-nav button.active{ background:var(--c); color:#fff } .top-nav button.active span{ background:#ffffff33; color:#fff }
+.account-menu{ position:relative }
+.account-menu-trigger{ display:flex; align-items:center; gap:6px; background:#ffffff14 !important; border:1px solid #5a615d !important; color:#fff; border-radius:99px !important; padding:9px 14px !important; cursor:pointer; font-weight:700; font-size:12px }
+.account-dropdown{ position:absolute; right:0; top:46px; width:260px; background:#fff; border:1px solid var(--line); border-radius:14px; box-shadow:0 20px 44px #00000026; overflow:hidden; z-index:30; display:grid }
+.account-dropdown button, .account-dropdown-row{ display:flex; align-items:center; gap:10px; text-align:left; width:100%; border:0; background:#fff; padding:12px 14px; cursor:pointer; border-bottom:1px solid var(--line); color:var(--ink) }
+.account-dropdown-row{ cursor:default }
+.account-dropdown button:hover{ background:var(--paper) }
+.account-dropdown strong{ display:block; font-size:13px } .account-dropdown small{ display:block; color:var(--muted); font-size:11px }
+.account-dropdown .menu-icon{ display:grid; place-content:center; width:28px; height:28px; border-radius:9px; background:var(--green-soft); color:var(--green); flex:none }
+.account-dropdown .danger{ color:#c9362d; border-bottom:0 } .account-dropdown .danger .menu-icon{ background:#ffe5e2; color:#c9362d }
+.tabbar{ justify-content:flex-start }
+.modal-backdrop{ position:fixed; inset:0; background:#20252299; display:grid; place-items:center; padding:20px; z-index:60 }
+.modal{ background:#fff; border-radius:18px; padding:24px; width:min(420px,100%); display:grid; gap:10px; box-shadow:0 30px 60px #00000040 }
+.modal h2{ margin:0; font-size:20px }
+.modal-price{ margin:0; font-size:26px; font-weight:800; color:var(--green) }
+.modal ul{ margin:0; padding-left:18px; font-size:13px; line-height:1.7; color:var(--muted) }
+.modal-note{ margin:0; font-size:12px; color:var(--muted); background:#fff6dc; border-radius:10px; padding:9px 11px }
+.modal-actions{ display:flex; justify-content:flex-end; gap:10px; margin-top:6px }
+.merged-block + .merged-block{ border-top:1px dashed var(--line); padding-top:16px }
+.merged-block h4{ margin:0 0 2px; font-size:15px }
+.merged-hint{ margin:0 0 10px; font-size:12px; color:var(--muted) }
+/* Karar kartı: pahalı kırmızı, uygun yeşil, dengeli mavi */
+.decision-card.tone-expensive{ background:linear-gradient(140deg,#4a1f1c,#7d2f27) }
+.decision-card.tone-cheap{ background:linear-gradient(140deg,#16301f,#1f6b3f) }
+.decision-card.tone-fair{ background:linear-gradient(140deg,#182a3f,#25507e) }
+.tone-expensive .deal-badge{ background:#8c2f24; color:#ffd9d3 }
+.tone-cheap .deal-badge{ background:#1f6b3f; color:#d7f2e2 }
+.tone-fair .deal-badge{ background:#25507e; color:#d6e6ff }
+.tone-expensive .score-ring{ border-color:#e0543f } .tone-cheap .score-ring{ border-color:#3fae6a } .tone-fair .score-ring{ border-color:#5b9bf0 }
+/* Fiyat çizgisi: etiketli işaretler */
+.simple-bar{ grid-column:1 / -1; padding-top:4px }
+.simple-bar-tags{ position:relative; height:46px }
+.bar-tag{ position:absolute; transform:translateX(-50%); text-align:center; white-space:nowrap; background:#ffffff1a; border:1px solid #ffffff2e; border-radius:9px; padding:4px 8px }
+.bar-tag small{ display:block; font-size:10px; color:#ffffffb3 } .bar-tag b{ font-size:13px }
+.bar-tag.listing.good b{ color:#8ff0b5 } .bar-tag.listing.bad b{ color:#ffb3a7 } .bar-tag.estimate b{ color:#ffc4a4 }
+.simple-bar-mark.listing.good{ background:#3fae6a } .simple-bar-mark.listing.bad{ background:#e0543f }
+
+/* ── Kurumsal başlık: sembolsüz, düz, keskin ────────────────── */
+.topbar{ background:#14181a; border-bottom:1px solid #2b3134; height:66px; backdrop-filter:none }
+.top-nav{ gap:0 }
+.top-nav button{ border:0; border-radius:0; background:none; color:#9aa4a8; padding:22px 20px; font-size:13px; font-weight:600; letter-spacing:.02em;
+  border-bottom:2px solid transparent; text-transform:none }
+.top-nav button span{ display:none }
+.top-nav button:hover{ background:none; color:#fff }
+.top-nav button.active{ background:none; color:#fff; border-bottom-color:var(--green) }
+.top-nav .tab-lock{ margin-left:8px; font-size:9px; letter-spacing:.08em; font-weight:700; background:none; border:1px solid #4a5256; color:#9aa4a8; border-radius:3px; padding:2px 5px }
+.account-nav{ gap:12px }
+.account-badge{ background:none !important; border:1px solid #333a3d !important; border-radius:4px !important; padding:6px 10px !important; gap:10px }
+.account-plan, .plan-basic .account-plan, .plan-pro .account-plan, .plan-premium .account-plan{
+  background:none; border:1px solid #4a5256; color:#cfd6d8; border-radius:3px; padding:2px 7px; font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase }
+.plan-premium .account-plan{ border-color:var(--green); color:#ffb98a }
+.account-credits{ font-size:12px; color:#cfd6d8; font-weight:600 }
+.account-credits b{ color:#fff; font-size:13px } .account-credits small{ color:#8d9699; margin-left:4px }
+.account-reset{ color:#8d9699 }
+.account-menu-trigger{ background:none !important; border:1px solid #333a3d !important; border-radius:4px !important; padding:8px 12px !important; font-weight:600; color:#e6e9e7 }
+.account-menu-trigger:hover{ background:#1e2427 !important }
+.account-dropdown{ border-radius:6px; top:44px }
+.account-dropdown .menu-icon{ display:none }
+.account-dropdown button, .account-dropdown-row{ padding:11px 14px }
+.brand-logo img{ height:24px }
+/* Alt sekmeler: aynı dil */
+.tabbar{ background:#fff; border-bottom:1px solid var(--line); padding:0 max(28px,50vw - 590px); gap:0 }
+.tabbar button{ border:0; border-radius:0; background:none; padding:16px 18px; font-size:13px; font-weight:600; color:var(--muted); border-bottom:2px solid transparent }
+.tabbar button span{ display:none }
+.tabbar button:hover{ color:var(--ink); background:none }
+.tabbar button.active{ background:none; color:var(--ink); border-bottom-color:var(--green) }
+.tabbar .tab-lock{ background:none; border:1px solid var(--line); color:var(--muted); border-radius:3px; font-size:9px; letter-spacing:.08em }
+@media (max-width:900px){ .topbar{ height:auto; flex-wrap:wrap; padding:10px 16px } .top-nav{ order:3; width:100%; justify-content:flex-start } .top-nav button{ padding:12px 14px } }
+
+/* İkonlar geri: renkli daire yok, düz tek renk glif */
+.top-nav button span{ display:inline; margin-right:8px; font-size:13px; color:inherit; opacity:.75; width:auto; height:auto; background:none }
+.top-nav button.active span{ opacity:1 }
+.tabbar button span{ display:inline; margin-right:8px; font-size:13px; color:inherit; opacity:.7; width:auto; height:auto; background:none }
+.tabbar button.active span{ opacity:1 }
+.account-dropdown .menu-icon{ display:grid; background:none; border:1px solid var(--line); color:var(--muted); border-radius:4px; width:26px; height:26px; font-size:12px }
+.account-dropdown .danger .menu-icon{ background:none; border-color:#f0c9c5; color:#c9362d }
+
+/* Yalnızca logo: tüm menü ikonları kaldırıldı, logo doğru en-boy oranıyla */
+.top-nav button span, .tabbar button span, .account-dropdown .menu-icon{ display:none !important }
+.brand-logo, .footer-logo{ width:auto; height:auto; overflow:visible }
+.brand-logo img{ width:auto; height:30px; object-fit:contain }
+.footer-logo img{ width:auto; height:30px }
+
+/* ── Başlık ölçüleri büyütüldü + plan/kredi bloğu yeniden ───── */
+.topbar{ height:76px }
+.brand-logo img{ height:40px }
+.footer-logo img{ height:36px }
+.top-nav button{ font-size:15px; padding:27px 22px; font-weight:650 }
+.tabbar button{ font-size:15px; padding:18px 20px }
+.account-nav{ gap:16px }
+.account-badge{ border:0 !important; background:none !important; padding:0 !important; gap:14px; align-items:center }
+.account-badge:hover .account-credits b{ color:var(--green) }
+.account-plan, .plan-basic .account-plan, .plan-pro .account-plan, .plan-premium .account-plan{
+  border:0; background:none; padding:0; font-size:11px; letter-spacing:.16em; font-weight:700; color:#8d9699 }
+.plan-premium .account-plan{ color:#ffb98a } .plan-pro .account-plan{ color:#c3b5f2 }
+.account-credits{ position:relative; padding-left:15px; font-size:13px; color:#8d9699; font-weight:500; display:flex; align-items:baseline; gap:5px }
+.account-credits::before{ content:""; position:absolute; left:0; top:-2px; bottom:-2px; width:1px; background:#333a3d }
+.account-credits b{ font-size:20px; font-weight:700; color:#fff; letter-spacing:-.01em }
+.account-credits small{ margin:0; font-size:11px; color:#6f8f7c }
+.account-credits.empty b{ color:#ff8a80 }
+.account-reset{ font-size:12px; color:#6f7679; padding:0 }
+.account-menu-trigger{ font-size:13px; padding:10px 16px !important; border-color:#3a4145 !important }
+
+/* Logo dosyasındaki boş alan kırpıldı (1600x896 -> 1428x208); görünen
+   marka yazısı aynı CSS yüksekliğinde ~4 kat büyük. */
+.brand-logo img{ height:30px }
+.footer-logo img{ height:26px }
+
+/* Logo, analiz sayfasına dönüş düğmesi */
+button.brand-logo{ border:0; background:none; padding:0; cursor:pointer; display:flex; align-items:center }
+button.brand-logo:hover img{ opacity:.85 }
+
+/* Hero: üst etiket 2 kat, başlık tek satır, açıklama kaldırıldı */
+.hero{ display:block }
+.eyebrow{ font-size:20px; letter-spacing:.14em }
+.hero h1{ max-width:none; white-space:nowrap; font-size:clamp(34px,5vw,64px) }
+@media (max-width:640px){ .hero h1{ white-space:normal; font-size:34px } .eyebrow{ font-size:15px } }
+
+/* Fiyat etiketleri çizgiden 1.5 kat daha uzakta */
+.simple-bar-tags{ height:69px }
+.bar-tag{ top:0 }
+
+/* ── Pazarlık merdiveni: adım adım renklendirme ─────────────── */
+.ladder{ --c-open:#2f6fe4; --c-target:#2e9e5b; --c-ceiling:#c98a00; --c-listing:#d9433b }
+.ladder-headline{ background:linear-gradient(120deg,#e6f6ec,#eaf1ff); border:1px solid #bfe6cd; border-radius:12px; padding:12px 14px; margin-bottom:18px }
+.ladder-headline span{ color:#1f6b3f; font-weight:700; font-size:12px; letter-spacing:.02em }
+.ladder-headline strong{ color:#1f6b3f; font-size:28px }
+.ladder-headline em{ color:#3d7a57; background:#ffffffb8; border-radius:99px; padding:3px 9px; font-weight:700 }
+.ladder-axis{ height:30px }
+.ladder-line{ height:6px; top:12px; border-radius:99px;
+  background:linear-gradient(90deg, var(--c-open), var(--c-target) 45%, var(--c-ceiling) 78%, var(--c-listing)) }
+.ladder-band{ position:absolute; top:6px; height:18px; border-radius:99px; background:#2e9e5b26; border:1px dashed #2e9e5b80 }
+.ladder-stop{ position:absolute; top:6px; width:18px; height:18px; margin-left:-9px; border-radius:50%; background:#fff; border:4px solid #b9b2aa; box-shadow:0 2px 6px #00000026 }
+.ladder-stop.is-open{ border-color:var(--c-open) } .ladder-stop.is-target{ border-color:var(--c-target); transform:scale(1.15) }
+.ladder-stop.is-ceiling{ border-color:var(--c-ceiling) } .ladder-stop.is-listing{ border-color:var(--c-listing); border-radius:4px }
+.ladder-legend{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px; list-style:none; margin:0; padding:0 }
+.ladder-legend li{ --c:#8d9699; display:grid; gap:2px; border:1px solid color-mix(in srgb, var(--c) 35%, #fff);
+  background:color-mix(in srgb, var(--c) 8%, #fff); border-left:4px solid var(--c); border-radius:10px; padding:10px 12px }
+.ladder-legend li.is-open{ --c:var(--c-open) } .ladder-legend li.is-target{ --c:var(--c-target) }
+.ladder-legend li.is-ceiling{ --c:var(--c-ceiling) } .ladder-legend li.is-listing{ --c:var(--c-listing) }
+.ladder-legend li i{ display:none }
+.ladder-legend li span{ font-size:11px; color:var(--muted); font-weight:600 }
+.ladder-legend li strong{ font-size:15px; color:var(--c) }
+@media (max-width:760px){ .ladder-legend{ grid-template-columns:1fr 1fr } }
+
+/* İlan fiyatı çizginin üstünde, piyasa değeri altında */
+.simple-bar-tags.top{ height:52px } .simple-bar-tags.bottom{ height:52px; margin-top:6px }
+.simple-bar-tags.bottom .bar-tag{ top:0 }
+.simple-bar-labels{ margin-top:2px }
+
+/* Merdiven: işaretler çizgiyle tam hizalı, etiket kartları çakışmasız */
+.ladder-axis{ height:34px }
+.ladder-line{ top:50%; transform:translateY(-50%) }
+.ladder-band{ top:50%; transform:translateY(-50%); height:20px }
+.ladder-stop{ top:50%; transform:translateY(-50%); width:18px; height:18px; margin-left:-9px; box-sizing:border-box }
+.ladder-stop.is-target{ transform:translateY(-50%) scale(1.15) }
+.ladder-stop.is-listing{ width:18px; height:18px; border-radius:4px }
+.ladder-legend li{ display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:4px; min-height:64px; position:static }
+.ladder-legend li span{ position:static; display:block; line-height:1.25; white-space:normal }
+.ladder-legend li strong{ position:static; display:block; line-height:1.2 }
+
+/* İşaretler ve bant, çizgiyle aynı dikey merkezde (transform'a bağlı değil) */
+.ladder-axis{ position:relative; height:34px }
+.ladder-axis .ladder-line,
+.ladder-axis .ladder-band,
+.ladder-axis .ladder-stop{ top:0 !important; bottom:0 !important; margin-top:auto !important; margin-bottom:auto !important; transform:none !important }
+.ladder-axis .ladder-line{ height:6px }
+.ladder-axis .ladder-band{ height:20px }
+.ladder-axis .ladder-stop{ height:18px; width:18px }
+.ladder-axis .ladder-stop.is-target{ height:22px; width:22px; margin-left:-11px; border-width:5px }
+
+/* ── Değer kaybı grafiği (yeniden) ──────────────────────────── */
+.depr-headline{ background:#ffecea; border:1px solid #f3c7c1; border-radius:12px; padding:12px 14px; margin-bottom:18px }
+.depr-headline span{ color:#a33227; font-weight:700; font-size:12px }
+.depr-headline strong{ color:#c9362d; font-size:28px }
+.depr-headline em{ color:#a33227; background:#ffffffb8; border-radius:99px; padding:3px 9px; font-weight:700; font-style:normal; font-size:12px }
+.depr-plot{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:end }
+.depr-col{ display:flex; flex-direction:column; height:100%; text-align:center; min-width:0 }
+.depr-bar{ flex:1; display:flex; flex-direction:column; justify-content:flex-end; border-radius:10px; overflow:hidden; background:#faf8f6; border:1px solid var(--line) }
+.depr-bar .depr-loss{ width:100%; background:repeating-linear-gradient(135deg,#f7f4f1 0 6px,#ecd9d4 6px 12px); border-bottom:1px dashed #e0a79f }
+.depr-bar .depr-keep{ width:100%; background:linear-gradient(180deg,#f7b79b,#ef6c28); display:flex; align-items:center; justify-content:center; box-shadow:none }
+.depr-bar .depr-keep b{ color:#fff; font-size:14px; font-weight:800; text-shadow:0 1px 2px #00000040 }
+.depr-label{ display:block; margin-top:10px; font-size:13px; font-weight:700; color:var(--ink) }
+.depr-col > small{ display:block; margin-top:2px; font-size:12px; font-weight:800; color:#c9362d }
+.depr-col > small.is-base{ color:var(--muted); font-weight:500 }
+.depr-key{ display:flex; align-items:center; gap:8px; margin:14px 0 0; font-size:12px; color:var(--muted) }
+.depr-key i{ display:inline-block; width:14px; height:14px; border-radius:4px; border:1px solid var(--line) }
+.depr-key .depr-keep{ background:linear-gradient(180deg,#f7b79b,#ef6c28) }
+.depr-key .depr-loss{ background:repeating-linear-gradient(135deg,#f7f4f1 0 5px,#ecd9d4 5px 10px) }
+
+/* ── Merdiven etiketleri bar üzerinde, dönüşümlü üst/alt ────── */
+.ladder-axis{ height:156px; overflow:visible }
+.ladder-legend{ display:none }
+.ladder-tip{ position:absolute; transform:translateX(-50%); white-space:nowrap; text-align:center;
+  background:#fff; border:1px solid color-mix(in srgb, var(--c) 40%, #fff); border-left:3px solid var(--c);
+  border-radius:8px; padding:5px 9px; box-shadow:0 4px 10px #0000001a; --c:#8d9699 }
+.ladder-tip.is-open{ --c:var(--c-open) } .ladder-tip.is-target{ --c:var(--c-target) }
+.ladder-tip.is-ceiling{ --c:var(--c-ceiling) } .ladder-tip.is-listing{ --c:var(--c-listing) }
+.ladder-tip small{ display:block; font-size:10px; color:var(--muted) }
+.ladder-tip b{ display:block; font-size:13px; color:var(--c) }
+.ladder-tip.above{ top:3px } .ladder-tip.below{ bottom:3px }
+.ladder-tip::after{ content:""; position:absolute; left:50%; width:1px; background:color-mix(in srgb, var(--c) 45%, #fff) }
+.ladder-tip.above::after{ top:100%; height:21px } .ladder-tip.below::after{ bottom:100%; height:21px }
+
+/* ── Footer: header ile aynı koyu yüzey + iletişim ──────────── */
+footer{ max-width:none; margin:40px 0 0; min-height:0; background:#14181a; border-top:1px solid #2b3134; color:#9aa4a8; font-size:13px; display:block; padding:0 }
+.footer-inner{ max-width:1180px; margin:0 auto; padding:34px max(28px,0px); display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between }
+.footer-brand{ max-width:420px } .footer-brand p{ margin:10px 0 0; line-height:1.6; color:#8d9699 }
+.footer-contact strong{ display:block; color:#fff; font-size:14px; margin-bottom:6px }
+.footer-contact p{ margin:0 0 8px; color:#8d9699 }
+.footer-contact a{ color:#ffb98a; font-weight:700; text-decoration:none; border-bottom:1px solid #ffb98a55 }
+.footer-contact a:hover{ color:#fff; border-color:#fff }
+.footer-bottom{ border-top:1px solid #2b3134; padding:14px 0; text-align:center; font-size:12px; color:#6f7679 }
+@media (max-width:640px){ .footer-inner{ padding:24px 18px } }
+
+/* ── Kronik sorunlar tablosu: okunur boyutlar ───────────────── */
+.trait-row{ padding:14px 0 }
+.trait-main p{ font-size:14px !important; line-height:1.6 }
+.trait-tag{ font-size:12px }
+.trait-meta{ font-size:12px }
+.trait-meta a, .trait-conf, .trait-km{ font-size:12px }
+.traits-card h3{ font-size:16px } .traits-card .card-top p{ font-size:13px }
+.traits-card .trait-col > h4, .traits-card h4{ font-size:15px }
+/* Bölüm içeriğiyle üst çizgi arasına nefes payı */
+.acc-body > .traits-card, .acc-body > .result-card{ padding-top:10px }
+.acc-body{ padding-top:22px }
+.acc-body .card-top{ margin-top:6px }
+/* Değer kaybı: enflasyon notu */
+.depr-note{ margin:16px 0 0; font-size:13px; line-height:1.6; color:var(--muted); background:#fff6dc; border:1px solid #f0dd9c; border-radius:10px; padding:10px 12px }
+.depr-note b{ color:var(--ink) }

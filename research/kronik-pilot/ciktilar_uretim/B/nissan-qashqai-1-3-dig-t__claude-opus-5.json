@@ -1,0 +1,152 @@
+{
+  "hedef_id": "nissan-qashqai-1-3-dig-t",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "cvt-kayis",
+      "iddia": "1.3 DIG-T Xtronic CVT'de 15.000 km civarinda ani CVT sanziman arizasi ve uyari isiklari bildiriliyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/nissan-qashqaide-cvt-arizasi-ve-seffaf-olmayan-servis-sureci",
+      "kaynak_alinti": "Kasım 2025'te sıfır olarak satın aldığım Nissan Qashqai 1.3 DIG-T aracım 24.08.2026 Pazartesi günü hiçbir uyarı yokken birden ön konsolda ne kadar ışık varsa yanmaya başladı. Motor tekleme yaptı ve ekranda CVT şanzıman arızası, aracı durdurmam, el frenini çekip aracı kapatmam yönünde birçok uyarı ibaresi çıktı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Dusuk kilometrede vitese gecmeme ve aracin yolda kalmasi sikayeti tekrarliyor.",
+      "km_araligi": "0-5.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/sifir-nissan-qashqaide-vites-sorunu-yolda-birakiyor-ve-cozum-bekliyorum",
+      "kaynak_alinti": "09.12.2025 tarihinde sıfır olarak aldığım Nissan Qashqai aracımda, daha 19.12.2025'te ve araç sadece 1000 km'deyken vitese geçmeme, aracın vitesi görmemesi sorunu yaşamaya başladım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "20.000 km'de dusuk devirde kalkista ve yokusta belirgin kavrama titremesi olusuyor.",
+      "km_araligi": "20.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/nissan-qashqaidaki-kavrama-titremesi-ve-uzun-onarim-sureci-magduriyetimi-artiriyor",
+      "kaynak_alinti": "2025 model Nissan Qashqai aracım şu an 20.000 km'de ve yaklaşık 1 aydır kavrama ile ilgili ciddi problemler yaşıyorum. Özellikle düşük devirlerde, kalkış anında ve yokuş yukarı trafikte kaldığımda araçta belirgin bir titreme oluyor ve bu durum hem sürüş konforumu hem de güvenlik hissimi olumsuz etkiliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "2020 model 1.3 DIG-T'de 69.800 km'de termostat patlamasi motor yenilemeye kadar gitti.",
+      "km_araligi": "60.000-80.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/nissan-qashqaide-gizli-ayip-olarak-termostat-patlamasi-ve-983000-tllik-motor-yenileme-masrafi",
+      "kaynak_alinti": "Nissan Qashqai aracımda 01.08.2026 tarihinde, sürücüye hiçbir uyarı vermeden termostat patladı ve bunun sonucunda motorun yenilenmesi gerektiği söylendi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekrani ilk gunden itibaren acilmiyor veya kendiliginden kapaniyor, kamera ve radyo calismiyor.",
+      "km_araligi": "0-20.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/nissan-qashqai-j12-designpack-2025-multimedya-acilmama-sorunu-video",
+      "kaynak_alinti": "Merhaba Eylül 2025 de Ankara Nissan bayisinden 2025 Nissan Qashqai aldım. Aldığım günden beri multimedya ekran bazı zamanlar açılmıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Balata degisiminden sonra bile frenlerden surekli ses gelmesi ve erken disk asinmasi bildiriliyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/nissan-qashqai-ses-sorunu-video",
+      "kaynak_alinti": "Aracımı 30.000 km bakımları için Nissan Kemal Tepretoğulları yetkili servisine götürdüm. Bakıma ilaveten balataları da serviste değişti. Aracı teslim aldıktan birkaç gün sonra sürüş esnasında frene basmadığım halde araçtan balata sesine benzer bir ses geliyor...",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Sifir araclarda motorun ust kisminda yag sizdirmasi/birikintisi gorulebiliyor.",
+      "km_araligi": "0-10.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/2026-nissan-qashqai-ust-motor-yag-kacagi-video",
+      "kaynak_alinti": "2026 Nisan Qashqai Design pack aracımı Haziran ayında İstanbul Avcılar görkem Bayiinden satın altım 10 Ağustos 2026 motor kaputunu açtığımda, motor üst kısminda yağ birikintisi gördüm, araç herhangi bir uyarı ve ikaz vermedi. Sıfır aldığım ve 2 aylık araçta yağ sızdırmasına anlam veremiyorum",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.3 DIG-T ortalama 5,3 lt/100 km tuketim degeriyle segmentinde ekonomik kabul ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabateknikbilgi.com/otomobiller/2019-nissan-qashqai-1-3-dig-t/",
+      "kaynak_alinti": "Ortalama Yakıt tüketimi; 5.3 lt/100 km",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.3 DIG-T motor 160 HP guc uretiyor ve manuel versiyon 0-100 km/s'i 8,9 saniyede tamamliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabateknikbilgi.com/otomobiller/2019-nissan-qashqai-1-3-dig-t/",
+      "kaynak_alinti": "Beygir Gücü; 160 HP / 5500 rpm",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi 504 litre, arka koltuklar katlandiginda 1.447 litreye cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.nissan.com.tr/modeller/binek-araclar/yeni-nissan-qashqai.html",
+      "kaynak_alinti": "Bagaj hacmi 504 lt",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Genis ic hacmi ve bagaj kapasitesiyle aile kullanimina uygun bir SUV olarak one cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan-qashqai-1-3-dig-t",
+      "kaynak_alinti": "Geniş iç hacimi ve bagaj kapasitesi sayesinde aile kullanımı için de uygun bir tercih sunuyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Surucu odakli ergonomik ic yerlesim gunluk kullanimda kolaylik sagliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan-qashqai-1-3-dig-t",
+      "kaynak_alinti": "Ergonomik yerleşim, sürüş sırasında kullanım kolaylığı sağlarken geniş iç hacim, yolcu ve bagaj konforunu artırıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Hasar sonrasi yedek parca tedariki aylari buluyor, arac bu surede serviste bekliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/yedek-parca-gecikmesi-ve-bilgilendirme-eksikligi-nissan-qashqai",
+      "kaynak_alinti": "Nissan Qashqai 2023 Sky Pack aracımın geçirdiği hasar sonrası değişmesi gereken tüm emniyet kemerleri ve tavan perde hava yastıkları için 07.07.2026 tarihinden bu yana yedek parça beklemekteyim.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "3 yasinda ve 7.200 km'deki araclarda bile yetkili servis yillik bakim faturasi fahis bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/yetkili-serviste-asiri-yuksek-bakim-ucreti",
+      "kaynak_alinti": "3 yaşında ve 7.200 kilometrede tertemiz olan Nissan Qashqai aracımın yıllık bakımını dün Antalya Balaban yetkili servisinde yaptırdım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Bozuk yolda on konsol ve direksiyon bolgesinden rahatsiz edici tikirti sesi geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/sifir-kilometrede-satin-alinan-nissan-qashqaide-surekli-konsol-gurultusu-yetkili-serviste-cozulmedi",
+      "kaynak_alinti": "2025 model Nissan Qashqai Dreampack aracımı sıfır kilometre olarak satın aldığım ilk günden beri ön konsol, özellikle de direksiyon tarafı bölgesinden, taşlı ve engebeli yollarda ciddi derecede rahatsız edici ses geliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Multimedya ekraninin ic kisminda 3 ay icinde dokulme ve deformasyon olustugu bildirildi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/yeni-nissan-qashqaide-multimedya-ekrani-arizasi-ve-garanti-belirsizligi",
+      "kaynak_alinti": "Aracın daha 3 ay kadar sonrasında multimedya ekranının iç kısmında dökülmeler başladı",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

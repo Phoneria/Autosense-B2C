@@ -1,0 +1,170 @@
+{
+  "hedef_id": "nissan-micra-1-2",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "cvt-kayis",
+      "iddia": "1.2 CVT otomatik sanzimanlar 60.000-90.000 km arasinda ariza verip degisime gidiyor.",
+      "km_araligi": "60.000-90.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/micra/sanziman-arizasi",
+      "kaynak_alinti": "2013l2 model Nissan Micra 1.2 CVT aracım 60.000 km'de şanzıman arızası verdi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "sanziman-yagi",
+      "iddia": "Yanlis sanziman yagi kullanimi CVT'yi bitiriyor; CVT ozel yag gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/nissan-micra-2012-1-2-otomatik-sanziman-problemi--133361061",
+      "kaynak_alinti": "Cvt yağı çok farklı bir yapıya sahiptir. Normal otm şanzıman yağı kullanmak resmen cvt yi zehirlemektir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "K12 kasada elektrikli direksiyon motoru devre disi kalip P/S hatasi ve direksiyon sertlesmesi olusuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/nissan-micra-k12-p-s-power-steering-hatasi-cozumu--137595755",
+      "kaynak_alinti": "Nissan micra K12 lerin elektriksel direksiyon motor arızası yani power steering fault code u ile ilgili bir çözüm buldum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "Yagmurda kabin icine su siziyor, arka koltuk altinda su birikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/micra/arac",
+      "kaynak_alinti": "Her yağmurda arabam su alıyor. İlk seferinde su arka koltuğun sağ ön tarafına dolmuştu.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Darbe olmadan boya atmasi sikayeti 2011 model araclarda tekrarliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/micra/kronik",
+      "kaynak_alinti": "2011 Nissan Micra beyaz renkli aracımda boya atma sorunu yaşamaktayım. Kaza, sürtme vb. bir olay yaşamamama rağmen.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "Boya atmasinin ardindan kaportada paslanma olusuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/micra/kronik",
+      "kaynak_alinti": "2011 model Nissan Mitra aracımda boya atması ve paslanmalar mevcuttur.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Yagis sonrasi silecekler kendiliginden surekli calisiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoarizacozum.com/micra-ariza-ve-cevaplari/",
+      "kaynak_alinti": "Yağmur veya kar yağdıktan sonra silecekler sürekli çalışıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya sisteminde telefon-bluetooth baglantisi surekli kopuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-micra--433794?p=14",
+      "kaynak_alinti": "telefon-bluetooth bağlantısı sürekli kesiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Kucuk govdesi sayesinde sehir ici kullanimda ve park etmede cok rahat.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-micra--433794?p=11",
+      "kaynak_alinti": "şehir içi kullanımı için birebir, park sorunu, yanaşma sorunu yok",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Manevra kabiliyeti yuksek, park etmek ve park yerinden cikmak kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-micra--433794?p=14",
+      "kaynak_alinti": "manevra kabiliyeti çok iyi. kedi gibi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karisik kullanimda 100 km'de yaklasik 6 litre civari tuketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/2017-nissan-micra-testi/",
+      "kaynak_alinti": "100 km'de ortalama 6.6 lt yakıtla yetiniyor. Uzun yol sürüşlerinde bu değeri daha da aşağı çekmek mümkün.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Triger kayisi yerine zincir kullanildigi icin periyodik triger degisim masrafi yok.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/micraaa-micraa-dikkaaaattt--28512978",
+      "kaynak_alinti": "triger kayışı yok onun yerine bmw deki gibi zincir var değiştirme derdin olmuyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Ikinci el fiyatlari yuksek seyrediyor, arac degerini iyi koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-micra--433794?p=27",
+      "kaynak_alinti": "2. el fiyatları çıldırmış 2017 otomatik vites içün 340 bin isteyen olmuş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "80 bg'lik 1.2 motor yokus ve rampa tirmanisinda yetersiz kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/nissan-micra-alinir-mi-ya-da-baska-oneri--140059485",
+      "kaynak_alinti": "2012 micra var. 1.2 atmosferik. Şehir içinde çok güzel bir araba. Ama yokuş, dağ, bayır gibi yerlerde sürünüyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalitimi zayif; ozellikle uzun yolda kabine yol ve motor sesi giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/nissan-micra--433794?p=11",
+      "kaynak_alinti": "içeri çok ses alıyor bir de uzun yolda",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk 1,80 uzerindeki yolcular icin yetersiz.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/micraaa-micraa-dikkaaaattt--28512978",
+      "kaynak_alinti": "Arka koltuklara uzun kişiler (1,80 ve üzeri kişiler) oturunca sorun yaşıyor. Kesinlikle yetersiz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parca fiyatlari diger Japon otomobilleri gibi pahali.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/micraaa-micraa-dikkaaaattt--28512978",
+      "kaynak_alinti": "yedek parça pahalılığı dikkat çekiyor. Japon otolarının çoğunda müşterek bir durum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "265 litrelik bagaj hacmi gunluk ihtiyaclar disinda yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/deneyim-raporlari/nissan-micra",
+      "kaynak_alinti": "Bagaj hacmi yetersiz",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

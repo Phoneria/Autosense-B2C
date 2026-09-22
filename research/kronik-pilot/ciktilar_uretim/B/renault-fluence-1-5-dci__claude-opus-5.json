@@ -1,0 +1,161 @@
+{
+  "hedef_id": "renault-fluence-1-5-dci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "EDC otomatik şanzımanda \"Vites kutusunu kontrol ettiriniz\" uyarısı ve şanzıman beyni arızası kronik.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/renault-fluence-edc-vites-sorunu-kronik-problem-ve-cozum-beklentisi",
+      "kaynak_alinti": "2013 model Renault Fluence icon paket 1.5 EDC otomatik vites aracımı ikinci el olarak satın aldım. Aracımda ara sıra \"Vites kutusunu kontrol ettiriniz\" uyarısı beliriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo borusu yarılıyor veya yağ kaçırıyor; enjeksiyon ve egzoz emisyon uyarısıyla birlikte geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/enjeksiyon-arizasi-ve-ufurme-sesi.107637/",
+      "kaynak_alinti": "Turbo borusu boydan boya yarılmış",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "\"Motor hasar riski\" uyarısı yakıt besleme hattı (mazot elciği/hortumu ve pompa) kaynaklı tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/fluence-motor-hasar-riski-uyarisi.110196/",
+      "kaynak_alinti": "motor hasar riski uyarısıyla karşılaşıyorum 4. ve 5. viteste gaza bastığımda motor hasar riski çıkıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi arızası (P0488) enjeksiyon uyarı lambasıyla birlikte çıkıyor, valf komple değişebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/fluence-egr-airzasi-sorunu.112408/",
+      "kaynak_alinti": "Araçımda Enjeksiyon uyarı çıktı bilgisayara bağladım egr arıza p0488 arıza vardı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima soğutmayı bırakıp ılık hava veriyor, kaput altından rölantide vızıltı sesi geliyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/fluence-klima-sorunu-acil-yardim.112424/",
+      "kaynak_alinti": "devir 1500 üzerine çıkınca ses kesiliyor ama soğutma yok ılık hava veriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "EDC şanzımanda debriyaj kayma hatası çıkıyor, kavrama ayarının yeniden yapılması gerekiyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/egzos-emisyon-hatasi.108092/",
+      "kaynak_alinti": "debriyaj kayma hatasi 1 veya 2 yazabilir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "abs-esp-sensor",
+      "iddia": "Seyir halinde ESC devre dışı uyarısı verip çekişten düşme şikayeti tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/fluence-aracimda-surekli-esc-arizasi",
+      "kaynak_alinti": "Seyir halindeyken aracım birden ESC devre dışı uyarısı verip çekişten düştü ve hiç gitmedi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Silindir kapak çatlağı nedeniyle yedek su kabı şişip su taşırma yapıyor, kapak komple değişiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/renault-fluence-1-5-dizel-yedek-su-kabindan-su-atma-sorunu-cozuldu.112389/",
+      "kaynak_alinti": "Sürekli uzun yolda ve çok rampalarda hortumu ve yedek su kabını aşırı şişirip suyu taşıyordu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sabit 120 km/s otoyol hızında 4,8 l/100 km, şehir içinde 5,2 l/100 km ortalama bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666-200",
+      "kaynak_alinti": "120 km/h ile 4.8 benim net tüketimim",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka diz mesafesi 238 mm ile sınıfının en geniş bacak alanlarından biri.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666",
+      "kaynak_alinti": "Arkada oturan yolcular da 238 mm diz boşluğu ile sınıfın en geniş bacak alanına sahipler.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "530 litrelik bagaj hacmi sınıfının en iyileri arasında.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666",
+      "kaynak_alinti": "530 dm3'lük bagaj hacmi sınıfının en iyileri arasında.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "110 bg / 240 Nm dizel motorun gücü ve torku kullanıcılarca tatminkar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666-300",
+      "kaynak_alinti": "motorun beygir gücü ve torku çok tatminkar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Ön ve arka disk-balata, filtreler ve yağ değişimi işçilik dahil tek kalemde ucuza yapılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666-600",
+      "kaynak_alinti": "Ön 2 balata 2 disk arka 2 balata 2 disk değişti klima havalandırma filtresi değisti turbo havalandırması değişti ve yağı değişti hepsi 1120 tuttu işçiliğe 330 ödedik",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Kaporta ve sunroof gibi parçalar yetkili serviste de piyasada da bulunamıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/renault-fluence-yedek-parca-krizi",
+      "kaynak_alinti": "Renault Fluence aracımla kaza yaptım ve hiçbir parçası yok. Arabam daha yeni sayılır, 2015 model.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Sıfır EDC şanzıman beyni tek başına araç değerine yakın bir fiyata satılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/renault-fluence-edc-vites-sorunu-kronik-problem-ve-cozum-beklentisi",
+      "kaynak_alinti": "Şu anda sıfır EDC beyin için 55 bin tl civarında bir fiyat isteniyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis bakım fiyatları piyasa fiyatlarının yaklaşık %60 üzerinde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/yuksek-bakim-fiyatlari-renault-kullanicilarini-zorluyor",
+      "kaynak_alinti": "yetkili servislerde uygulanan bakım fiyatlarının piyasa fiyatlarının yaklaşık %60 üzerinde olduğunu üzülerek belirtmek isterim",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Deri koltuklar sürücü koltuğunun sol yanında ve kol hizasında çatlayıp deforme oluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-fluence-sevenleri-ve-kullanicilari-grubu--36032666-500",
+      "kaynak_alinti": "bende de var özellikle şöför koltuğunda sol tarafta ve koltuk indir kaldır kolunun geldiği yerde.",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

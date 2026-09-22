@@ -1,0 +1,158 @@
+{
+  "hedef_id": "renault-clio-1-5-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör geri dönüş (kaçak) değerlerinin bozulması ve zor çalışma/teklemeye yol açması yaygın.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo değişken kanat/aktüatör tıkanması nedeniyle güç kaybı ve arıza lambası görülür.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurumlanarak tıkanır; rölanti düzensizliği ve güç kaybı yapar.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kullanımda DPF tıkanması ve rejenerasyon sorunları sık görülür.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yuksek-basinc-pompasi",
+      "iddia": "Kalitesiz yakıt kullanımında yüksek basınç pompası aşınıp sisteme talaş atabilir.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Marş motoru ve alternatör arızaları orta kilometrelerde sık rapor edilir.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj seti şehir içi kullanımda görece erken tükenir.",
+      "km_araligi": "100.000-150.000 km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Elektrik/sensör kaynaklı arıza lambası ve gösterge uyarıları sık şikayet konusudur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.5 dCi düşük yakıt tüketimiyle sınıfının en ekonomik motorlarından biridir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Türkiye'de çok satıldığı için orijinal ve yan sanayi parça bulmak kolaydır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Renault yetkili servisi ve özel servis ağı ülke genelinde çok yaygındır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Yüksek talep nedeniyle ikinci elde hızlı satılır ve değerini korur.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Kompakt boyutu ve düşük tüketimiyle şehir içi kullanımda pratiktir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin plastikleri sert ve ucuz görünümlü; zamanla gıcırtı yapar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Dizel motor sesi ve yol gürültüsü kabine belirgin şekilde yansır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk diz mesafesi yetişkinler için dardır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Enjektör, turbo ve yakıt sistemi onarımları benzinli muadillere göre pahalıdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    }
+  ]
+}

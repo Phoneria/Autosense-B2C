@@ -1,0 +1,170 @@
+{
+  "hedef_id": "peugeot-106-gti",
+  "yontem": "A",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "TU5J4 1.6 16v sibop çakışmalı motordur; triger kayışı zamanında değişmezse kopma sibop yatırır.",
+      "km_araligi": "60.000-90.000 km (veya 5 yıl)",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Triger kayışıyla birlikte dönen su pompası sızdırma yapar, kayış değişiminde beraber yenilenmesi gerekir.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Plastik termostat/su çıkış yuvası yaşlanıp çatlar ve soğutma suyu sızıntısı yapar.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Yüksek devirde kullanılan 16v motorlarda yüksek kilometrede belirgin yağ eksiltme görülür.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Arka torsiyon aks rulmanları aşınır; arka tekerlek kamberi bozulur ve lastik içten yer.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Tesisat ve şase/toprak bağlantılarındaki oksitlenme sebebiyle gösterge ve aydınlatma arızaları yaygın.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "Arka çamurluk kemerleri, marşpiyeller ve bagaj kapağı çevresinde paslanma sık görülür.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Sportif kullanım nedeniyle debriyaj balatası erken biter; çoğu araçta en az bir kez değişmiştir.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "120 HP motor yaklaşık 950 kg gövdeyi taşır; sınıfına göre çok canlı bir performans sunar.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Hafif gövde ve sert şasi sayesinde dönemin en iyi viraj performanslı küçük hatchbacklerinden biridir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Klasikleşen bir sıcak hatchback olduğu için orijinal örnekleri değer kaybetmez, hatta değerlenir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Küçük boyutları ve hafifliği sayesinde şehir içinde park ve manevra çok kolaydır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sakin kullanımda 120 HP'ye rağmen hafiflik sayesinde makul yakıt tüketimi verir.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "GTI süspansiyonu standart 106'ya göre belirgin serttir, bozuk yolda konfor düşüktür.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin plastikleri ucuz ve kırılgandır; yaşlanan araçlarda gıcırtı ve kopan parçalar sık görülür.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "GTI'ya özel kaporta, iç döşeme ve donanım parçaları Türkiye'de sıfır olarak neredeyse bulunmaz.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "3 kapılı küçük gövde nedeniyle arka koltuk diz ve baş mesafesi yetişkinler için dardır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Dönemin B segmenti olarak güvenlik donanımı sınırlıdır; ESP yoktur, hava yastığı sayısı azdır.",
+      "km_araligi": null,
+      "kaynak_url": null,
+      "kaynak_alinti": null,
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

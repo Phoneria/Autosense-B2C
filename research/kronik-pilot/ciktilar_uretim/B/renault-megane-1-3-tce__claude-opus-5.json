@@ -1,0 +1,170 @@
+{
+  "hedef_id": "renault-megane-1-3-tce",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su pompası) kaçağı kronik; 40-70 bin km'de su eksiltme ve pompa değişimi sık görülüyor.",
+      "km_araligi": "40.000-70.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/devirdaim",
+      "kaynak_alinti": "Daha 70 bin kilometredeyken devirdaim pompası patladı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Devirdaim arızasıyla birlikte termostat da sık değişiyor, hararet riski doğuruyor.",
+      "km_araligi": "40.000-70.000 km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/1-3-tce-motor-alinir-mi.109120/",
+      "kaynak_alinti": "Bazı kronik sorunlar duydum , devirdaim kırma,termostat patlatma, yağ ve su eksiltme, enjektör arızaları gibi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "1.3 TCe motorlu Megane 4'lerde erken turboşarj arızası bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.3-tce-alinir-mi-yakit-tuketimi-ve-kronik-sorunlar",
+      "kaynak_alinti": "Bazı 1.3 TCe motorlu Megane 4'lerde turboşarjla ilgili erken arıza yaşandığı bildirilmektedir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Düşük kilometrelerde bile enjeksiyonu kontrol ettirin uyarısı ve enjektör arızası görülüyor.",
+      "km_araligi": "15.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/enjeksiyonu-kontrol-ettirin",
+      "kaynak_alinti": "2020 1.3 TCe otomatik Renault Megane 4, 14.000 km'de araç herhangi bir sıkıntı yokken enjeksiyon kontrol ettirin",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "7 ileri EDC şanzımanda 3-4 vites geçişinde vuup sesi ve titreşim yaygın şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/otomatik",
+      "kaynak_alinti": "Araçta özellikle 3'ten 4'e vites geçişinde belirgin bir ses geliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Motorda yağ eksiltme kullanıcılar tarafından sık dile getiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.3-tce-alinir-mi-yakit-tuketimi-ve-kronik-sorunlar",
+      "kaynak_alinti": "Turbo benzinli motorlarda görülebilen yağ eksilmesi, 1.3 TCe için de bazı kullanıcılar tarafından gündeme getirilmiştir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranında donma, kasma ve kendi kendine kapanıp açılma sorunu görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/ekran",
+      "kaynak_alinti": "2024 model 1.3 tce Renault Megane aracımı aldığım günden bu yana araçta bulunan radyo/teyp ekranında donma, kasma ve kendi kendine kapanıp açılma sorunu yaşıyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima kompresörünün sürekli devreye girip çıkması ve yetersiz soğutma sık şikayet konusu.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/megane-4-klima-sogutmuyor",
+      "kaynak_alinti": "Klima kompresörü ilk çalıştırmada devreye girip çıkıyor, yeterince soğutmuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "140 BG'lik motorun performansı kullanıcılar tarafından yeterli ve keyifli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.bizdekalmasin.com/rehber/renault-megane-1-3-tce-140-yorumlar/",
+      "kaynak_alinti": "Bu araçla gerçekten keyifli bir sürüş deneyimi yaşayabilirsiniz! Performansı üst düzey",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "WLTP ortalama tüketim 6,3 lt/100 km ile sınıfında ekonomik sayılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.3-tce-alinir-mi-yakit-tuketimi-ve-kronik-sorunlar",
+      "kaynak_alinti": "WLTP ortalama tüketim 6,3 lt/100 km. Gerçek kullanımda şehir içi ~7,5–8,5 lt",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Sedan gövdede 550 litrelik bagaj, station wagon Megane SW'den bile daha büyük.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabazzi.com/inceleme1/renault/megane-sedan/megane-sedan-ic-mekan",
+      "kaynak_alinti": "Renault Megane Sedan'ın 550 lt'lik bagajı Megane SW'un bagajından bile daha büyük!",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ön ve arka koltuklarda diz mesafesi rahat, kabin ferah bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/megane-sedan-yorumlari",
+      "kaynak_alinti": "içi ve bagajı baya rahat geldi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Renault'nun yaygın servis ağı sorunların görece hızlı çözülmesini sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.3-tce-alinir-mi-yakit-tuketimi-ve-kronik-sorunlar",
+      "kaynak_alinti": "Servis ağının yaygınlığı, sorunların görece hızlı çözülmesine katkı sağlamaktadır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Şehir içi kullanımda yakıt tüketimi belirgin şekilde yükseliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-megane-sedan-1-3-tce-140bg-motoru-yorumlari--140696454",
+      "kaynak_alinti": "Şehiriçi kullanim için yakıt tüketimi çok olacaktır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parça temininde haftalar, bazen aylar süren gecikmeler yaşanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/yedek-parca",
+      "kaynak_alinti": "Mayıs ayından beri 2021 model Megane 4 aracım için debriyaj seti yedek parça bekliyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "mtv-vergi-yuksek",
+      "iddia": "1.333 cc hacim 1.300 cc MTV kademesinin üstünde kaldığı için vergi avantajı yok.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-megane-sedan-1-3-tce-140bg-motoru-yorumlari--140696454",
+      "kaynak_alinti": "1.33 yani vergi avantajı yok",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ekran çevresi plastikleri ucuz duruyor, kapı kollarında soyulma bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabazzi.com/inceleme1/renault/megane-sedan/megane-sedan-ic-mekan",
+      "kaynak_alinti": "Dikey ekranı çevreleyen plastik de doğrusu biraz ucuz görünüyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabinde motor sesinin fazla duyulduğu ve rahatsız ettiği belirtiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.bizdekalmasin.com/rehber/renault-megane-1-3-tce-140-yorumlar/",
+      "kaynak_alinti": "Motor sesi fazla geliyor ve rahatsızlık verebiliyor.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

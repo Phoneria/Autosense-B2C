@@ -406,6 +406,7 @@ def lookup_paket(
     model: str,
     year: int,
     category: str | None = None,
+    min_samples: int | None = None,
 ) -> dict | None:
     """
     En spesifik seviye: paket (ya da paketi olmayan tek-donanimli motor).
@@ -436,7 +437,7 @@ def lookup_paket(
         return None
 
     n = entry.get("fiyat_ornek_sayisi", 0)
-    if n < MIN_PAKET_SAMPLES:
+    if n < (MIN_PAKET_SAMPLES if min_samples is None else min_samples):
         return None
 
     result = dict(entry)
@@ -535,6 +536,23 @@ def estimate_from_paket(
     geri donulur.
     """
     base_entry, used_real_gear_data = _select_gear_variant(entry, gear)
+
+    # 2026-09-18: gercek vites-bazli veri kimi paketlerde (az orneklem,
+    # gurultu -- ozellikle eski/klasik modellerde) manuel varyanti otomatik
+    # varyantindan DAHA YUKSEK fiyatli gosterebiliyor. Kullanicinin dogru
+    # beklentisi hep gecerli: manuel vites otomatige gore FIYATI ASLA
+    # YUKARI CEKMEMELI. Gercek veri kullanilirken manuel taban, ayni
+    # paketin otomatik tabanindan yuksekse, cifte-ceza olmadan otomatik
+    # tabana + sabit GEAR_MANUAL_PENALTY'e geri donulur.
+    if used_real_gear_data and _is_manual_gear(gear):
+        otomatik = (entry.get("vites_bazli") or {}).get("otomatik")
+        if (
+            isinstance(otomatik, dict)
+            and otomatik.get("ortalama_fiyat") is not None
+            and float(base_entry["ortalama_fiyat"]) > float(otomatik["ortalama_fiyat"])
+        ):
+            base_entry = otomatik
+            used_real_gear_data = False
 
     base_price = float(base_entry["ortalama_fiyat"])
     base_km    = float(base_entry.get("ortalama_km") or 60_000)
@@ -735,6 +753,7 @@ def estimate_price(
     damage: list[dict] | None = None,
     paket_db: dict | None = None,
     gear: str | None = None,
+    min_samples: int | None = None,
 ) -> dict:
     """
     Returns:
@@ -762,7 +781,7 @@ def estimate_price(
     damage = damage or []
 
     if paket_db:
-        paket_entry = lookup_paket(paket_db, brand, series, model, year)
+        paket_entry = lookup_paket(paket_db, brand, series, model, year, min_samples=min_samples)
         if paket_entry is not None:
             return estimate_from_paket(paket_entry, year, listing_km, damage, gear=gear)
 

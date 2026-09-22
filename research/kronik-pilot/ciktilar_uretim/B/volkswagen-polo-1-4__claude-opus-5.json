@@ -1,0 +1,170 @@
+{
+  "hedef_id": "volkswagen-polo-1-4",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusunda boşluk ve ses Polo'nun kronik sorunu; komple değişim gerekiyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-polo-1-4-tdi-hakkinda-bildikleriniz--36749827",
+      "kaynak_alinti": "poloda kronik problemlerden biridir. direksiyon kutusu komple değişmeli",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön amortisör takozları aşınınca bozuk yolda tıkırtı sesi geliyor, takoz ve rulman değişiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://vwforum.com.tr/threads/vw-polo-5-2010-kronik-arizalar-ve-cozumleri.806/",
+      "kaynak_alinti": "Bozuk yolda tıkırtı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Ön fren diskleri eğilerek frenlemede direksiyonda titremeye yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/ariza",
+      "kaynak_alinti": "frene bastığımda direksiyonda titreme",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Yüksek kilometreli Polo 1.4 motorlarda yağ yakma başlıyor, alırken kontrol öneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-polo-98-2000-tavsiyeler-ve-oneriler--40952104",
+      "kaynak_alinti": "Büyük ihtimalle yağ yakmaya başlamıştır, alırken detaylı inceletmek gerekir!!!",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı 80.000-90.000 km'de değişmeli; geciktirilirse motor hasarı riski doğuyor.",
+      "km_araligi": "80.000-90.000 km",
+      "kaynak_url": "https://www.otoayar.com/polo-triger-seti-kac-kmde-degisir/",
+      "kaynak_alinti": "Polo triger kayışı değişimi ortalama olarak 80.000 – 90.000 km arasında değiştirilmelidir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "1.4 16v motorda termostat arızası hararetin yükselmemesine ve rölanti dengesizliğine yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoarizacozum.com/polo-ariza-ve-cevaplari/",
+      "kaynak_alinti": "1997 model 1.4 16v polo arabamın harareti hiç yükselmiyordu. Bu sebeple rolanti de dengesizlik vardı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Yüksek kilometrede klima soğutmayı kesiyor, kompresör arızası bildiriliyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://kronikuzman.com/volkswagen-polo-14-kronik-sorunlari-kullanici-sikayetleri",
+      "kaynak_alinti": "Kliması hiç soğutmuyordu...kompresör arızalı dediler",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG şanzımanlı Polo'larda vites geçişlerinde sarsıntı ve mekatronik kaynaklı arızalar görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "http://volkswagenbursa.blogspot.com/2016/08/volkswagen-polo-arzalar-ve-kroniklesmis.html",
+      "kaynak_alinti": "DSG ŞANZIMAN PROBLEMLERİ VOLKSWAGEN MARKA BİR ÇOK MODELDE YAŞANABİLİRKEN",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Yetkili servis pahalı olsa da sanayide bu aracı bilen usta kolayca bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-polo-98-2000-tavsiyeler-ve-oneriler--40952104",
+      "kaynak_alinti": "Servisler inanılmaz pahalı, ama sanayide ustası ve anlayanı çok bu aracın.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Şehir içi ve dar sokak kullanımında atik ve kolay manevra yapan bir araç.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-polo-1-4-benzinli-sizce-alinir-mi--100403358",
+      "kaynak_alinti": "şehir içi, mahalle arası vs. Polo daha atik bir araçtır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yüksek hızda ve virajda yol tutuşu segmentine göre başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2014/09/volkswagen-polo-kullanc-yorumlari.html",
+      "kaynak_alinti": "Arabanın yol tutuşu gayet iyi sert virajlarda 120yle bile kaydırmıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci el Polo fiyatları çok yüksek seyrediyor, araç değerini güçlü koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/2-el-pololarin-sifir-pololardan-pahali-olmasi--6369107",
+      "kaynak_alinti": "o değil de polo nasıl 140 bin lira olabilir aklım almıyor...",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Kullanıcılar Polo'yu ilk araba olarak kolay sürüşü nedeniyle tavsiye ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ikinci-el-polo-almak-istiyorum-nelere-dikkat-etmeliyim--126372203",
+      "kaynak_alinti": "Kesinlikle ilk araba olarak tavsiye ederim. 6R kasa kodu ile geçen 2010 ve üzeri modellerini özellikle",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yetkili serviste orijinal parça fiyatları kullanıcılara göre çok pahalı.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-polo-98-2000-tavsiyeler-ve-oneriler--40952104",
+      "kaynak_alinti": "Parçaları çok pahalı servisinde.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Atmosferik 1.4 motor eski teknoloji olduğu için şehir içinde beklenenden fazla yakıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-polo-1-4-85-ps-nasil-bilirsiniz--68685648",
+      "kaynak_alinti": "hem eski hem de verimsiz",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Donanım seviyesi düşük; ESP ve ek hava yastığı gibi ekipmanlar çoğu versiyonda yok.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-polo-1-4-85-ps-nasil-bilirsiniz--68685648",
+      "kaynak_alinti": "polo donanımı kıt",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Ön camdan yolu görme mesafesi dar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-polo--89367?p=150",
+      "kaynak_alinti": "ön camdan yolu görüş mesafesi oldukça dar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "1.80 m üzeri kullanıcılar için iç hacim dar kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-polo--89367?p=150",
+      "kaynak_alinti": "180 ve üzeri kişiler için epey bir küçük kalacaktır",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

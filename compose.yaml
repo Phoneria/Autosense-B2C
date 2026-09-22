@@ -23,6 +23,7 @@ services:
     restart: unless-stopped
     environment:
       B2C_DEBUG: "false"
+      B2C_WARMUP: "1"
       B2C_SECRET_KEY: ${B2C_SECRET_KEY:?Set B2C_SECRET_KEY}
       B2C_FRONTEND_URL: https://${B2C_DOMAIN}
       B2C_ALLOWED_HOSTS: ${B2C_DOMAIN}
@@ -38,10 +39,12 @@ services:
       B2C_FROM_EMAIL: ${B2C_FROM_EMAIL:?Set verified sender}
       B2C_REFERENCE_DB: /app/data/listings.sqlite3
       B2C_BASELINE_DB: /app/data/paket_fiyatlari.db
+      B2C_GALERI_SUMMARY: /app/data/galeri_summary.json
+      B2C_GALERI_LATEST_SNAPSHOT: /app/data/galeri_latest_snapshot.json
       B2C_GALLERY_DB: /app/data/galeri.db
     volumes:
       - ./data:/app/data:ro
-    command: ["sh", "-c", "python manage.py migrate --noinput && exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 2 --timeout 120 --error-logfile -"]
+    command: ["sh", "-c", "python manage.py migrate --noinput && exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers ${B2C_WORKERS:-4} --worker-class gthread --threads ${B2C_THREADS:-4} --worker-tmp-dir /dev/shm --timeout 120 --error-logfile -"]
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; r=urllib.request.Request('http://127.0.0.1:8000/api/b2c/csrf',headers={'Host':'${B2C_DOMAIN}','X-Forwarded-Proto':'https'}); urllib.request.urlopen(r,timeout=5)"]
       interval: 10s
@@ -70,7 +73,7 @@ services:
   redis:
     image: redis:7-alpine
     restart: unless-stopped
-    command: ["redis-server", "--appendonly", "yes"]
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "1gb", "--maxmemory-policy", "volatile-lru"]
     volumes:
       - rate_limits:/data
     healthcheck:

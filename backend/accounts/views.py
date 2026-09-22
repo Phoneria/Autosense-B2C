@@ -18,11 +18,39 @@ def csrf_failure(request, reason=""):
     return JsonResponse({"code":"csrf_failed", "detail":"Güvenlik doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin."}, status=403)
 
 from .features import feature_access
+from . import billing
 
 @api_view(["GET"])
 @permission_classes([VerifiedUser])
 def me(request):
-    return JsonResponse({"id":request.user.pk, "email":request.user.email, "features":feature_access(request.user)})
+    return JsonResponse({"id":request.user.pk, "email":request.user.email, "features":feature_access(request.user), "billing":billing.status(request.user)})
+
+
+@api_view(["GET"])
+@permission_classes([VerifiedUser])
+def billing_status(request):
+    return JsonResponse({**billing.status(request.user), **billing.catalog()})
+
+
+@api_view(["POST"])
+@permission_classes([VerifiedUser])
+def billing_plan(request):
+    try:
+        return JsonResponse({**billing.choose_plan(request.user, str(request.data.get("plan", ""))), **billing.catalog()})
+    except ValueError as exc:
+        return JsonResponse({"detail":str(exc)}, status=400)
+
+
+@api_view(["POST"])
+@permission_classes([VerifiedUser])
+def billing_credits(request):
+    try:
+        amount = int(request.data.get("amount", 0))
+        return JsonResponse({**billing.add_credits(request.user, amount), **billing.catalog()})
+    except billing.PlanRequired as exc:
+        return JsonResponse({"detail":str(exc), "code":"plan_required", "required_plan":"pro"}, status=403)
+    except (TypeError, ValueError):
+        return JsonResponse({"detail":"Geçersiz kredi paketi."}, status=400)
 
 @require_POST
 def resend_verification(request):

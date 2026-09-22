@@ -1,0 +1,143 @@
+{
+  "hedef_id": "nissan-qashqai-1-6-dci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Darbe olmadan kaput, tavan ve tamponlarda kendiliğinden boya/vernik atması çok yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/boya",
+      "kaynak_alinti": "2014 model Nissan Qashqai aracımın kaporta boyasında yaklaşık 2 yıldır hiçbir darbe, sürtme veya dış etken olmadan kendiliğinden boya atmaları meydana geliyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "J11 manuel dizellerde debriyaj pedalı aniden boşa düşüp kırılıyor, araç yolda kalıyor.",
+      "km_araligi": "160.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/debriyaj",
+      "kaynak_alinti": "2016 model Nissan Qashqai aracımda, 27.11.2025 tarihinde ve araç 168 bin kilometredeyken debriyaj pedalım aniden boşa çıktı ve adeta kırılmış gibi işlevini yitirdi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "1.6 dCi'lerde turbo hortumu/borusu patlaması tekrar eden bir arıza olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/turbo",
+      "kaynak_alinti": "Bende de 2016 model Nissan Qashqai 1.6 dCi visia aracım var daha 80 kilometrede aracın hem turbo hortumu patladı hem de bir ay önce fren hidrolik hortumu patladı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "1.6 dizel otomatik (X-Tronic) versiyonlarda tekrar eden şanzıman arızası bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/sanziman",
+      "kaynak_alinti": "Sahibi olduğum Nissan Qashqai 2015 model 1.6 dizel aracımda tekrar eden şanzıman arızası nedeniyle uzun süredir ciddi mağduriyet yaşıyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi ağırlıklı kullanılan dizel Qashqai'lerde partikül filtresi iki ayda bir tıkanıp arıza veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoclubturkiye.com/forum/topic/286728-nissan-qashqai-partik%C3%BCl-t%C4%B1kanma-sorunu/",
+      "kaynak_alinti": "araç iki ayda bir düzenli olarak partikül filtre tıkanması sonucu araç arızaya geçiyor ve araç yürümüyor servise gidiyor temzileniyor 2 ay sonra yine aynı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör onarımından sonra arızanın kısa sürede tekrarladığı bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/enjektor",
+      "kaynak_alinti": "Bu yıl aracımı bakıma 25.11.2024 tarihinde götürdüm ve yine enjektörlere ait parçaların arızalı olduğu söylendi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "100.000 km civarında hararet yapıp su borusunun patlaması ve motorun yanması bildirildi.",
+      "km_araligi": "100.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/kronik",
+      "kaynak_alinti": "Nissan Qashqai 1.6 aracım Ankara’da seyir halindeyken motor hararet yaptı, boru patladı ve motor yandı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "2015 model Qashqai'de multimedya ekranı ve radyo sürüş sırasında kendiliğinden kapanıp açılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/kronik",
+      "kaynak_alinti": "Araç kullanımdayken ekran, radyo ve tüm multimedya sistemi birlikte aniden kapanıyor ve hemen ardından tekrar açılma sürecine giriyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "1.6 dCi (R9M), 1.5 dCi'ye göre belirgin daha yüksek beygir ve tork veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoclubturkiye.com/forum/topic/289183-qashqai-ara%C3%A7-tavsiyesi-15-dizelmi-16-dizelmi/",
+      "kaynak_alinti": "1.6 olanı R9M kodlu olan ve 1.9 dci yerine getirilmiş olan daha güçlü bir motor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.6 dCi'nin şehir dışı tüketimi 4,6 lt/100 km seviyesinde, uzun yolda ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoclubturkiye.com/forum/topic/311600-nissan-qashqai-benzin-dizel-tavsiye-%C3%B6neri/",
+      "kaynak_alinti": "Yakıt Tüketimi (Şehir içi / Şehir dışı) 6,7 lt / 4,6 lt",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "J11 kasa Qashqai sahibi aracı önceki Mercedes'ine göre daha konforlu buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoclubturkiye.com/forum/topic/311600-nissan-qashqai-benzin-dizel-tavsiye-%C3%B6neri/",
+      "kaynak_alinti": "araçtan memnunum önceki aracım mersedes olmasında rağmen bana daha konforlu geldi, yakıt da güzel özellikle uzun yolda 1 depo ile istanbuldan giresuna çok rahat gidebiliyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parça tedariki haftalar sürüyor; 40 güne kadar araç serviste bekliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/yedek-parca",
+      "kaynak_alinti": "Aradan 40 gün geçmesine rağmen 2018 model aracıma ait parçanın hâlâ tedarik edilemediği söyleniyor ve süreçle ilgili net bir bilgi verilmiyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parça ve kasko maliyeti Kadjar gibi muadillerine göre pahalı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otoclubturkiye.com/forum/topic/289183-qashqai-ara%C3%A7-tavsiyesi-15-dizelmi-16-dizelmi/",
+      "kaynak_alinti": "kaşkayinin bakımı 10 binde bir ve yaklaşık 1000 tl civarı yedek parça pahalılığı ve kasko maliyeti haliyle yüksek.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste rutin bakım faturaları yüksek; basit bir bakım 22.600 TL tutabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/nissan/qashqai/bakim-ucreti",
+      "kaynak_alinti": "Yapılan bakım, birkaç basit malzeme değişimi ve rutin kontrollerden ibaret olmasına rağmen, benden toplam 22.600 TL ücret alındı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Otomatik 1.6 dCi'de İstanbul şehir içi tüketim 9-10 litreye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/qashqai-1-6-dci-sehir-ici-9-10-lt-tuketiyor--113153855",
+      "kaynak_alinti": "merhaba arkadaşlar 2 kere bu arabayı kullandım istanbul şehir içi çok yakıyor gibi geldi dci motor genelde az yakar ama qashqai ye bu motor yaramamış gibi görünüyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

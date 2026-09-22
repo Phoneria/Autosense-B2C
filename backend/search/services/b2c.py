@@ -12,19 +12,28 @@ kullanır — B2C'ye özel ikinci bir tahmin mantığı bilerek yazılmadı, yok
 iki taraf zamanla birbirinden ayrışırdı.
 
 Veri kaynakları:
-  * Postgres `search_listing`  — analiz edilmiş arabam.com ilanları
-  * Galeri/galeri.db           — galeri ilanlarının günlük snapshot'ları
-                                 (fiyat trendi + bölgesel sinyal buradan)
+  * Postgres `search_listing`         — analiz edilmiş arabam.com ilanları
+  * data/galeri_summary.json          — galeri ilanlarının (marka,seri,yıl)
+                                         bazında özetlenmiş istatistikleri
+                                         (fiyat trendi + bölgesel sinyal + renk)
+  * data/galeri_latest_snapshot.json  — en son güne ait canlı galeri ilanları
+                                         (benzer ilan kartı)
+  Bu iki JSON, scripts/build_galeri_summary.py ile üretilir (kaynak: galeri.db,
+  artık production'da tutulmuyor).
 """
 
 from __future__ import annotations
 
+import copy
+import hashlib
+import json
 import os
 import re
 import sys
 import threading
 import unicodedata
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
+from functools import lru_cache
 from typing import Any
 
 from django.core.cache import cache
@@ -34,10 +43,16 @@ from django.db.models import Q
 from django.conf import settings
 from ..pricing.reference import readonly_connection
 
+from . import galeri_summary
+
 _conn_local = threading.local()
 
 
 def _galeri_conn():
+    """`galeri.db`'ye tembel bağlantı. Fiyat analizi artık bunu KULLANMIYOR (bkz.
+    galeri_summary.py); bu sadece galeri.db'nin hâlâ TAM veriye ihtiyaç duyan diğer
+    özellikleri için var: regional.py (bölgesel fırsatlar, ilçe kırılımı) ve
+    guide.py (Araç Rehberi, çoklu-snapshot analizi kendi bağlantısını açıyor)."""
     path = str(settings.B2C_GALLERY_DB)
     conn = getattr(_conn_local, "conn", None)
     if conn is None or getattr(_conn_local, "path", None) != path:
@@ -58,6 +73,7 @@ _MAX_REAL_PRICE = 25_000_000
 _TR_LOWER = str.maketrans("IİŞĞÜÖÇ", "ıişğüöç")
 
 
+@lru_cache(maxsize=16384)
 def _norm(v: Any) -> str:
     return re.sub(r"\s+", " ", str(v or "").strip()).translate(_TR_LOWER).lower()
 
@@ -79,20 +95,12 @@ _LOCATIONS_TTL = 60 * 60 * 6
 
 
 def _locations_from_galeri() -> dict[str, set[str]]:
-    """galeri.db `galleries` tablosunda il/ilçe ayrı ayrı ve temiz duruyor —
-    ana kaynak burası."""
+    """galeri_latest_snapshot.json'daki ilanların city/district alanları
+    (üretim script'inde `galleries` tablosundan JOIN edilmiş) — ana kaynak burası."""
     out: dict[str, set[str]] = {}
-    try:
-        conn = _galeri_conn()
-        rows = conn.execute(
-            "SELECT city, district FROM galleries "
-            "WHERE city IS NOT NULL AND TRIM(city) <> ''"
-        ).fetchall()
-    except Exception:
-        return out
-    for row in rows:
-        city = str(row[0] or "").strip()
-        district = str(row[1] or "").strip()
+    for row in galeri_summary.latest_snapshot().get("listings", []):
+        city = str(row.get("city") or "").strip()
+        district = str(row.get("district") or "").strip()
         if not city:
             continue
         out.setdefault(city, set())
@@ -211,89 +219,85 @@ _TREND_DAYS = 90             # fiyat trendi penceresi
 _YEAR_TOLERANCE = 1          # emsal ilan seçiminde ±yıl
 
 
-def _galeri_rows(brand: str, series: str, year: int) -> list[tuple]:
-    """Galeri snapshot'larından bu araca benzeyen ilanlar.
+def _galeri_groups(brand: str, series: str, year: int) -> list[dict]:
+    """galeri_summary.json'dan (marka, seri, yıl±tolerans) eşleşen özet
+    gruplar. Eskiden burada SQLite'a 4 ayrı sorgu atılırdı; artık RAM'deki
+    JSON'dan sözlük okuma."""
+    return galeri_summary.groups_for(brand, series, year, _YEAR_TOLERANCE)
 
-    `gallery_listings.model` "Marka Seri" biçiminde tutuluyor (ör. "Fiat Egea").
-    `city_district` kolonu pratikte boş olduğu için il/ilçe `galleries`
-    tablosundan JOIN ile alınıyor.
-    """
-    model_like = f"%{brand}%{series}%"
-    since = (datetime.now() - timedelta(days=_TREND_DAYS)).strftime("%Y-%m-%d")
+
+def _week_start_date(week_label: str) -> str:
+    """"2026-W25" -> o haftanın Pazartesi günü (ISO 8601)."""
     try:
-        conn = _galeri_conn()
-        return conn.execute(
-            """
-            SELECT gl.snapshot_date, gl.price, gl.year_raw, gl.color,
-                   g.city, g.district
-              FROM gallery_listings gl
-              LEFT JOIN galleries g ON g.gallery_name = gl.gallery_name
-             WHERE gl.model LIKE ? COLLATE NOCASE
-               AND gl.snapshot_date >= ?
-               AND gl.price IS NOT NULL
-               AND gl.price BETWEEN ? AND ?
-               AND CAST(gl.year_raw AS INTEGER) BETWEEN ? AND ?
-            """,
-            (model_like, since, _MIN_REAL_PRICE, _MAX_REAL_PRICE,
-             year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE),
-        ).fetchall()
-    except Exception:
-        return []
+        year_s, week_s = week_label.split("-W")
+        return date.fromisocalendar(int(year_s), int(week_s), 1).isoformat()
+    except (ValueError, AttributeError, TypeError):
+        return week_label
 
 
-def _price_trend(rows: list[tuple]) -> list[dict]:
-    """Günlük ortalama ilan fiyatı. Frontend `snapshot_date` / `avg_price` /
-    `sample_count` bekliyor."""
-    buckets: dict[str, list[float]] = {}
-    for snapshot_date, price, *_ in rows:
-        if snapshot_date and price:
-            buckets.setdefault(str(snapshot_date), []).append(float(price))
+def _price_trend(groups: list[dict]) -> list[dict]:
+    """Haftalık ortalama ilan fiyatı (±yıl toleransındaki gruplar birleştirilerek).
+    Frontend `snapshot_date` / `avg_price` / `sample_count` bekliyor; hafta
+    başlangıcı (Pazartesi) `snapshot_date` olarak veriliyor. Son ~13 hafta
+    (eski `_TREND_DAYS`li pencereye yakın) gösterilir."""
+    weekly: dict[str, list[float]] = {}
+    for g in groups:
+        for point in g.get("price_trend") or []:
+            week = point.get("week")
+            count = int(point.get("count") or 0)
+            avg = point.get("avg_price")
+            if not week or not count or avg is None:
+                continue
+            total, n = weekly.get(week, (0.0, 0))
+            weekly[week] = (total + avg * count, n + count)
     return [
         {
-            "snapshot_date": day,
-            "avg_price": round(sum(prices) / len(prices)),
-            "sample_count": len(prices),
+            "snapshot_date": _week_start_date(week),
+            "avg_price": round(total / n),
+            "sample_count": n,
         }
-        for day, prices in sorted(buckets.items())
-        if len(prices) >= 3            # 1-2 ilanlık günler grafiği zıplatıyor
+        for week, (total, n) in sorted(weekly.items())[-13:]
     ]
 
 
-def _regional_signal(rows: list[tuple], city: str, district: str) -> dict:
+def _regional_signal(groups: list[dict], city: str, district: str) -> dict:
     """Seçilen ilin ortalaması ülke ortalamasının neresinde?
 
-    city/district boş bırakılabilir (B2C'de opsiyonel) — o durumda
-    label "Bölge seçilmedi" döner, analizin geri kalanı etkilenmez.
+    city boş bırakılabilir (B2C'de opsiyonel) — o durumda label "Bölge
+    seçilmedi" döner. Not: galeri özet verisi il bazında tutuluyor (ilçe
+    kırılımı yok); `district` geriye dönük uyumluluk için parametrede kalıyor.
     """
     if not city:
         return {
             "city": "", "district": "",
             "label": "Bölge belirtilmedi",
-            "confidence_pct": 0,
+            "confidence_pct": 0, "delta_pct": None,
         }
 
-    national = [float(p) for _, p, *_ in rows if p]
-    local = [
-        float(p) for _, p, _y, _c, row_city, row_district in rows
-        if p and _norm(row_city) == _norm(city)
-        and (not district or _norm(row_district) == _norm(district))
-    ]
-    # İlçe kırılımı çok inceyse il seviyesine düş.
-    if len(local) < 5 and district:
-        local = [
-            float(p) for _, p, _y, _c, row_city, _d in rows
-            if p and _norm(row_city) == _norm(city)
-        ]
+    city_key = _norm(city)
+    local_total = local_count = 0.0
+    national_total = national_count = 0.0
+    for g in groups:
+        for c_name, c_info in (g.get("cities") or {}).items():
+            cnt = int(c_info.get("count") or 0)
+            avg = c_info.get("avg_price")
+            if not cnt or avg is None:
+                continue
+            national_total += avg * cnt
+            national_count += cnt
+            if _norm(c_name) == city_key:
+                local_total += avg * cnt
+                local_count += cnt
 
-    if len(local) < 5 or not national:
+    if local_count < 5 or not national_count:
         return {
             "city": city, "district": district,
             "label": "Bu bölge için yeterli ilan verisi yok",
-            "confidence_pct": 0,
+            "confidence_pct": 0, "delta_pct": None,
         }
 
-    local_avg = sum(local) / len(local)
-    national_avg = sum(national) / len(national)
+    local_avg = local_total / local_count
+    national_avg = national_total / national_count
     delta_pct = (local_avg - national_avg) / national_avg * 100 if national_avg else 0
 
     if delta_pct >= 4:
@@ -307,28 +311,51 @@ def _regional_signal(rows: list[tuple], city: str, district: str) -> dict:
         "city": city,
         "district": district,
         "label": label,
-        "confidence_pct": int(min(90, 40 + len(local))),
+        "confidence_pct": int(min(90, 40 + local_count)),
+        "delta_pct": round(delta_pct, 1),
     }
 
 
-def _color_adjustment(rows: list[tuple], color: str | None) -> dict | None:
+def _color_adjustment(groups: list[dict], color: str | None) -> dict | None:
     """Renk, aynı modelin ortalamasına göre ne kadar prim/iskonto getiriyor?
-    Örneklem küçükse None döner (frontend `?.` ile güvenli okuyor)."""
+    Örneklem küçükse None döner (frontend `?.` ile güvenli okuyor).
+
+    galeri_summary.json her grubun kendi renk faktörünü o grubun medyan
+    fiyatına göre tutuyor; burada grup medyanları taban alınarak (marka,
+    seri, yıl±tolerans) genelinde ağırlıklı ortalanıyor."""
     if not color:
         return None
-    same = [float(p) for _, p, _y, row_color, *_ in rows
-            if p and _norm(row_color) == _norm(color)]
-    everything = [float(p) for _, p, *_ in rows if p]
-    if len(same) < 8 or len(everything) < 20:
+    color_key = _norm(color)
+    color_price_total = color_count = 0.0
+    base_price_total = base_count = 0.0
+    for g in groups:
+        median = g.get("median_price")
+        sample_count = g.get("sample_count") or 0
+        if median is None or not sample_count:
+            continue
+        base_price_total += median * sample_count
+        base_count += sample_count
+        for c_name, c_info in (g.get("colors") or {}).items():
+            if _norm(c_name) != color_key:
+                continue
+            cnt = int(c_info.get("sample_count") or 0)
+            factor_pct = c_info.get("factor_pct")
+            if not cnt or factor_pct is None:
+                continue
+            color_price_total += median * (1 + factor_pct / 100) * cnt
+            color_count += cnt
+
+    if color_count < 8 or base_count < 20:
         return None
-    base = sum(everything) / len(everything)
+    base = base_price_total / base_count
     if not base:
         return None
-    factor_pct = (sum(same) / len(same) - base) / base * 100
+    color_avg = color_price_total / color_count
+    factor_pct = (color_avg - base) / base * 100
     return {
         "color": color,
         "factor_pct": round(factor_pct, 1),
-        "sample_count": len(same),
+        "sample_count": int(color_count),
     }
 
 
@@ -385,29 +412,50 @@ def _estimate_vehicle(*, category: str, brand: str, series: str, engine: str,
     """estimate_price sarmalayıcısı + paket bilinmiyorsa medyan geri düşüşü."""
     from .price_estimator import estimate as estimate_price
 
-    result = estimate_price(
-        category=category, brand=brand, series=series, engine=engine,
-        package=package, year=year, km=km, damage=damage,
-        agir_hasar=agir_hasar, gear=gear, **extra,
-    )
-    if result.get("found") or package:
+    def _run(pkg, **more):
+        return estimate_price(
+            category=category, brand=brand, series=series, engine=engine,
+            package=pkg, year=year, km=km, damage=damage,
+            agir_hasar=agir_hasar, gear=gear, **extra, **more,
+        )
+
+    result = _run(package)
+    if result.get("found"):
         return result
 
+    # Seçilen paketin kendi referansı yoksa ya da çok az ilana dayanıyorsa
+    # (bkz. MIN_PAKET_SAMPLES) analiz eskiden komple boş dönüyordu. Artık
+    # aynı motorun DİĞER paketlerinden medyan alınıyor -- paket seçilmemiş
+    # gibi. Paket bilgisi kaybolduğu için güven düşürülür ve kullanıcıya
+    # hangi paketlerin kullanıldığı söylenir.
     candidates = _engine_packages(category, brand, series, engine)
     priced: list[tuple[str, dict]] = []
     for name in candidates[:20]:                # aşırı uzun serilerde sınır
+        if package and _norm(name) == _norm(package):
+            continue
         try:
-            candidate = estimate_price(
-                category=category, brand=brand, series=series, engine=engine,
-                package=name, year=year, km=km, damage=damage,
-                agir_hasar=agir_hasar, gear=gear, **extra,
-            )
+            candidate = _run(name)
         except Exception:
             continue
         if candidate.get("found") and candidate.get("tahmini_fiyat"):
             priced.append((name, candidate))
 
     if not priced:
+        # Son çare: tek-iki ilana dayanan zayıf referans. Hiç tahmin
+        # vermemektense, "çok belirsiz" etiketiyle vermek daha yararlı.
+        thin = _run(package, min_samples=1)
+        if thin.get("found") and thin.get("tahmini_fiyat"):
+            value = int(thin["tahmini_fiyat"])
+            thin.update({
+                "estimated_low": int(round(value * 0.72 / 1000) * 1000),
+                "estimated_high": int(round(value * 1.28 / 1000) * 1000),
+                "confidence_pct": 20,
+                "fallback_reason": (
+                    "Bu paket için referans veri çok sınırlı; tahmin çok belirsiz, "
+                    "geniş bir aralık olarak okuyun."
+                ),
+            })
+            return thin
         return result
 
     values = sorted(c["tahmini_fiyat"] for _, c in priced)
@@ -433,6 +481,9 @@ def _estimate_vehicle(*, category: str, brand: str, series: str, engine: str,
         "fallback_reason": (
             f"Paket seçilmediği için {len(priced)} paketin tahmini hesaplanıp medyanı "
             "alındı. Paketi seçerseniz tahmin belirgin şekilde daralır."
+            if not package else
+            f"“{package}” paketi için yeterli referans ilan yok; aynı motorun "
+            f"{len(priced)} paketinin ({', '.join(n for n, _ in priced)}) medyanı kullanıldı."
         ),
         "package_fallback": {"count": len(priced), "packages": [n for n, _ in priced]},
     })
@@ -486,12 +537,21 @@ def _negotiation(price: int | None, estimate: dict) -> dict:
             "note": "", "target_price": None, "opening_offer": None,
             "ceiling_price": None, "potential_saving": None,
         }
-    if price <= low:
+    if price < value:
+        target = int(round(price * 0.95 / 1000) * 1000)
+        opening = int(round(price * 0.92 / 1000) * 1000)
         return {
-            "available": False,
-            "reason": "İlan fiyatı zaten tahmini piyasa aralığının alt sınırında — pazarlık payı sınırlı.",
-            "note": "", "target_price": None, "opening_offer": None,
-            "ceiling_price": None, "potential_saving": None,
+            "available": True,
+            "reason": "",
+            "note": (
+                "İlan fiyatı tahmini piyasa değerinin altında olduğu için pazarlık "
+                "planı ilan fiyatı üzerinden kuruldu: hedef fiyat ilan fiyatının %5 "
+                "altına, açılış teklifi %8 altına konumlandırıldı. İlan fiyatı tavan kabul edildi."
+            ),
+            "target_price": target,
+            "opening_offer": opening,
+            "ceiling_price": price,
+            "potential_saving": max(0, price - target),
         }
 
     target = int(round(min(price, value * 0.96) / 1000) * 1000)
@@ -576,68 +636,68 @@ def _listing_quality(*, km: float, year: int, damage: list, agir_hasar: bool,
                      city: str, deviation_pct: float,
                      description: dict | None = None) -> dict:
     """İlanın veri riski. Objektif, sabit eşikli kurallar — puan bunlardan
-    düşülerek hesaplanıyor, yorum katılmıyor."""
+    düşülerek hesaplanıyor, yorum katılmıyor.
+
+    `deductions`: her uyarının 100 üzerinden kaç puan götürdüğü. `warnings`
+    ile birebir aynı sırada ve aynı metinlerle döner; arayüz uyarıları
+    ağırlığa göre sıralayabilsin diye eklendi.
+    """
     warnings: list[str] = []
+    deductions: list[dict] = []
     score = 100
     age = max(datetime.now().year - int(year), 0)
 
+    def penalize(text: str, points: int) -> None:
+        nonlocal score
+        warnings.append(text)
+        deductions.append({"label": text, "points": points})
+        score -= points
+
     if agir_hasar:
-        warnings.append("Ağır hasar kaydı var — ekspertiz ve tramer sorgusu şart.")
-        score -= 35
+        penalize("Ağır hasar kaydı var — ekspertiz ve tramer sorgusu şart.", 35)
     changed = [d for d in damage if "değiş" in _norm(d.get("durum"))]
     painted = [d for d in damage if "boya" in _norm(d.get("durum"))]
     if len(changed) >= 3:
-        warnings.append(f"{len(changed)} parça değişmiş — yapısal onarım ihtimali yüksek.")
-        score -= 25
+        penalize(f"{len(changed)} parça değişmiş — yapısal onarım ihtimali yüksek.", 25)
     elif changed:
-        warnings.append(f"{len(changed)} parça değişmiş.")
-        score -= 10
+        penalize(f"{len(changed)} parça değişmiş.", 10)
     if len(painted) >= 5:
-        warnings.append(f"{len(painted)} parça boyalı — geniş çaplı boya işlemi.")
-        score -= 15
+        penalize(f"{len(painted)} parça boyalı — geniş çaplı boya işlemi.", 15)
 
     if age and km / age > 35_000:
-        warnings.append(f"Yıllık ortalama {round(km / age):,} km — yoğun kullanım.".replace(",", "."))
-        score -= 10
+        penalize(f"Yıllık ortalama {round(km / age):,} km — yoğun kullanım.".replace(",", "."), 10)
     if km >= 300_000:
-        warnings.append("300.000 km üzeri — büyük bakım kalemleri gündeme gelmiş olabilir.")
-        score -= 10
+        penalize("300.000 km üzeri — büyük bakım kalemleri gündeme gelmiş olabilir.", 10)
 
     if deviation_pct <= -20:
-        warnings.append("Fiyat piyasanın çok altında — ilanda belirtilmeyen bir kusur olabilir.")
-        score -= 15
+        penalize("Fiyat piyasanın çok altında — ilanda belirtilmeyen bir kusur olabilir.", 15)
 
     if not color:
-        warnings.append("Renk belirtilmedi — değerlemede renk primi hesaplanamadı.")
-        score -= 3
+        penalize("Renk belirtilmedi — değerlemede renk primi hesaplanamadı.", 3)
     if not gear:
-        warnings.append("Vites tipi belirtilmedi — tahmin doğruluğu düşer.")
-        score -= 3
+        penalize("Vites tipi belirtilmedi — tahmin doğruluğu düşer.", 3)
     if not city:
-        warnings.append("İl seçilmedi — bölgesel fiyat farkı analize katılamadı.")
-        score -= 3
+        penalize("İl seçilmedi — bölgesel fiyat farkı analize katılamadı.", 3)
 
     # ── Açıklama metninden gelen sinyaller ───────────────────────────────
     if description and description.get("available"):
         for contradiction in description.get("contradictions") or []:
-            warnings.append(
-                f"Çelişki: \u201c{contradiction['claim']}\u201d — {contradiction['conflict']}"
+            penalize(
+                f"Çelişki: \u201c{contradiction['claim']}\u201d — {contradiction['conflict']}",
+                12,
             )
-        score -= 12 * len(description.get("contradictions") or [])
         for flag in description.get("red_flags") or []:
             if flag not in warnings:
-                warnings.append(flag)
+                penalize(flag, 0)
         if (description.get("score") or 0) <= 3:
-            warnings.append("İlan açıklaması çok zayıf — satıcı bilgi paylaşmaktan kaçınıyor olabilir.")
-            score -= 8
+            penalize("İlan açıklaması çok zayıf — satıcı bilgi paylaşmaktan kaçınıyor olabilir.", 8)
         if description.get("missing"):
-            warnings.append(
-                "Açıklamada hiç değinilmemiş: " + ", ".join(description["missing"]).lower() + "."
+            penalize(
+                "Açıklamada hiç değinilmemiş: " + ", ".join(description["missing"]).lower() + ".",
+                3 * len(description["missing"]),
             )
-            score -= 3 * len(description["missing"])
     else:
-        warnings.append("İlan açıklaması girilmedi — metin analizi yapılamadı.")
-        score -= 5
+        penalize("İlan açıklaması girilmedi — metin analizi yapılamadı.", 5)
 
     score = int(max(0, min(100, score)))
     if score >= 80:
@@ -646,7 +706,8 @@ def _listing_quality(*, km: float, year: int, damage: list, agir_hasar: bool,
         label = "Orta risk"
     else:
         label = "Yüksek risk"
-    return {"label": label, "score": score, "warnings": warnings}
+    return {"label": label, "score": score, "warnings": warnings,
+            "deductions": [d for d in deductions if d["points"] > 0]}
 
 
 def _questions(*, damage: list, agir_hasar: bool, km: float, year: int,
@@ -732,8 +793,7 @@ def _price_factors(estimate: dict, color_adjustment: dict | None,
             return
         factors.append({"label": label, "note": note, "effect_pct": round(pct, 1)})
 
-    add("Kilometre", estimate.get("km_factor"),
-        f"Referans {estimate.get('base_km') or '—'} km'ye göre")
+    add("Kilometre", estimate.get("km_factor"), "Aracın kilometresinin fiyata etkisi")
     add("Hasar durumu", estimate.get("damage_factor"),
         "Boyalı/değişen parçaların toplam etkisi")
     add("Vites", estimate.get("gear_factor"),
@@ -745,19 +805,191 @@ def _price_factors(estimate: dict, color_adjustment: dict | None,
             "note": f"{color_adjustment['sample_count']} emsal galeri ilanına göre",
             "effect_pct": color_adjustment["factor_pct"],
         })
-    if regional.get("confidence_pct"):
-        factors.append({
-            "label": f"Bölge: {regional['city']}",
-            "note": regional["label"],
-            "effect_pct": 0.0,
-        })
+    # Bölge etkisi ayrı "Bölge analizi" bölümünde gösteriliyor; burada
+    # %0 etkili tekrar satır çıkarmıyoruz.
     return factors
+
+
+@lru_cache(maxsize=512)
+def _evidence_counts(brand: str, series: str, year: int, year_lo: int, year_hi: int,
+                     _version: str) -> tuple:
+    """Kanıt sayaçları (benzersiz araç/galeri, yayındakiler) — galeri_summary.json
+    ve galeri_latest_snapshot.json'dan. Girdileri aynı olan analizler için tekrar
+    hesaplanmaz; veri dosyaları değişince _version anahtarı yeniler.
+
+    Not: `unique_vehicles` gruplar arası toplanır (her yıl grubu farklı araçlar
+    içerir); `unique_sellers` gruplar arası MAX alınır (aynı galeri birden çok
+    yılda satış yapabilir, toplarsak abartılı sayar) — ikisi de eski tekil
+    SQL sorgusunun birebir aynısı değil, yakın bir üst sınırdır."""
+    groups = galeri_summary.groups_for(brand, series, year, _YEAR_TOLERANCE)
+    unique_vehicles = sum(int(g.get("unique_vehicles") or 0) for g in groups)
+    unique_sellers = max((int(g.get("unique_sellers") or 0) for g in groups), default=0)
+    same_year = next(
+        (int(g.get("unique_vehicles") or 0) for g in groups if g.get("year") == year), 0
+    )
+    latest = max(
+        (g.get("latest_date") for g in groups if g.get("latest_date")), default=None
+    )
+
+    brand_key, series_key = _norm(brand), _norm(series)
+    live_now = sum(
+        1 for row in galeri_summary.latest_snapshot().get("listings", [])
+        if _norm(row.get("brand")) == brand_key and _norm(row.get("series")) == series_key
+        and row.get("year") is not None and year_lo <= row["year"] <= year_hi
+        and row.get("price") is not None and _MIN_REAL_PRICE <= row["price"] <= _MAX_REAL_PRICE
+    )
+    return unique_vehicles, unique_sellers, same_year, latest, live_now
+
+
+def _evidence(estimate: dict, *, brand: str, series: str, year: int, package: str | None) -> dict:
+    """Tahminin arkasındaki kanıt: kaç referans ilan, paket birebir mi, kaç
+    benzersiz emsal araç / galeri, veri ne kadar taze. Snapshot satır sayısı değil,
+    benzersiz ilan (listing_key) sayılır -- aynı araç her gün tekrar sayılmasın."""
+    found = bool(estimate.get("found"))
+    fallback = estimate.get("package_fallback")
+    if not found:
+        trim_match = "none"
+    elif fallback:
+        trim_match = "engine_median"
+    elif package:
+        trim_match = "exact"
+    else:
+        trim_match = "engine"
+    reference_count = int(estimate.get("base_count") or 0) if found else 0
+
+    unique_vehicles = unique_sellers = same_year = live_now = 0
+    latest = None
+    try:
+        unique_vehicles, unique_sellers, same_year, latest, live_now = _evidence_counts(
+            brand, series, year, year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE, _data_version())
+    except Exception:
+        pass
+
+    days_old = None
+    if latest:
+        try:
+            days_old = max(0, (datetime.now().date() - datetime.strptime(str(latest)[:10], "%Y-%m-%d").date()).days)
+        except ValueError:
+            days_old = None
+
+    points = 0
+    points += 2 if trim_match == "exact" else (1 if trim_match == "engine" else 0)
+    points += 1 if reference_count >= 5 else 0
+    points += 1 if (unique_vehicles or 0) >= 20 else 0
+    points += 1 if days_old is not None and days_old <= 14 else 0
+    strength = "strong" if points >= 4 else ("medium" if points >= 2 else "weak")
+
+    notes = []
+    if trim_match == "exact":
+        notes.append("Tahmin, seçtiğiniz paketin kendi referans ilanlarından hesaplandı.")
+    elif trim_match == "engine_median" and package:
+        notes.append(f"“{package}” paketi için yeterli referans ilan yok; aynı motorun {fallback['count']} paketinin ortalaması kullanıldı.")
+    elif trim_match == "engine_median":
+        notes.append(f"Paket seçilmediği için {fallback['count']} paketin ortalaması kullanıldı; paketi seçmek tahmini netleştirir.")
+    elif trim_match == "engine":
+        notes.append("Paket belirtilmedi; motor seviyesinde eşleşme kullanıldı.")
+    else:
+        notes.append("Bu araç için referans fiyat bulunamadı.")
+    if found and reference_count < 5:
+        notes.append("Bu araç için referans veri sınırlı; tahmin daha belirsiz.")
+    if (unique_vehicles or 0) < 10:
+        notes.append("Son 90 günde az sayıda benzer araç bulundu.")
+    if days_old is not None and days_old > 14:
+        notes.append(f"Piyasa verisi {days_old} gün önce güncellendi.")
+
+    return {
+        "strength": strength,
+        "trim_match": trim_match,
+        "reference_listings": reference_count,
+        "gear_specific": bool(estimate.get("used_real_gear_data")),
+        "unique_comparables": int(unique_vehicles or 0),
+        "unique_sellers": int(unique_sellers or 0),
+        "same_year_comparables": int(same_year or 0),
+        "live_comparables": int(live_now or 0),
+        "window_days": _TREND_DAYS,
+        "data_date": str(latest)[:10] if latest else None,
+        "data_age_days": days_old,
+        "notes": notes,
+    }
+
+
+def scenario(payload: dict) -> dict:
+    """"Ne olurdu?" senaryosu: sadece tahmin, karar ve pazarlık."""
+    category = str(payload.get("category") or "otomobil").strip() or "otomobil"
+    brand = str(payload.get("brand") or "").strip()
+    series = str(payload.get("series") or "").strip()
+    engine = str(payload.get("engine") or "").strip()
+    package = (str(payload.get("package")).strip() or None) if payload.get("package") else None
+    city = str(payload.get("city") or "").strip()
+    fuel = str(payload.get("fuel") or "").strip() or None
+    gear = str(payload.get("gear") or "").strip() or None
+    agir_hasar = str(payload.get("agir_hasar", False)).strip().lower() in {"1", "true", "evet", "yes"}
+    damage = payload.get("damage") or []
+    if not isinstance(damage, list):
+        raise ValueError("damage bir liste olmalıdır.")
+    year = int(payload["year"])
+    km = float(payload["km"])
+    price = int(float(payload["price"]))
+    estimate = _estimate_vehicle(
+        category=category, brand=brand, series=series, engine=engine,
+        package=package, year=year, km=km, damage=damage,
+        agir_hasar=agir_hasar, gear=gear, fuel=fuel, city=city or None,
+    )
+    value = estimate.get("tahmini_fiyat")
+    return {
+        "estimate": {
+            "tahmini_fiyat": value,
+            "estimated_low": estimate.get("estimated_low"),
+            "estimated_high": estimate.get("estimated_high"),
+            "confidence_pct": estimate.get("confidence_pct") or 0,
+            "fallback_reason": estimate.get("fallback_reason"),
+        },
+        "decision": _decision(price, value),
+        "negotiation": _negotiation(price, estimate),
+    }
+
+
+def _data_version() -> str:
+    """Referans dosyaları değişince (yeni snapshot) analiz cache'i kendiliğinden geçersiz olur."""
+    parts = []
+    for path in (settings.B2C_GALERI_SUMMARY, settings.B2C_GALERI_LATEST_SNAPSHOT, settings.B2C_BASELINE_DB):
+        try:
+            parts.append(str(os.stat(path).st_mtime_ns))
+        except OSError:
+            parts.append("0")
+    return "-".join(parts)
+
+
+def analyze_cached(payload: dict) -> dict:
+    """`analyze` + Redis cache. Aynı girdi, aynı veri sürümü => aynı sonuç (motor deterministik)."""
+    ttl = int(getattr(settings, "B2C_ANALYSIS_CACHE_TTL", 0) or 0)
+    if ttl <= 0:
+        return analyze(payload)
+    digest = hashlib.sha256(
+        json.dumps(payload, sort_keys=True, ensure_ascii=False, default=str).encode("utf-8")
+    ).hexdigest()
+    key = f"b2c:analyze:v1:{_data_version()}:{digest}"
+    try:
+        hit = cache.get(key)
+    except Exception:
+        hit = None
+    if hit is not None:
+        hit = copy.deepcopy(hit)
+        hit["generated_at"] = datetime.now().isoformat(timespec="seconds")
+        return hit
+    result = analyze(payload)
+    try:
+        cache.set(key, result, ttl)
+    except Exception:
+        pass
+    return copy.deepcopy(result)
 
 
 def analyze(payload: dict) -> dict:
     """B2C tam analiz. `city` / `district` OPSİYONELDİR — verilmezse bölgesel
     sinyal ve renk primi dışındaki her şey aynen hesaplanır."""
     from .tco import compute_tco
+    from .vehicle_traits import analiz_icin as _arac_ozellikleri
 
     category = str(payload.get("category") or "otomobil").strip() or "otomobil"
     brand = str(payload.get("brand") or "").strip()
@@ -786,10 +1018,10 @@ def analyze(payload: dict) -> dict:
     )
     value = estimate.get("tahmini_fiyat")
 
-    rows = _galeri_rows(brand, series, year)
-    trend = _price_trend(rows)
-    regional = _regional_signal(rows, city, district)
-    color_adjustment = _color_adjustment(rows, color)
+    galeri_groups = _galeri_groups(brand, series, year)
+    trend = _price_trend(galeri_groups)
+    regional = _regional_signal(galeri_groups, city, district)
+    color_adjustment = _color_adjustment(galeri_groups, color)
     decision = _decision(price, value)
     description_analysis = description_insights(
         description_text, damage=damage, agir_hasar=agir_hasar, km=km, year=year,
@@ -840,6 +1072,10 @@ def analyze(payload: dict) -> dict:
         "regional_signal": regional,
         "tco": compute_tco(engine=engine, year=year, estimated_value=value,
                            annual_km=_ANNUAL_KM),
+        # Kronik / iyi / kötü özellikler: hazır veritabanından salt okuma.
+        # Veri yoksa available=False döner, kart boş durumunu gösterir.
+        "vehicle_traits": _arac_ozellikleri(brand, series, engine),
+        "evidence": _evidence(estimate, brand=brand, series=series, year=year, package=package),
         "data_sources": {
             "gallery_matches": len(rows),
             "listing_matches": _listing_matches(brand, series, year),
@@ -1365,8 +1601,11 @@ def description_insights(description: str, *, damage: list, agir_hasar: bool,
     if "bakimli" not in claims:
         missing.append("Bakım geçmişi")
     if "tek_el" not in claims:
-        missing.append("Kaç el olduğu")
-    if "garanti" not in claims:
+        missing.append("Aracın kaç farklı sahibi olduğu")
+    # Garanti sorusu yalnızca hâlâ garantide OLABİLECEK araçlarda anlamlı:
+    # 2 yaşından büyük ya da 100.000 km üstü araçta fabrika garantisi bitmiştir.
+    vehicle_age = max(0, datetime.now().year - int(year))
+    if "garanti" not in claims and vehicle_age <= 2 and km <= 100_000:
         missing.append("Garanti durumu")
 
     # Puan: description_quality'nin 1-10'u, çelişki başına -2.
@@ -1418,69 +1657,64 @@ def description_insights(description: str, *, damage: list, agir_hasar: bool,
 # 5) Güncel benzer ilanlar
 # ═══════════════════════════════════════════════════════════════════════════
 
-def _parse_km(raw: Any) -> int | None:
-    digits = re.sub(r"[^\d]", "", str(raw or ""))
-    if not digits:
+def _km_int(raw: Any) -> int | None:
+    """galeri_latest_snapshot.json'daki km zaten build script'inde temizlenmiş
+    sayısal değer (bkz. scripts/build_galeri_summary.py:parse_km) — burada sadece
+    tam sayıya çevrilip saçma yüksek değerler (1.5M üstü) elenir."""
+    if raw is None:
         return None
     try:
-        value = int(digits)
-    except ValueError:
+        value = int(float(raw))
+    except (TypeError, ValueError):
         return None
-    # Galeri verisinde "-" ve saçma yüksek değerler var; 1.5M üstü güvenilmez.
     return value if 0 < value <= 1_500_000 else None
+
+
+@lru_cache(maxsize=256)
+def _similar_rows(brand: str, series: str, year_lo: int, year_hi: int, _version: str) -> tuple:
+    brand_key, series_key = _norm(brand), _norm(series)
+    rows = [
+        row for row in galeri_summary.latest_snapshot().get("listings", [])
+        if _norm(row.get("brand")) == brand_key and _norm(row.get("series")) == series_key
+        and row.get("year") is not None and year_lo <= row["year"] <= year_hi
+        and row.get("price") is not None and _MIN_REAL_PRICE <= row["price"] <= _MAX_REAL_PRICE
+    ]
+    rows.sort(key=lambda r: r["price"])
+    return tuple(rows[:400])
 
 
 def similar_listings(brand: str, series: str, year: int, price: int | None,
                      limit: int = 12) -> list[dict]:
-    """Şu anda YAYINDA olan benzer ilanlar — galeri.db'nin EN SON snapshot'ından.
+    """Şu anda YAYINDA olan benzer ilanlar — galeri_latest_snapshot.json'daki
+    en son güne ait ilanlardan (bkz. scripts/build_galeri_summary.py).
 
     B2B tarafındaki "Yayındaki Benzer İlanları Bul" arabam.com'a canlı istek
     atıyor ve production IP'si 403 yiyor (bkz. README). B2C'de o yola hiç
-    girilmiyor: veri zaten günlük olarak galeri.db'ye çekiliyor, en son
-    snapshot'tan okumak hem anında hem de engellenemez.
+    girilmiyor: veri zaten günlük üretilen özet JSON'dan okunuyor, hem anında
+    hem de engellenemez.
     """
     try:
-        conn = _galeri_conn()
-        rows = conn.execute(
-            """
-            SELECT gl.title, gl.model, gl.year_raw, gl.km_raw, gl.color,
-                   gl.price, gl.post_url, gl.post_age_days,
-                   g.city, g.district, gl.gallery_name
-              FROM gallery_listings gl
-              LEFT JOIN galleries g ON g.gallery_name = gl.gallery_name
-             WHERE gl.snapshot_date = (SELECT MAX(snapshot_date) FROM gallery_listings)
-               AND gl.model LIKE ? COLLATE NOCASE
-               AND gl.price BETWEEN ? AND ?
-               AND CAST(gl.year_raw AS INTEGER) BETWEEN ? AND ?
-             ORDER BY gl.price ASC
-             LIMIT 400
-            """,
-            (f"%{brand}%{series}%", _MIN_REAL_PRICE, _MAX_REAL_PRICE,
-             year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE),
-        ).fetchall()
+        rows = _similar_rows(brand, series, year - _YEAR_TOLERANCE, year + _YEAR_TOLERANCE,
+                             _data_version())
     except Exception:
         return []
 
     out: list[dict] = []
-    for (title, model, year_raw, km_raw, color, listing_price, post_url,
-         post_age_days, city, district, gallery_name) in rows:
-        try:
-            listing_year = int(str(year_raw).strip())
-        except (TypeError, ValueError):
-            continue
+    for row in rows:
+        listing_price = int(row["price"])
         out.append({
-            "title": (title or model or "").strip(),
-            "model": (model or "").strip(),
-            "year": listing_year,
-            "km": _parse_km(km_raw),
-            "color": (color or "").strip() or None,
-            "price": int(listing_price),
-            "url": post_url or None,
-            "gallery": (gallery_name or "").strip() or None,
-            "city": (city or "").strip() or None,
-            "district": (district or "").strip() or None,
-            "post_age_days": post_age_days,
-            "price_diff": (int(listing_price) - price) if price else None,
+            "title": (row.get("title") or f"{row.get('brand', '')} {row.get('series', '')}".strip()),
+            "model": f"{row.get('brand', '')} {row.get('series', '')}".strip(),
+            "year": row.get("year"),
+            "km": _km_int(row.get("km")),
+            "color": (row.get("color") or "").strip() or None,
+            "price": listing_price,
+            "url": row.get("url") or None,
+            "gallery": (row.get("gallery") or "").strip() or None,
+            "city": (row.get("city") or "").strip() or None,
+            "district": (row.get("district") or "").strip() or None,
+            "post_age_days": row.get("post_age_days"),
+            "price_diff": (listing_price - price) if price else None,
         })
 
     # En ucuzdan değil, KULLANICININ İLANINA en yakınlardan başlayarak seç --

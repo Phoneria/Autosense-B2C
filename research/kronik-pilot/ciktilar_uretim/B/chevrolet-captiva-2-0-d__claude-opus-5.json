@@ -1,0 +1,170 @@
+{
+  "hedef_id": "chevrolet-captiva-2-0-d",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arizasi cekis dusuklugu ve egzozdan siyah duman olarak ortaya cikiyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/captiva-turbo-arizasi-siyah-duman--117280726",
+      "kaynak_alinti": "ARACIMDA TURBO ARIZASI ÇIKTI SİYAH DUMAN VE ÇEKİŞ DÜŞÜKLÜĞÜ BUNDAN KAYNAKLANIYORMUŞ",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikul filtresi tikaniyor, yanmayan yakit karter yagina karisip yag seviyesini yukseltiyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/chevrolet-captiva-2.0-d/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "filtre kendini yeterince temizleyemez ve tıkanır; yanmayan dizel karter yağına karışır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Sogutma sistemi ve radyator kaynakli tekrarlayan hararet sorunu bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/chevrolet/captiva",
+      "kaynak_alinti": "Chevrolet Captiva 2.0 dizel aracımı alalı yalnızca 3 ay olmasına rağmen, bu süre içinde tam 4 kez hararet ve radyatör sorunu yaşadım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik sanzimanda vites gecislerinde sarsinti, gecikme ve ses yayginlasiyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://eksisozluk.com/chevrolet-captiva--1415278?p=7",
+      "kaynak_alinti": "tam otomatik şanzıman ufak lak lakla başlar",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektor arizasinda sabah zor calisma, uzun mars ve rolantide sarsinti gorulur.",
+      "km_araligi": "120.000-180.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/chevrolet-captiva-2.0-d/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "sabah zor çalışma veya uzun marş, rölantide sarsıntı ve tıklama",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve emme manifoldunda kurum birikimi olusup temizlik gerektiriyor.",
+      "km_araligi": "100.000-180.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/captiva-turbo-arizasi-siyah-duman--117280726",
+      "kaynak_alinti": "Egzoz ve emme monifoldu ve EGR temizliği yaptırın",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusunda bosluk ve tikirti sesi kronik sikayet olarak aktariliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/chevrolet-captiva-tavsiy-eder-misiniz--150453216",
+      "kaynak_alinti": "Kronik direksiyon tikirti sesi problemi vardı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Motorda yag tuketimi, titreme ve guc kaybi sikayetleri raporlaniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opellcenter.com/blog/chevrolet-captiva-kronik-sorunlari",
+      "kaynak_alinti": "Yüksek yağ tüketimi, motor titremesi ve güç kaybı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ic hacim cok genis, 7 koltuklu versiyonu kalabalik aileler icin uygun.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/chevrolet-captiva--1415278?p=7",
+      "kaynak_alinti": "araç 7 kişilik. arka koltukları da yatırdığın zaman şişme yatak",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Koltuklar ve kabin uzun yolda yormayan bir konfor sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/chevrolet-captiva-2011-high-7-koltuk.3493/",
+      "kaynak_alinti": "Bütün koltuklar rahat ve sizi yormayan bir yapıda",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "4x4 sistemi kar ve hafif arazide basarili cekis sagliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/chevrolet-captiva-2011-high-7-koltuk.3493/",
+      "kaynak_alinti": "Esp kapatıldığında 4 tekerlek kazıyor yırtıyor resmen",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Donanim seviyesi ayni yillardaki rakiplerinin cogundan zengin.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/chevrolet-captiva-2-0-d-high--58093290",
+      "kaynak_alinti": "captivadaki donanımlar çogu araçta yok",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Bakimi yapilan orneklerde 180.000 km'ye buyuk masraf cikmadan ulasildigi aktariliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/chevrolet-captiva-tavsiy-eder-misiniz--150453216",
+      "kaynak_alinti": "180000 km ye geldik...yağı suyu dışında masraf açmamadan",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Sehir ici yakit tuketimi 10-12 litre bandindan asagi inmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/chevrolet-captiva--1415278?p=7",
+      "kaynak_alinti": "yakıt ortalama 10-11 litre altına düşmez",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Chevrolet Turkiye'den cekildigi icin orijinal parca tedariki 2024 sonrasi zorlasti.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/haberler/chevrolet-alinir-mi-alinmaz-mi/",
+      "kaynak_alinti": "2024'ten sonra yedek parça sıkıntılarının başlayacağı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Markanin pazardan cekilmesi ikinci el degerini asagi cekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/haberler/chevrolet-alinir-mi-alinmaz-mi/",
+      "kaynak_alinti": "2020'li yıllardan sonra Chevrolet'in değerlerinin iyice düşeceği",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Kullanicilar aracin masrafinin bitmedigini, motor tarafinin pahaliya patladigini soyluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/chevrolet-captiva--1415278?p=7",
+      "kaynak_alinti": "motor yer, masrafı bitmez",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekan malzeme ve konsol kalitesi sinifina gore zayif bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/chevrolet-captiva-2-0-d-high--58093290",
+      "kaynak_alinti": "İç mekan, ön konsol Kia'dan alıntı gibi, kalite eksikliği",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

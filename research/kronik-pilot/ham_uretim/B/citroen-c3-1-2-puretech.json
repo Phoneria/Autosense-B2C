@@ -1,0 +1,113 @@
+{
+  "hedef_id": "citroen-c3-1-2-puretech",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "1.2 PureTech'in yag banyolu triger kayisi beklenenden hizli bozulup yaga partikul birakiyor ve arizaya yol aciyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/stellantis-kronik-sorunlari-peugeot-citroen-opel-ve-jeep",
+      "kaynak_alinti": "Kayışın beklenenden hızlı bozulduğu, motorun yağlama sistemini etkileyecek partiküller oluşturduğu ve bunun güç kayıplarına ve arızalara yol açtığı aktarılmaktadır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayisi motor blogunda yag icinde dondugu icin plastik kayistan kopan partikuller yagda birikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/puretech",
+      "kaynak_alinti": "Triger kayışı motor blokunda yağ içerisinde döndüğü için seri şekilde kötülenen motor. Yağ içerisinde dönen plastik kayıştan kopan partiküller yağ içerisinde birikiyor iddiası var.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "C3'te triger kayisi 39.000 km gibi dusuk kilometrede kopabiliyor.",
+      "km_araligi": "39.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-c3-triger-kayisi-39000-kmde-koptu-garanti-disi-ucret-talepleri",
+      "kaynak_alinti": "Citroen c3 marka aracımın triger kayışı, henüz 39.000 km'deyken 22.01.2026 tarihinde koptu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayisinin fabrika omur siniri 6 yil; sure dolunca kayis kopup motor tamirine yol aciyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-servis-takipsizligi-nedeniyle-triger-kayisi-arizasi-ve-120-bin-tl-motor-tamiri",
+      "kaynak_alinti": "Fabrika verilerine göre bu aracın triger kayışı ömür sınırı 6 yıldır ve aracım tam olarak 6. Yılını doldurmuştur.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "2023 model C3 1.2 PureTech'te dokunmatik multimedya ekrani sik sik donuyor ve tamamen calismaz hale geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/ekran-donmasi-ve-cozumsuz-kalmasi-garanti-sonrasi-magduriyet",
+      "kaynak_alinti": "2023 model Citroen c3 1.2 puretech otomatik aracımı yaklaşık 5 ay önce satın aldım. Aracın ana ekran dokunmatiği ilk zamanlarda ara ara donmaya başlarken, son 3 aydır sıklaşarak neredeyse sürekli donuyor ve hiçbir şekilde çalışmıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "2023 model C3'te 16.000 km civarinda 3 enjektor birden arizalandi, onarim bedeli 61.000 TL cikti.",
+      "km_araligi": "16.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/garanti-kapsamindaki-enjektor-arizasi-icin-61000-tl-ucret-talebi-kabul-edilemez",
+      "kaynak_alinti": "Serviste bana aracın 3 adet enjektörünün bozuk olduğu, bu parçaların garanti kapsamında olmadığı ve onarım için 61.000 TL ödemem gerektiği söylendi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "katalizor",
+      "iddia": "2022 model C3'te 91.000 km civarinda katalizor arizasi ortaya cikiyor.",
+      "km_araligi": "91.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-c3te-katalizor-arizasi-garanti-disi-159-bin-tl-masrafi-musteriye-yukleniyor",
+      "kaynak_alinti": "Citroen C3 2022 model aracımı 76 bin kilometrede ikinci el olarak satın aldım, şu an 91 bin kilometrede. Aralık ayında araçta katalizör arızası ortaya çıktı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Arac birkac gun kullanilmadiginda aku beklenenden hizli bosaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/stellantis-kronik-sorunlari-peugeot-citroen-opel-ve-jeep",
+      "kaynak_alinti": "Araç birkaç gün kullanılmadığında akünün beklenenden hızlı boşaldığına dair bildirimler yaygındır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Yedek parca erisimi ve ozel servis yayginligi sayesinde rutin bakim maliyetleri Turkiye'de makul.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/stellantis-kronik-sorunlari-peugeot-citroen-opel-ve-jeep",
+      "kaynak_alinti": "Yedek parça erişimi ve özel servis yaygınlığı sayesinde rutin bakım maliyetleri Türkiye'de makul seviyededir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "2021 model C3'te havalandirma peteklerindeki nikelaj kaplama bir yil icinde soyulmaya basliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-c3-havalandirma-peteklerinde-nikelaj-kaplama-soyulmasi-ve-ucretsiz-degisim-talebi",
+      "kaynak_alinti": "2021 yılında trafiğe çıkan Citroen C3 model aracımın havalandırma peteklerindeki gri nikelaj kaplaması yaklaşık 1 yıldır sürekli olarak soyuluyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "1,5 yasindaki C3'te multimedya alt cercevesi gunese maruz kalinca yapis yapis oluyor ve iz tutuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-c3-multimedya-alt-cercevesi-yapiskanligi-garanti-disi-birakildi",
+      "kaynak_alinti": "Daha 1,5 yaşındaki bir aracın iç plastik parçasının sadece güneşe maruz kaldığı için bu şekilde yapışkan hale gelmesini kabul edemiyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Katalizor arizasinda yetkili servis yaklasik 159 bin TL onarim bedeli cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/citroen-c3te-katalizor-arizasi-garanti-disi-159-bin-tl-masrafi-musteriye-yukleniyor",
+      "kaynak_alinti": "Burada yapılan inceleme sonucunda yaklaşık 159 bin TL'lik bir arıza bedeli çıkarıldı ve bu tutarın garanti kapsamında karşılanmayacağı tarafıma iletildi.",
+      "guven": "dusuk"
+    }
+  ]
+}

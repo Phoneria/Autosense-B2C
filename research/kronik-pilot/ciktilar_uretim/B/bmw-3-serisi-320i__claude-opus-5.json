@@ -1,0 +1,170 @@
+{
+  "hedef_id": "bmw-3-serisi-320i",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "F30 320i ED'de 76.000 km sonrası her 4.000 km'de bir motor yağı ekleme ihtiyacı doğuyor.",
+      "km_araligi": "76.000-140.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/bmw/2014-bmw-320i-ed-modelinde-yag-eksiltme-sorunu-guvenlik-ve-maliyet-endisesi",
+      "kaynak_alinti": "2014 model BMW 320i ed aracım 76.000 km'de ve yaklaşık 2024 yılından beri her 4.000 kilometrede bir motor yağı eklemek zorunda kalıyorum.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "N13B16 motorlu 320i ED'de zamanlama zinciri gergisi erken aşınıyor, soğukta metalik şakırtı geliyor.",
+      "km_araligi": "90.000-120.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "N13B16 motorunda zamanlama zinciri gergisinin erken aşınması bildirilmektedir. Soğuk çalıştırmada motor bölgesinden gelen 'cırcır' veya metalik şakırtı sesi, bu sorunun ilk belirtisi olabilir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "F30 320i'de elektrikli su pompası arızalanınca ani ısınma, hararette oynama ve devirde dalgalanma görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/forum/threads/bmw-3-serisi-f30-su-pompasi-arizasi-tecrubeleriniz-var-mi",
+      "kaynak_alinti": "Su pompası elektronik olduğu için özellikle ani ısınma, hararette oynama ve devirde dalgalanma oluyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Radyatör boru ve hortumları eskiyip çatlayarak soğutma sıvısı kaçağına ve hararete yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Radyatör boru ve hortumlarının zaman içinde eskimesi ve çatlaması, soğutma sıvısı kaçağına ve aracın hararet yapmasına neden olabilmektedir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "diferansiyel-4x4",
+      "iddia": "G20 320i'de 50.000 km civarında arka diferansiyelden belirgin uğultu gelmesi tekrar eden bir şikayet.",
+      "km_araligi": "50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/bmw/diferansiyel-ugultusu-icin-ucretsiz-inceleme-ve-onarim-talebi",
+      "kaynak_alinti": "G20 kasa kodlu 2022 model BMW 3.20i aracımda yaklaşık 50 bininci kilometreden biri diferansiyelden gelen belirgin bir uğultu problemi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "2022 model 320i'de 40.000 km'de direksiyondan elektronik 'vıj vıj' sesi gelip kutu değişimi isteniyor.",
+      "km_araligi": "40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-320i-direksiyon-kutusundaki-anormal-ses-ve-guvenlik-endisesi",
+      "kaynak_alinti": "yaklaşık 1–2 haftadır direksiyondan gelen, elektronik bir 'vıj vıj' sesini andıran anormal bir ses",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "G20 kasada arka fren balataları 15.000 km'yi bulmadan tükenip tekrar tekrar değiştiriliyor.",
+      "km_araligi": "18.000-90.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-g20-arka-fren-balatalari-surekli-degisiyor-yetkili-servis-bilgilendirme-yapmadi",
+      "kaynak_alinti": "22.08.2020 tarihinde Otoyol İzmir'de, araç 18.235 km'deyken arka fren balataları değişmiştir. 06.01.2021 tarihinde bu kez Öztorun Oto'da, 32.677 km'de tekrar arka fren balataları değiştirilmiştir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "F30'da dış kapı kollarının kaplaması güneşte eriyip yapışkanlaşarak soyuluyor; serinin en yaygın kronik sorunu.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "F30 serisinin en bilinen ve en yaygın kronik sorunudur. Dış kapı kollarının üzerindeki kaplama malzemesinin, özellikle güneş ışığı ve yüksek sıcaklığa maruz kaldığında erimesi, yapışkanlaşması ve soyulması sıkça raporlanmaktadır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Arkadan itişli sürüş dinamiği, segmentteki en keyifli sürüş deneyimlerinden biri olarak değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "BMW'nin karakteristik arkadan itiş sürüş dinamiği, segmentteki en keyifli sürüş deneyimlerinden birini sunar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "ZF 8HP otomatik şanzıman güvenilir ve pürüzsüz vites geçişleriyle biliniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "ZF 8HP otomatik şanzıman, genel olarak güvenilir ve pürüzsüz vites geçişleriyle bilinen bir ünitedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "320i ED uzun yolda Eco Pro modunda 5,2 lt/100 km'ye kadar düşen tüketim değerleri veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Uzun yolda ise Eco Pro modunda 5,2 litreye kadar düşen tüketim değerleri bildirilmiştir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "40th Year Edition ve M Plus paketli 320i'ler ikinci elde en yüksek değeri koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "40th Year Edition ve M Plus paketleri en yüksek ikinci el değerini korurken",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "Sürüş zevkini ön planda tutan, premium sedan deneyimi arayan kullanıcılara öneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "sürüş zevkini ön planda tutan, premium bir sedan deneyimi arayan",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "100 km/s üzerinde belirgin yol ve rüzgâr sesi giriyor, yalıtım kalitesi beklentinin altında kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "100 km/s üzerinde belirgin yol ve rüzgâr sesi alındığı, yalıtım kalitesinin beklentilerin altında kaldığı birçok kullanıcı tarafından dile getirilmiştir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "F30'da iç mekân plastikleri hassas yapıda; söküm-takım işlemlerinde kolayca kırılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "F30 kasasında iç mekân plastik parçalarının hassas yapıda olduğu ve söküm-takım işlemlerinde kolayca kırılabildiği raporlanmaktadır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "70.000 km'deki 320i'de orta konsol kumanda merkezi değişimi için 60-70 bin TL isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-320i-park-frenindeki-surekli-ariza-ve-yuksek-tamir-maliyeti",
+      "kaynak_alinti": "orta konsol kumanda merkezinin değişmesi gerektiği ve bunun için yaklaşık 60.000 TL masraf çıkacağı söylendi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Direksiyon kutusu değişimi için yetkili serviste yaklaşık 300 bin TL fatura çıkarılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/bmw-320i-direksiyon-kutusundaki-anormal-ses-ve-guvenlik-endisesi",
+      "kaynak_alinti": "yaklaşık 300 bin tl tutarında bir fatura çıkardılar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Gerçek kullanımda şehir içi tüketim 8,5-10,0 lt/100 km seviyesine çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-3-serisi-320i-ed-ikinci-el-alim-rehberi-sorunlar-kontroller-ve-bakim-onerileri-2026",
+      "kaynak_alinti": "Şehir içi: 8,5–10,0 lt/100 km",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

@@ -1,0 +1,167 @@
+{
+  "hedef_id": "skoda-superb-1-5-tsi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "40.000 km civarında DSG kuru kavrama ve volan arızası yaygın.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-superb-kronik-dsg-kavramavolan-sorunu-fahis-fiyat-uygulamasi",
+      "kaynak_alinti": "34 Dy**14 plakalı 2021 model Skoda Superb sahibiyim. Aracım yalnızca üç yaşında ve 40,000 km'de olmasına rağmen önemli sorunlar yaşadım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Kavrama ve volan değişimine rağmen 1500 devir civarında titreme tekrar ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-superb-titreme-sorunu-icin-tekrarlanan-ucretli-onarimlar-ve-kalici-cozum-talebi",
+      "kaynak_alinti": "2025 yılından bu yana aracım servise defalarca gitti, fakat titreme sorunu bir türlü kalıcı olarak giderilmedi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Bakım aralığı dolmadan, 13-15 bin km'de yaklaşık 1 litre yağ eksiltiyor.",
+      "km_araligi": "13.000-15.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/27787-1-5-tsi-yag-eksitme-konusu/",
+      "kaynak_alinti": "13 bin km'de uyarı verdiğinde 1lt yap ekledim. Arac daha 14 bin km'de",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Su pompası ve termostat gövdesinden soğutma suyu sızıntısı görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "su pompası ve termostat gövdesinden sızıntı yapma eğilimi bildirilmiştir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "12V akü şarj arızası uyarısı tekrarlıyor, akü değişimine rağmen sorun sürüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/superb/aku",
+      "kaynak_alinti": "Araç sürekli sabah akşam zaten çalışıyor. Sanki otoparkta haftalarca yatan arabadır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Kapı kilidi, cruise control ve far gibi sistemlerde rastgele elektronik arızalar çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-superbte-rastgele-elektronik-arizalar-ve-cozum-eksikligi",
+      "kaynak_alinti": "aracın davranışları tamamen rastlantısal şekilde değişiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "abs-esp-sensor",
+      "iddia": "Şerit asistanı ve kamera sensör hataları ile gereksiz otomatik acil frenleme yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/superb/tsi",
+      "kaynak_alinti": "Sürekli sensör arızaları (emniyet kemeri, şerit asistanı, arka kamera vb.), gereksiz yere kendi kendine acil fren yapması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Android Auto bağlantısı kurulduktan sonra sürekli kesiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/superb/kronik",
+      "kaynak_alinti": "Yeni Skoda Superb'te Android Auto Bağlantısı Sürekli Kesiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 100 km'de 4,5-5 litre tüketimle dizel seviyesinde ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "Uzun yolda 4.5 - 5.0 lt/100 km gibi dizel araçları kıskandıran değerlere ulaşabilir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk diz mesafesi sınıfının çok üstünde, limuzin seviyesinde geniş.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomobilforum.com/konu/skoda-superb-1-5-tsi-hybrid-prestige-detayli-inceleme.252/",
+      "kaynak_alinti": "Arka koltuklarda sunulan diz mesafesi, neredeyse bir limuzinle yarışacak düzeyde.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "580 litrelik bagaj hacmi ile sınıfının en iyileri arasında.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/arka-koltuk-diz-mesafesiyle-meshur-arac-skoda-superbin-artilari-ve-eksileri",
+      "kaynak_alinti": "bagaj hacmi ve arka koltuk diz mesafesi, muhtemelen sınıfının en iyisi. 580 lt civarında bir bagaj hacmi var.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Adaptif hız sabitleyici, şerit takibi, kör nokta ve acil fren sistemleri standart.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomobilforum.com/konu/skoda-superb-1-5-tsi-hybrid-prestige-detayli-inceleme.252/",
+      "kaynak_alinti": "Adaptif hız sabitleyici, şerit takip asistanı, kör nokta uyarısı ve acil durum freni gibi güvenlik sistemleri standart.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "72.000 km'ye kadar motor ve DSG tarafında sorun yaşamadığını bildiren sahipler var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-5-tsi-motor-dusunuyorum-fakat-aydinlanmak-istiyorum--150632791",
+      "kaynak_alinti": "72 bin km de işim gereği uzun yol şehir içi vs girmediğim yer kalmadı Allaha şükür ne dsg de ne de motorda bir sıkıntı yaşamadım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Şehir içinde tüketim 7,5 litre/100 km civarına çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/arka-koltuk-diz-mesafesiyle-meshur-arac-skoda-superbin-artilari-ve-eksileri",
+      "kaynak_alinti": "şehir içinde haliyle bu kadar düşük devirde kullanmıyorum. tüketim 7,5 litre/100 km civarında.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Garanti dışı DSG kavrama ve volan onarımı 48.737 TL'ye kadar çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-superb-kronik-dsg-kavramavolan-sorunu-fahis-fiyat-uygulamasi",
+      "kaynak_alinti": "Merkezden gelen indirimlere rağmen toplamda 48.737,23 TL ücret talep edildi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste yağ, yağ filtresi ve polen filtresi değişimi 9.000 TL tutabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/superb/servis-ucreti",
+      "kaynak_alinti": "Yağ+yağ filtresi+polen filtresi değişim ücreti 9.000 TL",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalıtımı zayıf; yol ve lastik sesi kabinde rahatsız edici seviyede.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/arka-koltuk-diz-mesafesiyle-meshur-arac-skoda-superbin-artilari-ve-eksileri",
+      "kaynak_alinti": "aracın ses yalıtımı, pek de iyi değil. yol ve lastik sesi, rahatsız edici seviyede.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "150 PS motorla 0-100 km/s hızlanma 11 saniye civarında kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/arka-koltuk-diz-mesafesiyle-meshur-arac-skoda-superbin-artilari-ve-eksileri",
+      "kaynak_alinti": "kağıt üzerinde bu otomobilin 0-100 km/saat hızlanması, 11 saniye",
+      "guven": "dusuk"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "hedef_id": "mercedes-benz-e-200",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "abs-esp-sensor",
+      "iddia": "2002-2006 W211 kasada SBC fren sistemi arizasi yayginm; fren seyir halinde bosalabiliyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/w211",
+      "kaynak_alinti": "W211 kasa Mercedes aracim var. Yolda giderken kirmizi ekran uyarilari ile fren tamamen bosaldi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "W210 kasada camurluk, kapi altlari ve kapi fitilleri altinda paslanma kronik sorundur.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/w210--851345?p=2",
+      "kaynak_alinti": "camurluklarda, kapilarin alt taraflarinda, kapi fitillerinin altinda pas baslangici gorulme ihtimali vardir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "5G-Tronic sanzimanin dis sogutucu hortumlarindan ATF sizintisi gorulüyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://otoraporu.net/arac/mercedes-w210-e200",
+      "kaynak_alinti": "5G-Tronic sanziman dis sogutucu hortumlarindan ATF sizintisi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "Kompressor tahrik kayisi ve kasnagi asiniyor; kayis koparsa guc kaybi oluyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://otoraporu.net/arac/mercedes-w210-e200",
+      "kaynak_alinti": "Kompressor tahrik kayisi ve kasnak asinmasi. Kayis koparsa guc kaybi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "rotil-rot",
+      "iddia": "W211'de on takim baglanti kollari ve bilyelerinde bosluk olusup tikirti sesi yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2004-w211-on-takimda-ses-yardim--55270526",
+      "kaynak_alinti": "Iki baglanti kolunda (simetrik, sag ve sol) bosluk",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "E 200'de 1.000 km'de 1 litre yag tuketimi sikayeti bildirilmis.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/e-200",
+      "kaynak_alinti": "1000 kilometrede 1 litre yag yakmaya basladi, 3 yildir sorun devam ediyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Fren diskleri bozuldugunda fren sirasinda aracta titreme yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e-200-kompressor--1061275",
+      "kaynak_alinti": "fren diskleri cok fazla suyla hasir nesir oldugu zaman bozulabiliyor. bu bozulma kendisini fren yapmak istediginizde belirterek arabayi titretiyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Yasli W211'lerde elektronik sistem arizalari yaygin ve onarimi masrafli.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/w211--578197",
+      "kaynak_alinti": "Elektronik sistemlerinden dolayi olu olanlar gercekten cok masrafli. Bu araclar parca secen araclar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "W211 E200 Kompressor'un konforu ve ic malzeme kalitesi sinifinin uzerinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/w211-e200-kompressor-facelift-nasil-bilirsiniz--147068301",
+      "kaynak_alinti": "Her noktasi kalite kokar. Cift cam tavan, deri kalitesi, direksiyon tepkisi, konforu insani simartir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ic mekan genisligi sinifindaki rakiplerinden belirgin sekilde daha iyi hissettiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e-200-kompressor--1061275",
+      "kaynak_alinti": "ic mekanda genislik hissini bu sinifta olan hic bir otomobilde hissetmedigimi acikca soyleyebilirim",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Arka itisli sasi sayesinde yol tutusu cok iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e-200-kompressor--1061275?p=2",
+      "kaynak_alinti": "yol tutusu son derece iyi bir araçtir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "ESP, diz ve perde hava yastiklari gibi guvenlik donanimi zengin geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e-200-kompressor--1061275",
+      "kaynak_alinti": "on/arka park sensoru, far sensoru, yagmur sensoru, cruise control, esp, yolcu/diz/perde hava yastiklari",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "310.000 km'ye kadar buyuk ariza cikarmadan kullanilan ornekleri var.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/w211--578197",
+      "kaynak_alinti": "Su an 310.000 km'de ve acilir tavan haricinde bir sikinti yasatmadi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "2.0 Kompressor benzinli motorun yakit tuketimi yuksek bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/w211-e200-kompressor-facelift-nasil-bilirsiniz--147068301",
+      "kaynak_alinti": "Yakit tuketimi biraz fazla",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Arac yaslandikca bakim masrafi kacinilmaz sekilde artiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/w211-e200-kompressor-facelift-nasil-bilirsiniz--147068301",
+      "kaynak_alinti": "lokum gibi araba ama yasina bagli masrafi olur.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "SBC fren sistemi degisimi icin 3.000 dolara varan fiyatlar bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/w211",
+      "kaynak_alinti": "Fren degisimi icin uc bin dolar oldukca yuksek",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Kompresorsuz standart E200 motoru esneklik acisindan zayif kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/w210-e200-nasil-bilirsiniz--109064628",
+      "kaynak_alinti": "esneklik konusunda zayif",
+      "guven": "dusuk"
+    }
+  ]
+}

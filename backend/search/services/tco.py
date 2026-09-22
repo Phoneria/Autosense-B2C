@@ -158,3 +158,80 @@ def compute_tco(
             "gerçek sigorta teklifi veya servis faturası yerine geçmez."
         ),
     }
+
+
+def compute_personal_tco(
+    *, engine: str, year: int, annual_km: int, vehicle_value: float | None = None,
+    fuel: str | None = None, consumption: float | None = None, unit_price: float | None = None,
+    kasko_tl: float | None = None, traffic_tl: float | None = None, maintenance_tl: float | None = None,
+    parking_monthly_tl: float = 0, tires_tl: float = 0, inspection_tl: float = 0,
+    toll_monthly_tl: float = 0, other_tl: float = 0, loan_monthly_tl: float = 0,
+) -> dict:
+    """Kullanıcının kendi değerleriyle yıllık maliyet. Boş bırakılan her kalem
+    genel varsayımla doldurulur ve `estimated=True` işaretlenir."""
+    guessed_fuel, cc = _guess_fuel_and_cc(engine)
+    fuel = fuel or guessed_fuel
+    energy = "benzin" if fuel == "hibrit" else fuel
+    value = int(vehicle_value) if vehicle_value else 0
+    age = max(datetime.now().year - int(year), 0) or 1
+
+    lines: list[dict] = []
+
+    def add(key, label, yearly, estimated, note=None):
+        lines.append({"key": key, "label": label, "yearly_tl": round(yearly or 0),
+                      "monthly_tl": round((yearly or 0) / 12), "estimated": estimated, "note": note})
+
+    default_consumption = 4.8 if fuel == "hibrit" else ORTALAMA_TUKETIM.get(energy, ORTALAMA_TUKETIM["benzin"])
+    used_consumption = consumption if consumption is not None else default_consumption
+    used_price = unit_price if unit_price is not None else YAKIT_FIYATI_TL.get(energy, YAKIT_FIYATI_TL["benzin"])
+    unit = "kWh" if energy == "elektrik" else "L"
+    add("fuel", "Yakıt / enerji", annual_km / 100 * used_consumption * used_price,
+        consumption is None or unit_price is None,
+        f"{annual_km:,} km × {used_consumption:g} {unit}/100 km × {used_price:g} TL".replace(",", "."))
+
+    mtv_amount, mtv_note = None, None
+    if energy == "elektrik":
+        mtv_note = "Elektrikli araçlarda motor gücü bilinmediği için MTV hesaplanamadı."
+    elif energy == "lpg":
+        mtv_note = "LPG'li araçlar için MTV hesaplanmadı."
+    elif cc is None:
+        mtv_note = "Motor hacmi çözümlenemedi, MTV hesaplanamadı."
+    else:
+        r = hesapla_mtv(motor_hacmi_cc=cc, tasit_degeri_tl=value, arac_yasi=age, yakit_tipi=energy)
+        if "error" in r:
+            mtv_note = r["error"]
+        else:
+            mtv_amount = r["mtv_tutari"]
+    add("mtv", "MTV", mtv_amount or 0, False, mtv_note or "Resmî tarifeye göre")
+
+    add("kasko", "Kasko", kasko_tl if kasko_tl is not None else value * KASKO_ORANI, kasko_tl is None,
+        None if kasko_tl is not None else "Araç değerinin ~%3,5'i (kendi teklifinizi girin)")
+    add("traffic", "Trafik sigortası", traffic_tl if traffic_tl is not None else TRAFIK_SIGORTASI_TL,
+        traffic_tl is None, None if traffic_tl is not None else "Ortalama değer")
+    add("maintenance", "Bakım", maintenance_tl if maintenance_tl is not None else max(value * BAKIM_ORANI, BAKIM_TABAN_TL),
+        maintenance_tl is None, None if maintenance_tl is not None else "Araç değerinin ~%1,5'i, en az 10.000 TL")
+    if parking_monthly_tl:
+        add("parking", "Otopark", parking_monthly_tl * 12, False)
+    if toll_monthly_tl:
+        add("toll", "Köprü / otoyol", toll_monthly_tl * 12, False)
+    if tires_tl:
+        add("tires", "Lastik", tires_tl, False)
+    if inspection_tl:
+        add("inspection", "Muayene / egzoz", inspection_tl, False)
+    if other_tl:
+        add("other", "Diğer", other_tl, False)
+    if loan_monthly_tl:
+        add("loan", "Kredi taksiti", loan_monthly_tl * 12, False)
+
+    total = sum(line["yearly_tl"] for line in lines)
+    running = sum(line["yearly_tl"] for line in lines if line["key"] != "loan")
+    return {
+        "fuel": fuel,
+        "engine_cc": cc,
+        "annual_km": annual_km,
+        "lines": lines,
+        "total_yearly_tl": total,
+        "total_monthly_tl": round(total / 12),
+        "per_km_tl": round(running / annual_km, 2) if annual_km else None,
+        "estimated_count": sum(1 for line in lines if line["estimated"]),
+    }

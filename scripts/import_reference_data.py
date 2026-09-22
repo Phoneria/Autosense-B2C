@@ -34,6 +34,8 @@ def snapshot(source, destination, tables=()):
                         dst.execute('CREATE INDEX b2c_listing_brand_year ON search_listing(brand, year)')
                     if "gallery_listings" in tables:
                         dst.execute('CREATE INDEX b2c_gallery_snapshot ON gallery_listings(snapshot_date)')
+                        dst.execute('CREATE INDEX b2c_gallery_model ON gallery_listings(model, snapshot_date)')
+                        dst.execute('ANALYZE gallery_listings')
                 else:
                     src.backup(dst, pages=4096)
                 dst.commit()

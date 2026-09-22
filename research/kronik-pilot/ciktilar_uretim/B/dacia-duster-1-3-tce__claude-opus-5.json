@@ -1,0 +1,170 @@
+{
+  "hedef_id": "dacia-duster-1-3-tce",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "1.3 TCe EDC otomatikte vites geçişlerinde ses, titreme ve silkeleme kronik şikâyet.",
+      "km_araligi": "5.000-75.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-duster-vites-sorunlari-ve-kotu-servis-deneyimi",
+      "kaynak_alinti": "2024 Ağustos sonunda 1.3 TCe EDC otomatik Journey Duster aldım. Vites geçişi ve düşüşündeki ses ve silkeleme çok rahatsız edici.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "1.3 TCe'de belirli devirlerde turbo bölgesinden tıkırtı/wastegate sesi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-ve-dacia-kronik-sorunlari-2020-sonrasi-modeller",
+      "kaynak_alinti": "Bir diğer bildirim başlığı, belirli devirlerde turbo bölgesinden gelen tıkırtı sesidir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "1.3 TCe'de en sık bildirilen sorun külbütör kapağı bölgesinden yağ sızıntısı ve terlemedir.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-ve-dacia-kronik-sorunlari-2020-sonrasi-modeller",
+      "kaynak_alinti": "Kullanıcı geri bildirimlerinde bu motorda en sık aktarılan başlık külbütör kapağı bölgesinden yağ sızıntısı ve terlemedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Soğutma su borusunun patlaması motor suyu kaybına ve motor hasarına yol açıyor.",
+      "km_araligi": "30.000-40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-sifir-aracta-motor-arizasi-ve-deger-kaybi-magduriyeti",
+      "kaynak_alinti": "Serviste yapılan inceleme sonucunda, su borusunun patlaması nedeniyle motorun su eksiltip hasar gördüğü ve bu nedenle motorun sandık motor ile değişeceği tarafıma bildirildi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Ön farlardaki LED aydınlatma ve sinyal birimleri kendiliğinden arızalanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-duster-led-far-arizalari-ucretsiz-geri-cagirma-talebi",
+      "kaynak_alinti": "2021 model Dacia Duster 1.3 tce Confort aracımda, hiçbir elektriksel problem olmamasına rağmen ön farlardaki LED aydınlatmalarda kronik bir arıza yaşamaktayım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı kendiliğinden kapanıyor ve tekrar tekrar arızalanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/duster/multimedya",
+      "kaynak_alinti": "aracın multimedya sistemi satın aldığımız günden bu yana en az 5-6 kez arızalandı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "İnce boya nedeniyle sıfır araçlarda boya atması, çatlama ve kabarma görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/duster/boya",
+      "kaynak_alinti": "o kadar ince bir boya atılmış ki, dokunsam çiziliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Balataların sertleşmesine bağlı fren sesi ilk yıldan itibaren şikâyet konusu oluyor.",
+      "km_araligi": "0-20.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/dacia/garanti-kapsamindaki-dacia-duster-fren-ses-sorunu-cozulmedi",
+      "kaynak_alinti": "frenlerde, özellikle durmaya yakınken belirgin şekilde ses oluşmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "1.3 TCe 150 bg otomatik sahipleri kabini sessiz ve aracı atik buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/duster-yorumlari",
+      "kaynak_alinti": "Renault duster evolotion tekno paket 1.3 tce 150 bg otomatik kullanıyorum araç oldukça sessiz ve atik birçok üst seğment araçta olan özellik mevcut yakıt tüketimi cliodan bile düşük",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.3 TCe otomatikte şehir içi tüketim 6,5 litre civarında bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/duster-yorumlari",
+      "kaynak_alinti": "sehir ici 6,5 lt yakit tuketimi mevcut",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "8 hava yastığı, adaptif hız sabitleyici ve şerit takip donanımı sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/duster-yorumlari",
+      "kaynak_alinti": "8 airbeg deri koltuk, adaptip ondeki araci takip serit takip",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "Yerden yüksekliği sayesinde bozuk ve kötü yollarda rahat kullanım sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/duster-yorumlari",
+      "kaynak_alinti": "Duster'ı hem şehir içinde hem de bozuk yollarda kullandım. Yerden yüksek olması gerçekten avantaj, kötü yollarda korkutmuyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Geniş bagaj hacmi sahipler tarafından sınıfında büyük avantaj sayılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/duster-yorumlari",
+      "kaynak_alinti": "geniş bagaj hacmi var büyük avantaj",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Arızalanan LED sinyal tamir edilemiyor, komple far değişimi 35.000 TL isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/garanti-kapsami-disi-led-sinyal-arizasi-icin-35-bin-tl-far-degisimi-talebi",
+      "kaynak_alinti": "LED sinyal için tamir imkanı olmadığını, komple far değişimi yapılması gerektiğini ve bunun için 35.000 TL ücret ödemem gerektiğini söylediler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Garanti bitiminde EDC şanzıman onarımı için 170 bin TL'ye varan ücret talep ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/garanti-surecinde-sanziman-titremesi-gormezden-gelindi-garanti-sonrasi-170-bin-tl-ucret-talebi",
+      "kaynak_alinti": "Garanti Sürecinde Şanzıman Titremesi Görmezden Gelindi, Garanti Sonrası 170 Bin TL Ücret Talebi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "2023 model araçta bile basit parçalar yetkili serviste aylarca temin edilemiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia-2023-model-aracin-yetkili-serviste-bile-yedek-parcasi-yok",
+      "kaynak_alinti": "2023 model bir aracın, yetkili serviste, en basit parçası bile bulunmuyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Sıfır araçta bagaj fitili yırtılıyor, kullanıcılar malzeme kalitesini düşük buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-duster-bagaj-fitili-sorunu-ve-kalitesiz-malzeme",
+      "kaynak_alinti": "Maalesef Dacia, kullandığı malzemenin çok kalitesiz olduğunu kabul etmiyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "servis-az",
+      "iddia": "Sahipler yetkili servis ağını ve sorun çözme kalitesini yetersiz buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-duster-vites-sorunlari-ve-kotu-servis-deneyimi",
+      "kaynak_alinti": "Servis ağı da çok kötü. Dacia ve Renault'un kronik diyorlar.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

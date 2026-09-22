@@ -1,0 +1,158 @@
+{
+  "hedef_id": "toyota-corolla-1-8-hybrid",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusundan ses gelip kutu/kolon değişimi gerekiyor; garanti dışı onarım 40.000 TL'yi aşıyor.",
+      "km_araligi": "40.000-133.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-garanti-kapsami-disinda-birakilan-direksiyon-kutusu-sorunu",
+      "kaynak_alinti": "2020 model Toyota Corolla 1.8 Hybrid aracımda direksiyon kutusunda bir problem yaşadım ve bugün Akdoy Avcılar Toyota servisine başvurdum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "12V akü düşük kilometrede boşalıyor; araç çalışmayıp takviye veya akü değişimi gerektiriyor.",
+      "km_araligi": "0-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/toyota/aku-takviye-ucretinin-8500-tl-olarak-fahis-olmasi",
+      "kaynak_alinti": "05.04.2024 gecesi, 12. ay 2024 çıkışlı, henüz 6.000 km'de olan aracımda akü sorunu yaşadım",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Hibrit batarya şarj tutmayıp benzinli motor sürekli devreye giriyor; tüketim 4 L'den 6 L'ye çıkıyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/toyota/hibrit-batarya-sorunu-ve-yetersiz-servis-destegi",
+      "kaynak_alinti": "Hibrit batarya beklendiği gibi şarj tutmamakta, yalnızca bir dakika kadar çalışıp hemen ardından benzinli motor devreye girmektedir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya bağlantı problemi tekrarlıyor; iki servis ziyaretine rağmen çözülemiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-corolla-hybridde-multimedya-ve-kilit-sorunlari",
+      "kaynak_alinti": "Aracımda multimedya bağlantı problemi bir türlü çözülemiyor. 2 kere servise bıraktım aracı çözüm bulamadılar.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Dijital gösterge ekranında darbe olmadan 30.000 km civarında kendiliğinden çatlak oluşuyor.",
+      "km_araligi": "30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-corolla-dijital-gosterge-ekraninda-kendiliginden-catlak-ve-garanti-disi-reddi",
+      "kaynak_alinti": "Toyota Corolla 2024 model 1.8 Hybrid, 2025 çıkışlı aracımın dijital gösterge ekranında herhangi bir darbe, çarpma veya dış etken olmamasına rağmen kendi kendine çatlak oluştu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "Merkezi kilitte arıza: içeriden kilitlenen araçta dışarıdan sadece açılan kapı açılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-corolla-hybridde-multimedya-ve-kilit-sorunlari",
+      "kaynak_alinti": "aracı içeriden kapıdan kilitliyorum daha sonra araçtan inen biri oldu mu sadece hangi kapı açıldıysa o kapı açılıyor ve dışarıdan başka hiçbir kapıyı açamıyorum",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Araçtan gelen anormal sesin kaynağı ön fren balataları çıkıyor; balata değişimiyle ses kesiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-servisinde-yaniltici-teshis-garanti-reddi-ve-43-bin-tllik-fiyat-teklifi",
+      "kaynak_alinti": "Yapılan kontrolde sorunun sadece fren balatalarından kaynaklandığı, 2.000 TL'lik balata değişimiyle sesin tamamen kesildiği ve problemin çözüldüğü ortaya çıktı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi dur-kalk trafikte 3,5-4,5 L/100 km tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/toyota-corolla-hybrid-1-8-kullanici-testim--150891536",
+      "kaynak_alinti": "şehir içi 3.5 -4-5 lt dur kalk trafik de yakıt harcaması",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Şerit takip, adaptif hız kontrolü ve kör nokta uyarısı gibi sürücü destek sistemleri sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/toyota-corolla-hatchback-hybrid/",
+      "kaynak_alinti": "Şeritte Takip Asistanı, Adaptif Hız Kontrolü, Kör Nokta Uyarı Sistemi, Yaya ve Bisiklet Algılama Özellikli Ön Çarpışma Önleyici gibi birçok akıllı güvenlik sistemi bulunuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Düşük devirlerde elektrik motoruyla ilerlediği için şehir içinde sessiz sürüş sağlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/toyota-corolla-hatchback-hybrid/",
+      "kaynak_alinti": "Hybrid olduğu için düşük devirlerde elektrik motorunda kullandığı için sessiz bir sürüşü bulunuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Viraj ve yol tutuşu iyi bulunuyor; araç savrulma hissi vermiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/uzun-sure-kullanan-birinden-toyota-corolla-hybrid-nasil-araba-alinir-mi",
+      "kaynak_alinti": "yol tutuşu çok iyi. virajlarda falan araç savrulmuyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka yolcular için diz ve baş mesafesi yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/toyota-corolla-hatchback-hybrid/",
+      "kaynak_alinti": "Arka yolcular için ideal bir diz ve baş mesafesine sahip.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalıtımı zayıf; benzinli motor devreye girdiğinde kabine yüksek motor sesi yansıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/toyota-corolla-hatchback-hybrid/",
+      "kaynak_alinti": "Yalıtım konusunda biraz zayıf kalmış çünkü araç kendi motoruna geçtiğinde sesi içeriye yansıtıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "mtv-vergi-yuksek",
+      "iddia": "1.8 litre motor nedeniyle yıllık MTV yaklaşık 22.000 TL'ye ulaşıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-corolla-hybrid-yetkili-serviste-asiri-yuksek-bakim-ucreti",
+      "kaynak_alinti": "1.8 motorlu bir aracın yıllık MTV'sinin yaklaşık 22.000 TL olması ve buna her yıl bu kadar yüksek bakım ücretlerinin eklenmesi, hibrit araç kullanımının ekonomik avantajını neredeyse tamamen ortadan kaldırıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste periyodik bakım 15.000 TL; aynı işlem özel serviste 3.000-5.000 TL.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-corolla-hybrid-yetkili-serviste-asiri-yuksek-bakim-ucreti",
+      "kaynak_alinti": "Aynı işlem ve bakımlar için dışarıdaki özel servislerden 3.000–5.000 TL aralığında fiyat alabiliyorken, garanti devam etsin diye bu kadar fahiş bir bedel ödemek zorunda bırakılmak adil gelmiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Garanti dışı direksiyon kutusu/kolonu değişimi 40.000-42.000 TL bandında fiyatlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-garanti-kapsami-disinda-birakilan-direksiyon-kutusu-sorunu",
+      "kaynak_alinti": "Servisten bana yaklaşık 42.000 TL'lik bir masrafın çıkacağı sözlü olarak iletildi, yazılı bir teklif verilmedi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Basit bir OCV valfinin temini iki ayı bulabiliyor, araç bu süre boyunca serviste bekliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/toyota-genel-merkez-parca-sevk-ve-ikame-problemi",
+      "kaynak_alinti": "Basit bir valfin iki ayda temin edileceği ifade edildi.",
+      "guven": "dusuk"
+    }
+  ]
+}

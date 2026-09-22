@@ -1,0 +1,170 @@
+{
+  "hedef_id": "volkswagen-golf-1-4-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri uzamasi nedeniyle erken zincir degisimi yayginidir; ilerlemis vakada subap egilmesi gorulur.",
+      "km_araligi": "60.000-150.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/9237-1-4-tsi-122-triger-zinciri/",
+      "kaynak_alinti": "Bende 1.4 TSİ 140 hp var. 60.000'de zincir uzamasından dolayı değişim oldu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.000 km'de yaklasik 1 litre yag eksiltme sikayeti yaygin; ileri vakada segman/piston onarimi gerekiyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/20715-golf-7-1-4-tsi-yag-eksiltme-sorunu-yardimci-olursaniz-sevinirim/",
+      "kaynak_alinti": "1000 km de bir yağ eksiltiyor 1 litre yağ koyuyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su pompasi) arizasi yaygin ve turbo sanilan guc kaybinin gercek sebebi cikabiliyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.otoarizacozum.com/golf-ariza-ve-cevaplari/",
+      "kaynak_alinti": "Devir daim pompası arızalı çıktı, değişerek çözüldü.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG sanziman mekatronik arizasi kronik; vuruntu ve yag kacirma ile birlikte araci yolda birakabiliyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/golf/sanziman",
+      "kaynak_alinti": "DSG şanzımanda kronik vuruntu ve volan sorunu var, ayrıca yağ kaçırıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "DSG kuru kavrama dusuk devirde 2. viteste titreme yapiyor ve erken kavrama degisimi gerekebiliyor.",
+      "km_araligi": "20.000-80.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/dsg-7-dsg-6-kavrama-mekatronik-sanziman-yazilim-problemleri--57167186",
+      "kaynak_alinti": "Özellikle düşük devirlerde 2.viteste titreme",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yuksek-basinc-pompasi",
+      "iddia": "Sogukta sakirdama ve performans dususune yol acan yuksek basinc yakit pompasi arizasi goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/18575-golf-7-1-4-tsi-yuksek-basinc-pompa-sorunu/",
+      "kaynak_alinti": "tsi araçlarda yüksek basınç pompa arızası belirli km sonrası genelde oluyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "On salincak burclarindan ozellikle soguk havalarda gicirti sesi gelmesi yaygin bir sikayet.",
+      "km_araligi": "60.000-130.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/23955-golf-7-on-salincak-burclari-degisimi-tavsiye/",
+      "kaynak_alinti": "Gıcırtılar özellikle soğuk havalarda artıyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima kompresorunun kendiliginden devreden cikmasi sikayeti var, parca maliyeti yuksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/15534-klima-kompresoru-arizasi/",
+      "kaynak_alinti": "Golf 7 aracımda ara sıra klima kendiliğinden kapanıyor bazen kendi kendine tekrar devreye giriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "Turbo devreye girdiginde hizlanma segmentine gore tatmin edici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/forum/threads/volkswagen-golf-7-1.4-tsi-hakkinda-tecrubeleriniz-neler-alinir-mi",
+      "kaynak_alinti": "Performans olarak beklentimi fazlasıyla karşılıyor, özellikle turbo devreye girince tatlı bir hızlanma veriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yol yakit tuketimi kullanicilarca ust duzey ve ekonomik olarak degerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/1-4-tsi-motor--4350770",
+      "kaynak_alinti": "görece atak bir motor 0-100 'ü 9 saniye civarındadır. uzun yol yakıt tüketim performansı üst düzeydir",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "122-125 HP versiyonlar kullanicilarca VW'nin en sorunsuz motor secenegi olarak degerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/1-4-tsi-motor--4350770",
+      "kaynak_alinti": "10 senelik kullanım tecrübeme dayanarak vw'nin en sorunsuz motor/şanzıman kombinasyonu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Motor yuksek devirde bile sessiz calisiyor, kabin yalitimi rakiplerine gore iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/volkswagen-golf-14-tsi-kullanici-yorumlari-golf-14-tsi-alinir-mi",
+      "kaynak_alinti": "Araç yüksek devirlerde bile sessiz çalışıyor. Hızlanması çok akıcı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Golf ikinci elde degerini koruyor; cok eski kasalar bile yuksek fiyattan satiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/golf-alinirmi.2686/",
+      "kaynak_alinti": "sahibinden 98 2002 arası golflerin fiyatını 24-30 aralığında görmekten bıktım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Yogun sehir trafiginde gercek yakit tuketimi 8.5-10 litreye kadar cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-4tsi-125-golf-sehir-ici-yakit-tuketimi--128257516",
+      "kaynak_alinti": "Bendeyde var tamam uzun yolda az yakiyor ama şehir içi bu arabanin reel verisi 8.5-9lt",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yetkili serviste debriyaj seti gibi parcalar sanayiye gore kat kat pahaliya mal oluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/18507-golf-7-baski-balata-maliyeti/",
+      "kaynak_alinti": "Yetkili servis bana 12.000 TL dedi sachs debriyaja",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yuksek kilometrede agir bakim paketleri yetkili serviste on binlerce TL tutuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/27709-golf-7-aracima-agir-bakim-yaptiracagim/",
+      "kaynak_alinti": "şu anda 290.000km bakımına 10.400TL teklif edildi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Bagaj hacmi sinirli; bebek arabasi ve valiz ayni anda zor sigiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/forum/threads/volkswagen-golf-7-1.4-tsi-hakkinda-tecrubeleriniz-neler-alinir-mi",
+      "kaynak_alinti": "Bagaj hacmi ise biraz sınırlı, bebek arabası ve valiz aynı anda zor sığıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Cocuk koltugu takildiginda arka koltuk diz mesafesi kisitli kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/forum/threads/volkswagen-golf-7-1.4-tsi-hakkinda-tecrubeleriniz-neler-alinir-mi",
+      "kaynak_alinti": "Fakat aile kullanımı için sorarsan, çocuk koltuğu takınca arka koltuk diz mesafesi biraz kısıtlanıyor.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

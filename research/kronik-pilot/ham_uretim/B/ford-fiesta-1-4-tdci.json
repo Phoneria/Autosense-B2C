@@ -1,0 +1,167 @@
+{
+  "hedef_id": "ford-fiesta-1-4-tdci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusu/mafsalindan gelen tak tak sesi modelin en cok bildirilen kronik sorunu.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/fiesta-1-4-tdci-trend-kullanan-var-mi--125918685",
+      "kaynak_alinti": "Tek kronik sorunu direksiyon mafsalı var",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektor arizasi yaygin; kara duman, roleynti titremesi ve guc kaybi ile kendini gosteriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2007-2008-ford-fiesta-1-4-tdci-dizel-enjektor-degisimi-fiyati-hk--133649475",
+      "kaynak_alinti": "egzoz emisyondan geçmedi ( Kara duman atmaktaydı)",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo kecelerinden yag kacirma ve erken turbo degisimi bildiriliyor.",
+      "km_araligi": "90.000+ km",
+      "kaynak_url": "https://otopark.com/forum/threads/ford-fiesta-2011-1-4-tdci-kronik-sorunlari.3853/",
+      "kaynak_alinti": "90 bin km'de turbosu değişen araca bulaşmanı pek tavsiye etmem",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurum baglayarak tikaniyor ve araci cekisten dusuruyor.",
+      "km_araligi": null,
+      "kaynak_url": "http://www.techturkey.com/forum/archive/index.php/t-241488.html",
+      "kaynak_alinti": "EGR iptal değilse eğer açıp temizlettirin genelde kurum bağlayıp aracı çekişten düşürebiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "DPF tikanmasi sonrasi yokuslarda cekis kaybi ve devir sinirlamasi goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-1-4-tdci-dpf-dizel-partikul-filtresi-hatasi--126090526",
+      "kaynak_alinti": "Başıma böyle bir sorun geldi ve aracım yokuşlarda ciddi derecede çekiş kuvvetinden düştü. 3000- deviri kesinlikle geçmiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Yakit sistemine hava kacirip mazotun depoya geri donmesi ve zor calisma sikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-2004-1-4-tdi-mazot-pompasi-problemi--49173637",
+      "kaynak_alinti": "Mazot pompasını elle pompalayıp marşa basınca alıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Gosterge panelinde devir ve km saatinin kesilmesi tekrarlayan bir elektrik arizasi.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/1-4-fiesta-tdci-devir-gostergesi-ve-km-sayaci-arizasi.13924/",
+      "kaynak_alinti": "Devir göstergesi bozuldu Kalibrasyon yapınca düzeliyor fakat 1-2 saat sonra gene aynı oluyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Arka kampana fren duzeni nedeniyle fren performansi zayif ve fren mesafesi uzun bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-1-4-tdci-incelemem--80449766",
+      "kaynak_alinti": "Benim için aracın en kötü yönlerinden biridir fiestanın frenleri. Arkalar kampana ve gerçekten 4 diski aratıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sehir disi kullanimda 100 km'de 4-5 litre seviyesinde tuketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-fiesta-tdci--1260242",
+      "kaynak_alinti": "toplamda şehirdışı yaptığım 1600 kilometre boyunca 4,4 lt/100 km dizel tüketti",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Sinifinin en iyi yol tutan araclarindan biri olarak degerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-fiesta-1-4-tdci-68-beygir-testi.13156/",
+      "kaynak_alinti": "sınıfının en iyi yol tutan otomobillerinden birisi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Motor ve mekanik aksam saglam kabul ediliyor, hor kullanilmamis orneklerde sorunsuz.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-fiesta-2011-1-4-tdci-kronik-sorunlari.3853/",
+      "kaynak_alinti": "Mekanik bileşenleri çok sağlamdır",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parca fiyatlari kullanicilar tarafindan uygun bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-1-4-tdci--134942460",
+      "kaynak_alinti": "Parça fiyatları uygun",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Sehir ici kullanimda istekli ve kullanisli bir arac olarak one cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-fiesta-1-4-tdci-68-beygir-testi.13156/",
+      "kaynak_alinti": "şehiriçi kullanımda gayet istekli bir araba",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk diz mesafesi yetersiz, uzun yolculukta arkada oturmak zor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-1-4-tdci-incelemem--80449766",
+      "kaynak_alinti": "Arka koltukların diz mesafesi yetersiz.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Bagaj hacmi kucuk ve arka koltuklar tam yatmadigi icin yuk kapasitesi sinirli.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/ford-fiesta-1-4-tdci-68-beygir-testi.13156/",
+      "kaynak_alinti": "aracın arkası çok dar ve bagajı çok küçük",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yol ve motor sesi yalitimi zayif, kabine belirgin ses giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-fiesta-tdci--1260242",
+      "kaynak_alinti": "yol ve motor sesi yalıtımı başarısız",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Arka cam dar oldugu icin kor nokta ve geri gorus sikintisi yasaniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-fiesta-1-4-tdci-incelemem--80449766",
+      "kaynak_alinti": "Arka cam yeni nesil çoğu hatchbackte olduğu gibi dar ve kör noktada sorun yaşanabiliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "68 beygirlik motor yuksek hizda ve 100-140 km/s araliginda yetersiz kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-fiesta-tdci--1260242",
+      "kaynak_alinti": "100-140 arası ivme kazanma konusunda ciddi sıkıntısı var",
+      "guven": "orta"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "hedef_id": "opel-astra-1-6-cdti",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Soguk calistirmada triger zinciri sesi ve zincir paletlerinin kirilmasi yaygin.",
+      "km_araligi": "90.000-155.000 km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-k-1-6-cdti-sorunlari.175738/",
+      "kaynak_alinti": "155 bin seviyesinde ses iyice arttı ve paletler kırıldı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Sehir ici kisa mesafe kullanimda DPF tikaniyor ve arac guc kaybediyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/astra-k-1-6-ctdi-model-sorunlari--159820282",
+      "kaynak_alinti": "Şehiriçi kullanımlarda dpf çabak doluyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik sanzimanda surekli 'Vitesi Park Konumuna Getirin' uyarisi veren vites switch arizasi gorulüyor.",
+      "km_araligi": "25.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-k-1-6-cdti-134-hp-otomatik-sanziman-sorunlari.175312/",
+      "kaynak_alinti": "vitesi park konumuna getirin uyarısı alıyorum sürekli",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo borusu bogaz tarafindan yerinden cikarak ani guc kaybina yol aciyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-k-1-6-cdti-sorunlari.175738/",
+      "kaynak_alinti": "Turbo borusu yerinden çıkabilir boğaz tarafından",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR sistemi sorun cikardigi icin kullanicilar yazilimla iptalini oneriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-k-1-6-cdti-sorunlari.175738/",
+      "kaynak_alinti": "Egr sistemi Yazılımla iptal edilirse daha sağlıklı olur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Manuel sanzimanda debriyaj yumusayip vitesler zor giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/opel-astra-j-1-6-cdti-vites-ve-debriyaj-sorunu.172678/",
+      "kaynak_alinti": "viteslere girmiyor debriyaj pompalayınca zorlanarak giriyor debriyaj yumuşuyor gibi oluyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "abs-esp-sensor",
+      "iddia": "Aks rondelasi asinip kirilinca ABS sensoru okuyamiyor ve ABS/ESP ariza lambasi yaniyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-j-1-6-cdti-hareket-halinde-abs-ve-esp-arizasi.174675/",
+      "kaynak_alinti": "Röndela ismi verilen parça zamanla aşınyor ve kopuyor. Parçanının kopan kısımlarına toz toprak ile dolduğu için abs sensörü okuyamıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "Anahtarsiz calistirma donanimli araclarda direksiyon kolon kilidi arizasi goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/astra-k-1-6-ctdi-model-sorunlari--159820282",
+      "kaynak_alinti": "Astra k anahtarsiz calistirma olanlarda direksiyon kolon kilidi arızası var",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sehir disinda 5 lt/100 km civari tuketim bildiriliyor, sinifinda ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/opel-astra-1-6-cdti-yorum--120143019",
+      "kaynak_alinti": "şehir dışı 5 civarı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "320 Nm tork sayesinde ara hizlanmalarda ve rampalarda guclu cekis veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/1-6-cdti-136-hp-kullanici-yorumlari.139223/",
+      "kaynak_alinti": "320nm tork ara hızlanmalarda ve rampalarda insanın yüzünde bir tebessüm oluşturur",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Sasi ve direksiyon dengesiyle sinifinin ustunde yol tutusu sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/2016-opel-astra-k-incelemesi.3960/",
+      "kaynak_alinti": "Araç gerçekten güzel yol tutuyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk yasam alani sinifina gore genis.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/2016-opel-astra-k-incelemesi.3960/",
+      "kaynak_alinti": "Sınıfına göre geniş arka yaşam alanı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Uzun yolda yuksek hizlar kabinde hissedilmiyor, yorucu degil.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/opel-astra-1-6-cdti-yorum--120143019",
+      "kaynak_alinti": "Yüksek hızları araç içinde hissetmiyorsunuz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon sert; sehir ici bozuk zeminde her cukur kabinde hissediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-6-cdti.4452/",
+      "kaynak_alinti": "bu araba sert şehir içinde çoğu çukuru veya bozuk yüzeyi hissediyorsunuz",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekan malzeme ve isciligi zayif; bozuk yolda gosterge ve kapilardan trim sesi geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/opel-astra-k-1-6-cdti.4452/",
+      "kaynak_alinti": "değişik değişik noktalardan özellikle göstergelerden ve kapılardan trim sesi eksik olmadı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Direk ve cam tasarimi nedeniyle gorus acilari yetersiz.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/2016-opel-astra-k-incelemesi.3960/",
+      "kaynak_alinti": "Yetersiz görüş açıları",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yetkili serviste yedek parca tedariki uzun suruyor, araclar aylarca bekleyebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/yedek-parca",
+      "kaynak_alinti": "Yedek parça tedarikinde zorlanması ve araçsız kaldığımız zaman içinde ikame araç ayarlayamaması bu markaya gölge düşürmektedir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Triger zinciri degisimi motor indirme gerektirdigi icin cok yuksek maliyet cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-k-1-6-cdti-sorunlari.175738/",
+      "kaynak_alinti": "Trigeri değiştirilemez. Maliyeti 50.000₺ civarında tutar",
+      "guven": "dusuk"
+    }
+  ]
+}

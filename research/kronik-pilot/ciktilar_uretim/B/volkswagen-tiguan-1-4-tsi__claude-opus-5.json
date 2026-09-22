@@ -1,0 +1,161 @@
+{
+  "hedef_id": "volkswagen-tiguan-1-4-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.4 TSI motorlarda yag eksiltme kronik; ozellikle 160 HP versiyonunda yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/2010-model-golf-1-4-tsi-160-hp-golf-6-1-4-tsi-alinir-mi-1-4-tsi-160-hp-alirken-dikkat-edilmesi-gerekenler.16049/",
+      "kaynak_alinti": "yağ eksiltme sorunu bu motorlarda kronik",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri uzamasi 60.000 km'den itibaren gorulup zincir atlamasi ve subap egilmesine yol aciyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/9237-1-4-tsi-122-triger-zinciri/",
+      "kaynak_alinti": "Zincir uzaması durumunda subaplar eğildi, çekici ve tamir parası 4 bine mal oldu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "Zincir gergi/paleti kirilinca motor sente atliyor ve subaplar zarar goruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/1-4-tsi-motor--4350770",
+      "kaynak_alinti": "zincir paletinin kırılması sebebiyle sente atlayıp subapları yamultan",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG'li versiyonlarda kavrama ve mekatronik arizalari sik goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2010-model-tiguan-1-4tsi-alinir-mi-150-hp--137142964",
+      "kaynak_alinti": "DSG'de özellikle kavrama ve mekatronik sorunları sık sık görülüyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su pompasi) 100.000 km civarinda hararet yapip degisim gerektiriyor.",
+      "km_araligi": "100.000 km civari",
+      "kaynak_url": "https://www.golftutkusu.com/topic/10823-tsi-motor-icin-yetkili-serviste-indirim-ile-devirdaim-degisimi-ve-volant-bilgisi/",
+      "kaynak_alinti": "ortalama 100 bin km civarında araçların hararetten dolayı değişim",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arizasi yaglama sorunlari ve asiri isinma nedeniyle sik goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikuzman.com/volkswagen-tiguan-14-tsi-kronik-sorunlari-kullanici-sikayetleri",
+      "kaynak_alinti": "Turbo arızası, genellikle yağlama sorunlarından veya aşırı ısınmadan kaynaklanıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Bobin ve buji arizalarina bagli tekleme (misfire) problemi yayginlikla bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/1-4-tsi-motor--4350770",
+      "kaynak_alinti": "Bobin ve buji arızaları kaynaklı missfire yani tekleme problemi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Yuksek km'de stop sonrasi hararet gostergesinin firlamasi termostat/radyator degisimiyle bile gecmiyor.",
+      "km_araligi": "140.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/18227-tiguan-1-4-tsi-hararet-yukselme-sorunu/",
+      "kaynak_alinti": "araba sıkıştırıp stop edince 5 dk sonra kontağı yarım çevirdiğimde hararet 130 lara dayanıyor çalıştırıyorum arabayı 20 sn sonra tekrar 90 a geliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ic hacim genis ve konforlu; aile arabasi olarak ideal bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-tiguan--1568845?p=28",
+      "kaynak_alinti": "içi gayet geniş ve konforlu, aile arabası olarak ideal bir araba",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj alani sinifina gore yeterli ve ergonomik bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-tiguan--1568845?p=28",
+      "kaynak_alinti": "bagaj alanı yeterli ve ergonomik tasarlanmış",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutusu kullanicilar tarafindan sinifinin ustunde degerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2014/07/volkswagen-tiguan-kullanici-yorumlari.html",
+      "kaynak_alinti": "Yol tutuşu gerçekten harika, performans on numara oldukça seri",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Surus konforu yuksek; kullanicilar aracin konforlu ve kaliteli oldugunu belirtiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.engelliler.biz/konu/vw-tiguan-1-4-tsi-hakkinda-dusunceleriniz-nelerdir.118556/",
+      "kaynak_alinti": "görüntüsü hoştur, konforludur, sürüşü keyiflidir, kalitelidir",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Guvenlik donanimi seviyesi kullanici degerlendirmelerinde avantaj olarak one cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan",
+      "kaynak_alinti": "Yüksek güvenlik donanımı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Gercek yakit tuketimi fabrika verisinin cok uzerinde; sehir ici 10-12 lt/100 km bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2014/07/volkswagen-tiguan-kullanici-yorumlari.html",
+      "kaynak_alinti": "yakıt tüketimi çok fazla, fabrika verisiyle uzaktan yakından alakası yok",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabin ici malzeme kalitesi kullanicilar tarafindan dusuk bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan",
+      "kaynak_alinti": "Kalitesiz iç malzeme",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalitimi zayif; surus sirasinda kabine dis ses geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan",
+      "kaynak_alinti": "Zayıf ses yalıtımı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis ucretleri pahali; DSG onarimi cok yuksek masraf cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikuzman.com/volkswagen-tiguan-14-tsi-kronik-sorunlari-kullanici-sikayetleri",
+      "kaynak_alinti": "DSG şanzıman tamiri veya değişimi, dudak uçuklatan bir masraf",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

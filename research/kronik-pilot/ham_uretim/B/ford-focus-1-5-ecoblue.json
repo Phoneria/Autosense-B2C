@@ -1,0 +1,158 @@
+{
+  "hedef_id": "ford-focus-1-5-ecoblue",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "100.000 km sonrası 7 mm eksantrik zincirinde ses yapan tasarım kusuru var; servis 8 mm zincirle değiştiriyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-15-dizel-motorundaki-tasarimsal-zincir-arizasi-gizli-ayip-olarak-degerlendirilmeli",
+      "kaynak_alinti": "7 mm'lik zincirlerin sökülüp yerine 8 mm zincir takıldığı, bu durumun ise tasarımsal bir problemden kaynaklandığı servis yetkilileri tarafından iletildi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Düşük kilometrede bile tekrarlayan partikül filtresi tıkanması ve egzoz filtresi uyarısı görülüyor.",
+      "km_araligi": "10.000-25.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/aracta-surekli-egzoz-filtresi-ve-yag-degisim-uyarilari-magduriyet-yaratiyor",
+      "kaynak_alinti": "Aracı aldığım günden bu yana araçta sürekli \"egzoz filtresi doldu, aracı sürün\" şeklinde uyarı çıkıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Motor yağına yakıt karıştığı için yağ ömrü 6.000-7.000 km'de tükeniyor ve erken yağ değişimi gerekiyor.",
+      "km_araligi": "6.000-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/sifir-aracta-4-kez-yag-degisimi-ve-ucretlendirme-garanti-kapsaminda-yag-omru-sorunu",
+      "kaynak_alinti": "Araç şu an yaklaşık 17.000 km'dedir ve bu kısa kullanım süresine rağmen 4 kez motor yağı değişimi yapılmıştır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "60.000-80.000 km civarında otomatik şanzımanda ağır arıza ve komple değişim ihtiyacı bildiriliyor.",
+      "km_araligi": "60.000-80.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-sanziman-arizasi-icin-280-bin-tl-onarim-teklifi-ve-etik-sorun",
+      "kaynak_alinti": "2020 model dizel Ford Focus aracımda, Ocak ayı gibi şanzıman arızası ortaya çıktı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Dijital gösterge ve dokunmatik ekranda donma, tepki vermeme ve hayalet ekran sorunu düşük km'de çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/yeni-ford-focusta-hayalet-ekran-sorunu",
+      "kaynak_alinti": "Ford Focus 2024 hayalet ekran gelmiyor kadran gözükmüyor. Araba çalışıyor. Hiçbir sorun yok ama ekran gözükmediği için hız bilgisi gelmiyor hiçbir şekilde.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Garanti süresindeki araçlarda tekrarlayan akü bitmesi ve yolda kalma şikayeti yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/sifir-alinan-ford-focusta-surekli-aku-sorunu-ve-yetersiz-cozum",
+      "kaynak_alinti": "Aracın ilk birkaç ayında hiçbir sorun yaşamazken, ilk 6 ay içerisinde iki kez akü bitmesi problemi yaşadım.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "20.000 km civarında klima kompresörü arızalanıp klima soğutmayı kesebiliyor.",
+      "km_araligi": "20.000 km civarı",
+      "kaynak_url": "https://www.sikayetvar.com/ford/yeni-ford-focusta-klima-arizasi-ve-servis-randevusu-gecikmesi",
+      "kaynak_alinti": "2024 model Ford Focus Titanium X aracım henüz 20 bin kilometredeyken klima kompresörü arızalandı ve klima soğuk hava üflememeye başladı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.5 EcoBlue dizel otomatik fabrika verisine göre 100 km'de ortalama 4,5 litre tüketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/ford-modelleri/focus-sedan",
+      "kaynak_alinti": "Ford Focus Sedan 1.5L EcoBlue 120PS dizel otomatik versiyonu fabrika çıkış verilerine göre 100 km/4,5 litre ortalama yakıt tüketim değerlerine sahiptir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Sedan gövdede 511 litrelik bagaj hacmi segment ortalamasının üzerinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/ford-modelleri/focus-sedan",
+      "kaynak_alinti": "Ford Focus Sedan boyutları 4651 mm uzunluğunda, 1979 mm genişliğinde, 1452 mm yüksekliğinde, 511 lt'lik bagaj hacmine sahip ve 1316 kg ağırlığındadır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Giriş paketinde bile ön, yan ve perde hava yastığı, ESP, ABS ve yokuş kalkış desteği standart.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/ford-modelleri/focus-sedan",
+      "kaynak_alinti": "Sürücü ve Ön Yolcu Ön, Yan ve Perde Hava Yastıkları",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu kullanıcılar tarafından sınıfının en iyisi olarak değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/ford-modelleri/focus-sedan",
+      "kaynak_alinti": "Yol tutuşu kendi sınıfının lideridir. Toyota ve renault yanına gelemez. Mustang ruhuna sahiptir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon ayarı ve sürüş konforu kullanıcılar tarafından üst sınıf araçlarla kıyaslanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/ford-focus/",
+      "kaynak_alinti": "süspansiyonu mercedes in üst modelleri kadar iyi olan araba",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste 2. yıl / 30.000 km periyodik bakım 25.700 TL'ye kadar çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/yetkili-serviste-2yil-bakim-ucreti-5-katina-cikti-forda-fahis-fiyat-sikayeti",
+      "kaynak_alinti": "Ford Focus 1.5 ecoblue aracımın 2. Yıl/30.000 km periyodik bakımı için 22.07.2026 tarihinde Ford yetkili servislerini aradığımda, bakım ücreti olarak 25.700 TL talep edildiğini öğrendim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Eksantrik ve zincir grubu parçaları piyasada ve serviste uzun süre bulunamıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-eksantrik-yedek-parca-temin-edilemiyor",
+      "kaynak_alinti": "Şimdi bu parça piyasada yok.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Eksantrik zinciri değişimi için yetkili servis 140.000 TL'ye varan ücret talep ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-eksantrik-zinciri-sorunu-yedek-parca-eksikligi-ve-yetersiz-destek",
+      "kaynak_alinti": "Yetkili servis (Kocaeli İzmit) zincirin değişimi için 140.000 TL talep ediyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "MK4 kabinde cam açma kapama düğmeleri kendiliğinden kırılıyor, malzeme kalitesi zayıf bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-ic-malzeme-kalitesizligi-cam-dugmeleri-kiriliyor-yedek-parca-yok",
+      "kaynak_alinti": "Yaklaşık 1 yıldır cam açma kapama düğmelerinin hepsi kendi kendine kırıldı, bu kadar kalitesiz bir malzeme daha önce hiçbir aracımda görmedim.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Tekrarlayan DPF ve motor arızası kayıtları aracın ikinci el değerini ciddi şekilde düşürüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/dusuk-kilometrede-dpf-kaynakli-motor-arizasi-ayipli-ford-focus-ve-cozulmeyen-servis",
+      "kaynak_alinti": "Bu süreçte aracımın ikinci el değeri de ciddi şekilde düşmüştür ve mağduriyetim her geçen gün artmaktadır.",
+      "guven": "dusuk"
+    }
+  ]
+}

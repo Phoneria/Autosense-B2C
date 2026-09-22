@@ -1,0 +1,149 @@
+{
+  "hedef_id": "volkswagen-jetta-1-6-tdi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektörlerde tıkırtı, sabah geç çalışma, tekleme ve yakıt tüketimi artışı yaygın; revizyon gerekiyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/26362-1-6-tdi-sonunda-enjektorleri-revize-ettirdim/",
+      "kaynak_alinti": "sabahları geç çalışma tekleme, alver yapma, stop etme sorunuydu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve soğutucusu tıkanıp motor arıza lambası yakıyor, komple EGR değişimi gerekiyor.",
+      "km_araligi": "90.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/wv-jetta-egr-sogutucu--125473229",
+      "kaynak_alinti": "Orjinal parcayi kendiniz temin edip disarda degistiriniz. Komple egr nin degismesi gerekir. Egr nin fiyati en son 1200 tl civariydi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kısa mesafe kullanımda DPF rejenerasyon aralığı yarıya düşüyor ve tıkanma yaşanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/golf-1-6-tdi-dpf-problemi.9143/page-2",
+      "kaynak_alinti": "Benim bu zamana kadar denk geldiğim en baba regen aralığı gerçek şartlarda 800 km falandı. Şehiriçinde kullanıldığında yarı yarıya düşebilir bu menzil.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arızasında ani çekiş kaybı, ıslık sesi ve beyaz duman şikayeti görülüyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/25091-golf-7-1-6-tdi-turbo-sorunu/",
+      "kaynak_alinti": "Birden araç gazdan düştü, beyaz duman atmaya başladı. Bir ıslık sesi gelmeye başladı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG'li Jetta'da mekatronik arızası vitesi boşa alıp aracı yolda bırakıyor, tekrar eden onarım gerektiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/vw-jetta-2013-dsg-mekatronik-tamir-olamayan-ariza--147101749",
+      "kaynak_alinti": "şanzıman elektroniğinde arıza veriyor yine vites boşa düşüyor tamir işareti çıkıyor yolda bırakıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "2013 model Jetta'da 125.000 km'de otomatik şanzıman hatası aracı yolda bırakmış.",
+      "km_araligi": "125.000 km",
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=27",
+      "kaynak_alinti": "2013 modeline sahip olduğum ve 125.000 km'de iken otomatik şanzıman hatası verip, beni yolda bırakan alman arabasıdır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger seti 90-120 bin km veya 5 yılda değişmeli; geciktirilmesi motor hasarı riski doğuruyor.",
+      "km_araligi": "90.000-120.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/2015-jetta-triger-kayisi-degismeli-mi--150276304",
+      "kaynak_alinti": "yılı dolmuş riske atmadan yaptırın derim önemli bir parça",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Dizel Jetta bir depo yakıtla 900-1000 km menzil yapabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=28",
+      "kaynak_alinti": "motor dsg şanzuman, gerçekten 1,6 motora göre az yakıyor bi depo ile 900-1000 km yapabilyorsunuz",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "520 litrelik bagaj hacmi sınıfının üzerinde ve kullanışlı.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=12",
+      "kaynak_alinti": "520 lt kullanisli bir bagajdan bahsediyoruz. golfde ise 360 lt pek kullanisli olmayan",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Kabin içi rakiplerine göre geniş ve ferah.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=28",
+      "kaynak_alinti": "içi geniş ve ferah",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu, viraj performansı ve denge kullanıcılarca tatminkar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=12",
+      "kaynak_alinti": "yol tutuş, viraj performansı, denge, rüzgar rijiti bence tatminkar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci el piyasasında değerini koruyan bir model.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=28",
+      "kaynak_alinti": "ikinci elide kuvvetli",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parça fiyatları sınıf ortalamasının belirgin şekilde üstünde.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=12",
+      "kaynak_alinti": "yedek parça fiyatları : ortalamanın çok çok üstünde",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Periyodik bakım masrafları kullanıcılar tarafından pahalı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=28",
+      "kaynak_alinti": "bakım masrafları ve yedek parçası tuzludur",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç aksam ve kapı kaplamaları aracın en zayıf noktası olarak gösteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/volkswagen-jetta--335205?p=12",
+      "kaynak_alinti": "iç aksam: aracın en zayıf noktası burası",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Yoğun şehir içi trafikte tüketim 11 litreye kadar çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/jetta-1-6-tdi-11-litre-yakiyor-yardim-lutfen--132269455",
+      "kaynak_alinti": "ortalama 11 litre yakıyor",
+      "guven": "dusuk"
+    }
+  ]
+}

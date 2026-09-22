@@ -1,0 +1,174 @@
+{
+  "hedef_id": "honda-civic-1-5-i-vtec",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "CVT sanziman zinciri 140.000 km sonrasi kopuyor, komple sanziman degisimi gerekiyor.",
+      "km_araligi": "140.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/sanziman",
+      "kaynak_alinti": "Şanzıman zincirinin parçalandığı söylendi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Degisen sanziman sonrasi zincir kopmasi tekrar edebiliyor.",
+      "km_araligi": "190.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/honda/honda-fc5-sanziman-zinciri-sorunu",
+      "kaynak_alinti": "Honda FC5 2017 RS 1.5 arabam 200 binde, 190 binde şanzıman zinciri koparttı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Tavan, kaput ve cam cevresi citalarinda boya/vernik atmasi cok yaygin.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/honda/honda-civicte-boya-atmasi-ve-cozum-eksikligi",
+      "kaynak_alinti": "yaklaşık iki ay önce çok küçük bir boya atması fark ettim, ancak kısa sürede bu boya atmaları büyüyerek belirgin hale geldi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-radyator",
+      "iddia": "Klima yaz aylarinda yeterince sogutmuyor, klima radyatoru delinip gaz kaciriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/klima",
+      "kaynak_alinti": "Kronik olarak klima radyatörünün durduk yerde delilmesi, sızdırması nedeniyle içi soğumuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "katalizor",
+      "iddia": "70.000 km civarinda motor ariza lambasi ile katalizor arizasi cikiyor.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/civic-katalizor-arizasi",
+      "kaynak_alinti": "Motor lambası yanınca... Katalizör arızası dediler",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Yakit pompasi arizasi nedeniyle Honda genis capli geri cagirma kampanyasi yapti.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.techinside.com/honda-yakit-pompasi-sorunu-yasiyor/",
+      "kaynak_alinti": "Honda yakıt pompası sorunu nedeniyle 1.4 milyon aracını geri çağırıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekraninda donma, yavas acilma ve geri gorus kamerasi acilmama sorunu goruluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/ekran",
+      "kaynak_alinti": "Multimedia da donmalar yavaş açılmalar geri görüş kamerasının açılmaması USB bellek tanımama ekranda parazitlenme",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusu arizasi icin geri cagirma yapildi, yedek parca aylarca beklenebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/yedek-parca",
+      "kaynak_alinti": "2 aydır yedek parça bekliyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "FC5 kasa Civic, C segmentinde ikinci elde en az deger kaybeden modeller arasinda.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sozcu.com.tr/satilirken-asla-zarar-etmeyen-ikinci-el-araclar-iste-otomobil-piyasasinin-en-saglam-modelleri-p244260",
+      "kaynak_alinti": "Sağlam motoru, LPG uyumu ve geniş kullanıcı kitlesiyle ikinci elde yüksek talep görüyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.5 Turbo CVT karisik kullanimda 6,6 litre ortalama tuketim veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otogundem.com.tr/honda-civic-sedan-1-5-turbo-cvt-testi/10305/",
+      "kaynak_alinti": "Fabrika verilerine göre 5.7 litre olan ortalama tüketim, bizim kullanımımız da yol bilgisayarına 6.6 litre olarak yansıdı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.5 Turbo motor 0-100 km/s hizlanmayi 8,2 saniyede tamamliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otogundem.com.tr/honda-civic-sedan-1-5-turbo-cvt-testi/10305/",
+      "kaynak_alinti": "Etkili performansa rağmen aracın tüketim değerleri de oldukça iddialı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltukta uc yetiskin rahatca oturabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ototetkik.com/honda-civic-fc5-nasil-araba-ve-alinir-mi-civic-fc5-kullanici-yorumlari-ve-inceleme/",
+      "kaynak_alinti": "Arka tarafına üç yetişkin rahatlıkla sığabiliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Hiz arttikca yola oturuyor, virajlarda arkasini kolay savurmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ototetkik.com/honda-civic-fc5-nasil-araba-ve-alinir-mi-civic-fc5-kullanici-yorumlari-ve-inceleme/",
+      "kaynak_alinti": "Yol tutuşu gayet güzel ve hızlandıkça yola oturuyor. Virajlarda arkasını kolay kolay savurmuyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yuksek hizda lastik ve yol sesi kabine belirgin sekilde giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.ototetkik.com/honda-civic-fc5-nasil-araba-ve-alinir-mi-civic-fc5-kullanici-yorumlari-ve-inceleme/",
+      "kaynak_alinti": "Aracın en kötü yanı ise yol sesini içine alması. 120 km/s hızdan lastik sesini içine alıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Bazi parcalar Turkiye stoklarinda bulunmuyor, yurt disindan aylarca bekleniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/honda/civic/yedek-parca",
+      "kaynak_alinti": "Türkiye'de ve Avrupa'da hiç stokta cam olmadığı ve sipariş vermem durumunda ortalama 3 ayda geleceği bilgisi verildi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Turbo motorun yetkili servis bakim maliyeti atmosferik motorlara gore yuksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/honda-civic-1.5-turbo-vs-1.6-i-vtec-hangisi-daha-avantajli-2026",
+      "kaynak_alinti": "Periyodik bakım maliyeti (yetkili servis): ~4.500–6.500 TL",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kaporta sacinin ince olmasi nedeniyle kaput dalgalanmasi ve gocme sikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/fc5-honda-civic-rs-sedan.13254/",
+      "kaynak_alinti": "kaput dalgalanması, yıkarken kaporta göçme hareketleri",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": [
+    {
+      "kayit": {
+        "tip": "iyi",
+        "etiket": "bagaj-hacmi",
+        "iddia": "Sedan govdede 512 litrelik bagaj hacmi sunuyor.",
+        "km_araligi": null,
+        "kaynak_url": "https://www.ototetkik.com/honda-civic-fc5-nasil-araba-ve-alinir-mi-civic-fc5-kullanici-yorumlari-ve-inceleme/",
+        "kaynak_alinti": "Bagaj Hacmi: 512 Litre",
+        "guven": "dusuk"
+      },
+      "sebep": "iyi azami 5 asildi"
+    }
+  ]
+}

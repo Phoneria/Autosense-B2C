@@ -44,5 +44,28 @@ class AnalysisSerializer(VehicleSerializer):
     description = serializers.CharField(max_length=50_000, required=False, allow_blank=True)
 
 
+class ScenarioSerializer(AnalysisSerializer):
+    pass
+
+
+class CostSerializer(serializers.Serializer):
+    engine = serializers.CharField(max_length=150)
+    year = serializers.IntegerField(min_value=1950, max_value=2100)
+    vehicle_value = FiniteFloatField(min_value=0, max_value=1_000_000_000, required=False, allow_null=True)
+    annual_km = serializers.IntegerField(min_value=0, max_value=200_000)
+    fuel = serializers.ChoiceField(choices=["benzin", "dizel", "lpg", "elektrik", "hibrit"], required=False, allow_null=True)
+    consumption = FiniteFloatField(min_value=0, max_value=60, required=False, allow_null=True)
+    unit_price = FiniteFloatField(min_value=0, max_value=1000, required=False, allow_null=True)
+    kasko_tl = FiniteFloatField(min_value=0, max_value=5_000_000, required=False, allow_null=True)
+    traffic_tl = FiniteFloatField(min_value=0, max_value=500_000, required=False, allow_null=True)
+    maintenance_tl = FiniteFloatField(min_value=0, max_value=5_000_000, required=False, allow_null=True)
+    parking_monthly_tl = FiniteFloatField(min_value=0, max_value=200_000, required=False, default=0)
+    tires_tl = FiniteFloatField(min_value=0, max_value=500_000, required=False, default=0)
+    inspection_tl = FiniteFloatField(min_value=0, max_value=100_000, required=False, default=0)
+    toll_monthly_tl = FiniteFloatField(min_value=0, max_value=200_000, required=False, default=0)
+    other_tl = FiniteFloatField(min_value=0, max_value=5_000_000, required=False, default=0)
+    loan_monthly_tl = FiniteFloatField(min_value=0, max_value=5_000_000, required=False, default=0)
+
+
 class ListingTextSerializer(serializers.Serializer):
     text = serializers.CharField(max_length=500_000, trim_whitespace=False)

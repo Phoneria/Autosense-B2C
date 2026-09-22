@@ -1,0 +1,170 @@
+{
+  "hedef_id": "volkswagen-tiguan-1-5-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG sanzimanda 40.000-75.000 km arasi mekatronik arizasi ve 'sanziman acil isletim' uyarisi yaygin.",
+      "km_araligi": "40.000-75.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan/sanziman-arizasi",
+      "kaynak_alinti": "2021 model, tüm periyodik bakımları yetkili serviste eksiksiz yapılmış Volkswagen Tiguan aracım, henüz 74.000 km'deyken mekatronik arızası verdi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "48V mild-hybrid alternator unitesi 37.000-70.000 km arasinda ariza yapip araci calismaz hale getiriyor.",
+      "km_araligi": "37.000-70.000 km",
+      "kaynak_url": "https://andcetin.com/e-tsie-tec-motorlarn-48v-alternator-sorunu-56/",
+      "kaynak_alinti": "Araç çalışmıyor veya hareket halindeyken aniden duruyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Periyodik bakim araliginda 200 ml ile 1 litre arasi yag eksiltmesi kronik.",
+      "km_araligi": "10.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/26792-1-5-tsi-kullananlarin-tecrubeleri/",
+      "kaynak_alinti": "Kronik olan Tsi motorlarda yağ eksiltme vardır. Periyodik bakıma kadar kimisinde 200 ml kimisinde 500 ml kimisinde 1 litre.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Surucu asistan ve sensor hatalari, aracin seyir halinde kendini parka almasi sik bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan/ariza",
+      "kaynak_alinti": "Araç seyir halindeyken durduk yere kendini parka alıyor, sürekli asistan sistemleri arıza veriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Motorda zincir degil triger kayisi var; Turkiye'de degisim periyodu 120.000 km'ye cekildi.",
+      "km_araligi": "120.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/28021-1-5-tsi-triger-kayis-degisimi-hakkinda/",
+      "kaynak_alinti": "87 bin km'de triger değiştirmeye gerek yoktur, Doğuş eskiden TSI motorlar için 180 bin km olan değişim periyodunu 120 bin'e çekti",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "150.000 km sonrasi enjektor arizasi bildiriliyor; revizyon kalici cozum olmuyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/21605-1-5-tsi-motorlarda-enjektor-sorunu/",
+      "kaynak_alinti": "Bu motorlar 150bin km den sonra enjektör sıkıntısı çıkarıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Su pompasi ve termostat govdesinden sogutma sivisi sizintisi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "Soğutma Sistemi: Bazı modellerde su pompası ve termostat gövdesinden sızıntı yapma eğilimi bildirilmiştir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Seyir halinde gosterge ve multimedya ekraninin tamamen karardigi vakalar bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/tiguan/gosterge",
+      "kaynak_alinti": "Geçen gün seyir halinde hız ve gösterge panosu ekranı tamamen gitti",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 4,5-5,0 lt/100 km seviyesine inebilen dusuk yakit tuketimi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "Düşük Yakıt Tüketimi: Uzun yolda 4.5 - 5.0 lt/100 km gibi dizel araçları kıskandıran değerlere ulaşabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Yol yalitimi iyi; runflat lastiklere ragmen kabine yol sesi az giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/volkswagen-tiguan-highline-1-5-tsi-kullanici-yorumu.11082/",
+      "kaynak_alinti": "Aracın yol yalıtım gerçekten çok iyi, Runflat lastiklere rağmen yol sesini içeri çok az alıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "615 litrelik bagaj hacmi, koltuklar katlandiginda 1.655 litreye cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-inceleme/volkswagen-tiguan-incelemesi/",
+      "kaynak_alinti": "Volkswagen Tiguan bagaj hacmi koltuklar katlandığında 1655 litre oluyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "On ve arka koltuklarda bas ve diz mesafesi tatminkar.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabavs.com/bagaj-hacmi/2023/volkswagen/tiguan/1-5-tsi/r-line-otomatik.html",
+      "kaynak_alinti": "Volkswagen Tiguan 615 litre bagaj hacmine sahiptir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1500-4000 devir arasindaki genis tork bandi sollama ve ara hizlanmalarda guven veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.webtekno.com/volkswagen-1-5-tsi-motor-alinir-mi-h209863.html",
+      "kaynak_alinti": "Geniş Tork Bandı: 1500 - 4000 devir arasında sabit tork sunması, sollama ve ara hızlanmalarda güven verir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "48V alternator unitesi aku ile birlikte degistigi icin 100-150 bin TL masraf cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://andcetin.com/e-tsie-tec-motorlarn-48v-alternator-sorunu-56/",
+      "kaynak_alinti": "Alternatör ünitesi, aküyle birlikte yenileniyor ve marka-modeline göre 100-150 bin TL arası",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste her 15.000 km/yilda bir yapilan periyodik bakim 6.500-8.000 TL tutuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arababook.com/volkswagen-servis-ve-bakim-maliyetleri-model-bazinda-karsilastirma-155",
+      "kaynak_alinti": "Volkswagen Tiguan | 6.500 – 8.000 TL | Her 15.000 km / Yılda 1",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yuksek govde nedeniyle otoyol hizlarinda ruzgar sesi yalitimi yetersiz kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/volkswagen-tiguan-highline-1-5-tsi-kullanici-yorumu.11082/",
+      "kaynak_alinti": "Aracının yüksek profili nedeniyle mi bilmiyorum rüzgar konusundaki ses yalıtımını pek beğenmediğimi söylemem lazım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Yogun sehir ici trafikte tuketim 10,5 litrenin altina inmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/volkswagen-modelleri/tiguan-yorumlari",
+      "kaynak_alinti": "Şehir içi 10.5 litreden aşşağı düşüremedim malesef.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "150 HP'lik motor SUV govdesini tasirken sert kalkis ve hizlanma beklentisini karsilamiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/volkswagen-tiguan-highline-1-5-tsi-kullanici-yorumu.11082/",
+      "kaynak_alinti": "DSG ile kullanımda talepleri karşılıyor ancak bu araçtan sırtı koltuğa yapıştıracak kalkışlar beklemek tabi ki saçma olur",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

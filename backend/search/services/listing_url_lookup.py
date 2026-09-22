@@ -274,10 +274,20 @@ def _find_field_values(lines: list[str]) -> dict:
         for label, inline_key in labels_longest_first:
             if values[inline_key]:
                 continue
-            match = re.match(rf"^{re.escape(label)}\s*[:\-]?\s+(.+)$", line, re.IGNORECASE)
-            if match:
-                values[inline_key] = match.group(1).strip()
-                break
+            match = re.match(rf"^{re.escape(label)}\s*[:\-]?\s*(.+)$", line, re.IGNORECASE)
+            if not match:
+                continue
+            value = match.group(1).strip()
+            # sahibinden.com'da etiket ve değer AYNI satırda, aralarında
+            # boşluk olmadan geçiyor ("Yıl2011", "KM270.000", "RenkBeyaz").
+            # Bu yüzden ayırıcı zorunlu değil; ama ayırıcı yoksa değerin
+            # büyük harf ya da rakamla başlaması şartı aranıyor -- yoksa
+            # "Marka" etiketi "Markalı ..." gibi bir kelimeyi de yakalardı.
+            glued = re.match(rf"^{re.escape(label)}(?=\S)", line, re.IGNORECASE)
+            if glued and not (value[:1].isdigit() or value[:1] != value[:1].lower()):
+                continue
+            values[inline_key] = value
+            break
     return values
 
 
@@ -399,6 +409,89 @@ def _extract_bool(raw: str) -> bool:
     return _norm_label(raw) in {"evet", "var", "mevcut", "agirhasarkayitli"}
 
 
+# arabam.com'da konum, ilan basliginin hemen altinda ETIKETSIZ tek satirda
+# gecer ("Fevzi Cakmak Mh. Esenler, Istanbul") -- "Il"/"Ilce" etiketi yoktur.
+# Boyle bir satiri ancak son virgul parcasinin bilinen bir il olmasindan
+# taniyabiliyoruz; bu yuzden 81 ilin listesi burada sabit tutuluyor (DB'siz de
+# calismali). Yazim varyasyonlari _norm_label ile foldlanir.
+_PROVINCES = {
+    _norm_label(name): name
+    for name in (
+        "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Aksaray", "Amasya", "Ankara",
+        "Antalya", "Ardahan", "Artvin", "Aydın", "Balıkesir", "Bartın", "Batman",
+        "Bayburt", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa",
+        "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Düzce", "Edirne",
+        "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun",
+        "Gümüşhane", "Hakkari", "Hatay", "Iğdır", "Isparta", "İstanbul", "İzmir",
+        "Kahramanmaraş", "Karabük", "Karaman", "Kars", "Kastamonu", "Kayseri",
+        "Kilis", "Kırıkkale", "Kırklareli", "Kırşehir", "Kocaeli", "Konya",
+        "Kütahya", "Malatya", "Manisa", "Mardin", "Mersin", "Muğla", "Muş",
+        "Nevşehir", "Niğde", "Ordu", "Osmaniye", "Rize", "Sakarya", "Samsun",
+        "Şanlıurfa", "Siirt", "Sinop", "Sivas", "Şırnak", "Tekirdağ", "Tokat",
+        "Trabzon", "Tunceli", "Uşak", "Van", "Yalova", "Yozgat", "Zonguldak",
+    )
+}
+# Sayfada bazen kisaltilmis/eski adiyla gecen iller.
+_PROVINCES.update({
+    _norm_label("Afyon"): "Afyonkarahisar",
+    _norm_label("Hakkâri"): "Hakkari",
+    _norm_label("Maraş"): "Kahramanmaraş",
+    _norm_label("Urfa"): "Şanlıurfa",
+    _norm_label("İçel"): "Mersin",
+})
+
+# Konum satirinda ilcenin onune eklenen mahalle/koy ekleri -- ilce bunlarin
+# SONRASINDA kalan kisimdir ("Fevzi Cakmak Mh. Esenler" -> "Esenler").
+_NEIGHBOURHOOD_MARKERS = {"mah", "mh", "mahalle", "mahallesi", "mevkii", "koy", "koyu", "beldesi"}
+
+
+def _strip_neighbourhood(segment: str) -> str:
+    tokens = segment.split()
+    marker = -1
+    for i, token in enumerate(tokens):
+        if _norm_label(token.strip(".")) in _NEIGHBOURHOOD_MARKERS:
+            marker = i
+    if marker < 0:
+        return segment.strip(" .,")
+    return " ".join(tokens[marker + 1:]).strip(" .,")
+
+
+def _canonical_location(city: str, district: str) -> tuple[str, str]:
+    """Okunan il/ilceyi formun acilir listesindeki yazimla eslestirir. Liste
+    DB'den geldigi icin best-effort: erisilemezse okunan degerler aynen kalir
+    (frontend eslesmeyen degeri zaten bos gosterir, kullanici elle secer)."""
+    try:
+        from .b2c import load_locations
+        options = load_locations()
+    except Exception:
+        return city, district
+    city_norm, district_norm = _norm_label(city), _norm_label(district)
+    for option in options:
+        if _norm_label(option.get("city", "")) != city_norm:
+            continue
+        city = option["city"]
+        for known in option.get("districts", []):
+            if _norm_label(known) == district_norm:
+                return city, known
+        return city, district
+    return city, district
+
+
+def _location_from_summary(summary: list[str]) -> tuple[str, str]:
+    """Etiketsiz konum satirindan (il, ilce) cikarir; bulunamazsa ("", "")."""
+    for line in summary:
+        if len(line) > 80:
+            continue
+        parts = [part.strip() for part in line.split(",") if part.strip()]
+        if len(parts) < 2:
+            continue
+        city = _PROVINCES.get(_norm_label(parts[-1]))
+        if not city:
+            continue
+        return _canonical_location(city, _strip_neighbourhood(parts[-2]))
+    return "", ""
+
+
 def _extract_listing_details(page_text: str, lines: list[str], fields: dict) -> dict:
     # Only the listing summary may supply price/location. Description prices
     # can be repair bills or instalments, and breadcrumbs also contain slashes.
@@ -414,21 +507,34 @@ def _extract_listing_details(page_text: str, lines: list[str], fields: dict) -> 
         if money and price is None:
             price = _extract_int(money.group(1))
         # Sahibinden places the location directly above the listing number.
-        if re.match(r"^İlan No(?:\s|:|$)", line, re.IGNORECASE) and i:
+        if re.match(r"^İlan No\b|^İlan No(?=\d|\s|:|$)", line, re.IGNORECASE) and i:
             parts = [part.strip() for part in summary[i - 1].split("/")]
             if len(parts) in (2, 3) and all(parts):
                 city, district = parts[:2]
 
+    # "Açıklama" sayfada birden fazla geçebiliyor: arabam.com'da önce sekme
+    # menüsünde (Açıklama / Boya, Değişen ve Tramer / Araç Bilgileri / Donanım),
+    # sonra asıl blokta. Menüdeki başlığın hemen ardından bir sonraki bölüm
+    # başlığı geldiği için gövdesi boş çıkar -- bu yüzden ilk eşleşmeye
+    # takılmayıp gövdesi anlamlı olan ilk bloğu alıyoruz.
     description = ""
-    start = re.search(r"^\s*Açıklama\s*$", page_text, re.MULTILINE | re.IGNORECASE)
-    if start:
+    for start in re.finditer(r"^\s*Açıklama\s*$", page_text, re.MULTILINE | re.IGNORECASE):
         body = page_text[start.end():]
         end = re.search(
             r"^\s*(?:Özellikler|Boyalı veya Değişen Parça|Boya, Değişen ve Tramer|"
-            r"Teknik Özellikler|Güvenlik|EİDS Bilgileri|Sponsorlu Bağlantı)\s*$",
+            r"Teknik Özellikler|Güvenlik|EİDS Bilgileri|Sponsorlu Bağlantı|"
+            r"Araç Bilgileri|Donanım)\s*$",
             body, re.MULTILINE | re.IGNORECASE,
         )
-        description = body[:end.start() if end else len(body)].strip()
+        candidate = body[:end.start() if end else len(body)].strip()
+        if not description:
+            description = candidate
+        if len(candidate) >= 20:
+            description = candidate
+            break
+
+    if not city:
+        city, district = _location_from_summary(summary)
 
     raw_fuel = fields["yakit"]
     fuel_norm = _norm_label(raw_fuel)

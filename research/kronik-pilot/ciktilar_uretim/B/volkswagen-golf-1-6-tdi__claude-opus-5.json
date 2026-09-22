@@ -1,0 +1,161 @@
+{
+  "hedef_id": "volkswagen-golf-1-6-tdi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "90.000 km sonrasi enjektor arizasi; soguk calistirmada zorlanma ve cekisten dusme yapiyor.",
+      "km_araligi": "90.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/15819-golf-7-1-6-tdi-enjektor-sorunu-04l130277d-kod/",
+      "kaynak_alinti": "3 özel servise ve 1 pompa Ustasına götürdüm hepsi enjektör dedi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Sehir ici kisa mesafe kullanimda DPF tikanip partikul uyarisi veriyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/23150-golf-7-1-6-tdi-2015-model-partikul-sorunu/",
+      "kaynak_alinti": "aracim 2 hafta önce partikul uyarisi verdi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurumdan tikaniyor; motor lambasi yanip devir 2000'i gecmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/egr-ve-dpf-agrizasi-mk6-golf-1-6-tdi.2529/",
+      "kaynak_alinti": "egr valfi tıkanmış ya değişecek yada iptal etceksiniz dediler",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo pervane bosluguyla ariza veriyor; cekisten dusme ve beyaz duman gorulur.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/25091-golf-7-1-6-tdi-turbo-sorunu/",
+      "kaynak_alinti": "Turbonun içindeki pervanesinin oynaklığını gösterdi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Ozellikle DSG versiyonlarda cift kutleli volan arizasi yaygin.",
+      "km_araligi": "100.000-150.000 km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/12807-1-6tdi-kronik-volan-arizasi/",
+      "kaynak_alinti": "Genel olarak 1.6tdi dsg araclarda çok fazla volant arizasi oluyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG sanzimanda mekatronik kart arizasi ve vuruntu sikayeti tekrarliyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/golf/sanziman",
+      "kaynak_alinti": "Volkswagen DSG şanzımanda kronik vuruntu ve volan sorunu var, ayrıca yağ kaçırıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Alt takimda salincak burcu sesi ve amortisor zayiflamasi bildiriliyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/17350-kronik-sorunlar-nelerdir/",
+      "kaynak_alinti": "Alt takım salıncak burç sesi (yaşandı)",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "koltuk-doseme-asinma",
+      "iddia": "Surucu koltugunun sol yan destegi inip binmeden asiri yipraniyor.",
+      "km_araligi": "130.000+ km",
+      "kaynak_url": "https://www.golftutkusu.com/topic/17350-kronik-sorunlar-nelerdir/",
+      "kaynak_alinti": "Sürücü koltuğu sol kısmının inme binmeden dolayı aşırı yıpranmasi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sakin kullanimda karma tuketim 5 litre bandinda kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/yakit-cimrileri-serisi-volkswagen-golf-1-6-tdi/",
+      "kaynak_alinti": "Gerçek kullanım düşünüldüğünde, sakin bir kullanım ile 5 litre bandında ortalama yakıt verisini yakalamak mümkün olabiliyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-bulunurluk",
+      "iddia": "Yedek parca ve servis bulunurlugu Turkiye'de sorun cikarmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/volkswagen-golf-1-6-tdi-2012-kafam-rahat-olsun-diyene/",
+      "kaynak_alinti": "Volkswagen modelleri ikinci elde çokça tutulan, yedek parça ve servis konusunda sorun yaşamayacağınız markalardan birisidir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Dizel motor sesi rakip dizellere gore kabine az giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/12616-1-6-dizel-sesli-mi-calisiyor/page/2",
+      "kaynak_alinti": "Özellikle Renault'ın DCI motorlarıyla kıyas edilemeyecek kadar sessiz Golf.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "Uzun yolda tork ve cekis kullanicilar tarafindan yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2013/07/volkswagen-golf-kullanici-yorumlari.html",
+      "kaynak_alinti": "Çekişi uzun yolda gerçekten mükemmel, şehiriçi performansı da çok iyi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ic hacim rakip hatchback modellere gore genis bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2013/07/volkswagen-golf-kullanici-yorumlari.html",
+      "kaynak_alinti": "Yalıtımı çok iyi, içi diğer hb modellere göre gayet geniş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "120.000 km agir bakimi triger ve kavrama dahil 27 bin TL'yi bulabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/19958-1-6-tdi-120-000-bakim-fiyati/page/2",
+      "kaynak_alinti": "Triger, devirdaim, filtre, kapsamlı bakım, kavrama vs. toplam 27 bin tl tuttu.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Sadece triger seti 7.000 TL, devirdaim ile birlikte 11.500 TL'ye cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/19958-1-6-tdi-120-000-bakim-fiyati/page/2",
+      "kaynak_alinti": "Triger seti 7000 TL, devirdaim pompası da değişirse 11500 TL fiyat çıkmakta.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon sert; bozuk yolda darbeler kabine dogrudan geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/5235-golf-7-konforsuzlugu/",
+      "kaynak_alinti": "Lastikten değil, aracın süspansiyonları gerçekten konforsuz",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "DPF sorunu basladiginda sehir ici tuketim 7 litrenin altina inmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/23150-golf-7-1-6-tdi-2015-model-partikul-sorunu/",
+      "kaynak_alinti": "yakıt artti şehiriçi 7 nin altina hic dusmuyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

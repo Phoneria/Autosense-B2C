@@ -1,0 +1,152 @@
+{
+  "hedef_id": "renault-megane-1-5-dci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör arızası yaygın; zor soğuk çalışma ve \"Enjeksiyonu kontrol ettirin\" uyarısıyla ortaya çıkıyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-3-1-5-dci-ariza-yapiyor.102854/",
+      "kaynak_alinti": "Aracın 2 enjektöründe sıkıntı olduğu anlaşıldı ve değiştirdik. Çıkması takıldı ve işçilikle birlikte 1000 lira tuttu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yuksek-basinc-pompasi",
+      "iddia": "Mazot pompası ve common rail basınç müşürü arızası soğuk çalışmama sorununa yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-3-1-5-dci-calismama-sorunu-motor-hasar-riski-lutfen-yardim.107703/",
+      "kaynak_alinti": "Ayrıca arac bılgısayara baglanınca veren hata commonrail hatası ımıs",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo wastegate ve elektrovana arızası güç kaybı ve aşırı basınç şikayetine neden oluyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-turbo-problemi-ve-ariza-lambalari--131834396",
+      "kaynak_alinti": "Sorunum turbo ve elektrovana kaynaklı çıktı ilk olarak turbo söküldü yapılan kontrolllerde wastegate takılarak çalıştığı bazenleri açık kaldığı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "Kısa mesafe kullanımda EGR valfi kurum bağlıyor ve temizlik/değişim gerektiriyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://diagnosticgarage.com/tr-tr/blog/renault-megane-3%E2%80%934-kronik-arizalari-ve-cozum-yollari",
+      "kaynak_alinti": "Kısa mesafe kullanım ve düşük devirde sürekli sürüş, EGR valfinin kurum bağlamasına neden olur.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "EDC şanzımanda vites kutusu hararet hatası ve şanzıman beyni arızası tekrar ediyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-3-edc-sanziman-sorunu.94817/",
+      "kaynak_alinti": "2012 model otomatik megane 3 sahibiyim 129,000 km de. son birkaç gündür aracım sabahları vites kutusu hararet hatası",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön takımda beşik (traves) burcu ve salıncak burçları erken bitiyor, kasaya vuruntu sesi geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/traves-besik-burcu-sorunu-cozumu-resimli-megane-ii-alt-takim-sorunu-cozumu.49781/",
+      "kaynak_alinti": "beşik darbeleri ememeyip kasaya vuruntu yapıyordu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "6 ileri manuel versiyonlarda debriyaj 150.000 km civarında zayıflıyor ve volanla birlikte değişiyor.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-3-debriyaj-degisimi-hakkinda.98549/",
+      "kaynak_alinti": "6 ileri manuel vites araçlarda hareketli volan dedikleri parça var. İkisi birden değişmediği zaman pek verim alınamıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Kopan V kayışının triger kayışının arasına girmesi supap yatması riskini doğuruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/renault-dci-motor-nedir-kronik-sorunlari-nelerdir/",
+      "kaynak_alinti": "V kayışı koparsa triger kayışının arasına girme ihtimali var.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Gerçek kullanımda şehir içi 5,5-6,0 lt, şehir dışı 4,0-4,5 lt/100 km tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://teknoseyir.com/inceleme/renault-megane-iii-1-5-dci-expression-2011",
+      "kaynak_alinti": "Şehir içi 5.5 – 6.0 lt / Şehir dışı 4.0 - 4.5 lt /100km",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "dCi motorun uzun yıllar kayda değer sorun çıkarmadığı kullanıcılar tarafından vurgulanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-3-2015-1-5-dci-alinir-mi--124917128",
+      "kaynak_alinti": "dci nin uzun yıllar kayda değer sorun çıkarmayacağının verdiği rahatlık",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Parça fiyatlarının ucuzluğu bakım ve onarım maliyetini belirgin şekilde düşürüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/renault-megane-3-alinir-mi/",
+      "kaynak_alinti": "Parça fiyatlarının ucuz olması bakım ve onarım maliyetlerini ciddi bir şekilde düşürüyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Türkiye genelinde yaygın Renault servis ağı sahiplik avantajı olarak öne çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://teknoseyir.com/inceleme/renault-megane-iii-1-5-dci-expression-2011",
+      "kaynak_alinti": "+ yaygın servis ağı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj ölü hacim yaratmayan düzgün formu sayesinde kullanışlı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-iii-uzun-donem-incelemem-2011-1-5-dci-85bg-expression.64252/",
+      "kaynak_alinti": "Bagaja gelirsek; ölü hacim yaratan bir noktası yok bu nedenle kullanışlı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan malzeme kalitesi Golf ve Astra gibi rakiplerin gerisinde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/2015-megane-3-cok-kalitesiz.90497/",
+      "kaynak_alinti": "malzeme kalitesi bir golf veya astra gibi araçlarla kıyaslayınca düşük geliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Motor ve yol sesi kabine fazla giriyor, düşük viteslerde rahatsız edici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-2-1-5-dci-iceri-giren-motor-sesi--124194816",
+      "kaynak_alinti": "Bende de 2008 Hatcback 1.5 dci modeli var ve motor sesi içeriye fazla giriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk diz mesafesi sınıf rakiplerine göre dar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://teknoseyir.com/inceleme/renault-megane-iii-1-5-dci-expression-2011",
+      "kaynak_alinti": "- Arka diz mesafesi",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

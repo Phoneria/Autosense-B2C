@@ -1,0 +1,158 @@
+{
+  "hedef_id": "hyundai-i20-1-4-mpi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Akü erken boşalması ve akü patlaması şikayetleri i20'de tekrarlayan sorun olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-assan-i20-2023-model-aku-sorunu-ve-klima-radyator-sicak-hava-vermesi",
+      "kaynak_alinti": "İ20 aracı sıfır aldım aldığımın 2. Günü aküsü bitti servis'te akü şarj edildi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Yakıt pompası arızası tekrarlıyor ve araç yolda kalıyor; parça tedariki aylarca sürebiliyor.",
+      "km_araligi": "45.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-yakit-pompasi-arizasi-ve-parca-tedarik-sorunu-nedeniyle-magduriyet",
+      "kaynak_alinti": "2021 model Hyundai i20 aracım (53 bin km) Elazığ merkez yetkili serviste, yakıt pompası arızası nedeniyle bugün yolda kaldıktan sonra servise çekildi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Fren diskleri 20.000 km civarında eğilip titreme yapıyor, taşlama sonrası sorun kısa sürede tekrarlıyor.",
+      "km_araligi": "20.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-assan-i20-fren-disklerinde-surekli-titreme-sorunu",
+      "kaynak_alinti": "2021 model Hyundai i20 marka aracımdan yaklaşık 20 bin km yaklaşırken frende titreme şikayetiyle Kocaeli Fertan servise gittim ve servis, disklerin eğilebildiğini, ücret karşılığında taşlama yapılabileceğini söyledi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön amortisörlerden 35.000 km civarında gıcırtı ve bozuk yolda vurma sesi geliyor.",
+      "km_araligi": "35.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i-20-amortisor-sorunu",
+      "kaynak_alinti": "Araç ön amortisörlerde gıcırtı diye tabir edilen ses çıkarıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı kendiliğinden kapanıp açılıyor, donuyor ve dokunmatik tepki vermiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-2023-multimedya-ekrani-kapanip-aciliyor-video",
+      "kaynak_alinti": "2023 model makyajlı i20 aracım multimedya ekranım kendiliğinden kapanıp açılıyor dokunmatiği tepki vermiyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Kaput ve tavanda fabrika kaynaklı boya dökülmesi/atması yaygın olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-kaputunda-boya-dokulmesi-ve-uretim-hatasi-suphesi",
+      "kaynak_alinti": "2016 model Hyundai i20 aracımı bugün yıkarken kaputun sol tarafında ciddi bir boya dökülmesi meydana geldi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj bilyesi 15.000 km gibi düşük kilometrede ses yapıp değişim gerektirebiliyor.",
+      "km_araligi": "15.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-debriyaj-bilyesi-arizasi-icin-20-gunluk-bekleyis-sonrasi-garanti-reddi",
+      "kaynak_alinti": "Aracım yaklaşık 15.000 km civarındayken debriyaj bilyesinden ses gelmesi üzerine 20 Nisan 2026 tarihinde İstanbul Üsküdar'daki yetkili servise götürdüm.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-radyator",
+      "iddia": "Klimanın soğutmaması ve klima radyatörü kaynaklı sıcak hava şikayetleri tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai/i20/klima",
+      "kaynak_alinti": "klimanın soğutmaması şikayetiyle aynı bayinin servisine götürdük",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "B segmenti hatchback olarak yakıt ekonomisiyle öne çıkan bir model.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabalar.com.tr/hyundai/i20",
+      "kaynak_alinti": "Hyundai i20, modern tasarımı, teknolojik donanımları ve yakıt ekonomisiyle dikkat çeken bir B segmenti hatchback modelidir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Bakım maliyeti düşük, günlük kullanımda ekonomik bir araç.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/hyundai-i20-alinir-mi",
+      "kaynak_alinti": "Düşük bakım maliyeti",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Kompakt boyutu ile günlük şehir içi kullanım için ideal bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/hyundai-i20-alinir-mi",
+      "kaynak_alinti": "Günlük şehir içi kullanım için ideal, ancak performans ve iç mekan genişliği sınırlı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Kompakt boyut ve kolay kullanımıyla ilk araç alacak sürücülere öneriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/hyundai-i20-alinir-mi",
+      "kaynak_alinti": "İlk araba alacak genç sürücüler",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parça fiyatları yüksek; basit bir plastik parça 8.500 TL olarak fiyatlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai-motor/hyundai-i20-yedek-parca-bulunamiyor-ve-fiyati-sasirtiyor",
+      "kaynak_alinti": "Servisi aradığımda ellerinde olmadığını, 30 gün içinde geleceğini ve fiyatının 8.500,00 TL olduğunu öğrenince şok oldum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parça tedarikinde aylara varan gecikmeler yaşanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/hyundai/i20/yedek-parca",
+      "kaynak_alinti": "2 aydır yedek parçası tüm ülkede bulunamamıştır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.4 MPI atmosferik motor 84 HP ile gamın en düşük güçlü seçeneği.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabalar.com.tr/hyundai/i20",
+      "kaynak_alinti": "Hyundai i20, 1.0 litre T-GDI turbo benzinli motor (100 hp ve 120 hp) ve 1.4 litre MPI atmosferik benzinli motor (84 hp) seçenekleriyle sunulmaktadır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk ve bagaj hacmi segment içinde sınırlı kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/hyundai-i20-alinir-mi",
+      "kaynak_alinti": "Arka koltuk ve bagaj hacmi sınırlı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Otoyol hızlarında kabin ses yalıtımı yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/hyundai-i20-alinir-mi",
+      "kaynak_alinti": "Otoyol sürüşünde gürültü yalıtımı yetersiz",
+      "guven": "dusuk"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "hedef_id": "opel-corsa-1-2",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Yag icinde calisan islak triger kayisi 40-60 bin km'de catlayip doküluyor, parcalari yag pompasini tikiyor.",
+      "km_araligi": "40.000-60.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/corsa/motor",
+      "kaynak_alinti": "Motor yağının içinde çalışan (ıslak triger) kayışta gözle görülür, derin çatlaklar tespit edilmiştir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayisi asinmasindan cikan parcalar yag filtresine ve turboya zarar verip motoru komple bitirebiliyor.",
+      "km_araligi": "50.000-70.000 km",
+      "kaynak_url": "https://eksisozluk.com/1-2-puretech--6399271?p=2",
+      "kaynak_alinti": "triger kayışı kopmamış ancak aşınması sonucu içinden çıkan pislikler yağ filtrelerine ve turboya zarar vermiş.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.2 PureTech motorda 1.000 km'de 200-300 ml'ye varan yag eksiltmesi kullanicilar tarafindan bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-corsa-1.2-t-sorunlari-bakim-ve-satin-alma-rehberi-2026",
+      "kaynak_alinti": "Bazı kullanıcılar normalin üzerinde yağ tüketimi bildirmektedir. 1.000 km'de 200-300 ml yağ eksiltmesi rapor eden kullanıcılar mevcuttur.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "EAT8 otomatik sanzimanda tekrarlayan 'vites kutusu arizasi' uyarisi sik bildirilen bir sorun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/opel-corsa-1.2-t-sorunlari-bakim-ve-satin-alma-rehberi-2026",
+      "kaynak_alinti": "Şikayetvar'daki en sık tekrarlanan konulardan biri vites kutusu arızası uyarısıdır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekrani donuyor, kararyor veya kendi kendine kapanip aciliyor; asiri sicak/soguk havada siklasiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/corsa/ekran",
+      "kaynak_alinti": "ekran sürekli donuyor, dokunmatik işlevi devre dışı kalıyor, zaman zaman kendi kendine çalışır gibi olsa da kısa süre sonra tekrar kilitlenerek kullanılamaz",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Motor kontrol beyni (ECU) arizasi nedeniyle motor ariza uyarisi, tekleme ve performans kaybi goruluyor.",
+      "km_araligi": "25.000-35.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/corsa/corsa-f",
+      "kaynak_alinti": "motor kontrol beyni (ecu) arızası verdi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Start-Stop sisteminin devreye girmemesi ve sarj kontrol unitesi kaynakli aku sorunlari bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/corsa/start-stop",
+      "kaynak_alinti": "Eylül 2022'de aldığım Opel Corsa'nın ilk günden 'Start-Stop' çalışmamaktaydı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "rotil-rot",
+      "iddia": "Dusuk kilometrede rot/balans kaynakli saga cekme ve yuksek hizda savrulma sikayetleri var.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/corsa/corsa-f",
+      "kaynak_alinti": "araç sağa çekiyor ve özellikle yüksek hızda savrulma yapıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.2 benzinli motor gercek kullanimda 100 km'de 5,6-6,5 litre civari tuketimle ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-corsa--41609?p=68",
+      "kaynak_alinti": "100 kilometrede 6.2 litre yakıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Kompakt olculeri sayesinde sehir ici kullanimda ve park etmede pratik.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/opel-corsa-alinir-mi",
+      "kaynak_alinti": "Kompakt ve şehir içi pratik boyutlar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Kolay kullanilan karakteri ve yuksek konforu ile gunluk suruste yormuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/opel-corsa-test-surus-izlenimleri/",
+      "kaynak_alinti": "Kolay kullanılan karakteri ve yüksek konforu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutus testlerinde sorun cikarmadan guvenli bir sekilde yoluna devam ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/opel-corsa-test-surus-izlenimleri/",
+      "kaynak_alinti": "Yaptığımız yol tutuş testlerinde hiç sorun yaşatmadan güvenli bir şekilde yoluna devam etmeyi bildi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "LED far, otomatik uzun-kisa far ve kor nokta uyarisi gibi surucu destek donanimlari iyi calisiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/2023-opel-corsa-f-ultimate-ile-merhaba.174313/",
+      "kaynak_alinti": "LED ön farlar ve otomatik uzun-kısa far",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Islak triger kayisi degisimi motor indirilerek yapildigi icin yetkili serviste cok pahali.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/triger-kayisi-degismeye-80-bin-istediler-cok-mu--160510286",
+      "kaynak_alinti": "Araç ablamın aracı Opel Corsa 1.2 benzinli, 2021 model 70bin kilometrede. Sabah servise gittiğinde triger kayışının değişmesi gerektiğini, motorun ineceğini 80 bin tl masraf olacağını söylemişler.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "309 litrelik bagaj hacmi Polo ve Ibiza gibi rakiplerin yaklasik %10 gerisinde kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabazzi.com/inceleme1/opel/corsa/corsa-ic-mekan",
+      "kaynak_alinti": "309 litrelik bagaj Fiesta'nın bagajından az daha büyük ama Polo ve Ibiza kardeşler %10 daha fazlasını sunuyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltukta diz mesafesi kisitli, 1,75 m uzerindeki yolcular icin rahatsiz.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/sportif-fare-2023-opel-corsa-f-ultimate.15255/",
+      "kaynak_alinti": "Diz mesafesinde rahatlık ölçüsü maksimum 1.75'tir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekandaki piano black yuzeyler cok kolay ciziliyor, malzeme kalitesi segment ortalamasinda.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/sportif-fare-2023-opel-corsa-f-ultimate.15255/",
+      "kaynak_alinti": "Piano black'leri folyo kaplatırdım, aşırı çizilen bir malzeme",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Ikinci elde deger kaybi segment rakiplerine gore yuksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/opel-corsa-alinir-mi",
+      "kaynak_alinti": "İkinci el değer kaybı yüksek",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

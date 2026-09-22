@@ -1,0 +1,161 @@
+{
+  "hedef_id": "toyota-corolla-1-4-d-4d",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "2009 sonrasi 1ND-TV motorlarda segman kaynakli yag eksiltme yaygin; Toyota TSB yayinladi.",
+      "km_araligi": "10.000+ km",
+      "kaynak_url": "https://www.focusclubtr.com/topic/4399-toyota-14-d-4d-motorlardaki-ya%C4%9F-eksiltme-sorunu-ile-ilgili-tsb-ve-iade-s%C3%BCreci/",
+      "kaynak_alinti": "Toyota 1.4 D-4D motorların 2009 yılından sonra tamamı hatalı üretilmiştir. Uygun olmayan parçalar kullanıldığı için bu motorlarda yağ eksiltme yakma görülmekte aynı zamanda motor performansında düşüş, yakıt tüketiminde artış olmaktadır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Yuksek kilometrede turbodan islik sesi ve basinc dusuklugu cikiyor; turbo degisimi gerekiyor.",
+      "km_araligi": "120.000-220.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/toyota-corolla-1-4-d4d-turbo-islik-sesi-ve-turbo-basinci--136983068",
+      "kaynak_alinti": "baya bi ıslık sesi geliyor turbo açtığı anda",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "120.000 km sonrasi enjektorlerde tikanma; teklemeler ve zor calistirma basliyor.",
+      "km_araligi": "120.000-250.000 km",
+      "kaynak_url": "https://arabanet.net/toyota-corolla-14-d-4d-kronik-sorunlari",
+      "kaynak_alinti": "Teklemeler ve zor çalıştırma sorunları başlamıştı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurumla tikaniyor; temizlik sonrasi cekis ve yakit tuketimi belirgin duzeliyor.",
+      "km_araligi": "50.000-160.000 km",
+      "kaynak_url": "https://www.toyotaclubtr.com/index.php?topic=41750.0",
+      "kaynak_alinti": "2011 dizel corollama gecende bi cesaretle egr yi temizledim",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Sehir ici kisa mesafe kullanimda DPF dolup uyari isigini tekrar tekrar yakiyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.toyotaclubtr.com/index.php?topic=53180.60",
+      "kaynak_alinti": "6 ay içinde 6 kez partikül filtresi dolu olması nedeniyle uyarı ışığı yandı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "MMT yari otomatik sanzimanda aktuator kirlenip vitesi bosa atiyor; komple degisim 3.500 TL.",
+      "km_araligi": "150.000+ km",
+      "kaynak_url": "https://www.toyotaclubtr.com/index.php?topic=80608.0",
+      "kaynak_alinti": "MMT aktüatörünün kömür tozlarından pislendiği, geçirgenlik problemi nedeniyle vitesi boşa attığı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "80.000 km civarinda debriyaj yoruluyor; pedal sertlesiyor ve vites gecisleri zorlasiyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://arabanet.net/toyota-corolla-14-d-4d-kronik-sorunlari",
+      "kaynak_alinti": "Debriyaj pedalı sertleşmeye başladı ve vites geçişlerinde zorlanıyordum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "2011-2012 modellerde tavan ve bagaj kapaginda boya atmasi ve altindan paslanma bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/toyota/corolla/boya-atmasi",
+      "kaynak_alinti": "2011 model Toyota Corolla aracımda yaklaşık dört aydır kronik boya atması sorunu yaşıyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 4 litre civari tuketim elde ediliyor; sinifinin en ekonomik dizellerinden.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/corolla-14-d-4d-kullanici-yorumlari-corolla-14-d-4d-alinir-mi",
+      "kaynak_alinti": "4 litre civarındaki yakıt tüketimi memnuniyet yarattı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Duzenli bakimli orneklerde motor yuksek kilometrelere sorunsuz cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/toyota-corolla-1.4-d-4d-ikinci-el-alim-rehberi-sorunlar-yakit-tuketimi-ve-bakim-maliyetleri-2026",
+      "kaynak_alinti": "efsanevi Toyota güvenilirliğiyle öne çıkıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Dizel olmasina ragmen kabin sessizligi kullanicilar tarafindan begeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/toyota-corolla-nin-1-4-dizeli--108848712",
+      "kaynak_alinti": "sessizligi yakiti cok guzel ben gayet memnunum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Corolla Euro NCAP testinde 5 yildiz aldi; yetiskin korumasi puani yuksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/yeni-toyota-corolla-1-4d-4d-m-m/",
+      "kaynak_alinti": "2013 yılında teste giren Corolla 5 yıldız almaya hak kazanmıştı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Genis ic hacim ve ferah kabin aile kullanimi icin yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://arabanet.net/corolla-14-d-4d-kullanici-yorumlari-corolla-14-d-4d-alinir-mi",
+      "kaynak_alinti": "Geniş iç hacim aile kullanımı için ideal",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "90 HP guc rakiplerine gore dusuk; hizlanma ve yuklu kullanimda yetersiz kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/toyota-corolla-1-4-d4d-sedan-begenip-begenmediginiz-yonleri--32174221",
+      "kaynak_alinti": "Motor gücü rakiplerine göre düşük",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Turbo ve enjektor gibi dizel donanimin onarimi tek kalemde yuksek masraf cikariyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/toyota-corolla-nin-1-4-dizeli--108848712",
+      "kaynak_alinti": "turbosuna dikkat edin, sıkıntılıysa 3-4 bin tl masraf çıkartabilir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon sert bulunuyor ve ic mekandan trim sesleri geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/toyota-corolla-1.4-d-4d-ikinci-el-alim-rehberi-sorunlar-yakit-tuketimi-ve-bakim-maliyetleri-2026",
+      "kaynak_alinti": "Sert süspansiyon, trim sesleri",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Hiz arttikca ic mekana giren ruzgar sesi rahatsiz edici seviyeye ciktigi belirtiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-testleri/yeni-toyota-corolla-1-4d-4d-m-m/",
+      "kaynak_alinti": "Süratin artmasıyla iç mekana gelen rüzgar sesi",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

@@ -1,0 +1,152 @@
+{
+  "hedef_id": "dacia-duster-1-5-dci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Rampada gaza yüklenince \"enjeksiyonu kontrol ettirin\" uyarısı ve belirgin çekiş kaybı görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/duster-enjeksiyon-uyarisi-ve-cekis-kaybi-icin-basinc-borusu-degisimi-ucreti-cok-yuksek",
+      "kaynak_alinti": "2018 model 1.5 dCi Duster aracımla rampa çıkışında gaza yüklendiğimde \"enjeksiyonu kontrol ettirin\" uyarısı almaya başladım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "2014 model 1.5 dCi 110 HP'de motor arıza lambasıyla birlikte turbo basınç düşüklüğü hatası veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/2014-duster-1-5dci-110-hp-rampalarda-dusuk-devirden-cikarken-yanan-vana-ve-ritim-uyar.101138/",
+      "kaynak_alinti": "Motor Arıza Lambası ve Sarı Ritim işareti yanıyor cihaza bağladığımızda Turbo Basınç düşüklüğü veriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "DPF sökülüp komple temizlendikten 1-2 gün sonra aynı arıza uyarısı tekrar ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/2014-duster-1-5dci-110-hp-rampalarda-dusuk-devirden-cikarken-yanan-vana-ve-ritim-uyar.101138/",
+      "kaynak_alinti": "DPF SÖKÜLDÜ KOMPLE TEMİZLENDİ,1-2 GÜN SONRA TEKRAR YAPTI KAÇAK GÖÇEK GÖZÜKMÜYOR",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "120.000 km'ye kadar çıkan tek arıza şarj dinamosu olarak bildiriliyor.",
+      "km_araligi": "120.000 km",
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=44",
+      "kaynak_alinti": "120 bin kilometre boyunca tek bir araç arızası yaşadım. o da şarj dinamosu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "2013 model 1.5 dCi 4x4'te yakıt sistemi kaynaklı aniden stop etme ve kızdırma lambası yanması bildirilmiş.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-dusterda-sabit-hizda-aniden-durma-ve-kizdirma-lambasi-yanmasi",
+      "kaynak_alinti": "Aracımda bu stop etme ve kızdırma lambası yanma sorununun detaylı olarak incelenmesini, gerçek arıza kaynağının net biçimde tespit edilmesini",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "manuel-sanziman",
+      "iddia": "2012 dizel Duster'da vites kolu çok sıkı çalışıyor, senkromeç kaynaklı olduğu belirtiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/2012-dizel-duster-vites-kolu-cok-siki.103970/",
+      "kaynak_alinti": "vites kolunu oynattığımda kol çok sıkı hareket ediyor, öyle ki vitesi 1 den boşa atınca boşa atıp atmadığını zar zor anlıyorum",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj pedalını tutan plastik klipsin kırılıp pedalın yerinden çıkması bildirilmiş.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/debriyaj-sorunu.93121/",
+      "kaynak_alinti": "debriyaj pedalına biraz fazla sert bastım sanırım debriyaj pedalı yerinden çıktı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "K9K 1.5 dCi, kendi güç sınıfındaki motorlar arasında en tutumlu motorlardan biri olarak tanımlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=44",
+      "kaynak_alinti": "k9k olağanüstü derecede ekonomik, kendi güç seviyesindeki motorlar arasında pazarın tasarruf potansiyeli en yüksek en tutumlu makinesi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.5 dCi 4x4 Duster'ın 400.000 km'nin üzerine kadar sorunsuz kullanıldığı bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=45",
+      "kaynak_alinti": "zamanında, 150 bin kilometrelerde hizmetimize başlayan 4x4 1.5 dci bir bireyi, 400 bin küsür kilometrelere kadar tam bir eşek edasıyla kullanılmıştı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "Kilitlenebilir 4x4 sistemi sayesinde hafif arazi kullanımında başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/duster-tavsiye-oneri-arti-ve-eksiler-hk.88196/",
+      "kaynak_alinti": "hafif ofroad için çok iyidir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Triger kayışı 120.000 km, motor yağı 20.000 km değişim aralığıyla bakım aralıkları uzun.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/k9k--2111429",
+      "kaynak_alinti": "triger kayışı 120 bin km'lik uzun değişim aralığına dayanabiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Hız sabitleyici, hız sınırlayıcı ve eko mod donanımları kullanıcılar tarafından çok iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/duster-tavsiye-oneri-arti-ve-eksiler-hk.88196/",
+      "kaynak_alinti": "hız sabitleyicisi ve sınırlayıcısı , eko modu falan hepsi çok iyi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "4x4 1.5 dCi versiyonunda ortalama tüketim 7,5 litrenin altına inmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/duster/yakit-tuketimi",
+      "kaynak_alinti": "ortalama yakıt tüketimi 7.5'in altına hiçbir şekilde inmiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "8 supaplı dCi motor üst devirleri sevmiyor, yavaş devirleniyor ve pürüzlü çalışıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/k9k--2111429",
+      "kaynak_alinti": "8 supaplı motor devirlenmeyi ve yüksek devir çevirmeyi sevmiyor, yavaş devirleniyor, titreşimli ve pürüzlü çalışıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan malzemeleri lüks seviyede değil; direksiyon ve vites derisi suni ve sert bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/duster-tavsiye-oneri-arti-ve-eksiler-hk.88196/",
+      "kaynak_alinti": "iç mekanda lüks istersen üst seviyede değildir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "2015 model 4x4 110 HP'de 2000 devirde motordan gelen ıslık sesi kabinde duyuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/turbodan-veya-motordan-gelen-islik-sesi.91193/",
+      "kaynak_alinti": "arkadaşlar bende 4x4 110 beygir 2015 model duster var yanlız motor kısmından 2-3. videste 2000 devirdeyken ıslık sesi geliyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

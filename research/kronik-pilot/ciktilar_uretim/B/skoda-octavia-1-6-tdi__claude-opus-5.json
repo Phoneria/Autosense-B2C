@@ -1,0 +1,161 @@
+{
+  "hedef_id": "skoda-octavia-1-6-tdi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG'li 1.6 TDI'larda kavrama ve mekatronik arizasi yaygin; araç 'P konumunda terk edin' hatasi veriyor.",
+      "km_araligi": "60.000-90.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/octavia/sanziman",
+      "kaynak_alinti": "Bakıma gittiğimde kavrama ve mekatronik arızası bildirdiler.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "DSG'de dusuk hizda (D2) titreme sikayeti erken kilometrelerde basliyor ve kavrama seti degisimi isteniyor.",
+      "km_araligi": "14.000-45.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/octavia-1-6-tdi-dsg-sanziman-problemi--66194157",
+      "kaynak_alinti": "Kavrama değişimine karar verdiler fakat yapılan yazılım degisimiyle su anda her viteste titremeye başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.6 TDI'da 2.000-3.000 km'de 1 litre yag eksiltme sikayeti bildiriliyor.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.skodaturkey.com/index.php?topic=41995.0",
+      "kaynak_alinti": "şehir içinde 3bin km'de, şehirler arasında ise 2bin km'de 1 litre yağı bitiriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Asiri yag eksiltmenin kaynagi turbo yaglama arizasi cikabiliyor ve turbo degisimi gerekiyor.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.skodaturkey.com/index.php?topic=41995.0",
+      "kaynak_alinti": "Turboda yağlanma var, değiştirilmesi gerekiyor dediler",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi tikanmasi motor arizi lambasi ve guc kaybina yol aciyor, degisim isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/egr-ve-dpf-agrizasi-mk6-golf-1-6-tdi.2529/",
+      "kaynak_alinti": "egr valfi tıkanmış ya değişecek yada iptal etceksiniz dediler",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikul filtresi tikanip DPF ikaz isigi yaniyor; temizlik veya degisim gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/egr-ve-dpf-agrizasi-mk6-golf-1-6-tdi.2529/",
+      "kaynak_alinti": "200 liraya dpf yi temizlettim halloldu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim (su) pompasi sizdirip sogutma suyu eksiltiyor, 100.000 km civarinda dagilabiliyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdi-sogutma-suyu-eksiltme--157662376",
+      "kaynak_alinti": "devirdaim patlamış. vw grubu kronik bu sorun",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektor bobini kilitlenmesi ani guc kaybi ve yolda kalmaya sebep oluyor.",
+      "km_araligi": "88.000 km",
+      "kaynak_url": "https://www.skodaturkey.com/index.php?topic=40569.0",
+      "kaynak_alinti": "2 nolu enjektör bobininden kaynaklanmış kitlemiş enjektör",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma kullanimda 5-5,5 litre, sakin uzun yolda 3,5 litre ortalama tuketim yakalaniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "Karma kullanımda ortalama tüketim 5 ile 5.5 litre arasında değişiyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "568 litrelik bagaj sinifinin en genislerinden ve kullanicilar tarafindan cok begeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "bagajı da 568 litre, camla beraber açılan bagaj kapağı çok kullanışlı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka diz mesafesi genis; 1,90 boyundaki yolcu arkada rahat oturabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "185 boyundayım, önde koltuğu kendime göre ayarlayınca, arta 1.90 boyunda biri bile rahatlıka sığabiliyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Kabin icine motor sesi neredeyse hic gelmiyor, ses yalitimi iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-octavia--134827?p=9",
+      "kaynak_alinti": "motor sesi içeriye hiç gelmiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon sert; kasis ve bozuk yolda konfor dusuk kaliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "şehiriçinde maalesef kasislerde ve bozuk yollarda çok konforlu olmadığını söyleyemem, araç suspansiyonları gerçekten sert",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "105 bg motor gucu kullanicilar tarafindan gunumuz sartlarinda yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "105 bg günümüz şartlarında az",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "DSG arizasinda servis onarim yerine komple sanziman degisimi oneriyor, maliyet cok yuksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dsg-problemleri-skoda-octavia-1-6tdi-dsg--43534513",
+      "kaynak_alinti": "şimdi bozuldumu servis uğraşmıyor komple yeniliyor, o zaman 12 bin tl",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "EGR ve DPF onarimlari yuksek fiyatlaniyor; EGR icin 1.500 TL, DPF icin 4.000 TL teklif ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/egr-ve-dpf-agrizasi-mk6-golf-1-6-tdi.2529/",
+      "kaynak_alinti": "1500 lira fiyat çektiler hocam egr için",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ust konsol yumusak olsa da kapi ust kisimlarinda sert plastik kullanilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-skoda-octavia-1-6-tdi-detayli-kullanici-izlenimleri--106939267",
+      "kaynak_alinti": "kapı üstlerinde sert plastik var",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

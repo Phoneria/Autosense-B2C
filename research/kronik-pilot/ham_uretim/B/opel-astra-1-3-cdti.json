@@ -1,0 +1,167 @@
+{
+  "hedef_id": "opel-astra-1-3-cdti",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbonun egzoz tarafında aşırı kurum birikmesi tıkanmaya ve çekiş kaybına yol açıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-1-3-cdti-turbo-gitti.135789/",
+      "kaynak_alinti": "Turbo söküldü egzoz tarafında aşırı kurumdan tıkanma mevcuttu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo şarj çıkışındaki hortum contasından kaçak şikayeti 130.000 km civarında görülüyor.",
+      "km_araligi": "130.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/astra/turbo",
+      "kaynak_alinti": "2011 model Opel Astra 1.3 dizel aracımda turbo şarj kısmının devamında bulunan hortumun bağlantı contasından kaçak olduğu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurum bağlayınca rölantide dalgalanma, güç kaybı ve arıza lambası oluşuyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://www.arabalar.com.tr/blog/opel-astra-1-3-cdti-kronik-sorunlari-bilmeniz-gerekenler",
+      "kaynak_alinti": "rölantide dalgalanma, güç kaybı ve arıza lambasının yanması",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "Yüksek kilometrede EGR ve manifold kirlenmesi rampada çekiş düşmesine neden oluyor.",
+      "km_araligi": "200.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/opel-astra-h-1-3-cdti-cekis-dusmesi.171248/",
+      "kaynak_alinti": "rampaya gelince aracın hızı ve çekişi düşüyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi düşük devir kullanımda partikül filtresi dolu uyarısı sık sık tekrarlıyor.",
+      "km_araligi": "20.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/astra-1-3-cdti-j-partikul-filtresi-uyarisi--92627044",
+      "kaynak_alinti": "Partikül filtresi dolu uyarısını aldım araç kendisi de sürmeye devam ediniz diyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör contası sızdırınca rölantide tik tik şeklinde metalik ses geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-h-1-3cdti-enjektor-sesi.85105/",
+      "kaynak_alinti": "hiç düşünmediğim aklıma gelmeyecek bir yerden enjektör contasından geliyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "manuel-sanziman",
+      "iddia": "Manuel şanzımanda uğultu, ısındıkça zor vites geçişi ve geri viteste cartlama yaygın.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.opelim.net/threads/astra-j-1-3-cdti-kronik-sanziman-sorunu.174344/",
+      "kaynak_alinti": "şanzıman ısındıktan sonra vitese zor gecis",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Easytronic (MTA) versiyonda düşük kilometrede vites değiştirmeme arızası bildiriliyor.",
+      "km_araligi": "28.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/2011-astra-1-3-cdti-h-kasa-mta-turbo-arizasi--46194413",
+      "kaynak_alinti": "28bin km de gecen gun arac yoldayken vites degistirmedi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Soğuk ilk çalıştırmada rölanti dalgalanması yakıt basınç sensörü kaynaklı oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/astra-j-1-3-cdti-geri-viteste-silkeleme-vuruntu-rolanti-dalgalanmasi.138913/",
+      "kaynak_alinti": "sabahların ilk çalıştırmada araçta rölanti dalgalanması oluyor. 5-10 km gittikten sonra dalgalanma kesiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma tüketim 4,8 lt/100 km seviyesinde; C segmenti için çok ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/yakit-cimrileri-serisi-opel-astra-1-3-cdti/",
+      "kaynak_alinti": "Ortalama 4,8 Litrelik bir karma tüketim verisi sunan araç, 1306 kilogram ağırlığında bir c segmenti araç için oldukça ekonomik",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.3 CDTI motoru düzenli bakımla kolay kolay arıza vermeyen dayanıklı bir ünite olarak anılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=7",
+      "kaynak_alinti": "neredeyse kusursuz bir motor. kolay kolay arıza vermez",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça ucuz ve bol; her sanayi sitesinde bu motordan anlayan usta bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=7",
+      "kaynak_alinti": "ucuz ve bol yedek parça, her sanayi sitesinde kendisinden anlayan bir usta bulunması",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Süspansiyon çukurlarda takırtı yapmıyor, tok ve sağlam bir araç hissi veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=14",
+      "kaynak_alinti": "süspansiyonlari çok iyi bence, çukura falan girince takur tukur sesler gelmiyor, tok bir araç hissi veriyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Manuel şanzımanın vites geçişleri sarsıntısız ve kullanımı kolay bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=7",
+      "kaynak_alinti": "vites geçişleri bu kadar sarsıntısız olan bi manuel araba görmemiştim",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Kalkışlarda ve alt devirlerde hantal; yokuşlarda yüklenmek gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897",
+      "kaynak_alinti": "kalkışlarda oldukça hantal bir araba olduğu doğrudur",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses izolasyonu yetersiz; yüksek hızda kabine ciddi rüzgar sesi giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=7",
+      "kaynak_alinti": "içeriye ciddi bir rüzgar sesi alır",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Bozuk yollarda iç trimden gelen tıkırtı ve gıcırtı sesleri şikayet konusu.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=7",
+      "kaynak_alinti": "bozuk satıhlarda gelen trim sesleri ve tıkırtılar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "agir-direksiyon",
+      "iddia": "Direksiyon diğer araçlara kıyasla sert ve ağır bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-astra-1-3-cdti--1306897?p=8",
+      "kaynak_alinti": "direksiyonu da diğer araçlara göre serttir ama çok da gözüme batan bir sorun değil",
+      "guven": "dusuk"
+    }
+  ]
+}

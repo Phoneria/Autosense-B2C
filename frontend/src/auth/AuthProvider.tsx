@@ -2,7 +2,8 @@ import { createContext, useCallback, useContext, useEffect, useState } from "rea
 import type { ReactNode } from "react";
 import { authRequest, getMe } from "./api";
 import type { User } from "./types";
-interface Auth { user: User | null; loading: boolean; error: string; reload: () => Promise<User | null>; logout: () => Promise<void>; }
+import type { Billing } from "../types";
+interface Auth { user: User | null; loading: boolean; error: string; reload: () => Promise<User | null>; logout: () => Promise<void>; setBilling: (billing: Billing) => void; }
 const Context = createContext<Auth | null>(null);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null), [loading, setLoading] = useState(true), [error, setError] = useState("");
@@ -28,7 +29,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     document.addEventListener("visibilitychange", check);
     return () => { active = false; window.removeEventListener("focus", check); document.removeEventListener("visibilitychange", check); };
   }, [user?.id]);
+  const setBilling = useCallback((billing: Billing) => { setUser(current => current ? { ...current, billing } : current); }, []);
   const logout = async () => { await authRequest("auth/session", undefined, "DELETE"); setUser(null); };
-  return <Context.Provider value={{ user, loading, error, reload, logout }}>{children}</Context.Provider>;
+  return <Context.Provider value={{ user, loading, error, reload, logout, setBilling }}>{children}</Context.Provider>;
 }
 export function useAuth() { const value = useContext(Context); if (!value) throw new Error("AuthProvider gerekli"); return value; }

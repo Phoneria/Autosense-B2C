@@ -1,7 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { analyze, lookupListingText, fetchGearDefault, fetchLocations, fetchVehicles } from "../api";
+import { analyze, fetchBilling, lookupListingText, fetchGearDefault, fetchLocations, fetchVehicles } from "../api";
+import { ApiError } from "../http";
+import { toPayload, type VehicleInput } from "../payload";
+import AccountBadge from "../components/AccountBadge";
+import ScenarioTab from "./ScenarioTab";
+import ProfileTab from "./ProfileTab";
+import RegionalTab from "./RegionalTab";
+import GuideTab from "./GuideTab";
+import PlanLock from "../components/PlanLock";
+import AccountMenu from "../components/AccountMenu";
+import { PlanChangeContext } from "../planChange";
 import {
-  CAR_PARTS, CATEGORIES, COLORS, DAMAGE_API_LABEL, DEFAULT_DAMAGE,
+  CAR_PARTS, CATEGORIES, COLORS, DEFAULT_DAMAGE,
   FUEL_OPTIONS, GEAR_OPTIONS, guessFuel,
 } from "../constants";
 import type { AnalysisResult, DamageState, LocationOption, VehicleBrand } from "../types";
@@ -23,8 +33,15 @@ function Field({ label, optional, children }: {
 }
 
 export default function AnalysisPage() {
-  const { user, logout } = useAuth();
-  const [logoutError, setLogoutError] = useState("");
+  const { user, setBilling } = useAuth();
+  const [tab, setTab] = useState<"analysis" | "scenario" | "guide" | "regional" | "profile">("analysis");
+  const [base, setBase] = useState<{ input: VehicleInput; result: AnalysisResult } | null>(null);
+  const planFeatures = user?.billing?.plan_features || ["analysis"];
+  const can = (feature: string) => planFeatures.includes(feature);
+  const TAB_FEATURE: Record<string, string> = { scenario: "scenarios", guide: "guide", regional: "regional" };
+  const requestPlan = (plan: "pro" | "premium") => { setPendingPlan(plan); setTab("profile"); };
+  const [pendingPlan, setPendingPlan] = useState<"pro" | "premium" | null>(null);
+  const [autoAnalyze, setAutoAnalyze] = useState(false);
   const [vehicles, setVehicles] = useState<VehicleBrand[]>([]);
   const [locations, setLocations] = useState<LocationOption[]>([]);
   const [loadingOptions, setLoadingOptions] = useState(true);
@@ -64,6 +81,21 @@ export default function AnalysisPage() {
     // bu yüzden burada hata kullanıcıya blokaj olarak gösterilmiyor.
     fetchLocations().then(setLocations).catch(() => setLocations([]));
   }, []);
+
+  // Plan değişince analiz ekranı sıfırdan başlasın: eski sonuç yeni planın
+  // açtığı/kapattığı bölümlerle karışmasın.
+  const plan = user?.billing?.plan;
+  const firstPlan = useRef<string | undefined>(plan);
+  useEffect(() => {
+    if (!plan || firstPlan.current === undefined) { firstPlan.current = plan; return; }
+    if (firstPlan.current === plan) return;
+    firstPlan.current = plan;
+    setResult(null); setBase(null); setError(""); setLookupText(""); setLookupNotice("");
+    setCategory("otomobil"); setBrandSlug(""); setSeriesSlug(""); setEngineSlug(""); setPackageSlug("");
+    setYear(""); setKm(""); setPrice(""); setCity(""); setDistrict("");
+    setFuel(""); setGear(""); setColor(""); setDescription(""); setAgirHasar(false);
+    setDamage({ ...DEFAULT_DAMAGE });
+  }, [plan]);
 
   const brands = useMemo(
     () => vehicles.filter((v) => v.category === category),
@@ -134,6 +166,7 @@ export default function AnalysisPage() {
       setDescription(data.description || "");
       setResult(null);
       setError("");
+      setAutoAnalyze(!!(selection.engine && data.year && data.km && data.price));
       setLookupNotice([selection.engine
         ? "İlan bilgileri dolduruldu. Analiz öncesinde alanları kontrol edin."
         : "Araç tam eşleştirilemedi. Okunan alanlar dolduruldu; eksikleri elle tamamlayın.",
@@ -146,8 +179,8 @@ export default function AnalysisPage() {
     }
   }
 
-  async function onSubmit(event: React.FormEvent) {
-    event.preventDefault();
+  async function onSubmit(event?: React.FormEvent) {
+    event?.preventDefault();
     // İl/ilçe BİLEREK zorunlu değil -- bkz. Backend/search/views_b2c.py
     if (!brand || !series || !engine || !year || !km || !price) {
       setError("Lütfen marka, seri, motor, yıl, km ve fiyat alanlarını doldurun.");
@@ -157,49 +190,103 @@ export default function AnalysisPage() {
     setError("");
     setResult(null);
     try {
-      const data = await analyze({
+      const input: VehicleInput = {
         category: brand.category,
         brand: brand.name, series: series.name, engine: engine.name,
-        package: pack?.name || null,
+        packageName: pack?.name || null, packages,
         city, district,
         year: Number(year), km: Number(km), price: Number(price),
         fuel, gear, color: color || null,
         description,
-        agir_hasar: agirHasar,
-        damage: CAR_PARTS
-          .filter(([key]) => damage[key] !== "original")
-          .map(([key, label]) => ({ parca: label, durum: DAMAGE_API_LABEL[damage[key]] })),
-      });
+        agirHasar,
+        damage: { ...damage },
+      };
+      const data = await analyze(toPayload(input));
+      if (data.billing) setBilling(data.billing);
+      setBase({ input, result: data });
       setResult(data);
       window.setTimeout(
         () => document.getElementById("results")?.scrollIntoView({ behavior: "smooth" }),
         80,
       );
     } catch (e) {
+      if (e instanceof ApiError && e.status === 402) fetchBilling().then(setBilling).catch(() => undefined);
       setError(e instanceof Error ? e.message : "Analiz tamamlanamadı.");
     } finally {
       setSubmitting(false);
     }
   }
 
+  // "Metinden doldur" sonrası analiz kendiliğinden başlasın: alanlar state'e
+  // yazıldıktan SONRA çalışması gerektiği için effect ile tetikleniyor.
+  useEffect(() => {
+    if (!autoAnalyze || lookupLoading || submitting) return;
+    if (!brand || !series || !engine || !year || !km || !price) return;
+    setAutoAnalyze(false);
+    void onSubmit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoAnalyze, lookupLoading, submitting, brand?.name, series?.name, engine?.name, year, km, price]);
+
   return (
-    <>
+    <PlanChangeContext.Provider value={requestPlan}>
       <header className="topbar">
-        <div className="brand-logo"><img src="/autosense-logo.png" alt="AutoSense" /></div>
-        <div className="account-nav"><span>{user?.email}</span><button type="button" onClick={() => { setLogoutError(""); void logout().catch((e: Error) => setLogoutError(e.message)); }}>Çıkış yap</button></div>
+        <button type="button" className="brand-logo" onClick={() => setTab("analysis")} aria-label="Analiz sayfasına git">
+          <img src="/autosense-logo-trim.png" alt="AutoSense" />
+        </button>
+        <nav className="top-nav" aria-label="Bölümler">
+          {([
+            ["analysis", "Analiz"], ["guide", "Araç Rehberi"], ["regional", "Bölgesel Fırsatlar"],
+          ] as const).map(([key, label]) => {
+            const locked = !!TAB_FEATURE[key] && !can(TAB_FEATURE[key]);
+            const active = tab === key || (key === "analysis" && tab === "scenario");
+            return (
+              <button key={key} type="button" className={`${active ? "active" : ""}${locked ? " locked" : ""}`}
+                aria-current={active ? "page" : undefined} onClick={() => setTab(key)}>
+                {label}
+                {locked && <em className="tab-lock">PRO</em>}
+              </button>
+            );
+          })}
+        </nav>
+        <div className="account-nav">
+          <AccountBadge onOpen={() => setTab("profile")} />
+          <AccountMenu onProfile={() => setTab("profile")} />
+        </div>
       </header>
 
-      {logoutError && <p role="alert" className="form-error">{logoutError}</p>}
+      {(tab === "analysis" || tab === "scenario") && (
+        <nav className="tabbar" aria-label="Analiz bölümleri">
+          {([["analysis", "Analiz"], ["scenario", "Senaryolar"]] as const).map(([key, label]) => (
+            <button key={key} type="button" className={`tab-${key}${tab === key ? " active" : ""}${key === "scenario" && !can("scenarios") ? " locked" : ""}`}
+              aria-current={tab === key ? "page" : undefined} onClick={() => setTab(key)}>
+              {label}
+              {key === "scenario" && !can("scenarios") && <em className="tab-lock">Pro</em>}
+            </button>
+          ))}
+        </nav>
+      )}
+      {tab === "scenario" && (can("scenarios") ? <ScenarioTab base={base} onGoAnalysis={() => setTab("analysis")} /> : (
+        <PlanLock eyebrow="NE OLURDU?" title="Senaryolar" requiredPlan="pro"
+          description="Km, hasar, paket veya vites farklı olsaydı piyasa değeri nasıl değişirdi?"
+          bullets={["Hızlı senaryolar: km ±20.000, hasarsız, paketi bilmiyorum…", "Kendi senaryonuzu kurun, 6 senaryoyu yan yana kıyaslayın", "Senaryolar kredi harcamaz"]} />
+      ))}
+      {tab === "guide" && (can("guide") ? <GuideTab /> : (
+        <PlanLock eyebrow="ARAÇ REHBERİ" title="Piyasada neler oluyor?" requiredPlan="pro"
+          description="En çok talep gören modeller, fiyat trendleri ve modellere özel kronik sorunlar."
+          bullets={["En çok talep gören, en hızlı satılan, fiyatı yükselen / düşen modeller", "Model arama ve talep listeleri", "Premium'da: model sayfası, fiyat/satış grafikleri, kronik sorunlar, karşılaştırma"]} />
+      ))}
+      {tab === "regional" && (can("regional") ? <RegionalTab /> : (
+        <PlanLock eyebrow="BÖLGESEL FIRSATLAR" title="Bölgesel fırsatlar" requiredPlan="pro"
+          description="Bir şehirde hangi modellerin hangi ilçede şehrin geri kalanına göre daha uygun satıldığını görün."
+          bullets={["İlçe bazında en uygun modeller", "İlçe ısı haritası", "Aynı model için ilçe ilçe karşılaştırma", "Premium'da: her fırsatın arkasındaki gerçek ilanlar"]} />
+      ))}
+      {tab === "profile" && <ProfileTab pendingPlan={pendingPlan} onPendingHandled={() => setPendingPlan(null)} />}
+      <div hidden={tab !== "analysis"}>
       <section className="hero">
         <div>
           <span className="eyebrow">İKİNCİ EL ARAÇ ANALİZİ</span>
           <h1>Bu ilan <i>gerçekten</i> uygun mu?</h1>
         </div>
-        <p>
-          Aracın bilgilerini girin; fiyatı gerçek piyasa verisiyle karşılaştırıp
-          pazarlık planınızı, değer kaybınızı ve ilanın açıklamasındaki çelişkileri
-          çıkaralım.
-        </p>
       </section>
 
       <form className="analysis-shell" onSubmit={onSubmit}>
@@ -360,6 +447,12 @@ export default function AnalysisPage() {
             {submitting ? "Analiz ediliyor…" : "Analizi başlat"}
             <span>→</span>
           </button>
+          {user?.billing && (
+            <p className="credit-hint">
+              Her analiz <b>1 kredi</b> harcar · Kalan: <b>{user.billing.total_credits}</b>
+              {user.billing.total_credits === 0 && <> · <button type="button" onClick={() => setTab("profile")}>{can("extra_credits") ? "Kredi ekle" : "Planı yükselt"}</button></>}
+            </p>
+          )}
         </div>
       </form>
 
@@ -370,11 +463,22 @@ export default function AnalysisPage() {
           <p>Formu doldurup “Analizi başlat” butonuna basın.</p>
         </div>
       )}
+      </div>
 
       <footer>
-        <div className="footer-logo"><img src="/autosense-logo.png" alt="AutoSense" /></div>
-        <p>Analizler mevcut ilan ve fiyat referanslarına dayanır.</p>
+        <div className="footer-inner">
+          <div className="footer-brand">
+            <div className="footer-logo"><img src="/autosense-logo-trim.png" alt="AutoSense" /></div>
+            <p>Analizler mevcut ilan ve fiyat referanslarına dayanır; ekspertiz raporu yerine geçmez.</p>
+          </div>
+          <div className="footer-contact">
+            <strong>İletişim</strong>
+            <p>Soru, geri bildirim ve iş birliği için bize yazın:</p>
+            <a href="mailto:autosense@gmail.org?subject=AutoSense%20ileti%C5%9Fim">autosense@gmail.org</a>
+          </div>
+        </div>
+        <div className="footer-bottom">© {new Date().getFullYear()} AutoSense</div>
       </footer>
-    </>
+    </PlanChangeContext.Provider>
   );
 }

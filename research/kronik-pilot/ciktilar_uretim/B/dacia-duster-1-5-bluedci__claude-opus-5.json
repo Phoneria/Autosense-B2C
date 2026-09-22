@@ -1,0 +1,170 @@
+{
+  "hedef_id": "dacia-duster-1-5-bluedci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue/SCR beyin arizasi kronik kabul ediliyor ve degisim maliyeti 40 bin TL seviyesinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-adblue-arizasi-nedeniyle",
+      "kaynak_alinti": "Servise gittiğimde AdBlue beyninin değişimi için 40 bin lira tutarında bir masraf çıkacağını söylediler. Bu durumun kronik bir sorun olduğu belirtildi.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue uyarisi 5.500 km gibi dusuk kilometrede cikip araci calismaz hale getirebiliyor.",
+      "km_araligi": "5.000-10.000 km",
+      "kaynak_url": "https://forum.donanimarsivi.com/konu/adblue-bozulmasi-dacia-duster-2023.787290/",
+      "kaynak_alinti": "araba daha yeni 5.500 km yi gormeye başlamıştı uyarı vermeye başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "1.5 dCi'de yuk altinda 'enjeksiyonu kontrol ettirin' uyarisi ve cekis kaybi tekrarliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/enjeksiyonu-kontrol-ettirin",
+      "kaynak_alinti": "2018 model 1.5 dCi Duster aracımla rampa çıkışında gaza yüklendiğimde 'enjeksiyonu kontrol ettirin' uyarısı almaya başladım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjeksiyon arizasi silinse de tekrarliyor, servisler sorunu kronik olarak tanimliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/dacia-kronik-enjeksiyon-arizasi-video",
+      "kaynak_alinti": "Sürekli arızayı sildirmemize rağmen kaç ustaya servise götürmemize rağmen çözülmedi kronik olduğu söyleniyor sürekli bu arızayı alıyoruz enjeksiyonu kontrol ettirin uyarısı sürekli çıkıyor ve gaz yemiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi kurumlanmasi 1.5 dCi'de en sik karsilasilan arizalarin basinda geliyor.",
+      "km_araligi": "30.000+ km",
+      "kaynak_url": "https://www.cetinrenault.com/blog/icerik/dacia-duster-15-dci-motor-omru",
+      "kaynak_alinti": "En sık karşılaşılan problemlerin başında gelir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arizasi sik bildiriliyor ve aracin gucu aniden dusuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otomacerasi.com/dacia-duster-1-nesil-kronik-sorunlar-bilmeniz-gerekenler/",
+      "kaynak_alinti": "Turbo arızaları sık karşılaşılan bir durum. Aracın gücü aniden düşebiliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Gosterge panelinde yanip sonen ikazlar ve kendi kendine reset atan radyo bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otomacerasi.com/dacia-duster-kronik-sorunlar-kendi-deneyimlerim-ve-cozum-onerilerim/",
+      "kaynak_alinti": "Örneğin, gösterge panelindeki bazı ışıklar bazen yanıp sönüyor, radyo kendi kendine reset atıyordu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Boya ince ve dayaniksiz; kolay ciziliyor ve yer yer kalkiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=16",
+      "kaynak_alinti": "boyası çok kalitesiz hemen çiziğe vs uğruyor ve boya kalkıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.5 Blue dCi test sartlarinda ortalama 5,3 litre/100 km yakiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.mesutabi.com/test-dacia-duster-prestige-1-5-blue-dci-115-bg-4x4/haberler/",
+      "kaynak_alinti": "Duster, fabrika verilerine göre; şehir içinde 4.8, şehir dışında 4.3 ve karma ise 4.4 yakıt tüketimi değerlerine sahip. Test süresince Duster, ortalama 5.3 yakıt tüketti.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "arazi-kabiliyeti",
+      "iddia": "210 mm yerden yukseklik ve 4x4 sistemiyle hafif arazide yetenekli.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabazzi.com/haber/dacia-duster-test-kirlenmek-sana-yakisiyor-1481.html",
+      "kaynak_alinti": "210 mm'ye varan yerden yüksekliği ve 350 mm'ye varan derinliği ile 4x4 kılığında yetenekli",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Duzenli bakimla 1.5 dCi motorun 300.000-500.000 km sorunsuz calismasi mumkun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.cetinrenault.com/blog/icerik/dacia-duster-15-dci-motor-omru",
+      "kaynak_alinti": "Düzenli bakımları yapılan bir 1.5 dCi motorun 300.000 ila 500.000 kilometre arasında sorunsuz çalışması mümkündür.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "478 litrelik bagaj hacmi segment icin genis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.epey.com/araba/2019-dacia-duster-1-5-blue-dci-115-bg-comfort-4x4.html",
+      "kaynak_alinti": "Bagaj Hacmi (5 Koltuk) 478 lt",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Sehir ici, hafif arazi ve bozuk yolda saglam durus ve konfor sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoruyasi.com/dacia-duster-1-5-4x4-prestige-testi/",
+      "kaynak_alinti": "Gerek şehir içinde, gerek hafif arazide, gerekse zorlu yol koşullarında sağlam duruşu, yol tutuşu ve konforuyla",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Euro NCAP'te 3 yildiz aldi; serit takip ve otonom acil frenleme sunulmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.autocarindia.com/car-news/2017-dacia-duster-scores-three-stars-in-euro-ncap-406833",
+      "kaynak_alinti": "The Duster lost out on achieving a higher score due to the lack of advanced driving aids – such as Lane Assist System and Autonomous Emergency Braking.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekanda neredeyse tamamen sert plastik kullanilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=16",
+      "kaynak_alinti": "malzemeler aracın tamamı neredeyse sert plastik.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "100-110 km/s'te ruzgar sesi belirgin, dizel motor ses yalitimi yetersiz.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/dacia-duster--2076322?p=16",
+      "kaynak_alinti": "araç 100-110 gibi giderken çok rüzgar sesi alıyordu. bununla birlikte klasik renault motoru olduğundan 1500km'deki araç direkt traktör gibi bağırıyordu. motor ses yalıtımı malesef çok kötü.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "95 BG dizel versiyon 0-100 km/s hizlanmasini 12,4 saniyede tamamliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/dacia-duster-2021-1-5-blue-dci-inceleme/",
+      "kaynak_alinti": "0-100 km hızlanmasını 12,4 saniyede tamamlayan araç maksimum 174 km hıza ulaşıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis periyodik bakim fiyatlari sahipler tarafindan cok yuksek bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/bakim/ucret",
+      "kaynak_alinti": "Dacia yetkili servis periyodik bakım fiyatları gerçekten çok yüksek!",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

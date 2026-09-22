@@ -1,0 +1,161 @@
+{
+  "hedef_id": "opel-crossland-1-2-t",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Yağ içinde çalışan triger kayışı 45.000-75.000 km arasında çatlayıp dağılabiliyor.",
+      "km_araligi": "45.000-75.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland/triger-kayisi",
+      "kaynak_alinti": "henüz 58.000 km'de olmasına rağmen triger seti tamamen dağıldı!",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Dağılan kayış parçacıkları yağ filtresini tıkayarak motor arızasına yol açıyor.",
+      "km_araligi": "45.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/opel-araclarda-trigger-kayis-yaglanmasi",
+      "kaynak_alinti": "Trigger kayışı normal bakım döneminden önce sorun çıkardı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Düşük kilometrede tekrarlayan 'Motor Arızası' uyarı ışığı çok sık şikayet ediliyor.",
+      "km_araligi": "0-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/crossland/motor-arizasi",
+      "kaynak_alinti": "2023 model Opel Crossland Essential marka aracım sürekli motor arızası veriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik şanzımanda 16.000 km civarında şanzıman beyin arızası bildirilmiş.",
+      "km_araligi": "16.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland-x/sanziman",
+      "kaynak_alinti": "şanzıman beyin arızası",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "manuel-sanziman",
+      "iddia": "Manuel şanzımanlı 2022 modellerde giderilemeyen şanzıman sesi şikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland-x/sanziman",
+      "kaynak_alinti": "Aldığım günden beri şanzıman sesinden dolayı birçok kez servise götürdüm ancak sorunu kimse çözemedi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo borusundan yağ damlatma arızası servise götürülen araçlarda görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland-x/crossland",
+      "kaynak_alinti": "Opel Crossland 1.2 aracımı...turbo borusundan yağ damlatma şikayetiyle bıraktım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Sıfır araçlarda navigasyon, ekran ve bluetooth arızaları bildiriliyor.",
+      "km_araligi": "0-20.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/crossland/sifir",
+      "kaynak_alinti": "navigasyon, ekran ve bluetooth sorunları",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "Yeni araçlarda kaput ve kapılarda erken paslanma şikayeti açılmış.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland?page=4",
+      "kaynak_alinti": "Yeni Opel Crossland'de Kaput Ve Kapılarda Paslanma",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehirlerarası kullanımda 5,5-6,5 L/100 km tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/opel-modelleri/crossland-yorumlari",
+      "kaynak_alinti": "Şehirlerarası arası 5.5 - 6.5 arası görüyorsunuz",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "İç hacim ve kabin kullanışlılığı sınıfının en iyileri arasında gösteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-crossland--6769802",
+      "kaynak_alinti": "yaşam alanındaki genişlik, değişkenlik ve kullanışlılığı söz konusu olduğunda küçük crossover sınıfının en iyisi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "410 litrelik bagaj B-SUV sınıfı için başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/crossland-x-kullanici-yorumu.140457/page-4",
+      "kaynak_alinti": "B crossover için çok başarılı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Acil frenleme, şerit takip ve kör nokta uyarısı gibi donanımlar memnuniyet yaratıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.opelim.net/threads/crossland-x-kullanici-yorumu.140457/page-4",
+      "kaynak_alinti": "Araç donanımı ile beni fazlasıyla memnun etti",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "130 HP 1.2 turbo motorun performansı kullanıcılarca tatminkar bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/opel-crossland-hakkinda-dusunceleriniz-neler--159190455",
+      "kaynak_alinti": "Motoru performansı oldukça tatminkar",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İşçilik ve iç malzeme kalitesi eski Opel seviyesinin altında bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-crossland--6769802",
+      "kaynak_alinti": "işçiliği eski opel kalitesinden fransız seviyesine gerilemiş",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Garanti onarımlarında yedek parça temini uzuyor, teslim tarihi verilemiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/garanti/crossland",
+      "kaynak_alinti": "aracın tesliminden sonra net bir teslim tarihi kesinlikle verilmedi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis işçilik ve bakım fiyatlarındaki artış şikayet konusu.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/crossland?page=4",
+      "kaynak_alinti": "Yetkili Serviste Aynı İşlem İçin 9 Bin TL'den 15 Bin TL'ye Fiyat Artışı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabinde trim sesleri ve sert plastiklerden kaynaklı gürültü bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-crossland--6769802?p=6",
+      "kaynak_alinti": "trim sesi geliyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

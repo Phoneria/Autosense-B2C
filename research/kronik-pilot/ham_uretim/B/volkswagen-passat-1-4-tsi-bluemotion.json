@@ -1,0 +1,167 @@
+{
+  "hedef_id": "volkswagen-passat-1-4-tsi-bluemotion",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DQ200 7 ileri DSG'de mekatronik arizasi vites vuruntusu ve sanziman uyari lambasiyla ortaya cikiyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/dq200-7-ileri-dsg-sanziman-sorunlari-cozumleri-ve-bakim-rehberi",
+      "kaynak_alinti": "Vites geçişlerinde tamamen durma, gösterge panelinde İngiliz anahtarı veya şanzıman uyarı ışığının yanması",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "DSG kuru kavrama sehir ici trafikte asiniyor, 60.000-100.000 km arasinda kavrama degisimi gerekebiliyor.",
+      "km_araligi": "60.000-100.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/dq200-7-ileri-dsg-sanziman-sorunlari-cozumleri-ve-bakim-rehberi",
+      "kaynak_alinti": "Ortalama 60.000–100.000 km arasında kavrama değişimi gerekebilir; ağır trafik koşullarında bu 40.000–50.000 km'ye düşer.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Zincirli 1.4 TSI turevlerinde zincir uzamasi gergiyi asiyor ve zincir atlama riski doguyor.",
+      "km_araligi": "120.000-180.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/volkswagen-golf-1.4-tsi/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Zincir zamanla uzar, gergi elemanı uzamayı tolere edemez",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Plastik govdeli su pompasi ve termostat govdesi isi cevrimiyle catlayip sogutma suyu kaciriyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/volkswagen-golf-1.4-tsi/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Plastik gövdeli parçalar ısı çevrimiyle çatlar",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Direkt enjeksiyon nedeniyle emme tarafinda karbon birikimi olusuyor ve temizlik gerekiyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/volkswagen-golf-1.4-tsi/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Emme bölgesinde karbon birikir",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "1.4 TSI'de turbo aktuator arizasi guc kaybi ve motor kontrol lambasi ile kendini gosteriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://turbotamiriankara.com/1-4-tsi-turbo-arizasi/",
+      "kaynak_alinti": "Aktüatör arızası",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "Cam tavanli Passat'larda tavan cercevesi catliyor ve yagmurda kabine su siziyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/kronik/passat",
+      "kaynak_alinti": "Yağmur yağdığında veya aracı yıkadığımda tavan su alıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Tavan ile on cam birlesim bolgesinde tekrarlayan boya atmasi sikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/kronik/passat",
+      "kaynak_alinti": "Tavanı ile ön camı arasında sürekli olarak boya atması sorunu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yolda 4,5-5 litre seviyesinde tuketim yapabiliyor, karma kullanimda 7 litreyi asmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/yeni-vw-passat-1-4-tsi-125-hp-1-4-tsi-150-hp--103874272-2",
+      "kaynak_alinti": "Yakıtı 7 lt üzeri görmedim, uzun yolda rahat 4.5-5",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Tek turbolu 1.4 TSI 122 hp surumu yag eksiltmeden yuksek kilometrelere cikabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/tsi-motorlarda-yag-eksiltme-sorunu--143688392",
+      "kaynak_alinti": "2012-2017 arası sıfır 1.4 tsi 122 b7 passat kullandık 88 binde sattık, yağ eksilmesiyle hiç karşılaşmadık.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Kabin ses yalitimi sinif ustu; bozuk zeminde ice cok az yol sesi giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.mazdagaraj.com/konular/vw-passat-b8-izlenimlerim.3735/",
+      "kaynak_alinti": "Passat'ın iç sessizliği desibel biriminden Mercedes E Kasa ile aynı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Suspansiyon ayari basarili bulunuyor ve uzun yolda konforlu bir surus sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/passat-1-4-tsi-comfort-alinirmi--52364716",
+      "kaynak_alinti": "Süspansiyon başarılı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Virajlarda dengeli sasi ayari surucuye guven veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.mazdagaraj.com/konular/vw-passat-b8-izlenimlerim.3735/",
+      "kaynak_alinti": "Virajlarda size yeterli güveni çok rahat veriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste periyodik bakim ucreti ilan edilenin iki katina kadar cikabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/passat/servis-bakim",
+      "kaynak_alinti": "Web sitesinde ve Volkswagenim uygulamasında bakım ücreti yaklaşık 7.500 TL olarak görünüyordu. Ancak servisle randevu oluşturduktan sonra tarafıma telefonla ulaşıldı ve bakım ücretinin 15.400 TL olduğu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Sunroof cercevesi gibi tekil parcalar icin serviste on binlerce liralik ucret isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/kronik/passat",
+      "kaynak_alinti": "Volkswagen Passat Sunroof Çerçevesindeki Çatlak İçin 55 Bin TL Ücret Haksız",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Istanbul ve Ankara trafiginde sehir ici tuketim sakin kullanimda bile 8-9 litrenin altina inmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/1-4-tsi-motor--4350770",
+      "kaynak_alinti": "2017 passat 122 bg 1.4 tsi ortalama yakıt tüketimi istanbul ankara trafiğinde 8-9 litrenin altına sakinde kullansanız düşmez.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Orta konsol ve arka gogus plastiklerinden zamanla citirti sesleri geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/passat-1-4-tsi-comfort-alinirmi--52364716",
+      "kaynak_alinti": "Orta konsoldaki sert plastik bölmelerinden ve arka göğüsten çıtırtılar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Dusuk devirde turbo bosluğu hissediliyor, yuklu ve yokus surusunde performans dusuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otosorular.com/volkswagen-passat-14-tsi-bluemotion-alinir-mi-tavsiye-edenler",
+      "kaynak_alinti": "Turbo boşluğu hissedilebilir, özellikle düşük devirlerde aniden hızlanmak istediğinde",
+      "guven": "dusuk"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "hedef_id": "fiat-egea-cross-1-4-fire",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.4 Fire motorda dusuk kilometrede yag eksiltme yaygin; bazi araclarda 2.000 km'de yag bitiyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/fiat-14-fire-yag-eksiltme",
+      "kaynak_alinti": "2023 model, Nisan ayı trafiğe çıkışlı Fiat Egea Cross 1.4 aracımda aldığım günden bu yana yağ yakma sorunu var. 2.000 km'de yağ bitiyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat mahfazasi ve baglanti borulari kirilarak hararet ile sogutma suyu kaybina yol aciyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/termostat",
+      "kaynak_alinti": "Fiat Egea 1.4 95 HP 2020 model aracım 55 bin kilometredeyken bugün termostat arızası verdi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj baskı balatası 10.000 km altinda bile yanabiliyor ve garanti disi birakiliyor.",
+      "km_araligi": "6.000-40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/debriyaj",
+      "kaynak_alinti": "10 Bin Km'de Baskı Balata Yandı, Garanti Dışı Bırakıldım!",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Ince boya nedeniyle tavanda boya atmasi ve vernik alti boya kusurlari sik bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/boya",
+      "kaynak_alinti": "Fiat Egea Cross 2021 model aracımın tavanında yaklaşık 1,5 yıl önce boya atması fark ettim",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekrani kendiliginden kapaniyor, kararıyor veya dokunmatigi calismiyor.",
+      "km_araligi": "30.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/ekran",
+      "kaynak_alinti": "radyo ekranı yaklaşık 1 haftadır sürekli olarak kendiliğinden kapanıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima her acildiginda kabine surekli ugultu sesi geldigi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/kronik",
+      "kaynak_alinti": "Araç aldığım günden beri klimayı her açtığımda içeriden sürekli gelen rahatsız edici bir uğultu sesi var.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Mars 5-6 dakika basmayip aracin calismadigi vakalar bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/kronik",
+      "kaynak_alinti": "Aracımı çalıştırmak istediğimde 5–6 dakika boyunca marş basmıyor, bu sırada radyatör sıvısı ısısı aşırı yüksek uyarısı alıyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "Arka kapi kilitleri cocuk kilidi kapaliyken disaridan acilmiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/kilit",
+      "kaynak_alinti": "Çocuk kilidi aktif olmamasına rağmen, yolculuk sonrasında ön kapıdan indiktikten sonra arka kapılar dışarıdan açılmıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parca maliyetleri rakiplerine gore ucuz.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "Ekonomik yakıt tüketimi, ucuz yedek parça maliyetleri ve geniş servis ağı ile Egea Cross öne çıkıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Yetkili servis agi 60'tan fazla ile yayilmis durumda.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/fiat-egea-cross-1.4-fire-alinir-mi-performans-yakit-tuketimi-ve-kullanici-yorumlari-2026",
+      "kaynak_alinti": "60+ il yayılımındaki servis ağı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Suspansiyon bozuk yollardaki darbeleri iyi emerek konforlu surus sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "Süspansiyon sistemi, bozuk yollardaki darbeleri başarılı bir şekilde emerek konforlu bir sürüş sağlıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk diz mesafesi segment rakiplerine gore ferah.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "Arka koltuk diz mesafesi, aynı segmentteki birçok rakibine kıyasla daha ferah.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma kullanimda klima acikken 7,5 lt/100 km ortalama bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/fiat-egea-crossun-urban-paketiyle-3000-km-yapan-birinden-aracin-arti-ve-eksileri",
+      "kaynak_alinti": "tüm bu yolculuklarda klimam açıktı ve sürüş ortalamamda tüketimim 7.5lt/100km oldu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Sehir icinde 11-13 lt/100 km tuketim bildiren kullanicilar var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-cross/yakit-tuketimi",
+      "kaynak_alinti": "şehir içi kullanımda 11–13 litre bandında yakıt tüketimi görüyorum",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "95 HP atmosferik motor yokusta ve yukluyken performans sikintisi yasatiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "özellikle yokuşlarda veya yüklü haldeyken performanstan ödün verebiliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Yuksek hizda ruzgar ve yol sesi kabine belirgin sekilde giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "Kabin içi ses yalıtımı, özellikle yüksek hızlarda rüzgar ve yol sesini içeri alabiliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kabinde yumusak dokunuslu malzeme yerine sert plastikler agirlikta.",
+      "km_araligi": null,
+      "kaynak_url": "https://egeaylageziyorum.com/egea-cross-alinir-mi/",
+      "kaynak_alinti": "Yumuşak dokunuşlu malzemeler yerine sert plastiklerin ağırlıkta olmasına rağmen, montaj kalitesi sağlam.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Kor noktalar nedeniyle park etmek zor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksiseyler.com/fiat-egea-crossun-urban-paketiyle-3000-km-yapan-birinden-aracin-arti-ve-eksileri",
+      "kaynak_alinti": "Park etmesi biraz zor. kör noktaları mevcut.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

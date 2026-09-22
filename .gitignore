@@ -17,3 +17,6 @@ test-results-https/
 playwright-report/
 playwright-https-report/
 .DS_Store
+
+# Yük testi oturum çerezleri (yerel/test DB'sine ait)
+scripts/loadtest/sessions.json

@@ -1,0 +1,161 @@
+{
+  "hedef_id": "volkswagen-passat-1-6",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "60-70 bin km civarında enjektör tıkırtısı ve artan yakıt tüketimi yaygın.",
+      "km_araligi": "60.000-150.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdi-passat-enjektorleri-kronik-sorunlu--99139696",
+      "kaynak_alinti": "1.6 tdi motorlarin neredeyse tamaminda 60-70 bin km lerde ortaya cikiyormus",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG şanzımanda 100.000-140.000 km civarında kavrama ve mekatronik arızası tekrarlıyor.",
+      "km_araligi": "100.000-140.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/passat/dsg",
+      "kaynak_alinti": "2017 model Passat arabam 140.000 km'de DSG hatası verdi. Şimdi ise 2018 model Passat aracım daha yeni 100.000 km'yi geçmiş ve aynı hatayı veriyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "90.000 km civarında EGR arızası çıkıyor, kullanıcılar çoğunlukla iptal ettiriyor.",
+      "km_araligi": "90.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/passat-partikul-sorunu--159780000",
+      "kaynak_alinti": "2019 da 90.000 km lerde EGR arızası oluştu. egr iptal edildi ve yazılım atıldı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "DPF tıkanması ve anormal sık rejenerasyon 130.000 km sonrası sık bildiriliyor.",
+      "km_araligi": "130.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/passat-partikul-sorunu--159780000",
+      "kaynak_alinti": "Şimdi araç yaklaşık 1 senedir hemen hemen düzenli aralıklarla (ayda 1) rejenerasyona giriyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim pompası 100.000 km civarında sızdırıp dağılıyor ve soğutma suyunu boşaltıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdi-sogutma-suyu-eksiltme--157662376",
+      "kaynak_alinti": "103bin kmde yolda giderken soğutma sıvısı eksik kırmızı uyarı verdi. Sağa çekip stop edip baktığımda bu devirdaim dağılmış ve tüm suyu salmıştı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "tavan-su-kacagi",
+      "iddia": "Cam tavan çerçevesi kendiliğinden çatlıyor ve yağmurda tavandan içeri su alıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/passat/cam-tavan",
+      "kaynak_alinti": "Özellikle yağmur yağdığında veya aracı yıkadığımda tavan su alıyor ve bu durum hem aracın kullanımını hem de güvenliğini olumsuz etkiliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Ön ve arka cam ile tavanın birleştiği yerde boya atması ve paslanma görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/boya/tavan",
+      "kaynak_alinti": "ön ve arka camların tavan ile birleşme yerlerinde boya atması ve buna bağlı olarak bagaj kapağı ile cam arasındaki boşluklarda paslanmalar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo VNT aktüatörünün takılması sonucu güç kaybı bildirilen kronik arızalardan.",
+      "km_araligi": null,
+      "kaynak_url": "https://kronikariza.com.tr/arac/volkswagen-passat-1-6-tdi-bluemotion-kronik-sorunlari/",
+      "kaynak_alinti": "Turbo VNT Aktüatör Takılması ve Güç Kaybı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Karma yakıt tüketimi 4 litre seviyesinde, şehir dışında 3,7 litreye kadar iniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/vw-passat-1-6-tdi-bmt-comfortline-dsg-en-cok-ikinci-eli-olan-araba/",
+      "kaynak_alinti": "Şehir için 4,5 ve şehir dışı 3,7 litrelik bir yakıt tüketim değerine sahip",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Uzun yol konforu ve koltuk desteği kullanıcılar tarafından çok başarılı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/volkswagen-passat",
+      "kaynak_alinti": "uzun yol konforu ve koltuk desteği çok başarılı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Yol, rüzgar ve motor sesi yalıtımı iyi; kabin uzun yolda sessiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/passat-1-6-tdi-hakkinda-hersey-2011-2012-2013-2014--134625677",
+      "kaynak_alinti": "Araç genel olarak gerek yol sesi olsun gerek rüzgar ve motor sesi olsun oldukça başarılı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka koltuk genişliği ve iç hacim D segmentte rakiplerinin üzerinde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdi-trendline-passat-alinir-mi--136266611",
+      "kaynak_alinti": "passat genişlik, konfor, kalite olarak premiumların hemen altında, rakipsiz bir konumda",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci el piyasasında alım-satımı çok hareketli, değerini koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobille-yasam/vw-passat-1-6-tdi-bmt-comfortline-dsg-en-cok-ikinci-eli-olan-araba/",
+      "kaynak_alinti": "İkinci el piyasasında yoğun bir alım-satım hareketliliği olan araç, alırken de satarken de kullanıcısını üzmüyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "DSG kavrama/mekatronik onarımı yetkili serviste 100 bin TL seviyelerine çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/passat/dsg",
+      "kaynak_alinti": "2018 model Passat aracımda yaşanan DSG kavrama arızası için aracı servise götürdüğümde, tarafıma 3 gün önce 102.000 TL'lik bir onarım bedeli çıkarılmıştır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yedek parça fiyatları alt segment VW modellerine göre daha pahalı.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/volkswagen-passat",
+      "kaynak_alinti": "Yedek parça Golf kadar ucuz değil",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "17 inç jantlarla bozuk yolda süspansiyon sert hissettiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forumarac.com/yorumlar/otomobil/volkswagen-passat",
+      "kaynak_alinti": "17 jantlarla bozuk yolda sert hissettiriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.6 dizel motor aracın ağırlığına göre yetersiz bulunuyor, zorlanınca tüketim artıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdi-trendline-passat-alinir-mi--136266611",
+      "kaynak_alinti": "Bana göre 1.6 bu kasaya yetmiyor. Yürüsün isterseniz de yakıta yükleniyorsunuz bi anlamı kalmıyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

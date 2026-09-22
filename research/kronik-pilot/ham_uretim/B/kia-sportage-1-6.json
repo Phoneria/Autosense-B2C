@@ -1,0 +1,131 @@
+{
+  "hedef_id": "kia-sportage-1-6",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.6 GDI motorda 2.500-4.000 km'de 1 litreye varan yağ eksiltme şikayeti yaygın.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/kia-sportage-1-6-gdi-yag-eksiltme--137791376",
+      "kaynak_alinti": "Kia Sportage 2012 model arabam 4.000km de ortalama 1 lt'ye yakın yağ eksiltiyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Yağ yakma ilerleyince segman değişimi/motor revizyonu gerekebiliyor.",
+      "km_araligi": "55.000-72.000 km",
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-1-6-gdi.15101/",
+      "kaynak_alinti": "Yağ yakma sorunu ile bende karşılaştım, Sekmanlar değişti.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Start-stop'lu 1.6 GDI'larda erken 'zayıf akü' uyarısı ve akü zafiyeti sık görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/sportage-zayif-aku-uyarisi-yardim--134795038",
+      "kaynak_alinti": "sabah sadece sistemi çalıştırdığında, 'zayif aku uyarisi lutfen sistemi motor calisirken kullaniniz' uyarısı alıyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Bozuk yollarda ön takımdan gelen vuruntu/tıkırtı sesi tekrar eden şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/kia-sportage-2011-onden-gelen-ses-problemi-yardimlasma-ve-bilgi-paylasimi--44108364",
+      "kaynak_alinti": "bozuk yollarda sarsılma, lokurtu, vuruntu gibi rahatsız edici ses",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Sürüş konforu sınıfının üstünde, uzun yolda yorulmadan yol alınıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/kia-sportage--472787?p=9",
+      "kaynak_alinti": "sanki arabada değil evin içinde yolculuk yapıyorsunuz",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yüksek hızda yol tutuşu güven verici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-1-6-gdi.15101/",
+      "kaynak_alinti": "Yol tutuşu güzel yüksek hızlarda da güven veriyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "İç hacim geniş, kabin ferah olarak değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/kia-sportage-1-6-gdi--144661509",
+      "kaynak_alinti": "konforlu, iç hacmi geniş, yol tutuşu iyi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Concept Plus paketinde otomatik park ve geri görüş kamerası gibi donanımlar standart.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-alinir-mi.10169/",
+      "kaynak_alinti": "Concept Plus dolu dolu bir paket. Harika bir cam tavan, otomatik park, geri görüş kamerası",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi 465 litre ile sınıfında yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-1-6-gdi-otomatik-135-ps-consept-plus.5175/",
+      "kaynak_alinti": "465 litre olması lazım",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "1.6 GDI otomatikte şehir içi tüketim 12-13,5 litreye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-1-6-gdi-otomatik-135-ps-consept-plus.5175/",
+      "kaynak_alinti": "Çokkk fazla yakıyor. Resmen içiyor yakıtı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Atmosferik 1.6 GDI, SUV gövdesi için zayıf kalıyor; yokuşta vites düşürmek gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabainceleme.com/2013/09/kia-sportage-kullanici-yorumlari.html",
+      "kaynak_alinti": "Çekişi çok zayıf, performans için düşük vites yüksek devir kullanmak gerekiyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Torpidonun yolcu airbag bölgesinde kendiliğinden çatlama şikayeti yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/kia/kia-sportage-2012-airbag-ustu-catlak-ve-guvenlik-sorunu",
+      "kaynak_alinti": "2012 model benzinli Kia Sportage aracımın yolcu tarafı airbag üstü göğüs bölümünde uzun ve derin bir çatlak oluştu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Kalın A sütunu nedeniyle sola dönüşlerde görüş açısı kısıtlı.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/kia-sportage-1-6-gdi-otomatik-135-ps-consept-plus.5175/",
+      "kaynak_alinti": "A sütunundan kaynaklı sola görüşler çok kısıtlı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Bozuk yollarda süspansiyon sert, darbeleri kabine iletiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/kia-sportage-1-6-gdi--144661509",
+      "kaynak_alinti": "kötü yollarda sert",
+      "guven": "dusuk"
+    }
+  ]
+}

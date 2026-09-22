@@ -1,0 +1,113 @@
+{
+  "hedef_id": "peugeot-2008-1-2-puretech",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Yağ banyolu triger kayışından dökülen parçacıklar yağlama sistemini tıkayarak motor hasarına yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/1.2-puretech-motor-analizi-gercek-sorunlar-abartilanlar-ve-kontrol-listesi",
+      "kaynak_alinti": "asıl hasarı veren şey çoğu zaman kayışın kopması değil, dökülen parçacıkların yağlama sistemini tıkamasıdır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Üretici 90.000 km'de değişim önerse de 40-60 bin km aralığında kayışta ciddi yıpranma görülüyor.",
+      "km_araligi": "40.000-60.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/1.2-puretech-motor-analizi-gercek-sorunlar-abartilanlar-ve-kontrol-listesi",
+      "kaynak_alinti": "üretici 90 bin km civarında değişim önerse de birçok kullanıcı 40-60 bin km aralığında kayışta ciddi yıpranma görebiliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "75/100/130 HP hibrit olmayan versiyonlarda model yılından bağımsız olarak ıslak kayış kullanılmaya devam ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/stellantis-kronik-sorunlari-peugeot-citroen-opel-ve-jeep",
+      "kaynak_alinti": "model yılından bağımsız olarak 75/100/130 beygir gücündeki hibrit olmayan versiyonlarda ıslak kayışın devam ettiği",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "2024 model 2008'de 12.000 km'den itibaren tekrarlayan 'motor yağ seviyesini ayarlayınız' uyarısı geliyor.",
+      "km_araligi": "12.000-33.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/peugeot/peugeot-2008-aracta-tekrarlayan-yag-seviyesi-uyarisi-ve-cozum-talebi",
+      "kaynak_alinti": "19.02.2024 tarihinde sıfır olarak aldığım Peugeot 2008 aracımla ilgili olarak, ilk bakımın 15.000 kilometrede olması gerekirken araç daha yaklaşık 12.000 kilometredeyken 'motor yağ seviyesini ayarlayınız' uyarısı verdi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "2008 1.2 Hybrid'de 4.000 km'de şanzıman arızası nedeniyle araç yolda kaldı.",
+      "km_araligi": "4.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/peugeot/yeni-peugeot-2008de-sanziman-arizasi-ve-yetkili-servis-ilgisizligi",
+      "kaynak_alinti": "Araç henüz 4 aylık ve sadece 4000 kilometredeyken yıllık iznim sırasında Giresun'da arıza yaparak yolda kaldım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kaporta-pas",
+      "iddia": "Sıfır alınan 2008'de 3 ay içinde kapı menteşe cıvatalarında belirgin paslanma çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/peugeot/sifir-peugeot-2008de-kapi-menteselerindeki-pas-ve-servis-kayitlari-endisesi",
+      "kaynak_alinti": "Peugeot 2008 model aracımı sıfır olarak aldım ve araç henüz 3 aylık, yaklaşık 1 aydır sol ön ve arka kapı menteşelerindeki gergin cıvatalarından belirgin bir paslanma sorunu yaşıyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "2024 model 2008'in arka tamponunda 16 ay içinde belirgin renk solması oluşuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/peugeot/arka-tampon-boyasi-16-ayda-soldu-garanti-kapsami-talebi",
+      "kaynak_alinti": "Nisan 2024'te Fethiye Peugeot Bakırcılar bayisinden sıfır olarak aldığım Peugeot 2008 Allure paket aracımın arka tamponunda, araç daha 2 yaşına bile gelmeden belirgin bir renk solması oluştu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.2 PureTech motor ödüllü verimliliğiyle öne çıkan bir benzinli birim olarak değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/1.2-puretech-motor-analizi-gercek-sorunlar-abartilanlar-ve-kontrol-listesi",
+      "kaynak_alinti": "Ödüllü verimliliği ve canlı performansıyla öne çıktı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "Üç silindirli 1.2 PureTech, hacmine göre canlı performansıyla öne çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/1.2-puretech-motor-analizi-gercek-sorunlar-abartilanlar-ve-kontrol-listesi",
+      "kaynak_alinti": "Ödüllü verimliliği ve canlı performansıyla öne çıktı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "2008, 2019 Euro NCAP testinde 4 yıldız ve %91 yetişkin koruma puanı aldı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabalar.com.tr/peugeot/2008",
+      "kaynak_alinti": "2019 yılı Euro NCAP çarpışma testi sonucudur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Triger kayışı ve setinin değişiminde kullanıcılar beklentinin üzerinde bakım maliyetiyle karşılaşıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/1.2-puretech-motor-analizi-gercek-sorunlar-abartilanlar-ve-kontrol-listesi",
+      "kaynak_alinti": "Triger kayışı ve ilgili setin değişimi sırasında beklentilerinin üzerinde bir bakım maliyetiyle karşılaştıklarını bildirmiştir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "servis-az",
+      "iddia": "Buji ve bobin değişimi yetkili servis dışında yapılmamalı, sonrasında yazılımla kontrol gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/puretech--5424345",
+      "kaynak_alinti": "bobin ve bujileri yetkili servis dışında değiştirmeyiniz",
+      "guven": "dusuk"
+    }
+  ]
+}

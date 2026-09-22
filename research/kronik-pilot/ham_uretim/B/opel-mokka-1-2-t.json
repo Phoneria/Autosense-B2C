@@ -1,0 +1,167 @@
+{
+  "hedef_id": "opel-mokka-1-2-t",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Yag icinde calisan triger kayisi deforme olup motor kilitlenme riski yaratiyor.",
+      "km_araligi": "50.000-80.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka/kronik",
+      "kaynak_alinti": "Garanti Kapsamında Triger Kayışı Deformasyonu Ve Motor Kilitlenme Riskine Acil Çözüm Talebi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Kopan kayis parcalari yag pompasi suzgecini tikayip yag basinci arizasina yol aciyor.",
+      "km_araligi": "60.000 km / 4 yil",
+      "kaynak_url": "https://ozsimge.com/genel-arizalar/1-2-puretech-triger-kayisi-sorunu/",
+      "kaynak_alinti": "Belt in Oil",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Tavan boyasinin atmasi/soyulmasi kronik uretim hatasi olarak sikayet ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka/kronik",
+      "kaynak_alinti": "Opel Mokka Tavan Boya Atması: Kronik Üretim Hatası Ve Yetkili Servis Reddi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Duzenli bakima ragmen aku arizasi nedeniyle aracin yolda kalmasi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka",
+      "kaynak_alinti": "Yıllık Bakım Sonrası Akü Sorunu İle Yolda Bırakıldım",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Motor kontrol unitesi/beyin arizasi tekrar ediyor ve onarimi cok pahali.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka",
+      "kaynak_alinti": "Motor Kontrol Ünitesi Arızası Ve 19 Bin TL Ücret Talebi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cam-krikosu",
+      "iddia": "Sifir kilometre araclarda camlarin kendiliginden acilmasi sikayeti var.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka/kronik",
+      "kaynak_alinti": "Camların Kendiliğinden Açılması Ve Boya Sorunu Güvenlik Riskine Yol Açıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Dusuk kilometrede kalorifer hortumu patlamasi bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka/kronik",
+      "kaynak_alinti": "Düşük Kilometrede Kalorifer Hortumu Patlaması, Opel Mokka'da Sürekli Mağduriyet",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "silindir-kapak-conta",
+      "iddia": "Garanti suresinde conta arizasi ve asiri su eksiltme sikayeti bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka",
+      "kaynak_alinti": "Garanti Kapsamında Motor Ve Conta Arızası Çözülmezken Servis Ücret Talebi Ve Araç Hasarı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sehirlerarasi 5,5 litre, yogun sehir ici trafikte bile 8,5 litre civari tuketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-mokka--3214632?p=10",
+      "kaynak_alinti": "Şehir arası yolda 100-110 bandında giderseniz 5,5 litre civarları yakarken, şehir içi yoğun trafikte bile 8-8,5 litrenin üzerine pek çıkmıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yuksek govdesine ragmen 140-160 km/s hizlarda cizgisini koruyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2022-mokka-deneyimleri--154954423",
+      "kaynak_alinti": "Boyuna ve yerden yüksekliğine rağmen çizgisini bozmadan (140-160 km) yolda gidiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "SUV sinifina gore yol ve ruzgar sesi yalitimi basarili bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-mokka--3214632?p=14",
+      "kaynak_alinti": "yol sesi ve rüzgar sesi suv araç için oldukça iyi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "Suspansiyon kucuk ve orta buyuklukteki cukurlari iyi sonumluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-mokka--3214632?p=14",
+      "kaynak_alinti": "Süspansiyonlar küçük ve orta büyüklükteki çukurları gayet iyi sönümlüyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Akilli LED far sistemi gece surusunde belirgin fark yaratiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-mokka--3214632?p=10",
+      "kaynak_alinti": "Akıllı led farları gerçekten fark yaratıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "350 litrelik bagaja bebek arabasi zar zor sigiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/opel-mokka--3214632?p=10",
+      "kaynak_alinti": "Bagajı sadece 350 litre ve bizim bebek arabası zar zor sığıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Ic hacim ve diz mesafesi dar; kalabalik aileler icin yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/opel-modelleri/mokka-yorumlari",
+      "kaynak_alinti": "Araç çok dar, diz mesafesi çok dar",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Kalin C sutunu sag capraz gorusu ciddi sekilde kisitliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2022-mokka-deneyimleri--154954423",
+      "kaynak_alinti": "C sütünu çok kalın, bu sebeple mesela bir istasyondan çıkarken sağ çapraza bakmak zorunda kalırsanız, bu açıda görüşün çok kısıtlı olduğunu düşünüyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste periyodik bakim ucretleri asiri bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka",
+      "kaynak_alinti": "Randevuya Rağmen Uzun Bekleme Ve Aşırı Bakım Ücreti",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Parca tedarik edilemedigi icin onarim aylarca sarkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/opel/mokka",
+      "kaynak_alinti": "Direksiyon Kutusu Eksikliği Nedeniyle Opel Mokka Tamirinde 3 Aylık Gecikme Ve Ücretsiz Araç Talebi",
+      "guven": "orta"
+    }
+  ]
+}

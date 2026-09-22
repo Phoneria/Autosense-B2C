@@ -1,0 +1,158 @@
+{
+  "hedef_id": "renault-clio-1-5-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo elektrovalfi/elektronik kapağı bozulunca \"enjeksiyonu kontrol ettirin\" uyarısı ve güç kaybı çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-3-1-5dci-enjeksiyon-kontrol-ettirin-arizasi-cozuldu--131856042",
+      "kaynak_alinti": "turbo boşaltmadığı için fazla basınç oluşuyor o sebepten enjeksiyon arızası çıkıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör devresi arızasında motor arıza lambası yanıyor ve motor sarsıntılı çalışıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio-1-5-dci-enjektor-beyin-arizasi.54697/",
+      "kaynak_alinti": "arıza ışığı yanıyor.sarsıntılı çalışmaya başlıyor.enjektörlerden biri çalışmıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Ani çekiş düşüklüğü şikayetlerinde aşınmış baskı-balata en sık çıkan neden.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-5-dci-cekis-dusuklugu--137678461",
+      "kaynak_alinti": "Sorun yüzde 99 baskı balata",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "EDC şanzımanda ısındıktan sonra 1-3-5 vitesler devre dışı kalıp şanzıman uyarısı veriyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio-1-5-dci-otomatik-edc-1-3-5-arizasi.107491/",
+      "kaynak_alinti": "araç çalıştıktan 40 45 dk sonrası sansımanı kontrol ettirin arızası verip 1 3 5 vitesleri çalışmaz oluyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "120.000 km civarında EGR valfinde çamur kıvamında kurum birikmesi görülüyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://www.renaultfanclub.com/threads/egr-valf-temizligi.74590/",
+      "kaynak_alinti": "buradaki kurum çamur gibiydi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön takımda amortisör körüğü kaynaklı gıcırtı ve kasislerde şangırtı sesi yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-kullanan-var-mi-kronik-sorunlari--144475304",
+      "kaynak_alinti": "Kronik ön teker amortisör körüklerinin gıcırtı yapması. Direksiyonu çevirirken tıktık ses yapıyordu.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Media Nav/dokunmatik ekran donuyor, dokunmaya yanıt vermiyor ve kendiliğinden kapanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-clio-dokunmatik-ekran-sorunu--114040077",
+      "kaynak_alinti": "dokunmatik ekran donuyor dokunmatik ekrana basilmiyor kendi kendine acilip kapaniyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger seti ömrü kısa; 75.000 km / 4 yılda değişim öneriliyor, devirdaim de birlikte değişmeli.",
+      "km_araligi": "75.000-100.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-triger-kayisi-degisimi--151910034",
+      "kaynak_alinti": "1.5dci motorun triger ömrü o kadar uzun değil. kendi 1.5 dci aracım için 75bin km/4 yıl da bir değişim öneriliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi 5,5-6,3 L/100 km, uzun yolda 4,7 L/100 km civarı gerçek tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/rekor-yakit-tuketimi-clio-4-1-5-dci--133743824",
+      "kaynak_alinti": "Araç normalde şehir içi 5.5-ila 6.3 arasinda gidip geliyor (ort hız 24-30)",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.5 dCi kullanıcılar arasında binek sınıfının en sağlam dizel motorlarından sayılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-clio-1-0-tce-vs-renault-clio-1-5-dci--8045973",
+      "kaynak_alinti": "1.5 dci bir binek araçtaki en sağlam modern dizel motordur",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "Yedek parça, servis ve bakım tarafında ekonomik bir araç olarak değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-inceleme/renault-clio-1-5-dci-2015-model-2-el-incelemesi/",
+      "kaynak_alinti": "Yedek parça, servis ve bakım konusunda oldukça ekonomik olan araç, Renault-Nissan ortak üretimi olan DCI isimli dizel motor ünitesi ile oldukça iyi işler başarıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Debriyaj kiti ve rulman gibi aşınma parçaları orijinalde bile düşük fiyatla bulunabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio4-1-5-dci-debriyaj-kiti-degisimi-hakkinda-bilgi-paylasimi.96288/",
+      "kaynak_alinti": "Parça fiyatları : debriyaj kiti 280tl mais. Debriyaj rulmani 120 tl olmak üzere 400 tl",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "Dizel Clio'lar ikinci elde kendinden yeni benzinli TCe modellerden daha pahalıya alıcı buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-clio-1-0-tce-vs-renault-clio-1-5-dci--8045973",
+      "kaynak_alinti": "2018 2019 dizel cliolar suan 2020 2022 clio tce lerden daha pahali",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Rüzgar ve yol sesi kabinde kronik şikayet konusu; bozuk yolda ses yalıtımı yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/clio-4-kullanan-var-mi-kronik-sorunlari--144475304",
+      "kaynak_alinti": "Rüzgar sesi kronik sorun. Aynaların ve ön camdaki kelebek camın yapısı ve rüzgar direnci ile alakalı.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan malzeme kalitesi aracın en zayıf yönü olarak gösteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/clio-4-alinir-mi.5022/",
+      "kaynak_alinti": "En büyük eksisi yer yer bocalayan malzeme kalitesi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk iri yapılı yolcular için belirgin şekilde dar.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/clio-4-alinir-mi.5022/",
+      "kaynak_alinti": "Clio nun arka koltukları bana inanılmaz dar geliyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Süspansiyon sert kurulmuş; konfor beklentisi olan kullanıcılar şikayetçi.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/clio-4-nasil-bir-otomobil.77677/",
+      "kaynak_alinti": "çok ama çok sert süspansiyonu ve konfor eksikliği",
+      "guven": "dusuk"
+    }
+  ]
+}

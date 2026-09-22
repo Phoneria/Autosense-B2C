@@ -1,0 +1,167 @@
+{
+  "hedef_id": "bmw-5-serisi-520i",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "F10 520i'de elektrikli devirdaim (su) pompası 40.000 km civarında arıza yapıyor.",
+      "km_araligi": "39.000-45.000 km",
+      "kaynak_url": "https://forum.donanimhaber.com/39-binde-bmw-f10-5-20i-aracim-devirdaim-pompasi-bozuldu--139617015",
+      "kaynak_alinti": "Aynı araçtan aynı şey daha 4 ay önce başımıza geldi. Ücretsiz değiştirdik. Üretim hatası o modelde",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Duran araçta aşırı akü deşarjı uyarısı ve akünün erken bitmesi 520i'de sıkça bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/520/520i-aku",
+      "kaynak_alinti": "3 gündür her çalıştırmada akü deşarj uyarısı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "N20 motorlu 520i'de zincir gergisi zayıflıyor, zincir uzayıp atlama riski doğuruyor.",
+      "km_araligi": "110.000-170.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "Zincir gergisi zamanla zayıflar, zincir uzar ve atlama riski oluşur.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "N20 motor 80.000 km üzerinde yağ tüketmeye başlıyor, egzozdan mavi duman geliyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "N20 motor, özellikle 80.000 km üzerinde yağ tüketimine başlayabilir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "120.000 km üzerinde turbo ünitesinden yağ sızıntısı ve performans düşüşü görülüyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "Yüksek kilometrelerde (120.000+ km) turbo ünitesinden yağ sızıntısı ve performans düşüşü yaşanabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "520i F10'da ön kapı kilit aktüatörü arızası şikayet sitelerinde tekrar ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/520",
+      "kaynak_alinti": "BMW 520i F10 Araçta Ön Sağ Kapı Kilit Arızası Ve Ücretsiz Onarım Talebi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "G30 520i'de Acil Çağrı Sistemi Mevcut Değil hatası 2018-2019 modellerde tekrar ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/520/g30-520i",
+      "kaynak_alinti": "Acil Çağrı Sistemi Mevcut Değil",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "koltuk-doseme-asinma",
+      "iddia": "Kapı kolu ve iç döşeme deri kaplamaları 40.000 km civarında soyulup yapışkanlaşıyor.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/bmw/520",
+      "kaynak_alinti": "İç Kapı Kollarının Deri Kaplamasının Soyulması Ve Yapışması",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Uzun yol konforu Mercedes E-Serisi ve Audi A6 seviyesinde veya üzerinde değerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "Uzun yol konforu, segmentindeki rakiplerin (Mercedes E-Class, Audi A6) seviyesinde veya üzerinde değerlendiriliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Yol sesi yüksek hızlara kadar kabine girmiyor, izolasyon güçlü.",
+      "km_araligi": null,
+      "kaynak_url": "https://inceleriz.com/bmw-520i-f10-hala-alinir-mi/",
+      "kaynak_alinti": "Yol sesini yüksek hızlara kadar içeri almıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Geniş iç yaşam alanı ve konfor donanımıyla arka koltukta bile rahat yolculuk sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/bmw-f10-5-serisi-inceleme-2010-2016/",
+      "kaynak_alinti": "Geniş iç yaşam alanı ve konfor donanımlarıyla oldukça rahat bir yolculuk deneyimi sunan BMW F10",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "1,7 tonluk gövdeye rağmen sert virajlarda gövde salınımı çok az, yol tutuşu güçlü.",
+      "km_araligi": null,
+      "kaynak_url": "https://onurarmutcuoglu.com/bmw/bmwf10/",
+      "kaynak_alinti": "Kocaman cüssesi ve 1700kg ağırlığına rağmen sert virajlarda gövde salınımı yok denecek kadar azdı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "ZF 8HP otomatik şanzıman kullanıcılar tarafından piyasanın en iyisi olarak nitelendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "ZF 8HP şanzıman (F10 ve sonrası) kullanıcılar tarafından 'piyasanın en iyi otomatik şanzımanı' olarak nitelendiriliyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "İstanbul trafiğinde şehir içi tüketim 11-12 litreye kadar çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/bmw-f10-5-serisi-inceleme-2010-2016/",
+      "kaynak_alinti": "İstanbul trafiğinde 11-12 litre yakıt tüketmesi pek sürpriz olmaz",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Zincir seti değişimi yetkili serviste 40.000-60.000 TL'ye kadar çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "Tahmini değişim maliyeti: 20.000–35.000 TL (özel servis), 40.000–60.000 TL (yetkili servis).",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç trimde boya soyulması ve cam düğmesi plastiğinde renk solması yaygın şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/bmw/520",
+      "kaynak_alinti": "BMW 5.20i İç Trimde Boya Soyulması Ve Kalite Hayal Kırıklığı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "520i, ağır G30 gövdesine göre sportif görünümünün altında kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/bmw-5-serisi-g30--116202009-297",
+      "kaynak_alinti": "G30 ağır bir araçtır, sportif görünüşü sizi aldatmasın",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Yetkili servis parça ve işçilik fiyatları kullanıcılarca astronomik olarak tanımlanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/bmw-520i-satin-alma-rehberi-hangi-kasa-hangi-yil-hangi-motor",
+      "kaynak_alinti": "Yetkili servis fiyatları sıklıkla 'astronomik' olarak tanımlanıyor",
+      "guven": "dusuk"
+    }
+  ]
+}

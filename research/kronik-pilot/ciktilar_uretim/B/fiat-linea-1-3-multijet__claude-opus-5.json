@@ -1,0 +1,152 @@
+{
+  "hedef_id": "fiat-linea-1-3-multijet",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo geometri sensörü arızası (P2560) ve turbodan ötme/yağlama sorunu tekrarlayan şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/turbo",
+      "kaynak_alinti": "2015 model Fiat Linea aracımda yaklaşık 2 aydır sürekli olarak turbo P2560 geometri sensörü hatası alıyorum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Euro 5 motorlarda yağ eksiltme görülüyor; 1000 km'de 2 litreye varan tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/yag",
+      "kaynak_alinti": "2013 model Linea aracım Euro 5 yağ eksiltiyor, 1000 km'de 2 litre.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör kaynaklı zor çalışma; motor sıcakken ve sıcak havalarda marş süresi uzuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/enjektor",
+      "kaynak_alinti": "2015 model Fiat Linea aracım sıcak havalarda ve motor sıcakken zor çalışıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "Triger zinciri seti 100.000 km civarında değişiyor, değişim sonrası tekrar ses yapabiliyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/triger",
+      "kaynak_alinti": "108 bin km iken Fiat Linea 1.3 aracımın zincir triger set olarak İzmit'te yetkili Fiat servisinde değişti.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "Ön cam çevresi, ön direk ve kaputta boya atması farklı model yıllarında tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/boya",
+      "kaynak_alinti": "2012 model Fiat Linea aracımın ön cam etrafı, sol ön direkte ve kaputta ciddi boya atması mevcut.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön amortisör takozu (bilyeli) 65.000 km gibi erken kilometrede arızalanabiliyor.",
+      "km_araligi": "65.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/amortisor",
+      "kaynak_alinti": "Linea 2012 model 1.6 Multijet aracım var. Daha 65000km de iken ön amortisör takozu (bilyeli) arızası oldu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cam-krikosu",
+      "iddia": "Cam krikosu arızası görülüyor; camlar iniyor fakat dört cam birden kalkmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/cam",
+      "kaynak_alinti": "2015 model Linea aracımın camları iniyor, dört cam birden kalkmıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Blue&Me sistemi bağlantı kurmuyor ve gösterge kilometresi yanıp sönüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/linea/elektrik",
+      "kaynak_alinti": "Sahibi olduğum Fiat Linea aracın uzun zamandır Blue&Me bağlantısı çalışmamakta ve kilometresi yanıp sönmektedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.3 Multijet 4,9 lt/100 km ortalama tüketimle sınıfının en ekonomik dizellerinden.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "95 HP güç ve 200 Nm tork üreten 1.3 lt Multijet ise 4.9 lt/100 km'lik düşük tüketimiyle dikkat çekiyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça fiyatları ucuz; ticari yoğun kullanımda taksiciler tarafından tercih ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "Ayrıca yine taksici arkadaşların belirttiğine göre yedek parçaları ucuz ve özellikle 1.3 lt Multijet motor çok dayanıklı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "1.3 Multijet motorun 500-600 bin km'ye kadar dayandığı aktarılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "500-600 bin km bile gidebiliyormuş.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "B segmenti platformuna rağmen iç mekan ve bagaj neredeyse C segmenti ölçülerinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "Fiat Punto platformunda üretilmesine rağmen neredeyse C segmenti boyutlarında olan Linea, bu anlamda geniş iç mekânı ve bagajıyla dikkat çekiyordu.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "Kabinde rahatsız edici gıcırtı sesi oluşmuyor, süspansiyon da sessiz çalışıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "İç mekânda rahatsız edici sesler oluşmuyor. Aynı şekilde süspansiyonda da öyle.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Donanım seviyesi tatmin edici olsa da iç mekan malzeme kalitesi yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "Versiyonlarına göre donanım tatmin ediciydi ama malzeme kalitesi gibi konularda biraz yetersizdi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "95 HP motorla 0-100 km/s hızlanma 13,8 saniye, azami hız 170 km/s ile sınıfının gerisinde.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "170 km/s maksimum hıza sahip olan Linea 1.3 Multijet'in 0-100 km/s hızlanması 13.8 saniye.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Üretimi bitmiş bir model olduğu için ikinci el değeri zamanla düşüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/fiat-linea-alinir-mi/",
+      "kaynak_alinti": "Diğer yandan üretimi bitmiş bir otomobilin ikinci eli de yavaş yavaş düşecektir.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

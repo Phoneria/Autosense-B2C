@@ -1,0 +1,170 @@
+{
+  "hedef_id": "volkswagen-polo-1-0-tsi",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG mekatronik ünitesi arızası 40.000 km civarında çıkıyor, kullanıcılar kronik diyor.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/dsg",
+      "kaynak_alinti": "Şu an aracımda DSG kartı mekatronik arızası var ve bu kronik bir sorun",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "DQ200 kuru kavramalı DSG'de kavrama paketi dur-kalk trafiğinde erken yoruluyor.",
+      "km_araligi": "60.000-140.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/volkswagen-polo-1.0-tsi/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Çift kavramalı ünitede kavrama paketi yoğun dur-kalk trafiğinde yorulur",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "12.000 km civarında motor yağı eksiltme şikayeti tekrarlıyor.",
+      "km_araligi": "12.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/yag",
+      "kaynak_alinti": "Volkswagen Polo aracım yaklaşık 12.250 kilometredeyken yağ eksiltme sorunu yaşamaya başladım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı aniden kararıyor; 5F kontrol ünitesi değişimi çok pahalı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-polonun-yuksek-maliyetli-multimedya-ekran-arizasi",
+      "kaynak_alinti": "Aracımı çalıştırdığımda ekran görüntüsü gelmemektedir ve bu durum, araç kullanımını ciddi şekilde etkilemektedir.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Düşük kilometrede disk ve balatadan sürtünme sesi şikayeti tekrarlıyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/kronik",
+      "kaynak_alinti": "2024 model sıfır km olarak aldığım Volkswagen Polo aracımın disk ve balatasından ses gelmesi sorunu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Sağa-sola dönüşlerde direksiyondan uğultu sesi 1.0 TSI DSG'lerde tekrarlıyor.",
+      "km_araligi": "0-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/kronik",
+      "kaynak_alinti": "Volkswagen 2024model Polo 1.0TSİ 95 Life DSG Sağa Sola Dönüşlerde Çıkan Uğultu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "radyator-hortum",
+      "iddia": "Soğutma sıvısı eksiltme yaygın; turbo hava soğutucusunda kaçak tespit ediliyor.",
+      "km_araligi": "25.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-0-tsi-2021-polo-sogutma-sivisi-eksiltme--159150788",
+      "kaynak_alinti": "Emme manifoldunun altındaki turbo hava soğutucuda kaçak tespit edilip parça değiştirildi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Airbag arıza lambası 3-4 ay arayla tekrar tekrar yanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/tsi",
+      "kaynak_alinti": "Volkswagen Polo 1.0 TSİ 2021 model aracımda aldığımdan bu yana garanti döneminde de 3 4 ay ara ile airbag ışığı yakıp arıza lambası yakıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir dışında 5 litre/100 km altına inen gerçekçi yakıt tüketimi.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-0-tsi-yakit-vw-neden-1-0-yapti-polo-mk6-eksileri-ve-kullanici-yorumlari--135754349",
+      "kaynak_alinti": "şehir dışında çok rahat 5 litrenin altına düşüyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci elde değer kaybı düşük ve satışı kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/volkswagen-polo-alinir-mi",
+      "kaynak_alinti": "İkinci el değer kaybı düşük, satış kolay",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Türkiye genelinde geniş yetkili servis ağı sayesinde parçaya erişim kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-polo-1.0-tsi-alinir-mi-detayli-inceleme-kullanici-yorumlari-ve-yillara-gore-karsilastirma",
+      "kaynak_alinti": "Yedek parça erişilebilirliği: Türkiye genelinde geniş Volkswagen yetkili servis ağı",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "EuroNCAP 5 yıldız ve sınıf üstü aktif güvenlik paketleri sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-polo-1.0-tsi-alinir-mi-detayli-inceleme-kullanici-yorumlari-ve-yillara-gore-karsilastirma",
+      "kaynak_alinti": "Güvenlik donanımları: EuroNCAP 5 yıldız ve sınıfının üzerinde aktif güvenlik paketleri",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Sınıfına göre sağlam ve dengeli yol tutuşu sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-polo-1.0-tsi-alinir-mi-detayli-inceleme-kullanici-yorumlari-ve-yillara-gore-karsilastirma",
+      "kaynak_alinti": "Sürüş kalitesi: Sınıfına göre sağlam ve dengeli yol tutuşu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Parça ve servis ücretleri yerli markalara göre belirgin şekilde pahalı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/volkswagen-polo-alinir-mi",
+      "kaynak_alinti": "Parça ve servis ücretleri Türk markalarına göre belirgin pahalı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "37.000 km'deki 1.0 TSI DSG'de 150.000 TL'lik onarım faturası çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/polo/arac-periyodik-bakim",
+      "kaynak_alinti": "2021 model Volkswagen Polo 1.0 TSİ DSG 37000 km aracımda 150.000 TL'lik arıza çıktı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Sert süspansiyon kalibrasyonu bozuk yollarda konfor kaybına yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-polo-1.0-tsi-alinir-mi-detayli-inceleme-kullanici-yorumlari-ve-yillara-gore-karsilastirma",
+      "kaynak_alinti": "Polonun sportif hisler sunan sert süspansiyon kalibrasyonu, Türkiye'nin bozuk yol koşullarında konfor kaybına neden olabiliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "2-3 yıl sonra torpido, orta konsol ve kapı panellerinden trim sesleri geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/volkswagen-polo-1.0-tsi-alinir-mi-detayli-inceleme-kullanici-yorumlari-ve-yillara-gore-karsilastirma",
+      "kaynak_alinti": "2-3 yıllık kullanım sonrasında torpido, orta konsol ve kapı panellerinden gelen trim sesleri",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "351 litrelik bagaj hacmi sınıf rakiplerine göre küçük kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/volkswagen-polo-alinir-mi",
+      "kaynak_alinti": "Bagaj kapasitesi (351 lt) rakiplerine göre küçük",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

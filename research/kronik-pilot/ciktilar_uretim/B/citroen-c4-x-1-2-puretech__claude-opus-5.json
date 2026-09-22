@@ -1,0 +1,161 @@
+{
+  "hedef_id": "citroen-c4-x-1-2-puretech",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "1.2 PureTech'in yag icinde calisan triger kayisi kronik sekilde bozuluyor.",
+      "km_araligi": "45.000-100.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/triger",
+      "kaynak_alinti": "2024 model Citroen C4X aracımda bulunan 1.2 PureTech motordaki, yağ içinde çalışan ve kronik olduğu bilinen triger sistemi ile ilgili ciddi bir sorun yaşadım.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "45.000 km civarinda triger kayisinda catlama tespit edilen ornekler var.",
+      "km_araligi": "45.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4/triger",
+      "kaynak_alinti": "30 Mayıs 2026 tarihinde yaptığım kontrolde triger kayışında çatlama olduğunu fark ettim.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Dagilan triger kayisi yag pompasini tikayip turbo arizasi ve yatak sarmasina yol aciyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://ozsimge.com/genel-arizalar/1-2-puretech-triger-kayisi-sorunu/",
+      "kaynak_alinti": "yatak sarması veya turbo arızası gibi on binlerce liralık masraflarla yüzleşmeniz kaçınılmaz olur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Dusuk kilometrede enjektor ve atesleme bobini degisimi gerektiren motor arizasi bildiriliyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/enjektor",
+      "kaynak_alinti": "2024 model Citroen c4 X aracımı sıfır olarak aldım ve araç daha 12 km'deyken enjektör, bujiler ve motor arızası verdi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekraninda donma, kasma ve kendiliginden kapanma sikayetleri yaygin.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/multimedya",
+      "kaynak_alinti": "multimedya ekranında donma ve kasma sorunları yaşamaya başladım",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Yuksek hizda fren yapinca pedal ve direksiyonda disk kaynakli titreme olusuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/fren",
+      "kaynak_alinti": "90 km/saat ve üzeri hızlarda frene bastığımda fren pedalı ve direksiyonda ciddi titreme başladı",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Garanti suresi icinde tekrarlayan motor arizasi ve motor beyni sorunu bildiriliyor.",
+      "km_araligi": "30.000-40.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/motor-arizasi",
+      "kaynak_alinti": "Aracım sadece 38.500 km'de ve hâlâ garanti kapsamındayken bu şekilde yolda bırakması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Tekrarlayan aku bitmesi ve ekran kapanmasi sikayetleri gorulmus.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/aku",
+      "kaynak_alinti": "akü bitmesi, ekranın gitmesi ve buna benzer birçok problemle uğraştık",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "510 litrelik bagaj, C4 hatchback'e gore 130 litre daha buyuk.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/citroen-c4x--7519372",
+      "kaynak_alinti": "bagaj hacmi c4'e kıyasla 130 litre daha büyük",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Ic hacim ferah, gunluk kullanim icin yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/citroen-modelleri/c4-x-yorumlari",
+      "kaynak_alinti": "iç hacmi ferah ve bagaj kapasitesi günlük kullanım için ideal",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Kullanicilar uzun yolda konforlu oldugunu belirtiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/citroen-modelleri/c4-x-yorumlari",
+      "kaynak_alinti": "ferah geliyor, uzun yolda da konforlu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutusu kullanicilara guven veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/citroen-modelleri/c4-x-yorumlari",
+      "kaynak_alinti": "yol tutuşu güven veriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Sehir trafiginde yormuyor, otomatik vites geciskeri belli olmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/citroen-modelleri/c4-x-yorumlari",
+      "kaynak_alinti": "Trafikte hiç yormuyor, vites geçişlerini neredeyse hissetmiyorsun",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Triger sistemi onarimi icin 66.600 TL'ye varan garanti disi fatura cikabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/triger",
+      "kaynak_alinti": "Garanti Kapsamındaki Triger Kayışı Arızası 66.600 TL Ücretle Reddedildi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parca Turkiye stoklarinda bulunmayip aylarca bekletebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/yedek-parca",
+      "kaynak_alinti": "jantın Türkiye stoklarında bulunmadığını ve yurt dışından sipariş ettiklerini ve takriben en az 1 aydan",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Kis ve sehir ici kullanimda 14 L/100 km'ye varan tuketim bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/citroen-modelleri/c4-x-yorumlari",
+      "kaynak_alinti": "yazin 8 lt. Kışın 14 lt. Gördüm",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "servis-az",
+      "iddia": "Yetkili servislere ulasmak ve randevu almak zor olabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/citroen/c4-x/randevu",
+      "kaynak_alinti": "hiçbirine ulaşamıyorum, herhangi bir geri dönüş de alamadım",
+      "guven": "orta"
+    }
+  ],
+  "_gecersiz": []
+}

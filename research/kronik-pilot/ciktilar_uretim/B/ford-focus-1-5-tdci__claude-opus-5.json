@@ -1,0 +1,170 @@
+{
+  "hedef_id": "ford-focus-1-5-tdci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "2018-2020 üretim 1.5 dizelde eksantrik zinciri ses yapıp kopabiliyor; Ford 7 mm zinciri 8 mm ile güncelledi.",
+      "km_araligi": "36.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/ford-focus-eksantrik-zinciri-sorunu-geri-cagirma-eksikligi-ve-ucret-talebi",
+      "kaynak_alinti": "Ford bu araçlarda 7mm eksantrik zinciri kullanmış sonrasında problem olup kopardığı için 8mm zincir ile güncellemiş.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Şehir içi kullanımda DPF doluyor ve 'egzoz filtresi aşırı yüklendi' uyarısı tekrar tekrar çıkıyor.",
+      "km_araligi": "40.000-120.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/tdci",
+      "kaynak_alinti": "2023 Model Sıfır km aldığımız Ford Focus 1.5 TDCİ Titanium Otomatik Vites, egzoz filtresi aşırı yüklendi uyarısı sebebiyle bıkkınlık verdi artık.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "8 ileri otomatik şanzımanda 95.000 km sonrası vites geçişlerinde silkeleme ve şanzıman arızası uyarısı görülüyor.",
+      "km_araligi": "95.000-140.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/sanziman-arizasi",
+      "kaynak_alinti": "2020 model Ford Focus 1.5 dizel otomatik aracım 95.000 km'den bu yana vites geçişlerinde ciddi şekilde silkeleme sorunu yaşıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "Şehir içi kullanımda yağ seyrelmesi nedeniyle 18.000 km içinde 3 kez yağ değişimi gerekebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/tdci",
+      "kaynak_alinti": "Henüz 18bin km'yi yeni geçmesine rağmen 3 defa yağ değişti. Her gittiğimde de şehir içi kullanım kaynaklı yağ incelmesi diyorlar.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "100.000 km sonrası turboşarj arızası ve kanatçık bölgesinde kurum birikimi görülüyor.",
+      "km_araligi": "100.000-180.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.5-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Turboşarj arızası ve kanatçık bölgesinde kurum birikimi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve emme yolları kurumlanıp motor arıza lambası yanıyor, çekişte düşüş oluyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.5-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "EGR valfi ve emme yollarının kurumlanması",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "100.000 km sonrası enjektör arızası ve püskürtme dengesizliği yaygınlaşıyor.",
+      "km_araligi": "100.000-200.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.5-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Enjektör arızası ve püskürtme dengesizliği",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Manuel versiyonlarda debriyaj 60-80 bin km arasında bitme noktasına gelebiliyor.",
+      "km_araligi": "60.000-80.000 km",
+      "kaynak_url": "https://www.arabalar.com.tr/test/ford-focus-1-5-tdci-sahiplerinin-en-sik-yasadigi-sorunlar",
+      "kaynak_alinti": "Bazı kullanıcılar 60-80 bin kilometre arasında debriyajın bitme noktasına geldiğini belirtiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1167 km'lik karışık kullanımda ortalama 4,7 lt/100 km gibi düşük tüketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/ford-focus-1-5-tdci-120-hp-yakit-tuketimi--134921220",
+      "kaynak_alinti": "Ortalama tüketim: 4.7 lt",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu ve performans açısından sınıfının en iyileri arasında gösteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-focus-1-5-tdci-powershift--4830705",
+      "kaynak_alinti": "yol tutuş ve performans ile sınıfının en iyi arabasıdır.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "İkinci el piyasasında değerini iyi koruyor, alıcı bulmakta zorlanmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otostil.com/ford-focus/",
+      "kaynak_alinti": "Tüm bu artıları sayesinde de ikinci elde adeta altın gibi, değeri hiç düşmeden alınıp satılıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "1.5 TDCi, 1.6 TDCi'ye göre belirgin şekilde daha sessiz ve titreşimsiz çalışıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-6-tdci-ve-1-5-tdci-focus--138116617",
+      "kaynak_alinti": "Çok sessiz ve titreşimsiz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Yaygın Ford servis ağı aracın öne çıkan güçlü yönleri arasında sayılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.5-tdci",
+      "kaynak_alinti": "yaygın servis",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Bozuk yollarda süspansiyon sert ve gürültülü çalışıp konfordan ödün veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otostil.com/ford-focus/",
+      "kaynak_alinti": "Bozuk yollardaysa gürültülü ve sert çalışan süspansiyon konfor konusunda az da olsa ödün veriyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Titanium paketi alınmazsa iç tasarım ve malzeme kalitesi hayal kırıklığı yaratıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-focus-1-5-tdci-powershift--4830705",
+      "kaynak_alinti": "titanium paketi almayacaksanız arabanın iç tasarımı tam bir hayal kırıklığıdır",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Hatchback gövdede arka yolcu alanı dar bulunuyor ve malzeme kalitesi zayıf kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-focus-1-5-tdci-powershift--4830705",
+      "kaynak_alinti": "arka alan ise hem dar hem de malzeme kalitesi olarak çokça eksiği göze batıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Hatchback bagaj hacmi 375 litre ile sınıfına göre yetersiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-focus-1-5-tdci-powershift--4830705",
+      "kaynak_alinti": "bagaj hacim değerleri bana göre yetersiz.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gorus-acisi-kisitli",
+      "iddia": "Yan ve arka camların küçüklüğü kabini karanlık ve klostrofobik hissettiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/ford-focus-1-5-tdci-powershift--4830705",
+      "kaynak_alinti": "ayrıca dar ve yan - arka camların ufaklığından ötürü karanlıki klostrofobik.",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

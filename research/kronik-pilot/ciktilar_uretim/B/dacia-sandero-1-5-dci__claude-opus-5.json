@@ -1,0 +1,170 @@
+{
+  "hedef_id": "dacia-sandero-1-5-dci",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektörlerde 80.000-150.000 km arasında tıkanma, sızdırma ve bakır conta deformasyonu görülüyor.",
+      "km_araligi": "80.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/renault-symbol-1.5-dci-kronik-sorunlar-yakit-tuketimi-ve-bakim-rehberi",
+      "kaynak_alinti": "Enjektörler zamanla tıkanabilir, sızdırabilir ya da bakır contaları deforme olabilir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo şikayetleri genellikle araç 100.000 km'yi geçtikten sonra gündeme geliyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.5-dci-kronik-sorunlari-ve-bakim-rehberi",
+      "kaynak_alinti": "Turbo ile ilgili şikayetler genellikle aracın 100.000 km'yi geçmesiyle gündeme geliyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbodan ıslık sesi ve turbo hortumundan yağ kaçırma tekrar eden bir şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-5-dci-turbo-borusu-yaglanmasi--156460331",
+      "kaynak_alinti": "turbo dan ıslık sesi gelmeye başladı ve bunun üzerine turbo ya revizyon işlemi yapıldı ses kesildi ancak bir süre sonra turbo hortumu yağ kaçırmaya başladı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi is ve karbon birikimiyle 60.000-120.000 km arasında tıkanıyor, şehir içi kullanımda daha erken.",
+      "km_araligi": "60.000-120.000 km",
+      "kaynak_url": "https://www.araclo.com/blog/renault-symbol-1.5-dci-kronik-sorunlar-yakit-tuketimi-ve-bakim-rehberi",
+      "kaynak_alinti": "EGR valfi, is ve karbon birikimi nedeniyle tıkanmaya yatkındır",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Ağırlıklı şehir içi kullanımda partikül filtresi tıkanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://yerkoyhabergazetesi.com/dacia-sandero-kronik-sorunlar/",
+      "kaynak_alinti": "Şehir içi kullanımda, partikül filtresinin tıkanması yaygın bir şikayettir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "yakit-pompasi",
+      "iddia": "Delphi yakıt pompası düşük kaliteli motorinden zarar görüyor; yakıt filtresi ihmali arızaya yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otomobiloji.com/renault-1-5-dci-motor-sorunlari-ve-cozumu/",
+      "kaynak_alinti": "Delphi yakıt pompası, düşük kaliteli motorin/mazot/yakıttan hiç hoşlanmaz.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-kayis-gergi",
+      "iddia": "V kayışı koparsa parçaları triger kayışını da koparıp subap eğilmesine yol açabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/renault-symbol-1.5-dci-kronik-sorunlar-yakit-tuketimi-ve-bakim-rehberi",
+      "kaynak_alinti": "V kayışı (aksesuar kayışı) koparsa, parçaları triger kayışının arasına girerek triger kayışını koparma ve subapların eğilmesine kadar varan hasar oluşturma riski taşır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Şarj dinamosu arızası düşük voltaja, devir takılmasına ve arıza lambalarının yanmasına yol açıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dacia-sandero-gaza-bastiktan-sonra-devir-5-saniye-takili-kaldiktan-sonra-azaliyor--149627441",
+      "kaynak_alinti": "Yalnızca dinamonun burçları ve konjektörü yenilendi araç çalıştığında hemen şarja geçmeye başladı ve devir takılması kesildi yanan ışıklar söndü.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içinde tek depo mazotla 800 km'nin üzerinde yol yapılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/dacia-sandero-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Yakıt olarak çok cimri bir arabadır. 1 depo mazot alıyorum şehir içinde 800 km mesafeyi geçiyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Motor ve yürüyen aksam parçaları Renault ile birebir uyumlu olduğu için ucuz ve kolay bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/dacia-sandero-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Motor, mekanik ve yürüyen aksam parçaları Renault ile birebir uyumlu olduğu için hem kolay bulunuyor hem de çok ucuz.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Kaliteli yakıt ve yağ kullanıldığında 1.5 dCi 300.000-400.000 km sorunsuz ömür verebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otomobiloji.com/renault-1-5-dci-motor-sorunlari-ve-cozumu/",
+      "kaynak_alinti": "İyi kaliteli temiz yakıt ve orijinal ve buna yakın yakıt filtresi, sahte olmayan kaliteli motor yağı ve kaliteli yağ filtresi ile bu motor rahatlıkla 300.000 – 400.000 km kadar sorunsuz ömür.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "Dağ ve yokuş yollarında tırmanma kabiliyeti kullanıcılar tarafından beğeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/dacia-modelleri/sandero-yorumlari",
+      "kaynak_alinti": "Dağ yolu kaya vs keçi gibi tırmanır",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Dacia'nın servis ağı geniş ve yedek parçaya erişim kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://yorumoto.com/dacia-sandero-2021-377045",
+      "kaynak_alinti": "Geniş servis ağı ve uygun parça erişimi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ön göğüs ve kapı içlerinde sert, ucuz hissettiren plastik malzeme kullanılmış.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/dacia-sandero-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Ön göğüs ve kapı içlerinde bildiğiniz çocuk oyuncağı gibi sert plastik malzeme kullanılmıştır. Çok dandik bir iç malzeme kalitesi var.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Uzun yolda rüzgar ve lastik sesi kabin içinde rahatsız edici seviyede.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dacia-sandero-1-5-dci-hakkinda-bilgi-ve-fiyat-degerlendirmesi--91521378",
+      "kaynak_alinti": "uzun yolda rüzgar ve lastik sesiyle boğusursunuz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Giriş donanımlarında ABS opsiyonel ve yalnızca tek hava yastığı bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dacia-sandero-1-5-dci-hakkinda-bilgi-ve-fiyat-degerlendirmesi--91521378",
+      "kaynak_alinti": "güvenlik yok (abs opsiyonel, tek airbag var)",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Ön koltuk süngeri ince olduğundan arka yolcunun diz mesafesi yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/dacia-sandero-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Ön koltuklarda yarım sünger kullanıldığı için arkaya oturan kişinin dizleri döşemeden koltuğun içine giriyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Dacia yetkili servis periyodik bakım fiyatları kullanıcılar tarafından yüksek bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/dacia/bakim/ucret",
+      "kaynak_alinti": "Dacia yetkili servis periyodik bakım fiyatları gerçekten çok yüksek!",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

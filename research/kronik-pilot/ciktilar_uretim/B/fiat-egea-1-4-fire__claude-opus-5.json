@@ -1,0 +1,161 @@
+{
+  "hedef_id": "fiat-egea-1-4-fire",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.4 Fire motorda bakım aralığında belirgin yağ eksiltme en sık bildirilen şikayet.",
+      "km_araligi": "3.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/motor",
+      "kaynak_alinti": "benim 2019 model 1.4 Fiat Egea Urban Plus benzinli aracım var. Bilindiği gibi bu araçlar yağ eksiltir",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Sabahları ilk çalıştırmada marş uzatma ve geç çalışma şikayeti kronik olarak bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/mars",
+      "kaynak_alinti": "aracım yaklaşık 1 yıldır sabahları geç çalışıyor ve marş uzatması yapıyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "boya-kalitesi",
+      "iddia": "İnce fabrika boyası nedeniyle vernik atması ve boya kalkması şikayetleri yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/boya/egea",
+      "kaynak_alinti": "2021 model 1.4 Fiat Egea Sedan aracımın dış yüzeyinde bir süredir vernik atması sorunu yaşıyorum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyonu çevirirken takılma ve tık sesi 50.000 km civarında bildiriliyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/fiat-egea-direksiyon-takilma-ve-ses-sorunu-garanti-kapsaminda-ucretsiz-onarim-talebi",
+      "kaynak_alinti": "Hem düşük hızda hem de yüksek hızda direksiyonu çevirirken takılma hissediyorum ve özellikle müzik kapalıyken direksiyonu düzeltirken \"tik\" diye bir ses geliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön amortisör takozları erken arızalanıyor ve ön takımdan ses geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/amortisor-takozu",
+      "kaynak_alinti": "ön amortisör takozu arızalandı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "Debriyaj pedalı bırakılırken gıcırtılı ses gelmesi 80.000 km sonrası bildiriliyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/debriyaj",
+      "kaynak_alinti": "debriyaj pedalından ayağımı yavaşça çektiğimde kapı gıcırtısını andıran rahatsız edici bir ses geliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranı ilk çalıştırmada donuyor veya siyah ekran veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea/multimedya",
+      "kaynak_alinti": "2025 model Fiat Egea Limited aracımın multimedya panel ekranı, aracın ilk çalışmasında yaklaşık 15 aydır sürekli donma sorunu yaşıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "klima-kompresor",
+      "iddia": "Klima soğutmada çalışırken kompresör bölgesinden gaza orantılı uğultu sesi geliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/fiat/egea-14-klima-kompresoru-sorunu-ve-cozum-beklentisi",
+      "kaynak_alinti": "Klimayı çalıştırdığımda (soğutma) klima kompresörünün olduğu bölgeden normal olmayan uğultu sesi gelmektedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içi 7-8, uzun yolda 5-6 litre tüketimle benzinli sınıfında ekonomik.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/fiat-egea-1-4-fire--7951194",
+      "kaynak_alinti": "şehir içi 7-8 uzun yol 5-6 litre yakar",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "85.000 km boyunca hiç arıza vermeden kullanıldığını bildiren uzun dönem kullanıcı raporu var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/1-4-egea-yag-yakiyor-mu-uzun-donem-kullanici-yorumu-tam-85-000km--159750542",
+      "kaynak_alinti": "Bu süre zarfında araç hiçbir arıza vermedi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parça ve bakım maliyeti ekonomik, parça bulunurluğu yüksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/fiat-egea-alinir-mi",
+      "kaynak_alinti": "Ekonomik yedek parça ve bakım maliyeti",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Yetkili servis dışında özel servislerde de bakım yaptırılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://shiftandtrend.com/fiat-egea-1-4-neden-tutulmuyor-artilari-eksileri-neler/",
+      "kaynak_alinti": "Yetkili servis dışında özel servislerde de rahatlıkla bakım yapılabilir.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "520 litrelik bagaj hacmi ve geniş iç mekan sunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/fiat-egea-alinir-mi",
+      "kaynak_alinti": "Geniş iç mekan ve 520 litrelik bagaj hacmi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "95 HP atmosferik motor yüklü kullanımda ve yokuşta yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://shiftandtrend.com/fiat-egea-1-4-neden-tutulmuyor-artilari-eksileri-neler/",
+      "kaynak_alinti": "95 HP güç günümüz standartlarında özellikle C segmenti sedan bir araç için biraz zayıf kalabiliyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Gürültü yalıtımı yetersiz, yüksek hızda yol ve rüzgar sesi kabine giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/fiat-egea-alinir-mi",
+      "kaynak_alinti": "Gürültü yalıtımı yetersiz",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç mekan malzeme kalitesi segment ortalamasının altında, sert plastik ağırlıklı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/fiat-egea-alinir-mi",
+      "kaynak_alinti": "İç mekan malzeme kalitesi segment ortalamasının altında",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Piyasadaki ilan bolluğu nedeniyle ikinci elde değer kaybı yüksek bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/fiat-egea-alinir-mi",
+      "kaynak_alinti": "İkinci el değer kaybı yüksek",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

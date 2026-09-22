@@ -1,0 +1,167 @@
+{
+  "hedef_id": "ford-focus-1-6-tdci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turboşarj arızası ve yağ besleme borusunun tıkanması 100.000 km sonrası yaygın.",
+      "km_araligi": "100.000-200.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.6-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Turboşarj arızası ve yağ besleme borusunun tıkanması",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "1.6 TDCi dizel motorda enjektör arızası ve geri dönüş kaçağı yaygın.",
+      "km_araligi": "120.000-220.000 km",
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/ford-focus-alinir-mi",
+      "kaynak_alinti": "1.6 TDCi dizel motorda enjektör sorunları yaygın",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikül filtresi sık doluyor ve motor yağına dizel karışarak yağ seviyesi yükseliyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/partikul-filtresi",
+      "kaynak_alinti": "dizel partikül filtresi haftada bir doluyor, yağ seviyesi yükseliyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR valfi ve emme yollarının kurumlanması rölanti dengesizliği ve limp mode'a yol açıyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.6-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Rölanti dengesizliği, gaza tepkisizlik, motor arıza lambası ve ara ara arıza korumasına (limp mode) düşmedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-kayisi",
+      "iddia": "Triger kayışı seti ihmali 100.000-160.000 km aralığında sık karşılaşılan sorun.",
+      "km_araligi": "100.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.6-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Triger kayışı seti ihmali",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "Çift kütleli volan ve debriyaj takımı 120.000 km sonrası takırtı ve kalkışta titreme yapıyor.",
+      "km_araligi": "120.000-200.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.6-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Rölantide özellikle kontak kapatırken gelen takırtı, debriyaja basınca değişen ses, kalkışta titreme ve motor devri yükselirken aracın aynı oranda hızlanmamasıdır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön salıncak burçları 60.000 km sonrası kasislerde tok vurma sesi yapıyor.",
+      "km_araligi": "60.000-120.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/ford-focus-1.6-tdci/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Kasis geçişlerinde ön taraftan tok vurma, direksiyon çevrilirken gıcırtı, düşük hızda tıkırtı ve lastiklerin düzensiz aşınmasıdır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "PowerShift çift kavramalı şanzımanda kalkışta titreme ve silkeleme kronik sorun.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/powershift",
+      "kaynak_alinti": "vites geçişlerinde titreme ve silkeleme oluyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehir içinde 6,2, şehir dışında 4 litre civarı yakıt tüketiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/ford-focus-2-2005-2011-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Şehir içinde 6.2, şehir dışında 4 litre yakıt tüketmektedir.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu kullanıcılar tarafından sınıfının en iyilerinden kabul ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/ford-focus-2-2005-2011-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Ford, yol tutuş konusunda Dünya'da ki neredeyse tüm arabalardan daha iyi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parçası VW ve Mercedes gibi rakiplerine göre belirgin ucuz.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/ford-focus-alinir-mi",
+      "kaynak_alinti": "Yedek parça VW veya Mercedes'e göre belirgin ucuz",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "servis-yaygin",
+      "iddia": "Ford Otosan servis ağı sayesinde Türkiye genelinde servise erişim kolay.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/ford-focus-alinir-mi",
+      "kaynak_alinti": "Otosan servis ağı sayesinde Türkiye'de erişim geniş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.6 TDCi motorun performansı günlük kullanımda tatmin edici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/ford-focus-2-2005-2011-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "1.6 TDCi dizel motoru ise kendine hayran bırakıyor. Performans olarak gayet tatmin edici.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ikinci-el-deger-kaybi",
+      "iddia": "Türkiye ikinci el pazarında değer kaybı yüksek.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/ford-focus-alinir-mi",
+      "kaynak_alinti": "İkinci el değer kaybı Türk pazarında yüksek",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "375 litrelik bagaj hacmi sınıf ortalamasının altında kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomerkezi.net/alinir-mi/ford-focus-alinir-mi",
+      "kaynak_alinti": "Bagaj kapasitesi (375 lt) sınıf ortalamasının altında",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Bazı parçalar Ford Otosan deposunda bulunmadığı için onarım gecikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/yedek-parca",
+      "kaynak_alinti": "Ellerinde veya Otosan depoda bu zincir olmadığı için şu anlık yapamayacaklarını söylediler.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Şehir içi kullanımda partikül filtresi yüzünden sürekli ücretli yağ değişimi gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/ford/focus/partikul-filtresi",
+      "kaynak_alinti": "Ford Focus Şehir İçi Kullanıma Uygun Olmadığı İçin Sürekli Ücretli Yağ Değişimi Ve Maliyet Yükü",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ön göğüs ve kapı içlerinde sert plastik malzeme kullanılmış.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otobilgisi.com/ford-focus-2-2005-2011-nasil-araba-alinir-mi-inceleme-ve-kullanici-yorumlari/",
+      "kaynak_alinti": "Ön göğüs ve kapı içlerinde sert plastik malzeme kullanılmış.",
+      "guven": "dusuk"
+    }
+  ]
+}

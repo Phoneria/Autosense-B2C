@@ -1,0 +1,6664 @@
+{
+  "surum": 1,
+  "secim_kurali": {
+    "olcut": "ilan_sayisi (azalan)",
+    "adet": 300,
+    "kategoriler": [
+      "arazi-suv-pick-up",
+      "otomobil"
+    ],
+    "yas_filtresi": null,
+    "not": "Yas filtresi bilerek yok. yas_grubu sadece etiket; secimi etkilemez."
+  },
+  "hedefler": [
+    {
+      "id": "renault-clio-1-0-tce",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.0 TCe",
+      "etiket": "Renault Clio 1.0 TCe",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 17270,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.0 TCe Equilibre",
+        "Renault Clio 1.0 TCe Evolution",
+        "Renault Clio 1.0 TCe Icon",
+        "Renault Clio 1.0 TCe Joy",
+        "Renault Clio 1.0 TCe Techno Esprit Alpine"
+      ],
+      "sira": 1
+    },
+    {
+      "id": "fiat-egea-1-3-multijet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Egea",
+      "motor": "1.3 Multijet",
+      "etiket": "Fiat Egea 1.3 Multijet",
+      "yil_araligi": [
+        2017,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 13817,
+      "ornek_ilan_metinleri": [
+        "Fiat Egea 1.3 Multijet Easy",
+        "Fiat Egea 1.3 Multijet Easy Plus",
+        "Fiat Egea 1.3 Multijet Easy Stil",
+        "Fiat Egea 1.3 Multijet Lounge",
+        "Fiat Egea 1.3 Multijet Mirror"
+      ],
+      "sira": 2
+    },
+    {
+      "id": "volkswagen-passat-1-6-tdi-bluemotion",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.6 TDi BlueMotion",
+      "etiket": "Volkswagen Passat 1.6 TDi BlueMotion",
+      "yil_araligi": [
+        2013,
+        2020
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 12545,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.6 TDi BlueMotion",
+        "Volkswagen Passat 1.6 TDi BlueMotion Business",
+        "Volkswagen Passat 1.6 TDi BlueMotion Comfortline",
+        "Volkswagen Passat 1.6 TDi BlueMotion Elegance",
+        "Volkswagen Passat 1.6 TDi BlueMotion Exclusive"
+      ],
+      "sira": 3
+    },
+    {
+      "id": "renault-megane-1-3-tce",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Megane",
+      "motor": "1.3 TCe",
+      "etiket": "Renault Megane 1.3 TCe",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 11338,
+      "ornek_ilan_metinleri": [
+        "Renault Megane 1.3 TCe Icon",
+        "Renault Megane 1.3 TCe Joy",
+        "Renault Megane 1.3 TCe Joy Comfort",
+        "Renault Megane 1.3 TCe Touch"
+      ],
+      "sira": 4
+    },
+    {
+      "id": "fiat-egea-1-6-multijet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Egea",
+      "motor": "1.6 Multijet",
+      "etiket": "Fiat Egea 1.6 Multijet",
+      "yil_araligi": [
+        2017,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 10370,
+      "ornek_ilan_metinleri": [
+        "Fiat Egea 1.6 Multijet Comfort",
+        "Fiat Egea 1.6 Multijet Easy",
+        "Fiat Egea 1.6 Multijet Easy Plus",
+        "Fiat Egea 1.6 Multijet Limited",
+        "Fiat Egea 1.6 Multijet Lounge"
+      ],
+      "sira": 5
+    },
+    {
+      "id": "renault-megane-1-5-dci",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Megane",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Megane 1.5 dCi",
+      "yil_araligi": [
+        2007,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 9231,
+      "ornek_ilan_metinleri": [
+        "Renault Megane 1.5 dCi Authentique",
+        "Renault Megane 1.5 dCi Dynamique",
+        "Renault Megane 1.5 dCi Exception",
+        "Renault Megane 1.5 dCi Expression",
+        "Renault Megane 1.5 dCi Expression Plus"
+      ],
+      "sira": 6
+    },
+    {
+      "id": "bmw-5-serisi-520i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "5 Serisi",
+      "motor": "520i",
+      "etiket": "BMW 5 Serisi 520i",
+      "yil_araligi": [
+        2014,
+        2023
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 9175,
+      "ornek_ilan_metinleri": [
+        "BMW 5 Serisi 520i 50th Year M Edition",
+        "BMW 5 Serisi 520i Comfort",
+        "BMW 5 Serisi 520i Comfort Plus",
+        "BMW 5 Serisi 520i Edition M Sport",
+        "BMW 5 Serisi 520i Executive"
+      ],
+      "sira": 7
+    },
+    {
+      "id": "renault-clio-1-5-dci",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Clio 1.5 dCi",
+      "yil_araligi": [
+        2006,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 9038,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.5 dCi Alize",
+        "Renault Clio 1.5 dCi Authentique",
+        "Renault Clio 1.5 dCi Dynamique",
+        "Renault Clio 1.5 dCi Executive",
+        "Renault Clio 1.5 dCi Expression"
+      ],
+      "sira": 8
+    },
+    {
+      "id": "fiat-egea-1-4-fire",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Egea",
+      "motor": "1.4 Fire",
+      "etiket": "Fiat Egea 1.4 Fire",
+      "yil_araligi": [
+        2019,
+        2024
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 8780,
+      "ornek_ilan_metinleri": [
+        "Fiat Egea 1.4 Fire Easy",
+        "Fiat Egea 1.4 Fire Easy Plus",
+        "Fiat Egea 1.4 Fire Easy Stil",
+        "Fiat Egea 1.4 Fire Limited",
+        "Fiat Egea 1.4 Fire Lounge"
+      ],
+      "sira": 9
+    },
+    {
+      "id": "opel-astra-1-6",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.6",
+      "etiket": "Opel Astra 1.6",
+      "yil_araligi": [
+        1998,
+        2016
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 7925,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.6 CD",
+        "Opel Astra 1.6 Classic",
+        "Opel Astra 1.6 Classic Twinport",
+        "Opel Astra 1.6 Comfort",
+        "Opel Astra 1.6 Cosmo"
+      ],
+      "sira": 10
+    },
+    {
+      "id": "honda-civic-1-6i-vtec",
+      "kategori": "otomobil",
+      "marka": "Honda",
+      "seri": "Civic",
+      "motor": "1.6i VTEC",
+      "etiket": "Honda Civic 1.6i VTEC",
+      "yil_araligi": [
+        2006,
+        2020
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 7868,
+      "ornek_ilan_metinleri": [
+        "Honda Civic 1.6i VTEC Black Edition",
+        "Honda Civic 1.6i VTEC Dream",
+        "Honda Civic 1.6i VTEC ES",
+        "Honda Civic 1.6i VTEC Eco Elegance",
+        "Honda Civic 1.6i VTEC Eco Executive"
+      ],
+      "sira": 11
+    },
+    {
+      "id": "opel-corsa-1-2",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Corsa",
+      "motor": "1.2",
+      "etiket": "Opel Corsa 1.2",
+      "yil_araligi": [
+        2016,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 7544,
+      "ornek_ilan_metinleri": [
+        "Opel Corsa 1.2 City",
+        "Opel Corsa 1.2 Comfort",
+        "Opel Corsa 1.2 Edition",
+        "Opel Corsa 1.2 Elegance",
+        "Opel Corsa 1.2 Enjoy"
+      ],
+      "sira": 12
+    },
+    {
+      "id": "renault-megane-1-5-blue-dci",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Megane",
+      "motor": "1.5 Blue DCI",
+      "etiket": "Renault Megane 1.5 Blue DCI",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 7444,
+      "ornek_ilan_metinleri": [
+        "Renault Megane 1.5 Blue DCI Icon",
+        "Renault Megane 1.5 Blue DCI Joy",
+        "Renault Megane 1.5 Blue DCI Joy Comfort",
+        "Renault Megane 1.5 Blue DCI Touch"
+      ],
+      "sira": 13
+    },
+    {
+      "id": "toyota-corolla-1-6",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.6",
+      "etiket": "Toyota Corolla 1.6",
+      "yil_araligi": [
+        1996,
+        2020
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 7300,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.6 Active",
+        "Toyota Corolla 1.6 Advance",
+        "Toyota Corolla 1.6 Comfort",
+        "Toyota Corolla 1.6 Comfort Extra",
+        "Toyota Corolla 1.6 Comfort Verso"
+      ],
+      "sira": 14
+    },
+    {
+      "id": "renault-fluence-1-5-dci",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Fluence",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Fluence 1.5 dCi",
+      "yil_araligi": [
+        2011,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 6892,
+      "ornek_ilan_metinleri": [
+        "Renault Fluence 1.5 dCi Authentique",
+        "Renault Fluence 1.5 dCi Bold Edition",
+        "Renault Fluence 1.5 dCi Business",
+        "Renault Fluence 1.5 dCi Dynamique",
+        "Renault Fluence 1.5 dCi Elegance"
+      ],
+      "sira": 15
+    },
+    {
+      "id": "hyundai-i20-1-4-mpi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "i20",
+      "motor": "1.4 MPI",
+      "etiket": "Hyundai i20 1.4 MPI",
+      "yil_araligi": [
+        2017,
+        2023
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 6677,
+      "ornek_ilan_metinleri": [
+        "Hyundai i20 1.4 MPI Elite",
+        "Hyundai i20 1.4 MPI Elite Plus",
+        "Hyundai i20 1.4 MPI Elite Smart",
+        "Hyundai i20 1.4 MPI Jump",
+        "Hyundai i20 1.4 MPI Style"
+      ],
+      "sira": 16
+    },
+    {
+      "id": "ford-focus-1-6-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.6 TDCi",
+      "etiket": "Ford Focus 1.6 TDCi",
+      "yil_araligi": [
+        2007,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 6093,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.6 TDCi Collection",
+        "Ford Focus 1.6 TDCi Ghia",
+        "Ford Focus 1.6 TDCi Sport",
+        "Ford Focus 1.6 TDCi Style",
+        "Ford Focus 1.6 TDCi Titanium"
+      ],
+      "sira": 17
+    },
+    {
+      "id": "fiat-linea-1-3-multijet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Linea",
+      "motor": "1.3 Multijet",
+      "etiket": "Fiat Linea 1.3 Multijet",
+      "yil_araligi": [
+        2011,
+        2016
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 6069,
+      "ornek_ilan_metinleri": [
+        "Fiat Linea 1.3 Multijet Active",
+        "Fiat Linea 1.3 Multijet Active Plus",
+        "Fiat Linea 1.3 Multijet Actual",
+        "Fiat Linea 1.3 Multijet Actual Plus",
+        "Fiat Linea 1.3 Multijet Dynamic"
+      ],
+      "sira": 18
+    },
+    {
+      "id": "ford-focus-1-5-ecoblue",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.5 EcoBlue",
+      "etiket": "Ford Focus 1.5 EcoBlue",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 6007,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.5 EcoBlue Active",
+        "Ford Focus 1.5 EcoBlue Active Stil",
+        "Ford Focus 1.5 EcoBlue Active X",
+        "Ford Focus 1.5 EcoBlue Titanium",
+        "Ford Focus 1.5 EcoBlue Titanium Stil"
+      ],
+      "sira": 19
+    },
+    {
+      "id": "toyota-corolla-1-8-hybrid",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.8 Hybrid",
+      "etiket": "Toyota Corolla 1.8 Hybrid",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 5872,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.8 Hybrid Dream",
+        "Toyota Corolla 1.8 Hybrid Dream X-Pack",
+        "Toyota Corolla 1.8 Hybrid Flame",
+        "Toyota Corolla 1.8 Hybrid Flame X-Pack",
+        "Toyota Corolla 1.8 Hybrid Passion X-Pack"
+      ],
+      "sira": 20
+    },
+    {
+      "id": "renault-symbol-1-5-dci",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Symbol",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Symbol 1.5 dCi",
+      "yil_araligi": [
+        2009,
+        2018
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 5799,
+      "ornek_ilan_metinleri": [
+        "Renault Symbol 1.5 dCi Authentique",
+        "Renault Symbol 1.5 dCi Authentique Edition",
+        "Renault Symbol 1.5 dCi BlueDCI Joy",
+        "Renault Symbol 1.5 dCi Dynamique",
+        "Renault Symbol 1.5 dCi Expression"
+      ],
+      "sira": 21
+    },
+    {
+      "id": "bmw-3-serisi-320i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "3 Serisi",
+      "motor": "320i",
+      "etiket": "BMW 3 Serisi 320i",
+      "yil_araligi": [
+        2009,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 5704,
+      "ornek_ilan_metinleri": [
+        "BMW 3 Serisi 320i",
+        "BMW 3 Serisi 320i 50 Jahre Edition",
+        "BMW 3 Serisi 320i 50th Year M Edition",
+        "BMW 3 Serisi 320i Cabrio",
+        "BMW 3 Serisi 320i Edition M Sport"
+      ],
+      "sira": 22
+    },
+    {
+      "id": "hyundai-tucson-1-6-crdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Tucson",
+      "motor": "1.6 CRDi",
+      "etiket": "Hyundai Tucson 1.6 CRDi",
+      "yil_araligi": [
+        2019,
+        2024
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 5434,
+      "ornek_ilan_metinleri": [
+        "Hyundai Tucson 1.6 CRDi Elite",
+        "Hyundai Tucson 1.6 CRDi Elite Plus",
+        "Hyundai Tucson 1.6 CRDi Elite Red Pack",
+        "Hyundai Tucson 1.6 CRDi N Line",
+        "Hyundai Tucson 1.6 CRDi N Line Plus"
+      ],
+      "sira": 23
+    },
+    {
+      "id": "peugeot-3008-1-5-bluehdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "3008",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Peugeot 3008 1.5 BlueHDI",
+      "yil_araligi": [
+        2019,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 5331,
+      "ornek_ilan_metinleri": [
+        "Peugeot 3008 1.5 BlueHDI Active Life Prime Edition",
+        "Peugeot 3008 1.5 BlueHDI Active Life Sky Pack",
+        "Peugeot 3008 1.5 BlueHDI Active Life Sport Pack",
+        "Peugeot 3008 1.5 BlueHDI Active Prime",
+        "Peugeot 3008 1.5 BlueHDI Active Prime Edition"
+      ],
+      "sira": 24
+    },
+    {
+      "id": "nissan-micra-1-2",
+      "kategori": "otomobil",
+      "marka": "Nissan",
+      "seri": "Micra",
+      "motor": "1.2",
+      "etiket": "Nissan Micra 1.2",
+      "yil_araligi": [
+        2006,
+        2018
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 5272,
+      "ornek_ilan_metinleri": [
+        "Nissan Micra 1.2 Match",
+        "Nissan Micra 1.2 Mood",
+        "Nissan Micra 1.2 Passion",
+        "Nissan Micra 1.2 Platinum",
+        "Nissan Micra 1.2 Punch"
+      ],
+      "sira": 25
+    },
+    {
+      "id": "toyota-corolla-1-5",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.5",
+      "etiket": "Toyota Corolla 1.5",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 5146,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.5 Dream",
+        "Toyota Corolla 1.5 Dream X-Pack",
+        "Toyota Corolla 1.5 Flame",
+        "Toyota Corolla 1.5 Flame X-Pack",
+        "Toyota Corolla 1.5 Passion X-Pack"
+      ],
+      "sira": 26
+    },
+    {
+      "id": "volkswagen-golf-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.6 TDi",
+      "etiket": "Volkswagen Golf 1.6 TDi",
+      "yil_araligi": [
+        2011,
+        2018
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 5011,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.6 TDi Allstar",
+        "Volkswagen Golf 1.6 TDi BlueMotion Comfortline",
+        "Volkswagen Golf 1.6 TDi BlueMotion Highline",
+        "Volkswagen Golf 1.6 TDi BlueMotion Midline Plus",
+        "Volkswagen Golf 1.6 TDi Comfortline"
+      ],
+      "sira": 27
+    },
+    {
+      "id": "volkswagen-tiguan-1-5-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Tiguan",
+      "motor": "1.5 TSI",
+      "etiket": "Volkswagen Tiguan 1.5 TSI",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4942,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Tiguan 1.5 TSI Comfortline",
+        "Volkswagen Tiguan 1.5 TSI Elegance",
+        "Volkswagen Tiguan 1.5 TSI Highline",
+        "Volkswagen Tiguan 1.5 TSI Life",
+        "Volkswagen Tiguan 1.5 TSI R-Line"
+      ],
+      "sira": 28
+    },
+    {
+      "id": "volkswagen-passat-1-5-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.5 TSi",
+      "etiket": "Volkswagen Passat 1.5 TSi",
+      "yil_araligi": [
+        2020,
+        2022
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4939,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.5 TSi Business",
+        "Volkswagen Passat 1.5 TSi Elegance",
+        "Volkswagen Passat 1.5 TSi Highline",
+        "Volkswagen Passat 1.5 TSi Impression",
+        "Volkswagen Passat 1.5 TSi R Line"
+      ],
+      "sira": 29
+    },
+    {
+      "id": "fiat-egea-cross-1-4-fire",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Fiat",
+      "seri": "Egea Cross",
+      "motor": "1.4 Fire",
+      "etiket": "Fiat Egea Cross 1.4 Fire",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4880,
+      "ornek_ilan_metinleri": [
+        "Fiat Egea Cross 1.4 Fire Limited",
+        "Fiat Egea Cross 1.4 Fire Lounge",
+        "Fiat Egea Cross 1.4 Fire Street",
+        "Fiat Egea Cross 1.4 Fire Street Plus",
+        "Fiat Egea Cross 1.4 Fire Urban"
+      ],
+      "sira": 30
+    },
+    {
+      "id": "ford-focus-1-5-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.5 TDCi",
+      "etiket": "Ford Focus 1.5 TDCi",
+      "yil_araligi": [
+        2015,
+        2021
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 4842,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.5 TDCi Active",
+        "Ford Focus 1.5 TDCi Active Stil",
+        "Ford Focus 1.5 TDCi Active X",
+        "Ford Focus 1.5 TDCi ST Line",
+        "Ford Focus 1.5 TDCi Style"
+      ],
+      "sira": 31
+    },
+    {
+      "id": "volkswagen-t-roc-1-5-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "T-Roc",
+      "motor": "1.5 TSI",
+      "etiket": "Volkswagen T-Roc 1.5 TSI",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4816,
+      "ornek_ilan_metinleri": [
+        "Volkswagen T-Roc 1.5 TSI Highline",
+        "Volkswagen T-Roc 1.5 TSI Life",
+        "Volkswagen T-Roc 1.5 TSI R-Line",
+        "Volkswagen T-Roc 1.5 TSI Style"
+      ],
+      "sira": 32
+    },
+    {
+      "id": "toyota-corolla-1-4-d-4d",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.4 D-4D",
+      "etiket": "Toyota Corolla 1.4 D-4D",
+      "yil_araligi": [
+        2009,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 4747,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.4 D-4D Active",
+        "Toyota Corolla 1.4 D-4D Advance",
+        "Toyota Corolla 1.4 D-4D Class",
+        "Toyota Corolla 1.4 D-4D Comfort",
+        "Toyota Corolla 1.4 D-4D Comfort Extra"
+      ],
+      "sira": 33
+    },
+    {
+      "id": "dacia-duster-1-5-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Dacia",
+      "seri": "Duster",
+      "motor": "1.5 dCi",
+      "etiket": "Dacia Duster 1.5 dCi",
+      "yil_araligi": [
+        2012,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 4624,
+      "ornek_ilan_metinleri": [
+        "Dacia Duster 1.5 dCi Adventure",
+        "Dacia Duster 1.5 dCi Ambiance",
+        "Dacia Duster 1.5 dCi Blackshadow",
+        "Dacia Duster 1.5 dCi Comfort",
+        "Dacia Duster 1.5 dCi Laureate"
+      ],
+      "sira": 34
+    },
+    {
+      "id": "peugeot-2008-1-2-puretech",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "2008",
+      "motor": "1.2 PureTech",
+      "etiket": "Peugeot 2008 1.2 PureTech",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 4358,
+      "ornek_ilan_metinleri": [
+        "Peugeot 2008 1.2 PureTech Active",
+        "Peugeot 2008 1.2 PureTech Active Dynamic",
+        "Peugeot 2008 1.2 PureTech Active Prime",
+        "Peugeot 2008 1.2 PureTech Active Skypack",
+        "Peugeot 2008 1.2 PureTech Allure"
+      ],
+      "sira": 35
+    },
+    {
+      "id": "renault-megane-1-6",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Megane",
+      "motor": "1.6",
+      "etiket": "Renault Megane 1.6",
+      "yil_araligi": [
+        2000,
+        2018
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 4343,
+      "ornek_ilan_metinleri": [
+        "Renault Megane 1.6 Alize",
+        "Renault Megane 1.6 Authentique",
+        "Renault Megane 1.6 Dynamique",
+        "Renault Megane 1.6 Exception",
+        "Renault Megane 1.6 Expression"
+      ],
+      "sira": 36
+    },
+    {
+      "id": "nissan-qashqai-1-3-dig-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.3 DIG-T",
+      "etiket": "Nissan Qashqai 1.3 DIG-T",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4247,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.3 DIG-T Design Pack",
+        "Nissan Qashqai 1.3 DIG-T Midnight Edition",
+        "Nissan Qashqai 1.3 DIG-T N-Connecta",
+        "Nissan Qashqai 1.3 DIG-T Platinum",
+        "Nissan Qashqai 1.3 DIG-T Platinum Premium"
+      ],
+      "sira": 37
+    },
+    {
+      "id": "volkswagen-polo-1-0-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.0 TSi",
+      "etiket": "Volkswagen Polo 1.0 TSi",
+      "yil_araligi": [
+        2018,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 4041,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.0 TSi Comfortline",
+        "Volkswagen Polo 1.0 TSi Highline",
+        "Volkswagen Polo 1.0 TSi Life",
+        "Volkswagen Polo 1.0 TSi R-Line"
+      ],
+      "sira": 38
+    },
+    {
+      "id": "opel-astra-1-3-cdti",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.3 CDTI",
+      "etiket": "Opel Astra 1.3 CDTI",
+      "yil_araligi": [
+        2007,
+        2013
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 4027,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.3 CDTI Active",
+        "Opel Astra 1.3 CDTI Business",
+        "Opel Astra 1.3 CDTI Cosmo",
+        "Opel Astra 1.3 CDTI Edition",
+        "Opel Astra 1.3 CDTI Edition Plus"
+      ],
+      "sira": 39
+    },
+    {
+      "id": "skoda-octavia-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Octavia",
+      "motor": "1.6 TDI",
+      "etiket": "Skoda Octavia 1.6 TDI",
+      "yil_araligi": [
+        2013,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 4002,
+      "ornek_ilan_metinleri": [
+        "Skoda Octavia 1.6 TDI Ambiente",
+        "Skoda Octavia 1.6 TDI Ambition",
+        "Skoda Octavia 1.6 TDI Elegance",
+        "Skoda Octavia 1.6 TDI Elegance CR",
+        "Skoda Octavia 1.6 TDI Optimal"
+      ],
+      "sira": 40
+    },
+    {
+      "id": "skoda-superb-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "SuperB",
+      "motor": "1.6 TDI",
+      "etiket": "Skoda SuperB 1.6 TDI",
+      "yil_araligi": [
+        2013,
+        2020
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 4000,
+      "ornek_ilan_metinleri": [
+        "Skoda SuperB 1.6 TDI Active",
+        "Skoda SuperB 1.6 TDI Ambition",
+        "Skoda SuperB 1.6 TDI Comfort",
+        "Skoda SuperB 1.6 TDI Elegance",
+        "Skoda SuperB 1.6 TDI Elite"
+      ],
+      "sira": 41
+    },
+    {
+      "id": "mercedes-benz-e-180",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "180",
+      "etiket": "Mercedes - Benz E 180",
+      "yil_araligi": [
+        2014,
+        2024
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 3879,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 180 AMG",
+        "Mercedes - Benz E 180 AMG Premium",
+        "Mercedes - Benz E 180 Avantgarde",
+        "Mercedes - Benz E 180 Edition",
+        "Mercedes - Benz E 180 Edition 1 AMG"
+      ],
+      "sira": 42
+    },
+    {
+      "id": "volkswagen-tiguan-1-4-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Tiguan",
+      "motor": "1.4 TSI",
+      "etiket": "Volkswagen Tiguan 1.4 TSI",
+      "yil_araligi": [
+        2011,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3813,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Tiguan 1.4 TSI Chrome Edition",
+        "Volkswagen Tiguan 1.4 TSI Comfortline",
+        "Volkswagen Tiguan 1.4 TSI Cup",
+        "Volkswagen Tiguan 1.4 TSI Fun&Function",
+        "Volkswagen Tiguan 1.4 TSI Highline"
+      ],
+      "sira": 43
+    },
+    {
+      "id": "volkswagen-passat-1-4-tsi-bluemotion",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.4 TSi BlueMotion",
+      "etiket": "Volkswagen Passat 1.4 TSi BlueMotion",
+      "yil_araligi": [
+        2012,
+        2018
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3765,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.4 TSi BlueMotion Comfortline",
+        "Volkswagen Passat 1.4 TSi BlueMotion Exclusive",
+        "Volkswagen Passat 1.4 TSi BlueMotion Highline",
+        "Volkswagen Passat 1.4 TSi BlueMotion Trendline"
+      ],
+      "sira": 44
+    },
+    {
+      "id": "citroen-c3-1-2-puretech",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C3",
+      "motor": "1.2 PureTech",
+      "etiket": "Citroen C3 1.2 PureTech",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3747,
+      "ornek_ilan_metinleri": [
+        "Citroen C3 1.2 PureTech Elle",
+        "Citroen C3 1.2 PureTech Feel",
+        "Citroen C3 1.2 PureTech Feel Adventure",
+        "Citroen C3 1.2 PureTech Feel Bold",
+        "Citroen C3 1.2 PureTech Feel Business"
+      ],
+      "sira": 45
+    },
+    {
+      "id": "skoda-superb-1-5-tsi",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "SuperB",
+      "motor": "1.5 TSI",
+      "etiket": "Skoda SuperB 1.5 TSI",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3623,
+      "ornek_ilan_metinleri": [
+        "Skoda SuperB 1.5 TSI Comfort Plus",
+        "Skoda SuperB 1.5 TSI Elite",
+        "Skoda SuperB 1.5 TSI Laurin&Klement Crystal",
+        "Skoda SuperB 1.5 TSI Premium",
+        "Skoda SuperB 1.5 TSI Prestige"
+      ],
+      "sira": 46
+    },
+    {
+      "id": "dacia-duster-1-3-tce",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Dacia",
+      "seri": "Duster",
+      "motor": "1.3 Tce",
+      "etiket": "Dacia Duster 1.3 Tce",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3611,
+      "ornek_ilan_metinleri": [
+        "Dacia Duster 1.3 Tce Comfort",
+        "Dacia Duster 1.3 Tce Essential",
+        "Dacia Duster 1.3 Tce Expression",
+        "Dacia Duster 1.3 Tce Extreme",
+        "Dacia Duster 1.3 Tce Journey"
+      ],
+      "sira": 47
+    },
+    {
+      "id": "opel-corsa-1-4",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Corsa",
+      "motor": "1.4",
+      "etiket": "Opel Corsa 1.4",
+      "yil_araligi": [
+        1998,
+        2018
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3594,
+      "ornek_ilan_metinleri": [
+        "Opel Corsa 1.4 120.Yıl",
+        "Opel Corsa 1.4 Black Edition",
+        "Opel Corsa 1.4 Color Edition",
+        "Opel Corsa 1.4 Comfort",
+        "Opel Corsa 1.4 Design"
+      ],
+      "sira": 48
+    },
+    {
+      "id": "volkswagen-jetta-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.6 TDi",
+      "etiket": "Volkswagen Jetta 1.6 TDi",
+      "yil_araligi": [
+        2011,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3506,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.6 TDi Comfortline",
+        "Volkswagen Jetta 1.6 TDi Exclusive",
+        "Volkswagen Jetta 1.6 TDi Highline",
+        "Volkswagen Jetta 1.6 TDi Midline",
+        "Volkswagen Jetta 1.6 TDi Primeline"
+      ],
+      "sira": 49
+    },
+    {
+      "id": "nissan-qashqai-1-6-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.6 dCi",
+      "etiket": "Nissan Qashqai 1.6 dCi",
+      "yil_araligi": [
+        2014,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 3466,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.6 dCi Black Edition",
+        "Nissan Qashqai 1.6 dCi Black Edition Premium Pack",
+        "Nissan Qashqai 1.6 dCi Design Pack",
+        "Nissan Qashqai 1.6 dCi Platinum",
+        "Nissan Qashqai 1.6 dCi Platinum Premium Pack"
+      ],
+      "sira": 50
+    },
+    {
+      "id": "honda-civic-1-5-i-vtec",
+      "kategori": "otomobil",
+      "marka": "Honda",
+      "seri": "Civic",
+      "motor": "1.5 i-VTEC",
+      "etiket": "Honda Civic 1.5 i-VTEC",
+      "yil_araligi": [
+        2017,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3364,
+      "ornek_ilan_metinleri": [
+        "Honda Civic 1.5 i-VTEC Eco Elegance",
+        "Honda Civic 1.5 i-VTEC Eco Elegance Plus",
+        "Honda Civic 1.5 i-VTEC Eco Executive Plus",
+        "Honda Civic 1.5 i-VTEC Eco Premium",
+        "Honda Civic 1.5 i-VTEC Elegance"
+      ],
+      "sira": 51
+    },
+    {
+      "id": "citroen-c5-aircross-1-5-bluehdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Citroen",
+      "seri": "C5 Aircross",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Citroen C5 Aircross 1.5 BlueHDI",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3292,
+      "ornek_ilan_metinleri": [
+        "Citroen C5 Aircross 1.5 BlueHDI Exclusive",
+        "Citroen C5 Aircross 1.5 BlueHDI Feel",
+        "Citroen C5 Aircross 1.5 BlueHDI Feel Adventure",
+        "Citroen C5 Aircross 1.5 BlueHDI Feel Bold",
+        "Citroen C5 Aircross 1.5 BlueHDI Max"
+      ],
+      "sira": 52
+    },
+    {
+      "id": "opel-astra-1-4-t",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.4 T",
+      "etiket": "Opel Astra 1.4 T",
+      "yil_araligi": [
+        2012,
+        2020
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 3260,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.4 T Active",
+        "Opel Astra 1.4 T Business",
+        "Opel Astra 1.4 T Cosmo",
+        "Opel Astra 1.4 T Design",
+        "Opel Astra 1.4 T Dynamic"
+      ],
+      "sira": 53
+    },
+    {
+      "id": "opel-corsa-1-3-cdti",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Corsa",
+      "motor": "1.3 CDTI",
+      "etiket": "Opel Corsa 1.3 CDTI",
+      "yil_araligi": [
+        2004,
+        2014
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3257,
+      "ornek_ilan_metinleri": [
+        "Opel Corsa 1.3 CDTI Active",
+        "Opel Corsa 1.3 CDTI Black&White",
+        "Opel Corsa 1.3 CDTI Color Edition",
+        "Opel Corsa 1.3 CDTI Cosmo",
+        "Opel Corsa 1.3 CDTI Enjoy"
+      ],
+      "sira": 54
+    },
+    {
+      "id": "ford-fiesta-1-4-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Fiesta",
+      "motor": "1.4 TDCi",
+      "etiket": "Ford Fiesta 1.4 TDCi",
+      "yil_araligi": [
+        2004,
+        2012
+      ],
+      "medyan_yil": 2008,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 3247,
+      "ornek_ilan_metinleri": [
+        "Ford Fiesta 1.4 TDCi Collection",
+        "Ford Fiesta 1.4 TDCi Comfort",
+        "Ford Fiesta 1.4 TDCi My",
+        "Ford Fiesta 1.4 TDCi Sport",
+        "Ford Fiesta 1.4 TDCi Titanium"
+      ],
+      "sira": 55
+    },
+    {
+      "id": "togg-t10x-v2",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "TOGG",
+      "seri": "T10X",
+      "motor": "V2",
+      "etiket": "TOGG T10X V2",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 3236,
+      "ornek_ilan_metinleri": [
+        "TOGG T10X V2",
+        "TOGG T10X V2 Obsidiyen",
+        "TOGG T10X V2 Standart Menzil",
+        "TOGG T10X V2 Uzun Menzil"
+      ],
+      "sira": 56
+    },
+    {
+      "id": "volkswagen-polo-1-4-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.4 TDi",
+      "etiket": "Volkswagen Polo 1.4 TDi",
+      "yil_araligi": [
+        2014,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 3160,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.4 TDi Basicline",
+        "Volkswagen Polo 1.4 TDi Bluemotion",
+        "Volkswagen Polo 1.4 TDi Comfortline",
+        "Volkswagen Polo 1.4 TDi Goal",
+        "Volkswagen Polo 1.4 TDi Trendline"
+      ],
+      "sira": 57
+    },
+    {
+      "id": "dacia-duster-1-5-bluedci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Dacia",
+      "seri": "Duster",
+      "motor": "1.5 BlueDCI",
+      "etiket": "Dacia Duster 1.5 BlueDCI",
+      "yil_araligi": [
+        2019,
+        2022
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3111,
+      "ornek_ilan_metinleri": [
+        "Dacia Duster 1.5 BlueDCI Comfort",
+        "Dacia Duster 1.5 BlueDCI Essential",
+        "Dacia Duster 1.5 BlueDCI Prestige",
+        "Dacia Duster 1.5 BlueDCI Prestige Plus",
+        "Dacia Duster 1.5 BlueDCI Techroad"
+      ],
+      "sira": 58
+    },
+    {
+      "id": "skoda-scala-1-0-tsi",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Scala",
+      "motor": "1.0 TSI",
+      "etiket": "Skoda Scala 1.0 TSI",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3087,
+      "ornek_ilan_metinleri": [
+        "Skoda Scala 1.0 TSI Comfort",
+        "Skoda Scala 1.0 TSI Elite",
+        "Skoda Scala 1.0 TSI Premium"
+      ],
+      "sira": 59
+    },
+    {
+      "id": "nissan-qashqai-1-5-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.5 dCi",
+      "etiket": "Nissan Qashqai 1.5 dCi",
+      "yil_araligi": [
+        2011,
+        2020
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 3082,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.5 dCi Black Edition",
+        "Nissan Qashqai 1.5 dCi Design Pack",
+        "Nissan Qashqai 1.5 dCi Midnight Edition",
+        "Nissan Qashqai 1.5 dCi Platinum",
+        "Nissan Qashqai 1.5 dCi Platinum Premium Pack"
+      ],
+      "sira": 60
+    },
+    {
+      "id": "volkswagen-taigo-1-0-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Taigo",
+      "motor": "1.0 TSI",
+      "etiket": "Volkswagen Taigo 1.0 TSI",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 3021,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Taigo 1.0 TSI Life",
+        "Volkswagen Taigo 1.0 TSI R Line",
+        "Volkswagen Taigo 1.0 TSI Style"
+      ],
+      "sira": 61
+    },
+    {
+      "id": "kia-sportage-1-6",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Kia",
+      "seri": "Sportage",
+      "motor": "1.6",
+      "etiket": "Kia Sportage 1.6",
+      "yil_araligi": [
+        2012,
+        2017
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2966,
+      "ornek_ilan_metinleri": [
+        "Kia Sportage 1.6 GDI",
+        "Kia Sportage 1.6 GDI Comfort",
+        "Kia Sportage 1.6 GDI Concept",
+        "Kia Sportage 1.6 GDI Concept Plus",
+        "Kia Sportage 1.6 GDI Cool"
+      ],
+      "sira": 62
+    },
+    {
+      "id": "seat-leon-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Seat",
+      "seri": "Leon",
+      "motor": "1.6 TDI",
+      "etiket": "Seat Leon 1.6 TDI",
+      "yil_araligi": [
+        2012,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2945,
+      "ornek_ilan_metinleri": [
+        "Seat Leon 1.6 TDI CR Style",
+        "Seat Leon 1.6 TDI FR",
+        "Seat Leon 1.6 TDI Style",
+        "Seat Leon 1.6 TDI X Perience",
+        "Seat Leon 1.6 TDI Xcellence"
+      ],
+      "sira": 63
+    },
+    {
+      "id": "opel-crossland-1-2-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Opel",
+      "seri": "Crossland",
+      "motor": "1.2 T",
+      "etiket": "Opel Crossland 1.2 T",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2928,
+      "ornek_ilan_metinleri": [
+        "Opel Crossland 1.2 T Edition",
+        "Opel Crossland 1.2 T Elegance",
+        "Opel Crossland 1.2 T Essential",
+        "Opel Crossland 1.2 T GS Line",
+        "Opel Crossland 1.2 T Ultimate"
+      ],
+      "sira": 64
+    },
+    {
+      "id": "bmw-3-serisi-320d",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "3 Serisi",
+      "motor": "320d",
+      "etiket": "BMW 3 Serisi 320d",
+      "yil_araligi": [
+        2006,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2903,
+      "ornek_ilan_metinleri": [
+        "BMW 3 Serisi 320d 40th Year Edition",
+        "BMW 3 Serisi 320d Advantage",
+        "BMW 3 Serisi 320d Comfort",
+        "BMW 3 Serisi 320d Edition Comfort",
+        "BMW 3 Serisi 320d Edition M Sport"
+      ],
+      "sira": 65
+    },
+    {
+      "id": "opel-mokka-1-2-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Opel",
+      "seri": "Mokka",
+      "motor": "1.2 T",
+      "etiket": "Opel Mokka 1.2 T",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2898,
+      "ornek_ilan_metinleri": [
+        "Opel Mokka 1.2 T Edition",
+        "Opel Mokka 1.2 T Elegance",
+        "Opel Mokka 1.2 T GS",
+        "Opel Mokka 1.2 T GS Line",
+        "Opel Mokka 1.2 T Ultimate"
+      ],
+      "sira": 66
+    },
+    {
+      "id": "chevrolet-captiva-2-0-d",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Chevrolet",
+      "seri": "Captiva",
+      "motor": "2.0 D",
+      "etiket": "Chevrolet Captiva 2.0 D",
+      "yil_araligi": [
+        2008,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2880,
+      "ornek_ilan_metinleri": [
+        "Chevrolet Captiva 2.0 D LT Base",
+        "Chevrolet Captiva 2.0 D LT High",
+        "Chevrolet Captiva 2.0 D LT High Sport",
+        "Chevrolet Captiva 2.0 D LT Medium",
+        "Chevrolet Captiva 2.0 D LT Sport"
+      ],
+      "sira": 67
+    },
+    {
+      "id": "dacia-sandero-stepway-1-0-tce",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Dacia",
+      "seri": "Sandero Stepway",
+      "motor": "1.0 Tce",
+      "etiket": "Dacia Sandero Stepway 1.0 Tce",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 2875,
+      "ornek_ilan_metinleri": [
+        "Dacia Sandero Stepway 1.0 Tce Comfort",
+        "Dacia Sandero Stepway 1.0 Tce Essential",
+        "Dacia Sandero Stepway 1.0 Tce Expression",
+        "Dacia Sandero Stepway 1.0 Tce Extreme",
+        "Dacia Sandero Stepway 1.0 Tce Prestige"
+      ],
+      "sira": 68
+    },
+    {
+      "id": "volkswagen-golf-1-4-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.4 TSi",
+      "etiket": "Volkswagen Golf 1.4 TSi",
+      "yil_araligi": [
+        2009,
+        2017
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2870,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.4 TSi Allstar",
+        "Volkswagen Golf 1.4 TSi Comfortline",
+        "Volkswagen Golf 1.4 TSi GT",
+        "Volkswagen Golf 1.4 TSi Highline",
+        "Volkswagen Golf 1.4 TSi Midline"
+      ],
+      "sira": 69
+    },
+    {
+      "id": "bmw-3-serisi-320i-ed",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "3 Serisi",
+      "motor": "320i ED",
+      "etiket": "BMW 3 Serisi 320i ED",
+      "yil_araligi": [
+        2013,
+        2016
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2772,
+      "ornek_ilan_metinleri": [
+        "BMW 3 Serisi 320i ED 40th Year Edition",
+        "BMW 3 Serisi 320i ED Joy",
+        "BMW 3 Serisi 320i ED Luxury Line",
+        "BMW 3 Serisi 320i ED Luxury Line Plus",
+        "BMW 3 Serisi 320i ED M Plus"
+      ],
+      "sira": 70
+    },
+    {
+      "id": "mercedes-benz-e-200-d",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "200 d",
+      "etiket": "Mercedes - Benz E 200 d",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2684,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 200 D",
+        "Mercedes - Benz E 200 d",
+        "Mercedes - Benz E 200 d AMG",
+        "Mercedes - Benz E 200 d Avantgarde",
+        "Mercedes - Benz E 200 d Exclusive"
+      ],
+      "sira": 71
+    },
+    {
+      "id": "citroen-c4-x-1-2-puretech",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C4 X",
+      "motor": "1.2 PureTech",
+      "etiket": "Citroen C4 X 1.2 PureTech",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 2644,
+      "ornek_ilan_metinleri": [
+        "Citroen C4 X 1.2 PureTech Feel",
+        "Citroen C4 X 1.2 PureTech Feel Bold",
+        "Citroen C4 X 1.2 PureTech Max",
+        "Citroen C4 X 1.2 PureTech Shine",
+        "Citroen C4 X 1.2 PureTech Shine Bold"
+      ],
+      "sira": 72
+    },
+    {
+      "id": "volkswagen-polo-1-4",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.4",
+      "etiket": "Volkswagen Polo 1.4",
+      "yil_araligi": [
+        2001,
+        2012
+      ],
+      "medyan_yil": 2007,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2538,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.4",
+        "Volkswagen Polo 1.4 Basicline",
+        "Volkswagen Polo 1.4 Chrome Edition",
+        "Volkswagen Polo 1.4 Comfortline",
+        "Volkswagen Polo 1.4 Fan Edition"
+      ],
+      "sira": 73
+    },
+    {
+      "id": "fiat-egea-cross-1-6-multijet",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Fiat",
+      "seri": "Egea Cross",
+      "motor": "1.6 Multijet",
+      "etiket": "Fiat Egea Cross 1.6 Multijet",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 2485,
+      "ornek_ilan_metinleri": [
+        "Fiat Egea Cross 1.6 Multijet Limited",
+        "Fiat Egea Cross 1.6 Multijet Lounge",
+        "Fiat Egea Cross 1.6 Multijet Lounge Plus",
+        "Fiat Egea Cross 1.6 Multijet Street",
+        "Fiat Egea Cross 1.6 Multijet Street Plus"
+      ],
+      "sira": 74
+    },
+    {
+      "id": "dacia-sandero-1-5-dci",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Sandero",
+      "motor": "1.5 dCi",
+      "etiket": "Dacia Sandero 1.5 dCi",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2455,
+      "ornek_ilan_metinleri": [
+        "Dacia Sandero 1.5 dCi Ambiance",
+        "Dacia Sandero 1.5 dCi Black Line",
+        "Dacia Sandero 1.5 dCi Stepway",
+        "Dacia Sandero 1.5 dCi Stepway Style"
+      ],
+      "sira": 75
+    },
+    {
+      "id": "ford-ranger-2-0-ecoblue",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Ranger",
+      "motor": "2.0 EcoBlue",
+      "etiket": "Ford Ranger 2.0 EcoBlue",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2450,
+      "ornek_ilan_metinleri": [
+        "Ford Ranger 2.0 EcoBlue 4x2 XLT",
+        "Ford Ranger 2.0 EcoBlue 4x4 Raptor",
+        "Ford Ranger 2.0 EcoBlue 4x4 Storm Trak",
+        "Ford Ranger 2.0 EcoBlue 4x4 Stormtrak",
+        "Ford Ranger 2.0 EcoBlue 4x4 Wildtrak"
+      ],
+      "sira": 76
+    },
+    {
+      "id": "hyundai-i20-1-0-t-gdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "i20",
+      "motor": "1.0 T-GDI",
+      "etiket": "Hyundai i20 1.0 T-GDI",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 2436,
+      "ornek_ilan_metinleri": [
+        "Hyundai i20 1.0 T-GDI Elite",
+        "Hyundai i20 1.0 T-GDI Jump",
+        "Hyundai i20 1.0 T-GDI Style",
+        "Hyundai i20 1.0 T-GDI Style Plus"
+      ],
+      "sira": 77
+    },
+    {
+      "id": "mitsubishi-l-200-4x4",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Mitsubishi",
+      "seri": "L 200",
+      "motor": "4x4",
+      "etiket": "Mitsubishi L 200 4x4",
+      "yil_araligi": [
+        2008,
+        2021
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2381,
+      "ornek_ilan_metinleri": [
+        "Mitsubishi L 200 4x4",
+        "Mitsubishi L 200 4x4 Blizzard",
+        "Mitsubishi L 200 4x4 Blizzard Crawler Lüx",
+        "Mitsubishi L 200 4x4 GL",
+        "Mitsubishi L 200 4x4 Instyle"
+      ],
+      "sira": 78
+    },
+    {
+      "id": "opel-astra-1-6-cdti",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.6 CDTI",
+      "etiket": "Opel Astra 1.6 CDTI",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2332,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.6 CDTI Business",
+        "Opel Astra 1.6 CDTI Cosmo",
+        "Opel Astra 1.6 CDTI Design",
+        "Opel Astra 1.6 CDTI Dynamic",
+        "Opel Astra 1.6 CDTI Edition"
+      ],
+      "sira": 79
+    },
+    {
+      "id": "mercedes-benz-e-200",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "200",
+      "etiket": "Mercedes - Benz E 200",
+      "yil_araligi": [
+        1994,
+        2016
+      ],
+      "medyan_yil": 1998,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2292,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 200",
+        "Mercedes - Benz E 200 AMG",
+        "Mercedes - Benz E 200 Avantgarde",
+        "Mercedes - Benz E 200 Classic",
+        "Mercedes - Benz E 200 Elegance"
+      ],
+      "sira": 80
+    },
+    {
+      "id": "renault-r-9-1-4-broadway",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 9",
+      "motor": "1.4 Broadway",
+      "etiket": "Renault R 9 1.4 Broadway",
+      "yil_araligi": [
+        1991,
+        1998
+      ],
+      "medyan_yil": 1996,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2289,
+      "ornek_ilan_metinleri": [
+        "Renault R 9 1.4 Broadway",
+        "Renault R 9 1.4 Broadway GTE",
+        "Renault R 9 1.4 Broadway RL",
+        "Renault R 9 1.4 Broadway RN",
+        "Renault R 9 1.4 Broadway RNi"
+      ],
+      "sira": 81
+    },
+    {
+      "id": "renault-clio-1-0-sce",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.0 SCe",
+      "etiket": "Renault Clio 1.0 SCe",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2280,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.0 SCe Equilibre",
+        "Renault Clio 1.0 SCe Joy"
+      ],
+      "sira": 82
+    },
+    {
+      "id": "bmw-1-serisi-116i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "1 Serisi",
+      "motor": "116i",
+      "etiket": "BMW 1 Serisi 116i",
+      "yil_araligi": [
+        2008,
+        2014
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2260,
+      "ornek_ilan_metinleri": [
+        "BMW 1 Serisi 116i Comfort",
+        "BMW 1 Serisi 116i Joy Edition",
+        "BMW 1 Serisi 116i M Sport",
+        "BMW 1 Serisi 116i Premium",
+        "BMW 1 Serisi 116i Sport Line"
+      ],
+      "sira": 83
+    },
+    {
+      "id": "peugeot-408-1-2-puretech",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "408",
+      "motor": "1.2 PureTech",
+      "etiket": "Peugeot 408 1.2 PureTech",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 2254,
+      "ornek_ilan_metinleri": [
+        "Peugeot 408 1.2 PureTech Allure",
+        "Peugeot 408 1.2 PureTech GT"
+      ],
+      "sira": 84
+    },
+    {
+      "id": "hyundai-i30-1-6-crdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "i30",
+      "motor": "1.6 CRDi",
+      "etiket": "Hyundai i30 1.6 CRDi",
+      "yil_araligi": [
+        2010,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2089,
+      "ornek_ilan_metinleri": [
+        "Hyundai i30 1.6 CRDi Blue Drive",
+        "Hyundai i30 1.6 CRDi CW Elite",
+        "Hyundai i30 1.6 CRDi CW Mode",
+        "Hyundai i30 1.6 CRDi Elite",
+        "Hyundai i30 1.6 CRDi Elite Plus"
+      ],
+      "sira": 85
+    },
+    {
+      "id": "bmw-3-serisi-316i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "3 Serisi",
+      "motor": "316i",
+      "etiket": "BMW 3 Serisi 316i",
+      "yil_araligi": [
+        1997,
+        2014
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2073,
+      "ornek_ilan_metinleri": [
+        "BMW 3 Serisi 316i Advantage",
+        "BMW 3 Serisi 316i Comfort",
+        "BMW 3 Serisi 316i Compact",
+        "BMW 3 Serisi 316i Luxury Line",
+        "BMW 3 Serisi 316i M Sport"
+      ],
+      "sira": 86
+    },
+    {
+      "id": "bmw-5-serisi-525d-xdrive",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "5 Serisi",
+      "motor": "525d xDrive",
+      "etiket": "BMW 5 Serisi 525d xDrive",
+      "yil_araligi": [
+        2012,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2069,
+      "ornek_ilan_metinleri": [
+        "BMW 5 Serisi 525d xDrive",
+        "BMW 5 Serisi 525d xDrive Comfort",
+        "BMW 5 Serisi 525d xDrive Exclusive",
+        "BMW 5 Serisi 525d xDrive Executive",
+        "BMW 5 Serisi 525d xDrive Executive Luxury"
+      ],
+      "sira": 87
+    },
+    {
+      "id": "peugeot-2008-1-5-bluehdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "2008",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Peugeot 2008 1.5 BlueHDI",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 2069,
+      "ornek_ilan_metinleri": [
+        "Peugeot 2008 1.5 BlueHDI Active",
+        "Peugeot 2008 1.5 BlueHDI Active Prime",
+        "Peugeot 2008 1.5 BlueHDI Active Skypack",
+        "Peugeot 2008 1.5 BlueHDI Allure",
+        "Peugeot 2008 1.5 BlueHDI GT"
+      ],
+      "sira": 88
+    },
+    {
+      "id": "ford-focus-1-6-ti-vct",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.6 Ti-VCT",
+      "etiket": "Ford Focus 1.6 Ti-VCT",
+      "yil_araligi": [
+        2012,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2066,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.6 Ti-VCT Style",
+        "Ford Focus 1.6 Ti-VCT Titanium",
+        "Ford Focus 1.6 Ti-VCT Titanium X",
+        "Ford Focus 1.6 Ti-VCT Trend",
+        "Ford Focus 1.6 Ti-VCT Trend X"
+      ],
+      "sira": 89
+    },
+    {
+      "id": "renault-clio-1-4",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.4",
+      "etiket": "Renault Clio 1.4",
+      "yil_araligi": [
+        1998,
+        2006
+      ],
+      "medyan_yil": 2001,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2024,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.4",
+        "Renault Clio 1.4 Alize",
+        "Renault Clio 1.4 Authentique",
+        "Renault Clio 1.4 Dynamique",
+        "Renault Clio 1.4 Expression"
+      ],
+      "sira": 90
+    },
+    {
+      "id": "hyundai-accent-blue-1-6-crdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent Blue",
+      "motor": "1.6 CRDI",
+      "etiket": "Hyundai Accent Blue 1.6 CRDI",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2023,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent Blue 1.6 CRDI Biz",
+        "Hyundai Accent Blue 1.6 CRDI Mode",
+        "Hyundai Accent Blue 1.6 CRDI Mode Plus",
+        "Hyundai Accent Blue 1.6 CRDI Prime"
+      ],
+      "sira": 91
+    },
+    {
+      "id": "peugeot-208-1-2-puretech",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "208",
+      "motor": "1.2 PureTech",
+      "etiket": "Peugeot 208 1.2 PureTech",
+      "yil_araligi": [
+        2015,
+        2023
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2019,
+      "ornek_ilan_metinleri": [
+        "Peugeot 208 1.2 PureTech Access",
+        "Peugeot 208 1.2 PureTech Active",
+        "Peugeot 208 1.2 PureTech Active Prime",
+        "Peugeot 208 1.2 PureTech Allure",
+        "Peugeot 208 1.2 PureTech Allure Selection"
+      ],
+      "sira": 92
+    },
+    {
+      "id": "ford-focus-1-6",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Focus",
+      "motor": "1.6",
+      "etiket": "Ford Focus 1.6",
+      "yil_araligi": [
+        2001,
+        2011
+      ],
+      "medyan_yil": 2006,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 2018,
+      "ornek_ilan_metinleri": [
+        "Ford Focus 1.6 Ambiente",
+        "Ford Focus 1.6 Collection",
+        "Ford Focus 1.6 Comfort",
+        "Ford Focus 1.6 Ghia",
+        "Ford Focus 1.6 Titanium"
+      ],
+      "sira": 93
+    },
+    {
+      "id": "opel-insignia-1-6-cdti",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Insignia",
+      "motor": "1.6 CDTI",
+      "etiket": "Opel Insignia 1.6 CDTI",
+      "yil_araligi": [
+        2015,
+        2020
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 2015,
+      "ornek_ilan_metinleri": [
+        "Opel Insignia 1.6 CDTI 120.Yıl",
+        "Opel Insignia 1.6 CDTI Cosmo",
+        "Opel Insignia 1.6 CDTI Design",
+        "Opel Insignia 1.6 CDTI Edition Elegance",
+        "Opel Insignia 1.6 CDTI Elite"
+      ],
+      "sira": 94
+    },
+    {
+      "id": "bmw-5-serisi-520d",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "5 Serisi",
+      "motor": "520d",
+      "etiket": "BMW 5 Serisi 520d",
+      "yil_araligi": [
+        2008,
+        2015
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1972,
+      "ornek_ilan_metinleri": [
+        "BMW 5 Serisi 520d Comfort",
+        "BMW 5 Serisi 520d Exclusive",
+        "BMW 5 Serisi 520d Executive M Sport",
+        "BMW 5 Serisi 520d Luxury Line",
+        "BMW 5 Serisi 520d M Sport"
+      ],
+      "sira": 95
+    },
+    {
+      "id": "citroen-c-elys-e-1-5-bluehdi",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C-Elysée",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Citroen C-Elysée 1.5 BlueHDI",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1972,
+      "ornek_ilan_metinleri": [
+        "Citroen C-Elysée 1.5 BlueHDI Feel",
+        "Citroen C-Elysée 1.5 BlueHDI Feel Bold",
+        "Citroen C-Elysée 1.5 BlueHDI Live",
+        "Citroen C-Elysée 1.5 BlueHDI Shine"
+      ],
+      "sira": 96
+    },
+    {
+      "id": "nissan-qashqai-1-2-dig-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.2 DIG-T",
+      "etiket": "Nissan Qashqai 1.2 DIG-T",
+      "yil_araligi": [
+        2014,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1958,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.2 DIG-T Black Edition",
+        "Nissan Qashqai 1.2 DIG-T Design Pack",
+        "Nissan Qashqai 1.2 DIG-T Platinum",
+        "Nissan Qashqai 1.2 DIG-T Platinum Premium Pack",
+        "Nissan Qashqai 1.2 DIG-T Sky Pack"
+      ],
+      "sira": 97
+    },
+    {
+      "id": "renault-clio-1-5-dci-sporttourer",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.5 dCi SportTourer",
+      "etiket": "Renault Clio 1.5 dCi SportTourer",
+      "yil_araligi": [
+        2014,
+        2019
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1949,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.5 dCi SportTourer Icon",
+        "Renault Clio 1.5 dCi SportTourer Joy",
+        "Renault Clio 1.5 dCi SportTourer Touch"
+      ],
+      "sira": 98
+    },
+    {
+      "id": "bmw-1-serisi-118i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "1 Serisi",
+      "motor": "118i",
+      "etiket": "BMW 1 Serisi 118i",
+      "yil_araligi": [
+        2015,
+        2023
+      ],
+      "medyan_yil": 2019,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1926,
+      "ornek_ilan_metinleri": [
+        "BMW 1 Serisi 118i First Edition M Sport",
+        "BMW 1 Serisi 118i First Edition Sport Line",
+        "BMW 1 Serisi 118i Joy",
+        "BMW 1 Serisi 118i Joy Plus",
+        "BMW 1 Serisi 118i M Plus"
+      ],
+      "sira": 99
+    },
+    {
+      "id": "peugeot-301-1-6-hdi",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "301",
+      "motor": "1.6 HDi",
+      "etiket": "Peugeot 301 1.6 HDi",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1924,
+      "ornek_ilan_metinleri": [
+        "Peugeot 301 1.6 HDi Access",
+        "Peugeot 301 1.6 HDi Active",
+        "Peugeot 301 1.6 HDi Allure"
+      ],
+      "sira": 100
+    },
+    {
+      "id": "opel-corsa-1-4-twinport",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Corsa",
+      "motor": "1.4 Twinport",
+      "etiket": "Opel Corsa 1.4 Twinport",
+      "yil_araligi": [
+        2007,
+        2013
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1903,
+      "ornek_ilan_metinleri": [
+        "Opel Corsa 1.4 Twinport Active",
+        "Opel Corsa 1.4 Twinport Color Edition",
+        "Opel Corsa 1.4 Twinport Cosmo",
+        "Opel Corsa 1.4 Twinport Enjoy",
+        "Opel Corsa 1.4 Twinport Enjoy 111"
+      ],
+      "sira": 101
+    },
+    {
+      "id": "opel-corsa-1-2-twinport",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Corsa",
+      "motor": "1.2 Twinport",
+      "etiket": "Opel Corsa 1.2 Twinport",
+      "yil_araligi": [
+        2005,
+        2014
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1895,
+      "ornek_ilan_metinleri": [
+        "Opel Corsa 1.2 Twinport Active",
+        "Opel Corsa 1.2 Twinport Enjoy",
+        "Opel Corsa 1.2 Twinport Enjoy 111",
+        "Opel Corsa 1.2 Twinport Essentia"
+      ],
+      "sira": 102
+    },
+    {
+      "id": "hyundai-tucson-1-6-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Tucson",
+      "motor": "1.6 T-GDi",
+      "etiket": "Hyundai Tucson 1.6 T-GDi",
+      "yil_araligi": [
+        2015,
+        2025
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1884,
+      "ornek_ilan_metinleri": [
+        "Hyundai Tucson 1.6 T-GDi Comfort",
+        "Hyundai Tucson 1.6 T-GDi Elite",
+        "Hyundai Tucson 1.6 T-GDi Elite Plus",
+        "Hyundai Tucson 1.6 T-GDi N-Line",
+        "Hyundai Tucson 1.6 T-GDi Power Edition"
+      ],
+      "sira": 103
+    },
+    {
+      "id": "citroen-c-elys-e-1-6-hdi",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C-Elysée",
+      "motor": "1.6 HDi",
+      "etiket": "Citroen C-Elysée 1.6 HDi",
+      "yil_araligi": [
+        2013,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1847,
+      "ornek_ilan_metinleri": [
+        "Citroen C-Elysée 1.6 HDi Attraction",
+        "Citroen C-Elysée 1.6 HDi Confort",
+        "Citroen C-Elysée 1.6 HDi Exclusive",
+        "Citroen C-Elysée 1.6 HDi Feel",
+        "Citroen C-Elysée 1.6 HDi Live"
+      ],
+      "sira": 104
+    },
+    {
+      "id": "tofas-sahin-1-6",
+      "kategori": "otomobil",
+      "marka": "Tofaş",
+      "seri": "Şahin",
+      "motor": "1.6",
+      "etiket": "Tofaş Şahin 1.6",
+      "yil_araligi": [
+        1991,
+        1996
+      ],
+      "medyan_yil": 1993,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1840,
+      "ornek_ilan_metinleri": [
+        "Tofaş Şahin 1.6"
+      ],
+      "sira": 105
+    },
+    {
+      "id": "renault-clio-1-2",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.2",
+      "etiket": "Renault Clio 1.2",
+      "yil_araligi": [
+        2005,
+        2017
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1834,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.2 Authentique",
+        "Renault Clio 1.2 Dynamic",
+        "Renault Clio 1.2 Expression",
+        "Renault Clio 1.2 Extreme",
+        "Renault Clio 1.2 Icon"
+      ],
+      "sira": 106
+    },
+    {
+      "id": "honda-cr-v-1-6-i-dtec",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Honda",
+      "seri": "CR-V",
+      "motor": "1.6 i-DTEC",
+      "etiket": "Honda CR-V 1.6 i-DTEC",
+      "yil_araligi": [
+        2014,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1831,
+      "ornek_ilan_metinleri": [
+        "Honda CR-V 1.6 i-DTEC Dream",
+        "Honda CR-V 1.6 i-DTEC Elegance",
+        "Honda CR-V 1.6 i-DTEC Executive",
+        "Honda CR-V 1.6 i-DTEC Executive+",
+        "Honda CR-V 1.6 i-DTEC Premium"
+      ],
+      "sira": 107
+    },
+    {
+      "id": "volkswagen-golf-1-2-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.2 TSi",
+      "etiket": "Volkswagen Golf 1.2 TSi",
+      "yil_araligi": [
+        2013,
+        2016
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1827,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.2 TSi Allstar",
+        "Volkswagen Golf 1.2 TSi Comfortline",
+        "Volkswagen Golf 1.2 TSi Midline Plus"
+      ],
+      "sira": 108
+    },
+    {
+      "id": "kia-sportage-1-6-crdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Kia",
+      "seri": "Sportage",
+      "motor": "1.6 CRDI",
+      "etiket": "Kia Sportage 1.6 CRDI",
+      "yil_araligi": [
+        2019,
+        2021
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1815,
+      "ornek_ilan_metinleri": [
+        "Kia Sportage 1.6 CRDI Black Edition",
+        "Kia Sportage 1.6 CRDI Cool",
+        "Kia Sportage 1.6 CRDI Elegance",
+        "Kia Sportage 1.6 CRDI Elegance Konfor",
+        "Kia Sportage 1.6 CRDI Elegance Plus"
+      ],
+      "sira": 109
+    },
+    {
+      "id": "skoda-octavia-1-0-e-tec",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Octavia",
+      "motor": "1.0 e-Tec",
+      "etiket": "Skoda Octavia 1.0 e-Tec",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1810,
+      "ornek_ilan_metinleri": [
+        "Skoda Octavia 1.0 e-Tec Elite",
+        "Skoda Octavia 1.0 e-Tec Premium"
+      ],
+      "sira": 110
+    },
+    {
+      "id": "hyundai-bayon-1-4-mpi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Bayon",
+      "motor": "1.4 MPI",
+      "etiket": "Hyundai Bayon 1.4 MPI",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1790,
+      "ornek_ilan_metinleri": [
+        "Hyundai Bayon 1.4 MPI Elite",
+        "Hyundai Bayon 1.4 MPI Jump",
+        "Hyundai Bayon 1.4 MPI Style"
+      ],
+      "sira": 111
+    },
+    {
+      "id": "volkswagen-amarok-3-0-tdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Amarok",
+      "motor": "3.0 TDI",
+      "etiket": "Volkswagen Amarok 3.0 TDI",
+      "yil_araligi": [
+        2017,
+        2025
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1780,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Amarok 3.0 TDI Aventura",
+        "Volkswagen Amarok 3.0 TDI Canyon",
+        "Volkswagen Amarok 3.0 TDI Highline",
+        "Volkswagen Amarok 3.0 TDI Panamericana",
+        "Volkswagen Amarok 3.0 TDI Style"
+      ],
+      "sira": 112
+    },
+    {
+      "id": "peugeot-206-1-4",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "206",
+      "motor": "1.4",
+      "etiket": "Peugeot 206 1.4",
+      "yil_araligi": [
+        2002,
+        2009
+      ],
+      "medyan_yil": 2005,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1777,
+      "ornek_ilan_metinleri": [
+        "Peugeot 206 1.4 Color Line",
+        "Peugeot 206 1.4 Comfort",
+        "Peugeot 206 1.4 Desire",
+        "Peugeot 206 1.4 Executive",
+        "Peugeot 206 1.4 Feline"
+      ],
+      "sira": 113
+    },
+    {
+      "id": "volkswagen-polo-1-6",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.6",
+      "etiket": "Volkswagen Polo 1.6",
+      "yil_araligi": [
+        1997,
+        2001
+      ],
+      "medyan_yil": 1999,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1757,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.6",
+        "Volkswagen Polo 1.6 Classic",
+        "Volkswagen Polo 1.6 Comfortline",
+        "Volkswagen Polo 1.6 Comfortline Classic",
+        "Volkswagen Polo 1.6 Highline"
+      ],
+      "sira": 114
+    },
+    {
+      "id": "nissan-juke-1-6",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Juke",
+      "motor": "1.6",
+      "etiket": "Nissan Juke 1.6",
+      "yil_araligi": [
+        2012,
+        2018
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1753,
+      "ornek_ilan_metinleri": [
+        "Nissan Juke 1.6 Black Edition",
+        "Nissan Juke 1.6 Platinum",
+        "Nissan Juke 1.6 Skypack",
+        "Nissan Juke 1.6 Special Edition",
+        "Nissan Juke 1.6 Sport Pack"
+      ],
+      "sira": 115
+    },
+    {
+      "id": "renault-taliant-1-0-t",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Taliant",
+      "motor": "1.0 T",
+      "etiket": "Renault Taliant 1.0 T",
+      "yil_araligi": [
+        2021,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1716,
+      "ornek_ilan_metinleri": [
+        "Renault Taliant 1.0 T Joy",
+        "Renault Taliant 1.0 T Touch"
+      ],
+      "sira": 116
+    },
+    {
+      "id": "volvo-xc90-2-0-b5",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volvo",
+      "seri": "XC90",
+      "motor": "2.0 B5",
+      "etiket": "Volvo XC90 2.0 B5",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1665,
+      "ornek_ilan_metinleri": [
+        "Volvo XC90 2.0 B5 Inscription",
+        "Volvo XC90 2.0 B5 Plus Bright",
+        "Volvo XC90 2.0 B5 Plus Dark",
+        "Volvo XC90 2.0 B5 Ultimate Dark"
+      ],
+      "sira": 117
+    },
+    {
+      "id": "mitsubishi-l-200-4x2",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Mitsubishi",
+      "seri": "L 200",
+      "motor": "4x2",
+      "etiket": "Mitsubishi L 200 4x2",
+      "yil_araligi": [
+        1999,
+        2021
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1662,
+      "ornek_ilan_metinleri": [
+        "Mitsubishi L 200 4x2 Inform",
+        "Mitsubishi L 200 4x2 Intense",
+        "Mitsubishi L 200 4x2 Invite",
+        "Mitsubishi L 200 4x2 Magnum",
+        "Mitsubishi L 200 4x2 Pick Up"
+      ],
+      "sira": 118
+    },
+    {
+      "id": "mercedes-benz-cla-200",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "CLA",
+      "motor": "200",
+      "etiket": "Mercedes - Benz CLA 200",
+      "yil_araligi": [
+        2013,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1647,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz CLA 200 AMG",
+        "Mercedes - Benz CLA 200 AMG 4Matic",
+        "Mercedes - Benz CLA 200 AMG+",
+        "Mercedes - Benz CLA 200 AMG+ 4Matic",
+        "Mercedes - Benz CLA 200 Style"
+      ],
+      "sira": 119
+    },
+    {
+      "id": "citroen-c3-aircross-1-2-puretech",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Citroen",
+      "seri": "C3 Aircross",
+      "motor": "1.2 PureTech",
+      "etiket": "Citroen C3 Aircross 1.2 PureTech",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1632,
+      "ornek_ilan_metinleri": [
+        "Citroen C3 Aircross 1.2 PureTech Feel",
+        "Citroen C3 Aircross 1.2 PureTech Feel Bold",
+        "Citroen C3 Aircross 1.2 PureTech Feel S Edition",
+        "Citroen C3 Aircross 1.2 PureTech Live",
+        "Citroen C3 Aircross 1.2 PureTech Shine"
+      ],
+      "sira": 120
+    },
+    {
+      "id": "peugeot-308-1-2-puretech",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "308",
+      "motor": "1.2 PureTech",
+      "etiket": "Peugeot 308 1.2 PureTech",
+      "yil_araligi": [
+        2015,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1616,
+      "ornek_ilan_metinleri": [
+        "Peugeot 308 1.2 PureTech Active",
+        "Peugeot 308 1.2 PureTech Active Prime",
+        "Peugeot 308 1.2 PureTech Allure",
+        "Peugeot 308 1.2 PureTech Allure Dynamic",
+        "Peugeot 308 1.2 PureTech Allure Sport"
+      ],
+      "sira": 121
+    },
+    {
+      "id": "nissan-juke-1-0-dig-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Juke",
+      "motor": "1.0 DIG-T",
+      "etiket": "Nissan Juke 1.0 DIG-T",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1605,
+      "ornek_ilan_metinleri": [
+        "Nissan Juke 1.0 DIG-T Limited Edition",
+        "Nissan Juke 1.0 DIG-T N-Design",
+        "Nissan Juke 1.0 DIG-T N-Sport",
+        "Nissan Juke 1.0 DIG-T Platinum",
+        "Nissan Juke 1.0 DIG-T Platinum Perso"
+      ],
+      "sira": 122
+    },
+    {
+      "id": "opel-vectra-2-0",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Vectra",
+      "motor": "2.0",
+      "etiket": "Opel Vectra 2.0",
+      "yil_araligi": [
+        1993,
+        1999
+      ],
+      "medyan_yil": 1996,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1602,
+      "ornek_ilan_metinleri": [
+        "Opel Vectra 2.0 100.Yıl",
+        "Opel Vectra 2.0 CD",
+        "Opel Vectra 2.0 CDX",
+        "Opel Vectra 2.0 GL",
+        "Opel Vectra 2.0 GLS"
+      ],
+      "sira": 123
+    },
+    {
+      "id": "peugeot-3008-1-6-bluehdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "3008",
+      "motor": "1.6 BlueHDi",
+      "etiket": "Peugeot 3008 1.6 BlueHDi",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1584,
+      "ornek_ilan_metinleri": [
+        "Peugeot 3008 1.6 BlueHDi Active",
+        "Peugeot 3008 1.6 BlueHDi Active Prime Edition",
+        "Peugeot 3008 1.6 BlueHDi Active Sky Pack",
+        "Peugeot 3008 1.6 BlueHDi Active SkyPack",
+        "Peugeot 3008 1.6 BlueHDi Active Sport Pack"
+      ],
+      "sira": 124
+    },
+    {
+      "id": "bmw-3-serisi-318i",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "3 Serisi",
+      "motor": "318i",
+      "etiket": "BMW 3 Serisi 318i",
+      "yil_araligi": [
+        1999,
+        2018
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1569,
+      "ornek_ilan_metinleri": [
+        "BMW 3 Serisi 318i 40th Year Edition",
+        "BMW 3 Serisi 318i Edition Luxury Line",
+        "BMW 3 Serisi 318i Edition M Sport",
+        "BMW 3 Serisi 318i Edition Sport Line",
+        "BMW 3 Serisi 318i Luxury Line"
+      ],
+      "sira": 125
+    },
+    {
+      "id": "bmw-x3-20i-sdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X3",
+      "motor": "20i sDrive",
+      "etiket": "BMW X3 20i sDrive",
+      "yil_araligi": [
+        2016,
+        2025
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1539,
+      "ornek_ilan_metinleri": [
+        "BMW X3 20i sDrive",
+        "BMW X3 20i sDrive Exclusive",
+        "BMW X3 20i sDrive First Edition M",
+        "BMW X3 20i sDrive Luxury Line",
+        "BMW X3 20i sDrive M Sport"
+      ],
+      "sira": 126
+    },
+    {
+      "id": "peugeot-3008-1-2-hybrid",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Peugeot",
+      "seri": "3008",
+      "motor": "1.2 Hybrid",
+      "etiket": "Peugeot 3008 1.2 Hybrid",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1536,
+      "ornek_ilan_metinleri": [
+        "Peugeot 3008 1.2 Hybrid Allure",
+        "Peugeot 3008 1.2 Hybrid GT"
+      ],
+      "sira": 127
+    },
+    {
+      "id": "volkswagen-vw-cc-1-4-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "VW CC",
+      "motor": "1.4 TSi",
+      "etiket": "Volkswagen VW CC 1.4 TSi",
+      "yil_araligi": [
+        2012,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1515,
+      "ornek_ilan_metinleri": [
+        "Volkswagen VW CC 1.4 TSi",
+        "Volkswagen VW CC 1.4 TSi Exclusive",
+        "Volkswagen VW CC 1.4 TSi R-Line",
+        "Volkswagen VW CC 1.4 TSi Sportline"
+      ],
+      "sira": 128
+    },
+    {
+      "id": "volkswagen-polo-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.6 TDi",
+      "etiket": "Volkswagen Polo 1.6 TDi",
+      "yil_araligi": [
+        2012,
+        2019
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1494,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.6 TDi Comfortline",
+        "Volkswagen Polo 1.6 TDi Highline",
+        "Volkswagen Polo 1.6 TDi Trendline"
+      ],
+      "sira": 129
+    },
+    {
+      "id": "fiat-palio-1-2",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Palio",
+      "motor": "1.2",
+      "etiket": "Fiat Palio 1.2",
+      "yil_araligi": [
+        2001,
+        2006
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1486,
+      "ornek_ilan_metinleri": [
+        "Fiat Palio 1.2 Active",
+        "Fiat Palio 1.2 Dynamic",
+        "Fiat Palio 1.2 EL",
+        "Fiat Palio 1.2 EL Speedgear",
+        "Fiat Palio 1.2 EL Weekend"
+      ],
+      "sira": 130
+    },
+    {
+      "id": "hyundai-bayon-1-0-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Bayon",
+      "motor": "1.0 T-GDI",
+      "etiket": "Hyundai Bayon 1.0 T-GDI",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1463,
+      "ornek_ilan_metinleri": [
+        "Hyundai Bayon 1.0 T-GDI Elite",
+        "Hyundai Bayon 1.0 T-GDI Jump",
+        "Hyundai Bayon 1.0 T-GDI Style"
+      ],
+      "sira": 131
+    },
+    {
+      "id": "bmw-1-serisi-116d",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "1 Serisi",
+      "motor": "116d",
+      "etiket": "BMW 1 Serisi 116d",
+      "yil_araligi": [
+        2015,
+        2021
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1461,
+      "ornek_ilan_metinleri": [
+        "BMW 1 Serisi 116d First Edition M Sport",
+        "BMW 1 Serisi 116d First Edition Sport Line",
+        "BMW 1 Serisi 116d Joy",
+        "BMW 1 Serisi 116d Joy Plus",
+        "BMW 1 Serisi 116d M Plus"
+      ],
+      "sira": 132
+    },
+    {
+      "id": "renault-symbol-1-2",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Symbol",
+      "motor": "1.2",
+      "etiket": "Renault Symbol 1.2",
+      "yil_araligi": [
+        2011,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1459,
+      "ornek_ilan_metinleri": [
+        "Renault Symbol 1.2 Authentique",
+        "Renault Symbol 1.2 Authentique Edition",
+        "Renault Symbol 1.2 Expression",
+        "Renault Symbol 1.2 Expression Plus",
+        "Renault Symbol 1.2 Joy"
+      ],
+      "sira": 133
+    },
+    {
+      "id": "byd-seal-u-dm-i-1-5-phev",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BYD",
+      "seri": "Seal U DM-i",
+      "motor": "1.5 Phev",
+      "etiket": "BYD Seal U DM-i 1.5 Phev",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1442,
+      "ornek_ilan_metinleri": [
+        "BYD Seal U DM-i 1.5 Phev",
+        "BYD Seal U DM-i 1.5 Phev Design"
+      ],
+      "sira": 134
+    },
+    {
+      "id": "hyundai-ix35-1-6-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "ix35",
+      "motor": "1.6 GDI",
+      "etiket": "Hyundai ix35 1.6 GDI",
+      "yil_araligi": [
+        2012,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1433,
+      "ornek_ilan_metinleri": [
+        "Hyundai ix35 1.6 GDI Desing Pack",
+        "Hyundai ix35 1.6 GDI Elite",
+        "Hyundai ix35 1.6 GDI Style",
+        "Hyundai ix35 1.6 GDI Style Desing Pack",
+        "Hyundai ix35 1.6 GDI Style Plus"
+      ],
+      "sira": 135
+    },
+    {
+      "id": "volvo-s60-1-6-d",
+      "kategori": "otomobil",
+      "marka": "Volvo",
+      "seri": "S60",
+      "motor": "1.6 D",
+      "etiket": "Volvo S60 1.6 D",
+      "yil_araligi": [
+        2012,
+        2015
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1396,
+      "ornek_ilan_metinleri": [
+        "Volvo S60 1.6 D",
+        "Volvo S60 1.6 D Advance",
+        "Volvo S60 1.6 D Premium",
+        "Volvo S60 1.6 D R-Design"
+      ],
+      "sira": 136
+    },
+    {
+      "id": "volkswagen-passat-2-0-tdi-bluemotion",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "2.0 TDi BlueMotion",
+      "etiket": "Volkswagen Passat 2.0 TDi BlueMotion",
+      "yil_araligi": [
+        2012,
+        2020
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1394,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 2.0 TDi BlueMotion Business",
+        "Volkswagen Passat 2.0 TDi BlueMotion Comfortline",
+        "Volkswagen Passat 2.0 TDi BlueMotion Elegance",
+        "Volkswagen Passat 2.0 TDi BlueMotion Highline"
+      ],
+      "sira": 137
+    },
+    {
+      "id": "toyota-c-hr-1-8-hybrid",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Toyota",
+      "seri": "C-HR",
+      "motor": "1.8 Hybrid",
+      "etiket": "Toyota C-HR 1.8 Hybrid",
+      "yil_araligi": [
+        2017,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1391,
+      "ornek_ilan_metinleri": [
+        "Toyota C-HR 1.8 Hybrid Advance",
+        "Toyota C-HR 1.8 Hybrid Diamond",
+        "Toyota C-HR 1.8 Hybrid Diamond Premium",
+        "Toyota C-HR 1.8 Hybrid Dynamic",
+        "Toyota C-HR 1.8 Hybrid Dynamic Premium"
+      ],
+      "sira": 138
+    },
+    {
+      "id": "hyundai-i20-1-4-crdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "i20",
+      "motor": "1.4 CRDi",
+      "etiket": "Hyundai i20 1.4 CRDi",
+      "yil_araligi": [
+        2012,
+        2019
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1390,
+      "ornek_ilan_metinleri": [
+        "Hyundai i20 1.4 CRDi Elite",
+        "Hyundai i20 1.4 CRDi Elite Smart",
+        "Hyundai i20 1.4 CRDi Jump",
+        "Hyundai i20 1.4 CRDi Select",
+        "Hyundai i20 1.4 CRDi Sense"
+      ],
+      "sira": 139
+    },
+    {
+      "id": "mg-hs-1-5-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "MG",
+      "seri": "HS",
+      "motor": "1.5 T-GDI",
+      "etiket": "MG HS 1.5 T-GDI",
+      "yil_araligi": [
+        2023,
+        2024
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1383,
+      "ornek_ilan_metinleri": [
+        "MG HS 1.5 T-GDI Comfort",
+        "MG HS 1.5 T-GDI Luxury"
+      ],
+      "sira": 140
+    },
+    {
+      "id": "peugeot-508-1-5-bluehdi",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "508",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Peugeot 508 1.5 BlueHDI",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1380,
+      "ornek_ilan_metinleri": [
+        "Peugeot 508 1.5 BlueHDI Allure",
+        "Peugeot 508 1.5 BlueHDI Allure Dynamic",
+        "Peugeot 508 1.5 BlueHDI GT",
+        "Peugeot 508 1.5 BlueHDI GT Line",
+        "Peugeot 508 1.5 BlueHDI GT Selection"
+      ],
+      "sira": 141
+    },
+    {
+      "id": "toyota-corolla-cross-1-8-hybrid",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Toyota",
+      "seri": "Corolla Cross",
+      "motor": "1.8 Hybrid",
+      "etiket": "Toyota Corolla Cross 1.8 Hybrid",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1373,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla Cross 1.8 Hybrid Flame",
+        "Toyota Corolla Cross 1.8 Hybrid Flame X-Pack",
+        "Toyota Corolla Cross 1.8 Hybrid Passion",
+        "Toyota Corolla Cross 1.8 Hybrid Passion X-Pack"
+      ],
+      "sira": 142
+    },
+    {
+      "id": "renault-clio-0-9-tce",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "0.9 TCe",
+      "etiket": "Renault Clio 0.9 TCe",
+      "yil_araligi": [
+        2015,
+        2020
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1371,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 0.9 TCe Icon",
+        "Renault Clio 0.9 TCe Joy",
+        "Renault Clio 0.9 TCe Touch"
+      ],
+      "sira": 143
+    },
+    {
+      "id": "toyota-corolla-1-33",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Corolla",
+      "motor": "1.33",
+      "etiket": "Toyota Corolla 1.33",
+      "yil_araligi": [
+        2014,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1365,
+      "ornek_ilan_metinleri": [
+        "Toyota Corolla 1.33 Comfort",
+        "Toyota Corolla 1.33 Life"
+      ],
+      "sira": 144
+    },
+    {
+      "id": "renault-kadjar-1-5-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Renault",
+      "seri": "Kadjar",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Kadjar 1.5 dCi",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1361,
+      "ornek_ilan_metinleri": [
+        "Renault Kadjar 1.5 dCi Black Edition",
+        "Renault Kadjar 1.5 dCi Icon",
+        "Renault Kadjar 1.5 dCi Touch",
+        "Renault Kadjar 1.5 dCi Touch Roof"
+      ],
+      "sira": 145
+    },
+    {
+      "id": "ford-fiesta-1-5-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Fiesta",
+      "motor": "1.5 TDCi",
+      "etiket": "Ford Fiesta 1.5 TDCi",
+      "yil_araligi": [
+        2013,
+        2017
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1350,
+      "ornek_ilan_metinleri": [
+        "Ford Fiesta 1.5 TDCi Titanium",
+        "Ford Fiesta 1.5 TDCi Titanium X",
+        "Ford Fiesta 1.5 TDCi Trend",
+        "Ford Fiesta 1.5 TDCi Trend X"
+      ],
+      "sira": 146
+    },
+    {
+      "id": "kia-sportage-1-6-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Kia",
+      "seri": "Sportage",
+      "motor": "1.6 T-GDI",
+      "etiket": "Kia Sportage 1.6 T-GDI",
+      "yil_araligi": [
+        2016,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1347,
+      "ornek_ilan_metinleri": [
+        "Kia Sportage 1.6 T-GDI Cool",
+        "Kia Sportage 1.6 T-GDI Cool Plus",
+        "Kia Sportage 1.6 T-GDI Elegance Konfor",
+        "Kia Sportage 1.6 T-GDI Elegance Konfor Plus",
+        "Kia Sportage 1.6 T-GDI GT-Line Exclusive"
+      ],
+      "sira": 147
+    },
+    {
+      "id": "nissan-qashqai-1-6",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.6",
+      "etiket": "Nissan Qashqai 1.6",
+      "yil_araligi": [
+        2009,
+        2013
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1346,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.6 Black Edition",
+        "Nissan Qashqai 1.6 Platinum",
+        "Nissan Qashqai 1.6 Tekna",
+        "Nissan Qashqai 1.6 Tekna Executive",
+        "Nissan Qashqai 1.6 Tekna Pack"
+      ],
+      "sira": 148
+    },
+    {
+      "id": "skoda-kamiq-1-0-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Skoda",
+      "seri": "Kamiq",
+      "motor": "1.0 TSI",
+      "etiket": "Skoda Kamiq 1.0 TSI",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1330,
+      "ornek_ilan_metinleri": [
+        "Skoda Kamiq 1.0 TSI Elite",
+        "Skoda Kamiq 1.0 TSI Premium"
+      ],
+      "sira": 149
+    },
+    {
+      "id": "volkswagen-polo-1-2-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.2 TSi",
+      "etiket": "Volkswagen Polo 1.2 TSi",
+      "yil_araligi": [
+        2014,
+        2017
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1328,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.2 TSi Allstar",
+        "Volkswagen Polo 1.2 TSi Comfortline",
+        "Volkswagen Polo 1.2 TSi Lounge"
+      ],
+      "sira": 150
+    },
+    {
+      "id": "ford-c-max-1-6-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "C-Max",
+      "motor": "1.6 TDCi",
+      "etiket": "Ford C-Max 1.6 TDCi",
+      "yil_araligi": [
+        2005,
+        2013
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1319,
+      "ornek_ilan_metinleri": [
+        "Ford C-Max 1.6 TDCi Ghia",
+        "Ford C-Max 1.6 TDCi Titanium",
+        "Ford C-Max 1.6 TDCi Titanium Grand",
+        "Ford C-Max 1.6 TDCi Titanium X",
+        "Ford C-Max 1.6 TDCi Trend"
+      ],
+      "sira": 151
+    },
+    {
+      "id": "hyundai-getz-1-4-dohc",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Getz",
+      "motor": "1.4 DOHC",
+      "etiket": "Hyundai Getz 1.4 DOHC",
+      "yil_araligi": [
+        2007,
+        2010
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1316,
+      "ornek_ilan_metinleri": [
+        "Hyundai Getz 1.4 DOHC AB AC",
+        "Hyundai Getz 1.4 DOHC HY KLM",
+        "Hyundai Getz 1.4 DOHC Start"
+      ],
+      "sira": 152
+    },
+    {
+      "id": "volkswagen-t-cross-1-0-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "T-Cross",
+      "motor": "1.0 TSI",
+      "etiket": "Volkswagen T-Cross 1.0 TSI",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1313,
+      "ornek_ilan_metinleri": [
+        "Volkswagen T-Cross 1.0 TSI Life",
+        "Volkswagen T-Cross 1.0 TSI Style"
+      ],
+      "sira": 153
+    },
+    {
+      "id": "ford-puma-1-0-ecoboost",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Puma",
+      "motor": "1.0 EcoBoost",
+      "etiket": "Ford Puma 1.0 EcoBoost",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1311,
+      "ornek_ilan_metinleri": [
+        "Ford Puma 1.0 EcoBoost ST Line",
+        "Ford Puma 1.0 EcoBoost Style"
+      ],
+      "sira": 154
+    },
+    {
+      "id": "chery-tiggo-8-pro-1-6-tgdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Chery",
+      "seri": "Tiggo 8 Pro",
+      "motor": "1.6 TGDI",
+      "etiket": "Chery Tiggo 8 Pro 1.6 TGDI",
+      "yil_araligi": [
+        2023,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1305,
+      "ornek_ilan_metinleri": [
+        "Chery Tiggo 8 Pro 1.6 TGDI Avantgarde",
+        "Chery Tiggo 8 Pro 1.6 TGDI Excellent",
+        "Chery Tiggo 8 Pro 1.6 TGDI Luxury"
+      ],
+      "sira": 155
+    },
+    {
+      "id": "porsche-cayenne-3-0-diesel",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Porsche",
+      "seri": "Cayenne",
+      "motor": "3.0 Diesel",
+      "etiket": "Porsche Cayenne 3.0 Diesel",
+      "yil_araligi": [
+        2011,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1293,
+      "ornek_ilan_metinleri": [
+        "Porsche Cayenne 3.0 Diesel"
+      ],
+      "sira": 156
+    },
+    {
+      "id": "mercedes-benz-e-220-d",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "220 D",
+      "etiket": "Mercedes - Benz E 220 D",
+      "yil_araligi": [
+        2016,
+        2025
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1275,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 220 D AMG",
+        "Mercedes - Benz E 220 D Avantgarde",
+        "Mercedes - Benz E 220 D Edition 1 AMG",
+        "Mercedes - Benz E 220 D Edition 1 Exclusive",
+        "Mercedes - Benz E 220 D Exclusive"
+      ],
+      "sira": 157
+    },
+    {
+      "id": "chery-omoda-5-1-6-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Chery",
+      "seri": "Omoda 5",
+      "motor": "1.6 T-GDI",
+      "etiket": "Chery Omoda 5 1.6 T-GDI",
+      "yil_araligi": [
+        2023,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1273,
+      "ornek_ilan_metinleri": [
+        "Chery Omoda 5 1.6 T-GDI Comfort",
+        "Chery Omoda 5 1.6 T-GDI Excellent",
+        "Chery Omoda 5 1.6 T-GDI Luxury"
+      ],
+      "sira": 158
+    },
+    {
+      "id": "volkswagen-golf-1-0-etsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.0 eTSI",
+      "etiket": "Volkswagen Golf 1.0 eTSI",
+      "yil_araligi": [
+        2021,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1270,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.0 eTSI Life",
+        "Volkswagen Golf 1.0 eTSI R Line",
+        "Volkswagen Golf 1.0 eTSI Style"
+      ],
+      "sira": 159
+    },
+    {
+      "id": "suzuki-vitara-1-4-boosterjet-hibrit",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Suzuki",
+      "seri": "Vitara",
+      "motor": "1.4 Boosterjet Hibrit",
+      "etiket": "Suzuki Vitara 1.4 Boosterjet Hibrit",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1260,
+      "ornek_ilan_metinleri": [
+        "Suzuki Vitara 1.4 Boosterjet Hibrit GL Elegance",
+        "Suzuki Vitara 1.4 Boosterjet Hibrit GLX Premium"
+      ],
+      "sira": 160
+    },
+    {
+      "id": "renault-r-19-1-6-europa",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 19",
+      "motor": "1.6 Europa",
+      "etiket": "Renault R 19 1.6 Europa",
+      "yil_araligi": [
+        1997,
+        2001
+      ],
+      "medyan_yil": 1999,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1253,
+      "ornek_ilan_metinleri": [
+        "Renault R 19 1.6 Europa RL",
+        "Renault R 19 1.6 Europa RNA",
+        "Renault R 19 1.6 Europa RNE",
+        "Renault R 19 1.6 Europa RT",
+        "Renault R 19 1.6 Europa RTE"
+      ],
+      "sira": 161
+    },
+    {
+      "id": "chery-tiggo-7-pro-1-6-tgdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Chery",
+      "seri": "Tiggo 7 Pro",
+      "motor": "1.6 TGDI",
+      "etiket": "Chery Tiggo 7 Pro 1.6 TGDI",
+      "yil_araligi": [
+        2023,
+        2024
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1240,
+      "ornek_ilan_metinleri": [
+        "Chery Tiggo 7 Pro 1.6 TGDI Avantgarde",
+        "Chery Tiggo 7 Pro 1.6 TGDI Comfort",
+        "Chery Tiggo 7 Pro 1.6 TGDI Excellent",
+        "Chery Tiggo 7 Pro 1.6 TGDI Luxury"
+      ],
+      "sira": 162
+    },
+    {
+      "id": "renault-r-12-toros",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 12",
+      "motor": "Toros",
+      "etiket": "Renault R 12 Toros",
+      "yil_araligi": [
+        1989,
+        1998
+      ],
+      "medyan_yil": 1992,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1240,
+      "ornek_ilan_metinleri": [
+        "Renault R 12 Toros"
+      ],
+      "sira": 163
+    },
+    {
+      "id": "jeep-renegade-1-6-multijet",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Jeep",
+      "seri": "Renegade",
+      "motor": "1.6 MultiJet",
+      "etiket": "Jeep Renegade 1.6 MultiJet",
+      "yil_araligi": [
+        2015,
+        2020
+      ],
+      "medyan_yil": 2019,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1239,
+      "ornek_ilan_metinleri": [
+        "Jeep Renegade 1.6 MultiJet Limited",
+        "Jeep Renegade 1.6 MultiJet Longitude",
+        "Jeep Renegade 1.6 MultiJet Night Eagle"
+      ],
+      "sira": 164
+    },
+    {
+      "id": "ford-kuga-1-5-ecoboost",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Kuga",
+      "motor": "1.5 EcoBoost",
+      "etiket": "Ford Kuga 1.5 EcoBoost",
+      "yil_araligi": [
+        2015,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1229,
+      "ornek_ilan_metinleri": [
+        "Ford Kuga 1.5 EcoBoost ST Line",
+        "Ford Kuga 1.5 EcoBoost ST-Line Black Package",
+        "Ford Kuga 1.5 EcoBoost ST-Line X",
+        "Ford Kuga 1.5 EcoBoost Selective",
+        "Ford Kuga 1.5 EcoBoost Style"
+      ],
+      "sira": 165
+    },
+    {
+      "id": "volkswagen-golf-1-6",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.6",
+      "etiket": "Volkswagen Golf 1.6",
+      "yil_araligi": [
+        1997,
+        2011
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1222,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.6",
+        "Volkswagen Golf 1.6 CL",
+        "Volkswagen Golf 1.6 Comfortline",
+        "Volkswagen Golf 1.6 D CL",
+        "Volkswagen Golf 1.6 GL"
+      ],
+      "sira": 166
+    },
+    {
+      "id": "mercedes-benz-e-250-cdi",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "250 CDI",
+      "etiket": "Mercedes - Benz E 250 CDI",
+      "yil_araligi": [
+        2011,
+        2015
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1203,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 250 CDI",
+        "Mercedes - Benz E 250 CDI AMG",
+        "Mercedes - Benz E 250 CDI BlueEFFICIENCY Avantgarde",
+        "Mercedes - Benz E 250 CDI Edition",
+        "Mercedes - Benz E 250 CDI Elite"
+      ],
+      "sira": 167
+    },
+    {
+      "id": "seat-ateca-1-5-ecotsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Seat",
+      "seri": "Ateca",
+      "motor": "1.5 EcoTSI",
+      "etiket": "Seat Ateca 1.5 EcoTSI",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1201,
+      "ornek_ilan_metinleri": [
+        "Seat Ateca 1.5 EcoTSI FR",
+        "Seat Ateca 1.5 EcoTSI Style",
+        "Seat Ateca 1.5 EcoTSI Xcellence",
+        "Seat Ateca 1.5 EcoTSI Xperience"
+      ],
+      "sira": 168
+    },
+    {
+      "id": "audi-q3-35-tfsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Audi",
+      "seri": "Q3",
+      "motor": "35 TFSI",
+      "etiket": "Audi Q3 35 TFSI",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1199,
+      "ornek_ilan_metinleri": [
+        "Audi Q3 35 TFSI Advanced"
+      ],
+      "sira": 169
+    },
+    {
+      "id": "toyota-yaris-1-33",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Yaris",
+      "motor": "1.33",
+      "etiket": "Toyota Yaris 1.33",
+      "yil_araligi": [
+        2011,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1181,
+      "ornek_ilan_metinleri": [
+        "Toyota Yaris 1.33 Cool",
+        "Toyota Yaris 1.33 Cool Skypack",
+        "Toyota Yaris 1.33 Fun",
+        "Toyota Yaris 1.33 Fun Skypack",
+        "Toyota Yaris 1.33 Fun Special"
+      ],
+      "sira": 170
+    },
+    {
+      "id": "toyota-auris-1-4-d-4d",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Auris",
+      "motor": "1.4 D-4D",
+      "etiket": "Toyota Auris 1.4 D-4D",
+      "yil_araligi": [
+        2008,
+        2013
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1178,
+      "ornek_ilan_metinleri": [
+        "Toyota Auris 1.4 D-4D Active",
+        "Toyota Auris 1.4 D-4D Active Skypack",
+        "Toyota Auris 1.4 D-4D Advance",
+        "Toyota Auris 1.4 D-4D Advance Skypack",
+        "Toyota Auris 1.4 D-4D Blue"
+      ],
+      "sira": 171
+    },
+    {
+      "id": "skoda-karoq-1-5-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Skoda",
+      "seri": "Karoq",
+      "motor": "1.5 TSI",
+      "etiket": "Skoda Karoq 1.5 TSI",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1170,
+      "ornek_ilan_metinleri": [
+        "Skoda Karoq 1.5 TSI Elite",
+        "Skoda Karoq 1.5 TSI Premium",
+        "Skoda Karoq 1.5 TSI Prestige",
+        "Skoda Karoq 1.5 TSI Sportline",
+        "Skoda Karoq 1.5 TSI Style"
+      ],
+      "sira": 172
+    },
+    {
+      "id": "subaru-xv-1-6",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Subaru",
+      "seri": "XV",
+      "motor": "1.6",
+      "etiket": "Subaru XV 1.6",
+      "yil_araligi": [
+        2013,
+        2022
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1170,
+      "ornek_ilan_metinleri": [
+        "Subaru XV 1.6 Comfort",
+        "Subaru XV 1.6 Elegance",
+        "Subaru XV 1.6 Premium",
+        "Subaru XV 1.6 Xclusive",
+        "Subaru XV 1.6 Xtreme"
+      ],
+      "sira": 173
+    },
+    {
+      "id": "seat-arona-1-0-ecotsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Seat",
+      "seri": "Arona",
+      "motor": "1.0 EcoTSI",
+      "etiket": "Seat Arona 1.0 EcoTSI",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1143,
+      "ornek_ilan_metinleri": [
+        "Seat Arona 1.0 EcoTSI FR",
+        "Seat Arona 1.0 EcoTSI Style",
+        "Seat Arona 1.0 EcoTSI Style Plus",
+        "Seat Arona 1.0 EcoTSI Xcellence",
+        "Seat Arona 1.0 EcoTSI Xperience"
+      ],
+      "sira": 174
+    },
+    {
+      "id": "volkswagen-amarok-2-0-bi-tdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Amarok",
+      "motor": "2.0 Bi-TDI",
+      "etiket": "Volkswagen Amarok 2.0 Bi-TDI",
+      "yil_araligi": [
+        2013,
+        2016
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1139,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Amarok 2.0 Bi-TDI Canyon",
+        "Volkswagen Amarok 2.0 Bi-TDI Exclusive",
+        "Volkswagen Amarok 2.0 Bi-TDI Highline"
+      ],
+      "sira": 175
+    },
+    {
+      "id": "mercedes-benz-cla-180-d",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "CLA",
+      "motor": "180 D",
+      "etiket": "Mercedes - Benz CLA 180 D",
+      "yil_araligi": [
+        2014,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1134,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz CLA 180 D AMG",
+        "Mercedes - Benz CLA 180 D Comfort",
+        "Mercedes - Benz CLA 180 D Style",
+        "Mercedes - Benz CLA 180 D Urban"
+      ],
+      "sira": 176
+    },
+    {
+      "id": "hyundai-i20-1-2-mpi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "i20",
+      "motor": "1.2 MPI",
+      "etiket": "Hyundai i20 1.2 MPI",
+      "yil_araligi": [
+        2014,
+        2025
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1133,
+      "ornek_ilan_metinleri": [
+        "Hyundai i20 1.2 MPI Elite",
+        "Hyundai i20 1.2 MPI Jump",
+        "Hyundai i20 1.2 MPI Style",
+        "Hyundai i20 1.2 MPI Team"
+      ],
+      "sira": 177
+    },
+    {
+      "id": "volkswagen-jetta-1-4-tsi-bluemotion",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.4 TSi BlueMotion",
+      "etiket": "Volkswagen Jetta 1.4 TSi BlueMotion",
+      "yil_araligi": [
+        2015,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1130,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.4 TSi BlueMotion Comfortline",
+        "Volkswagen Jetta 1.4 TSi BlueMotion Highline",
+        "Volkswagen Jetta 1.4 TSi BlueMotion Trendline"
+      ],
+      "sira": 178
+    },
+    {
+      "id": "renault-captur-1-5-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Renault",
+      "seri": "Captur",
+      "motor": "1.5 dCi",
+      "etiket": "Renault Captur 1.5 dCi",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1126,
+      "ornek_ilan_metinleri": [
+        "Renault Captur 1.5 dCi Icon",
+        "Renault Captur 1.5 dCi Outdoor",
+        "Renault Captur 1.5 dCi Touch"
+      ],
+      "sira": 179
+    },
+    {
+      "id": "fiat-tempra-1-6",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Tempra",
+      "motor": "1.6",
+      "etiket": "Fiat Tempra 1.6",
+      "yil_araligi": [
+        1992,
+        1998
+      ],
+      "medyan_yil": 1993,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1123,
+      "ornek_ilan_metinleri": [
+        "Fiat Tempra 1.6 S",
+        "Fiat Tempra 1.6 SX",
+        "Fiat Tempra 1.6 SX A",
+        "Fiat Tempra 1.6 SX AK",
+        "Fiat Tempra 1.6 SX SW"
+      ],
+      "sira": 180
+    },
+    {
+      "id": "hyundai-accent-1-3",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent",
+      "motor": "1.3",
+      "etiket": "Hyundai Accent 1.3",
+      "yil_araligi": [
+        1998,
+        2005
+      ],
+      "medyan_yil": 2000,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1120,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent 1.3 Admire",
+        "Hyundai Accent 1.3 LS",
+        "Hyundai Accent 1.3 LX"
+      ],
+      "sira": 181
+    },
+    {
+      "id": "honda-jazz-1-4",
+      "kategori": "otomobil",
+      "marka": "Honda",
+      "seri": "Jazz",
+      "motor": "1.4",
+      "etiket": "Honda Jazz 1.4",
+      "yil_araligi": [
+        2004,
+        2012
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1118,
+      "ornek_ilan_metinleri": [
+        "Honda Jazz 1.4 ES",
+        "Honda Jazz 1.4 ES Elite",
+        "Honda Jazz 1.4 Elite",
+        "Honda Jazz 1.4 Fun",
+        "Honda Jazz 1.4 Joy"
+      ],
+      "sira": 182
+    },
+    {
+      "id": "isuzu-d-max-1-9-d",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Isuzu",
+      "seri": "D-Max",
+      "motor": "1.9 D",
+      "etiket": "Isuzu D-Max 1.9 D",
+      "yil_araligi": [
+        2019,
+        2025
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1105,
+      "ornek_ilan_metinleri": [
+        "Isuzu D-Max 1.9 D 4x2",
+        "Isuzu D-Max 1.9 D 4x2 V-Go",
+        "Isuzu D-Max 1.9 D 4x2 V-Life",
+        "Isuzu D-Max 1.9 D 4x4 V-Cross"
+      ],
+      "sira": 183
+    },
+    {
+      "id": "volkswagen-jetta-1-4-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.4 TSi",
+      "etiket": "Volkswagen Jetta 1.4 TSi",
+      "yil_araligi": [
+        2008,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1105,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.4 TSi Comfortline",
+        "Volkswagen Jetta 1.4 TSi Exclusive",
+        "Volkswagen Jetta 1.4 TSi Highline",
+        "Volkswagen Jetta 1.4 TSi Midline",
+        "Volkswagen Jetta 1.4 TSi Trendline"
+      ],
+      "sira": 184
+    },
+    {
+      "id": "isuzu-d-max-2-5",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Isuzu",
+      "seri": "D-Max",
+      "motor": "2.5",
+      "etiket": "Isuzu D-Max 2.5",
+      "yil_araligi": [
+        2007,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1093,
+      "ornek_ilan_metinleri": [
+        "Isuzu D-Max 2.5 4x2",
+        "Isuzu D-Max 2.5 4x2 Limited",
+        "Isuzu D-Max 2.5 4x4",
+        "Isuzu D-Max 2.5 4x4 LTD",
+        "Isuzu D-Max 2.5 4x4 TR"
+      ],
+      "sira": 185
+    },
+    {
+      "id": "toyota-auris-1-6",
+      "kategori": "otomobil",
+      "marka": "Toyota",
+      "seri": "Auris",
+      "motor": "1.6",
+      "etiket": "Toyota Auris 1.6",
+      "yil_araligi": [
+        2008,
+        2016
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1093,
+      "ornek_ilan_metinleri": [
+        "Toyota Auris 1.6 Active",
+        "Toyota Auris 1.6 Active Skypack",
+        "Toyota Auris 1.6 Advance",
+        "Toyota Auris 1.6 Advance Skypack",
+        "Toyota Auris 1.6 Comfort"
+      ],
+      "sira": 186
+    },
+    {
+      "id": "renault-austral-1-3-hybrid",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Renault",
+      "seri": "Austral",
+      "motor": "1.3 Hybrid",
+      "etiket": "Renault Austral 1.3 Hybrid",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1090,
+      "ornek_ilan_metinleri": [
+        "Renault Austral 1.3 Hybrid Evolution",
+        "Renault Austral 1.3 Hybrid Techno",
+        "Renault Austral 1.3 Hybrid Techno Esprit Alpine"
+      ],
+      "sira": 187
+    },
+    {
+      "id": "skoda-octavia-1-5-e-tec",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Octavia",
+      "motor": "1.5 e-Tec",
+      "etiket": "Skoda Octavia 1.5 e-Tec",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1086,
+      "ornek_ilan_metinleri": [
+        "Skoda Octavia 1.5 e-Tec Elite",
+        "Skoda Octavia 1.5 e-Tec Premium",
+        "Skoda Octavia 1.5 e-Tec Prestige",
+        "Skoda Octavia 1.5 e-Tec Scout"
+      ],
+      "sira": 188
+    },
+    {
+      "id": "chevrolet-cruze-1-6",
+      "kategori": "otomobil",
+      "marka": "Chevrolet",
+      "seri": "Cruze",
+      "motor": "1.6",
+      "etiket": "Chevrolet Cruze 1.6",
+      "yil_araligi": [
+        2010,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1085,
+      "ornek_ilan_metinleri": [
+        "Chevrolet Cruze 1.6 Design Edition",
+        "Chevrolet Cruze 1.6 LS",
+        "Chevrolet Cruze 1.6 LS Plus",
+        "Chevrolet Cruze 1.6 LT",
+        "Chevrolet Cruze 1.6 LT Plus"
+      ],
+      "sira": 189
+    },
+    {
+      "id": "ford-kuga-1-5-ecoblue",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Kuga",
+      "motor": "1.5 EcoBlue",
+      "etiket": "Ford Kuga 1.5 EcoBlue",
+      "yil_araligi": [
+        2020,
+        2022
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1078,
+      "ornek_ilan_metinleri": [
+        "Ford Kuga 1.5 EcoBlue ST Line",
+        "Ford Kuga 1.5 EcoBlue Style",
+        "Ford Kuga 1.5 EcoBlue Titanium",
+        "Ford Kuga 1.5 EcoBlue Vignale"
+      ],
+      "sira": 190
+    },
+    {
+      "id": "ford-ecosport-1-0-ecoboost",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "EcoSport",
+      "motor": "1.0 EcoBoost",
+      "etiket": "Ford EcoSport 1.0 EcoBoost",
+      "yil_araligi": [
+        2018,
+        2022
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1070,
+      "ornek_ilan_metinleri": [
+        "Ford EcoSport 1.0 EcoBoost ST Line",
+        "Ford EcoSport 1.0 EcoBoost Style"
+      ],
+      "sira": 191
+    },
+    {
+      "id": "ford-fiesta-1-4",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Fiesta",
+      "motor": "1.4",
+      "etiket": "Ford Fiesta 1.4",
+      "yil_araligi": [
+        2004,
+        2012
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1069,
+      "ornek_ilan_metinleri": [
+        "Ford Fiesta 1.4 Collection",
+        "Ford Fiesta 1.4 Comfort",
+        "Ford Fiesta 1.4 Fun",
+        "Ford Fiesta 1.4 My",
+        "Ford Fiesta 1.4 Titanium"
+      ],
+      "sira": 192
+    },
+    {
+      "id": "volkswagen-bora-1-6",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Bora",
+      "motor": "1.6",
+      "etiket": "Volkswagen Bora 1.6",
+      "yil_araligi": [
+        1999,
+        2004
+      ],
+      "medyan_yil": 2001,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1069,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Bora 1.6",
+        "Volkswagen Bora 1.6 Basic",
+        "Volkswagen Bora 1.6 Comfortline",
+        "Volkswagen Bora 1.6 Pacific",
+        "Volkswagen Bora 1.6 Primeline"
+      ],
+      "sira": 193
+    },
+    {
+      "id": "volkswagen-jetta-1-2-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.2 TSi",
+      "etiket": "Volkswagen Jetta 1.2 TSi",
+      "yil_araligi": [
+        2012,
+        2015
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1046,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.2 TSi Comfortline",
+        "Volkswagen Jetta 1.2 TSi Highline",
+        "Volkswagen Jetta 1.2 TSi Trendline"
+      ],
+      "sira": 194
+    },
+    {
+      "id": "bmw-x5-25d-xdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X5",
+      "motor": "25d xDrive",
+      "etiket": "BMW X5 25d xDrive",
+      "yil_araligi": [
+        2014,
+        2018
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1045,
+      "ornek_ilan_metinleri": [
+        "BMW X5 25d xDrive",
+        "BMW X5 25d xDrive M Excellence",
+        "BMW X5 25d xDrive M Sport",
+        "BMW X5 25d xDrive Premium",
+        "BMW X5 25d xDrive Premium Line"
+      ],
+      "sira": 195
+    },
+    {
+      "id": "ford-fiesta-1-6",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Fiesta",
+      "motor": "1.6",
+      "etiket": "Ford Fiesta 1.6",
+      "yil_araligi": [
+        2008,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1040,
+      "ornek_ilan_metinleri": [
+        "Ford Fiesta 1.6 Collection",
+        "Ford Fiesta 1.6 Comfort",
+        "Ford Fiesta 1.6 Cool",
+        "Ford Fiesta 1.6 Ti-VCT Trend X",
+        "Ford Fiesta 1.6 Titanium"
+      ],
+      "sira": 196
+    },
+    {
+      "id": "citroen-c4-1-2-puretech",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C4",
+      "motor": "1.2 PureTech",
+      "etiket": "Citroen C4 1.2 PureTech",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1038,
+      "ornek_ilan_metinleri": [
+        "Citroen C4 1.2 PureTech Confort",
+        "Citroen C4 1.2 PureTech Feel Bold",
+        "Citroen C4 1.2 PureTech Max",
+        "Citroen C4 1.2 PureTech Shine",
+        "Citroen C4 1.2 PureTech Shine Bold"
+      ],
+      "sira": 197
+    },
+    {
+      "id": "ford-puma-1-0-ecoboost-hybrid",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Puma",
+      "motor": "1.0 EcoBoost Hybrid",
+      "etiket": "Ford Puma 1.0 EcoBoost Hybrid",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 1038,
+      "ornek_ilan_metinleri": [
+        "Ford Puma 1.0 EcoBoost Hybrid ST-Line X",
+        "Ford Puma 1.0 EcoBoost Hybrid Titanium"
+      ],
+      "sira": 198
+    },
+    {
+      "id": "nissan-skystar-4x2",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Skystar",
+      "motor": "4x2",
+      "etiket": "Nissan Skystar 4x2",
+      "yil_araligi": [
+        1998,
+        2009
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1035,
+      "ornek_ilan_metinleri": [
+        "Nissan SkyStar 4x2",
+        "Nissan Skystar 4x2"
+      ],
+      "sira": 199
+    },
+    {
+      "id": "nissan-x-trail-1-6-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "X-Trail",
+      "motor": "1.6 dCi",
+      "etiket": "Nissan X-Trail 1.6 dCi",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1032,
+      "ornek_ilan_metinleri": [
+        "Nissan X-Trail 1.6 dCi Black",
+        "Nissan X-Trail 1.6 dCi Design",
+        "Nissan X-Trail 1.6 dCi Platinum",
+        "Nissan X-Trail 1.6 dCi Platinum Premium"
+      ],
+      "sira": 200
+    },
+    {
+      "id": "dacia-sandero-0-9-tce",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Sandero",
+      "motor": "0.9 TCe",
+      "etiket": "Dacia Sandero 0.9 TCe",
+      "yil_araligi": [
+        2013,
+        2020
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1017,
+      "ornek_ilan_metinleri": [
+        "Dacia Sandero 0.9 TCe Stepway",
+        "Dacia Sandero 0.9 TCe Stepway Ambiance",
+        "Dacia Sandero 0.9 TCe Stepway Easy-R",
+        "Dacia Sandero 0.9 TCe Stepway Style",
+        "Dacia Sandero 0.9 TCe TechRoad"
+      ],
+      "sira": 201
+    },
+    {
+      "id": "seat-ibiza-1-0-ecotsi",
+      "kategori": "otomobil",
+      "marka": "Seat",
+      "seri": "Ibiza",
+      "motor": "1.0 EcoTSI",
+      "etiket": "Seat Ibiza 1.0 EcoTSI",
+      "yil_araligi": [
+        2016,
+        2025
+      ],
+      "medyan_yil": 2019,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 1017,
+      "ornek_ilan_metinleri": [
+        "Seat Ibiza 1.0 EcoTSI FR",
+        "Seat Ibiza 1.0 EcoTSI Sport Coupe FR",
+        "Seat Ibiza 1.0 EcoTSI Style",
+        "Seat Ibiza 1.0 EcoTSI Xcellence"
+      ],
+      "sira": 202
+    },
+    {
+      "id": "tofas-dogan-slx",
+      "kategori": "otomobil",
+      "marka": "Tofaş",
+      "seri": "Doğan",
+      "motor": "SLX",
+      "etiket": "Tofaş Doğan SLX",
+      "yil_araligi": [
+        1993,
+        1997
+      ],
+      "medyan_yil": 1994,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1014,
+      "ornek_ilan_metinleri": [
+        "Tofaş Doğan SLX"
+      ],
+      "sira": 203
+    },
+    {
+      "id": "opel-astra-1-4",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.4",
+      "etiket": "Opel Astra 1.4",
+      "yil_araligi": [
+        1997,
+        2011
+      ],
+      "medyan_yil": 2003,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 1013,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.4 Classic",
+        "Opel Astra 1.4 Club",
+        "Opel Astra 1.4 Enjoy",
+        "Opel Astra 1.4 Enjoy Plus",
+        "Opel Astra 1.4 Essentia"
+      ],
+      "sira": 204
+    },
+    {
+      "id": "honda-city-1-5-i-vtec",
+      "kategori": "otomobil",
+      "marka": "Honda",
+      "seri": "City",
+      "motor": "1.5 i-VTEC",
+      "etiket": "Honda City 1.5 i-VTEC",
+      "yil_araligi": [
+        2021,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 1010,
+      "ornek_ilan_metinleri": [
+        "Honda City 1.5 i-VTEC Elegance",
+        "Honda City 1.5 i-VTEC Executive"
+      ],
+      "sira": 205
+    },
+    {
+      "id": "nissan-qashqai-1-5-e-power",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Qashqai",
+      "motor": "1.5 e-Power",
+      "etiket": "Nissan Qashqai 1.5 e-Power",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 994,
+      "ornek_ilan_metinleri": [
+        "Nissan Qashqai 1.5 e-Power Design",
+        "Nissan Qashqai 1.5 e-Power Designpack Black Edition",
+        "Nissan Qashqai 1.5 e-Power N-Design",
+        "Nissan Qashqai 1.5 e-Power Platinum",
+        "Nissan Qashqai 1.5 e-Power Platinum Premium"
+      ],
+      "sira": 206
+    },
+    {
+      "id": "ford-kuga-1-5-tdci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Ford",
+      "seri": "Kuga",
+      "motor": "1.5 TDCi",
+      "etiket": "Ford Kuga 1.5 TDCi",
+      "yil_araligi": [
+        2017,
+        2019
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 993,
+      "ornek_ilan_metinleri": [
+        "Ford Kuga 1.5 TDCi ST Line",
+        "Ford Kuga 1.5 TDCi Style",
+        "Ford Kuga 1.5 TDCi Titanium"
+      ],
+      "sira": 207
+    },
+    {
+      "id": "kia-stonic-1-4-mpi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Kia",
+      "seri": "Stonic",
+      "motor": "1.4 MPI",
+      "etiket": "Kia Stonic 1.4 MPI",
+      "yil_araligi": [
+        2021,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 989,
+      "ornek_ilan_metinleri": [
+        "Kia Stonic 1.4 MPI Business",
+        "Kia Stonic 1.4 MPI Cool",
+        "Kia Stonic 1.4 MPI Elegance",
+        "Kia Stonic 1.4 MPI Elegance Konfor",
+        "Kia Stonic 1.4 MPI Prestige"
+      ],
+      "sira": 208
+    },
+    {
+      "id": "seat-leon-1-2-tsi",
+      "kategori": "otomobil",
+      "marka": "Seat",
+      "seri": "Leon",
+      "motor": "1.2 TSI",
+      "etiket": "Seat Leon 1.2 TSI",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 987,
+      "ornek_ilan_metinleri": [
+        "Seat Leon 1.2 TSI Style"
+      ],
+      "sira": 209
+    },
+    {
+      "id": "fiat-500-ailesi-500l-1-3-mjet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "500 Ailesi",
+      "motor": "500L 1.3 Mjet",
+      "etiket": "Fiat 500 Ailesi 500L 1.3 Mjet",
+      "yil_araligi": [
+        2013,
+        2020
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 986,
+      "ornek_ilan_metinleri": [
+        "Fiat 500 Ailesi 500L 1.3 Mjet Beats Edition",
+        "Fiat 500 Ailesi 500L 1.3 Mjet Cross",
+        "Fiat 500 Ailesi 500L 1.3 Mjet Cross Dualogic",
+        "Fiat 500 Ailesi 500L 1.3 Mjet Cross Plus",
+        "Fiat 500 Ailesi 500L 1.3 Mjet Lounge"
+      ],
+      "sira": 210
+    },
+    {
+      "id": "audi-q7-3-0-tdi-quattro",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Audi",
+      "seri": "Q7",
+      "motor": "3.0 TDI Quattro",
+      "etiket": "Audi Q7 3.0 TDI Quattro",
+      "yil_araligi": [
+        2008,
+        2014
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 983,
+      "ornek_ilan_metinleri": [
+        "Audi Q7 3.0 TDI Quattro"
+      ],
+      "sira": 211
+    },
+    {
+      "id": "hyundai-accent-era-1-4",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent Era",
+      "motor": "1.4",
+      "etiket": "Hyundai Accent Era 1.4",
+      "yil_araligi": [
+        2008,
+        2012
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 976,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent Era 1.4 Eco",
+        "Hyundai Accent Era 1.4 Mode",
+        "Hyundai Accent Era 1.4 Select",
+        "Hyundai Accent Era 1.4 Start",
+        "Hyundai Accent Era 1.4 Team"
+      ],
+      "sira": 212
+    },
+    {
+      "id": "audi-q2-35-tfsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Audi",
+      "seri": "Q2",
+      "motor": "35 TFSI",
+      "etiket": "Audi Q2 35 TFSI",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 969,
+      "ornek_ilan_metinleri": [
+        "Audi Q2 35 TFSI Advanced",
+        "Audi Q2 35 TFSI Design",
+        "Audi Q2 35 TFSI Sport"
+      ],
+      "sira": 213
+    },
+    {
+      "id": "renault-captur-1-3-tce",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Renault",
+      "seri": "Captur",
+      "motor": "1.3 TCe",
+      "etiket": "Renault Captur 1.3 TCe",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 966,
+      "ornek_ilan_metinleri": [
+        "Renault Captur 1.3 TCe Esprit Alpine",
+        "Renault Captur 1.3 TCe Evolution",
+        "Renault Captur 1.3 TCe Icon",
+        "Renault Captur 1.3 TCe Techno",
+        "Renault Captur 1.3 TCe Touch"
+      ],
+      "sira": 214
+    },
+    {
+      "id": "bmw-4-serisi-418i-gran-coupe",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "4 Serisi",
+      "motor": "418i Gran Coupe",
+      "etiket": "BMW 4 Serisi 418i Gran Coupe",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 965,
+      "ornek_ilan_metinleri": [
+        "BMW 4 Serisi 418i Gran Coupe",
+        "BMW 4 Serisi 418i Gran Coupe Luxury Line",
+        "BMW 4 Serisi 418i Gran Coupe M Sport",
+        "BMW 4 Serisi 418i Gran Coupe Prestige",
+        "BMW 4 Serisi 418i Gran Coupe Pure"
+      ],
+      "sira": 215
+    },
+    {
+      "id": "hyundai-getz-1-5-crdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Getz",
+      "motor": "1.5 CRDi",
+      "etiket": "Hyundai Getz 1.5 CRDi",
+      "yil_araligi": [
+        2005,
+        2011
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 962,
+      "ornek_ilan_metinleri": [
+        "Hyundai Getz 1.5 CRDi Comfort Plus",
+        "Hyundai Getz 1.5 CRDi GLS",
+        "Hyundai Getz 1.5 CRDi VGT",
+        "Hyundai Getz 1.5 CRDi VGT Start"
+      ],
+      "sira": 216
+    },
+    {
+      "id": "volvo-s90-2-0-d-b5",
+      "kategori": "otomobil",
+      "marka": "Volvo",
+      "seri": "S90",
+      "motor": "2.0 D B5",
+      "etiket": "Volvo S90 2.0 D B5",
+      "yil_araligi": [
+        2021,
+        2023
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 961,
+      "ornek_ilan_metinleri": [
+        "Volvo S90 2.0 D B5 Inscription",
+        "Volvo S90 2.0 D B5 Plus Bright",
+        "Volvo S90 2.0 D B5 Plus Dark"
+      ],
+      "sira": 217
+    },
+    {
+      "id": "bmw-2-serisi-218i-gran-coupe",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "2 Serisi",
+      "motor": "218i Gran Coupe",
+      "etiket": "BMW 2 Serisi 218i Gran Coupe",
+      "yil_araligi": [
+        2020,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 952,
+      "ornek_ilan_metinleri": [
+        "BMW 2 Serisi 218i Gran Coupe First Edition M Sport",
+        "BMW 2 Serisi 218i Gran Coupe First Edition Sport Line",
+        "BMW 2 Serisi 218i Gran Coupe M Sport",
+        "BMW 2 Serisi 218i Gran Coupe Sport Line"
+      ],
+      "sira": 218
+    },
+    {
+      "id": "fiat-albea-sole-1-3-multijet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Albea",
+      "motor": "Sole 1.3 Multijet",
+      "etiket": "Fiat Albea Sole 1.3 Multijet",
+      "yil_araligi": [
+        2008,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 939,
+      "ornek_ilan_metinleri": [
+        "Fiat Albea Sole 1.3 Multijet Active",
+        "Fiat Albea Sole 1.3 Multijet Active Plus",
+        "Fiat Albea Sole 1.3 Multijet Dynamic",
+        "Fiat Albea Sole 1.3 Multijet Dynamic Plus",
+        "Fiat Albea Sole 1.3 Multijet Premio"
+      ],
+      "sira": 219
+    },
+    {
+      "id": "renault-symbol-1-4",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Symbol",
+      "motor": "1.4",
+      "etiket": "Renault Symbol 1.4",
+      "yil_araligi": [
+        2005,
+        2010
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 939,
+      "ornek_ilan_metinleri": [
+        "Renault Symbol 1.4 Authentique",
+        "Renault Symbol 1.4 Dynamique",
+        "Renault Symbol 1.4 Expression",
+        "Renault Symbol 1.4 Expression Plus",
+        "Renault Symbol 1.4 Extreme"
+      ],
+      "sira": 220
+    },
+    {
+      "id": "hyundai-accent-era-1-5-crdi-vgt",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent Era",
+      "motor": "1.5 CRDi-VGT",
+      "etiket": "Hyundai Accent Era 1.5 CRDi-VGT",
+      "yil_araligi": [
+        2007,
+        2011
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 934,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent Era 1.5 CRDi-VGT Eco",
+        "Hyundai Accent Era 1.5 CRDi-VGT Select",
+        "Hyundai Accent Era 1.5 CRDi-VGT Start",
+        "Hyundai Accent Era 1.5 CRDi-VGT Style",
+        "Hyundai Accent Era 1.5 CRDi-VGT Team"
+      ],
+      "sira": 221
+    },
+    {
+      "id": "cupra-formentor-1-5-tsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Cupra",
+      "seri": "Formentor",
+      "motor": "1.5 TSI",
+      "etiket": "Cupra Formentor 1.5 TSI",
+      "yil_araligi": [
+        2022,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 932,
+      "ornek_ilan_metinleri": [
+        "Cupra Formentor 1.5 TSI"
+      ],
+      "sira": 222
+    },
+    {
+      "id": "opel-astra-1-2-t",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Astra",
+      "motor": "1.2 T",
+      "etiket": "Opel Astra 1.2 T",
+      "yil_araligi": [
+        2020,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 927,
+      "ornek_ilan_metinleri": [
+        "Opel Astra 1.2 T Edition",
+        "Opel Astra 1.2 T Elegance",
+        "Opel Astra 1.2 T GS",
+        "Opel Astra 1.2 T GS Line",
+        "Opel Astra 1.2 T Ultimate"
+      ],
+      "sira": 223
+    },
+    {
+      "id": "renault-r-19-1-4-europa",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 19",
+      "motor": "1.4 Europa",
+      "etiket": "Renault R 19 1.4 Europa",
+      "yil_araligi": [
+        1996,
+        1999
+      ],
+      "medyan_yil": 1997,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 926,
+      "ornek_ilan_metinleri": [
+        "Renault R 19 1.4 Europa RL",
+        "Renault R 19 1.4 Europa RN",
+        "Renault R 19 1.4 Europa RNA",
+        "Renault R 19 1.4 Europa RT",
+        "Renault R 19 1.4 Europa RTE"
+      ],
+      "sira": 224
+    },
+    {
+      "id": "volkswagen-tiguan-2-0-tdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Tiguan",
+      "motor": "2.0 TDI",
+      "etiket": "Volkswagen Tiguan 2.0 TDI",
+      "yil_araligi": [
+        2009,
+        2017
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 919,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Tiguan 2.0 TDI Comfortline",
+        "Volkswagen Tiguan 2.0 TDI Fun&Function",
+        "Volkswagen Tiguan 2.0 TDI Highline",
+        "Volkswagen Tiguan 2.0 TDI R Line",
+        "Volkswagen Tiguan 2.0 TDI Sport&Style"
+      ],
+      "sira": 225
+    },
+    {
+      "id": "mini-cooper-1-5",
+      "kategori": "otomobil",
+      "marka": "Mini",
+      "seri": "Cooper",
+      "motor": "1.5",
+      "etiket": "Mini Cooper 1.5",
+      "yil_araligi": [
+        2017,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 909,
+      "ornek_ilan_metinleri": [
+        "Mini Cooper 1.5 Chili",
+        "Mini Cooper 1.5 Classic",
+        "Mini Cooper 1.5 Favoured",
+        "Mini Cooper 1.5 Iconic",
+        "Mini Cooper 1.5 JCW"
+      ],
+      "sira": 226
+    },
+    {
+      "id": "volkswagen-golf-1-5-etsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Golf",
+      "motor": "1.5 eTSI",
+      "etiket": "Volkswagen Golf 1.5 eTSI",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 904,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Golf 1.5 eTSI Life",
+        "Volkswagen Golf 1.5 eTSI R Line",
+        "Volkswagen Golf 1.5 eTSI Style"
+      ],
+      "sira": 227
+    },
+    {
+      "id": "fiat-uno-70-s",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Uno",
+      "motor": "70 S",
+      "etiket": "Fiat Uno 70 S",
+      "yil_araligi": [
+        1995,
+        1999
+      ],
+      "medyan_yil": 1998,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 901,
+      "ornek_ilan_metinleri": [
+        "Fiat Uno 70 S"
+      ],
+      "sira": 228
+    },
+    {
+      "id": "volkswagen-passat-2-0-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "2.0 TDi",
+      "etiket": "Volkswagen Passat 2.0 TDi",
+      "yil_araligi": [
+        2006,
+        2021
+      ],
+      "medyan_yil": 2008,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 889,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 2.0 TDi Business",
+        "Volkswagen Passat 2.0 TDi Comfortline",
+        "Volkswagen Passat 2.0 TDi Elegance",
+        "Volkswagen Passat 2.0 TDi Exclusive",
+        "Volkswagen Passat 2.0 TDi Highline"
+      ],
+      "sira": 229
+    },
+    {
+      "id": "ford-escort-1-6",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Escort",
+      "motor": "1.6",
+      "etiket": "Ford Escort 1.6",
+      "yil_araligi": [
+        1994,
+        1998
+      ],
+      "medyan_yil": 1997,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 885,
+      "ornek_ilan_metinleri": [
+        "Ford Escort 1.6 CL",
+        "Ford Escort 1.6 CLX",
+        "Ford Escort 1.6 Ghia"
+      ],
+      "sira": 230
+    },
+    {
+      "id": "audi-q5-2-0-tdi-quattro",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Audi",
+      "seri": "Q5",
+      "motor": "2.0 TDI Quattro",
+      "etiket": "Audi Q5 2.0 TDI Quattro",
+      "yil_araligi": [
+        2009,
+        2016
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 877,
+      "ornek_ilan_metinleri": [
+        "Audi Q5 2.0 TDI Quattro"
+      ],
+      "sira": 231
+    },
+    {
+      "id": "hyundai-getz-1-3",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Getz",
+      "motor": "1.3",
+      "etiket": "Hyundai Getz 1.3",
+      "yil_araligi": [
+        2004,
+        2006
+      ],
+      "medyan_yil": 2005,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 874,
+      "ornek_ilan_metinleri": [
+        "Hyundai Getz 1.3 GLS"
+      ],
+      "sira": 232
+    },
+    {
+      "id": "nissan-navara-2-3-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Navara",
+      "motor": "2.3 dCi",
+      "etiket": "Nissan Navara 2.3 dCi",
+      "yil_araligi": [
+        2016,
+        2021
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 873,
+      "ornek_ilan_metinleri": [
+        "Nissan Navara 2.3 dCi 4x2",
+        "Nissan Navara 2.3 dCi 4x4"
+      ],
+      "sira": 233
+    },
+    {
+      "id": "dacia-logan-1-5-dci-mcv",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Logan",
+      "motor": "1.5 dCi MCV",
+      "etiket": "Dacia Logan 1.5 dCi MCV",
+      "yil_araligi": [
+        2009,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 870,
+      "ornek_ilan_metinleri": [
+        "Dacia Logan 1.5 dCi MCV Ambiance",
+        "Dacia Logan 1.5 dCi MCV Black Line",
+        "Dacia Logan 1.5 dCi MCV Laureate"
+      ],
+      "sira": 234
+    },
+    {
+      "id": "bmw-2-serisi-216d-gran-coupe",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "2 Serisi",
+      "motor": "216d Gran Coupe",
+      "etiket": "BMW 2 Serisi 216d Gran Coupe",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 867,
+      "ornek_ilan_metinleri": [
+        "BMW 2 Serisi 216d Gran Coupe First Edition M Sport",
+        "BMW 2 Serisi 216d Gran Coupe First Edition Sport Line",
+        "BMW 2 Serisi 216d Gran Coupe M Sport",
+        "BMW 2 Serisi 216d Gran Coupe Sport Line"
+      ],
+      "sira": 235
+    },
+    {
+      "id": "renault-fluence-1-6",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Fluence",
+      "motor": "1.6",
+      "etiket": "Renault Fluence 1.6",
+      "yil_araligi": [
+        2010,
+        2013
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 855,
+      "ornek_ilan_metinleri": [
+        "Renault Fluence 1.6 Business",
+        "Renault Fluence 1.6 Dynamique",
+        "Renault Fluence 1.6 Extreme",
+        "Renault Fluence 1.6 Joy",
+        "Renault Fluence 1.6 Privilege"
+      ],
+      "sira": 236
+    },
+    {
+      "id": "kia-ceed-1-6-crdi",
+      "kategori": "otomobil",
+      "marka": "Kia",
+      "seri": "Ceed",
+      "motor": "1.6 CRDi",
+      "etiket": "Kia Ceed 1.6 CRDi",
+      "yil_araligi": [
+        2011,
+        2017
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 853,
+      "ornek_ilan_metinleri": [
+        "Kia Ceed 1.6 CRDi Comfort",
+        "Kia Ceed 1.6 CRDi Concept",
+        "Kia Ceed 1.6 CRDi Concept Plus",
+        "Kia Ceed 1.6 CRDi Concept SW",
+        "Kia Ceed 1.6 CRDi Elegance"
+      ],
+      "sira": 237
+    },
+    {
+      "id": "hyundai-tucson-1-6-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Tucson",
+      "motor": "1.6 GDi",
+      "etiket": "Hyundai Tucson 1.6 GDi",
+      "yil_araligi": [
+        2015,
+        2018
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 852,
+      "ornek_ilan_metinleri": [
+        "Hyundai Tucson 1.6 GDi Elite",
+        "Hyundai Tucson 1.6 GDi Elite Plus",
+        "Hyundai Tucson 1.6 GDi Style"
+      ],
+      "sira": 238
+    },
+    {
+      "id": "tofas-sahin-s",
+      "kategori": "otomobil",
+      "marka": "Tofaş",
+      "seri": "Şahin",
+      "motor": "S",
+      "etiket": "Tofaş Şahin S",
+      "yil_araligi": [
+        1995,
+        1998
+      ],
+      "medyan_yil": 1997,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 843,
+      "ornek_ilan_metinleri": [
+        "Tofaş Şahin S"
+      ],
+      "sira": 239
+    },
+    {
+      "id": "bmw-5-serisi-520d-xdrive",
+      "kategori": "otomobil",
+      "marka": "BMW",
+      "seri": "5 Serisi",
+      "motor": "520d xDrive",
+      "etiket": "BMW 5 Serisi 520d xDrive",
+      "yil_araligi": [
+        2017,
+        2023
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 833,
+      "ornek_ilan_metinleri": [
+        "BMW 5 Serisi 520d xDrive Executive M",
+        "BMW 5 Serisi 520d xDrive Luxury Line",
+        "BMW 5 Serisi 520d xDrive M Sport",
+        "BMW 5 Serisi 520d xDrive Prestige",
+        "BMW 5 Serisi 520d xDrive Special Edition Luxury Line"
+      ],
+      "sira": 240
+    },
+    {
+      "id": "nissan-juke-1-5-dci",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Juke",
+      "motor": "1.5 dCi",
+      "etiket": "Nissan Juke 1.5 dCi",
+      "yil_araligi": [
+        2012,
+        2018
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 832,
+      "ornek_ilan_metinleri": [
+        "Nissan Juke 1.5 dCi Black Edition",
+        "Nissan Juke 1.5 dCi Platinum",
+        "Nissan Juke 1.5 dCi Platinum Premium Pack",
+        "Nissan Juke 1.5 dCi Skypack",
+        "Nissan Juke 1.5 dCi Special Edition"
+      ],
+      "sira": 241
+    },
+    {
+      "id": "hyundai-elantra-1-6-mpi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Elantra",
+      "motor": "1.6 MPI",
+      "etiket": "Hyundai Elantra 1.6 MPI",
+      "yil_araligi": [
+        2019,
+        2024
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 830,
+      "ornek_ilan_metinleri": [
+        "Hyundai Elantra 1.6 MPI Elite",
+        "Hyundai Elantra 1.6 MPI Prime",
+        "Hyundai Elantra 1.6 MPI Smart",
+        "Hyundai Elantra 1.6 MPI Style",
+        "Hyundai Elantra 1.6 MPI Style Comfort"
+      ],
+      "sira": 242
+    },
+    {
+      "id": "bmw-x1-xdrive25e",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X1",
+      "motor": "xDrive25e",
+      "etiket": "BMW X1 xDrive25e",
+      "yil_araligi": [
+        2025,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 825,
+      "ornek_ilan_metinleri": [
+        "BMW X1 xDrive25e M Sport",
+        "BMW X1 xDrive25e X Line"
+      ],
+      "sira": 243
+    },
+    {
+      "id": "volvo-xc60-2-0-d4",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volvo",
+      "seri": "XC60",
+      "motor": "2.0 D4",
+      "etiket": "Volvo XC60 2.0 D4",
+      "yil_araligi": [
+        2013,
+        2018
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 822,
+      "ornek_ilan_metinleri": [
+        "Volvo XC60 2.0 D4",
+        "Volvo XC60 2.0 D4 Advance",
+        "Volvo XC60 2.0 D4 Inscription",
+        "Volvo XC60 2.0 D4 Premium",
+        "Volvo XC60 2.0 D4 R-Desing"
+      ],
+      "sira": 244
+    },
+    {
+      "id": "opel-grandland-1-2-t",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Opel",
+      "seri": "Grandland",
+      "motor": "1.2 T",
+      "etiket": "Opel Grandland 1.2 T",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 807,
+      "ornek_ilan_metinleri": [
+        "Opel Grandland 1.2 T Edition",
+        "Opel Grandland 1.2 T Elegance",
+        "Opel Grandland 1.2 T GS",
+        "Opel Grandland 1.2 T Hybrid Edition",
+        "Opel Grandland 1.2 T Hybrid GS"
+      ],
+      "sira": 245
+    },
+    {
+      "id": "chevrolet-aveo-1-4",
+      "kategori": "otomobil",
+      "marka": "Chevrolet",
+      "seri": "Aveo",
+      "motor": "1.4",
+      "etiket": "Chevrolet Aveo 1.4",
+      "yil_araligi": [
+        2006,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 806,
+      "ornek_ilan_metinleri": [
+        "Chevrolet Aveo 1.4 LS",
+        "Chevrolet Aveo 1.4 LT",
+        "Chevrolet Aveo 1.4 LTZ",
+        "Chevrolet Aveo 1.4 S",
+        "Chevrolet Aveo 1.4 SE"
+      ],
+      "sira": 246
+    },
+    {
+      "id": "hyundai-elantra-1-6",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Elantra",
+      "motor": "1.6",
+      "etiket": "Hyundai Elantra 1.6",
+      "yil_araligi": [
+        1999,
+        2005
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 801,
+      "ornek_ilan_metinleri": [
+        "Hyundai Elantra 1.6 GLS"
+      ],
+      "sira": 247
+    },
+    {
+      "id": "citroen-c3-1-4-hdi",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C3",
+      "motor": "1.4 HDi",
+      "etiket": "Citroen C3 1.4 HDi",
+      "yil_araligi": [
+        2004,
+        2011
+      ],
+      "medyan_yil": 2006,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 791,
+      "ornek_ilan_metinleri": [
+        "Citroen C3 1.4 HDi Attraction",
+        "Citroen C3 1.4 HDi Collection",
+        "Citroen C3 1.4 HDi Confort",
+        "Citroen C3 1.4 HDi Exclusive",
+        "Citroen C3 1.4 HDi SX"
+      ],
+      "sira": 248
+    },
+    {
+      "id": "peugeot-206-1-4-hdi",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "206",
+      "motor": "1.4 HDi",
+      "etiket": "Peugeot 206 1.4 HDi",
+      "yil_araligi": [
+        2003,
+        2011
+      ],
+      "medyan_yil": 2006,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 790,
+      "ornek_ilan_metinleri": [
+        "Peugeot 206 1.4 HDi Comfort",
+        "Peugeot 206 1.4 HDi Feline",
+        "Peugeot 206 1.4 HDi Fever",
+        "Peugeot 206 1.4 HDi Panoramic",
+        "Peugeot 206 1.4 HDi Sporty"
+      ],
+      "sira": 249
+    },
+    {
+      "id": "dacia-sandero-1-0-tce",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Sandero",
+      "motor": "1.0 TCe",
+      "etiket": "Dacia Sandero 1.0 TCe",
+      "yil_araligi": [
+        2021,
+        2025
+      ],
+      "medyan_yil": 2022,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 789,
+      "ornek_ilan_metinleri": [
+        "Dacia Sandero 1.0 TCe Comfort",
+        "Dacia Sandero 1.0 TCe Essential",
+        "Dacia Sandero 1.0 TCe Extreme",
+        "Dacia Sandero 1.0 TCe Prestige"
+      ],
+      "sira": 250
+    },
+    {
+      "id": "volkswagen-polo-1-0",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.0",
+      "etiket": "Volkswagen Polo 1.0",
+      "yil_araligi": [
+        2015,
+        2024
+      ],
+      "medyan_yil": 2018,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 787,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.0",
+        "Volkswagen Polo 1.0 Highline",
+        "Volkswagen Polo 1.0 Impression",
+        "Volkswagen Polo 1.0 Life",
+        "Volkswagen Polo 1.0 Style"
+      ],
+      "sira": 251
+    },
+    {
+      "id": "honda-hr-v-1-5-e-hev",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Honda",
+      "seri": "HR-V",
+      "motor": "1.5 e-HEV",
+      "etiket": "Honda HR-V 1.5 e-HEV",
+      "yil_araligi": [
+        2022,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 781,
+      "ornek_ilan_metinleri": [
+        "Honda HR-V 1.5 e-HEV Advance",
+        "Honda HR-V 1.5 e-HEV Elegance",
+        "Honda HR-V 1.5 e-HEV Style"
+      ],
+      "sira": 252
+    },
+    {
+      "id": "fiat-linea-1-4-fire",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Linea",
+      "motor": "1.4 Fire",
+      "etiket": "Fiat Linea 1.4 Fire",
+      "yil_araligi": [
+        2011,
+        2017
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 779,
+      "ornek_ilan_metinleri": [
+        "Fiat Linea 1.4 Fire Active",
+        "Fiat Linea 1.4 Fire Active Plus",
+        "Fiat Linea 1.4 Fire Actual",
+        "Fiat Linea 1.4 Fire Actual Plus",
+        "Fiat Linea 1.4 Fire Dynamic"
+      ],
+      "sira": 253
+    },
+    {
+      "id": "hyundai-kona-1-6-crdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Hyundai",
+      "seri": "Kona",
+      "motor": "1.6 CRDI",
+      "etiket": "Hyundai Kona 1.6 CRDI",
+      "yil_araligi": [
+        2019,
+        2020
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 765,
+      "ornek_ilan_metinleri": [
+        "Hyundai Kona 1.6 CRDI Elite Smart",
+        "Hyundai Kona 1.6 CRDI Smart",
+        "Hyundai Kona 1.6 CRDI Style"
+      ],
+      "sira": 254
+    },
+    {
+      "id": "ford-fiesta-1-25",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Fiesta",
+      "motor": "1.25",
+      "etiket": "Ford Fiesta 1.25",
+      "yil_araligi": [
+        1998,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 764,
+      "ornek_ilan_metinleri": [
+        "Ford Fiesta 1.25 Flair",
+        "Ford Fiesta 1.25 Ghia",
+        "Ford Fiesta 1.25 My",
+        "Ford Fiesta 1.25 Trend",
+        "Ford Fiesta 1.25 Trend X"
+      ],
+      "sira": 255
+    },
+    {
+      "id": "opel-vectra-1-6",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Vectra",
+      "motor": "1.6",
+      "etiket": "Opel Vectra 1.6",
+      "yil_araligi": [
+        1997,
+        2006
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 762,
+      "ornek_ilan_metinleri": [
+        "Opel Vectra 1.6 Comfort",
+        "Opel Vectra 1.6 Design Edition",
+        "Opel Vectra 1.6 Edition",
+        "Opel Vectra 1.6 Elegance",
+        "Opel Vectra 1.6 GL"
+      ],
+      "sira": 256
+    },
+    {
+      "id": "opel-insignia-1-6-t",
+      "kategori": "otomobil",
+      "marka": "Opel",
+      "seri": "Insignia",
+      "motor": "1.6 T",
+      "etiket": "Opel Insignia 1.6 T",
+      "yil_araligi": [
+        2009,
+        2015
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 759,
+      "ornek_ilan_metinleri": [
+        "Opel Insignia 1.6 T Cosmo",
+        "Opel Insignia 1.6 T Edition",
+        "Opel Insignia 1.6 T Edition Elegance"
+      ],
+      "sira": 257
+    },
+    {
+      "id": "chery-tiggo-8-pro-max-exceptional",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Chery",
+      "seri": "Tiggo 8 Pro Max",
+      "motor": "Exceptional",
+      "etiket": "Chery Tiggo 8 Pro Max Exceptional",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 754,
+      "ornek_ilan_metinleri": [
+        "Chery Tiggo 8 Pro Max Exceptional"
+      ],
+      "sira": 258
+    },
+    {
+      "id": "mercedes-benz-e-350-cdi",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "350 CDI",
+      "etiket": "Mercedes - Benz E 350 CDI",
+      "yil_araligi": [
+        2011,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 743,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 350 CDI AMG Premium",
+        "Mercedes - Benz E 350 CDI BlueEFFICIENCY Elegance",
+        "Mercedes - Benz E 350 CDI BlueEFFICIENCY Premium",
+        "Mercedes - Benz E 350 CDI BlueTEC Elite",
+        "Mercedes - Benz E 350 CDI Premium"
+      ],
+      "sira": 259
+    },
+    {
+      "id": "volkswagen-passat-1-6",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.6",
+      "etiket": "Volkswagen Passat 1.6",
+      "yil_araligi": [
+        2000,
+        2010
+      ],
+      "medyan_yil": 2004,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 743,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.6",
+        "Volkswagen Passat 1.6 Comfortline",
+        "Volkswagen Passat 1.6 Exclusive",
+        "Volkswagen Passat 1.6 TD GL",
+        "Volkswagen Passat 1.6 Trendline"
+      ],
+      "sira": 260
+    },
+    {
+      "id": "renault-r-9-1-4",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "R 9",
+      "motor": "1.4",
+      "etiket": "Renault R 9 1.4",
+      "yil_araligi": [
+        1986,
+        1996
+      ],
+      "medyan_yil": 1994,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 738,
+      "ornek_ilan_metinleri": [
+        "Renault R 9 1.4",
+        "Renault R 9 1.4 GTC",
+        "Renault R 9 1.4 GTS",
+        "Renault R 9 1.4 Spring"
+      ],
+      "sira": 261
+    },
+    {
+      "id": "citroen-c4-1-6-hdi",
+      "kategori": "otomobil",
+      "marka": "Citroen",
+      "seri": "C4",
+      "motor": "1.6 HDi",
+      "etiket": "Citroen C4 1.6 HDi",
+      "yil_araligi": [
+        2006,
+        2015
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 737,
+      "ornek_ilan_metinleri": [
+        "Citroen C4 1.6 HDi Attraction",
+        "Citroen C4 1.6 HDi Confort",
+        "Citroen C4 1.6 HDi Confort Plus",
+        "Citroen C4 1.6 HDi Easy",
+        "Citroen C4 1.6 HDi SX"
+      ],
+      "sira": 262
+    },
+    {
+      "id": "skoda-superb-1-5-tsi-hybrid",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "SuperB",
+      "motor": "1.5 TSI Hybrid",
+      "etiket": "Skoda SuperB 1.5 TSI Hybrid",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2025,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 737,
+      "ornek_ilan_metinleri": [
+        "Skoda SuperB 1.5 TSI Hybrid Elite",
+        "Skoda SuperB 1.5 TSI Hybrid Laurin&Klement Crystal",
+        "Skoda SuperB 1.5 TSI Hybrid Premium",
+        "Skoda SuperB 1.5 TSI Hybrid Prestige",
+        "Skoda SuperB 1.5 TSI Hybrid Sportline"
+      ],
+      "sira": 263
+    },
+    {
+      "id": "land-rover-discovery-sport-2-0-td4",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Land Rover",
+      "seri": "Discovery Sport",
+      "motor": "2.0 TD4",
+      "etiket": "Land Rover Discovery Sport 2.0 TD4",
+      "yil_araligi": [
+        2015,
+        2019
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 734,
+      "ornek_ilan_metinleri": [
+        "Land Rover Discovery Sport 2.0 TD4 HSE",
+        "Land Rover Discovery Sport 2.0 TD4 HSE Luxury",
+        "Land Rover Discovery Sport 2.0 TD4 R-Dynamic S",
+        "Land Rover Discovery Sport 2.0 TD4 R-Dynamic SE",
+        "Land Rover Discovery Sport 2.0 TD4 S"
+      ],
+      "sira": 264
+    },
+    {
+      "id": "renault-captur-1-2-tce",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Renault",
+      "seri": "Captur",
+      "motor": "1.2 TCe",
+      "etiket": "Renault Captur 1.2 TCe",
+      "yil_araligi": [
+        2013,
+        2016
+      ],
+      "medyan_yil": 2014,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 731,
+      "ornek_ilan_metinleri": [
+        "Renault Captur 1.2 TCe Icon",
+        "Renault Captur 1.2 TCe Outdoor",
+        "Renault Captur 1.2 TCe Touch"
+      ],
+      "sira": 265
+    },
+    {
+      "id": "skoda-scala-1-6-tdi",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Scala",
+      "motor": "1.6 TDI",
+      "etiket": "Skoda Scala 1.6 TDI",
+      "yil_araligi": [
+        2020,
+        2023
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 731,
+      "ornek_ilan_metinleri": [
+        "Skoda Scala 1.6 TDI Premium"
+      ],
+      "sira": 266
+    },
+    {
+      "id": "bmw-x3-20d-xdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X3",
+      "motor": "20d xDrive",
+      "etiket": "BMW X3 20d xDrive",
+      "yil_araligi": [
+        2009,
+        2025
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 729,
+      "ornek_ilan_metinleri": [
+        "BMW X3 20d xDrive 2.0d",
+        "BMW X3 20d xDrive Comfort",
+        "BMW X3 20d xDrive Exclusive",
+        "BMW X3 20d xDrive M Sport",
+        "BMW X3 20d xDrive Premium"
+      ],
+      "sira": 267
+    },
+    {
+      "id": "mg-zs-1-0-t-gdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "MG",
+      "seri": "ZS",
+      "motor": "1.0 T-GDI",
+      "etiket": "MG ZS 1.0 T-GDI",
+      "yil_araligi": [
+        2022,
+        2024
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 726,
+      "ornek_ilan_metinleri": [
+        "MG ZS 1.0 T-GDI Comfort",
+        "MG ZS 1.0 T-GDI Luxury",
+        "MG ZS 1.0 T-GDI Luxury Plus"
+      ],
+      "sira": 268
+    },
+    {
+      "id": "bmw-x1-20i-sdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X1",
+      "motor": "20i sDrive",
+      "etiket": "BMW X1 20i sDrive",
+      "yil_araligi": [
+        2023,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 721,
+      "ornek_ilan_metinleri": [
+        "BMW X1 20i sDrive M Sport",
+        "BMW X1 20i sDrive X Line"
+      ],
+      "sira": 269
+    },
+    {
+      "id": "fiat-marea-1-6",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Marea",
+      "motor": "1.6",
+      "etiket": "Fiat Marea 1.6",
+      "yil_araligi": [
+        1998,
+        2005
+      ],
+      "medyan_yil": 2001,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 721,
+      "ornek_ilan_metinleri": [
+        "Fiat Marea 1.6 ELX",
+        "Fiat Marea 1.6 Exclusive",
+        "Fiat Marea 1.6 Liberty",
+        "Fiat Marea 1.6 SX"
+      ],
+      "sira": 270
+    },
+    {
+      "id": "volkswagen-jetta-1-6",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.6",
+      "etiket": "Volkswagen Jetta 1.6",
+      "yil_araligi": [
+        2006,
+        2010
+      ],
+      "medyan_yil": 2007,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 713,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.6 Comfortline",
+        "Volkswagen Jetta 1.6 FSi Comfortline",
+        "Volkswagen Jetta 1.6 FSi Midline",
+        "Volkswagen Jetta 1.6 Midline",
+        "Volkswagen Jetta 1.6 Primeline"
+      ],
+      "sira": 271
+    },
+    {
+      "id": "volkswagen-jetta-1-2-tsi-bluemotion",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Jetta",
+      "motor": "1.2 TSi BlueMotion",
+      "etiket": "Volkswagen Jetta 1.2 TSi BlueMotion",
+      "yil_araligi": [
+        2015,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 709,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Jetta 1.2 TSi BlueMotion Comfortline",
+        "Volkswagen Jetta 1.2 TSi BlueMotion Highline",
+        "Volkswagen Jetta 1.2 TSi BlueMotion Trendline"
+      ],
+      "sira": 272
+    },
+    {
+      "id": "volkswagen-passat-1-9-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Passat",
+      "motor": "1.9 TDi",
+      "etiket": "Volkswagen Passat 1.9 TDi",
+      "yil_araligi": [
+        1999,
+        2004
+      ],
+      "medyan_yil": 2000,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 709,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Passat 1.9 TDi",
+        "Volkswagen Passat 1.9 TDi Comfortline",
+        "Volkswagen Passat 1.9 TDi Exclusive",
+        "Volkswagen Passat 1.9 TDi Highline",
+        "Volkswagen Passat 1.9 TDi Trendline"
+      ],
+      "sira": 273
+    },
+    {
+      "id": "fiat-albea-1-3-multijet",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Albea",
+      "motor": "1.3 Multijet",
+      "etiket": "Fiat Albea 1.3 Multijet",
+      "yil_araligi": [
+        2004,
+        2008
+      ],
+      "medyan_yil": 2005,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 708,
+      "ornek_ilan_metinleri": [
+        "Fiat Albea 1.3 Multijet Active",
+        "Fiat Albea 1.3 Multijet Dynamic",
+        "Fiat Albea 1.3 Multijet EL",
+        "Fiat Albea 1.3 Multijet SL"
+      ],
+      "sira": 274
+    },
+    {
+      "id": "mercedes-benz-e-220-cdi",
+      "kategori": "otomobil",
+      "marka": "Mercedes - Benz",
+      "seri": "E",
+      "motor": "220 CDI",
+      "etiket": "Mercedes - Benz E 220 CDI",
+      "yil_araligi": [
+        2001,
+        2011
+      ],
+      "medyan_yil": 2008,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 707,
+      "ornek_ilan_metinleri": [
+        "Mercedes - Benz E 220 CDI Avantgarde",
+        "Mercedes - Benz E 220 CDI BlueEFFICIENCY",
+        "Mercedes - Benz E 220 CDI Classic",
+        "Mercedes - Benz E 220 CDI Elegance",
+        "Mercedes - Benz E 220 CDI Start"
+      ],
+      "sira": 275
+    },
+    {
+      "id": "hyundai-accent-era-1-5-crdi",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent Era",
+      "motor": "1.5 CRDi",
+      "etiket": "Hyundai Accent Era 1.5 CRDi",
+      "yil_araligi": [
+        2009,
+        2012
+      ],
+      "medyan_yil": 2011,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 706,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent Era 1.5 CRDi Mode",
+        "Hyundai Accent Era 1.5 CRDi Prime",
+        "Hyundai Accent Era 1.5 CRDi Start",
+        "Hyundai Accent Era 1.5 CRDi Style",
+        "Hyundai Accent Era 1.5 CRDi Team"
+      ],
+      "sira": 276
+    },
+    {
+      "id": "nissan-navara-2-5-tdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Nissan",
+      "seri": "Navara",
+      "motor": "2.5 TDI",
+      "etiket": "Nissan Navara 2.5 TDI",
+      "yil_araligi": [
+        2006,
+        2013
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 704,
+      "ornek_ilan_metinleri": [
+        "Nissan Navara 2.5 TDI 4x2 SE",
+        "Nissan Navara 2.5 TDI 4x4 LE",
+        "Nissan Navara 2.5 TDI 4x4 SE"
+      ],
+      "sira": 277
+    },
+    {
+      "id": "volkswagen-scirocco-1-4-tsi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Scirocco",
+      "motor": "1.4 TSi",
+      "etiket": "Volkswagen Scirocco 1.4 TSi",
+      "yil_araligi": [
+        2010,
+        2016
+      ],
+      "medyan_yil": 2012,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 701,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Scirocco 1.4 TSi Allstar",
+        "Volkswagen Scirocco 1.4 TSi Sportline"
+      ],
+      "sira": 278
+    },
+    {
+      "id": "peugeot-207-1-4",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "207",
+      "motor": "1.4",
+      "etiket": "Peugeot 207 1.4",
+      "yil_araligi": [
+        2008,
+        2011
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 699,
+      "ornek_ilan_metinleri": [
+        "Peugeot 207 1.4 Access",
+        "Peugeot 207 1.4 Comfort",
+        "Peugeot 207 1.4 Envy",
+        "Peugeot 207 1.4 Millesim",
+        "Peugeot 207 1.4 Sportium"
+      ],
+      "sira": 279
+    },
+    {
+      "id": "honda-cr-v-1-5-vtec",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Honda",
+      "seri": "CR-V",
+      "motor": "1.5 VTEC",
+      "etiket": "Honda CR-V 1.5 VTEC",
+      "yil_araligi": [
+        2018,
+        2022
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 697,
+      "ornek_ilan_metinleri": [
+        "Honda CR-V 1.5 VTEC Elegance",
+        "Honda CR-V 1.5 VTEC Executive",
+        "Honda CR-V 1.5 VTEC Executive Plus"
+      ],
+      "sira": 280
+    },
+    {
+      "id": "fiat-palio-1-4",
+      "kategori": "otomobil",
+      "marka": "Fiat",
+      "seri": "Palio",
+      "motor": "1.4",
+      "etiket": "Fiat Palio 1.4",
+      "yil_araligi": [
+        1998,
+        2001
+      ],
+      "medyan_yil": 2000,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 692,
+      "ornek_ilan_metinleri": [
+        "Fiat Palio 1.4 EL",
+        "Fiat Palio 1.4 EL Weekend",
+        "Fiat Palio 1.4 HL",
+        "Fiat Palio 1.4 RT"
+      ],
+      "sira": 281
+    },
+    {
+      "id": "peugeot-301-1-5-bluehdi",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "301",
+      "motor": "1.5 BlueHDI",
+      "etiket": "Peugeot 301 1.5 BlueHDI",
+      "yil_araligi": [
+        2019,
+        2020
+      ],
+      "medyan_yil": 2019,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 692,
+      "ornek_ilan_metinleri": [
+        "Peugeot 301 1.5 BlueHDI Active",
+        "Peugeot 301 1.5 BlueHDI Allure"
+      ],
+      "sira": 282
+    },
+    {
+      "id": "audi-q3-1-4-tfsi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Audi",
+      "seri": "Q3",
+      "motor": "1.4 TFSi",
+      "etiket": "Audi Q3 1.4 TFSi",
+      "yil_araligi": [
+        2014,
+        2025
+      ],
+      "medyan_yil": 2015,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 685,
+      "ornek_ilan_metinleri": [
+        "Audi Q3 1.4 TFSi"
+      ],
+      "sira": 283
+    },
+    {
+      "id": "renault-clio-1-3-tce",
+      "kategori": "otomobil",
+      "marka": "Renault",
+      "seri": "Clio",
+      "motor": "1.3 TCe",
+      "etiket": "Renault Clio 1.3 TCe",
+      "yil_araligi": [
+        2020,
+        2020
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 684,
+      "ornek_ilan_metinleri": [
+        "Renault Clio 1.3 TCe Icon",
+        "Renault Clio 1.3 TCe RS Line",
+        "Renault Clio 1.3 TCe Touch"
+      ],
+      "sira": 284
+    },
+    {
+      "id": "skoda-octavia-1-5-mhev",
+      "kategori": "otomobil",
+      "marka": "Skoda",
+      "seri": "Octavia",
+      "motor": "1.5 Mhev",
+      "etiket": "Skoda Octavia 1.5 Mhev",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 677,
+      "ornek_ilan_metinleri": [
+        "Skoda Octavia 1.5 Mhev Elite",
+        "Skoda Octavia 1.5 Mhev Premium"
+      ],
+      "sira": 285
+    },
+    {
+      "id": "bmw-x1-16d-sdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X1",
+      "motor": "16d sDrive",
+      "etiket": "BMW X1 16d sDrive",
+      "yil_araligi": [
+        2018,
+        2021
+      ],
+      "medyan_yil": 2019,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 676,
+      "ornek_ilan_metinleri": [
+        "BMW X1 16d sDrive",
+        "BMW X1 16d sDrive M Sport",
+        "BMW X1 16d sDrive Premium Line",
+        "BMW X1 16d sDrive Sport Line",
+        "BMW X1 16d sDrive Ultimate Edition X-Line"
+      ],
+      "sira": 286
+    },
+    {
+      "id": "kia-sorento-2-5-crdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Kia",
+      "seri": "Sorento",
+      "motor": "2.5 CRDi",
+      "etiket": "Kia Sorento 2.5 CRDi",
+      "yil_araligi": [
+        2006,
+        2009
+      ],
+      "medyan_yil": 2007,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 676,
+      "ornek_ilan_metinleri": [
+        "Kia Sorento 2.5 CRDi EX",
+        "Kia Sorento 2.5 CRDi EX Premium",
+        "Kia Sorento 2.5 CRDi Prestige",
+        "Kia Sorento 2.5 CRDi X-Force EX",
+        "Kia Sorento 2.5 CRDi X-Force Prestige"
+      ],
+      "sira": 287
+    },
+    {
+      "id": "hyundai-accent-1-5",
+      "kategori": "otomobil",
+      "marka": "Hyundai",
+      "seri": "Accent",
+      "motor": "1.5",
+      "etiket": "Hyundai Accent 1.5",
+      "yil_araligi": [
+        1995,
+        2001
+      ],
+      "medyan_yil": 1999,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 671,
+      "ornek_ilan_metinleri": [
+        "Hyundai Accent 1.5 1.5i GLS",
+        "Hyundai Accent 1.5 GL",
+        "Hyundai Accent 1.5 GLS",
+        "Hyundai Accent 1.5 LS"
+      ],
+      "sira": 288
+    },
+    {
+      "id": "mini-cooper-1-5-d",
+      "kategori": "otomobil",
+      "marka": "Mini",
+      "seri": "Cooper",
+      "motor": "1.5 D",
+      "etiket": "Mini Cooper 1.5 D",
+      "yil_araligi": [
+        2015,
+        2017
+      ],
+      "medyan_yil": 2016,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 670,
+      "ornek_ilan_metinleri": [
+        "Mini Cooper 1.5 D Chili",
+        "Mini Cooper 1.5 D Pepper",
+        "Mini Cooper 1.5 D Salt",
+        "Mini Cooper 1.5 D Salt Pepper Chili",
+        "Mini Cooper 1.5 D Türkiye Paketi"
+      ],
+      "sira": 289
+    },
+    {
+      "id": "opel-grandland-1-5-d",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Opel",
+      "seri": "Grandland",
+      "motor": "1.5 D",
+      "etiket": "Opel Grandland 1.5 D",
+      "yil_araligi": [
+        2022,
+        2023
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 669,
+      "ornek_ilan_metinleri": [
+        "Opel Grandland 1.5 D Elegance",
+        "Opel Grandland 1.5 D GS",
+        "Opel Grandland 1.5 D Ultimate"
+      ],
+      "sira": 290
+    },
+    {
+      "id": "volkswagen-polo-1-2-tdi",
+      "kategori": "otomobil",
+      "marka": "Volkswagen",
+      "seri": "Polo",
+      "motor": "1.2 TDi",
+      "etiket": "Volkswagen Polo 1.2 TDi",
+      "yil_araligi": [
+        2012,
+        2014
+      ],
+      "medyan_yil": 2013,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 663,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Polo 1.2 TDi BlueMotion",
+        "Volkswagen Polo 1.2 TDi Trendline"
+      ],
+      "sira": 291
+    },
+    {
+      "id": "dacia-lodgy-1-5-bluedci",
+      "kategori": "otomobil",
+      "marka": "Dacia",
+      "seri": "Lodgy",
+      "motor": "1.5 BlueDCI",
+      "etiket": "Dacia Lodgy 1.5 BlueDCI",
+      "yil_araligi": [
+        2019,
+        2021
+      ],
+      "medyan_yil": 2020,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 658,
+      "ornek_ilan_metinleri": [
+        "Dacia Lodgy 1.5 BlueDCI Ambiance",
+        "Dacia Lodgy 1.5 BlueDCI Laureate",
+        "Dacia Lodgy 1.5 BlueDCI Stepway"
+      ],
+      "sira": 292
+    },
+    {
+      "id": "kia-rio-1-4-cvvt",
+      "kategori": "otomobil",
+      "marka": "Kia",
+      "seri": "Rio",
+      "motor": "1.4 CVVT",
+      "etiket": "Kia Rio 1.4 CVVT",
+      "yil_araligi": [
+        2012,
+        2023
+      ],
+      "medyan_yil": 2021,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 657,
+      "ornek_ilan_metinleri": [
+        "Kia Rio 1.4 CVVT Comfort",
+        "Kia Rio 1.4 CVVT Cool",
+        "Kia Rio 1.4 CVVT Elegance",
+        "Kia Rio 1.4 CVVT Elegance Tekno",
+        "Kia Rio 1.4 CVVT Fancy"
+      ],
+      "sira": 293
+    },
+    {
+      "id": "ford-mondeo-2-0-tdci",
+      "kategori": "otomobil",
+      "marka": "Ford",
+      "seri": "Mondeo",
+      "motor": "2.0 TDCi",
+      "etiket": "Ford Mondeo 2.0 TDCi",
+      "yil_araligi": [
+        2004,
+        2015
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 656,
+      "ornek_ilan_metinleri": [
+        "Ford Mondeo 2.0 TDCi Ghia",
+        "Ford Mondeo 2.0 TDCi Selective",
+        "Ford Mondeo 2.0 TDCi Style",
+        "Ford Mondeo 2.0 TDCi Titanium",
+        "Ford Mondeo 2.0 TDCi Trend"
+      ],
+      "sira": 294
+    },
+    {
+      "id": "volkswagen-amarok-2-0-tdi",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Volkswagen",
+      "seri": "Amarok",
+      "motor": "2.0 TDI",
+      "etiket": "Volkswagen Amarok 2.0 TDI",
+      "yil_araligi": [
+        2011,
+        2025
+      ],
+      "medyan_yil": 2023,
+      "yas_grubu": "3-5-yas",
+      "ilan_sayisi": 655,
+      "ornek_ilan_metinleri": [
+        "Volkswagen Amarok 2.0 TDI Highline",
+        "Volkswagen Amarok 2.0 TDI Style",
+        "Volkswagen Amarok 2.0 TDI Style Plus",
+        "Volkswagen Amarok 2.0 TDI Trendline"
+      ],
+      "sira": 295
+    },
+    {
+      "id": "bmw-ix1-edrive20",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "iX1",
+      "motor": "eDrive20",
+      "etiket": "BMW iX1 eDrive20",
+      "yil_araligi": [
+        2024,
+        2025
+      ],
+      "medyan_yil": 2024,
+      "yas_grubu": "0-2-yas",
+      "ilan_sayisi": 646,
+      "ornek_ilan_metinleri": [
+        "BMW iX1 eDrive20 M Sport",
+        "BMW iX1 eDrive20 Sport Line",
+        "BMW iX1 eDrive20 X Line"
+      ],
+      "sira": 296
+    },
+    {
+      "id": "volvo-s40-1-6-d",
+      "kategori": "otomobil",
+      "marka": "Volvo",
+      "seri": "S40",
+      "motor": "1.6 D",
+      "etiket": "Volvo S40 1.6 D",
+      "yil_araligi": [
+        2006,
+        2012
+      ],
+      "medyan_yil": 2010,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 646,
+      "ornek_ilan_metinleri": [
+        "Volvo S40 1.6 D",
+        "Volvo S40 1.6 D Drive",
+        "Volvo S40 1.6 D Dynamic",
+        "Volvo S40 1.6 D Premium",
+        "Volvo S40 1.6 D Prime"
+      ],
+      "sira": 297
+    },
+    {
+      "id": "bmw-x1-18i-sdrive",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "BMW",
+      "seri": "X1",
+      "motor": "18i sDrive",
+      "etiket": "BMW X1 18i sDrive",
+      "yil_araligi": [
+        2016,
+        2022
+      ],
+      "medyan_yil": 2017,
+      "yas_grubu": "6-10-yas",
+      "ilan_sayisi": 637,
+      "ornek_ilan_metinleri": [
+        "BMW X1 18i sDrive",
+        "BMW X1 18i sDrive M Sport",
+        "BMW X1 18i sDrive Prestige",
+        "BMW X1 18i sDrive Sport Line",
+        "BMW X1 18i sDrive Ultimate Edition X-Line"
+      ],
+      "sira": 298
+    },
+    {
+      "id": "honda-cr-v-2-0i",
+      "kategori": "arazi-suv-pick-up",
+      "marka": "Honda",
+      "seri": "CR-V",
+      "motor": "2.0i",
+      "etiket": "Honda CR-V 2.0i",
+      "yil_araligi": [
+        1999,
+        2011
+      ],
+      "medyan_yil": 2008,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 635,
+      "ornek_ilan_metinleri": [
+        "Honda CR-V 2.0i",
+        "Honda CR-V 2.0i ES",
+        "Honda CR-V 2.0i Elegance",
+        "Honda CR-V 2.0i Executive"
+      ],
+      "sira": 299
+    },
+    {
+      "id": "peugeot-207-1-4-hdi",
+      "kategori": "otomobil",
+      "marka": "Peugeot",
+      "seri": "207",
+      "motor": "1.4 HDi",
+      "etiket": "Peugeot 207 1.4 HDi",
+      "yil_araligi": [
+        2007,
+        2011
+      ],
+      "medyan_yil": 2009,
+      "yas_grubu": "10-uzeri",
+      "ilan_sayisi": 629,
+      "ornek_ilan_metinleri": [
+        "Peugeot 207 1.4 HDi Active",
+        "Peugeot 207 1.4 HDi Comfort",
+        "Peugeot 207 1.4 HDi Envy",
+        "Peugeot 207 1.4 HDi Millesim",
+        "Peugeot 207 1.4 HDi Premium"
+      ],
+      "sira": 300
+    }
+  ]
+}

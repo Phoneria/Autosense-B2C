@@ -1,0 +1,158 @@
+{
+  "hedef_id": "mercedes-benz-e-200-d",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "40.000-70.000 km arasinda DPF ve egzoz sistemi kaynakli arizalarin tekrarladigi bildiriliyor.",
+      "km_araligi": "40.000-70.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-e200-aracta-kronik-motor-ve-emisyon-arizalari-icin-kalici-cozum-talebi",
+      "kaynak_alinti": "40.000 km ile 70.000 km arasında, dpf, katalizör, nox sensörleri ve egzoz sistemiyle ilgili sürekli tekrarlayan arızalar yaşadım",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "katalizor",
+      "iddia": "Katalizor ve emisyon sisteminin kritik parcalari birden fazla kez degistirilebiliyor.",
+      "km_araligi": "40.000-70.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-e200-aracta-kronik-motor-ve-emisyon-arizalari-icin-kalici-cozum-talebi",
+      "kaynak_alinti": "Dpf, katalizör, nox sensörleri ve egzoz sistemi gibi emisyon sisteminin neredeyse tüm kritik parçaları birden fazla kez değişti",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue/NOx sensoru arizasi motor ariza isigini yakiyor ve AdBlue seviyesi okunamiyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/adblue-sorunu-nedeniyle-motor-ariza-isigi-yaniyor-ve-arac-calismiyor",
+      "kaynak_alinti": "Motor arıza ışığı yanıyor, AdBlue seviyesi okunmuyor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-yag-tuketimi",
+      "iddia": "1.000 km'de 1 litre yag eksiltme sikayeti var; servis bunu normal kabul ediyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-e200te-asiri-yag-yakimi-normal-sayilmasi-ve-degisim-istegi",
+      "kaynak_alinti": "yaklaşık 1000 kilometrede 1 litre yağ yakmaya başladı ve bu sorun 3 yıldır devam ediyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "9G-Tronic'te vites gecislerinde vuruntu sikayeti yazilim guncellemesiyle cozulemeyebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-benz-c200d-sanziman-sorununu-servisler-cozmuyor",
+      "kaynak_alinti": "2018 model Mercedes c200 d aracımın vites geçişlerinde vuruntu problemi var.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "Sehir ici ve kisa mesafe kullanimda EGR'de kurum birikimi rapor ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.araclo.com/blog/mercedes-c-200-d-incelemesi-hangi-kasa-alinir-ikinci-el-rehberi-2026",
+      "kaynak_alinti": "Ağırlıklı şehir içi ve kısa mesafe kullanımda EGR kurum birikimi ve DPF tıkanması yaşanabildiği raporlanmaktadır.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "OM654 dizelde arizali enjektor ve sizdiran contalar tekleme ve rolanti bozuklugu yapiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://luft-motoren.de/motorschaden/mercedes/om654-2-0-cdi-920-820",
+      "kaynak_alinti": "Defekte Injektoren oder undichte Dichtungen führen zu: Ruckeln, Nageln, unruhigem Leerlauf",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "OM654 motorlarda triger zinciri baklalarinin asinip zinciri kopartabilmesi geri cagirma konusu oldu.",
+      "km_araligi": null,
+      "kaynak_url": "https://gebrauchtwagenberater.de/mercedes-w213-probleme/",
+      "kaynak_alinti": "Unter bestimmten Umständen kann es passieren, dass einzelne Bolzen oder Kettenglieder der Steuerkette verschleißen, wodurch die Steuerkette reißen kann.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Uzun yol agirlikli kullanimda ortalama 5,5 lt/100 km tuketim elde edilebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomobil.com.tr/mercedes-benz-e-200-d-test/",
+      "kaynak_alinti": "benim 500 km'yi aşan kullanımım sonunda ortalama 5.5 lt/100 km'lik tüketim elde etti",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "konfor-suspansiyon",
+      "iddia": "19 inc genis lastiklere ragmen suspansiyon konforu yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otomobil.com.tr/mercedes-benz-e-200-d-test/",
+      "kaynak_alinti": "Test aracında önde 245/40 R19, arkadaysa 275/35 R 19 ebadında lastiklere rağmen yeterince konforlu olan otomobilde",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "Kullanicilar araci uzun yolda konforlu buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e200-d--6184540?p=2",
+      "kaynak_alinti": "konforlu mu elbette",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sessiz-kabin",
+      "iddia": "1.6 litrelik kucuk dizel motor sayesinde kabin sinifina gore sessiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/2020/01/31/mercedes-e-200-d-1-6-dizel-yeterli-mi-surus-izlenimi/",
+      "kaynak_alinti": "Motorun küçük olmasından dolayı fazlaca da sessiz",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "ikinci-el-deger-korur",
+      "iddia": "E Serisi ikinci el pazarinda degerini koruyan bir model olarak gosteriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.otohaber.com.tr/ikinci-el-karnesi-mercedes-benz-e-serisi-h",
+      "kaynak_alinti": "ikinci elde de her zaman para eden vazgeçilemeyecek bir seçenek",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "NOx sensoru gibi emisyon parcalari icin 50 bin TL'ye varan parca bedelleri isteniyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-c200d-nox-sensor-arizasi-icin-50-bin-tl-parca-ucreti-tepkisi",
+      "kaynak_alinti": "Aracı alırken Renault motorlu alıyorsunuz, parçaları satılırken Mercedes'in adı üzerinden fiyatlandırılıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste periyodik bakim ucreti kisa surede iki katina cikabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/mercedes-rutin-bakim-fahis-fiyati",
+      "kaynak_alinti": "40 günde döviz artmadı işçilik artmadı araba fiyatları artmadı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.6 dizel motorun ivmelenmesi agir kasa icin zayif bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e200-d--6184540?p=2",
+      "kaynak_alinti": "ivme çok zayıf",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Baz donanimda serit takip ve Distronic gibi surucu destek sistemleri bulunmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/w213-mercedes-e-serisi-ana-konu--97414667-71",
+      "kaynak_alinti": "ne şerit takip ne distronic var",
+      "guven": "dusuk"
+    }
+  ]
+}

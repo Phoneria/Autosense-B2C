@@ -79,6 +79,23 @@ oluşturur; gerçek auth akışlarını ve kopyalanmış referanslarla analiz mo
 5176 ve 8010 portları boş olmalıdır. Test raporu `playwright-report/index.html`,
 ekran görüntüleri `.local/screenshots/` altında oluşur.
 
+## Performans ve yük testi
+
+- `data/galeri.db` içindeki `b2c_gallery_model` indeksi analiz sorgularını ~8 kat hızlandırır.
+  `scripts/import_reference_data.py` bu indeksi otomatik oluşturur; dosyayı elle değiştirirseniz indeksi koruyun.
+- Sık kullanılan (marka, seri, yıl) kombinasyonları worker belleğinde, aynı girdili analizler Redis'te
+  (`B2C_ANALYSIS_CACHE_TTL`) cache'lenir. Gunicorn: `B2C_WORKERS` (≈ vCPU sayısı) × `B2C_THREADS`.
+- Yük testi (test/staging ortamında!):
+
+```sh
+pip install locust
+python scripts/loadtest/seed_users.py 1000        # doğrulanmış test kullanıcıları + oturumlar
+locust -f scripts/loadtest/locustfile.py --host https://TEST_DOMAIN -u 1000 -r 25 --run-time 5m --headless
+```
+
+  Docker'da seed için: `docker compose exec backend python /app/loadtest/seed_users.py` yerine
+  `scripts/loadtest` klasörünü konteynere kopyalayın (seed, sunucunun `B2C_SECRET_KEY`'ini kullanmalı).
+
 ## HTTPS ve yayın
 
 Yerel yayın benzeri ortam, gerçek PostgreSQL/Redis ve Mailpit SMTP sunucusu kullanır:

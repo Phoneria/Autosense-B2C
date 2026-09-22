@@ -1,0 +1,167 @@
+{
+  "hedef_id": "volkswagen-polo-1-4-tdi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "su-pompasi",
+      "iddia": "Devirdaim/su pompası arızası ve buna bağlı hararet-su eksiltme yaygın.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2015-vw-polo-1-4tdi-hararet--153842466",
+      "kaynak_alinti": "5.000 km sonra gece yarısı uzun yolda su pompası bir anda bozuldu",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "EGR soğutucusu arızası, geçmeyen su eksiltme şikayetiyle birlikte görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://vwforum.com.tr/threads/polo-2014-gecmeyen-su-eksiltme-sorunu-cozuldu.404/",
+      "kaynak_alinti": "aracımda devirdayim ve egr soğutucu değişti fakat su eksiltme sorunum bir türlü çözülmedi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "direksiyon-kutusu",
+      "iddia": "Direksiyon kutusundan ses gelmesi kronik; parça tamir edilmeyip komple değişiyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-polo-1-4-tdi-hakkinda-bildikleriniz--36749827",
+      "kaynak_alinti": "poloda kronik problemlerden biridir. direksiyon kutusu komple değişmeli",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "volan-dmf",
+      "iddia": "100.000-120.000 km civarında çift kütleli volan ses yapıp değişim gerektiriyor.",
+      "km_araligi": "100.000-120.000 km",
+      "kaynak_url": "https://otopark.com/forum/threads/vw-polo-6r-1-4-bm-tdi.13978/",
+      "kaynak_alinti": "VW dizel motorlarda kronik 100 120bin kmlerde volant sorunu varmış",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "Turbo arızası tekrarlayabiliyor; bir kullanıcıda turbo 4 kez onarılmış.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/volkswagen/volkswagen-polo-14-tdi-motor-problemleri-ve-cozum-arayisi",
+      "kaynak_alinti": "Turbo sıkıntısı ile gittim, intercooler değişti ve turbo yapıldı. Aracın 4 kez turbosu yapıldı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Enjektör içindeki basınç regülatörleri bozulup dönüş hortumunu patlatıyor, araç çalışmıyor.",
+      "km_araligi": "60.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/1-4-tdipolo-enjektor-ve-mars-sorunu--150102856",
+      "kaynak_alinti": "Enjektörlerin içinde bu basınç regülatörlerinden 1'er tane varmış. Benim araçta 3 enjektör olmasına rağmen set olarak satıldığı için 4'lü alıp değiştirdik.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Şarj dinamosu arızalanıp aracın yolda stop etmesine yol açabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/vw-polo-6r-1-4-bm-tdi.13978/",
+      "kaynak_alinti": "Yolda giderken araç stop etti ve çalışmadı. Aküdendir diyip takviye yapıp yoluma devam ettim meğersem şarj dinamosu bozulmuş",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön takım hassas; erken kilometrede ses yapıp amortisör değişimi gerektiriyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.hyundaiclubtr.com/konu/103-bin-km-sonrasi-polo-1-4-tdi-dsg-comfortline-bluemotion-a-veda.47915/",
+      "kaynak_alinti": "Araç ön takımı hassas... Çok çabuk ses yaptı",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehirlerarası kullanımda 3-4 litre seviyesine inen çok düşük yakıt tüketimi.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimarsivi.com/konu/dizel-1-4-tdi-3-silindirli-polo-alinir-mi.958122/",
+      "kaynak_alinti": "Şehir içi kullanım için güzel motor, şehirlerarası da 2.8 litre yaktığı olmuştu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "sehir-ici-kullanisli",
+      "iddia": "Kompakt boyutları ve kıvraklığı sayesinde şehir içi kullanımda çok rahat.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2014-volkswagen-polo-1-4-tdi-incelemesi/",
+      "kaynak_alinti": "Kompakt boyutları sayesinde kolay manevra yeteneğine sahip olan Polo özellikle şehir içi kullanımlarda son derece rahat hareket etmenizi sağlıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "İyi bakıldığında TDi motor uzun yıllar sorun çıkarmadan kullanılabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-polo-1-4-tdi-hakkinda-bildikleriniz--36749827",
+      "kaynak_alinti": "dizel motor a iyi bakarsan hiç problem çıkarmadan uzun yıllar kullanırsın",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "Yüksek torku sayesinde yokuşlu yollarda 1.8'e kadar benzinli rakiplerinden güçlü.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/volkswagen-polo-1-4-tdi-hakkinda-bildikleriniz--36749827",
+      "kaynak_alinti": "195nm torkla yokuşlu yollarda...max 1.8'e kadar olan ne kadar benzinli motor varsa yanınızda hiç şansı yok",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "ESP tüm donanım seviyelerinde standart olarak sunuluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otoyazar.com/test/volkswagen-polo-1-4-tdi-90-bg-dsg/3/",
+      "kaynak_alinti": "Volkswagen tüm donanımlarda ESP'yi standart hale getirdi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "3 silindirli motor rölantide ve düşük devirde kabine belirgin ses ve titreşim veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.golftutkusu.com/topic/20058-1-4-tdi-massey-ferguson-polo/",
+      "kaynak_alinti": "Hocam araç 3 silindir bende 2016 modeli vardı evet 1.6 tdilere göre çok daha sarsıntılı ve sesli bir motor",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "dar-arka-koltuk",
+      "iddia": "Arka koltuk dar; uzun yolda uzun boylu yolcular için yetersiz kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.hyundaiclubtr.com/konu/103-bin-km-sonrasi-polo-1-4-tdi-dsg-comfortline-bluemotion-a-veda.47915/",
+      "kaynak_alinti": "Arka koltuklarda zayıf kibar insanlar oturmalı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Bagaj hacmi 280 litre ile sınıfında sınırlı kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/genel/2014-volkswagen-polo-1-4-tdi-incelemesi/",
+      "kaynak_alinti": "280 litre bagaj kapasitesine sahip olan otomobil ayarlanabilir yükleme alanıyla eşyalarınızı rahat bir şekilde yüklemenizi sağlıyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Mazot pompası, enjektör ve turbo gibi dizel parçaları ikinci elde masraflı olabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/danisman/yakit-cimrileri-serisi-volkswagen-polo-1-4-tdi-2/",
+      "kaynak_alinti": "tabi ki ikinci elde dizel araçların biraz daha masraflı olabileceğini de unutmayınız",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Kol dayama içindeki kaplama malzemesi zamanla dökülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.hyundaiclubtr.com/konu/103-bin-km-sonrasi-polo-1-4-tdi-dsg-comfortline-bluemotion-a-veda.47915/",
+      "kaynak_alinti": "Araç kol dayama içindeki kadifemsi doku sürekli ince ince dökülüyor",
+      "guven": "dusuk"
+    }
+  ]
+}

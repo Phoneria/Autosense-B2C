@@ -1,0 +1,161 @@
+{
+  "hedef_id": "dodge-nitro-2-8-crd",
+  "yontem": "B",
+  "model": "claude-opus-5",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "120.000 km sonrası turboda kurum birikmesi nedeniyle güç kaybı ve siyah duman şikayeti başlıyor.",
+      "km_araligi": "120.000+ km",
+      "kaynak_url": "https://www.autodoc.co.uk/info/problems-with-the-dodge-nitro",
+      "kaynak_alinti": "The 2.8 CRD diesel engine of the Dodge Nitro shows characteristic problems that typically occur after 120,000 kilometres.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "Common-rail enjektörler kirleniyor; enjeksiyon sisteminin 20.000 km'de bir temizlenmesi gerekiyor.",
+      "km_araligi": "20.000 km bakım aralığı",
+      "kaynak_url": "https://www.autodoc.co.uk/info/problems-with-the-dodge-nitro",
+      "kaynak_alinti": "The high-maintenance Dodge Nitro 2.8 CRD engines require high-quality engine oil and special diesel additives to clean the injection system every 20,000 kilometres.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "4 ileri otomatik şanzımanda 80.000 km'den sonra sert vites geçişi ve gecikmeli kalkış görülüyor.",
+      "km_araligi": "80.000+ km",
+      "kaynak_url": "https://www.autodoc.co.uk/info/problems-with-the-dodge-nitro",
+      "kaynak_alinti": "The most common symptoms are jerky gear changes, delayed starting and sometimes complete failure.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "Otomatik şanzıman sıcaklık sensörü hatalı okuma yapınca motor sıcakken marş basmama sorunu çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dodge-nitro-2-8-crd-start-sorunu--149593077",
+      "kaynak_alinti": "hatalı ölçüm yapıp beyni yanıltıyordur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "50.000 km'den sonra elektronik aksamda, özellikle cam krikosu ve merkezi kilitte arıza görülüyor.",
+      "km_araligi": "50.000+ km",
+      "kaynak_url": "https://www.autodoc.co.uk/info/problems-with-the-dodge-nitro",
+      "kaynak_alinti": "Various electronic components fail after just 50,000 km, with the power windows and central locking in particular showing a lack of reliability.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "kilit-aktuator",
+      "iddia": "2007-2011 Nitro'larda merkezi kapı kilidi arızalanıyor; kilitler aralıklı çalışıyor veya hiç açılmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.carparts.com/blog/dodge-nitro-reliability-and-common-problems/",
+      "kaynak_alinti": "A defective power door lock has been a commonly reported issue by 2007-2011 Nitro owners. Some drivers have reported that they couldn't lock or unlock their doors, while others are left to deal with door locks that work intermittently.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "El freni sistemi korozyona yatkın; kablo, makara ve balatalar 60.000-90.000 km'de kontrol edilmeli.",
+      "km_araligi": "60.000-90.000 km",
+      "kaynak_url": "https://www.autodoc.co.uk/info/problems-with-the-dodge-nitro",
+      "kaynak_alinti": "The corrosion-prone Dodge Nitro handbrake systems require a thorough inspection of the cables, pulleys and brake pads.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "200.000 km'deki dizel bir Nitro'da EGR iptal edilmiş; güç kaybı ve siyah duman şikayeti bildirilmiş.",
+      "km_araligi": "200.000+ km",
+      "kaynak_url": "https://www.mycarly.com/tr/community/dodge-nitro'da-guc-sorunu-kim-bana-yardimci-olabilir-4420580b-cc83-4790-a6b8-e1bf737410c3/",
+      "kaynak_alinti": "EGR'nin iptal edildiğini ve aracın sadece sprey ile çalıştığını belirtiyorum",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "cekis-gucu",
+      "iddia": "460 Nm tork sayesinde yüklü halde ve yokuşta zorlanmıyor, çekici olarak beğeniliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-inceleme/dodge-nitro-2-8-crd-incelemesi-bu-paraya-bu-heybet/",
+      "kaynak_alinti": "460 Nm tork değeri sunan araç, yüklü iken ve yokuşlu yollarda sizi hiç tedirgin etmiyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Yerden yüksek oturuş pozisyonu iyi hakimiyet ve güven hissi veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.arabam.com/blog/otomobil-inceleme/dodge-nitro-2-8-crd-incelemesi-bu-paraya-bu-heybet/",
+      "kaynak_alinti": "Yerden yüksek oturuş pozisyonu gerçek anlamda güvende hissetmenizi sağlıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Boyutuna ve 4x4 yapısına göre yol tutuşu sahipleri tarafından iyi bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.parkers.co.uk/dodge/nitro/station-wagon-2007/owner-reviews/",
+      "kaynak_alinti": "seems to handle well for a 4x4",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bakim-maliyeti-dusuk",
+      "iddia": "60.000 km boyunca sadece periyodik bakım yaptıran, ek masraf çıkmayan sahipler var.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dodge-nitro-4x4-nasil-bilirsiniz--132059260",
+      "kaynak_alinti": "normal periyodik bakımlarını yaptırdık sadece",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç malzeme sert ve ucuz plastik; kapı kolları ile göstergeler kalitesiz bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/dodge-nitro-2-8-crd-sxt.3471/",
+      "kaynak_alinti": "İçi bildiğin tahta pilastik yani vurunca ses getiren cinsten",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Sahipler ortalama 13-14 litre tükettiğini, aracın çok yaktığını söylüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dodge-nitro-4x4-nasil-bilirsiniz--132059260",
+      "kaynak_alinti": "ortalama yakıt tüketimi 13-14 litre arasıydı",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "kucuk-bagaj",
+      "iddia": "Dış boyutuna rağmen iç hacim ve bagaj kapasitesi beklentinin altında kalıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dodge-nitro-nasil-arac--32567529",
+      "kaynak_alinti": "iç hacmi ve bagaj kapasitesi de bayağı düşük",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parça tarafı sıkıntılı; sahipler parça bulmayı sorunlu buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/dodge-nitro-4x4-nasil-bilirsiniz--132059260",
+      "kaynak_alinti": "Parça yönünden sıkıntılı bir araç",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Motor sahipler tarafından hantal bulunuyor; kaba ve odunsu bir sürüş hissi veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/dodge-nitro-2-8-crd-sxt.3471/",
+      "kaynak_alinti": "motoru çok hantal ve oldukça fazla yakıyor",
+      "guven": "dusuk"
+    }
+  ],
+  "_gecersiz": []
+}

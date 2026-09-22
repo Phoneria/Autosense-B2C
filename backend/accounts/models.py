@@ -29,3 +29,18 @@ class User(AbstractUser):
     def save(self, *args, **kwargs):
         self.email = UserManager.normalize_email(self.email)
         super().save(*args, **kwargs)
+
+
+class Subscription(models.Model):
+    """Kullanıcının planı ve kredi bakiyesi.
+
+    Ödeme sistemi henüz yok: plan seçimi ve kredi ekleme anında onaylanır.
+    Plan kredileri her `billing.RESET_INTERVAL` sonunda plan kotasına
+    yeniden doldurulur; sonradan eklenen kredi (`extra_credits`) sıfırlanmaz.
+    """
+    user = models.OneToOneField("accounts.User", on_delete=models.CASCADE, related_name="subscription")
+    plan = models.CharField(max_length=20, default="basic")
+    credits = models.PositiveIntegerField(default=3)
+    extra_credits = models.PositiveIntegerField(default=0)
+    period_start = models.DateTimeField()
+    updated_at = models.DateTimeField(auto_now=True)

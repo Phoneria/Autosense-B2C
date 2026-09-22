@@ -1,0 +1,167 @@
+{
+  "hedef_id": "renault-megane-1-5-blue-dci",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "adblue-scr",
+      "iddia": "AdBlue deposu dolu olsa bile tekrarlayan AdBlue/egzoz emisyon uyarısı ve motor kilitlenme ikazı veriyor.",
+      "km_araligi": "40.000+ km",
+      "kaynak_url": "https://forum.donanimhaber.com/renault-megane-4-1-5-blue-dci-edc-bakim-ucreti-hk--160841334",
+      "kaynak_alinti": "adblue 1200 km'den önce doldurun uyarısı verdi. doldurmamıza rağmen sorun çözülmedi, hata uyarıları silinmeyince mecburen adblue iptali yaptırmak zorunda kaldık.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dpf-partikul-filtresi",
+      "iddia": "Partikül filtresi tıkanması nedeniyle kullanıcılar 60-70 bin km civarında DPF iptaline yöneliyor.",
+      "km_araligi": "65.000 km civarı",
+      "kaynak_url": "https://forum.donanimhaber.com/renault-megane-4-1-5-blue-dci-edc-bakim-ucreti-hk--160841334",
+      "kaynak_alinti": "Daha 2-3 gün evvel araca Adblue, Partikül filtresi iptali yapıldı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "EDC şanzımanda 3'ten 4'e geçişte belirgin \"vuup\" sesi yaygın bir şikayet.",
+      "km_araligi": "30.000-60.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/megane-4-sanziman",
+      "kaynak_alinti": "2022 model Renault Megane 4 1.5 blue dCi otomatik vites aracım yaklaşık 1 aydır 3'ten 4'e geçerken \"vuuk\" şeklinde rahatsız edici bir ses çıkarıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "debriyaj",
+      "iddia": "EDC kavrama/debriyaj seti değişimi gerekebiliyor, parça tedariki aylarca sürebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/yedek-parca",
+      "kaynak_alinti": "Mayıs ayından beri 2021 model Megane 4 aracım için debriyaj seti yedek parça bekliyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Ön salıncak burcunda boşluk oluşup salıncak değişimi gerekiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.renaultfanclub.com/threads/megane-4-on-salincak.108391/",
+      "kaynak_alinti": "1.5dci HB megane 4 aracımı bakıma soktuğumda servis sol ön salıncakta boşluk olduğunu değiştirmek gerektiğini söyledi.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya ekranında donma, kasma ve kendiliğinden kapanıp açılma sorunu görülüyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/ekran",
+      "kaynak_alinti": "Ekranda donma, kasma, kendi kendine işlem yapma gibi sorunlar mevcut",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "egr",
+      "iddia": "100.000 km sonrası EGR valfinde kurum birikmesi rölanti düzensizliği ve arıza lambasına yol açıyor.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.5-dci-kronik-sorunlari-ve-bakim-rehberi",
+      "kaynak_alinti": "rölantide düzensiz çalışma, motor arıza lambasının yanması ve yakıt tüketiminde artış",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "enjektor",
+      "iddia": "90.000 km civarında enjektör arızası soğuk çalıştırma zorluğu ve rölanti titremesi yapıyor.",
+      "km_araligi": "90.000 km civarı",
+      "kaynak_url": "https://www.araclo.com/blog/renault-megane-1.5-dci-kronik-sorunlari-ve-bakim-rehberi",
+      "kaynak_alinti": "sabahları zor çalışma, yakıt tüketiminde artış, egzozdan yoğun duman ve rölantide titreme",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Şehirler arası 3,6-3,8 lt, şehir içi 4,6-5,2 lt gibi çok düşük tüketim değerleri bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-sedan-4-nasil-bir-araba--153339152",
+      "kaynak_alinti": "şehirler arası yollarda 90-110km aralığında ortalama 3.6-3.8LT leri görüyorum, İstanbul içi ortalamam ise yazın 4.6 Kışın 5.2 lt aralığında oluyordu.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "K9K 1.5 dCi bloğu uzun ömürlü kabul ediliyor, sahipleri motoru sorunsuz buluyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/megane-sedan-yorumlari",
+      "kaynak_alinti": "1.5 dizel otomotik efsane alınır üzmez yormaz.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Segmentine göre geniş bagaj hacmi kullanıcılar tarafından öne çıkarılıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/megane-4--5078255",
+      "kaynak_alinti": "bagaj hacmi süper.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "İç mekan ferah, arka diz mesafesi kullanıcılar tarafından yeterli bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/megane-sedan-yorumlari",
+      "kaynak_alinti": "içi ve bagajı baya rahat geldi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yol-tutus",
+      "iddia": "Yol tutuşu ve direksiyon hissi kullanıcılar tarafından güven verici bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sifiraracal.com/renault-modelleri/megane-sedan-yorumlari",
+      "kaynak_alinti": "Yol tutuşu güzel, direksiyon hissi güven veriyor.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili serviste periyodik bakım 10.700-13.000 TL bandına çıkabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/renault-megane-4-1-5-blue-dci-edc-bakim-ucreti-hk--160841334",
+      "kaynak_alinti": "yetkili servislerden birisi 13.000, diğeri 10.700 lira fiyat çekti",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Orijinal parça tedarikinde aylarca süren beklemeler bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/renault/megane/yedek-parca",
+      "kaynak_alinti": "Parça bulamazsınız. Afyonkarahisar'da arkadan çarpma sonucu hasar alan aracımın arda panel ve bagaj kapağı orijinal parçası Renault bayilerinde bulunamıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "İç malzeme kalitesi vasat bulunuyor, kapı tutamakları çıtırdama yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-sedan-4-nasil-bir-araba--153339152",
+      "kaynak_alinti": "İç malzeme kalitesi vasat, özellikle kapı tutamaçları tam bir facia çıtır çıtır ediyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Kabinde rüzgar sesi ve düşük km'de başlayan trim sesleri şikayet konusu.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-sedan-4-nasil-bir-araba--153339152",
+      "kaynak_alinti": "Rüzgar sesi alır, trim sesi çok yapar.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "Motor 2000 devir altında tepkisiz, aracın ağırlığına göre hantal bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/megane-sedan-4-nasil-bir-araba--153339152",
+      "kaynak_alinti": "2000 devir altında motor ölü.",
+      "guven": "dusuk"
+    }
+  ]
+}

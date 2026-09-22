@@ -1,0 +1,167 @@
+{
+  "hedef_id": "mercedes-benz-e-180",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "otomatik-sanziman",
+      "iddia": "7G-Tronic sanzimanda elektronik kart uzerindeki hiz sensoru arizasi ve vites gecis sorunlari yaygin.",
+      "km_araligi": "100.000+ km",
+      "kaynak_url": "https://atco.com.tr/mercedes-otomatik-sanziman-tamiri/mercedes-e180-otomatik-sanziman-tamiri/",
+      "kaynak_alinti": "7G Tronic şanzımanların en bilinen arızaları şanzıman elektronik kartının üzerindeki hız sensörlerinin bozulmasıdır.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "motor-triger-zinciri",
+      "iddia": "100.000 km sonrasi zamanlama zinciri, gergi ve disli grubunda yorulma bildiriliyor.",
+      "km_araligi": "100.000-180.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/mercedes-benz-e-serisi-e-180/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Zamanlama zinciri, gergi ve dişli grubunun yorulması",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "turbo",
+      "iddia": "80.000 km sonrasi turbosarj ve sarj havasi hattinda ariza bildiriliyor.",
+      "km_araligi": "80.000-160.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/mercedes-benz-e-serisi-e-180/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Turboşarj ve şarj havası hattı arızaları",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "80.000 km sonrasi termostat ve sogutma grubu arizasi bildiriliyor.",
+      "km_araligi": "80.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/mercedes-benz-e-serisi-e-180/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Termostat ve soğutma grubu arızası",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Egzoz sensoru kaynakli motor ariza isigi tekrar tekrar yaniyor, servis cozemiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/2014-model-mercedes-e-180-motor-ariza-isigi--99122329",
+      "kaynak_alinti": "Son 2 aydır motor arıza ışığıyla uğraşıyorum",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "rotil-rot",
+      "iddia": "80.000 km sonrasi on suspansiyon burc ve rotil seslerinden sikayet ediliyor.",
+      "km_araligi": "80.000-150.000 km",
+      "kaynak_url": "https://www.araclo.com/vehicles/mercedes-benz-e-serisi-e-180/degerlendirmeler/kullanici-sorunlari",
+      "kaynak_alinti": "Ön süspansiyon burç ve rotil sesleri",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "fren-diski-balata",
+      "iddia": "Fren diski ve balata degisiminden kisa sure sonra frende titreme sikayeti bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/garanti/motor-arizasi",
+      "kaynak_alinti": "Üzerinden daha 1 ay bile geçmeden frene bastığımda araç titremeye başladı.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Multimedya unitesinde navigasyon haritasini okumama arizasi bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/e-180/w212",
+      "kaynak_alinti": "navigasyon okumuyor, navigasyon takılı değil yazıyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "1.6 motor sayesinde sehir disi kullanimda 6 lt/100 km seviyesinde tuketim bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e180--3914600?p=7",
+      "kaynak_alinti": "1000km ortalamam %80 şehir dışı olmak üzere 6lt/100km",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "uzun-yol-konforu",
+      "iddia": "E serisi govde, yol salinimi ve viraj konforunda alt sinifa gore belirgin ustun bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e180--3914600?p=7",
+      "kaynak_alinti": "e serisi gerçekten sürüş anlamında farklı. özellikle yol salınımı süspansiyon çok daha iyi, yola yayılımı viraj konforu zaten beklendiği gibi daha iyi",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Kullanicilar 1.6 turbo motoru saglam ve kendini ispatlamis olarak degerlendiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/mercedes-benz-e180-elite-w212-fl-2013.10085/",
+      "kaynak_alinti": "sağlam, kendini ispatlamış",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "5 metrelik govdeye ragmen donus capi dar, tek turda 180 derece donus alinabiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/mercedes-benz-e180-elite-w212-fl-2013.10085/",
+      "kaynak_alinti": "Tek turda 180 derece dönüş alabilen tek araba bu oldu. Yaklaşık 5 metrelik koca cüssesine rağmen",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "guvenlik-donanim",
+      "iddia": "Adaptif far sistemi direksiyon acisina tepki veriyor, 60 km/s ustu otomatik uzun far devreye giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://otopark.com/forum/threads/mercedes-benz-e180-elite-w212-fl-2013.10085/",
+      "kaynak_alinti": "Adaptif farlar, direksiyonun en ufak açısına dahi tepki veriyor. 60 km/h hızların üstünde otomatik uzun far asistanı devreye giriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Ses yalitimi sinifin beklentisinin altinda; yol, lastik ve ruzgar sesi kabine giriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/mercedes-e180-uzun-yol-yakit-tuketimi-ve-izlenimlerim--112657039",
+      "kaynak_alinti": "Araç beklediğim yalıtım yoktu, bu beni hayal kırıklığına uğrattı yol ve lastik sesini alıyordu",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "sert-suspansiyon",
+      "iddia": "Suspansiyon konfor odakli degil, yol bozukluklarini kabine hissettiriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/mercedes-e180-uzun-yol-yakit-tuketimi-ve-izlenimlerim--112657039",
+      "kaynak_alinti": "süspansiyonun darbe emişi iyi sayılır ama çokta konfor odaklı gibi gelmedi bana yoldakileri hissetiriyordu",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.6 motor agir govdede ilk kalkista hantal bulunuyor, performansi vasat olarak degerlendiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e180--3914600?p=5",
+      "kaynak_alinti": "ilk kalkışta hantal, yürüdükçe kendine geliyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Motor degisimi gerektiren arizada yetkili serviste 600.000 TL fatura bildirilmis.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/mercedes-benz/garanti/motor-arizasi",
+      "kaynak_alinti": "Yapılan arıza tespiti sonrası motor değişimi gerektiği söylenerek 600.000 TL ödeme yaptım.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yakit-tuketimi-yuksek",
+      "iddia": "Yogun sehir ici dur kalk trafikte tuketim 9-11 lt/100 km seviyesine cikiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/mercedes-e180--3914600?p=7",
+      "kaynak_alinti": "şehir içi startstop'u devre dışı bıraktırtacak yoğun dur kalk trafikte 9-11lt",
+      "guven": "orta"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "hedef_id": "skoda-scala-1-0-tsi",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "DSG kavrama arizasi 60.000 km altinda bile goruluyor, onarim bedeli 30.000 TL seviyesinde.",
+      "km_araligi": "0-60.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/sanziman-ses-ve-dsg-kavrama-arizasi-icin-yuzde-yuz-iyi-niyet-garantisi-talebi",
+      "kaynak_alinti": "2023 model, düşük kilometrede bir araçta DSG kavrama arızası yaşanmasının kullanıcı hatasından değil, Volkswagen–Skoda grubunda uzun süredir konuşulan kronik bir sorundan kaynaklandığını düşünüyorum.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "dsg-dct-mekatronik",
+      "iddia": "Mekatronik beyni arizasi cok dusuk kilometrede (1.000 km alti) bildirilmis.",
+      "km_araligi": "0-5.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/sifir-ayardaki-skoda-scala-sanziman-arizasiyla-magdur-oldum",
+      "kaynak_alinti": "20 günlük 830 km deki Skoda scala Monte Carlo aracım şanzıman arızalandı. Mekatronik beyni yanmış maalesef.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Tekrarlayan EPC/motor arizasi ve buji degisimi 13.000 km'den itibaren birden fazla kez yasaniyor.",
+      "km_araligi": "13.000-50.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scalada-tekrarlayan-motor-arizasi-ve-kronik-buji-sorunu-magduriyeti",
+      "kaynak_alinti": "Araç 13 bin km de EPC ve motor arızası yanarak teklemeye başladı ve gaz yemedi. Servisten garanti kapsamında buji değişimi yapıldı.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "SOS kontrol modulu arizasi 70.000 km civarinda cikiyor ve onarimi cok pahali.",
+      "km_araligi": "70.000+ km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scala-sos-kontrol-modulu-arizasi-icin-yetkili-servis-ustunden-yuksek-ucret-talebi",
+      "kaynak_alinti": "yaklaşık 55.000 TL gibi son derece yüksek bir maliyet bilgisi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "aku-sarj",
+      "iddia": "Start-stop sistemi calismamasi yazilim ve aku degisimine ragmen tekrarliyor.",
+      "km_araligi": "0-30.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/startstop-sistemi-calismiyor-kalici-cozum-ve-parca-degisimi-talebi",
+      "kaynak_alinti": "Haziran çıkışlı 2024 model Skoda Scala aracımda yaklaşık 4–5 ay önce start-stop sistemiyle ilgili sorun yaşamaya başladım. Son 1–2 aydır ise start-stop sistemi tamamen çalışmıyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "amortisor-salincak",
+      "iddia": "Sol on taraftan vuruntu sesi ve titreme sifir kilometre araclarda bildirildi.",
+      "km_araligi": "0-10.000 km",
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scalada-start-stop-arizasi-ve-performans-dusuklugu-sikayeti",
+      "kaynak_alinti": "Aracı aldıktan bir süre sonra start stop sisteminde arıza, araçta belirgin titreme, sol ön taraftan vuruntu şeklinde ses ve klima açıldığında fark edilir derecede performans düşüklüğü yaşamaya başladım.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Soguk havalarda multimedya acilmiyor ve 'bilesen koruma etkin' uyarisi veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=12",
+      "kaynak_alinti": "4 derecenin altındaki havalarda genellikle multimedya çalışmıyor. bileşen koruma etkin diye bir uyarı veriyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "multimedya-ekran",
+      "iddia": "Apple CarPlay baglanti sorunu yazilim ve Type-C soket degisimine ragmen cozulmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scala-apple-carplay-sorunlari",
+      "kaynak_alinti": "2023 model Skoda Scala aracıma sahibim ve ilk günden beri Apple CarPlay sorunu yaşıyorum.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Otoyolda 5-6 litre, sehir ici 7-8 litre tuketim kullanicilarca duzenli bildiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=11",
+      "kaynak_alinti": "istanbul trafiğinde 8.0 lt/ 100 km civari. otoyol kullaniminda sabit 100 km/s'de 5.7 lt civarı gördüm",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "genis-ic-hacim",
+      "iddia": "Arka diz mesafesi ve ic hacim sinifinin ustunde bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=8",
+      "kaynak_alinti": "iç hacmi ve diz mesafeleri kendi sınıfının en iyisi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "bagaj-hacmi",
+      "iddia": "Bagaj hacmi ayni platformdaki Kamiq'ten buyuk ve gunluk kullanimda fazlasiyla yetiyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=11",
+      "kaynak_alinti": "bagaja bebek arabası ve pazar alışverişleri rahatça sığıyor",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "DSG sanziman sehir ici kullanimda hizli ve yumusak vites gecisi sagliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=11",
+      "kaynak_alinti": "şanziman çok seri ve yumuşak. şehir içinde son derece rahat",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "performans",
+      "iddia": "1.0 litre hacme ragmen 1500 devirden itibaren yeterli cekis veriyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=8",
+      "kaynak_alinti": "1500 den itibaren tam çekiş var",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "ic-malzeme-kalitesi",
+      "iddia": "Ic mekan plastikleri kirilgan; hava menfezleri ve start-stop butonu catliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scala-ic-mekan-parcalarinin-catlamasi-ve-iyi-niyet-onariminin-reddedilmesi",
+      "kaynak_alinti": "2020 model Skoda Scala 1.6 TDI aracımda 2024 yılı içinde tüm hava menfezlerinin kırıldığı tespit edildi. Son olarak 07.02.2026 tarihinde girdiği periyodik bakımda bu kez start-stop butonunun çatladığı belirlendi.",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "Motor sesi az olsa da kabine giren yol gurultusu belirgin.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/skoda-scala-1-0-tsi--6707431?p=4",
+      "kaynak_alinti": "yol sesi motor sesine göre fazla giriyor",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "bakim-maliyeti-yuksek",
+      "iddia": "Yetkili servis periyodik bakimi ozel servise gore yaklasik uc kat pahali.",
+      "km_araligi": null,
+      "kaynak_url": "https://forum.donanimhaber.com/serviste-3800-tl-sanayide-1300-tl-yillik-bakim-skoda--153709930",
+      "kaynak_alinti": "serviste 3800 tl sanayide 1300 tl",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-pahali",
+      "iddia": "Elektronik modul degisimleri 55.000 TL'ye varan tutarlarla fiyatlandiriliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scala-sos-kontrol-modulu-arizasi-icin-yetkili-servis-ustunden-yuksek-ucret-talebi",
+      "kaynak_alinti": "yaklaşık 55.000 TL gibi son derece yüksek bir maliyet bilgisi",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yedek-parca-zor-bulunur",
+      "iddia": "Yedek parca tedariki gecikiyor, arac serviste haftalarca bekleyebiliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.sikayetvar.com/skoda/skoda-scala-aracim-icin-parca-teslimi-gecikmesi-ve-musteri-hizmetleri-sorunu",
+      "kaynak_alinti": "Skoda Scala marka aracım için gerekli parçaların 13 Temmuz tarihinden bu yana tarafınıza teslim edilmesini bekliyoruz. Ancak hala herhangi bir teslimat yapılmadığı için aracım İstanbul Küçükçekmece'deki serviste gereksiz yere beklemektedir.",
+      "guven": "orta"
+    }
+  ]
+}

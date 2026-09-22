@@ -1,0 +1,113 @@
+{
+  "hedef_id": "renault-r-9-1-4-broadway",
+  "kayitlar": [
+    {
+      "tip": "kronik",
+      "etiket": "termostat",
+      "iddia": "Termostat/müşür arızası yaygın; araç sürekli su eksiltip hararet yapıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9/2/",
+      "kaynak_alinti": "yağ yakmaz kolay kolay ama termostat ya da müşür arızası çok, iyi su eksiltiyor.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "cam-krikosu",
+      "iddia": "Kapı ve cam mekanizmaları sırayla bozuluyor; cam otomatiği arızası tekrarlıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-broadway--266181",
+      "kaynak_alinti": "arka kapıyı yaptırırsın bu sefer cam otomatiği bozulur",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "mars-alternator",
+      "iddia": "Kışın soğukta çalıştırma sorunu sahiplerin sık dile getirdiği bir şikayet.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9/3/",
+      "kaynak_alinti": "kışın çalıştırma çabalarının başlı başına bu arabaya bir küfür etme sebebi",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "kronik",
+      "etiket": "elektrik-tesisat",
+      "iddia": "Ateşleme tarafında platin ve meme tıkanması sık tekrarlayan bir arıza.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-9-spring--394499",
+      "kaynak_alinti": "platin meme yapmış hadisesini sıkça yaşatan",
+      "guven": "dusuk"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yakit-ekonomisi",
+      "iddia": "Sınıfına göre çok düşük yakıt tüketimi, aracın en çok övülen yanı.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9-broadway/2/",
+      "kaynak_alinti": "inanılmaz az yakıyor.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "yedek-parca-ucuz",
+      "iddia": "Yedek parçası ucuz; onarım kalemleri düşük maliyetle kapanıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9-broadway/",
+      "kaynak_alinti": "Benzin yakmaz, yedek parçası ucuzdur, arıza çıkarmaz.",
+      "guven": "orta"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "dayanikli-motor",
+      "iddia": "Basit mekaniği sayesinde özel servis gerektirmiyor ve sahibini yolda bırakmıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-9-broadway--394494",
+      "kaynak_alinti": "bu otomobilin bakimi icin ozel servis gerekmemesi, yolda birakmamasi",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "iyi",
+      "etiket": "surus-kolayligi",
+      "iddia": "Kullanımı basit; araba kullanmayı öğrenmek için ideal kabul ediliyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-9-broadway--394494",
+      "kaynak_alinti": "araba kullanmayi ogrenmek icin idealdir",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "agir-direksiyon",
+      "iddia": "Hidrolik direksiyon yok; park manevralarında kolları ağrıtacak kadar ağır.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9-broadway/",
+      "kaynak_alinti": "Hidrolik olmayan direksiyonuyla pazu gelişimimde büyük katkısı olan renault'nun.",
+      "guven": "yuksek"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "gurultulu-kabin",
+      "iddia": "90 km/s üzerinde kabin içi gürültü rahatsız edici seviyeye çıkıyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://www.uludagsozluk.com/k/renault-9-broadway/",
+      "kaynak_alinti": "Saatte 90 km hızdan sonra çok gürültü yapar ama uyumanızı önlemek içindir bu.",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "zayif-guvenlik-donanim",
+      "iddia": "Emniyet kemeri dışında kayda değer bir güvenlik donanımı bulunmuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-broadway--266181",
+      "kaynak_alinti": "güvenlik namına emniyet kemeri hariç hiçbir donanımı yoktur",
+      "guven": "orta"
+    },
+    {
+      "tip": "kotu",
+      "etiket": "yetersiz-performans",
+      "iddia": "1.4 motor 72 hp üretiyor; performansı kendi döneminde bile zayıf bulunuyor.",
+      "km_araligi": null,
+      "kaynak_url": "https://eksisozluk.com/renault-9-spring--394499",
+      "kaynak_alinti": "performans açısından oldukça zayıf bir araçtır",
+      "guven": "dusuk"
+    }
+  ]
+}
