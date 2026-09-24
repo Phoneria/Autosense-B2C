@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../auth/AuthProvider";
 
 export default function AccountMenu({ onProfile }: { onProfile: () => void }) {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [open, setOpen] = useState(false);
   const [error, setError] = useState("");
   const box = useRef<HTMLDivElement>(null);

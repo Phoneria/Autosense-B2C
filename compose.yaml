@@ -42,15 +42,18 @@ services:
       B2C_GALERI_SUMMARY: /app/data/galeri_summary.json
       B2C_GALERI_LATEST_SNAPSHOT: /app/data/galeri_latest_snapshot.json
       B2C_GALLERY_DB: /app/data/galeri.db
+      B2C_GUIDE_CACHE: /app/cache/vehicle_guide.json
+      B2C_REGIONAL_CACHE: /app/cache/regional_deals.json
     volumes:
       - ./data:/app/data:ro
-    command: ["sh", "-c", "python manage.py migrate --noinput && exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers ${B2C_WORKERS:-4} --worker-class gthread --threads ${B2C_THREADS:-4} --worker-tmp-dir /dev/shm --timeout 120 --error-logfile -"]
+      - derived_cache:/app/cache
+    command: ["sh", "-c", "python manage.py migrate --noinput && (python manage.py warm_caches || echo warm_caches failed) && exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers ${B2C_WORKERS:-4} --worker-class gthread --threads ${B2C_THREADS:-4} --worker-tmp-dir /dev/shm --timeout 120 --error-logfile -"]
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; r=urllib.request.Request('http://127.0.0.1:8000/api/b2c/csrf',headers={'Host':'${B2C_DOMAIN}','X-Forwarded-Proto':'https'}); urllib.request.urlopen(r,timeout=5)"]
       interval: 10s
       timeout: 6s
       retries: 12
-      start_period: 30s
+      start_period: 300s
     depends_on:
       postgres:
         condition: service_healthy
@@ -86,3 +89,4 @@ volumes:
   rate_limits:
   caddy_data:
   caddy_config:
+  derived_cache:

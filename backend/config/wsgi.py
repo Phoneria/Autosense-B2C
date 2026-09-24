@@ -8,6 +8,12 @@ application = get_wsgi_application()
 # ~10 sn'lik soğuk başlangıcı yaşamasın. Hata olursa worker yine de açılır.
 if os.getenv("B2C_WARMUP", "0") == "1":
     try:
+        # Rehber ve bölgesel veriyi (warm_caches'in yazdığı dosyadan) belleğe al.
+        from search.services import guide, regional
+        guide.get(); regional.get()
+    except Exception:
+        logging.getLogger(__name__).warning("Guide/regional warm-up skipped", exc_info=True)
+    try:
         from search.services import b2c
         b2c.analyze({"category": "otomobil", "brand": "Fiat", "series": "Egea", "year": 2019,
                      "km": 80000, "price": 800000, "damage": []})

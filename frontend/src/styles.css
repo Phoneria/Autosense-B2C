@@ -1179,3 +1179,18 @@ footer{ max-width:none; margin:40px 0 0; min-height:0; background:#14181a; borde
 /* Değer kaybı: enflasyon notu */
 .depr-note{ margin:16px 0 0; font-size:13px; line-height:1.6; color:var(--muted); background:#fff6dc; border:1px solid #f0dd9c; border-radius:10px; padding:10px 12px }
 .depr-note b{ color:var(--ink) }
+
+/* Parolayı göster/gizle */
+.auth-form .password-wrap{ position:relative }
+.auth-form .password-wrap input{ padding-right:84px }
+.password-toggle{ position:absolute; right:8px; top:50%; transform:translateY(-50%); border:0; background:none; color:var(--muted); font-size:12px; font-weight:700; cursor:pointer; padding:6px 10px; border-radius:6px }
+.password-toggle:hover{ color:var(--ink); background:var(--paper) }
+/* Hesabım menüsü: .topbar .account-nav button beyaz yazısını ez */
+.topbar .account-nav .account-dropdown button{ color:var(--ink); background:#fff; border:0; border-bottom:1px solid var(--line); border-radius:0; padding:11px 14px }
+.topbar .account-nav .account-dropdown button:hover{ background:var(--paper); border-color:var(--line) }
+.topbar .account-nav .account-dropdown button.danger{ color:#c9362d; border-bottom:0 }
+
+/* Footer her zaman ekranın dibinde: kısa sayfalarda altta boşluk kalmasın */
+.app-shell{ min-height:100vh; display:flex; flex-direction:column }
+.app-main{ flex:1 0 auto }
+.app-shell>footer{ flex-shrink:0 }

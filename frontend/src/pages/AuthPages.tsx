@@ -9,7 +9,10 @@ function Shell({ title, intro, children }: { title: string; intro: string; child
   return <main className="auth-layout"><section className="auth-story"><Link to="/" className="brand-logo"><img src="/autosense-logo.png" alt="AutoSense" /></Link><div><span className="eyebrow">DAHA BİLİNÇLİ BİR ARAÇ KARARI</span><h1>İlanın ötesini<br /><i>görün.</i></h1><p>Gerçek piyasa verilerini keşfedin. Fiyatı karşılaştırın, detayları inceleyin ve bir sonraki adımınızı güvenle atın.</p></div><span className="auth-story-foot">İkinci el araç analizi · AutoSense</span></section><section className="auth-panel"><div className="auth-card"><span className="eyebrow">AUTOSENSE HESABINIZ</span><h2>{title}</h2><p className="auth-intro">{intro}</p>{children}</div></section></main>;
 }
 function Input({ label, type, value, onChange, autoComplete }: { label: string; type: string; value: string; onChange: (value: string) => void; autoComplete: string }) {
-  return <label className="field"><span>{label}</span><input type={type} value={value} onChange={e => onChange(e.target.value)} autoComplete={autoComplete} required maxLength={type === "email" ? 254 : 128} /></label>;
+  const [show, setShow] = useState(false);
+  const isPassword = type === "password";
+  const input = <input type={isPassword && show ? "text" : type} value={value} onChange={e => onChange(e.target.value)} autoComplete={autoComplete} required maxLength={type === "email" ? 254 : 128} />;
+  return <label className="field"><span>{label}</span>{isPassword ? <div className="password-wrap">{input}<button type="button" className="password-toggle" aria-pressed={show} aria-label={show ? "Parolayı gizle" : "Parolayı göster"} onClick={() => setShow(v => !v)}>{show ? "Gizle" : "Göster"}</button></div> : input}</label>;
 }
 function ErrorMessage({ message }: { message: string }) { return message ? <p className="auth-error" role="alert">{message}</p> : null; }
 const PENDING_EMAIL = "b2c:verification-email";
@@ -30,7 +33,7 @@ export function LoginPage() {
     if (!await reload()) throw new Error("Giriş tamamlanamadı. E-posta adresinizi ve parolanızı kontrol edin.");
     navigate(safeNext(params.get("next")), { replace: true });
   } catch (e) { setError(e instanceof Error ? e.message : "Giriş yapılamadı."); } finally { setBusy(false); } }
-  return <Shell title="Tekrar hoş geldiniz." intro="Araç analizinize devam etmek için giriş yapın."><form onSubmit={submit} className="auth-form"><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="current-password" value={password} onChange={setPassword} /><Link className="auth-forgot" to="/forgot-password">Parolamı unuttum</Link><ErrorMessage message={error} /><button className="primary-button" disabled={busy || loading}>{busy ? "Giriş yapılıyor…" : "Giriş yap"}<span>→</span></button></form><p className="auth-switch">Hesabınız yok mu? <Link to="/signup">Hesap oluşturun</Link></p><p className="auth-switch"><Link to="/verify-email">Doğrulama e-postasını yeniden gönder</Link></p></Shell>;
+  return <Shell title="Tekrar hoş geldiniz." intro="Araç analizinize devam etmek için giriş yapın."><form onSubmit={submit} className="auth-form"><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="current-password" value={password} onChange={setPassword} /><Link className="auth-forgot" to="/forgot-password">Parolamı unuttum</Link><ErrorMessage message={error} /><button className="primary-button" disabled={busy || loading}>{busy ? "Giriş yapılıyor…" : "Giriş yap"}<span>→</span></button></form><p className="auth-switch">Hesabınız yok mu? <Link to="/signup">Hesap oluşturun</Link></p></Shell>;
 }
 export function SignupPage() {
   const navigate = useNavigate(); const [email, setEmail] = useState(""), [password, setPassword] = useState(""), [confirm, setConfirm] = useState(""), [busy, setBusy] = useState(false), [error, setError] = useState("");

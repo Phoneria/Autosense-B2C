@@ -229,6 +229,8 @@ export default function AnalysisPage() {
 
   return (
     <PlanChangeContext.Provider value={requestPlan}>
+      <div className="app-shell">
+      <div className="app-main">
       <header className="topbar">
         <button type="button" className="brand-logo" onClick={() => setTab("analysis")} aria-label="Analiz sayfasına git">
           <img src="/autosense-logo-trim.png" alt="AutoSense" />
@@ -464,6 +466,7 @@ export default function AnalysisPage() {
         </div>
       )}
       </div>
+      </div>
 
       <footer>
         <div className="footer-inner">
@@ -479,6 +482,7 @@ export default function AnalysisPage() {
         </div>
         <div className="footer-bottom">© {new Date().getFullYear()} AutoSense</div>
       </footer>
+      </div>
     </PlanChangeContext.Provider>
   );
 }

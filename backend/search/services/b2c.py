@@ -90,7 +90,7 @@ def _tr_key(v: str) -> str:
 # 1) İl / ilçe seçenekleri
 # ═══════════════════════════════════════════════════════════════════════════
 
-_LOCATIONS_CACHE_KEY = "b2c:locations:v2"
+_LOCATIONS_CACHE_KEY = "b2c:locations:v3"
 _LOCATIONS_TTL = 60 * 60 * 6
 
 
@@ -135,12 +135,14 @@ def _locations_from_listings() -> dict[str, set[str]]:
 
     out: dict[str, set[str]] = {}
     try:
-        addresses = (
+        addresses = list(
             Listing.objects.exclude(address="")
             .values_list("address", flat=True)
             .distinct()[:200_000]
         )
     except Exception:
+        # Referans DB okunamazsa (izin, eksik dosya) il listesi yine de
+        # sabit Türkiye listesi + galeri verisiyle dönmeli.
         return out
     for address in addresses:
         city, district = _split_address(address)
@@ -150,6 +152,29 @@ def _locations_from_listings() -> dict[str, set[str]]:
         if district and len(district) <= 40:
             out[city].add(district)
     return out
+
+
+_TR_LOCATIONS_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "tr_il_ilce.json")
+
+
+def _loc_key(v: str) -> str:
+    """İl/ilçe eşleştirme anahtarı: büyük/küçük harf ve Türkçe karakter farkı
+    (İstanbul/Istanbul/ISTANBUL, Çan/Can) aynı kayda düşer."""
+    s = _norm(v).replace("\u0307", "")
+    for a, b in (("ı", "i"), ("ğ", "g"), ("ş", "s"), ("ç", "c"), ("ö", "o"), ("ü", "u")):
+        s = s.replace(a, b)
+    return s
+
+
+def _locations_from_static() -> dict[str, set[str]]:
+    """search/data/tr_il_ilce.json: {"Çanakkale": ["Ayvacık", ...], ...}
+    Galeri verisinde hiç ilan olmayan il/ilçeler de seçilebilsin diye."""
+    try:
+        with open(_TR_LOCATIONS_FILE, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, ValueError):
+        return {}
+    return {str(city): {str(d) for d in districts} for city, districts in data.items()}
 
 
 def load_locations(force: bool = False) -> list[dict]:
@@ -163,10 +188,24 @@ def load_locations(force: bool = False) -> list[dict]:
         if cached is not None:
             return cached
 
+    # Sabit 81 il / tüm ilçeler temel kaynak; veri kaynakları üstüne eklenir.
+    # Yazım farklarını (İstanbul/Istanbul, EZİNE/Ezine) tek kayıtta topla:
+    # ilk görülen yazım (sabit liste) kazanır.
     merged: dict[str, set[str]] = {}
-    for source in (_locations_from_galeri(), _locations_from_listings()):
+    city_names: dict[str, str] = {}
+    district_names: dict[tuple[str, str], str] = {}
+    for source in (_locations_from_static(), _locations_from_galeri(), _locations_from_listings()):
         for city, districts in source.items():
-            merged.setdefault(city, set()).update(districts)
+            ckey = _loc_key(city)
+            if not ckey:
+                continue
+            name = city_names.setdefault(ckey, city)
+            bucket = merged.setdefault(name, set())
+            for district in districts:
+                dkey = (ckey, _loc_key(district))
+                if dkey[1] and dkey not in district_names:
+                    district_names[dkey] = district
+                    bucket.add(district)
 
     result = [
         {"city": city, "districts": sorted(merged[city], key=_tr_key)}
@@ -1077,7 +1116,7 @@ def analyze(payload: dict) -> dict:
         "vehicle_traits": _arac_ozellikleri(brand, series, engine),
         "evidence": _evidence(estimate, brand=brand, series=series, year=year, package=package),
         "data_sources": {
-            "gallery_matches": len(rows),
+            "gallery_matches": sum(int(g.get("sample_count") or 0) for g in galeri_groups),
             "listing_matches": _listing_matches(brand, series, year),
             "trend_points": len(trend),
             "similar_listings": len(similar),
