@@ -1,0 +1,322 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   AutoSense — Kabuk: header, footer, tanıtım sayfası, giriş/kayıt, çerez
+   Yalnızca tokens.css değişkenlerini kullanır. Sınıf önekleri:
+   as-* ortak kabuk · lp-* tanıtım sayfası
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Butonlar (bağlantı olarak da kullanılabilir) ───────────────────── */
+.as-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: var(--control-height); padding: 0 18px; border-radius: var(--radius-control);
+  font: 600 var(--text-body-sm)/1 var(--font-sans); text-decoration: none; white-space: nowrap;
+  border: 1px solid transparent; cursor: pointer;
+  transition: background var(--motion-fast) var(--ease), border-color var(--motion-fast) var(--ease), color var(--motion-fast) var(--ease);
+}
+.as-btn-primary { background: var(--color-accent); color: var(--color-on-accent); }
+.as-btn-primary:hover { background: var(--color-accent-hover); }
+.as-btn-secondary { background: var(--color-surface); color: var(--color-ink); border-color: var(--color-border-strong); }
+.as-btn-secondary:hover { border-color: var(--color-ink); }
+.as-btn-sm { min-height: 38px; padding: 0 14px; font-size: var(--text-label); }
+.as-btn-lg { min-height: 52px; padding: 0 24px; font-size: var(--text-body); }
+.as-btn span[aria-hidden] { font-size: 16px; transition: transform var(--motion-fast) var(--ease); }
+.as-btn:hover span[aria-hidden] { transform: translateX(2px); }
+
+.eyebrow-on-dark { color: var(--color-ink-accent); }
+
+/* ── Logo ───────────────────────────────────────────────────────────
+   Kaynak logo açık renkli tek renk PNG; açık zeminlerde koyulaştırılır. */
+.as-logo { display: inline-flex; align-items: center; flex: none; border-radius: 6px; }
+.as-logo img { display: block; height: 22px; width: auto; }
+.as-header .as-logo img, .as-footer .as-logo img { filter: brightness(0); opacity: .9; }
+.as-logo:hover img { opacity: .75; }
+
+/* ── Header ─────────────────────────────────────────────────────────── */
+.as-header {
+  position: sticky; top: 0; z-index: 30;
+  background: var(--color-surface); color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+.as-header-inner {
+  display: flex; align-items: center; gap: var(--space-7);
+  max-width: var(--content-app); height: 64px; margin: 0 auto; padding: 0 var(--space-6);
+}
+.as-header-public .as-header-inner { max-width: calc(var(--content-marketing) + 2 * var(--space-6)); justify-content: space-between; }
+.as-header-panel { display: flex; align-items: center; justify-content: space-between; flex: 1; gap: var(--space-5); min-width: 0; }
+
+.as-nav { display: flex; align-items: stretch; gap: var(--space-1); height: 64px; }
+.as-nav a {
+  position: relative; display: inline-flex; align-items: center; gap: 8px; padding: 0 var(--space-3);
+  color: var(--color-text-muted); font-size: var(--text-body-sm); font-weight: 500; text-decoration: none;
+  transition: color var(--motion-fast) var(--ease);
+}
+.as-nav a:hover { color: var(--color-text); }
+.as-nav a.active { color: var(--color-text); font-weight: 600; }
+.as-nav a.active::after {
+  content: ""; position: absolute; left: var(--space-3); right: var(--space-3); bottom: -1px;
+  height: 2px; background: var(--color-accent);
+}
+.as-nav a:focus-visible { outline: var(--focus-outline); outline-offset: -6px; border-radius: var(--radius-control); }
+.as-lock {
+  font-style: normal; font-size: 10.5px; font-weight: 600; letter-spacing: .06em;
+  padding: 1px 5px; border-radius: 4px; border: 1px solid var(--color-border-strong); color: var(--color-text-muted);
+}
+
+.as-account { display: flex; align-items: center; gap: var(--space-2); }
+
+/* Plan rozeti (AccountBadge) */
+.as-plan-badge {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 12px;
+  background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border);
+  border-radius: var(--radius-control); font: 500 var(--text-label)/1 var(--font-sans); cursor: pointer;
+  transition: border-color var(--motion-fast) var(--ease), color var(--motion-fast) var(--ease);
+}
+.as-plan-badge:hover { color: var(--color-text); border-color: var(--color-border-strong); }
+.as-plan-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-success); }
+.as-plan-name { color: var(--color-text); font-weight: 600; }
+.as-plan-credits { font-variant-numeric: tabular-nums; }
+.as-plan-credits b { color: var(--color-text); font-weight: 600; }
+.as-plan-credits small { margin-left: 4px; }
+.as-plan-credits.empty, .as-plan-credits.empty b { color: var(--color-danger-text); }
+.as-plan-reset { font-variant-numeric: tabular-nums; }
+
+/* Hesap menüsü */
+.as-account-menu { position: relative; }
+.as-account-trigger {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 12px;
+  background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border);
+  border-radius: var(--radius-control); font: 600 var(--text-label)/1 var(--font-sans); cursor: pointer;
+  transition: border-color var(--motion-fast) var(--ease), background var(--motion-fast) var(--ease);
+}
+.as-account-trigger:hover, .as-account-trigger[aria-expanded="true"] { border-color: var(--color-border-strong); background: var(--color-surface-sunken); }
+.as-caret { width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); color: var(--color-text-muted); }
+.as-account-trigger[aria-expanded="true"] .as-caret { transform: translateY(1px) rotate(225deg); }
+.as-account-dropdown {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 40; width: 240px; padding: 6px;
+  background: var(--color-surface); color: var(--color-text);
+  border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-overlay);
+}
+.as-account-email {
+  margin: 0 0 4px; padding: 8px 10px 10px; border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted); font-size: var(--text-caption); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.as-account-dropdown button {
+  display: block; width: 100%; padding: 10px; border: 0; border-radius: var(--radius-chip); background: none;
+  color: var(--color-text); font: 500 var(--text-body-sm)/1.2 var(--font-sans); text-align: left; cursor: pointer;
+}
+.as-account-dropdown button:hover { background: var(--color-surface-sunken); }
+.as-account-dropdown button.danger { color: var(--color-danger-text); }
+.as-account-dropdown .form-error { margin: 6px 10px; }
+
+/* Ortak odak çerçevesi (kabuk) */
+.as-btn:focus-visible, .as-plan-badge:focus-visible, .as-account-trigger:focus-visible, .as-menu-toggle:focus-visible,
+.as-logo:focus-visible, .as-link-quiet:focus-visible, .as-subnav a:focus-visible, .as-footer a:focus-visible,
+.as-account-dropdown button:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+
+/* Mobil menü düğmesi */
+.as-menu-toggle {
+  display: none; align-items: center; gap: 8px; margin-left: auto; min-height: 40px; padding: 0 12px;
+  background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); border-radius: var(--radius-control);
+  font: 600 var(--text-label)/1 var(--font-sans); cursor: pointer;
+}
+.as-menu-toggle:hover { border-color: var(--color-border-strong); }
+.as-menu-icon, .as-menu-icon::before, .as-menu-icon::after { display: block; width: 16px; height: 1.5px; background: currentColor; border-radius: 2px; transition: transform var(--motion-fast) var(--ease); }
+.as-menu-icon { position: relative; }
+.as-menu-icon::before, .as-menu-icon::after { content: ""; position: absolute; left: 0; }
+.as-menu-icon::before { top: -5px; } .as-menu-icon::after { top: 5px; }
+.is-open .as-menu-icon { background: transparent; }
+.is-open .as-menu-icon::before { transform: translateY(5px) rotate(45deg); }
+.is-open .as-menu-icon::after { transform: translateY(-5px) rotate(-45deg); }
+.as-menu-scrim { display: none; }
+
+/* Analiz / Senaryolar alt menüsü */
+.as-subnav { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+.as-subnav-inner { display: flex; gap: var(--space-1); max-width: var(--content-app); margin: 0 auto; padding: 0 var(--space-6); }
+.as-subnav a {
+  position: relative; display: inline-flex; align-items: center; gap: 8px; padding: 12px var(--space-3);
+  color: var(--color-text-muted); font-size: var(--text-body-sm); font-weight: 500; text-decoration: none;
+}
+.as-subnav a:hover { color: var(--color-text); }
+.as-subnav a.active { color: var(--color-text); font-weight: 600; }
+.as-subnav a.active::after { content: ""; position: absolute; left: var(--space-3); right: var(--space-3); bottom: -1px; height: 2px; background: var(--color-accent); }
+
+@media (max-width: 1023px) {
+  .as-header-inner { padding: 0 var(--space-4); gap: var(--space-3); height: 60px; position: relative; }
+  .as-menu-toggle { display: inline-flex; }
+  .as-header-panel {
+    display: none; position: absolute; left: 0; right: 0; top: 60px; z-index: 2;
+    flex-direction: column; align-items: stretch; gap: var(--space-4);
+    padding: var(--space-3) var(--space-4) var(--space-5);
+    background: var(--color-surface); border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-overlay);
+  }
+  .as-header.is-open .as-header-panel { display: flex; }
+  .as-header.is-open .as-menu-scrim { display: block; position: fixed; inset: 60px 0 0; z-index: 1; background: rgb(15 23 42 / 20%); border: 0; padding: 0; cursor: default; }
+  .as-nav { flex-direction: column; height: auto; gap: 2px; }
+  .as-nav a { min-height: 48px; padding: 0 var(--space-3); border-radius: var(--radius-control); font-size: var(--text-body); }
+  .as-nav a:hover { background: var(--color-surface-sunken); }
+  .as-nav a.active { background: var(--color-accent-soft); color: var(--color-accent-text); }
+  .as-nav a.active::after { left: 0; right: auto; top: 12px; bottom: 12px; width: 3px; height: auto; border-radius: 0 2px 2px 0; }
+  .as-header.is-open .as-header-panel { max-height: calc(100dvh - 60px); overflow-y: auto; overscroll-behavior: contain; }
+  .as-account { flex-direction: column; align-items: stretch; gap: var(--space-2); padding-top: var(--space-4); border-top: 1px solid var(--color-border); }
+  .as-plan-badge, .as-account-trigger { width: 100%; min-height: 44px; justify-content: space-between; }
+  .as-plan-badge { justify-content: flex-start; }
+  .as-account-dropdown { position: static; width: 100%; margin-top: var(--space-2); box-shadow: none; background: var(--color-surface-sunken); }
+  .as-account-dropdown button { min-height: 44px; }
+  .as-account-dropdown button:hover { background: var(--color-surface); }
+  .as-subnav-inner { padding: 0 var(--space-2); }
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────── */
+.as-footer {
+  display: block; max-width: none; margin: auto 0 0; padding: 0;
+  background: var(--color-surface); color: var(--color-text-muted); font-size: var(--text-label);
+  border-top: 1px solid var(--color-border);
+}
+.as-footer-inner {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-6);
+  max-width: var(--content-app); margin: 0 auto; padding: var(--space-6) var(--space-6) var(--space-5);
+}
+.as-footer-brand { max-width: 460px; }
+.as-footer-brand p { margin: var(--space-3) 0 0; line-height: 1.6; }
+.as-footer-links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); padding-top: 2px; }
+.as-footer a { color: var(--color-text); text-decoration: none; }
+.as-footer a:hover { color: var(--color-accent-text); text-decoration: underline; text-underline-offset: 3px; }
+.as-footer-bottom {
+  max-width: calc(var(--content-app) - 2 * var(--space-6)); margin: 0 auto; padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-border); font-size: var(--text-caption);
+}
+.as-public .as-footer-inner { max-width: calc(var(--content-marketing) + 2 * var(--space-6)); }
+.as-public .as-footer-bottom { max-width: var(--content-marketing); }
+@media (max-width: 767px) {
+  .as-footer-inner { flex-direction: column; padding: var(--space-5) var(--space-4); gap: var(--space-4); }
+  .as-footer-links { flex-direction: column; gap: 0; }
+  .as-footer-links a { display: flex; align-items: center; min-height: 40px; }
+  .as-footer-bottom { margin: 0 var(--space-4); padding: var(--space-4) 0; }
+}
+
+/* Uygulama kabuğu: footer her zaman sayfa altında */
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1 0 auto; }
+
+/* ── Herkese açık sayfa kabuğu ──────────────────────────────────────── */
+.as-public { min-height: 100vh; display: flex; flex-direction: column; background: var(--color-canvas); }
+.as-public-main { flex: 1 0 auto; }
+.as-public-nav { display: flex; align-items: center; gap: var(--space-2); }
+.as-link-quiet {
+  display: inline-flex; align-items: center; min-height: 38px; padding: 0 12px; border-radius: var(--radius-control);
+  color: var(--color-text); font-size: var(--text-body-sm); font-weight: 500; text-decoration: none;
+}
+.as-link-quiet:hover { background: var(--color-surface-sunken); }
+.as-link-quiet, .as-public-nav .as-btn { white-space: nowrap; }
+.as-show-sm { display: none; }
+@media (max-width: 479px) {
+  .as-hide-sm { display: none; }
+  .as-show-sm { display: inline; }
+  .as-logo img { height: 19px; }
+}
+
+/* ── Hukuki sayfalar ────────────────────────────────────────────────── */
+.pub-legal { max-width: 720px; margin: 0 auto; padding: var(--space-7) var(--space-4) var(--space-8); color: var(--color-text); }
+.pub-legal h1 { font-size: var(--text-h2); font-weight: 600; letter-spacing: -0.025em; }
+.pub-legal h2 { margin-top: var(--space-6); font-size: var(--text-h3); font-weight: 600; }
+.pub-legal p, .pub-legal li { font-size: var(--text-body); line-height: 1.65; color: var(--color-text); }
+.pub-legal .pub-updated { color: var(--color-text-muted); font-size: var(--text-label); }
+.pub-legal a { color: var(--color-accent-text); }
+
+/* ── Giriş / kayıt / doğrulama / parola ─────────────────────────────
+   Tek form yüzeyi; tüm kimlik doğrulama rotaları aynı kabuğu kullanır. */
+.as-auth { display: flex; flex-direction: column; min-height: 100vh; background: var(--color-canvas); }
+.as-auth-top {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  width: 100%; max-width: calc(var(--content-marketing) + 2 * var(--space-6)); height: 64px; margin: 0 auto; padding: 0 var(--space-6);
+}
+.as-auth-top .as-logo img { filter: brightness(0); opacity: .9; }
+.as-auth-main { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-6) var(--space-4) var(--space-8); }
+.as-auth-card {
+  width: 100%; max-width: 440px; margin: 0; padding: var(--space-7) var(--space-6);
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-feature);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 4%), 0 16px 40px -24px rgb(15 23 42 / 16%);
+}
+.as-auth-title { margin: 0; font-size: 28px; font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; color: var(--color-text); }
+.as-auth-card .auth-intro { margin: var(--space-2) 0 var(--space-6); color: var(--color-text-muted); font-size: var(--text-body); line-height: 1.6; }
+.as-auth-card .auth-form { display: grid; gap: var(--space-4); }
+.as-auth-card .auth-form + .auth-form, .as-auth-card .resend-form { margin-top: var(--space-5); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
+.as-auth-card .field { gap: 6px; }
+.as-auth-card .field > span { font-size: var(--text-label); font-weight: 500; color: var(--color-text); }
+.as-auth-card .field input {
+  height: 44px; min-height: 44px; padding: 0 12px; font-size: var(--text-body);
+  background: var(--color-surface); border: 1px solid var(--color-border-strong); border-radius: var(--radius-control);
+}
+.as-auth-card .field input:hover { border-color: var(--color-border-hover); }
+.as-auth-card .field input:focus { outline: none; border-color: var(--color-accent); box-shadow: var(--focus-ring); }
+.as-auth-card .password-wrap input { padding-right: 76px; }
+.as-auth-card .password-toggle { right: 6px; padding: 6px 8px; border-radius: var(--radius-chip); color: var(--color-text-muted); font-size: var(--text-label); font-weight: 500; }
+.as-auth-card .password-toggle:hover { color: var(--color-text); background: var(--color-surface-sunken); }
+.as-auth-card .password-toggle:focus-visible { outline: var(--focus-outline); outline-offset: 0; }
+.as-auth-card .primary-button {
+  width: 100%; min-width: 0; min-height: 44px; margin-top: var(--space-1); padding: 0 var(--space-4);
+  justify-content: center; gap: 10px; border-radius: var(--radius-control); font-size: var(--text-body-sm); font-weight: 600; box-shadow: none;
+}
+.as-auth-card .primary-button:hover { transform: none; }
+.as-auth-card .primary-button span { font-size: 16px; }
+.as-auth-card .secondary-button { width: 100%; min-height: 44px; justify-content: center; border-radius: var(--radius-control); }
+.as-auth-card .auth-forgot { justify-self: end; margin-top: -6px; color: var(--color-accent-text); font-size: var(--text-label); font-weight: 500; text-decoration: none; }
+.as-auth-card .auth-forgot:hover { text-decoration: underline; text-underline-offset: 3px; }
+.as-auth-card .auth-hint { margin: -6px 0 0; color: var(--color-text-muted); font-size: var(--text-caption); line-height: 1.5; }
+.as-auth-card .auth-error, .as-auth-card .auth-success { margin: 0; padding: 10px 12px; border-radius: var(--radius-control); font-size: var(--text-label); line-height: 1.5; }
+.as-auth-card .auth-error { background: var(--color-danger-soft); color: var(--color-danger-text); border: 1px solid rgb(185 28 28 / 20%); }
+.as-auth-card .auth-success { background: var(--color-success-soft); color: var(--color-success-text); border: 1px solid rgb(21 128 61 / 20%); }
+.as-auth-card .auth-switch { margin: var(--space-6) 0 0; padding-top: var(--space-5); border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: var(--text-body-sm); }
+.as-auth-card .auth-switch a { color: var(--color-accent-text); font-weight: 600; text-decoration: none; }
+.as-auth-card .auth-switch a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.as-auth-card .google-button {
+  min-height: 44px; margin: 0; border-radius: var(--radius-control); border: 1px solid var(--color-border-strong);
+  background: var(--color-surface); color: var(--color-text); font-size: var(--text-body-sm); font-weight: 600;
+}
+.as-auth-card .google-button:hover { border-color: var(--color-border-hover); background: var(--color-surface-sunken); }
+.as-auth-card .auth-divider { margin: var(--space-5) 0; color: var(--color-text-muted); font-size: var(--text-caption); }
+.as-auth-card .auth-divider::before, .as-auth-card .auth-divider::after { background: var(--color-border); }
+.as-auth-card a:focus-visible, .as-auth-card button:focus-visible, .as-auth-foot a:focus-visible { outline: var(--focus-outline); outline-offset: 2px; border-radius: 4px; }
+.as-auth-note { max-width: 440px; margin: var(--space-4) 0 0; color: var(--color-text-muted); font-size: var(--text-caption); text-align: center; }
+.as-auth-foot {
+  min-height: 0; background: transparent; border-bottom: 0;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2) var(--space-5);
+  width: calc(100% - 2 * var(--space-6)); max-width: var(--content-marketing); margin: 0 auto; padding: var(--space-5) 0;
+  border-top: 1px solid var(--color-border); color: var(--color-text-muted); font-size: var(--text-caption);
+}
+.as-auth-foot .auth-legal { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin: 0; }
+.as-auth-foot .auth-legal a { color: var(--color-text-muted); text-decoration: none; }
+.as-auth-foot .auth-legal a:hover { color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 639px) {
+  .as-auth-top { height: 56px; padding: 0 var(--space-4); }
+  .as-auth-main { justify-content: flex-start; padding: var(--space-4) var(--space-4) var(--space-7); }
+  .as-auth-card { padding: var(--space-6) var(--space-5); border-radius: var(--radius-card); }
+  .as-auth-title { font-size: 24px; }
+  .as-auth-foot { width: calc(100% - 2 * var(--space-4)); padding: var(--space-4) 0; }
+}
+
+/* ── Çerez bildirimi ────────────────────────────────────────────────── */
+.cookie-notice {
+  position: fixed; left: 50%; bottom: var(--space-4); z-index: 60; transform: translateX(-50%);
+  display: flex; align-items: center; gap: var(--space-5); width: min(860px, calc(100% - 32px)); padding: var(--space-4) var(--space-5);
+  background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-overlay);
+}
+.cookie-notice { right: auto; max-width: none; margin: 0; flex-wrap: nowrap; }
+.cookie-notice p { flex: 1 1 auto; margin: 0; font-size: var(--text-label); line-height: 1.55; }
+.cookie-notice a { color: var(--color-text); text-underline-offset: 3px; }
+.cookie-actions { display: flex; gap: var(--space-2); flex: none; }
+.cookie-notice .secondary-button, .cookie-notice .primary-button {
+  width: auto; min-width: 0; min-height: 40px; margin: 0; padding: 0 16px; justify-content: center; font-size: var(--text-label); border-radius: var(--radius-control);
+}
+.cookie-notice .secondary-button { background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border-strong); }
+.cookie-notice .secondary-button:hover { background: var(--color-surface-sunken); }
+@media (max-width: 639px) {
+  .cookie-notice { flex-direction: column; align-items: stretch; gap: var(--space-3); bottom: var(--space-3); }
+  .cookie-actions button { flex: 1 1 0; }
+  .cookie-notice p { flex: none; }
+}
+
+/* ── Reklam ekranı (ads.ts) ─────────────────────────────────────────── */
+.ad-gate-overlay { background: rgb(15 23 42 / 60%); backdrop-filter: blur(2px); }
+.ad-gate-card { background: var(--color-surface); color: var(--color-ink); border-radius: var(--radius-feature); box-shadow: var(--shadow-overlay); font-size: var(--text-body); }
+#nasil-calisir { scroll-margin-top: 80px; }

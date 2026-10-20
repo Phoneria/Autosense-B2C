@@ -30,7 +30,7 @@ export default function WeeklyChart({ weeks, series, format, baseline }: {
 
   return (
     <div className="weekly-chart">
-      <svg viewBox={`0 0 ${W} ${H}`} role="img">
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${series.map((s) => s.name).join(", ")}: haftalık grafik, ${shortDate(weeks[0])} – ${shortDate(weeks[weeks.length - 1])}`}>
         {ticks.map((t) => (
           <g key={t}>
             <line x1={P.left} x2={W - P.right} y1={y(t)} y2={y(t)} className="wc-grid" />
@@ -40,7 +40,7 @@ export default function WeeklyChart({ weeks, series, format, baseline }: {
         {baseline != null && <line x1={P.left} x2={W - P.right} y1={y(baseline)} y2={y(baseline)} className="wc-base" />}
         {bars.map((s, si) => s.values.map((v, i) => v == null ? null : (
           <rect key={`${s.name}-${i}`} x={x(i) - (barW * bars.length) / 2 + si * barW} y={Math.min(y(v), y(0))}
-            width={barW - 1} height={Math.abs(y(0) - y(v))} fill={s.color} rx={2}>
+            width={barW - 1} height={Math.abs(y(0) - y(v))} style={{ fill: s.color }} rx={2}>
             <title>{`${shortDate(weeks[i])} haftası · ${s.name}: ${format(v)}`}</title>
           </rect>
         )))}
@@ -55,9 +55,9 @@ export default function WeeklyChart({ weeks, series, format, baseline }: {
           if (cur) segments.push(cur);
           return (
             <g key={s.name}>
-              {segments.map((d, i) => <path key={i} d={d} fill="none" stroke={s.color} strokeWidth={2.5} strokeLinejoin="round" />)}
+              {segments.map((d, i) => <path key={i} d={d} fill="none" style={{ stroke: s.color }} strokeWidth={2.5} strokeLinejoin="round" />)}
               {pts.map((p, i) => p && (
-                <circle key={i} cx={p[0]} cy={p[1]} r={3.5} fill="#fff" stroke={s.color} strokeWidth={2}>
+                <circle key={i} cx={p[0]} cy={p[1]} r={3.5} style={{ fill: "var(--chart-point-bg)", stroke: s.color }} strokeWidth={2}>
                   <title>{`${shortDate(weeks[i])} haftası · ${s.name}: ${format(s.values[i] as number)}`}</title>
                 </circle>
               ))}

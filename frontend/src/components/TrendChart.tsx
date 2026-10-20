@@ -77,7 +77,7 @@ export default function TrendChart({ trend }: { trend: TrendPoint[] }) {
           <span>Dönem değişimi</span>
           <strong className={direction}>{change > 0 ? "+" : ""}{tl(change)}</strong>
           <small className={direction}>
-            {changePct > 0 ? "+" : ""}%{changePct.toFixed(1)}
+            {changePct > 0 ? "+" : changePct < 0 ? "−" : ""}%{Math.abs(changePct).toLocaleString("tr-TR", { minimumFractionDigits: 1, maximumFractionDigits: 1 })}
           </small>
         </div>
         <div>
@@ -111,8 +111,8 @@ export default function TrendChart({ trend }: { trend: TrendPoint[] }) {
             >
               <defs>
                 <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#ef6c28" stopOpacity="0.16" />
-                  <stop offset="100%" stopColor="#ef6c28" stopOpacity="0" />
+                  <stop offset="0%" style={{ stopColor: "var(--chart-1)", stopOpacity: 0.16 }} />
+                  <stop offset="100%" style={{ stopColor: "var(--chart-1)", stopOpacity: 0 }} />
                 </linearGradient>
               </defs>
 

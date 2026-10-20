@@ -1,3 +1,5 @@
+import { askRetry, playRewardedAd, type AdOutcome } from "./ads";
+
 export const API = "/api";
 export class ApiError extends Error {
   constructor(message: string, public status: number, public code = "") { super(message); }
@@ -26,6 +28,10 @@ export async function request(url: string, init: RequestInit = {}): Promise<Resp
         return await send();
       }
     }
+    if (response.status === 402 && response.headers.get("content-type")?.includes("application/json")) {
+      const body = await response.clone().json().catch(() => null);
+      if (body?.code === "ad_required") return await afterAd(body.ad || {}, send, response);
+    }
     return response;
   } catch (error) {
     if (error instanceof ApiError || error instanceof DOMException && error.name === "AbortError") throw error;
@@ -42,4 +48,29 @@ export async function json<T>(response: Response, fallback: string): Promise<T> 
   }
   if (body === null) throw new Error(fallback);
   return body as T;
+}
+
+// Sıra reklama geldiğinde (backend/search/ad_gate.py): reklamı oynat, sonucu
+// bildir, isteği BİR kez tekrarla. Kullanıcı reklamı yarıda kapatırsa bir kez
+// daha izleme şansı verilir; vazgeçerse orijinal 402 cevabı (hata mesajı) döner.
+async function afterAd(ad: { ad_unit_path?: string; action?: string }, send: () => Promise<Response>, original: Response): Promise<Response> {
+  let outcome: AdOutcome = "dismissed";
+  for (let attempt = 0; attempt < 2; attempt++) {
+    outcome = await playRewardedAd(ad);
+    await reportAd(outcome);
+    if (outcome !== "dismissed" || !(await askRetry())) break;
+  }
+  return outcome === "dismissed" ? original : await send();
+}
+
+async function reportAd(outcome: AdOutcome): Promise<void> {
+  try {
+    await fetch(`${API}/b2c/ad/result`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-CSRFToken": csrfToken || await refreshCsrf() },
+      body: JSON.stringify({ outcome }),
+      credentials: "same-origin",
+      cache: "no-store",
+    });
+  } catch { /* bildirim başarısızsa istek tekrarında sunucu tekrar reklam ister */ }
 }

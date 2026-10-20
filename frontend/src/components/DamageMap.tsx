@@ -17,21 +17,17 @@ export default function DamageMap({
   };
 
   const marked = CAR_PARTS.filter(([key]) => damage[key] !== "original").length;
+  const counts = Object.fromEntries(DAMAGE_CYCLE.map((state) => [state, CAR_PARTS.filter(([key]) => damage[key] === state).length]));
 
   return (
-    <div className="damage-panel">
-      <div className="damage-title">
-        <div>
-          <span className="step">2</span>
-          <div>
-            <h2>Hasar durumu</h2>
-            <p>Parçalara tıklayarak durumu değiştirin</p>
-          </div>
-        </div>
-        <span>{marked} parça işaretli</span>
+    <div className="damage-panel az-damage-panel">
+      <div className="az-card-head az-damage-head">
+        <h2><span className="az-step is-orange">2</span>Hasar durumu</h2>
+        <p>Parçaya her dokunuşta durum sırayla değişir: Orijinal → Lokal boyalı → Boyalı → Değişen → Orijinal.</p>
+        <span className={`az-damage-count${marked ? " has-marks" : ""}`} aria-live="polite">{marked ? `${marked} parça işaretli` : "Tüm parçalar orijinal"}</span>
       </div>
 
-      <p className="car-direction">Ö N &nbsp;&nbsp;&nbsp; T A R A F</p>
+      <p className="az-direction" aria-hidden="true">Ön</p>
 
       <div className="car-map">
         {CAR_PARTS.map(([key, label, area]) => (
@@ -44,24 +40,28 @@ export default function DamageMap({
             title={`${label}: ${DAMAGE_LABEL[damage[key]]}`}
             aria-label={`${label}, ${DAMAGE_LABEL[damage[key]]}. Değiştirmek için tıklayın.`}
           >
-            {label}
+            <span className="car-part-name">{label}</span>
+            {damage[key] !== "original" && <span className="car-part-state" aria-hidden="true">{DAMAGE_LABEL[damage[key]]}</span>}
           </button>
         ))}
       </div>
 
-      <div className="legend">
-        {DAMAGE_CYCLE.map((state) => (
-          <span key={state}>
-            <i className={state} /> {DAMAGE_LABEL[state]}
-          </span>
-        ))}
-      </div>
 
-      <button type="button" className="reset" onClick={() => onChange({ ...DEFAULT_DAMAGE })}>
+      <p className="az-direction" aria-hidden="true">Arka</p>
+
+      <ul className="legend az-legend" aria-label="Durum dağılımı">
+        {DAMAGE_CYCLE.map((state) => (
+          <li key={state} className={counts[state] ? "has-count" : ""}>
+            <i className={state} aria-hidden="true" /> {DAMAGE_LABEL[state]} <b>{counts[state]}</b>
+          </li>
+        ))}
+      </ul>
+
+      <button type="button" className="reset" disabled={!marked} onClick={() => onChange({ ...DEFAULT_DAMAGE })}>
         Tümünü orijinale döndür
       </button>
 
-      <label className="check-field" style={{ marginTop: 20 }}>
+      <label className="check-field az-check">
         <input
           type="checkbox"
           checked={agirHasar}

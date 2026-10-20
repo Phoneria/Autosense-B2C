@@ -24,10 +24,13 @@ function describe(base: VehicleInput, next: VehicleInput): string {
   return parts.join(" · ") || "Değişiklik yok";
 }
 
-export default function ScenarioTab({ base, onGoAnalysis }: {
+export default function ScenarioTab({ base, onGoAnalysis, embedded = false, onClose }: {
   base: { input: VehicleInput; result: AnalysisResult } | null;
   onGoAnalysis: () => void;
+  embedded?: boolean;
+  onClose?: () => void;
 }) {
+  const Title = embedded ? "h2" : "h1";
   const [draft, setDraft] = useState<VehicleInput | null>(base?.input || null);
   const [rows, setRows] = useState<Row[]>([]);
   const [busy, setBusy] = useState(false);
@@ -40,11 +43,13 @@ export default function ScenarioTab({ base, onGoAnalysis }: {
       <section className="tab-page">
         <div className="tab-head">
           <span className="eyebrow">NE OLURDU?</span>
-          <h1>Senaryolar</h1>
+          <Title>Alternatif senaryolar</Title>
           <p>Km, hasar, paket veya vites farklı olsaydı fiyat nasıl değişirdi? Görmek için önce bir araç analiz edin.</p>
         </div>
-        <div className="empty-results"><h2>Henüz analiz yok</h2>
-          <button type="button" className="primary-button" onClick={onGoAnalysis}>Analiz sekmesine git <span>→</span></button>
+        <div className="az-empty sc-empty">
+          <h2>Henüz analiz yok</h2>
+          <p>Senaryolar, Analiz sayfasında hesapladığınız aracın üzerine kurulur.</p>
+          <button type="button" className="primary-button" onClick={onGoAnalysis}>Analiz sayfasına git <span aria-hidden="true">→</span></button>
         </div>
       </section>
     );
@@ -76,10 +81,11 @@ export default function ScenarioTab({ base, onGoAnalysis }: {
   }
 
   return (
-    <section className="tab-page">
+    <section className={`tab-page${embedded ? " is-embedded" : ""}`}>
       <div className="tab-head">
+        {onClose && <button type="button" className="sc-close" onClick={onClose} aria-label="Senaryoları kapat">Kapat ✕</button>}
         <span className="eyebrow">NE OLURDU?</span>
-        <h1>Senaryolar</h1>
+        <Title>Alternatif senaryolar</Title>
         <p>{v.year} {v.brand} {v.series} {v.engine}{v.packageName ? ` ${v.packageName}` : ""} için bilgileri değiştirip piyasa değerinin nasıl değiştiğini görün. Senaryolar kredi harcamaz.</p>
       </div>
 

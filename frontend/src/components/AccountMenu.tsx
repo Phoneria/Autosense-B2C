@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../auth/AuthProvider";
 
 export default function AccountMenu({ onProfile }: { onProfile: () => void }) {
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
   const [open, setOpen] = useState(false);
+  const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const box = useRef<HTMLDivElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -17,17 +19,20 @@ export default function AccountMenu({ onProfile }: { onProfile: () => void }) {
   }, [open]);
 
   return (
-    <div className="account-menu" ref={box}>
-      <button type="button" className="account-menu-trigger" aria-expanded={open} onClick={() => setOpen(!open)}>
-        Hesabım <span aria-hidden="true">⌄</span>
+    <div className="as-account-menu" ref={box}
+      onKeyDown={e => { if (e.key === "Escape" && open) { e.stopPropagation(); setOpen(false); trigger.current?.focus(); } }}>
+      <button type="button" ref={trigger} className="as-account-trigger" aria-expanded={open} aria-haspopup="menu" onClick={() => setOpen(!open)}>
+        Hesabım <span className="as-caret" aria-hidden="true" />
       </button>
       {open && (
-        <div className="account-dropdown" role="menu">
+        <div className="as-account-dropdown" role="menu">
+          {user?.email && <p className="as-account-email">{user.email}</p>}
           <button type="button" role="menuitem" onClick={() => { setOpen(false); onProfile(); }}>
-            <strong>Profil</strong>
+            Hesabım ve plan
           </button>
-          <button type="button" role="menuitem" className="danger"
-            onClick={() => { setError(""); void logout().catch((e: Error) => setError(e.message)); }}><strong>Çıkış</strong>
+          <button type="button" role="menuitem" className="danger" disabled={busy}
+            onClick={() => { setError(""); setBusy(true); void logout().catch((e: Error) => setError(e.message)).finally(() => setBusy(false)); }}>
+            {busy ? "Çıkış yapılıyor…" : "Çıkış yap"}
           </button>
           {error && <p role="alert" className="form-error">{error}</p>}
         </div>

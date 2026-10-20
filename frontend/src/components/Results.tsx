@@ -1,4 +1,5 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useId, useState, type ReactNode } from "react";
+import type React from "react";
 import type { AnalysisResult } from "../types";
 import LockedPanel from "./LockedPanel";
 import { num, tl } from "../format";
@@ -13,58 +14,108 @@ import ScoreGauge from "./charts/ScoreGauge";
 import DeductionBars from "./charts/DeductionBars";
 import RegionalScale from "./charts/RegionalScale";
 
-function titleTr(text: string) {
-  return text.split(" ").map((w) => w ? w.charAt(0).toLocaleUpperCase("tr-TR") + w.slice(1) : w).join(" ");
-}
-
-function Section({ icon, title, hint, chip, color, children }: {
-  icon: string; title: string; hint: string; chip?: string | null; color: string; children: ReactNode;
+/** Ayrıntı bölümü. İçerik her açılışta yeniden kurulur; böylece grafikler ve
+ *  çubuklar her seferinde sıfırdan dolarak gelir. Kapanırken içerik animasyon
+ *  bitene kadar yerinde kalır. */
+function Section({ title, hint, chip, color, children }: {
+  title: string; hint: string; chip?: string | null; color: string; children: ReactNode;
 }) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [round, setRound] = useState(0);
+  const id = useId();
+  useEffect(() => {
+    const openAll = () => { setMounted(true); setOpen(true); };
+    window.addEventListener("as-open-all", openAll);
+    window.addEventListener("beforeprint", openAll);
+    return () => { window.removeEventListener("as-open-all", openAll); window.removeEventListener("beforeprint", openAll); };
+  }, []);
+  const toggle = () => {
+    if (open) { setOpen(false); return; }
+    setRound((n) => n + 1); setMounted(true); setOpen(true);
+  };
   return (
-    <details className={`acc acc-${color}`} open={open} onToggle={(e) => setOpen(e.currentTarget.open)}>
-      <summary>
-        <span className="acc-icon">{icon}</span>
-        <span className="acc-text"><strong>{titleTr(title)}</strong><small>{titleTr(hint)}</small></span>
-        {chip && <span className="acc-chip">{chip}</span>}
-        <span className="acc-arrow" aria-hidden="true">⌄</span>
-      </summary>
-      <div className="acc-body">{children}</div>
-    </details>
+    <section className={`acc acc-${color}${open ? " is-open" : ""}`}>
+      <h4 className="acc-heading">
+        <button type="button" className="acc-summary" aria-expanded={open} aria-controls={id} onClick={toggle}>
+          <span className="acc-text"><strong>{title}</strong><small>{hint}</small></span>
+          {chip && <span className="acc-chip">{chip}</span>}
+          <span className="acc-arrow" aria-hidden="true" />
+        </button>
+      </h4>
+      <div className="acc-panel" id={id} role="region" aria-label={title} inert={!open}
+        onTransitionEnd={(e) => { if (e.target === e.currentTarget && !open) setMounted(false); }}>
+        <div className="acc-panel-inner">
+          {mounted && <div className="acc-body" key={round}>{children}</div>}
+        </div>
+      </div>
+    </section>
   );
 }
 
-function PriceBar({ low, high, value, price }: { low: number; high: number; value: number; price: number }) {
-  const min = Math.min(low, price, value);
-  const max = Math.max(high, price, value);
-  const span = Math.max(1, max - min);
-  const pos = (v: number) => Math.min(94, Math.max(6, ((v - min) / span) * 100));
-  const priceLeft = pos(price);
-  const valueLeft = pos(value);
-  const cheaper = price <= value;
+/** İlan fiyatı ile tahmini değerin aynı eksendeki yeri. Gölgeli bant,
+ *  backend'in döndürdüğü tahmini aralıktır; eksen yalnızca bu değerleri kapsar. */
+function PositionBar({ low, high, value, price }: { low: number; high: number; value: number; price: number }) {
+  const min = Math.min(low, price, value, value * 0.88);
+  const max = Math.max(high, price, value, value * 1.14);
+  const pad = Math.max(1, (max - min) * 0.12);
+  const lo = min - pad, span = Math.max(1, max + pad - lo);
+  const pos = (v: number) => ((v - lo) / span) * 100;
+  const label = (v: number) => Math.min(88, Math.max(12, pos(v)));
+  const zones = {
+    "--z1": `${pos(value * 0.9)}%`, "--z2": `${pos(value * 0.97)}%`,
+    "--z3": `${pos(value * 1.03)}%`, "--z4": `${pos(value * 1.1)}%`,
+  } as React.CSSProperties;
   return (
-    <div className="simple-bar">
-      <div className="simple-bar-tags top">
-        <span className={`bar-tag listing ${cheaper ? "good" : "bad"}`} style={{ left: `${priceLeft}%` }}>
-          <small>İlan fiyatı</small><b>{tl(price)}</b>
-        </span>
+    <figure className="az-pos" aria-label={`İlan fiyatı ${tl(price)}, tahmini değer ${tl(value)}, tahmini aralık ${tl(low)} – ${tl(high)}`}>
+      <div className="az-pos-row az-pos-top" aria-hidden="true">
+        <span className="az-pos-tag is-listing" style={{ left: `${label(price)}%` }}><small>İlan fiyatı</small><b>{tl(price)}</b></span>
       </div>
-      <div className="simple-bar-track">
-        <span className={`simple-bar-mark listing ${cheaper ? "good" : "bad"}`} style={{ left: `${priceLeft}%` }} />
-        <span className="simple-bar-mark estimate" style={{ left: `${valueLeft}%` }} />
+      <div className="az-pos-track" aria-hidden="true" style={zones}>
+        <span className="az-pos-band" style={{ left: `${pos(low)}%`, width: `${Math.max(1, pos(high) - pos(low))}%` }} />
+        <span className="az-pos-mark is-estimate" style={{ left: `${pos(value)}%` }} />
+        <span className="az-pos-mark is-listing" style={{ left: `${pos(price)}%` }} />
       </div>
-      <div className="simple-bar-tags bottom">
-        <span className="bar-tag estimate" style={{ left: `${valueLeft}%` }}>
-          <small>Piyasa değeri</small><b>{tl(value)}</b>
-        </span>
+      <div className="az-pos-row az-pos-bottom" aria-hidden="true">
+        <span className="az-pos-tag is-estimate" style={{ left: `${label(value)}%` }}><small>Tahmini değer</small><b>{tl(value)}</b></span>
       </div>
-      <div className="simple-bar-labels"><span>Ucuz</span><span>Normal</span><span>Pahalı</span></div>
-    </div>
+      <div className="az-pos-zones" aria-hidden="true" style={zones}>
+        <span className="z-great">Fırsat</span><span className="z-cheap">Uygun</span>
+        <span className="z-fair">Piyasa</span><span className="z-high">Yüksek</span><span className="z-exp">Pahalı</span>
+      </div>
+      <figcaption className="az-pos-legend">
+        <span><i className="is-band" />Tahmini aralık {tl(low)} – {tl(high)}</span>
+        <span><i className="is-listing" />İlan fiyatı</span>
+        <span><i className="is-estimate" />Tahmini değer</span>
+      </figcaption>
+    </figure>
   );
 }
+
+export type VerdictTone = "great" | "cheap" | "fair" | "high" | "expensive";
+export function verdictToneOf(dev: number): VerdictTone {
+  return dev <= -10 ? "great" : dev < -3 ? "cheap" : dev <= 3 ? "fair" : dev <= 10 ? "high" : "expensive";
+}
+const TONE_META: Record<VerdictTone, { icon: string; word: string }> = {
+  great: { icon: "★", word: "Fırsat" },
+  cheap: { icon: "✓", word: "Uygun fiyat" },
+  fair: { icon: "=", word: "Piyasa fiyatı" },
+  high: { icon: "↑", word: "Biraz yüksek" },
+  expensive: { icon: "!", word: "Pahalı" },
+};
+
+function Signal({ tone, label, value }: { tone: "good" | "mid" | "bad" | "info"; label: string; value: ReactNode }) {
+  return <li className={`az-signal is-${tone}`}><small>{label}</small><b>{value}</b></li>;
+}
+
+const STRENGTH_LABEL: Record<string, string> = { strong: "Güçlü", medium: "Orta", weak: "Zayıf" };
+const TRIM_LABEL: Record<string, string> = {
+  exact: "Paket birebir", engine: "Motor seviyesinde", engine_median: "Paket ortalaması", none: "Eşleşme yok",
+};
 
 export default function Results({ data }: { data: AnalysisResult }) {
   const { estimate, decision, negotiation, depreciation, tco } = data;
+  const ev: Partial<AnalysisResult["evidence"]> & { strength: string } = data.evidence || { strength: "medium" };
   const locks = data.locks || {};
   const price = data.vehicle.price;
   const value = estimate.tahmini_fiyat;
@@ -84,13 +135,21 @@ export default function Results({ data }: { data: AnalysisResult }) {
     : <>Bu araç piyasa değerinden <strong>{tl(diff)} daha pahalı</strong>.</>;
 
   const verdictTone = decision.deviation_pct > 5 ? "expensive" : decision.deviation_pct < -5 ? "cheap" : "fair";
+  const vt = verdictToneOf(decision.deviation_pct);
+  const devAbs = Math.abs(decision.deviation_pct).toLocaleString("tr-TR", { maximumFractionDigits: 1 });
+  const headline = diff == null ? "Değer hesaplanamadı"
+    : Math.abs(decision.deviation_pct) < 1 ? "Piyasa değerinde"
+    : `%${devAbs} piyasanın ${decision.deviation_pct < 0 ? "altında" : "üstünde"}`;
+  const scorePct = Math.max(0, Math.min(100, decision.score * 10));
+  const q = data.listing_quality.score;
+  const region = data.regional_signal.delta_pct;
   const actionSentence = negotiation.available
     ? <><strong>{tl(negotiation.opening_offer)}</strong> teklifle başlayın, <strong>{tl(negotiation.target_price)}</strong> civarında anlaşmaya çalışın.</>
     : negotiation.reason;
 
   function printAll() {
-    document.querySelectorAll<HTMLDetailsElement>("details.acc").forEach((d) => { d.open = true; });
-    window.print();
+    window.dispatchEvent(new Event("as-open-all"));
+    window.setTimeout(() => window.print(), 450);
   }
 
   async function share() {
@@ -109,45 +168,155 @@ export default function Results({ data }: { data: AnalysisResult }) {
   }
 
   return (
-    <section className="results visible" id="results">
-      <div className="results-heading">
+    <section className="results visible az-results" id="results" aria-labelledby="az-result-title">
+      <div className="az-result-head">
         <div>
-          <span className="updated"><span />{new Date(data.generated_at).toLocaleString("tr-TR")}</span>
-          <h2>Analiz sonucu</h2>
+          <h2 id="az-result-title">Analiz sonucu</h2>
+          <p className="az-result-vehicle">
+            {[`${data.vehicle.year} ${data.vehicle.brand} ${data.vehicle.series}`, data.vehicle.engine, data.vehicle.package,
+              `${num(data.vehicle.km)} km`, [data.vehicle.city, data.vehicle.district].filter(Boolean).join(" / ")].filter(Boolean).join(" · ")}
+          </p>
         </div>
-        <div className="result-meta">
-          <div className="result-actions">
-            <button type="button" onClick={printAll}>PDF / Yazdır</button>
-            <button type="button" onClick={share}>Paylaş</button>
-          </div>
+        <div className="result-actions az-result-actions">
+          <button type="button" onClick={printAll}>PDF / Yazdır</button>
+          <button type="button" onClick={share}>Paylaş</button>
         </div>
       </div>
 
-      {/* ── Özet: herkesin anlayacağı tek cevap ─────────────────── */}
-      <div className={`decision-card tone-${verdictTone}`}>
-        <div className="decision-main">
-          <div className="score-ring">
-            <strong>{decision.score}</strong>
-            <span>/10</span>
+      {/* ── Özet: karar, temel değerler ve fiyatın konumu ─────────── */}
+      <div className={`az-summary tone-${verdictTone} vt-${vt}`}>
+        <div className="az-hero">
+          <div className="az-hero-main">
+            <span className="az-hero-icon" aria-hidden="true">{TONE_META[vt].icon}</span>
+            <div>
+              <div className="az-verdict-meta">
+                <span className="az-verdict-badge">{TONE_META[vt].word}</span>
+                {decision.label !== TONE_META[vt].word && <span className="az-hero-label">{decision.label}</span>}
+              </div>
+              <h3 className="az-hero-title">{headline}</h3>
+              <p className="az-verdict-sentence">{priceSentence}</p>
+            </div>
           </div>
-          <div>
-            <span className="deal-badge">{decision.label.toLocaleUpperCase("tr-TR")}</span>
-            <h2>{decision.title}</h2>
-            <p>{priceSentence}</p>
-            <p className="simple-action"><span>Önerimiz</span>{actionSentence}</p>
+          <div className="az-hero-side">
+            <div className="az-score-ring" style={{ "--p": `${scorePct}%` } as React.CSSProperties}
+              role="img" aria-label={`Karar puanı ${num(decision.score)} / 10`}>
+              <span><b>{decision.score.toLocaleString("tr-TR")}</b><small>/10</small></span>
+            </div>
+            <p className="az-verdict-action"><span>Önerimiz</span>{actionSentence}</p>
           </div>
         </div>
-        <div className="price-comparison">
-          <div><span>İlan fiyatı</span><strong>{tl(price)}</strong></div>
-          <div><span>Piyasa değeri</span><strong>{tl(value)}</strong></div>
-          {value != null && estimate.estimated_low != null && estimate.estimated_high != null && (
-            <PriceBar low={estimate.estimated_low} high={estimate.estimated_high} value={value} price={price} />
+
+        <ul className="az-signals" aria-label="Hızlı özet">
+          <Signal tone={ev.strength === "strong" ? "good" : ev.strength === "weak" ? "bad" : "mid"}
+            label="Veri gücü" value={STRENGTH_LABEL[ev.strength] || ev.strength} />
+          <Signal tone={q >= 80 ? "good" : q >= 55 ? "mid" : "bad"} label="İlan güveni" value={`${q}/100`} />
+          <Signal tone={data.questions.length === 0 ? "good" : data.questions.length <= 2 ? "mid" : "bad"}
+            label="Satıcıya sor" value={data.questions.length ? `${data.questions.length} soru` : "Yok"} />
+          {region != null && (
+            <Signal tone={region <= -2 ? "good" : region >= 2 ? "bad" : "info"} label="Bölge"
+              value={`${region > 0 ? "+" : region < 0 ? "−" : ""}%${Math.abs(region).toLocaleString("tr-TR")}`} />
           )}
-        </div>
+          {!locks.depreciation && depreciation.available && depreciation.one_year_loss != null && (
+            <Signal tone="info" label="1 yılda kayıp" value={`−${tl(depreciation.one_year_loss)}`} />
+          )}
+          <Signal tone="info" label="Yıllık masraf" value={tl(tco.toplam_yillik_tl)} />
+        </ul>
+
+        <dl className="az-metrics">
+          <div className="az-metric is-listing">
+            <dt>İlan fiyatı</dt>
+            <dd><strong>{tl(price)}</strong><small>Girdiğiniz fiyat</small></dd>
+          </div>
+          <div className="az-metric is-estimate">
+            <dt>Tahmini piyasa değeri</dt>
+            <dd>
+              <strong>{tl(value)}</strong>
+              <small>{estimate.estimated_low != null && estimate.estimated_high != null
+                ? <>Aralık {tl(estimate.estimated_low)} – {tl(estimate.estimated_high)}</>
+                : "Aralık hesaplanamadı"}</small>
+            </dd>
+          </div>
+          <div className={`az-metric is-diff tone-${verdictTone}`}>
+            <dt>İlan ile tahmin farkı</dt>
+            <dd>
+              <strong>{diff == null ? "—" : Math.abs(diff) < 1000 ? "≈ 0 TL" : `${diff > 0 ? "+" : "−"}${tl(Math.abs(diff))}`}</strong>
+              <small>{diff == null ? "Hesaplanamadı"
+                : Math.abs(diff) < 1000 ? "Piyasa değerine yakın"
+                : <><span aria-hidden="true">{diff > 0 ? "▲" : "▼"}</span> %{Math.abs(decision.deviation_pct).toLocaleString("tr-TR")} {diff > 0 ? "piyasanın üstünde" : "piyasanın altında"}</>}</small>
+            </dd>
+          </div>
+          <div className="az-metric is-target">
+            <dt>Pazarlık hedefi</dt>
+            <dd>
+              <strong>{negotiation.available ? tl(negotiation.target_price) : "—"}</strong>
+              <small>{negotiation.available
+                ? <>Açılış {tl(negotiation.opening_offer)} · Üst sınır {tl(negotiation.ceiling_price)}</>
+                : "Bu ilan için hesaplanmadı"}</small>
+            </dd>
+          </div>
+        </dl>
+
+        {value != null && estimate.estimated_low != null && estimate.estimated_high != null && (
+          <div className="az-summary-pos">
+            <p className="az-section-label">İlan fiyatının piyasadaki yeri</p>
+            <PositionBar low={estimate.estimated_low} high={estimate.estimated_high} value={value} price={price} />
+          </div>
+        )}
       </div>
+
+      {/* ── Veri ve güven: tahminin neye dayandığı (backend'in evidence alanı) ── */}
+      <section className="az-provenance" aria-labelledby="az-prov-title">
+        <h3 id="az-prov-title" className="az-section-label">Tahminin dayanağı</h3>
+        <dl>
+          <div>
+            <dt>Kanıt gücü</dt>
+            <dd><span className={`az-strength is-${ev.strength}`}>{STRENGTH_LABEL[ev.strength] || ev.strength}</span></dd>
+          </div>
+          <div><dt>Tahmin güveni</dt><dd>%{num(estimate.confidence_pct)}</dd></div>
+          {!ev.locked && ev.unique_comparables != null && (
+            <div><dt>Emsal araç</dt><dd>{num(ev.unique_comparables)}{ev.unique_sellers ? <small> · {num(ev.unique_sellers)} galeri</small> : null}</dd></div>
+          )}
+          {!ev.locked && ev.trim_match && (
+            <div><dt>Paket eşleşmesi</dt><dd>{TRIM_LABEL[ev.trim_match] || "—"}</dd></div>
+          )}
+          {!ev.locked && (
+            <div><dt>Veri tarihi</dt><dd>{ev.data_date ? new Date(ev.data_date).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : "Bilinmiyor"}</dd></div>
+          )}
+          <div><dt>Fiyat türü</dt><dd>İlan fiyatı</dd></div>
+        </dl>
+        <div className="az-evidence-cols">
+          {!ev.locked && ev.notes && ev.notes.length > 0 && (
+            <div>
+              <h4>Bu tahmin için</h4>
+              <ul className="az-evidence-notes">
+                {ev.notes.map((note) => <li key={note}>{note}</li>)}
+              </ul>
+            </div>
+          )}
+          <div>
+            <h4>Sınırlar</h4>
+            <ul className="az-evidence-notes is-limits">
+              <li>Fiyatlar ilan fiyatıdır; gerçekleşmiş satış fiyatı değildir.</li>
+              <li>Tahmin girdiğiniz araç bilgilerine dayanır; eksik veya hatalı bilgi sonucu etkiler.</li>
+              <li>Ekspertiz raporu ve tramer sorgusunun yerini tutmaz.</li>
+            </ul>
+          </div>
+        </div>
+        <p className="az-provenance-foot">
+          Analiz {new Date(data.generated_at).toLocaleString("tr-TR", { dateStyle: "medium", timeStyle: "short" })} tarihinde hesaplandı.
+          {!ev.locked && ev.window_days ? ` Emsaller son ${ev.window_days} günün galeri ilanlarından.` : ""}
+        </p>
+      </section>
+
+      {estimate.liste && ev.locked && (
+        <p className="estimate-note az-note">
+          <strong>Güncel piyasa.</strong> Tahmine son 30 günde yayınlanan {estimate.liste.count} benzer
+          ilan da katıldı (ağırlık %{Math.round(estimate.liste.weight * 100)}).
+        </p>
+      )}
 
       {estimate.fallback_reason && (
-        <p className="estimate-note">
+        <p className="estimate-note az-note">
           <strong>Not.</strong> {estimate.fallback_reason}
           {estimate.package_fallback && (
             <> Hesaba katılan paketler: {estimate.package_fallback.packages.join(", ")}.</>
@@ -155,11 +324,12 @@ export default function Results({ data }: { data: AnalysisResult }) {
         </p>
       )}
 
-      <p className="acc-intro">Detayları görmek için başlıklara dokunun.</p>
+
+      <h3 className="az-details-title">Ayrıntılar <span>Başlıklara dokunarak açın</span></h3>
 
       <div className="acc-list">
         <Section
-          icon="⇄" color="orange" title="Fiyat ve pazarlık"
+          color="orange" title="Fiyat ve pazarlık"
           hint="Pazarlık adımları, fiyatı etkileyenler ve tahminin dayanağı"
           chip={negotiation.available ? `Hedef ${tl(negotiation.target_price)}` : null}
         >
@@ -206,7 +376,7 @@ export default function Results({ data }: { data: AnalysisResult }) {
         </Section>
 
         <Section
-          icon="?" color="blue" title="Satıcıya Ne Sorulmalı?" hint="Açıklamada eksik veya çelişkili konular"
+          color="blue" title="Satıcıya ne sorulmalı?" hint="Açıklamada eksik veya çelişkili konular"
           chip={data.questions.length ? `${data.questions.length} soru` : null}
         >
           {data.questions.length ? (
@@ -224,7 +394,7 @@ export default function Results({ data }: { data: AnalysisResult }) {
         </Section>
 
         <Section
-          icon="◆" color="gold" title="İlan güvenilir mi?" hint="İlan kalitesi ve açıklama analizi"
+          color="gold" title="İlan güvenilir mi?" hint="İlan kalitesi ve açıklama analizi"
           chip={data.listing_quality.label}
         >
           <div className="quality-body">
@@ -234,12 +404,12 @@ export default function Results({ data }: { data: AnalysisResult }) {
           <DescriptionCard data={data.description_analysis} />
         </Section>
 
-        <Section icon="⚠" color="rose" title="Bu modelde bilinen sorunlar" hint="Kronik arızalar, artılar ve eksiler">
+        <Section color="rose" title="Bu modelde bilinen sorunlar" hint="Kronik arızalar, artılar ve eksiler">
           <VehicleTraits initial={data.vehicle_traits} />
         </Section>
 
         <Section
-          icon="≡" color="teal" title="Benzer ilanlar" hint="Şu an yayında olan emsal araçlar"
+          color="teal" title="Benzer ilanlar" hint="Şu an yayında olan emsal araçlar"
           chip={data.similar_listings.length ? `${data.similar_listings.length} ilan` : null}
         >
           {locks.similar_listings ? (
@@ -252,7 +422,7 @@ export default function Results({ data }: { data: AnalysisResult }) {
 
 
         <Section
-          icon="↘" color="red" title="İleride ne kadar değer kaybeder?" hint="1 ve 3 yıl sonraki tahmini değer"
+          color="red" title="İleride ne kadar değer kaybeder?" hint="1 ve 3 yıl sonraki tahmini değer"
           chip={locks.depreciation ? "Pro" : depreciation.available ? `1 yılda −${tl(depreciation.one_year_loss)}` : null}
         >
           {locks.depreciation ? (
@@ -275,7 +445,7 @@ export default function Results({ data }: { data: AnalysisResult }) {
         </Section>
 
         <Section
-          icon="◷" color="plum" title="Yıllık masrafı ne olur?" hint={`${num(tco.yillik_km_varsayimi)} km/yıl varsayımıyla`}
+          color="plum" title="Yıllık masrafı ne olur?" hint={`${num(tco.yillik_km_varsayimi)} km/yıl varsayımıyla`}
           chip={`${tl(tco.toplam_yillik_tl)} / yıl`}
         >
           <div className="total-cost">
@@ -294,11 +464,11 @@ export default function Results({ data }: { data: AnalysisResult }) {
           {tco.mtv.not && <p className="card-note">{tco.mtv.not}</p>}
         </Section>
 
-        <Section icon="₺" color="green" title="Piyasa durumu" hint="Aynı model için ortalama ilan fiyatının son 90 gündeki seyri">
+        <Section color="green" title="Piyasa durumu" hint="Aynı model için ortalama ilan fiyatının son 90 gündeki seyri">
           <TrendChart trend={data.price_trend} />
         </Section>
 
-        <Section icon="◎" color="teal" title="Bölge analizi"
+        <Section color="indigo" title="Bölge analizi"
           hint="Seçtiğiniz ilin ülke ortalamasına göre konumu"
           chip={data.regional_signal.delta_pct != null ? `${data.regional_signal.delta_pct > 0 ? "+" : ""}%${Math.abs(data.regional_signal.delta_pct).toLocaleString("tr-TR")}` : null}>
           {data.regional_signal.delta_pct != null ? (
@@ -324,7 +494,7 @@ export default function Results({ data }: { data: AnalysisResult }) {
 
       </div>
 
-      <p className="disclaimer">
+      <p className="disclaimer az-disclaimer">
         Tüm değerler istatistiksel tahmindir; ekspertiz raporu, tramer sorgusu veya
         resmî değerleme yerine geçmez.
       </p>

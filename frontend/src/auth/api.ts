@@ -55,8 +55,11 @@ function statusMessage(status: number): string {
   return "İşlem tamamlanamadı. Lütfen tekrar deneyin.";
 }
 
+// Kullanıcıya ham HTTP durum kodu gösterilmez; durum ApiError.status'ta kalır,
+// geliştirme ortamında yalnızca konsola yazılır.
 function annotate(message: string, status: number): string {
-  return import.meta.env.DEV ? `${message} [HTTP ${status}]` : message;
+  if (import.meta.env.DEV) console.debug(`[auth] HTTP ${status}: ${message}`);
+  return message;
 }
 
 export async function getMe(): Promise<User | null> {

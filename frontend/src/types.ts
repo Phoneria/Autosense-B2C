@@ -71,6 +71,8 @@ export interface AnalysisResult {
     fallback_reason: string | null;
     /** Paket seçilmediğinde: kaç paketin tahmini medyanlandı. */
     package_fallback: { count: number; packages: string[] } | null;
+    /** Son 30 günün liste ilanlarından gelen güncel piyasa bileşeni. */
+    liste?: { count: number; weight: number; period: [string, string] | null } | null;
   };
   decision: { label: string; title: string; score: number; deviation_pct: number };
   negotiation: {
@@ -155,6 +157,10 @@ export interface Billing {
   next_reset_at: string;
   reset_minutes: number;
   plan_features: string[];
+  /** true: tüm özellikler açık, analiz kredi harcamaz (B2C_OPEN_ACCESS). */
+  open_access?: boolean;
+  /** true: plan kredisi sınırsız (Premium). */
+  unlimited?: boolean;
 }
 
 export interface PlanOption { id: string; name: string; credits: number; price_label: string; features: string[] }

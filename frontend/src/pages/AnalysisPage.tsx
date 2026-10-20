@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { SECTION_PATHS, sectionFromPath, type Section } from "../sections";
 import { analyze, fetchBilling, lookupListingText, fetchGearDefault, fetchLocations, fetchVehicles } from "../api";
 import { ApiError } from "../http";
 import { toPayload, type VehicleInput } from "../payload";
-import AccountBadge from "../components/AccountBadge";
 import ScenarioTab from "./ScenarioTab";
 import ProfileTab from "./ProfileTab";
 import RegionalTab from "./RegionalTab";
 import GuideTab from "./GuideTab";
 import PlanLock from "../components/PlanLock";
-import AccountMenu from "../components/AccountMenu";
+import AppHeader from "../components/shell/AppHeader";
+import SiteFooter from "../components/shell/SiteFooter";
 import { PlanChangeContext } from "../planChange";
 import {
   CAR_PARTS, CATEGORIES, COLORS, DEFAULT_DAMAGE,
@@ -34,11 +36,17 @@ function Field({ label, optional, children }: {
 
 export default function AnalysisPage() {
   const { user, setBilling } = useAuth();
-  const [tab, setTab] = useState<"analysis" | "scenario" | "guide" | "regional" | "profile">("analysis");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const tab = sectionFromPath(location.pathname);
+  const setTab = (next: Section) => { if (next !== tab) navigate(SECTION_PATHS[next]); };
+  useEffect(() => {
+    const titles: Record<Section, string> = { analysis: "Analiz", guide: "Araç Rehberi", regional: "Bölgesel Fırsatlar", profile: "Hesabım" };
+    document.title = `${titles[tab]} · AutoSense`;
+  }, [tab]);
   const [base, setBase] = useState<{ input: VehicleInput; result: AnalysisResult } | null>(null);
   const planFeatures = user?.billing?.plan_features || ["analysis"];
   const can = (feature: string) => planFeatures.includes(feature);
-  const TAB_FEATURE: Record<string, string> = { scenario: "scenarios", guide: "guide", regional: "regional" };
   const requestPlan = (plan: "pro" | "premium") => { setPendingPlan(plan); setTab("profile"); };
   const [pendingPlan, setPendingPlan] = useState<"pro" | "premium" | null>(null);
   const [autoAnalyze, setAutoAnalyze] = useState(false);
@@ -71,6 +79,7 @@ export default function AnalysisPage() {
 
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [showScenarios, setShowScenarios] = useState(false);
 
   useEffect(() => {
     fetchVehicles()
@@ -90,7 +99,7 @@ export default function AnalysisPage() {
     if (!plan || firstPlan.current === undefined) { firstPlan.current = plan; return; }
     if (firstPlan.current === plan) return;
     firstPlan.current = plan;
-    setResult(null); setBase(null); setError(""); setLookupText(""); setLookupNotice("");
+    setResult(null); setBase(null); setShowScenarios(false); setError(""); setLookupText(""); setLookupNotice("");
     setCategory("otomobil"); setBrandSlug(""); setSeriesSlug(""); setEngineSlug(""); setPackageSlug("");
     setYear(""); setKm(""); setPrice(""); setCity(""); setDistrict("");
     setFuel(""); setGear(""); setColor(""); setDescription(""); setAgirHasar(false);
@@ -107,6 +116,7 @@ export default function AnalysisPage() {
   const packages = engine?.variants?.length ? engine.variants : series?.variants || [];
   const pack = packages.find((p) => p.slug === packageSlug);
   const districts = locations.find((l) => l.city === city)?.districts || [];
+  const filled = [brand, series, engine, year, km, price].filter(Boolean).length;
 
   // Motor değişince yakıtı tahmin et, vitesi backend'den öğren.
   useEffect(() => {
@@ -189,6 +199,7 @@ export default function AnalysisPage() {
     setSubmitting(true);
     setError("");
     setResult(null);
+    setShowScenarios(false);
     try {
       const input: VehicleInput = {
         category: brand.category,
@@ -231,94 +242,54 @@ export default function AnalysisPage() {
     <PlanChangeContext.Provider value={requestPlan}>
       <div className="app-shell">
       <div className="app-main">
-      <header className="topbar">
-        <button type="button" className="brand-logo" onClick={() => setTab("analysis")} aria-label="Analiz sayfasına git">
-          <img src="/autosense-logo-trim.png" alt="AutoSense" />
-        </button>
-        <nav className="top-nav" aria-label="Bölümler">
-          {([
-            ["analysis", "Analiz"], ["guide", "Araç Rehberi"], ["regional", "Bölgesel Fırsatlar"],
-          ] as const).map(([key, label]) => {
-            const locked = !!TAB_FEATURE[key] && !can(TAB_FEATURE[key]);
-            const active = tab === key || (key === "analysis" && tab === "scenario");
-            return (
-              <button key={key} type="button" className={`${active ? "active" : ""}${locked ? " locked" : ""}`}
-                aria-current={active ? "page" : undefined} onClick={() => setTab(key)}>
-                {label}
-                {locked && <em className="tab-lock">PRO</em>}
-              </button>
-            );
-          })}
-        </nav>
-        <div className="account-nav">
-          <AccountBadge onOpen={() => setTab("profile")} />
-          <AccountMenu onProfile={() => setTab("profile")} />
-        </div>
-      </header>
+      <AppHeader can={can} onProfile={() => setTab("profile")} />
 
-      {(tab === "analysis" || tab === "scenario") && (
-        <nav className="tabbar" aria-label="Analiz bölümleri">
-          {([["analysis", "Analiz"], ["scenario", "Senaryolar"]] as const).map(([key, label]) => (
-            <button key={key} type="button" className={`tab-${key}${tab === key ? " active" : ""}${key === "scenario" && !can("scenarios") ? " locked" : ""}`}
-              aria-current={tab === key ? "page" : undefined} onClick={() => setTab(key)}>
-              {label}
-              {key === "scenario" && !can("scenarios") && <em className="tab-lock">Pro</em>}
-            </button>
-          ))}
-        </nav>
-      )}
-      {tab === "scenario" && (can("scenarios") ? <ScenarioTab base={base} onGoAnalysis={() => setTab("analysis")} /> : (
-        <PlanLock eyebrow="NE OLURDU?" title="Senaryolar" requiredPlan="pro"
-          description="Km, hasar, paket veya vites farklı olsaydı piyasa değeri nasıl değişirdi?"
-          bullets={["Hızlı senaryolar: km ±20.000, hasarsız, paketi bilmiyorum…", "Kendi senaryonuzu kurun, 6 senaryoyu yan yana kıyaslayın", "Senaryolar kredi harcamaz"]} />
-      ))}
       {tab === "guide" && (can("guide") ? <GuideTab /> : (
         <PlanLock eyebrow="ARAÇ REHBERİ" title="Piyasada neler oluyor?" requiredPlan="pro"
           description="En çok talep gören modeller, fiyat trendleri ve modellere özel kronik sorunlar."
-          bullets={["En çok talep gören, en hızlı satılan, fiyatı yükselen / düşen modeller", "Model arama ve talep listeleri", "Premium'da: model sayfası, fiyat/satış grafikleri, kronik sorunlar, karşılaştırma"]} />
+          bullets={["En çok talep gören, en kısa sürede ilandan kalkan, fiyatı yükselen / düşen modeller", "Model arama ve talep listeleri", "Premium'da: model sayfası, fiyat ve ilandan kalkan (tahmini) grafikleri, kronik sorunlar, karşılaştırma"]} />
       ))}
       {tab === "regional" && (can("regional") ? <RegionalTab /> : (
         <PlanLock eyebrow="BÖLGESEL FIRSATLAR" title="Bölgesel fırsatlar" requiredPlan="pro"
-          description="Bir şehirde hangi modellerin hangi ilçede şehrin geri kalanına göre daha uygun satıldığını görün."
-          bullets={["İlçe bazında en uygun modeller", "İlçe ısı haritası", "Aynı model için ilçe ilçe karşılaştırma", "Premium'da: her fırsatın arkasındaki gerçek ilanlar"]} />
+          description="Bir modelin hangi ilde ülkenin geri kalanına göre daha uygun fiyatla ilan verildiğini ve bir ilde hangi modellerin avantajlı fiyatlandığını görün."
+          bullets={["Aracın en uygun olduğu iller (il bazında karşılaştırma)", "Bir ildeki en uygun modeller", "Ülkeye göre fiyat farkı, örneklem ve veri tarihi", "Premium'da: her fırsatın arkasındaki gerçek ilanlar"]} />
       ))}
       {tab === "profile" && <ProfileTab pendingPlan={pendingPlan} onPendingHandled={() => setPendingPlan(null)} />}
-      <div hidden={tab !== "analysis"}>
-      <section className="hero">
-        <div>
-          <span className="eyebrow">İKİNCİ EL ARAÇ ANALİZİ</span>
-          <h1>Bu ilan <i>gerçekten</i> uygun mu?</h1>
-        </div>
-      </section>
-
-      <form className="analysis-shell" onSubmit={onSubmit}>
-        <div className="section-heading">
-          <div>
-            <span className="step">1</span>
-            <div>
-              <h2>Araç ve ilan bilgileri</h2>
-              <p>İl ve ilçe opsiyoneldir — seçerseniz bölgesel karşılaştırma da yapılır</p>
-            </div>
+      <div className="az-page" hidden={tab !== "analysis"}>
+      <form className="az-form" onSubmit={onSubmit}>
+        <section className="az-card az-quick" aria-labelledby="az-quick-title">
+          <div className="az-card-head">
+            <h2 id="az-quick-title">Hızlı başlangıç <em>Opsiyonel</em></h2>
+            <p>İlan sayfasının tamamını yapıştırın; araç bilgileri, hasar durumu ve açıklama otomatik doldurulur. Doldurulan alanları kontrol edin.</p>
           </div>
-        </div>
-
-        <div className="listing-autofill">
-          <Field label="İlan metninden otomatik doldur" optional>
+          <div className="listing-autofill az-autofill">
+            <Field label="İlan metninden otomatik doldur" optional>
             <textarea value={lookupText} maxLength={500000} disabled={lookupLoading}
               onChange={(e) => { setLookupText(e.target.value); setLookupNotice(""); }}
               placeholder="arabam.com veya sahibinden.com ilan sayfasının tamamını kopyalayıp buraya yapıştırın." />
           </Field>
-          <button type="button" className="primary-button" onClick={onLookupText}
+            <div className="az-autofill-actions">
+              <button type="button" className="az-btn-secondary" onClick={onLookupText}
             disabled={lookupLoading || loadingOptions || !vehicles.length || !lookupText.trim() || submitting}>
             {lookupLoading ? "Metin okunuyor…" : "Metinden doldur"}
           </button>
-          {lookupNotice && <p role="status">{lookupNotice}</p>}
-        </div>
-        <fieldset className="vehicle-fields" disabled={lookupLoading}>
-        <div className="form-grid">
-          <div className="vehicle-form">
-            <div className="fields-grid three">
-              <Field label="Kategori">
+              {lookupNotice && <p role="status" className="az-notice">{lookupNotice}</p>}
+            </div>
+          </div>
+        </section>
+
+        <fieldset className="vehicle-fields az-fieldset" disabled={lookupLoading}>
+          <div className="az-layout">
+            <section className="az-card az-fields" aria-labelledby="az-fields-title">
+              <div className="az-card-head">
+                <h2 id="az-fields-title"><span className="az-step is-blue">1</span>Araç ve ilan bilgileri</h2>
+                <p>“Opsiyonel” işaretli olmayan alanlar analiz için gereklidir. İl seçerseniz bölgesel karşılaştırma da yapılır.</p>
+              </div>
+
+              <div className="az-group">
+                <h3>Araç</h3>
+                <div className="az-grid az-grid-3">
+                  <Field label="Kategori">
                 <select value={category} onChange={(e) => {
                   setCategory(e.target.value);
                   setBrandSlug(""); setSeriesSlug(""); setEngineSlug(""); setPackageSlug("");
@@ -326,7 +297,7 @@ export default function AnalysisPage() {
                   {CATEGORIES.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
                 </select>
               </Field>
-              <Field label="Marka">
+                  <Field label="Marka">
                 <select
                   value={brandSlug}
                   disabled={loadingOptions}
@@ -336,7 +307,7 @@ export default function AnalysisPage() {
                   {brands.map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
                 </select>
               </Field>
-              <Field label="Seri">
+                  <Field label="Seri">
                 <select
                   value={seriesSlug}
                   disabled={!brand}
@@ -346,142 +317,175 @@ export default function AnalysisPage() {
                   {brand?.series.map((s) => <option key={s.slug} value={s.slug}>{s.name}</option>)}
                 </select>
               </Field>
-            </div>
-
-            <div className="fields-grid two">
-              <Field label="Motor">
+                </div>
+                <div className="az-grid az-grid-2">
+                  <Field label="Motor">
                 <select value={engineSlug} disabled={!series}
                         onChange={(e) => { setEngineSlug(e.target.value); setPackageSlug(""); }}>
                   <option value="">Seçiniz</option>
                   {series?.engines.map((e) => <option key={e.slug} value={e.slug}>{e.name}</option>)}
                 </select>
               </Field>
-              <Field label="Paket" optional>
+                  <Field label="Paket" optional>
                 <select value={packageSlug} disabled={!packages.length}
                         onChange={(e) => setPackageSlug(e.target.value)}>
                   <option value="">Seçiniz</option>
                   {packages.map((p) => <option key={p.slug} value={p.slug}>{p.name}</option>)}
                 </select>
               </Field>
-            </div>
+                </div>
+              </div>
 
-            <div className="fields-grid three">
-              <Field label="Model yılı">
+              <div className="az-group az-group-key">
+                <h3>Kullanım ve fiyat</h3>
+                <div className="az-grid az-grid-3">
+                  <Field label="Model yılı">
                 <input type="number" inputMode="numeric" min={1950} max={new Date().getFullYear() + 1}
                        value={year} placeholder="2019" onChange={(e) => setYear(e.target.value)} />
               </Field>
-              <Field label="Kilometre">
+                  <Field label="Kilometre">
                 <div className="input-unit">
                   <input inputMode="numeric" value={groupDigits(km)} placeholder="120.000"
                          onChange={(e) => setKm(e.target.value.replace(/\D/g, ""))} />
                   <span>km</span>
                 </div>
               </Field>
-              <Field label="İlan fiyatı">
+                  <Field label="İlan fiyatı">
                 <div className="input-unit">
                   <input inputMode="numeric" value={groupDigits(price)} placeholder="850.000"
                          onChange={(e) => setPrice(e.target.value.replace(/\D/g, ""))} />
                   <span>TL</span>
                 </div>
               </Field>
-            </div>
+                </div>
+              </div>
 
-            <div className="fields-grid three">
-              <Field label="İl" optional>
+              <div className="az-group az-group-optional">
+                <h3>Konum ve donanım <em>Opsiyonel</em></h3>
+                <div className="az-grid az-grid-3">
+                  <Field label="İl" optional>
                 <select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(""); }}>
                   <option value="">{locations.length ? "Seçiniz" : "Yüklenemedi"}</option>
                   {locations.map((l) => <option key={l.city} value={l.city}>{l.city}</option>)}
                 </select>
               </Field>
-              <Field label="İlçe" optional>
+                  <Field label="İlçe" optional>
                 <select value={district} disabled={!districts.length}
                         onChange={(e) => setDistrict(e.target.value)}>
                   <option value="">Seçiniz</option>
                   {districts.map((d) => <option key={d} value={d}>{d}</option>)}
                 </select>
               </Field>
-              <Field label="Renk" optional>
+                  <Field label="Renk" optional>
                 <select value={color} onChange={(e) => setColor(e.target.value)}>
                   <option value="">Seçiniz</option>
                   {COLORS.map((c) => <option key={c} value={c}>{c}</option>)}
                 </select>
               </Field>
-            </div>
-
-            <div className="fields-grid two">
-              <Field label="Yakıt" optional>
+                </div>
+                <div className="az-grid az-grid-2">
+                  <Field label="Yakıt" optional>
                 <select value={fuel} onChange={(e) => setFuel(e.target.value)}>
                   <option value="">Seçiniz</option>
                   {FUEL_OPTIONS.map((f) => <option key={f} value={f}>{f}</option>)}
                 </select>
               </Field>
-              <Field label="Vites" optional>
+                  <Field label="Vites" optional>
                 <select value={gear} onChange={(e) => setGear(e.target.value)}>
                   <option value="">Seçiniz</option>
                   {GEAR_OPTIONS.map((g) => <option key={g} value={g}>{g}</option>)}
                 </select>
               </Field>
-            </div>
+                </div>
+              </div>
 
-            <div className="fields-grid">
-              <Field label="İlan açıklaması" optional>
+              <div className="az-group az-group-optional">
+                <Field label="İlan açıklaması" optional>
                 <textarea
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="İlandaki açıklama metnini buraya yapıştırın. Metindeki iddiaları girdiğiniz araç bilgileriyle karşılaştırıp çelişkileri işaretlerim."
                 />
               </Field>
-            </div>
-          </div>
+              </div>
+            </section>
 
-          <DamageMap
+            <section className="az-card az-damage">
+              <DamageMap
             damage={damage} onChange={setDamage}
             agirHasar={agirHasar} onAgirHasarChange={setAgirHasar}
           />
-        </div>
-
+            </section>
+          </div>
         </fieldset>
 
-        {error && <p role="alert" className="form-error">{error}</p>}
+        {error && <p role="alert" className="form-error az-error">{error}</p>}
 
-        <div className="submit-row">
-          <button type="submit" className="primary-button" disabled={submitting || lookupLoading}>
-            {submitting ? "Analiz ediliyor…" : "Analizi başlat"}
-            <span>→</span>
-          </button>
-          {user?.billing && (
+        <div className={`az-submit${filled === 6 ? " is-ready" : ""}`}>
+          <div className="az-progress" role="status" aria-label={`Zorunlu alanlar: ${filled} / 6`}>
+            <div className="az-progress-head">
+              <b>{filled === 6 ? "Analize hazır" : `${filled} / 6 zorunlu alan dolu`}</b>
+              <small>Marka · Seri · Motor · Yıl · Km · Fiyat</small>
+            </div>
+            <div className="az-progress-track"><span style={{ width: `${(filled / 6) * 100}%` }} /></div>
+          </div>
+          <div className="az-submit-actions">
+            {user?.billing && !user.billing.open_access && !user.billing.unlimited && (
             <p className="credit-hint">
               Her analiz <b>1 kredi</b> harcar · Kalan: <b>{user.billing.total_credits}</b>
-              {user.billing.total_credits === 0 && <> · <button type="button" onClick={() => setTab("profile")}>{can("extra_credits") ? "Kredi ekle" : "Planı yükselt"}</button></>}
+              {user.billing.total_credits === 0 && <> · Krediler her gün 00:00'da yenilenir · <button type="button" onClick={() => setTab("profile")}>Planı yükselt</button></>}
             </p>
           )}
+            <button type="submit" className="primary-button az-submit-btn" disabled={submitting || lookupLoading}>
+              {submitting ? "Analiz ediliyor…" : "Analizi başlat"}
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
         </div>
       </form>
 
-      {result ? <Results data={result} /> : (
-        <div className="empty-results">
-          <span>↓</span>
+      {result ? (
+        <>
+          <Results data={result} />
+          <div className={`sc-launch${showScenarios ? " is-open" : ""}`}>
+            {!showScenarios && (
+              <button type="button" className="sc-launch-btn" onClick={() => {
+                setShowScenarios(true);
+                window.setTimeout(() => document.getElementById("scenarios")?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+              }}>
+                <span className="sc-launch-text"><b>Alternatif Senaryoları İncele</b><small>Km, hasar, paket veya yıl farklı olsaydı değer nasıl değişirdi?</small></span>
+                <span className="sc-launch-arrow" aria-hidden="true">→</span>
+              </button>
+            )}
+          </div>
+          {showScenarios && (
+            <div className="sc-inline" id="scenarios">
+              {can("scenarios") ? (
+                <ScenarioTab base={base} embedded onClose={() => setShowScenarios(false)}
+                  onGoAnalysis={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
+              ) : (
+                <PlanLock eyebrow="NE OLURDU?" title="Alternatif senaryolar" requiredPlan="pro"
+                  description="Km, hasar, paket veya vites farklı olsaydı piyasa değeri nasıl değişirdi?"
+                  bullets={["Hızlı senaryolar: km ±20.000, hasarsız, paketi bilmiyorum…", "Kendi senaryonuzu kurun, 6 senaryoyu yan yana kıyaslayın", "Senaryolar kredi harcamaz"]} />
+              )}
+            </div>
+          )}
+        </>
+      ) : (
+        <div className="az-empty">
+          <div className="az-empty-preview" aria-hidden="true">
+            <div className="az-empty-banner"><i>✓</i><span><b>%8 piyasanın altında</b><small>Örnek sonuç</small></span><em>8,4<small>/10</small></em></div>
+            <div className="az-empty-bar"><span /></div>
+            <div className="az-empty-chips"><span className="is-good">Veri gücü · Güçlü</span><span className="is-mid">2 soru</span><span className="is-info">Hedef fiyat</span></div>
+          </div>
           <h2>Analiz sonucunuz burada görünecek</h2>
-          <p>Formu doldurup “Analizi başlat” butonuna basın.</p>
+          <p>Formu doldurup “Analizi başlat” düğmesine basın. Sonuç tek renkli bir kararla gelir: yeşil uygun, mavi piyasa, turuncu yüksek, kırmızı pahalı.</p>
         </div>
       )}
       </div>
       </div>
 
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-brand">
-            <div className="footer-logo"><img src="/autosense-logo-trim.png" alt="AutoSense" /></div>
-            <p>Analizler mevcut ilan ve fiyat referanslarına dayanır; ekspertiz raporu yerine geçmez.</p>
-          </div>
-          <div className="footer-contact">
-            <strong>İletişim</strong>
-            <p>Soru, geri bildirim ve iş birliği için bize yazın:</p>
-            <a href="mailto:autosense@gmail.org?subject=AutoSense%20ileti%C5%9Fim">autosense@gmail.org</a>
-          </div>
-        </div>
-        <div className="footer-bottom">© {new Date().getFullYear()} AutoSense</div>
-      </footer>
+      <SiteFooter />
       </div>
     </PlanChangeContext.Provider>
   );

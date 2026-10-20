@@ -79,13 +79,6 @@ export async function choosePlan(plan: string): Promise<BillingDetails> {
   return json<BillingDetails>(r, "Plan değiştirilemedi.");
 }
 
-export async function addCredits(amount: number): Promise<BillingDetails> {
-  const r = await request(`${API}/b2c/account/credits`, {
-    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ amount }),
-  });
-  return json<BillingDetails>(r, "Kredi eklenemedi.");
-}
-
 export async function runScenario(payload: Record<string, unknown>): Promise<ScenarioResult> {
   const r = await request(`${API}/b2c/scenario`, {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload),

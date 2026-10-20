@@ -4,9 +4,31 @@ import { Link, Navigate, useNavigate, useParams, useSearchParams, useLocation } 
 import { authRequest, resend } from "../auth/api";
 import { ApiError } from "../http";
 import { useAuth } from "../auth/AuthProvider";
+import { safeNext } from "../sections";
+import { GoogleButton, googleErrorMessage } from "../auth/google";
+import Logo from "../components/shell/Logo";
 
 function Shell({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {
-  return <main className="auth-layout"><section className="auth-story"><Link to="/" className="brand-logo"><img src="/autosense-logo.png" alt="AutoSense" /></Link><div><span className="eyebrow">DAHA BİLİNÇLİ BİR ARAÇ KARARI</span><h1>İlanın ötesini<br /><i>görün.</i></h1><p>Gerçek piyasa verilerini keşfedin. Fiyatı karşılaştırın, detayları inceleyin ve bir sonraki adımınızı güvenle atın.</p></div><span className="auth-story-foot">İkinci el araç analizi · AutoSense</span></section><section className="auth-panel"><div className="auth-card"><span className="eyebrow">AUTOSENSE HESABINIZ</span><h2>{title}</h2><p className="auth-intro">{intro}</p>{children}</div></section></main>;
+  return (
+    <div className="as-auth">
+      <header className="as-auth-top">
+        <Logo />
+        <Link to="/" className="as-link-quiet">Ana sayfa</Link>
+      </header>
+      <main className="as-auth-main">
+        <div className="auth-card as-auth-card">
+          <h1 className="as-auth-title">{title}</h1>
+          <p className="auth-intro">{intro}</p>
+          {children}
+        </div>
+        <p className="as-auth-note">Tahminler ilan fiyatlarına dayanır; ekspertiz yerine geçmez.</p>
+      </main>
+      <footer className="as-auth-foot">
+        <span>© {new Date().getFullYear()} AutoSense</span>
+        <nav className="auth-legal" aria-label="Yasal bağlantılar"><Link to="/gizlilik">Gizlilik ve çerezler</Link><Link to="/kvkk">KVKK aydınlatma metni</Link></nav>
+      </footer>
+    </div>
+  );
 }
 function Input({ label, type, value, onChange, autoComplete }: { label: string; type: string; value: string; onChange: (value: string) => void; autoComplete: string }) {
   const [show, setShow] = useState(false);
@@ -22,10 +44,9 @@ function rememberEmail(email: string) {
 function pendingEmail() {
   try { return sessionStorage.getItem(PENDING_EMAIL) || ""; } catch { return ""; }
 }
-function safeNext(value: string | null) { return value === "/" || value?.startsWith("/?") ? value : "/"; }
 export function LoginPage() {
   const { user, loading, reload } = useAuth(); const navigate = useNavigate(); const [params] = useSearchParams();
-  const [email, setEmail] = useState(""), [password, setPassword] = useState(""), [busy, setBusy] = useState(false), [error, setError] = useState("");
+  const [email, setEmail] = useState(""), [password, setPassword] = useState(""), [busy, setBusy] = useState(false), [error, setError] = useState(() => googleErrorMessage(params.get("error")));
   if (!loading && user) return <Navigate to={safeNext(params.get("next"))} replace />;
   async function submit(e: FormEvent) { e.preventDefault(); setBusy(true); setError(""); try {
     const data = await authRequest("auth/login", { email: email.trim(), password });
@@ -33,12 +54,12 @@ export function LoginPage() {
     if (!await reload()) throw new Error("Giriş tamamlanamadı. E-posta adresinizi ve parolanızı kontrol edin.");
     navigate(safeNext(params.get("next")), { replace: true });
   } catch (e) { setError(e instanceof Error ? e.message : "Giriş yapılamadı."); } finally { setBusy(false); } }
-  return <Shell title="Tekrar hoş geldiniz." intro="Araç analizinize devam etmek için giriş yapın."><form onSubmit={submit} className="auth-form"><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="current-password" value={password} onChange={setPassword} /><Link className="auth-forgot" to="/forgot-password">Parolamı unuttum</Link><ErrorMessage message={error} /><button className="primary-button" disabled={busy || loading}>{busy ? "Giriş yapılıyor…" : "Giriş yap"}<span>→</span></button></form><p className="auth-switch">Hesabınız yok mu? <Link to="/signup">Hesap oluşturun</Link></p></Shell>;
+  return <Shell title="Tekrar hoş geldiniz." intro="Araç analizinize devam etmek için giriş yapın."><GoogleButton /><form onSubmit={submit} className="auth-form"><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="current-password" value={password} onChange={setPassword} /><Link className="auth-forgot" to="/forgot-password">Parolamı unuttum</Link><ErrorMessage message={error} /><button className="primary-button" disabled={busy || loading}>{busy ? "Giriş yapılıyor…" : "Giriş yap"}<span>→</span></button></form><p className="auth-switch">Hesabınız yok mu? <Link to="/signup">Hesap oluşturun</Link></p></Shell>;
 }
 export function SignupPage() {
   const navigate = useNavigate(); const [email, setEmail] = useState(""), [password, setPassword] = useState(""), [confirm, setConfirm] = useState(""), [busy, setBusy] = useState(false), [error, setError] = useState("");
   async function submit(e: FormEvent) { e.preventDefault(); if (password !== confirm) { setError("Parolalar eşleşmiyor."); return; } setBusy(true); setError(""); try { await authRequest("auth/signup", { email: email.trim(), password }); rememberEmail(email); navigate("/verify-email", { state: { email: email.trim() } }); } catch (e) { if (e instanceof ApiError && e.status === 409) { rememberEmail(email); navigate("/verify-email", { state: { email: email.trim() } }); return; } setError(e instanceof Error ? e.message : "Hesap oluşturulamadı."); } finally { setBusy(false); } }
-  return <Shell title="İlk adım, hesabınız." intro="Hesabınızı oluşturun, e-postanızı doğrulayın ve araçları analiz etmeye başlayın."><form className="auth-form" onSubmit={submit}><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="new-password" value={password} onChange={setPassword} /><p className="auth-hint">En az 10 karakter kullanın. Yaygın veya yalnızca rakamlardan oluşan parolalardan kaçının.</p><Input label="Parola tekrar" type="password" autoComplete="new-password" value={confirm} onChange={setConfirm} /><ErrorMessage message={error} /><button className="primary-button" disabled={busy}>{busy ? "Hesap oluşturuluyor…" : "Hesap oluştur"}<span>→</span></button></form><p className="auth-switch">Zaten hesabınız var mı? <Link to="/login">Giriş yapın</Link></p></Shell>;
+  return <Shell title="İlk adım, hesabınız." intro="Hesabınızı oluşturun, e-postanızı doğrulayın ve araçları analiz etmeye başlayın."><GoogleButton label="Google ile kayıt ol" /><form className="auth-form" onSubmit={submit}><Input label="E-posta" type="email" autoComplete="username" value={email} onChange={setEmail} /><Input label="Parola" type="password" autoComplete="new-password" value={password} onChange={setPassword} /><p className="auth-hint">En az 10 karakter kullanın. Yaygın veya yalnızca rakamlardan oluşan parolalardan kaçının.</p><Input label="Parola tekrar" type="password" autoComplete="new-password" value={confirm} onChange={setConfirm} /><ErrorMessage message={error} /><button className="primary-button" disabled={busy}>{busy ? "Hesap oluşturuluyor…" : "Hesap oluştur"}<span>→</span></button></form><p className="auth-switch">Zaten hesabınız var mı? <Link to="/login">Giriş yapın</Link></p></Shell>;
 }
 export function VerifyEmailPage() {
   const location = useLocation(); const navigate = useNavigate(); const { reload } = useAuth();

@@ -1,0 +1,455 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   AutoSense — Analiz çalışma alanı (form, hasar haritası, sonuç)
+   Önek: az-*. Yalnızca tokens.css değişkenleri.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.az-page { max-width: var(--content-app); margin: 0 auto; padding: var(--space-7) var(--space-6) var(--space-8); }
+
+/* ── Başlık ─────────────────────────────────────────────────────────── */
+.az-head { max-width: 720px; margin-bottom: var(--space-6); }
+.az-head h1 { margin: var(--space-3) 0 0; font-size: clamp(30px, 3.4vw, 44px); font-weight: 600; line-height: 1.08; letter-spacing: var(--tracking-tight); color: var(--color-ink); }
+.az-head p { margin: var(--space-3) 0 0; color: var(--color-text-muted); font-size: var(--text-body); line-height: 1.6; }
+
+/* ── Kart ───────────────────────────────────────────────────────────── */
+.az-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: var(--space-6); }
+.az-card-head { position: relative; margin-bottom: var(--space-5); }
+.az-card-head h2 { display: flex; align-items: center; gap: 10px; margin: 0; font-size: var(--text-h3); font-weight: 600; letter-spacing: -0.015em; color: var(--color-text); }
+.az-card-head h2 em, .az-group h3 em { font-style: normal; font-size: var(--text-caption); font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--color-text-muted); }
+.az-card-head p { margin: 6px 0 0; max-width: 62ch; color: var(--color-text-muted); font-size: var(--text-body-sm); line-height: 1.55; }
+.az-step { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text); font-size: var(--text-caption); font-weight: 600; flex: none; font-variant-numeric: tabular-nums; }
+
+/* ── Form ───────────────────────────────────────────────────────────── */
+.az-form { display: grid; gap: var(--space-4); }
+.az-fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.az-fieldset:disabled { opacity: .7; }
+
+.az-quick { padding: var(--space-5) var(--space-6); background: var(--color-surface); }
+.az-quick .az-card-head { margin-bottom: var(--space-3); }
+.az-autofill { margin: 0; padding: 0; border: 0; border-radius: 0; }
+.az-autofill .field > span { display: none; } /* başlık kartın kendisinde */
+.az-autofill textarea { min-height: 88px; }
+.az-autofill-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-3); }
+.az-btn-secondary {
+  display: inline-flex; align-items: center; justify-content: center; min-height: var(--control-height); padding: 0 18px;
+  background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border-strong); border-radius: var(--radius-control);
+  font: 600 var(--text-body-sm)/1 var(--font-sans); cursor: pointer;
+  transition: background var(--motion-fast) var(--ease), border-color var(--motion-fast) var(--ease);
+}
+.az-btn-secondary:hover:not(:disabled) { background: var(--color-surface-sunken); border-color: var(--color-border-hover); }
+.az-btn-secondary:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+.az-btn-secondary:disabled { background: var(--color-surface-sunken); border-color: var(--color-border); color: var(--color-text-muted); cursor: not-allowed; }
+.az-notice { margin: 0; padding: 8px 12px; border-radius: var(--radius-control); background: var(--color-success-soft); color: var(--color-success-text); font-size: var(--text-body-sm); }
+
+.az-layout { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-4); align-items: start; }
+.az-group { padding: var(--space-5) 0 0; border-top: 1px solid var(--color-border); }
+.az-group + .az-group { margin-top: var(--space-5); }
+.az-card-head + .az-group { padding-top: 0; border-top: 0; }
+.az-group h3 { display: flex; align-items: baseline; gap: 8px; margin: 0 0 var(--space-3); color: var(--color-text); font-size: var(--text-caption); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+.az-group-key { margin-left: calc(-1 * var(--space-6)); margin-right: calc(-1 * var(--space-6)); padding: var(--space-5) var(--space-6); background: var(--color-canvas); border-bottom: 1px solid var(--color-border); }
+.az-group-key + .az-group { border-top: 0; }
+.az-group-key .field :is(input, select) { background: var(--color-surface); }
+.az-group-optional h3 { color: var(--color-text-muted); }
+.az-grid { display: grid; gap: var(--space-4); }
+.az-grid + .az-grid { margin-top: var(--space-4); }
+.az-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.az-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.az-fields .field { display: grid; gap: 6px; min-width: 0; }
+.az-fields .field > span { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-weight: 500; }
+.az-fields .field :is(select, input) { width: 100%; min-width: 0; height: 44px; }
+.az-fields textarea { min-height: 104px; }
+.az-fields .input-unit input { font-variant-numeric: tabular-nums; }
+.input-unit span { color: var(--color-text-muted); font-size: var(--text-label); }
+
+/* ── Hasar haritası ─────────────────────────────────────────────────── */
+.az-damage { position: sticky; top: 84px; }
+.az-damage-panel { padding: 0; background: none; border: 0; }
+.az-damage-head { margin-bottom: var(--space-4); }
+.az-damage-count { display: inline-block; margin-top: 10px; padding: 3px 10px; border-radius: var(--radius-chip); background: var(--color-surface-sunken); color: var(--color-text); font-size: var(--text-caption); font-weight: 600; font-variant-numeric: tabular-nums; }
+.az-damage-count.has-marks { background: var(--color-accent-soft); color: var(--color-accent-text); }
+.az-direction { margin: 0 0 8px; text-align: center; color: var(--color-text-muted); font-size: 11px; font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+.az-damage-panel .car-map + .az-direction { margin: 8px 0 0; }
+.az-damage-panel .car-map {
+  width: 100%; max-width: 380px; margin: 0 auto; gap: 6px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-rows: 44px 76px 64px 64px 76px 44px;
+}
+.az-damage-panel .car-part {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  min-height: 44px; padding: 4px; color: var(--color-text); background: var(--color-surface-sunken); border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-control); font-size: 12px; font-weight: 600; line-height: 1.15; text-align: center;
+  transition: background var(--motion-fast) var(--ease), border-color var(--motion-fast) var(--ease), box-shadow var(--motion-fast) var(--ease);
+}
+.az-damage-panel .car-part:hover { filter: none; transform: none; box-shadow: 0 0 0 2px var(--color-border-hover); }
+.az-damage-panel .car-part:active { box-shadow: 0 0 0 2px var(--color-text); }
+.az-damage-panel .car-part:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+.car-part-state { display: block; font-size: 10.5px; font-weight: 500; }
+.az-damage-panel .car-part.original { background: var(--damage-original-bg); border-color: var(--damage-original-border); color: var(--damage-original-text); }
+.az-damage-panel .car-part.local { background: var(--damage-local-bg); border: 2px dashed var(--damage-local-border); color: var(--damage-local-text); }
+.az-damage-panel .car-part.painted { background: var(--damage-painted-bg); border: 2px solid var(--damage-painted-border); color: var(--damage-painted-text); }
+.az-damage-panel .car-part.changed { background: var(--damage-changed-bg); border: 2px solid var(--damage-changed-border); color: var(--damage-changed-text); }
+.az-damage-panel .car-part[style*=front], .az-damage-panel .car-part[style*=rear] { border-radius: 16px; }
+.az-damage-panel .az-legend { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; max-width: 380px; margin: var(--space-4) auto var(--space-3); padding: 0; list-style: none; font-size: var(--text-caption); color: var(--color-text-muted); }
+.az-legend li { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--color-border); border-radius: var(--radius-chip); background: var(--color-surface); }
+.az-legend li b { margin-left: auto; color: var(--color-text-muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+.az-legend li.has-count { color: var(--color-text); }
+.az-legend li.has-count b { color: var(--color-text); }
+.az-damage-panel .legend i { flex: none; width: 14px; height: 14px; border-radius: 4px; border: 1px solid var(--color-border-strong); }
+.az-damage-panel .legend i.original { background: var(--damage-original-bg); border-color: var(--damage-original-border); }
+.az-damage-panel .legend i.local { background: var(--damage-local-bg); border: 2px dashed var(--damage-local-border); }
+.az-damage-panel .legend i.painted { background: var(--damage-painted-bg); border: 2px solid var(--damage-painted-border); }
+.az-damage-panel .legend i.changed { background: var(--damage-changed-bg); border: 2px solid var(--damage-changed-border); }
+.az-damage-panel .reset { display: block; min-height: 32px; margin: 0 auto; padding: 4px 8px; border: 0; border-radius: var(--radius-chip); background: none; color: var(--color-accent-text); font-size: var(--text-label); font-weight: 500; cursor: pointer; }
+.az-damage-panel .reset:hover:not(:disabled) { background: var(--color-accent-soft); }
+.az-damage-panel .reset:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+.az-damage-panel .reset:disabled { color: var(--color-text-muted); cursor: default; }
+.az-check { display: flex; align-items: center; gap: 10px; height: auto; min-height: 44px; margin: var(--space-4) 0 0; padding: 0 14px; background: var(--color-surface); border: 1px solid var(--color-border-strong); border-radius: var(--radius-control); font-size: var(--text-body-sm); font-weight: 500; color: var(--color-text); cursor: pointer; }
+.az-check:has(input:checked) { border-color: var(--color-danger); background: var(--color-danger-soft); color: var(--color-danger-text); }
+.az-check:has(input:focus-visible) { outline: var(--focus-outline); outline-offset: 2px; }
+.az-check input { width: 18px; height: 18px; accent-color: var(--color-danger); margin: 0; }
+
+/* ── Gönder ─────────────────────────────────────────────────────────── */
+.az-error { margin: 0; padding: 10px 14px; background: var(--color-danger-soft); border-radius: var(--radius-control); }
+.az-submit {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  padding: var(--space-4) var(--space-5); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card);
+}
+.az-submit-note { margin: 0; color: var(--color-text-muted); font-size: var(--text-label); }
+.az-submit-actions { display: flex; align-items: center; gap: var(--space-4); }
+.az-submit-actions .credit-hint { margin: 0; color: var(--color-text-muted); font-size: var(--text-label); }
+.az-submit-actions .credit-hint button { padding: 0; border: 0; background: none; color: var(--color-accent-text); font: inherit; font-weight: 600; text-decoration: underline; cursor: pointer; }
+.primary-button.az-submit-btn { width: auto; min-width: 240px; min-height: 48px; margin: 0; padding: 0 22px; justify-content: space-between; gap: 24px; border-radius: var(--radius-control); font-size: var(--text-body); font-weight: 600; box-shadow: none; }
+.primary-button.az-submit-btn:hover:not(:disabled) { transform: none; }
+
+/* ── Boş sonuç ──────────────────────────────────────────────────────── */
+.az-empty { margin-top: var(--space-6); padding: var(--space-7) var(--space-5); text-align: center; border: 1px dashed var(--color-border-strong); border-radius: var(--radius-card); }
+.az-empty h2 { margin: 0; font-size: var(--text-h3); font-weight: 600; color: var(--color-text); }
+.az-empty p { max-width: 520px; margin: var(--space-2) auto 0; color: var(--color-text-muted); font-size: var(--text-body-sm); line-height: 1.6; }
+
+/* ── Sonuç ──────────────────────────────────────────────────────────── */
+.az-results { margin: var(--space-8) 0 0; padding: 0; max-width: none; background: transparent; border: 0; }
+.az-results, .az-results * { font-variant-numeric: tabular-nums; }
+.az-result-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-4); margin-bottom: var(--space-4); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); }
+.az-result-head h2 { margin: 0; font-size: var(--text-h2); font-weight: 600; letter-spacing: -0.025em; color: var(--color-text); }
+.az-results .az-result-vehicle { margin: 6px 0 0; color: var(--color-text-muted); font-size: var(--text-body-sm); }
+.az-result-actions { display: flex !important; gap: var(--space-2); }
+.az-result-actions button {
+  min-height: 38px; padding: 0 14px; background: var(--color-surface); color: var(--color-text);
+  border: 1px solid var(--color-border-strong); border-radius: var(--radius-control); font: 600 var(--text-label)/1 var(--font-sans); cursor: pointer;
+}
+.az-result-actions button:hover { border-color: var(--color-border-hover); background: var(--color-surface-sunken); }
+.az-result-actions button:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+.az-section-label { margin: 0 0 var(--space-3); color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+
+/* Özet paneli */
+.az-summary { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-feature); overflow: hidden; }
+.az-summary-top { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-6); align-items: start; padding: var(--space-6); }
+.az-verdict-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+.az-verdict-badge { display: inline-block; padding: 3px 10px; border-radius: var(--radius-chip); font-size: var(--text-caption); font-weight: 600; background: var(--color-surface-sunken); color: var(--color-text); border: 1px solid var(--color-border); }
+.tone-cheap .az-verdict-badge { background: var(--color-success-soft); color: var(--color-success-text); border-color: rgb(21 128 61 / 20%); }
+.tone-expensive .az-verdict-badge { background: var(--color-danger-soft); color: var(--color-danger-text); border-color: rgb(185 28 28 / 20%); }
+.az-score { color: var(--color-text-muted); font-size: var(--text-label); }
+.az-score b { color: var(--color-text); font-weight: 600; }
+.az-verdict-text h3 { margin: var(--space-3) 0 0; font-size: clamp(22px, 2.2vw, 28px); font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; color: var(--color-text); }
+.az-verdict-sentence { margin: var(--space-2) 0 0; font-size: var(--text-body); line-height: 1.6; color: var(--color-text-muted); }
+.az-verdict-sentence strong { color: var(--color-text); font-weight: 600; }
+.az-verdict-action { margin: 0; padding: var(--space-4); background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--radius-card); font-size: var(--text-body-sm); line-height: 1.6; color: var(--color-text); }
+.az-verdict-action span { display: block; margin-bottom: 4px; color: var(--color-accent-text); font-size: var(--text-caption); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+.az-verdict-action strong { font-weight: 600; }
+
+.az-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--color-border); }
+.az-metric { min-width: 0; padding: var(--space-5) var(--space-6); }
+.az-metric + .az-metric { border-left: 1px solid var(--color-border); }
+.az-metric dt { color: var(--color-text-muted); font-size: var(--text-label); font-weight: 500; }
+.az-metric dd { margin: 0; }
+.az-metric strong { display: block; margin-top: 6px; color: var(--color-text); font-size: var(--text-metric); font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; white-space: nowrap; }
+.az-metric small { display: block; margin-top: 4px; color: var(--color-text-muted); font-size: var(--text-caption); line-height: 1.45; }
+.az-metric.is-estimate { background: var(--color-accent-soft); }
+.az-metric.is-estimate dt { color: var(--color-accent-text); }
+.az-metric.is-diff.tone-expensive strong, .az-metric.is-diff.tone-expensive small { color: var(--color-danger-text); }
+.az-metric.is-diff.tone-cheap strong, .az-metric.is-diff.tone-cheap small { color: var(--color-success-text); }
+.az-metric.is-target strong { color: var(--color-success-text); }
+
+.az-summary-pos { padding: var(--space-5) var(--space-6) var(--space-6); border-top: 1px solid var(--color-border); }
+.az-pos { margin: 0; }
+.az-pos-row { position: relative; height: 44px; }
+.az-pos-tag { position: absolute; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; white-space: nowrap; line-height: 1.2; }
+.az-pos-top .az-pos-tag { bottom: 6px; }
+.az-pos-bottom .az-pos-tag { top: 6px; }
+.az-pos-tag small { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-pos-tag b { color: var(--color-text); font-size: var(--text-body-sm); font-weight: 600; }
+.az-pos-tag.is-listing b { color: var(--color-accent-text); }
+.az-pos-track { position: relative; height: 10px; border-radius: var(--radius-pill); background: var(--color-surface-sunken); box-shadow: inset 0 0 0 1px var(--color-border); }
+.az-pos-band { position: absolute; top: 0; bottom: 0; border-radius: var(--radius-pill); background: rgb(37 99 235 / 18%); box-shadow: inset 0 0 0 1px rgb(37 99 235 / 35%); }
+.az-pos-mark { position: absolute; top: 50%; transform: translate(-50%, -50%); }
+.az-pos-mark.is-estimate { width: 3px; height: 24px; border-radius: 2px; background: var(--color-text); }
+.az-pos-mark.is-listing { width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent); border: 3px solid var(--color-surface); box-shadow: 0 0 0 1px var(--color-accent); }
+.az-pos-legend { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-pos-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.az-pos-legend i { display: inline-block; flex: none; }
+.az-pos-legend i.is-band { width: 18px; height: 8px; border-radius: 4px; background: rgb(37 99 235 / 18%); box-shadow: inset 0 0 0 1px rgb(37 99 235 / 35%); }
+.az-pos-legend i.is-listing { width: 10px; height: 10px; border-radius: 50%; background: var(--color-accent); }
+.az-pos-legend i.is-estimate { width: 3px; height: 12px; border-radius: 2px; background: var(--color-text); }
+
+/* Tahminin dayanağı */
+.az-provenance { margin-top: var(--space-4); padding: var(--space-5) var(--space-6); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
+.az-provenance dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4); margin: 0; }
+.az-provenance dt { color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 500; }
+.az-provenance dd { margin: 4px 0 0; color: var(--color-text); font-size: var(--text-body); font-weight: 600; }
+.az-provenance dd small { color: var(--color-text-muted); font-weight: 500; font-size: var(--text-label); }
+.az-strength { display: inline-flex; align-items: center; gap: 6px; }
+.az-strength::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-warning); }
+.az-strength.is-strong::before { background: var(--color-success); }
+.az-strength.is-weak::before { background: var(--color-danger); }
+.az-evidence-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-5); margin-top: var(--space-5); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
+.az-evidence-cols h4 { margin: 0 0 var(--space-2); color: var(--color-text); font-size: var(--text-body-sm); font-weight: 600; }
+.az-evidence-notes { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.az-evidence-notes li { position: relative; padding-left: 16px; color: var(--color-text); font-size: var(--text-body-sm); line-height: 1.55; }
+.az-evidence-notes li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-accent); }
+.az-evidence-notes.is-limits li { color: var(--color-text-muted); }
+.az-evidence-notes.is-limits li::before { background: var(--color-border-hover); }
+.az-provenance-foot { margin: var(--space-4) 0 0; color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-note { margin-top: var(--space-3); padding: var(--space-3) var(--space-4); font-size: var(--text-body-sm); color: var(--color-text); background: var(--color-warning-soft); border: 0; border-radius: var(--radius-control); }
+
+/* Ayrıntılar (akordeon) */
+.az-details-title { display: flex; align-items: baseline; gap: var(--space-3); margin: var(--space-7) 0 var(--space-3); font-size: var(--text-h3); font-weight: 600; color: var(--color-text); }
+.az-details-title span { color: var(--color-text-muted); font-size: var(--text-label); font-weight: 500; }
+.az-results .acc-list { gap: var(--space-2); }
+.az-results .acc { --c: var(--color-text); --c-soft: var(--color-canvas); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: none; overflow: hidden; }
+.az-results .acc[open] { border-color: var(--color-border-strong); }
+.az-results .acc > summary { gap: var(--space-4); min-height: 64px; padding: var(--space-4) var(--space-5); background: none; }
+.az-results .acc > summary:hover { background: var(--color-surface-sunken); }
+.az-results .acc > summary:focus-visible { outline: var(--focus-outline); outline-offset: -2px; border-radius: var(--radius-card); }
+.az-results .acc[open] > summary { background: none; border-bottom: 1px solid var(--color-border); }
+.az-results .acc-text strong { font-size: var(--text-body); font-weight: 600; color: var(--color-text); }
+.az-results .acc-text small { font-size: var(--text-label); color: var(--color-text-muted); }
+.az-results .acc .acc-chip { order: 0; margin-left: 0; padding: 3px 10px; border: 1px solid var(--color-border); border-radius: var(--radius-chip); background: var(--color-canvas); color: var(--color-text); font-size: var(--text-caption); font-weight: 600; white-space: nowrap; }
+.az-results .acc .acc-arrow { display: block; color: var(--color-text-muted); transform: none; font-size: 16px; }
+.az-results .acc[open] .acc-arrow { transform: rotate(180deg); }
+.az-results .acc-body, .az-results .acc[open] .acc-body { gap: var(--space-5); padding: var(--space-5); background: var(--color-surface); border-top: 0; }
+.az-disclaimer { margin: var(--space-5) 0 0; text-align: left; color: var(--color-text-muted); font-size: var(--text-caption); line-height: 1.6; }
+
+/* Akordeon içi alt kartlar: renkli üst çizgi, ikon ve tonlu zeminler kaldırılır */
+.az-results .result-card { padding: 0; background: none; border: 0; border-radius: 0; overflow: visible; }
+.az-results .result-card::before { display: none; }
+.az-results .result-card .card-icon, .az-results .result-card .count { display: none; }
+.az-results .card-top { margin-bottom: var(--space-3); }
+.az-results .card-top h3 { color: var(--color-text); font-size: var(--text-body); font-weight: 600; }
+.az-results .card-top p { color: var(--color-text-muted); font-size: var(--text-label); }
+.az-results .card-note { color: var(--color-text-muted); font-size: var(--text-label); line-height: 1.6; }
+.az-results .card-empty { color: var(--color-text-muted); font-size: var(--text-body-sm); text-align: left; padding: 0; }
+.az-results .merged-block + .merged-block { border-top: 1px solid var(--color-border); padding-top: var(--space-5); }
+.az-results .merged-block h4 { margin: 0 0 4px; font-size: var(--text-body); font-weight: 600; color: var(--color-text); }
+.az-results .merged-hint { color: var(--color-text-muted); font-size: var(--text-label); }
+
+/* Pazarlık adımları ve merdiven: sakin palet, anlamlı renk yalnız hedef/tavan */
+.az-results .deal-line { font-size: var(--text-body); color: var(--color-text); }
+.az-results .deal-steps li { --c: var(--color-text); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-control); }
+.az-results .deal-steps .step-target { --c: var(--color-success); border-color: rgb(21 128 61 / 35%); background: var(--color-success-soft); }
+.az-results .deal-steps .step-ceiling { --c: var(--color-warning); }
+.az-results .deal-steps span { font-size: var(--text-caption); font-weight: 600; }
+.az-results .deal-steps small { font-size: var(--text-caption); color: var(--color-text-muted); }
+.az-results .ladder { --c-open: var(--color-text-muted); --c-target: var(--color-success); --c-ceiling: var(--color-warning); --c-listing: var(--color-text); --tone: var(--color-success); --tone-soft: var(--color-success-soft); --tone-line: rgb(21 128 61 / 30%); --tone-text: var(--color-success-text); }
+.az-results .ladder-headline { padding: var(--space-3) var(--space-4); background: var(--color-success-soft); border: 0; border-radius: var(--radius-control); }
+.az-results .ladder-headline span { color: var(--color-success-text); font-size: var(--text-caption); }
+.az-results .ladder-headline strong { color: var(--color-success-text); font-size: 24px; }
+.az-results .ladder-headline em { color: var(--color-success-text); background: rgb(255 255 255 / 70%); font-size: var(--text-caption); font-weight: 600; }
+.az-results .ladder-line { height: 4px; top: 13px; background: var(--color-border-strong); }
+.az-results .ladder-band { background: rgb(21 128 61 / 10%); border: 1px dashed rgb(21 128 61 / 40%); }
+.az-results .ladder-stop { border-width: 3px; box-shadow: none; }
+.az-results .ladder-tip { box-shadow: none; }
+.az-results .ladder-tip small { font-size: 11px; color: var(--color-text-muted); }
+
+/* Fiyatı etkileyenler */
+.az-results .fbar-track { background: var(--color-surface-sunken); }
+.az-results .fbar-zero { background: var(--color-border-hover); }
+.az-results .fbar-fill.is-pos { background: var(--color-success); }
+.az-results .fbar-fill.is-neg { background: var(--color-danger); }
+.az-results .fbar-head strong { font-size: var(--text-body-sm); font-weight: 600; }
+.az-results .fbar-val { font-size: var(--text-body-sm); font-weight: 600; }
+.az-results .fbar-val.is-pos { color: var(--color-success-text); }
+.az-results .fbar-val.is-neg { color: var(--color-danger-text); }
+.az-results .fbar > small, .az-results .fbar-scale { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .fbar-scale { border-top-color: var(--color-border); }
+
+/* Sorular */
+.az-results .acc-questions li > span { color: var(--color-accent-text); font-weight: 600; font-size: var(--text-label); }
+.az-results .acc-questions p { color: var(--color-text-muted); font-size: var(--text-body-sm); }
+.az-results .acc-questions strong { margin-bottom: 2px; color: var(--color-text); font-weight: 600; }
+
+/* İlan kalitesi ve açıklama */
+.az-results .gauge-track { stroke: var(--color-surface-sunken); }
+.az-results .deduct h4 { color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 600; }
+.az-results .deduct-row > span { font-size: var(--text-body-sm); }
+.az-results .deduct-row > i { background: var(--color-surface-sunken); }
+.az-results .deduct-row > i > b { background: var(--color-danger); }
+.az-results .deduct-row > strong { color: var(--color-danger-text); font-weight: 600; }
+.az-results .desc-summary p { color: var(--color-text); font-size: var(--text-body-sm); }
+.az-results .desc-counts li { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-chip); }
+.az-results .desc-counts .is-flag { background: var(--color-surface); border-color: rgb(185 28 28 / 30%); }
+.az-results .desc-counts .is-flag strong { color: var(--color-danger-text); }
+.az-results .desc-counts .is-missing, .az-results .desc-counts .is-claim { background: var(--color-surface); border-color: var(--color-border); }
+.az-results .desc-counts .is-claim strong { color: var(--color-text); }
+.az-results .desc-counts span { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .insight-columns > div, .az-results .insight-col { background: var(--color-surface); border-color: var(--color-border); }
+
+/* Bilinen sorunlar */
+.az-results .trait-col { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
+.az-results .trait-col-kronik { box-shadow: inset 0 3px 0 var(--color-danger); }
+.az-results .trait-col-iyi { box-shadow: inset 0 3px 0 var(--color-success); }
+.az-results .trait-col-kotu { box-shadow: inset 0 3px 0 var(--color-border-hover); }
+.az-results .trait-col-kronik .trait-col-head h4 { color: var(--color-danger-text); }
+.az-results .trait-col-iyi .trait-col-head h4 { color: var(--color-success-text); }
+.az-results .trait-col-kotu .trait-col-head h4 { color: var(--color-text); }
+.az-results .trait-col-head span { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .trait-tag { padding: 2px 6px; border-radius: 4px; background: var(--color-surface-sunken); color: var(--color-text); font-size: 11px; letter-spacing: .04em; }
+.az-results .trait-meta a { color: var(--color-text-muted); }
+.az-results .trait-meta a:hover { color: var(--color-accent-text); }
+.az-results .traits-picker label { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .traits-picker select { border-color: var(--color-border-strong); border-radius: var(--radius-control); background: var(--color-surface); }
+.az-results .traits-years, .az-results .traits-count { color: var(--color-text-muted); font-size: var(--text-caption); }
+
+/* Benzer ilanlar tablosu */
+.az-table { width: 100%; border-collapse: collapse; font-size: var(--text-body-sm); }
+.az-table-caption { caption-side: top; padding: 0 0 var(--space-3); text-align: left; color: var(--color-text-muted); font-size: var(--text-label); }
+.az-table th, .az-table td { padding: 12px var(--space-3); border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: middle; }
+.az-table thead th { padding-top: 8px; padding-bottom: 8px; background: var(--color-surface-sunken); color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 600; white-space: nowrap; border-bottom-color: var(--color-border); }
+.az-table thead th:first-child { border-radius: var(--radius-chip) 0 0 var(--radius-chip); }
+.az-table thead th:last-child { border-radius: 0 var(--radius-chip) var(--radius-chip) 0; }
+.az-table .num { text-align: right; white-space: nowrap; }
+.az-similar-name { font-weight: 600; color: var(--color-text); }
+.az-similar-name a { color: var(--color-text); text-decoration: underline; text-decoration-color: var(--color-border-strong); text-underline-offset: 3px; }
+.az-similar-name a:hover { color: var(--color-accent-text); text-decoration-color: currentColor; }
+.az-similar-name a:focus-visible { outline: var(--focus-outline); outline-offset: 2px; border-radius: 2px; }
+.az-similar-name small { display: block; margin-top: 2px; color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 400; }
+.az-similar-price { font-weight: 600; color: var(--color-text); }
+.az-similar-diff { color: var(--color-text-muted); }
+.az-similar-diff span { font-size: 10px; }
+.az-similar-diff.is-lower { color: var(--color-success-text); }
+.az-similar-diff.is-higher { color: var(--color-danger-text); }
+.az-similar .card-note { margin: var(--space-3) 0 0; }
+
+/* Değer kaybı */
+.az-results .depr-headline { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; margin-bottom: var(--space-5); padding: 0; background: none; border: 0; border-radius: 0; }
+.az-results .depr-headline span { width: 100%; color: var(--color-text-muted); font-size: var(--text-label); font-weight: 500; }
+.az-results .depr-headline strong { color: var(--color-text); font-size: var(--text-metric); font-weight: 600; letter-spacing: -0.02em; }
+.az-results .depr-headline em { padding: 2px 8px; border-radius: var(--radius-chip); background: var(--color-surface-sunken); color: var(--color-text-muted); font-size: var(--text-caption); font-weight: 500; }
+.az-results .depr-bar { max-width: 140px; border: 1px solid var(--color-border); border-radius: var(--radius-control); background: var(--color-surface); }
+.az-results .depr-bar .depr-loss { background: repeating-linear-gradient(135deg, var(--color-surface) 0 5px, var(--color-surface-sunken) 5px 10px); border-bottom: 1px dashed var(--color-border-strong); }
+.az-results .depr-bar .depr-keep { background: var(--color-accent-soft); box-shadow: inset 0 2px 0 var(--color-accent); }
+.az-results .depr-bar .depr-keep b { color: var(--color-accent-text); font-size: var(--text-label); font-weight: 600; font-style: normal; text-shadow: none; }
+.az-results .depr-label { color: var(--color-text); font-size: var(--text-body-sm); font-weight: 600; }
+.az-results .depr-col > small { color: var(--color-text-muted); font-size: var(--text-label); font-weight: 600; }
+.az-results .depr-col > small.is-base { font-weight: 500; }
+.az-results .depr-note { background: var(--color-surface-sunken); border: 0; border-radius: var(--radius-control); color: var(--color-text-muted); font-size: var(--text-label); }
+.az-results .depr-key { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .depr-key .depr-keep { background: var(--color-accent-soft); border-color: var(--color-accent); }
+.az-results .depr-key .depr-loss { background: repeating-linear-gradient(135deg, var(--color-surface) 0 3px, var(--color-surface-sunken) 3px 6px); }
+
+/* Yıllık masraf */
+.az-results .total-cost { border-top: 0; padding-top: 0; }
+.az-results .total-cost span { color: var(--color-text-muted); font-size: var(--text-label); }
+.az-results .total-cost strong { font-size: var(--text-metric); font-weight: 600; letter-spacing: -0.02em; }
+.az-results .cost-lines > div { font-size: var(--text-body-sm); }
+.az-results .cost-lines i { height: 6px; background: var(--color-surface-sunken); }
+.az-results .cost-lines b { background: var(--color-accent); }
+.az-results .cost-lines strong { font-size: var(--text-body-sm); font-weight: 600; }
+
+/* Piyasa durumu */
+.az-results .trend-kpis > div { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-control); }
+.az-results .trend-kpis span { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .trend-kpis strong { font-size: var(--text-body); font-weight: 600; }
+.az-results .trend-kpis small { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .trend-explanation { color: var(--color-text-muted); font-size: var(--text-label); }
+
+@media (max-width: 1199px) {
+  .az-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .az-metric:nth-child(3) { border-left: 0; }
+  .az-metric:nth-child(n+3) { border-top: 1px solid var(--color-border); }
+}
+
+/* ── Duyarlı düzen ──────────────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  .az-page { padding: var(--space-6) var(--space-4) var(--space-7); }
+  .az-layout { grid-template-columns: 1fr; }
+  .az-damage { position: static; }
+  .az-summary-top { grid-template-columns: 1fr; gap: var(--space-4); }
+}
+@media (max-width: 639px) {
+  .az-card, .az-quick { padding: var(--space-5) var(--space-4); }
+  .az-group-key { margin-left: calc(-1 * var(--space-4)); margin-right: calc(-1 * var(--space-4)); padding: var(--space-4); }
+  .az-grid-3, .az-grid-2 { grid-template-columns: 1fr; }
+  .az-grid { gap: var(--space-3); }
+  .az-grid + .az-grid { margin-top: var(--space-3); }
+  .az-damage-panel .car-map { grid-template-rows: 44px 72px 60px 60px 72px 44px; }
+  .az-damage-panel .car-part { font-size: 11.5px; }
+  .az-submit { flex-direction: column; align-items: stretch; position: sticky; bottom: 0; z-index: 5; padding: var(--space-3) var(--space-4); border-radius: var(--radius-card) var(--radius-card) 0 0; box-shadow: 0 -8px 24px rgb(15 23 42 / 8%); }
+  .az-submit-note { display: none; }
+  .az-submit-actions { flex-direction: column; align-items: stretch; gap: var(--space-2); }
+  .primary-button.az-submit-btn { width: 100%; min-width: 0; }
+  .az-result-head { flex-direction: column; align-items: flex-start; }
+  .az-summary-top { padding: var(--space-5) var(--space-4); }
+  .az-metrics { grid-template-columns: 1fr; }
+  .az-metric, .az-metric + .az-metric { padding: var(--space-4); border-left: 0; }
+  .az-metric + .az-metric { border-top: 1px solid var(--color-border); }
+  .az-metric strong { font-size: 24px; }
+  .az-summary-pos { padding: var(--space-4); }
+  .az-provenance { padding: var(--space-4); }
+  .az-results .acc > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: var(--space-2) var(--space-3); padding: var(--space-4); }
+  .az-results .acc .acc-text { grid-column: 1; grid-row: 1; }
+  .az-results .acc .acc-arrow { grid-column: 2; grid-row: 1; }
+  .az-results .acc .acc-chip { grid-column: 1; grid-row: 2; justify-self: start; margin-left: 0; }
+  .az-provenance dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .az-results .acc-body, .az-results .acc[open] .acc-body { padding: var(--space-4); }
+  /* Tablo → satır kartları */
+  .az-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .az-table, .az-table tbody, .az-table tr, .az-table th, .az-table td { display: block; }
+  .az-table tr { padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border); }
+  .az-table th, .az-table td { padding: 2px 0; border: 0; }
+  .az-table td.num { display: flex; justify-content: space-between; gap: var(--space-3); text-align: right; }
+  .az-table td.num::before { content: attr(data-label); color: var(--color-text-muted); font-weight: 400; text-align: left; }
+  .az-similar-name { margin-bottom: var(--space-2) !important; }
+}
+
+/* ── Yazdırma: yalnızca sonuç ───────────────────────────────────────── */
+@media print {
+  .as-header, .as-subnav, .az-head, .az-form, .as-footer, .az-result-actions, .cookie-notice { display: none !important; }
+  .az-page { padding: 0; }
+  .az-summary { break-inside: avoid; }
+}
+/* Başlığı "Opsiyonel" olan grupta alan başına tekrar etmesin */
+.az-group-optional:has(> h3 em) .field > span em { display: none; }
+
+/* Açıklama sinyalleri: tonlu zemin yerine beyaz yüzey + anlamlı nokta rengi */
+.az-results .sgroup { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
+.az-results .sgroup h4 { color: var(--color-text); font-size: var(--text-caption); font-weight: 600; letter-spacing: var(--tracking-caps); }
+.az-results .sgroup h4 b { background: var(--color-surface-sunken); color: var(--color-text); }
+.az-results .sgroup li { color: var(--color-text); font-size: var(--text-body-sm); }
+.az-results .sgroup li::before { background: var(--color-border-hover); }
+.az-results .sgroup.is-flag h4 { color: var(--color-danger-text); }
+.az-results .sgroup.is-flag li::before { background: var(--color-danger); }
+.az-results .sgroup.is-positive h4 { color: var(--color-success-text); }
+.az-results .sgroup.is-positive li::before { background: var(--color-success); }
+.az-results .sgroup.is-claim li::before { background: var(--color-accent); }
+
+/* Puan göstergesi */
+.az-results .gauge.is-good .gauge-fill { stroke: var(--color-success); }
+.az-results .gauge.is-mid .gauge-fill { stroke: var(--color-warning); }
+.az-results .gauge.is-bad .gauge-fill { stroke: var(--color-danger); }
+.az-results .gauge.is-good > strong { color: var(--color-success-text); }
+.az-results .gauge.is-mid > strong { color: var(--color-warning-text); }
+.az-results .gauge.is-bad > strong { color: var(--color-danger-text); }
+
+/* Bölge ölçeği */
+.az-results .rscale-headline strong { font-size: var(--text-metric); font-weight: 600; letter-spacing: -0.02em; }
+.az-results .rscale-headline span { color: var(--color-text-muted); font-size: var(--text-label); font-weight: 500; }
+.az-results .rscale.is-low .rscale-headline strong { color: var(--color-success-text); }
+.az-results .rscale.is-high .rscale-headline strong { color: var(--color-danger-text); }
+.az-results .rscale.is-flat .rscale-headline strong { color: var(--color-text); }
+.az-results .rscale-line { background: var(--color-border-strong); }
+.az-results .rscale-neutral { background: var(--color-surface-sunken); }
+.az-results .rscale-center { background: var(--color-border-hover); }
+.az-results .rscale-ends { color: var(--color-text-muted); font-size: var(--text-caption); }
+.az-results .rscale-conf { color: var(--color-text-muted); font-size: var(--text-label); }
+.az-results .rscale-conf i { background: var(--color-surface-sunken); }
+.az-results .signal-status { background: var(--color-surface-sunken); border-radius: var(--radius-control); }
+.az-results .signal-dot { background: var(--color-text-muted); box-shadow: none; }

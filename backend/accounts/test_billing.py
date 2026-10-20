@@ -51,31 +51,46 @@ def test_failed_analysis_refunds_credit(client):
     assert client.get("/api/b2c/account/billing").json()["credits"] == 3
 
 
-def test_plan_credits_reset_every_ten_minutes_but_extra_credits_stay(client, user):
+def test_plan_credits_reset_daily_at_istanbul_midnight(client, user):
     billing.choose_plan(user, "pro")
-    billing.consume(user)
-    sub = Subscription.objects.get(user=user)
-    sub.credits = 3
-    sub.save()
-    billing.add_credits(user, 5)
-    for _ in range(3):
+    for _ in range(15):
         billing.consume(user)
-    billing.consume(user)
+    with pytest.raises(billing.NoCredits):
+        billing.consume(user)
     sub = Subscription.objects.get(user=user)
-    assert (sub.credits, sub.extra_credits) == (0, 4)
-    later = timezone.now() + timedelta(minutes=10, seconds=5)
-    with patch("accounts.billing.timezone.now", return_value=later):
+    start = billing._day_start(sub.period_start)
+    with patch("accounts.billing.timezone.now", return_value=start + timedelta(hours=23, minutes=59)):
+        assert billing.status(user)["credits"] == 0
+    with patch("accounts.billing.timezone.now", return_value=start + timedelta(days=1, seconds=5)):
         data = billing.status(user)
-    assert (data["credits"], data["extra_credits"]) == (15, 4)
+    assert data["credits"] == 15 and data["extra_credits"] == 0
+    assert data["next_reset_at"] == (start + timedelta(days=2)).isoformat()
+
+
+def test_premium_is_unlimited(client, user):
+    billing.choose_plan(user, "premium")
+    for _ in range(60):
+        assert billing.consume(user)["_source"] == "unlimited"
+    with patch("search.views.b2c.analyze", return_value={"ok": True}):
+        assert client.post("/api/b2c/analyze", PAYLOAD, content_type="application/json").status_code == 200
+    data = client.get("/api/b2c/account/billing").json()
+    assert data["unlimited"] is True and data["credits"] == 50
+    prices = {p["id"]: p["price_label"] for p in data["plans"]}
+    assert prices == {"basic": "Ücretsiz", "pro": "₺499 / ay", "premium": "₺2.999 / ay"}
+
+
+def test_extra_credits_removed(client, user):
+    billing.choose_plan(user, "premium")
+    r = client.post("/api/b2c/account/credits", {"amount": 10}, content_type="application/json")
+    assert r.json()["code"] == "plan_required"
+    data = client.get("/api/b2c/account/billing").json()
+    assert data["credit_packs"] == [] and "extra_credits" not in data["plan_features"]
 
 
 def test_choose_plan_is_approved_immediately(client):
-    assert client.post("/api/b2c/account/credits", {"amount": 10}, content_type="application/json").json()["code"] == "plan_required"
     r = client.post("/api/b2c/account/plan", {"plan": "pro"}, content_type="application/json")
     assert r.status_code == 200 and r.json()["plan_name"] == "Pro" and r.json()["credits"] == 15
     assert client.post("/api/b2c/account/plan", {"plan": "gold"}, content_type="application/json").status_code == 400
-    assert client.post("/api/b2c/account/credits", {"amount": 7}, content_type="application/json").status_code == 400
-    assert client.post("/api/b2c/account/credits", {"amount": 10}, content_type="application/json").json()["extra_credits"] == 10
 
 
 def test_scenario_and_cost_do_not_spend_credits(client, user):
