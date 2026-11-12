@@ -41,9 +41,15 @@ function PublicShell({ children }: { children: ReactNode }) {
         <div className="as-header-inner">
           <Logo />
           <nav className="as-public-nav" aria-label="Hesap">
+            <span className="as-social" aria-label="Sosyal medya">
+              <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer" className="as-social-icon" aria-label="AutoSense Instagram hesabı" title="Instagram">
+                <img src="/sosyal/instagram.png" width="24" height="24" alt="" />
+              </a>
+              <a href={SELLER.tiktok} target="_blank" rel="noopener noreferrer" className="as-social-icon" aria-label="AutoSense TikTok hesabı" title="TikTok">
+                <img src="/sosyal/tiktok.png" width="24" height="24" alt="" />
+              </a>
+            </span>
             <Link to="/fiyatlar" className="as-link-quiet">Fiyatlar</Link>
-            <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer" className="as-link-quiet as-social-link">Instagram</a>
-            <a href={SELLER.tiktok} target="_blank" rel="noopener noreferrer" className="as-link-quiet as-social-link">TikTok</a>
             <Link to="/login" className="as-link-quiet">Giriş yap</Link>
             <Link to="/signup" className="as-btn as-btn-primary as-btn-sm"><span className="as-hide-sm">Ücretsiz hesap aç</span><span className="as-show-sm">Hesap aç</span></Link>
           </nav>
