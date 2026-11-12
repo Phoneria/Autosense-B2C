@@ -22,7 +22,7 @@ const seq = (i: number) => ({ "--i": i }) as CSSProperties;
 export { CONTACT_EMAIL };
 
 export const OPERATOR = "İzzet Ahmet";
-const UPDATED = "15 Ekim 2026";
+const UPDATED = "13 Kasım 2026";
 
 function PublicShell({ children }: { children: ReactNode }) {
   const ref = useScrollReveal<HTMLDivElement>();
@@ -337,6 +337,7 @@ export function PrivacyPage() {
         <li><strong>Hesap bilgileri:</strong> e-posta adresiniz ve şifrelenmiş (geri çözülemez biçimde saklanan) parolanız. Google ile giriş yaparsanız Google'ın bize ilettiği ad ve e-posta adresiniz.</li>
         <li><strong>Kullanım bilgileri:</strong> analiz için girdiğiniz araç bilgileri (marka, model, yıl, kilometre, fiyat, il/ilçe), yapıştırdığınız ilan metinleri ve özelliklerin kullanım sayıları.</li>
         <li><strong>Teknik bilgiler:</strong> IP adresi, tarayıcı türü, istek zamanı ve hata kayıtları. Bunlar güvenlik ve kötüye kullanımı önlemek için tutulur.</li>
+        <li><strong>Ödeme ve fatura bilgileri:</strong> ücretli bir plan satın alırsanız fatura için ad soyad ve adres bilgileriniz ile ödeme işlem kayıtları (tutar, tarih, işlem numarası). Kart bilgileriniz iyzico'nun güvenli ödeme sayfasında girilir; AutoSense kart numaranızı görmez ve saklamaz.</li>
       </ul>
 
       <h2>Bilgileri nasıl kullanıyoruz?</h2>
@@ -372,13 +373,14 @@ export function PrivacyPage() {
         <li><strong>Barındırma:</strong> Hizmet, Almanya'daki sunucularda (Hetzner) çalışır.</li>
         <li><strong>E-posta gönderimi:</strong> doğrulama ve parola sıfırlama e-postaları Resend aracılığıyla gönderilir.</li>
         <li><strong>Google:</strong> Google ile giriş ve reklam hizmetleri için.</li>
+        <li><strong>Ödeme:</strong> ücretli plan ödemeleri iyzi Ödeme ve Elektronik Para Hizmetleri A.Ş. (iyzico) aracılığıyla alınır; ödeme için gereken bilgiler iyzico tarafından işlenir.</li>
         <li>Yasal bir zorunluluk olduğunda yetkili kamu kurumları.</li>
       </ul>
 
       <h2>Saklama süresi</h2>
       <p>
         Hesap bilgileriniz hesabınız açık olduğu sürece saklanır. Hesabınızın silinmesini istediğinizde
-        bilgileriniz, yasal saklama yükümlülükleri dışında silinir. Teknik kayıtlar en fazla 1 yıl tutulur.
+        bilgileriniz, yasal saklama yükümlülükleri dışında silinir. Teknik kayıtlar en fazla 1 yıl tutulur. Fatura ve ödeme kayıtları vergi mevzuatının öngördüğü süre boyunca saklanır.
       </p>
 
       <h2>Haklarınız</h2>
@@ -410,12 +412,14 @@ export function KvkkPage() {
         <li><strong>Müşteri işlem:</strong> analiz için girilen araç bilgileri ve ilan metinleri, kullanım sayıları.</li>
         <li><strong>İşlem güvenliği:</strong> şifrelenmiş parola, IP adresi, oturum ve erişim kayıtları.</li>
         <li><strong>Pazarlama:</strong> reklam gösterimi sırasında Google tarafından işlenen çerez verileri.</li>
+        <li><strong>Finans:</strong> ücretli plan satın alınırsa fatura bilgileri (ad soyad, adres) ve ödeme işlem kayıtları. Kart bilgileri AutoSense tarafından işlenmez ve saklanmaz; ödeme kuruluşu iyzico tarafından işlenir.</li>
       </ul>
 
       <h2>3. İşleme amaçları ve hukuki sebepler</h2>
       <ul>
         <li>Üyelik ve hizmetin sunulması: bir sözleşmenin kurulması veya ifası (KVKK m. 5/2-c).</li>
         <li>Bilgi güvenliğinin sağlanması ve kötüye kullanımın önlenmesi: meşru menfaat (m. 5/2-f) ve hukuki yükümlülük (m. 5/2-ç).</li>
+        <li>Ücretli planlar için ödemenin alınması ve fatura düzenlenmesi: bir sözleşmenin ifası (m. 5/2-c) ve hukuki yükümlülük (m. 5/2-ç).</li>
         <li>Hizmetin geliştirilmesi için anonim istatistikler: meşru menfaat (m. 5/2-f).</li>
         <li>Kişiselleştirilmiş reklam gösterimi: açık rıza (m. 5/1). Çerez bildiriminde “Kabul et” seçilmezse yalnızca kişiselleştirilmemiş reklam gösterilir.</li>
       </ul>
@@ -423,7 +427,7 @@ export function KvkkPage() {
       <h2>4. Aktarım</h2>
       <p>
         Kişisel verileriniz, hizmetin sunulması için barındırma (Hetzner, Almanya), e-posta gönderimi
-        (Resend) ve giriş/reklam hizmetleri (Google) sağlayıcılarına, KVKK'nın 8. ve 9. maddelerine uygun
+        (Resend), ödeme (iyzi Ödeme ve Elektronik Para Hizmetleri A.Ş.) ve giriş/reklam hizmetleri (Google) sağlayıcılarına, KVKK'nın 8. ve 9. maddelerine uygun
         olarak yurt içine ve yurt dışına aktarılabilir. Yasal zorunluluk hâlinde yetkili kurumlarla paylaşılabilir.
       </p>
 

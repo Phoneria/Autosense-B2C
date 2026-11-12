@@ -134,15 +134,6 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
               <h2 className="pf-current-name">{current.plan_name}</h2>
               {currentPlan && <p className="pf-current-meta">{unlimited ? "Sınırsız analiz" : `Günde ${currentPlan.credits} analiz`} · liste fiyatı {priceOf(currentPlan.id, currentPlan.price_label)}</p>}
             </div>
-            {current.open_access && (
-              <div className="pf-open">
-                <span className="as-plan-dot" aria-hidden="true" />
-                <div>
-                  <strong>Tüm özellikler şu an açık</strong>
-                  <p>Analizler kredi harcamaz; plan seçimi şimdilik analizlerinizi etkilemez.</p>
-                </div>
-              </div>
-            )}
           </div>
           <dl className="pf-stats">
             <div className="pf-stat-credits">
