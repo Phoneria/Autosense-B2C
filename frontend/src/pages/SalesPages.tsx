@@ -156,6 +156,7 @@ export function ContactPage() {
         <li><strong>E-posta:</strong> <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a></li>
         <li><strong>Telefon:</strong> <a href={SELLER.phoneHref}>{SELLER.phone}</a></li>
         <li><strong>Adres:</strong> {SELLER.address}</li>
+        <li><strong>Instagram:</strong> <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer">{SELLER.instagramHandle}</a></li>
       </ul>
       <h2>Satıcı bilgileri</h2>
       <ul>

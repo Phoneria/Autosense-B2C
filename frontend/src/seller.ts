@@ -9,4 +9,6 @@ export const SELLER = {
   taxOffice: "Setbaşı Vergi Dairesi",
   taxNo: "0101714362",
   web: "https://auto-sense.com.tr",
+  instagram: "https://www.instagram.com/autoosense/",
+  instagramHandle: "@autoosense",
 } as const;
