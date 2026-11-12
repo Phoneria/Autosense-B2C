@@ -154,8 +154,8 @@ export function LandingPage() {
             <a href="#nasil-calisir" className="as-btn as-btn-secondary as-btn-lg">Nasıl çalışır?</a>
           </div>
           <div className="ld-hero-alt">
-            <span>Hesabınız var mı? <Link to="/login">Giriş yapın</Link></span>
             <GoogleButton label="Google ile devam et" divider={false} className="ld-google" />
+            <span>Hesabınız var mı? <Link to="/login">Giriş yapın</Link></span>
           </div>
         </div>
       </section>
