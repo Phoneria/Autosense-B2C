@@ -128,7 +128,7 @@ export function PricingSection({ headingLevel = 2 }: { headingLevel?: 1 | 2 }) {
           <Heading id="ld-pricing-title">Planlar</Heading>
           <p className="ld-pricing-vat">{VAT_NOTE}</p>
           <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Abonelikler aylıktır; istediğiniz zaman iptal edebilirsiniz.</p>
-          <p className="ld-pricing-sub ld-pricing-legal">Ödeme onaylandığında plan hesabınıza anında tanımlanır. <Link to="/on-bilgilendirme">Ön bilgilendirme</Link> · <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link> · <Link to="/iptal-iade">İptal ve iade</Link></p>
+          <p className="ld-pricing-sub ld-pricing-legal">Ödeme onaylandığında plan hesabınıza anında tanımlanır. <Link to="/on-bilgilendirme">Ön bilgilendirme</Link> · <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link> · <Link to="/iptal-iade">Teslimat ve iade</Link></p>
         </header>
         <PlanCards plans={PUBLIC_PLANS} onSelect={select} />
       </div>

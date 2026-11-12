@@ -48,7 +48,7 @@ export function PreInfoPage() {
       <h2>4. İfa ve teslimat</h2>
       <p>{DELIVERY}</p>
       <h2>5. Sözleşme süresi ve iptal</h2>
-      <p>{RENEWAL} Ayrıntılar için <Link to="/iptal-iade">İptal ve İade Koşulları</Link>'na bakınız.</p>
+      <p>{RENEWAL} Ayrıntılar için <Link to="/iptal-iade">Teslimat, İptal ve İade Koşulları</Link>'na bakınız.</p>
       <h2>6. Cayma hakkı</h2>
       <p>{WITHDRAWAL_EXCEPTION}</p>
       <h2>7. Şikayet ve itirazlar</h2>
@@ -76,7 +76,7 @@ export function DistanceSalesPage() {
       <h2>6. Cayma hakkı</h2>
       <p>{WITHDRAWAL_EXCEPTION}</p>
       <h2>7. İptal ve iade</h2>
-      <p>Alıcı aboneliğini istediği zaman iptal edebilir; içinde bulunulan dönem için ödenen bedel iade edilmez. Mükerrer tahsilat veya Satıcı kaynaklı nedenle hizmetin hiç sunulamaması gibi durumlarda iade yapılır. Ayrıntılar: <Link to="/iptal-iade">İptal ve İade Koşulları</Link>.</p>
+      <p>Alıcı aboneliğini istediği zaman iptal edebilir; içinde bulunulan dönem için ödenen bedel iade edilmez. Mükerrer tahsilat veya Satıcı kaynaklı nedenle hizmetin hiç sunulamaması gibi durumlarda iade yapılır. Ayrıntılar: <Link to="/iptal-iade">Teslimat, İptal ve İade Koşulları</Link>.</p>
       <h2>8. Tarafların yükümlülükleri</h2>
       <ul>
         <li>Satıcı, satın alınan planın özelliklerini plan süresi boyunca sunmakla yükümlüdür. Planlı bakım ve zorunlu teknik kesintiler mümkün olduğunca kısa tutulur.</li>
@@ -95,7 +95,9 @@ export function DistanceSalesPage() {
 
 export function CancelRefundPage() {
   return (
-    <LegalPage updated={SALES_UPDATED} title="İptal ve İade Koşulları">
+    <LegalPage updated={SALES_UPDATED} title="Teslimat, İptal ve İade Koşulları">
+      <h2>Teslimat</h2>
+      <p>{DELIVERY} Kargo veya teslimat ücreti yoktur.</p>
       <h2>Aboneliği iptal etme</h2>
       <ul>
         <li>Ücretli planınızı istediğiniz zaman iptal edebilirsiniz. İptal için <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20abonelik%20iptali`}>{CONTACT_EMAIL}</a> adresine hesabınızdaki e-posta adresinden yazmanız yeterlidir.</li>
@@ -112,6 +114,58 @@ export function CancelRefundPage() {
       <p>Basic plan ücretsizdir; iptal veya iade işlemi gerektirmez.</p>
       <h2>İletişim</h2>
       <p>{SELLER.name} · {SELLER.address} · Tel: <a href={SELLER.phoneHref}>{SELLER.phone}</a> · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
+    </LegalPage>
+  );
+}
+
+export function AboutPage() {
+  return (
+    <LegalPage updated={SALES_UPDATED} title="Hakkımızda">
+      <p>
+        AutoSense, ikinci el araç alıp satanların bir ilanın fiyatının makul olup olmadığını hızlıca görebilmesi için
+        geliştirilmiş çevrim içi bir veri analizi hizmetidir. Yayındaki galeri ilanlarını düzenli olarak takip eder;
+        aynı modelin güncel ilanlarını yaş, kilometre, hasar ve donanım farklarına göre dengeleyerek tahmini piyasa
+        değerini hesaplar.
+      </p>
+      <h2>Neler sunuyoruz?</h2>
+      <ul>
+        <li><strong>Fiyat analizi:</strong> bir ilanın tahmini piyasa değeri, değer aralığı ve pazarlık için başlangıç ve hedef fiyat.</li>
+        <li><strong>Araç Rehberi:</strong> modellerin ilanda kalma süresi, fiyat değişimi ve modele özel kronik sorunlar.</li>
+        <li><strong>Bölgesel fırsatlar:</strong> aynı modelin hangi ilde daha uygun fiyatla ilan verildiği.</li>
+      </ul>
+      <p>
+        Hizmet ücretsiz Basic plan ile kullanılabilir; daha fazla analiz ve ek özellikler için aylık Pro ve Premium
+        planları sunulur. Planlar ve fiyatlar için <Link to="/fiyatlar">Fiyatlar</Link> sayfasına bakabilirsiniz.
+      </p>
+      <h2>Satıcı bilgileri</h2>
+      <p>AutoSense, {SELLER.name} şahıs işletmesi tarafından işletilmektedir.</p>
+      <SellerBlock />
+      <p>
+        AutoSense sonuçları yayındaki ilan fiyatlarına dayanan tahminlerdir; ilan fiyatı satış fiyatı değildir.
+        Sonuçlar ekspertiz raporu ve yerinde incelemenin yerini tutmaz.
+      </p>
+    </LegalPage>
+  );
+}
+
+export function ContactPage() {
+  return (
+    <LegalPage updated={SALES_UPDATED} title="İletişim">
+      <p>Soru, öneri, şikayet, abonelik iptali ve iade talepleriniz için bize aşağıdaki kanallardan ulaşabilirsiniz.</p>
+      <ul>
+        <li><strong>E-posta:</strong> <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a></li>
+        <li><strong>Telefon:</strong> <a href={SELLER.phoneHref}>{SELLER.phone}</a></li>
+        <li><strong>Adres:</strong> {SELLER.address}</li>
+      </ul>
+      <h2>Satıcı bilgileri</h2>
+      <ul>
+        <li><strong>Ad soyad:</strong> {SELLER.name}</li>
+        <li><strong>Vergi dairesi / Vergi kimlik no:</strong> {SELLER.taxOffice} / {SELLER.taxNo}</li>
+      </ul>
+      <p>
+        Abonelik iptali için hesabınızda kayıtlı e-posta adresinden yazmanız yeterlidir. Ayrıntılar için{" "}
+        <Link to="/iptal-iade">Teslimat, İptal ve İade Koşulları</Link>.
+      </p>
     </LegalPage>
   );
 }

@@ -21,10 +21,12 @@ export default function SiteFooter() {
           </p>
         </div>
         <nav className="as-footer-links" aria-label="Alt bağlantılar">
+          <Link to="/hakkimizda">Hakkımızda</Link>
           <Link to="/fiyatlar">Fiyatlar</Link>
+          <Link to="/iletisim">İletişim</Link>
           <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link>
           <Link to="/on-bilgilendirme">Ön bilgilendirme formu</Link>
-          <Link to="/iptal-iade">İptal ve iade</Link>
+          <Link to="/iptal-iade">Teslimat ve iade</Link>
           <Link to="/gizlilik">Gizlilik ve çerezler</Link>
           <Link to="/kvkk">KVKK aydınlatma metni</Link>
           <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a>
