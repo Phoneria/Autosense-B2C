@@ -43,6 +43,7 @@ function OrderSummary({ planId, plan, price, credits, unlimited, features, busy,
             </span>
           </label>
         )}
+        {!free && <img className="pf-pay-logos" src="/odeme/iyzico-logo-band.svg" width="429" height="32" alt="iyzico ile Öde, Mastercard, Visa, American Express, Troy" />}
         <div className="modal-actions">
           <button type="button" className="pf-btn" onClick={onCancel} disabled={busy} data-autofocus>{paymentNotice ? "Kapat" : "Vazgeç"}</button>
           {free

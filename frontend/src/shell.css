@@ -323,3 +323,5 @@
 
 .as-footer-brand .as-footer-seller { font-size: var(--text-caption, 12px); color: var(--color-text-muted); }
 .as-footer-seller a { color: inherit; }
+.as-footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.as-pay-logos { height: 24px; width: auto; max-width: 100%; }

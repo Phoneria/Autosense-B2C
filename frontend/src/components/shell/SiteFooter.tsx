@@ -32,7 +32,10 @@ export default function SiteFooter() {
           <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a>
         </nav>
       </div>
-      <div className="as-footer-bottom">© {new Date().getFullYear()} AutoSense</div>
+      <div className="as-footer-bottom">
+        <span>© {new Date().getFullYear()} AutoSense</span>
+        <img className="as-pay-logos" src="/odeme/iyzico-logo-band.svg" width="429" height="32" alt="Güvenli ödeme: iyzico ile Öde, Mastercard, Visa, American Express, Troy" loading="lazy" />
+      </div>
     </footer>
   );
 }
