@@ -373,3 +373,5 @@
   .as-public .as-public-nav .as-link-quiet { padding: 0 6px; font-size: 13px; }
   .as-public .as-public-nav .as-btn-sm { padding: 0 10px; font-size: 13px; }
 }
+.ld-pricing-legal { font-size: var(--text-body-sm); }
+.ld-pricing-legal a { color: var(--color-accent-text); }

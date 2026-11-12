@@ -4,6 +4,7 @@ import AnalysisPage from "./pages/AnalysisPage";
 import { LoginPage, SignupPage, VerifyEmailPage, ForgotPasswordPage, ResetPasswordPage } from "./pages/AuthPages";
 import { CookieNotice, KvkkPage, LandingPage, PricingPage, PrivacyPage } from "./pages/PublicPages";
 import { useAuth } from "./auth/AuthProvider";
+import { CancelRefundPage, DistanceSalesPage, PreInfoPage } from "./pages/SalesPages";
 import { SECTION_PATHS } from "./sections";
 function TokenPage({ reset = false }: { reset?: boolean }) {
   const { key } = useParams();
@@ -32,6 +33,8 @@ export default function App() { return <BrowserRouter><AuthProvider><CookieNotic
   <Route path="/forgot-password" element={<ForgotPasswordPage />} /><Route path="/reset-password/:key" element={<TokenPage reset />} />
   <Route path="/reset-password" element={<TokenPage reset />} />
   <Route path="/fiyatlar" element={<Pricing />} />
+  <Route path="/mesafeli-satis-sozlesmesi" element={<DistanceSalesPage />} />
+  <Route path="/on-bilgilendirme" element={<PreInfoPage />} /><Route path="/iptal-iade" element={<CancelRefundPage />} />
   <Route path="/gizlilik" element={<PrivacyPage />} /><Route path="/kvkk" element={<KvkkPage />} />
   <Route element={<Home />}>
     {Object.values(SECTION_PATHS).map(path => <Route key={path} path={path} />)}

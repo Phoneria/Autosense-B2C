@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { SELLER } from "../../seller";
 
 export const CONTACT_EMAIL = "autoosense@gmail.com";
 
@@ -14,9 +15,16 @@ export default function SiteFooter() {
             Analizler yayındaki ilanların fiyatlarına dayanan tahminlerdir; ilan fiyatı satış fiyatı değildir.
             Sonuçlar ekspertiz raporu ve yerinde incelemenin yerini tutmaz.
           </p>
+          <p className="as-footer-seller">
+            {SELLER.name} · {SELLER.address}<br />
+            Tel: <a href={SELLER.phoneHref}>{SELLER.phone}</a> · {SELLER.taxOffice} · VKN {SELLER.taxNo}
+          </p>
         </div>
         <nav className="as-footer-links" aria-label="Alt bağlantılar">
           <Link to="/fiyatlar">Fiyatlar</Link>
+          <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link>
+          <Link to="/on-bilgilendirme">Ön bilgilendirme formu</Link>
+          <Link to="/iptal-iade">İptal ve iade</Link>
           <Link to="/gizlilik">Gizlilik ve çerezler</Link>
           <Link to="/kvkk">KVKK aydınlatma metni</Link>
           <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a>

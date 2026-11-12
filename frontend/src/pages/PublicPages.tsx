@@ -127,7 +127,8 @@ export function PricingSection({ headingLevel = 2 }: { headingLevel?: 1 | 2 }) {
           <p className="ld-kicker">Fiyatlar</p>
           <Heading id="ld-pricing-title">Planlar</Heading>
           <p className="ld-pricing-vat">{VAT_NOTE}</p>
-          <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Abonelikler aylıktır.</p>
+          <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Abonelikler aylıktır; istediğiniz zaman iptal edebilirsiniz.</p>
+          <p className="ld-pricing-sub ld-pricing-legal">Ödeme onaylandığında plan hesabınıza anında tanımlanır. <Link to="/on-bilgilendirme">Ön bilgilendirme</Link> · <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link> · <Link to="/iptal-iade">İptal ve iade</Link></p>
         </header>
         <PlanCards plans={PUBLIC_PLANS} onSelect={select} />
       </div>
@@ -310,12 +311,12 @@ export function LandingPage() {
   );
 }
 
-function LegalPage({ title, children }: { title: string; children: ReactNode }) {
+export function LegalPage({ title, children, updated = UPDATED }: { title: string; children: ReactNode; updated?: string }) {
   return (
     <PublicShell>
       <article className="pub-legal">
         <h1>{title}</h1>
-        <p className="pub-updated">Son güncelleme: {UPDATED}</p>
+        <p className="pub-updated">Son güncelleme: {updated}</p>
         {children}
       </article>
     </PublicShell>
@@ -344,13 +345,13 @@ export function PrivacyPage() {
         <li>İstediğiniz analizleri yapmak ve sonuçları göstermek,</li>
         <li>Hizmetin güvenliğini sağlamak, aşırı kullanımı ve kötüye kullanımı engellemek,</li>
         <li>Hizmeti geliştirmek için toplu ve anonim kullanım istatistikleri çıkarmak,</li>
-        <li>Hizmeti ücretsiz sunabilmek için reklam göstermek.</li>
+        <li>Reklam göstermek.</li>
       </ul>
       <p>Kişisel bilgilerinizi satmayız.</p>
 
       <h2>Reklamlar</h2>
       <p>
-        Hizmet ücretsiz olarak sunulur ve bazı işlemlerden sonra Google (Google Ad Manager / AdSense)
+        Hizmette bazı işlemlerden sonra Google (Google Ad Manager / AdSense)
         aracılığıyla reklam gösterilebilir. Google ve iş ortakları, size ve başka sitelere yaptığınız
         ziyaretlere göre reklam sunmak için çerez kullanabilir. Google'ın reklam çerezlerini nasıl
         kullandığını <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer">Google reklam politikalarında</a> okuyabilir,

@@ -320,3 +320,6 @@
 .ad-gate-overlay { background: rgb(15 23 42 / 60%); backdrop-filter: blur(2px); }
 .ad-gate-card { background: var(--color-surface); color: var(--color-ink); border-radius: var(--radius-feature); box-shadow: var(--shadow-overlay); font-size: var(--text-body); }
 #nasil-calisir { scroll-margin-top: 80px; }
+
+.as-footer-brand .as-footer-seller { font-size: var(--text-caption, 12px); color: var(--color-text-muted); }
+.as-footer-seller a { color: inherit; }

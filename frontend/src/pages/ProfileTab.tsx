@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { choosePlan, fetchBilling } from "../api";
 import { isUnlimited, priceOf, resetLabel, VAT_NOTE } from "../billingDisplay";
 import PlanCards, { cleanFeatures } from "../components/PlanCards";
@@ -16,6 +16,7 @@ function OrderSummary({ planId, plan, price, credits, unlimited, features, busy,
 }) {
   const ref = useDialogFocus<HTMLDivElement>(() => { if (!busy) onCancel(); });
   const [paymentNotice, setPaymentNotice] = useState(false);
+  const [accepted, setAccepted] = useState(false);
   const free = planId === "basic";
   return (
     <div className="modal-backdrop" onClick={busy ? undefined : onCancel} role="presentation">
@@ -33,11 +34,20 @@ function OrderSummary({ planId, plan, price, credits, unlimited, features, busy,
           : paymentNotice
             ? <p className="modal-note pf-nopay-box" id="pf-confirm-note" role="status"><strong>Ödeme altyapısı yakında aktif olacak.</strong> Şu an satın alma tamamlanamıyor; planınız değişmedi ve ücret alınmadı.</p>
             : <p className="modal-note" id="pf-confirm-note">Fiyat aylık abonelik ücretidir.</p>}
+        {!free && (
+          <label className="pf-consent">
+            <input type="checkbox" checked={accepted} onChange={(e) => setAccepted(e.target.checked)} disabled={paymentNotice} />
+            <span>
+              <Link to="/on-bilgilendirme" target="_blank">Ön Bilgilendirme Formu</Link>'nu ve <Link to="/mesafeli-satis-sozlesmesi" target="_blank">Mesafeli Satış Sözleşmesi</Link>'ni
+              okudum, kabul ediyorum. Hizmetin hemen başlamasını ve bu nedenle cayma hakkımın sona ereceğini onaylıyorum.
+            </span>
+          </label>
+        )}
         <div className="modal-actions">
           <button type="button" className="pf-btn" onClick={onCancel} disabled={busy} data-autofocus>{paymentNotice ? "Kapat" : "Vazgeç"}</button>
           {free
             ? <button type="button" className="pf-btn is-primary" onClick={onFree} disabled={busy}>{busy ? "Geçiliyor…" : "Basic'e geç"}</button>
-            : <button type="button" className="pf-btn is-primary" onClick={() => setPaymentNotice(true)} disabled={paymentNotice}>Ödemeye geç</button>}
+            : <button type="button" className="pf-btn is-primary" onClick={() => setPaymentNotice(true)} disabled={paymentNotice || !accepted}>Ödemeye geç</button>}
         </div>
       </div>
     </div>
