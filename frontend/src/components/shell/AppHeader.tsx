@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import AccountBadge from "../AccountBadge";
 import AccountMenu from "../AccountMenu";
+import SocialLinks from "./SocialLinks";
 import { SECTION_PATHS } from "../../sections";
 
 const NAV = [
@@ -61,6 +62,7 @@ export default function AppHeader({ can, onProfile }: { can: (feature: string) =
             <NavLink to={PRICING_TO} className={() => (pathname === SECTION_PATHS.profile && hash === "#planlar" ? "active" : "")}>Fiyatlar</NavLink>
           </nav>
           <div className="as-account">
+            <SocialLinks />
             <AccountBadge onOpen={onProfile} />
             <AccountMenu onProfile={onProfile} />
           </div>

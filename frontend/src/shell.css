@@ -325,3 +325,15 @@
 .as-footer-seller a { color: inherit; }
 .as-footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .as-pay-logos { height: 24px; width: auto; max-width: 100%; }
+
+/* Sosyal medya simgeleri (herkese açık ve uygulama üst şeridi): ince ayraçla menüden/hesaptan ayrılır */
+.as-social { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; padding-right: 18px; border-right: 1px solid var(--color-border); height: 28px; }
+.as-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 999px; transition: background-color .15s ease, transform .15s ease; }
+.as-social-icon img { display: block; width: 24px; height: 24px; }
+.as-social-icon:hover { background: var(--color-surface-sunken, rgb(15 23 42 / 6%)); transform: translateY(-1px); }
+.as-social-icon:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+@media (prefers-reduced-motion: reduce) { .as-social-icon { transition: none; } .as-social-icon:hover { transform: none; } }
+.as-account .as-social { margin-right: 8px; padding-right: 14px; }
+@media (max-width: 1023px) {
+  .as-account .as-social { order: 3; height: auto; margin: var(--space-2) 0 0; padding: 0; border-right: 0; justify-content: flex-start; gap: var(--space-2); }
+}
