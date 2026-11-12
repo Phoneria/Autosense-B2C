@@ -372,7 +372,7 @@ export function PrivacyPage() {
       <ul>
         <li><strong>Zorunlu çerezler:</strong> oturumunuzu açık tutan (<code>b2c_sessionid</code>) ve güvenlik için kullanılan (<code>b2c_csrftoken</code>) çerezler. Bunlar olmadan Hizmet çalışmaz.</li>
         <li><strong>Tercih kayıtları:</strong> çerez bildirimini kapattığınızı hatırlamak gibi küçük tarayıcı kayıtları.</li>
-        <li><strong>Reklam çerezleri:</strong> reklam gösterildiğinde Google tarafından yerleştirilen çerezler. Çerez bildiriminde “Kabul et” seçerseniz reklamlar ilgi alanlarınıza göre kişiselleştirilebilir; “Sadece zorunlu” seçerseniz kişiselleştirilmemiş reklam gösterilir.</li>
+        <li><strong>Reklam çerezleri:</strong> reklam gösterildiğinde Google tarafından yerleştirilen çerezler. Google reklam betiği yalnızca çerez bildiriminde “Kabul et” seçerseniz yüklenir; bu durumda reklamlar ilgi alanlarınıza göre kişiselleştirilebilir. “Sadece zorunlu” seçerseniz veya henüz seçim yapmadıysanız reklam betiği yüklenmez, Google'a veri gönderilmez ve reklam çerezi yerleştirilmez.</li>
       </ul>
       <p>Seçiminizi değiştirmek için <button type="button" className="pub-inline-button" onClick={resetCookieChoice}>çerez tercihini sıfırlayın</button>; bildirim yeniden görünür.</p>
       <p>Çerezleri tarayıcı ayarlarınızdan silebilir veya engelleyebilirsiniz; zorunlu çerezler engellenirse giriş yapamazsınız.</p>
@@ -413,7 +413,7 @@ export function KvkkPage() {
       </p>
 
       <h2>1. Veri sorumlusu</h2>
-      <p>Veri sorumlusu: {OPERATOR}. İletişim: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+      <p>Veri sorumlusu: {OPERATOR}. Adres: {SELLER.address}. İletişim: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
 
       <h2>2. İşlenen kişisel veriler</h2>
       <ul>
@@ -430,7 +430,7 @@ export function KvkkPage() {
         <li>Bilgi güvenliğinin sağlanması ve kötüye kullanımın önlenmesi: meşru menfaat (m. 5/2-f) ve hukuki yükümlülük (m. 5/2-ç).</li>
         <li>Ücretli planlar için ödemenin alınması ve fatura düzenlenmesi: bir sözleşmenin ifası (m. 5/2-c) ve hukuki yükümlülük (m. 5/2-ç).</li>
         <li>Hizmetin geliştirilmesi için anonim istatistikler: meşru menfaat (m. 5/2-f).</li>
-        <li>Kişiselleştirilmiş reklam gösterimi: açık rıza (m. 5/1). Çerez bildiriminde “Kabul et” seçilmezse yalnızca kişiselleştirilmemiş reklam gösterilir.</li>
+        <li>Kişiselleştirilmiş reklam gösterimi: açık rıza (m. 5/1). Çerez bildiriminde “Kabul et” seçilmezse Google reklam betiği yüklenmez ve reklam amaçlı veri işlenmez.</li>
       </ul>
 
       <h2>4. Aktarım</h2>
