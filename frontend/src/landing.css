@@ -343,6 +343,7 @@
   .ld-hero-title { font-size: clamp(40px, 12vw, 52px); }
   .ld-hero-lead { font-size: var(--text-lead); }
   .ld-actions > .as-btn { flex: 1 1 100%; }
+  .google-button.ld-google { flex: 1 1 100%; min-height: 48px; }
   .ld-facts-list { grid-template-columns: 1fr; }
   .ld-facts-list li, .ld-facts-list li:first-child { padding: var(--space-5) 0; }
   .ld-facts-list li + li { box-shadow: inset 0 1px 0 rgb(37 99 235 / 18%); }
