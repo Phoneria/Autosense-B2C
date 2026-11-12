@@ -31,6 +31,7 @@ export default function SiteFooter() {
           <Link to="/kvkk">KVKK aydınlatma metni</Link>
           <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20ileti%C5%9Fim`}>{CONTACT_EMAIL}</a>
           <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href={SELLER.tiktok} target="_blank" rel="noopener noreferrer">TikTok</a>
         </nav>
       </div>
       <div className="as-footer-bottom">

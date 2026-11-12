@@ -157,6 +157,7 @@ export function ContactPage() {
         <li><strong>Telefon:</strong> <a href={SELLER.phoneHref}>{SELLER.phone}</a></li>
         <li><strong>Adres:</strong> {SELLER.address}</li>
         <li><strong>Instagram:</strong> <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer">{SELLER.instagramHandle}</a></li>
+        <li><strong>TikTok:</strong> <a href={SELLER.tiktok} target="_blank" rel="noopener noreferrer">{SELLER.tiktokHandle}</a></li>
       </ul>
       <h2>Satıcı bilgileri</h2>
       <ul>

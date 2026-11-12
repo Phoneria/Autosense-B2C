@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PlanCards from "../components/PlanCards";
+import { SELLER } from "../seller";
 import { PUBLIC_PLANS, VAT_NOTE, savePendingPlan } from "../billingDisplay";
 import { GoogleButton } from "../auth/google";
 import Logo from "../components/shell/Logo";
@@ -41,6 +42,8 @@ function PublicShell({ children }: { children: ReactNode }) {
           <Logo />
           <nav className="as-public-nav" aria-label="Hesap">
             <Link to="/fiyatlar" className="as-link-quiet">Fiyatlar</Link>
+            <a href={SELLER.instagram} target="_blank" rel="noopener noreferrer" className="as-link-quiet as-social-link">Instagram</a>
+            <a href={SELLER.tiktok} target="_blank" rel="noopener noreferrer" className="as-link-quiet as-social-link">TikTok</a>
             <Link to="/login" className="as-link-quiet">Giriş yap</Link>
             <Link to="/signup" className="as-btn as-btn-primary as-btn-sm"><span className="as-hide-sm">Ücretsiz hesap aç</span><span className="as-show-sm">Hesap aç</span></Link>
           </nav>

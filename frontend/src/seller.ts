@@ -11,4 +11,6 @@ export const SELLER = {
   web: "https://auto-sense.com.tr",
   instagram: "https://www.instagram.com/autoosense/",
   instagramHandle: "@autoosense",
+  tiktok: "https://www.tiktok.com/@autosensee",
+  tiktokHandle: "@autosensee",
 } as const;

@@ -375,3 +375,6 @@
 }
 .ld-pricing-legal { font-size: var(--text-body-sm); }
 .ld-pricing-legal a { color: var(--color-accent-text); }
+
+/* Üst şeritte sosyal medya linkleri: dar ekranda gizli (footer'da var) */
+@media (max-width: 719px) { .as-public .as-public-nav .as-social-link { display: none; } }
