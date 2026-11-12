@@ -10,10 +10,12 @@ const NAV = [
   { to: SECTION_PATHS.guide, label: "Araç Rehberi", feature: "guide" },
   { to: SECTION_PATHS.regional, label: "Bölgesel Fırsatlar", feature: "regional" },
 ] as const;
+/** Fiyatlar: Hesabım sayfasındaki plan kartlarına gider. */
+const PRICING_TO = `${SECTION_PATHS.profile}#planlar`;
 
 /** Giriş yapmış kullanıcının üst menüsü. Mobilde menü düğmesiyle açılır. */
 export default function AppHeader({ can, onProfile }: { can: (feature: string) => boolean; onProfile: () => void }) {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const [open, setOpen] = useState(false);
   useEffect(() => { setOpen(false); }, [pathname]);
   const toggle = useRef<HTMLButtonElement>(null);
@@ -56,6 +58,7 @@ export default function AppHeader({ can, onProfile }: { can: (feature: string) =
                 </NavLink>
               );
             })}
+            <NavLink to={PRICING_TO} className={() => (pathname === SECTION_PATHS.profile && hash === "#planlar" ? "active" : "")}>Fiyatlar</NavLink>
           </nav>
           <div className="as-account">
             <AccountBadge onOpen={onProfile} />

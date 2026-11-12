@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { choosePlan, fetchBilling } from "../api";
 import { isUnlimited, priceOf, resetLabel, VAT_NOTE } from "../billingDisplay";
 import PlanCards, { cleanFeatures } from "../components/PlanCards";
@@ -56,6 +57,13 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
   const [confirming, setConfirming] = useState<string | null>(null);
 
   useEffect(() => { if (pendingPlan) setConfirming(pendingPlan); }, [pendingPlan]);
+
+  // Üst menüdeki "Fiyatlar" (/hesabim#planlar): planlar yüklenince o bölüme kaydır.
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (hash !== "#planlar" || !details) return;
+    document.getElementById("planlar")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [hash, details]);
 
   useEffect(() => {
     setLoadError("");
@@ -146,7 +154,7 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
         {error && <p role="alert" className="form-error">{error}</p>}
       </div>
 
-      <h2 className="tab-subtitle">Planlar</h2>
+      <h2 className="tab-subtitle" id="planlar">Planlar</h2>
       <p className="pf-hint pf-vat">{VAT_NOTE}</p>
       <p className="pf-hint">Senaryolar ücretsizdir. Plan kredileri her gün 00:00'da yenilenir. Premium'da analiz sınırı yoktur.</p>
       {details && <PlanCards plans={details.plans} currentPlan={current?.plan} busy={busy} onSelect={setConfirming} />}

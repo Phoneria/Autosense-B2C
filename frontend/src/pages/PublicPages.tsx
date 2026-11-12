@@ -40,7 +40,7 @@ function PublicShell({ children }: { children: ReactNode }) {
         <div className="as-header-inner">
           <Logo />
           <nav className="as-public-nav" aria-label="Hesap">
-            <Link to="/fiyatlar" className="as-link-quiet as-hide-sm">Fiyatlar</Link>
+            <Link to="/fiyatlar" className="as-link-quiet">Fiyatlar</Link>
             <Link to="/login" className="as-link-quiet">Giriş yap</Link>
             <Link to="/signup" className="as-btn as-btn-primary as-btn-sm"><span className="as-hide-sm">Ücretsiz hesap aç</span><span className="as-show-sm">Hesap aç</span></Link>
           </nav>

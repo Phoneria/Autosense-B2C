@@ -24,7 +24,7 @@ function Home() {
 function Pricing() {
   const { user, loading } = useAuth();
   if (loading) return <main className="auth-loading" role="status">Oturumunuz kontrol ediliyor…</main>;
-  return user ? <Navigate to="/hesabim" replace /> : <PricingPage />;
+  return user ? <Navigate to="/hesabim#planlar" replace /> : <PricingPage />;
 }
 export default function App() { return <BrowserRouter><AuthProvider><CookieNotice /><Routes>
   <Route path="/login" element={<LoginPage />} /><Route path="/signup" element={<SignupPage />} />

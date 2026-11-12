@@ -365,3 +365,11 @@
 .ld-pricing-sub { margin: var(--space-2) 0 0; color: var(--color-text-muted); }
 .ld-pricing .pf-plans { max-width: 1040px; margin: 0 auto; }
 .ld-pricing .pf-btn { width: 100%; }
+
+/* Dar telefonlarda üst şeritte Fiyatlar + Giriş yap + Hesap aç sığsın */
+@media (max-width: 420px) {
+  .as-public .as-header .as-logo img { height: 18px; }
+  .as-public .as-public-nav { gap: 2px; }
+  .as-public .as-public-nav .as-link-quiet { padding: 0 6px; font-size: 13px; }
+  .as-public .as-public-nav .as-btn-sm { padding: 0 10px; font-size: 13px; }
+}
