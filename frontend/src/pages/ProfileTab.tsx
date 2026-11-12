@@ -1,48 +1,46 @@
 import { useEffect, useState } from "react";
 import { choosePlan, fetchBilling } from "../api";
-import { isUnlimited, priceOf, resetLabel } from "../billingDisplay";
+import { isUnlimited, priceOf, resetLabel, VAT_NOTE } from "../billingDisplay";
+import PlanCards, { cleanFeatures } from "../components/PlanCards";
 import { useAuth } from "../auth/AuthProvider";
 import type { BillingDetails } from "../types";
 import { useDialogFocus } from "../components/useDialogFocus";
 
-function PlanConfirm({ plan, price, credits, unlimited, features, busy, onCancel, onConfirm }: {
-  plan: string; price: string; credits: number; unlimited: boolean; features: string[]; busy: boolean; onCancel: () => void; onConfirm: () => void;
+/** Sipariş özeti. Ücretli planlarda ödeme altyapısı (iyzico) henüz bağlı değil:
+ *  "Ödemeye geç" planı DEĞİŞTİRMEZ, yalnızca bilgilendirir. Basic ücretsiz olduğu
+ *  için doğrudan geçilebilir. */
+function OrderSummary({ planId, plan, price, credits, unlimited, features, busy, onCancel, onFree }: {
+  planId: string; plan: string; price: string; credits: number; unlimited: boolean; features: string[]; busy: boolean;
+  onCancel: () => void; onFree: () => void;
 }) {
   const ref = useDialogFocus<HTMLDivElement>(() => { if (!busy) onCancel(); });
+  const [paymentNotice, setPaymentNotice] = useState(false);
+  const free = planId === "basic";
   return (
     <div className="modal-backdrop" onClick={busy ? undefined : onCancel} role="presentation">
       <div ref={ref} className="modal pf-modal" role="dialog" aria-modal="true" aria-labelledby="pf-confirm-title" aria-describedby="pf-confirm-note"
         tabIndex={-1} onClick={(e) => e.stopPropagation()}>
-        <h2 id="pf-confirm-title">{plan} planına geçilsin mi?</h2>
+        <p className="pf-label">{free ? "Plan değişikliği" : "Sipariş özeti"}</p>
+        <h2 id="pf-confirm-title">{free ? `${plan} planına geçilsin mi?` : `${plan} planı`}</h2>
         <div className="pf-modal-price">
-          <strong>{unlimited ? "Sınırsız analiz" : `Günde ${credits} analiz`}</strong>
-          <span>Liste fiyatı {price} · şimdilik ücretsiz</span>
+          <strong>{price}</strong>
+          <span>{unlimited ? "Sınırsız analiz" : `Günde ${credits} analiz`}{free ? "" : ` · ${VAT_NOTE}`}</span>
         </div>
         <ul>{cleanFeatures(features, unlimited).map((f) => <li key={f}>{f}</li>)}</ul>
-        <p className="modal-note pf-nopay-box" id="pf-confirm-note"><strong>Ödeme alınmaz.</strong> Ödeme sistemi henüz aktif değil; onayladığınızda plan anında tanımlanır ve ücret tahsil edilmez.</p>
+        {free
+          ? <p className="modal-note" id="pf-confirm-note">Basic ücretsizdir; geçiş anında yapılır.</p>
+          : paymentNotice
+            ? <p className="modal-note pf-nopay-box" id="pf-confirm-note" role="status"><strong>Ödeme altyapısı yakında aktif olacak.</strong> Şu an satın alma tamamlanamıyor; planınız değişmedi ve ücret alınmadı.</p>
+            : <p className="modal-note" id="pf-confirm-note">Fiyat aylık abonelik ücretidir.</p>}
         <div className="modal-actions">
-          <button type="button" className="pf-btn" onClick={onCancel} disabled={busy} data-autofocus>Vazgeç</button>
-          <button type="button" className="pf-btn is-primary" onClick={onConfirm} disabled={busy}>
-            {busy ? "Etkinleştiriliyor…" : "Ödemesiz etkinleştir"}
-          </button>
+          <button type="button" className="pf-btn" onClick={onCancel} disabled={busy} data-autofocus>{paymentNotice ? "Kapat" : "Vazgeç"}</button>
+          {free
+            ? <button type="button" className="pf-btn is-primary" onClick={onFree} disabled={busy}>{busy ? "Geçiliyor…" : "Basic'e geç"}</button>
+            : <button type="button" className="pf-btn is-primary" onClick={() => setPaymentNotice(true)} disabled={paymentNotice}>Ödemeye geç</button>}
         </div>
       </div>
     </div>
   );
-}
-
-/** Backend'in özellik metinlerinde ödeme alınmıyorken yanıltıcı olan ifadeleri ekranda yumuşatır. */
-function featureLabel(f: string) {
-  return f.replace(/fiyat\/satış grafikleri/gi, "fiyat ve ilandan kalkan (tahmini) grafikleri");
-}
-
-/** Ek kredi kaldırıldı, krediler günlük yenileniyor: eski backend metinlerini de buna göre gösterir. */
-function cleanFeatures(features: string[], unlimited: boolean) {
-  return features
-    .filter((f) => !/ek kredi/i.test(f))
-    .map((f) => /^\s*(10 dakikada|günde)\s+\d+\s+analiz/i.test(f)
-      ? (unlimited ? "Sınırsız analiz" : f.replace(/10 dakikada/i, "Günde"))
-      : featureLabel(f));
 }
 
 export default function ProfileTab({ pendingPlan, onPendingHandled }: {
@@ -87,11 +85,11 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
   return (
     <section className="tab-page pf-page">
       {confirmPlan && (
-        <PlanConfirm plan={confirmPlan.name} price={priceOf(confirmPlan.id, confirmPlan.price_label)} credits={confirmPlan.credits}
+        <OrderSummary planId={confirmPlan.id} plan={confirmPlan.name} price={priceOf(confirmPlan.id, confirmPlan.price_label)} credits={confirmPlan.credits}
           features={confirmPlan.features} unlimited={confirmPlan.id === "premium"}
           busy={busy === `plan-${confirmPlan.id}`} onCancel={closeConfirm}
-          onConfirm={async () => {
-            await run(`plan-${confirmPlan.id}`, () => choosePlan(confirmPlan.id), `${confirmPlan.name} planı etkinleştirildi. Ücret alınmadı.`);
+          onFree={async () => {
+            await run(`plan-${confirmPlan.id}`, () => choosePlan(confirmPlan.id), `${confirmPlan.name} planına geçildi.`);
             closeConfirm();
           }} />
       )}
@@ -99,14 +97,6 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
         <span className="eyebrow">HESAP</span>
         <h1>Hesabım ve plan</h1>
         <p>{user?.email}</p>
-      </div>
-
-      <div className="pf-nopay-box" role="note">
-        <span className="pf-nopay-badge">Ödeme alınmaz</span>
-        <p>
-          Ödeme sistemi henüz aktif değil. Planlar <b>anında ve ücretsiz</b> tanımlanır; kart bilgisi istenmez.
-          Gösterilen fiyatlar ileride uygulanacak liste fiyatlarıdır.
-        </p>
       </div>
 
       {loadError && !current && (
@@ -157,27 +147,9 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
       </div>
 
       <h2 className="tab-subtitle">Planlar</h2>
+      <p className="pf-hint pf-vat">{VAT_NOTE}</p>
       <p className="pf-hint">Senaryolar ücretsizdir. Plan kredileri her gün 00:00'da yenilenir. Premium'da analiz sınırı yoktur.</p>
-      <div className="plan-grid pf-plans">
-        {details?.plans.map((plan) => {
-          const active = current?.plan === plan.id;
-          return (
-            <article key={plan.id} className={`pf-plan plan-${plan.id}${active ? " is-current" : ""}`} aria-labelledby={`pf-plan-${plan.id}`} aria-current={active ? "true" : undefined}>
-              <div className="pf-plan-head">
-                <h3 className="pf-plan-name" id={`pf-plan-${plan.id}`}>{plan.name}</h3>
-                {active && <span className="pf-badge">Mevcut plan</span>}
-              </div>
-              <p className="pf-plan-credits">{plan.id === "premium" ? <strong>Sınırsız</strong> : <><strong>{plan.credits}</strong> kredi / gün</>}</p>
-              <p className="pf-plan-price"><span>Liste fiyatı</span> {priceOf(plan.id, plan.price_label)}</p>
-              <ul aria-label={`${plan.name} planına dahil olanlar`}>{cleanFeatures(plan.features, plan.id === "premium").map((f) => <li key={f}>{f}</li>)}</ul>
-              <button type="button" className={active ? "pf-btn is-current" : "pf-btn"} disabled={active || !!busy}
-                onClick={() => setConfirming(plan.id)} aria-label={active ? `${plan.name}: kullandığınız plan` : `${plan.name} planını ödemesiz etkinleştir`}>
-                {active ? "Kullandığınız plan" : busy === `plan-${plan.id}` ? "Etkinleştiriliyor…" : "Ödemesiz etkinleştir"}
-              </button>
-            </article>
-          );
-        })}
-      </div>
+      {details && <PlanCards plans={details.plans} currentPlan={current?.plan} busy={busy} onSelect={setConfirming} />}
 
     </section>
   );

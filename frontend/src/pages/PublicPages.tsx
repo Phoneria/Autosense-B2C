@@ -3,7 +3,9 @@
 // incelemesi ve arama motorları bu sayfaları görebilmeli.
 import { useEffect, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import PlanCards from "../components/PlanCards";
+import { PUBLIC_PLANS, VAT_NOTE, savePendingPlan } from "../billingDisplay";
 import { GoogleButton } from "../auth/google";
 import Logo from "../components/shell/Logo";
 import SiteFooter, { CONTACT_EMAIL } from "../components/shell/SiteFooter";
@@ -38,6 +40,7 @@ function PublicShell({ children }: { children: ReactNode }) {
         <div className="as-header-inner">
           <Logo />
           <nav className="as-public-nav" aria-label="Hesap">
+            <Link to="/fiyatlar" className="as-link-quiet as-hide-sm">Fiyatlar</Link>
             <Link to="/login" className="as-link-quiet">Giriş yap</Link>
             <Link to="/signup" className="as-btn as-btn-primary as-btn-sm"><span className="as-hide-sm">Ücretsiz hesap aç</span><span className="as-show-sm">Hesap aç</span></Link>
           </nav>
@@ -107,6 +110,35 @@ const PERSONAS = [
     points: ["İlanın tahmini değere göre yeri", "Pazarlık için başlangıç ve hedef fiyat", "Modele özel kronik sorunlar"],
   },
 ];
+
+/** Herkese açık plan ve fiyat bölümü. "Satın Al" seçilen planı saklayıp kayda
+ *  yönlendirir; giriş/kayıttan sonra kullanıcı o planın sipariş özetine döner. */
+export function PricingSection({ headingLevel = 2 }: { headingLevel?: 1 | 2 }) {
+  const navigate = useNavigate();
+  const Heading = headingLevel === 1 ? "h1" : "h2";
+  function select(id: string) {
+    if (id === "pro" || id === "premium") { savePendingPlan(id); navigate(`/signup?plan=${id}`); return; }
+    navigate("/signup");
+  }
+  return (
+    <section className="ld-band ld-band-white ld-pricing" id="fiyatlar" aria-labelledby="ld-pricing-title">
+      <div className="ld-wrap">
+        <header className="ld-pricing-head">
+          <p className="ld-kicker">Fiyatlar</p>
+          <Heading id="ld-pricing-title">Planlar</Heading>
+          <p className="ld-pricing-vat">{VAT_NOTE}</p>
+          <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Abonelikler aylıktır.</p>
+        </header>
+        <PlanCards plans={PUBLIC_PLANS} onSelect={select} />
+      </div>
+    </section>
+  );
+}
+
+export function PricingPage() {
+  useEffect(() => { document.title = "Fiyatlar · AutoSense"; }, []);
+  return <PublicShell><div className="ld-pricing-page"><PricingSection headingLevel={1} /></div></PublicShell>;
+}
 
 export function LandingPage() {
   return (
@@ -251,6 +283,8 @@ export function LandingPage() {
           </div>
         </div>
       </section>
+
+      <PricingSection />
 
       <section className="ld-band ld-band-cta" aria-labelledby="ld-final-title">
         <div className="ld-wrap">

@@ -20,7 +20,7 @@ export default function PlanLock({ eyebrow, title, description, bullets, require
         <ul>{bullets.map((b) => <li key={b}>{b}</li>)}</ul>
         <button type="button" className="primary-button" onClick={() => requestPlan(requiredPlan)}>
           {requiredPlan === "premium" ? "Premium'a geç" : "Pro'ya geç"} <span>→</span></button>
-        <small>Ödeme sistemi henüz aktif değil; plan anında onaylanır.</small>
+        <small>Fiyatlara KDV dahildir.</small>
       </div>
     </section>
   );

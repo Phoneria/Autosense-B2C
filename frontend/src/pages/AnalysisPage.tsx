@@ -12,6 +12,7 @@ import PlanLock from "../components/PlanLock";
 import AppHeader from "../components/shell/AppHeader";
 import SiteFooter from "../components/shell/SiteFooter";
 import { PlanChangeContext } from "../planChange";
+import { takePendingPlan } from "../billingDisplay";
 import {
   CAR_PARTS, CATEGORIES, COLORS, DEFAULT_DAMAGE,
   FUEL_OPTIONS, GEAR_OPTIONS, guessFuel,
@@ -49,6 +50,12 @@ export default function AnalysisPage() {
   const can = (feature: string) => planFeatures.includes(feature);
   const requestPlan = (plan: "pro" | "premium") => { setPendingPlan(plan); setTab("profile"); };
   const [pendingPlan, setPendingPlan] = useState<"pro" | "premium" | null>(null);
+  // Fiyat sayfasında "Satın Al"a basıp giriş/kayıt yapan ziyaretçi: seçtiği planın sipariş özetine dön.
+  useEffect(() => {
+    const plan = takePendingPlan();
+    if (plan) requestPlan(plan);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [autoAnalyze, setAutoAnalyze] = useState(false);
   const [vehicles, setVehicles] = useState<VehicleBrand[]>([]);
   const [locations, setLocations] = useState<LocationOption[]>([]);
