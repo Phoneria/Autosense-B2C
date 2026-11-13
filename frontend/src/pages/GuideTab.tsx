@@ -480,7 +480,7 @@ export default function GuideTab() {
       {!open && (
         <div className="tab-head">
           <span className="eyebrow">ARAÇ REHBERİ</span>
-          <h1>Piyasada neler oluyor?</h1>
+          <h1>Piyasada <span className="hl">neler oluyor?</span></h1>
           <p>En çok talep gören modeller, fiyat trendleri ve modellere özel kronik sorunlar. Galeri ilanlarının günlük takibinden hesaplanır.</p>
           {data && (
             <dl className="gd-coverage">

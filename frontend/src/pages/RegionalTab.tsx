@@ -273,7 +273,7 @@ export default function RegionalTab() {
     <section className="tab-page rg-page">
       <div className="tab-head">
         <span className="eyebrow">BÖLGESEL FIRSATLAR</span>
-        <h1>Hangi model hangi ilde daha uygun?</h1>
+        <h1>Hangi model hangi ilde <span className="hl">daha uygun?</span></h1>
         <p>Her ilan önce AutoSense ile fiyatlanır; ilin fiyat / piyasa değeri oranı ülkenin geri kalanıyla kıyaslanır. Böylece yaş ve km farkları karşılaştırmayı bozmaz.</p>
         {data && (
           <dl className="gd-coverage">

@@ -8,6 +8,7 @@ import "./analysis.css";
 import "./data.css";
 import "./vivid.css";
 import "./fresh.css";
+import "./refresh.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
