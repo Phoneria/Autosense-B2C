@@ -291,8 +291,17 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
               <h3>Medyan ilan fiyatı</h3>
               <p>O hafta yayında olan ilanların medyan fiyatı, bin TL (B). Araç karışımına göre oynayabilir.</p>
               <WeeklyChart weeks={model.weeks} format={(v) => `${(v / 1000).toLocaleString("tr-TR", { maximumFractionDigits: 0 })} B`}
-                series={[{ name: "Medyan fiyat", color: "var(--chart-2)", values: model.weekly.median_price }]} />
+                series={[{ name: "Medyan fiyat", color: "var(--chart-3)", values: model.weekly.median_price }]} />
               {sampleText && <p className="gd-chart-meta">{sampleText}</p>}
+            </article>
+            <article className="guide-chart-card guide-chart-wide">
+              <h3>Arz ve talep</h3>
+              <p>Her hafta piyasaya giren yeni ilanlar ile yayından kalkan ilanlar. Kalkan ilan sayısı tahminidir; satış adedi değildir.</p>
+              <WeeklyChart wide weeks={model.weeks} format={(v) => num(Math.round(v))}
+                series={[
+                  { name: "Yeni ilan", color: "var(--chart-1)", values: model.weekly.new, kind: "bar" },
+                  { name: "İlandan kalkan (tahmini)", color: "var(--chart-4)", values: model.weekly.removed, kind: "bar" },
+                ]} />
             </article>
           </div>
 

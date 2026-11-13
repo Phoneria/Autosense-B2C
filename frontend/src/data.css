@@ -648,3 +648,27 @@
 .gd-diff { font-style: normal; font-size: var(--text-caption); font-weight: 600; color: var(--color-text-muted); }
 @media (max-width: 1023px) { .gd-overview { grid-template-columns: 1fr; } }
 @media (max-width: 479px) { .gd-group dl { gap: var(--space-3); } .gd-group strong { font-size: 20px; } }
+
+/* Grafikler: yumuşak eğri, dolgulu alan, üzerine gelince haftalık değer kutusu */
+.wc-frame { position: relative; }
+.weekly-chart svg { display: block; width: 100%; height: auto; cursor: crosshair; touch-action: pan-y; }
+.wc-grid { stroke: var(--chart-grid, #e2e8f0); stroke-dasharray: 3 5; }
+.wc-base { stroke: var(--chart-axis, #94a3b8); stroke-dasharray: 5 4; }
+.wc-hover-band { fill: var(--color-accent-soft); opacity: .55; }
+.wc-dim { opacity: .35; transition: opacity .12s ease; }
+.wc-tip { position: absolute; top: 4px; z-index: 2; transform: translateX(12px); display: grid; gap: 4px; min-width: 150px; padding: 10px 12px; border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-surface); box-shadow: 0 8px 24px rgb(15 23 42 / 12%); font-size: var(--text-label); color: var(--color-text-muted); pointer-events: none; }
+.wc-tip.is-left { transform: translateX(calc(-100% - 12px)); }
+.wc-tip strong { color: var(--color-text); font-size: var(--text-label); }
+.wc-tip span { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.wc-tip i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.wc-tip b { margin-left: auto; padding-left: 12px; color: var(--color-text); font-variant-numeric: tabular-nums; }
+.wc-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
+.wc-legend i { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 3px; vertical-align: -1px; }
+.guide-charts .guide-chart-wide { grid-column: 1 / -1; }
+
+/* Küçük değişim değerleri yumuşak renkli hap içinde (benzer modeller, karşılaştırma tablosu) */
+.gd-similar .gd-delta, .gd-ctable .gd-delta { padding: 2px 7px; border-radius: 999px; background: var(--color-neutral-soft); font-size: 12px; font-weight: 600; }
+.gd-similar .gd-delta.is-up, .gd-ctable .gd-delta.is-up { background: var(--color-success-soft); }
+.gd-similar .gd-delta.is-down, .gd-ctable .gd-delta.is-down { background: var(--color-danger-soft); }
+.gd-group strong .gd-delta { padding: 0; background: none; }
+@media (prefers-reduced-motion: reduce) { .wc-dim { transition: none; } }
