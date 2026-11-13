@@ -45,6 +45,14 @@ const SORT_LABEL: Record<SortKey, string> = {
 /** Ana sayfa sıralamaları: her liste backend'in kendi sıralamasıyla gelir.
  *  Sütun başlığına tıklamak yalnızca ekrandaki sırayı değiştirir; "#" her zaman
  *  backend'deki sırayı gösterir. */
+/** Benzer modelin fiyatı, incelenen modele göre: "2.600 TL daha ucuz". */
+function PriceDiff({ value, base }: { value: number; base: number }) {
+  const oran = Math.abs(value) / base * 100;
+  if (oran < 0.05) return <em className="gd-diff is-same">aynı seviyede</em>;
+  const metin = `${tl(Math.abs(value))} ${value < 0 ? "daha ucuz" : "daha pahalı"}`;
+  return <em className={`gd-diff ${value < 0 ? "is-down" : "is-up"}`}>{metin}</em>;
+}
+
 function RankingTable({ items, highlight, caption, onOpen }: {
   items: GuideSummary[]; highlight: SortKey; caption: string; onOpen: (key: string) => void;
 }) {
@@ -201,12 +209,6 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
           </p>
         )}
       </div>
-      {!model.lock && (
-        <div className="gd-trend">
-          <span>4 haftalık fiyat</span>
-          <Change value={model.price_change_4w_pct} />
-        </div>
-      )}
     </div>
   );
 
@@ -221,14 +223,31 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
     );
   }
 
-  const kpis: { label: string; value: ReactNode; hint: string; est?: boolean }[] = [
-    { label: "Aktif ilan", value: num(model.active), hint: `${num(model.dealers)} galeride` },
-    { label: "Medyan ilan fiyatı", value: tl(model.median_price), hint: "Şu an yayındaki ilanlar" },
-    { label: `Son ${model.window_days} günde ilandan kalkan`, value: num(model.removed_30d), hint: `${num(model.new_30d)} yeni ilan girdi`, est: true },
-    { label: "İlanda kalma süresi", value: model.median_days_on_market != null ? `${model.median_days_on_market} gün` : "—", hint: "Yayından kalkana kadar (medyan)", est: true },
-    { label: "Stok devir hızı", value: model.turnover_pct != null ? `%${model.turnover_pct.toLocaleString("tr-TR")}` : "—", hint: "30 günde ilandan kalkan / ortalama stok", est: true },
-    { label: "4 haftalık fiyat değişimi", value: <Change value={model.price_change_4w_pct} />, hint: "Yaş ve km'den arındırılmış" },
+  // Metrikler karar sorusuna göre gruplanır: fiyat (ne kadar), arz (ne kadar seçenek), talep hızı (ne kadar çabuk satılıyor).
+  const groups: { title: string; items: { label: string; value: ReactNode; hint: string; est?: boolean }[] }[] = [
+    { title: "Fiyat", items: [
+      { label: "Medyan ilan fiyatı", value: tl(model.median_price), hint: "Şu an yayındaki ilanlar" },
+      { label: "4 haftalık değişim", value: <Change value={model.price_change_4w_pct} />, hint: "Yaş ve km'den arındırılmış" },
+    ] },
+    { title: "Arz", items: [
+      { label: "Aktif ilan", value: num(model.active), hint: `${num(model.dealers)} galeride` },
+      { label: `Son ${model.window_days} günde yeni ilan`, value: num(model.new_30d), hint: "Piyasaya giren araç" },
+    ] },
+    { title: "Talep hızı", items: [
+      { label: "İlanda kalma süresi", value: model.median_days_on_market != null ? `${model.median_days_on_market} gün` : "—", hint: "Yayından kalkana kadar (medyan)", est: true },
+      { label: `Son ${model.window_days} günde ilandan kalkan`, value: num(model.removed_30d), hint: model.turnover_pct != null ? `Stok devir hızı %${model.turnover_pct.toLocaleString("tr-TR")}` : "Stok devir hızı —", est: true },
+    ] },
   ];
+  const change = model.price_change_4w_pct;
+  const trendText = change == null ? null
+    : Math.abs(change) < 0.5 ? `Fiyatlar son 4 haftada yatay seyretti (${pct(change)})`
+    : `Fiyatlar son 4 haftada %${Math.abs(change).toLocaleString("tr-TR", { maximumFractionDigits: 1 })} ${change > 0 ? "yükseldi" : "düştü"}`;
+  const verdict = [
+    trendText,
+    model.median_days_on_market != null ? `ilanlar ortalama ${model.median_days_on_market} günde yayından kalkıyor` : null,
+    model.median_price != null ? `medyan ilan fiyatı ${tl(model.median_price)}` : null,
+  ].filter(Boolean).join("; ");
+  const similarKeys = (model.similar || []).map((m) => m.key).filter((k) => index.some((x) => x.key === k)).slice(0, 4);
   const samples = model.weekly?.samples?.filter((n) => n > 0) || [];
   const sampleText = samples.length
     ? `Haftalık örneklem ${num(Math.min(...samples))}–${num(Math.max(...samples))} ilan · ${model.weeks?.length || 0} hafta`
@@ -239,14 +258,23 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
       {back}
       {head}
 
-      <dl className="guide-kpis gd-kpis">
-        {kpis.map((k) => (
-          <div key={k.label} className="guide-kpi" style={{ "--i": kpis.indexOf(k) } as CSSProperties}>
-            <dt>{k.label}{k.est && <em className="gd-est" title="Satış verisi değil; yayından kalkan ilanlardan hesaplanır">tahmini</em>}</dt>
-            <dd><strong>{k.value}</strong><small>{k.hint}</small></dd>
-          </div>
+      {verdict && <p className="gd-verdict">{verdict.charAt(0).toLocaleUpperCase("tr-TR") + verdict.slice(1)}.</p>}
+
+      <div className="gd-overview">
+        {groups.map((g) => (
+          <section key={g.title} className="gd-group" aria-label={g.title}>
+            <h3>{g.title}</h3>
+            <dl>
+              {g.items.map((k) => (
+                <div key={k.label}>
+                  <dt>{k.label}{k.est && <em className="gd-est" title="Satış verisi değil; yayından kalkan ilanlardan hesaplanır">tahmini</em>}</dt>
+                  <dd><strong>{k.value}</strong><small>{k.hint}</small></dd>
+                </div>
+              ))}
+            </dl>
+          </section>
         ))}
-      </dl>
+      </div>
 
       <h2 className="tab-subtitle">Fiyat ve talep</h2>
       {model.premium && model.weekly && model.weeks ? (
@@ -261,7 +289,7 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
             </article>
             <article className="guide-chart-card">
               <h3>Medyan ilan fiyatı</h3>
-              <p>O hafta yayında olan ilanların medyan fiyatı (araç karışımına göre oynayabilir).</p>
+              <p>O hafta yayında olan ilanların medyan fiyatı, bin TL (B). Araç karışımına göre oynayabilir.</p>
               <WeeklyChart weeks={model.weeks} format={(v) => `${(v / 1000).toLocaleString("tr-TR", { maximumFractionDigits: 0 })} B`}
                 series={[{ name: "Medyan fiyat", color: "var(--chart-2)", values: model.weekly.median_price }]} />
               {sampleText && <p className="gd-chart-meta">{sampleText}</p>}
@@ -318,7 +346,21 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
                   </table>
                 </div>
               </div>
-            ) : <p className="gd-empty-note">Karşılaştırmak için bir veya iki model seçin.</p>}
+            ) : (
+              <div className="gd-compare-empty">
+                <p className="gd-empty-note">{model.name} ile yan yana görmek için bir veya iki model seçin.</p>
+                {similarKeys.length > 0 && (
+                  <div className="gd-quickpick" role="group" aria-label="Hızlı seçim">
+                    <span>Benzer fiyatlılar:</span>
+                    {similarKeys.map((k) => (
+                      <button key={k} type="button" onClick={() => setCompareKeys((cur) => cur.includes(k) ? cur : [...cur, k].slice(-2))}>
+                        + {model.similar!.find((m) => m.key === k)!.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {!!model.similar?.length && (
@@ -329,7 +371,9 @@ function ModelPage({ modelKey, index, onOpen, onBack }: {
                   <li key={m.key}>
                     <button type="button" onClick={() => onOpen(m.key)}>
                       <span className="gd-similar-name">{m.name}</span>
-                      <span className="gd-similar-price">{tl(m.median_price)}</span>
+                      <span className="gd-similar-price">{tl(m.median_price)}
+                        {model.median_price ? <PriceDiff value={m.median_price - model.median_price} base={model.median_price} /> : null}
+                      </span>
                       <span className="gd-similar-meta">{num(m.removed_30d)} ilandan kalkan (tahmini) · <Change value={m.price_change_4w_pct} /></span>
                       <span className="gd-go" aria-hidden="true">›</span>
                     </button>
