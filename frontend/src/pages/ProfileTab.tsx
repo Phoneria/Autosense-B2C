@@ -114,7 +114,7 @@ export default function ProfileTab({ pendingPlan, onPendingHandled }: {
       )}
       <div className="tab-head">
         <span className="eyebrow">HESAP</span>
-        <h1>Hesabım ve <span className="hl">plan</span></h1>
+        <h1>Hesabım ve plan</h1>
         <p>{user?.email}</p>
       </div>
 

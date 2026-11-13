@@ -75,7 +75,7 @@ export default function CostTab({ base }: { base: { input: VehicleInput; result:
     <section className="tab-page">
       <div className="tab-head">
         <span className="eyebrow">KİŞİSEL MALİYET</span>
-        <h1>Bu araç bana yılda <span className="hl">kaça patlar?</span></h1>
+        <h1>Bu araç bana yılda kaça patlar?</h1>
         <p>Kendi kullanımınızı ve tekliflerinizi girin. Boş bıraktığınız kalemler ortalama değerlerle tahmin edilir ve “tahmini” olarak işaretlenir. Hesaplama kredi harcamaz.</p>
       </div>
 

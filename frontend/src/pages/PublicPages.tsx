@@ -150,7 +150,7 @@ export function LandingPage() {
       <section className="ld-hero" aria-labelledby="ld-title">
         <div className="ld-hero-art"><HeroDrawing /></div>
         <div className="ld-wrap ld-hero-inner">
-          <h1 id="ld-title" className="ld-hero-title">İkinci el araç piyasası için <span className="hl">veri</span></h1>
+          <h1 id="ld-title" className="ld-hero-title">İkinci el araç piyasası için veri</h1>
           <p className="ld-hero-tagline">Piyasayı net görün.</p>
           <p className="ld-hero-lead">Aracın piyasa değerini analiz edin, fiyatları karşılaştırın ve alım kararınızı veriye dayandırın.</p>
           <div className="ld-actions">
@@ -181,7 +181,7 @@ export function LandingPage() {
             <p className="ld-kicker">Ürün</p>
             <h2 id="ld-tools-title">
               <span className="ld-tools-a">Aracın değerini</span>
-              <span className="ld-tools-b"><span className="hl">her açıdan</span> görün.</span>
+              <span className="ld-tools-b">her açıdan görün.</span>
             </h2>
           </header>
           <div className="ld-tools">
@@ -203,7 +203,7 @@ export function LandingPage() {
           <header className="ld-split-head" data-reveal>
             <div>
               <p className="ld-kicker">Nasıl çalışır?</p>
-              <h2 id="ld-how-title">Fiyat kararını <span className="hl">üç adımda</span> netleştirin</h2>
+              <h2 id="ld-how-title">Fiyat kararını üç adımda netleştirin</h2>
             </div>
             <p className="ld-split-sub">İlanı okuyun, piyasayı görün, teklifinizi veriyle oluşturun.</p>
           </header>
@@ -216,19 +216,20 @@ export function LandingPage() {
               </li>
             ))}
           </ol>
-          <div className="ld-features-head" data-reveal>
-            <h3>İlanın <span className="hl">ötesini</span> görün</h3>
-            <p>Her analizde birlikte gelen ek araçlar</p>
+          <div className="ld-extras" data-reveal>
+            <div className="ld-extras-head">
+              <p className="ld-extras-title">İlanın ötesini görün</p>
+              <p className="ld-extras-sub">Her analizde birlikte gelen ek araçlar</p>
+            </div>
+            <ul className="ld-extras-list">
+              {EXTRAS.map(({ title, text, Icon }) => (
+                <li key={title}>
+                  <span className="ld-chip" aria-hidden="true"><Icon /></span>
+                  <div><h3>{title}</h3><p>{text}</p></div>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="ld-features">
-            {EXTRAS.map(({ title, text, Icon }, i) => (
-              <li key={title} className="ld-feature" data-reveal style={seq(i)}>
-                <span className="ld-feature-icon" aria-hidden="true"><Icon /></span>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -237,7 +238,7 @@ export function LandingPage() {
           <header className="ld-method-head" data-reveal>
             <div>
               <p className="ld-kicker">Yöntem ve sınırlar</p>
-              <h2 id="ld-method-title">Veriden <span className="hl">karara.</span></h2>
+              <h2 id="ld-method-title">Veriden karara.</h2>
             </div>
             <p>
               Tahmin, aynı modelin güncel ilanlarından hesaplanır. Her emsal ilan; yaş, kilometre, hasar ve donanım
@@ -268,7 +269,7 @@ export function LandingPage() {
           <header className="ld-split-head" data-reveal>
             <div>
               <p className="ld-kicker">Kimler için?</p>
-              <h2 id="ld-who-title"><span className="hl">Doğru teklifi</span> vermek isteyenler için</h2>
+              <h2 id="ld-who-title">Doğru teklifi vermek isteyenler için</h2>
             </div>
             <p className="ld-split-sub">Aynı veri, iki farklı karar: stok alımı ve araç satın alma.</p>
           </header>
