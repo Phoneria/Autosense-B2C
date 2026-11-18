@@ -89,8 +89,11 @@ def _locked(user) -> Subscription:
         user=user,
         defaults={"plan": DEFAULT_PLAN, "credits": PLANS[DEFAULT_PLAN]["credits"], "period_start": now},
     )
-    if not created and _apply_reset(sub, now):
-        sub.save(update_fields=["credits", "period_start", "updated_at"])
+    if not created:
+        from .payments import expire
+        expire(sub, now)
+        if _apply_reset(sub, now):
+            sub.save(update_fields=["credits", "period_start", "updated_at"])
     return sub
 
 
@@ -128,6 +131,8 @@ def status(user) -> dict:
         return serialize(Subscription(user=user, plan=DEFAULT_PLAN,
                                       credits=PLANS[DEFAULT_PLAN]["credits"],
                                       period_start=timezone.now()))
+    from .payments import expire
+    expire(sub, save=False)                    # kaydedilmez; sadece görüntü
     _apply_reset(sub, timezone.now())          # kaydedilmez; sadece görüntü
     return serialize(sub)
 
@@ -135,6 +140,13 @@ def status(user) -> dict:
 def choose_plan(user, plan: str) -> dict:
     if plan not in PLANS:
         raise ValueError("Geçersiz plan.")
+    from . import iyzico, payments
+    if iyzico.enabled():
+        if plan in payments.PAID_PLANS:
+            raise PlanRequired("Ücretli planlar ödeme ile etkinleşir.")
+        live = payments.current(user)
+        if live and live.status in ("ACTIVE", "UNPAID"):
+            raise ValueError("Basic'e geçmek için önce aboneliğinizi iptal edin. Plan, ödenen dönem sonunda Basic'e döner.")
     with transaction.atomic():
         sub = _locked(user)
         if sub.plan != plan:

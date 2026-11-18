@@ -93,3 +93,35 @@ class UsageEvent(models.Model):
         verbose_name = "kullanım kaydı"
         verbose_name_plural = "kullanım kayıtları"
         indexes = [models.Index(fields=["user", "created_at"])]
+
+
+class PaidSubscription(models.Model):
+    """iyzico üzerinden alınan ücretli abonelik (her ödeme denemesi bir kayıt).
+
+    `paid_until`: son başarılı ödemenin kapsadığı dönemin sonu. Abonelik iptal
+    edilse bile kullanıcı bu tarihe kadar planını kullanır.
+    """
+    STATUS_CHOICES = [(s, s) for s in ("PENDING", "ACTIVE", "UNPAID", "CANCELED", "EXPIRED", "FAILED")]
+    user = models.ForeignKey("accounts.User", on_delete=models.CASCADE, related_name="paid_subscriptions")
+    plan = models.CharField(max_length=20)
+    token = models.CharField(max_length=128, unique=True, null=True, blank=True)
+    reference_code = models.CharField(max_length=64, unique=True, null=True, blank=True)
+    customer_reference_code = models.CharField(max_length=64, blank=True, default="")
+    status = models.CharField(max_length=12, choices=STATUS_CHOICES, default="PENDING")
+    paid_until = models.DateTimeField(null=True, blank=True)
+    canceled_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        indexes = [models.Index(fields=["user", "status"])]
+
+
+class PaymentEvent(models.Model):
+    """iyzico bildirimlerinin ham kaydı (aynı bildirim iki kez işlenmesin)."""
+    iyzi_reference_code = models.CharField(max_length=64, unique=True)
+    event_type = models.CharField(max_length=64)
+    subscription_reference_code = models.CharField(max_length=64, blank=True, default="")
+    payload = models.JSONField(default=dict)
+    created_at = models.DateTimeField(auto_now_add=True)

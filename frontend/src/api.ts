@@ -1,7 +1,7 @@
 import type {
   BillingDetails, CostResult, GuideCompare, GuideHome, GuideModel, RegionalOverview, ScenarioResult,
   AnalysisResult, ListingTextResult, LocationOption, TraitVehicleOption,
-  VehicleBrand, VehicleTraits,
+  VehicleBrand, VehicleTraits, PaymentCustomer,
 } from "./types";
 import { API, request, json, ApiError } from "./http";
 export { API } from "./http";
@@ -77,6 +77,19 @@ export async function choosePlan(plan: string): Promise<BillingDetails> {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ plan }),
   });
   return json<BillingDetails>(r, "Plan değiştirilemedi.");
+}
+
+/** iyzico abonelik ödeme formunu başlatır; dönen HTML/script sayfaya basılır. */
+export async function startPayment(plan: string, customer: PaymentCustomer): Promise<{ checkout_form_content: string; token: string }> {
+  const r = await request(`${API}/b2c/payment/start`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ plan, ...customer }),
+  });
+  return json(r, "Ödeme başlatılamadı.");
+}
+
+export async function cancelSubscription(): Promise<BillingDetails> {
+  const r = await request(`${API}/b2c/payment/cancel`, { method: "POST" });
+  return json<BillingDetails>(r, "Abonelik iptal edilemedi.");
 }
 
 export async function runScenario(payload: Record<string, unknown>): Promise<ScenarioResult> {

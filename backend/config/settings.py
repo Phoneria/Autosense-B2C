@@ -51,6 +51,12 @@ B2C_GALLERY_DB = os.getenv("B2C_GALLERY_DB", str(PROJECT_DIR / "data/galeri.db")
 B2C_REGIONAL_CACHE = Path(os.getenv("B2C_REGIONAL_CACHE", str(PROJECT_DIR / ".local/regional_deals.json")))
 B2C_GUIDE_CACHE = Path(os.getenv("B2C_GUIDE_CACHE", str(PROJECT_DIR / ".local/vehicle_guide.json")))
 B2C_TRAITS_DB = os.getenv("B2C_TRAITS_DB", str(PROJECT_DIR / "data/vehicle_traits.db"))
+# iyzico abonelik ödemesi. Anahtarlar yalnızca ortamdan okunur; boşsa ödeme kapalıdır.
+IYZICO_API_KEY = os.getenv("B2C_IYZICO_API_KEY", "")
+IYZICO_SECRET_KEY = os.getenv("B2C_IYZICO_SECRET_KEY", "")
+IYZICO_MERCHANT_ID = os.getenv("B2C_IYZICO_MERCHANT_ID", "")
+IYZICO_BASE_URL = os.getenv("B2C_IYZICO_BASE_URL", "https://sandbox-api.iyzipay.com")
+IYZICO_PLAN_CODES = {"pro": os.getenv("B2C_IYZICO_PLAN_PRO", ""), "premium": os.getenv("B2C_IYZICO_PLAN_PREMIUM", "")}
 CACHES = {"default":{"BACKEND":"django.core.cache.backends.locmem.LocMemCache", "LOCATION":"b2c-local"}}
 if os.getenv("B2C_REDIS_URL"):
     CACHES["default"] = {"BACKEND":"django_redis.cache.RedisCache", "LOCATION":os.environ["B2C_REDIS_URL"], "OPTIONS":{"CLIENT_CLASS":"django_redis.client.DefaultClient"}}

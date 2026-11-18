@@ -672,3 +672,23 @@
 .gd-similar .gd-delta.is-down, .gd-ctable .gd-delta.is-down { background: var(--color-danger-soft); }
 .gd-group strong .gd-delta { padding: 0; background: none; }
 @media (prefers-reduced-motion: reduce) { .wc-dim { transition: none; } }
+
+/* ── iyzico ödeme: fatura bilgileri, ödeme formu, abonelik durumu ── */
+.pf-billing { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; margin: 14px 0 4px; padding: 14px; border: 1px solid var(--color-border); border-radius: 12px; }
+.pf-billing legend { padding: 0 6px; font-weight: 600; font-size: var(--text-body-sm); }
+.pf-billing label { display: grid; gap: 4px; font-size: 13px; color: var(--color-text-muted); }
+.pf-billing input { min-height: 40px; padding: 8px 10px; border: 1px solid var(--color-border); border-radius: 8px; font: inherit; color: var(--color-text); background: #fff; }
+.pf-billing input:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+.pf-billing-wide { grid-column: 1 / -1; }
+.pf-billing-note { grid-column: 1 / -1; margin: 0; font-size: 12px; color: var(--color-text-muted); }
+.pf-modal.pf-modal-pay { width: min(640px, calc(100vw - 24px)); max-height: calc(100vh - 24px); overflow: auto; }
+#iyzipay-checkout-form { min-height: 380px; margin-top: 8px; }
+.pf-sub { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--color-border); }
+.pf-sub p { margin: 0; font-size: var(--text-body-sm); }
+.pf-sub-actions { display: inline-flex; gap: 8px; }
+.pf-btn.is-danger { background: #b42318; border-color: #b42318; color: #fff; }
+@media (max-width: 560px) { .pf-billing { grid-template-columns: 1fr; } }
+.pf-modal { max-height: calc(100vh - 24px); overflow: auto; }
+.pf-billing { min-width: 0; }
+.pf-billing input { width: 100%; box-sizing: border-box; min-width: 0; }
+.pf-summary .pf-sub { margin: 0; padding: 14px 24px 16px; }

@@ -161,6 +161,21 @@ export interface Billing {
   open_access?: boolean;
   /** true: plan kredisi sınırsız (Premium). */
   unlimited?: boolean;
+  /** iyzico abonelik durumu. enabled=false ise ödeme altyapısı kapalı. */
+  payment?: PaymentInfo;
+}
+
+export interface PaymentInfo {
+  enabled: boolean;
+  status: "ACTIVE" | "UNPAID" | "CANCELED" | null;
+  plan: string | null;
+  paid_until: string | null;
+  renews: boolean;
+  can_cancel: boolean;
+}
+
+export interface PaymentCustomer {
+  name: string; surname: string; phone: string; identity_number: string; address: string; city: string;
 }
 
 export interface PlanOption { id: string; name: string; credits: number; price_label: string; features: string[] }
