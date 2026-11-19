@@ -48,6 +48,12 @@ services:
       B2C_LISTE_DB: /app/data/liste/liste_ilanlari.db
       B2C_GOOGLE_CLIENT_ID: ${B2C_GOOGLE_CLIENT_ID:-}
       B2C_GOOGLE_CLIENT_SECRET: ${B2C_GOOGLE_CLIENT_SECRET:-}
+      B2C_IYZICO_API_KEY: ${B2C_IYZICO_API_KEY:-}
+      B2C_IYZICO_SECRET_KEY: ${B2C_IYZICO_SECRET_KEY:-}
+      B2C_IYZICO_MERCHANT_ID: ${B2C_IYZICO_MERCHANT_ID:-}
+      B2C_IYZICO_BASE_URL: ${B2C_IYZICO_BASE_URL:-https://sandbox-api.iyzipay.com}
+      B2C_IYZICO_PLAN_PRO: ${B2C_IYZICO_PLAN_PRO:-}
+      B2C_IYZICO_PLAN_PREMIUM: ${B2C_IYZICO_PLAN_PREMIUM:-}
       B2C_GALERI_SUMMARY: /app/data/galeri_summary.json
       B2C_GALERI_LATEST_SNAPSHOT: /app/data/galeri_latest_snapshot.json
       B2C_GALLERY_DB: /app/data/galeri.db
