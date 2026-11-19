@@ -12,7 +12,7 @@ from datetime import timedelta
 from django.db import transaction
 from django.utils import timezone
 
-from .models import Subscription
+from .models import PlanChange, Subscription
 
 # autosense-patch: daily-reset-v1
 from zoneinfo import ZoneInfo
@@ -138,6 +138,7 @@ def choose_plan(user, plan: str) -> dict:
     with transaction.atomic():
         sub = _locked(user)
         if sub.plan != plan:
+            PlanChange.objects.create(user=user, old_plan=sub.plan, new_plan=plan, source="user", changed_by=user)
             sub.plan = plan
             sub.credits = PLANS[plan]["credits"]
             sub.period_start = timezone.now()

@@ -1,6 +1,10 @@
 Django==5.2.17
-django-allauth[headless]==65.19.2
+django-allauth[headless,socialaccount]==65.19.2
 djangorestframework==3.18.1
 django-redis==7.0.0
 psycopg[binary]==3.3.5
 gunicorn==26.2.0
+whitenoise==6.11.0
+django-unfold==0.110.0
+django-import-export==4.4.3
+tablib[xlsx]==3.10.0

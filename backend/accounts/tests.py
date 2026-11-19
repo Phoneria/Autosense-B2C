@@ -133,8 +133,12 @@ class AuthTests(TestCase):
         self.assertEqual(self.client.get("/api/b2c/me").status_code, 401)
         self.assertEqual(self.post(AUTH+"password/reset", {"key":key, "password":PASSWORD}, other).status_code, 400)
     def test_route_isolation(self):
-        for path in ["/api/token/", "/api/accounts/login/", "/admin/", "/accounts/login/", "/_allauth/app/v1/auth/session"]:
+        for path in ["/api/token/", "/api/accounts/login/", "/accounts/login/", "/_allauth/app/v1/auth/session"]:
             self.assertEqual(self.client.get(path).status_code, 404, path)
+        # Yönetim paneli var ama girişsiz erişim giriş sayfasına yönlenir.
+        response = self.client.get("/admin/")
+        self.assertEqual(response.status_code, 302)
+        self.assertIn("/admin/login/", response["Location"])
 
 
     def test_competing_signup_after_validation_is_generic(self):

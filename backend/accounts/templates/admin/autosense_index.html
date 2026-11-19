@@ -1,0 +1,47 @@
+{% extends "admin/index.html" %}
+{% load i18n unfold %}
+{% block title %}Genel bakış | AutoSense Yönetim{% endblock %}
+{% block content %}
+<div style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+    {% for k in as_kpis %}
+      {% component "unfold/components/card.html" with href=k.link %}
+        {% component "unfold/components/text.html" %}{{ k.baslik }}{% endcomponent %}
+        {% component "unfold/components/title.html" %}{{ k.deger }}{% endcomponent %}
+        <div style="margin-top:6px;font-size:12px;opacity:.7">{{ k.alt }}</div>
+      {% endcomponent %}
+    {% endfor %}
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+    <div style="grid-column:span 2;min-width:0">
+      {% component "unfold/components/card.html" with title="Son 30 gün: yeni kayıt ve analiz" %}
+        {% component "unfold/components/chart/bar.html" with data=as_grafik height=280 %}{% endcomponent %}
+      {% endcomponent %}
+    </div>
+    {% component "unfold/components/card.html" with title="Plan dağılımı" %}
+      <div style="display:flex;flex-direction:column;gap:16px">
+        {% for p in as_planlar %}
+          <a href="{{ p.link }}" style="display:block">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px">
+              <span>Plan: {{ p.ad }}</span><strong>{{ p.sayi }}</strong>
+            </div>
+            {% component "unfold/components/progress.html" with value=p.oran %}{% endcomponent %}
+          </a>
+        {% endfor %}
+        {% if as_plansiz %}<div style="font-size:13px;opacity:.7">Plan kaydı olmayan: {{ as_plansiz }}</div>{% endif %}
+      </div>
+    {% endcomponent %}
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px">
+    {% component "unfold/components/card.html" with title="Son kayıtlar" %}
+      {% component "unfold/components/table.html" with table=as_son_kayitlar card_included=1 striped=1 %}{% endcomponent %}
+    {% endcomponent %}
+    {% component "unfold/components/card.html" with title="Son plan değişiklikleri" %}
+      {% component "unfold/components/table.html" with table=as_son_degisiklik card_included=1 striped=1 %}{% endcomponent %}
+    {% endcomponent %}
+  </div>
+  <p style="font-size:12px;opacity:.6">Kullanım ve plan geçmişi, panelin kurulduğu tarihten itibaren kaydedilir.</p>
+</div>
+{% endblock %}

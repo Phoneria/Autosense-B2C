@@ -20,13 +20,13 @@ if DEBUG:
         CSRF_TRUSTED_ORIGINS.append(f"{_dev.scheme}://{_sibling}" + (f":{_dev.port}" if _dev.port else ""))
 if not DEBUG and (len(SECRET_KEY) < 50 or SECRET_KEY.startswith("local-") or not FRONTEND_URL.startswith("https://")):
     raise ImproperlyConfigured("Production requires B2C_SECRET_KEY (50+ characters) and HTTPS B2C_FRONTEND_URL")
-INSTALLED_APPS = ["django.contrib.auth", "django.contrib.contenttypes", "django.contrib.sessions", "django.contrib.messages", "accounts", "allauth", "allauth.account", "allauth.headless", "rest_framework", "search"]
-MIDDLEWARE = ["django.middleware.security.SecurityMiddleware", "django.middleware.clickjacking.XFrameOptionsMiddleware", "accounts.middleware.NoStoreMiddleware", "django.contrib.sessions.middleware.SessionMiddleware", "django.middleware.common.CommonMiddleware", "django.middleware.csrf.CsrfViewMiddleware", "django.contrib.auth.middleware.AuthenticationMiddleware", "django.contrib.messages.middleware.MessageMiddleware", "allauth.account.middleware.AccountMiddleware"]
+INSTALLED_APPS = ["unfold", "unfold.contrib.filters", "unfold.contrib.import_export", "django.contrib.admin", "django.contrib.auth", "django.contrib.contenttypes", "django.contrib.sessions", "django.contrib.messages", "django.contrib.staticfiles", "accounts", "allauth", "allauth.account", "allauth.socialaccount", "allauth.socialaccount.providers.google", "allauth.headless", "rest_framework", "search", "import_export"]
+MIDDLEWARE = ["django.middleware.security.SecurityMiddleware", "whitenoise.middleware.WhiteNoiseMiddleware", "django.middleware.clickjacking.XFrameOptionsMiddleware", "accounts.middleware.NoStoreMiddleware", "django.contrib.sessions.middleware.SessionMiddleware", "django.middleware.common.CommonMiddleware", "django.middleware.csrf.CsrfViewMiddleware", "django.contrib.auth.middleware.AuthenticationMiddleware", "accounts.admin_oturum.AdminSessionTimeoutMiddleware", "django.contrib.messages.middleware.MessageMiddleware", "allauth.account.middleware.AccountMiddleware"]
 ROOT_URLCONF = "config.urls"
 WSGI_APPLICATION = "config.wsgi.application"
 TEMPLATES = [{"BACKEND":"django.template.backends.django.DjangoTemplates", "DIRS":[], "APP_DIRS":True, "OPTIONS":{"context_processors":["django.template.context_processors.request", "django.contrib.auth.context_processors.auth", "django.contrib.messages.context_processors.messages"]}}]
 AUTH_USER_MODEL = "accounts.User"
-AUTHENTICATION_BACKENDS = ["allauth.account.auth_backends.AuthenticationBackend"]
+AUTHENTICATION_BACKENDS = ["allauth.account.auth_backends.AuthenticationBackend", "django.contrib.auth.backends.ModelBackend"]
 # SQLite eşzamanlı istekte kilitlenmesin: WAL (okuyucu yazarı bloklamaz),
 # yazmalar için IMMEDIATE transaction ve 20 sn bekleme.
 DATABASES = {"default": {"ENGINE":"django.db.backends.sqlite3", "NAME":os.getenv("B2C_ACCOUNT_DB", str(PROJECT_DIR / "data/accounts.sqlite3")), "OPTIONS":{"timeout":20, "transaction_mode":"IMMEDIATE", "init_command":"PRAGMA journal_mode=WAL; PRAGMA synchronous=NORMAL;"}}, "reference":{"ENGINE":"django.db.backends.sqlite3", "NAME":Path(os.getenv("B2C_REFERENCE_DB", str(PROJECT_DIR / "data/listings.sqlite3"))).resolve().as_uri()+"?mode=ro", "OPTIONS":{"uri":True}}}
@@ -37,6 +37,9 @@ if os.getenv("B2C_DATABASE_URL"):
     DATABASES["default"] = {"ENGINE":"django.db.backends.postgresql", "NAME":parsed.path.lstrip("/"), "USER":unquote(parsed.username or ""), "PASSWORD":unquote(parsed.password or ""), "HOST":parsed.hostname, "PORT":parsed.port or 5432, "CONN_MAX_AGE":60}
 DATABASE_ROUTERS = ["search.routers.ReferenceRouter"]
 B2C_BASELINE_DB = os.getenv("B2C_BASELINE_DB", str(PROJECT_DIR / "data/paket_fiyatlari.db"))
+# Son 30 gunun arabam.com liste ilanlari (B2B Galeri/liste_ilanlari_scraper.py ->
+# galeri_latest.db kopyasi). Yoksa fiyat tahmini liste emsali olmadan calisir.
+B2C_LISTE_DB = os.getenv("B2C_LISTE_DB", str(PROJECT_DIR / "data/liste/liste_ilanlari.db"))
 # Fiyat analizi (search/services/b2c.py) artik 1.8 GB'lik galeri.db'ye degil,
 # scripts/build_galeri_summary.py'nin urettigi iki kucuk JSON'a bakiyor (~13 MB).
 B2C_GALERI_SUMMARY = os.getenv("B2C_GALERI_SUMMARY", str(PROJECT_DIR / "data/galeri_summary.json"))
@@ -83,10 +86,27 @@ ACCOUNT_PREVENT_ENUMERATION = False
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_MAX_EMAIL_ADDRESSES = 1
 ACCOUNT_ADAPTER = "accounts.adapters.AccountAdapter"
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = "http" if DEBUG else "https"
+# Google ile giris. Istemci kimligi ve sirri Google Cloud Console'dan alinir;
+# bos ise Google butonu gosterilmez. Yonlendirme adresi:
+#   https://<alan adi>/_allauth/accounts/google/login/callback/
+B2C_GOOGLE_CLIENT_ID = os.getenv("B2C_GOOGLE_CLIENT_ID", "")
+B2C_GOOGLE_CLIENT_SECRET = os.getenv("B2C_GOOGLE_CLIENT_SECRET", "")
+SOCIALACCOUNT_PROVIDERS = {"google": {
+    "SCOPE": ["profile", "email"],
+    "AUTH_PARAMS": {"access_type": "online", "prompt": "select_account"},
+    "EMAIL_AUTHENTICATION": True,
+    "APPS": ([{"client_id": B2C_GOOGLE_CLIENT_ID, "secret": B2C_GOOGLE_CLIENT_SECRET, "key": ""}]
+             if B2C_GOOGLE_CLIENT_ID and B2C_GOOGLE_CLIENT_SECRET else []),
+}}
+# Google'in dogruladigi e-posta zaten bir hesaba aitse o hesaba baglanir (ikinci hesap acilmaz).
+SOCIALACCOUNT_EMAIL_AUTHENTICATION = True
+SOCIALACCOUNT_EMAIL_AUTHENTICATION_AUTO_CONNECT = True
+SOCIALACCOUNT_AUTO_SIGNUP = True
 ACCOUNT_RATE_LIMITS = {"login":"20/m/ip", "login_failed":"5/5m/key,20/5m/ip", "signup":"5/10m/ip", "reset_password":"3/10m/key,10/10m/ip", "reset_password_from_key":"10/10m/ip", "confirm_email":"1/m/key,5/10m/key,20/10m/ip", "b2c_resend":"1/m/key,5/10m/key,20/10m/ip"}
 HEADLESS_ONLY = True
 HEADLESS_CLIENTS = ("browser",)
-HEADLESS_FRONTEND_URLS = {"account_confirm_email":FRONTEND_URL+"/verify-email/{key}", "account_reset_password":FRONTEND_URL+"/forgot-password", "account_reset_password_from_key":FRONTEND_URL+"/reset-password/{key}", "account_signup":FRONTEND_URL+"/signup", "account_login":FRONTEND_URL+"/login"}
+HEADLESS_FRONTEND_URLS = {"socialaccount_login_error":FRONTEND_URL+"/login", "account_confirm_email":FRONTEND_URL+"/verify-email/{key}", "account_reset_password":FRONTEND_URL+"/forgot-password", "account_reset_password_from_key":FRONTEND_URL+"/reset-password/{key}", "account_signup":FRONTEND_URL+"/signup", "account_login":FRONTEND_URL+"/login"}
 AUTH_PASSWORD_VALIDATORS = [{"NAME":"django.contrib.auth.password_validation.UserAttributeSimilarityValidator"}, {"NAME":"django.contrib.auth.password_validation.MinimumLengthValidator", "OPTIONS":{"min_length":10}}, {"NAME":"django.contrib.auth.password_validation.CommonPasswordValidator"}, {"NAME":"django.contrib.auth.password_validation.NumericPasswordValidator"}]
 PASSWORD_RESET_TIMEOUT = 3600
 SESSION_COOKIE_NAME = "b2c_sessionid"
@@ -123,3 +143,46 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Only set to 1 behind the supplied proxy, with the backend network private.
 ALLAUTH_TRUSTED_PROXY_COUNT = int(os.getenv("B2C_TRUSTED_PROXY_COUNT", "0"))
+
+
+# Yönetim paneli (/admin/): yalnız is_staff hesaplar girer. Panel CSS/JS dosyaları
+# imaj derlenirken STATIC_ROOT'a toplanır ve WhiteNoise ile backend'den sunulur.
+STATIC_URL = "/admin-static/"
+STATIC_ROOT = os.getenv("B2C_STATIC_ROOT", str(PROJECT_DIR / "backend/staticfiles"))
+STORAGES = {
+    "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedStaticFilesStorage"},
+}
+WHITENOISE_USE_FINDERS = DEBUG   # geliştirmede collectstatic gerekmesin
+ADMIN_LOGIN_MAX_FAILURES = 8          # bu kadar hatalı girişten sonra IP geçici olarak engellenir
+ADMIN_LOGIN_BLOCK_SECONDS = 15 * 60
+ADMIN_LOGIN_MAX_FAILURES_PER_ACCOUNT = 10   # dağıtık denemelere karşı hesap başına sınır
+ADMIN_SESSION_SECONDS = 2 * 60 * 60         # yönetici oturumu: 2 saat işlem yoksa kapanır
+
+# Yönetim paneli görünümü (django-unfold)
+from django.urls import reverse_lazy  # noqa: E402
+UNFOLD = {
+    "SITE_TITLE": "AutoSense Yönetim",
+    "SITE_HEADER": "AutoSense Yönetim",
+    "SITE_SUBHEADER": "Kullanıcı ve üyelik paneli",
+    "SITE_SYMBOL": "directions_car",
+    "SITE_URL": "/",
+    "SHOW_HISTORY": True,
+    "SHOW_VIEW_ON_SITE": False,
+    "COLORS": {"primary": {
+        "50": "oklch(97% .014 254.604)", "100": "oklch(93.2% .032 255.585)", "200": "oklch(88.2% .059 254.128)",
+        "300": "oklch(80.9% .105 251.813)", "400": "oklch(70.7% .165 254.624)", "500": "oklch(62.3% .214 259.815)",
+        "600": "oklch(54.6% .245 262.881)", "700": "oklch(48.8% .243 264.376)", "800": "oklch(42.4% .199 265.638)",
+        "900": "oklch(37.9% .146 265.522)", "950": "oklch(28.2% .091 267.935)"}},
+    "SIDEBAR": {"show_search": True, "show_all_applications": False, "navigation": [
+        {"title": "Panel", "items": [
+            {"title": "Genel bakış", "icon": "dashboard", "link": reverse_lazy("admin:index")},
+            {"title": "Kullanıcılar", "icon": "people", "link": reverse_lazy("admin:accounts_user_changelist")},
+            {"title": "Plan geçmişi", "icon": "history", "link": reverse_lazy("admin:accounts_planchange_changelist")},
+            {"title": "Kullanım kayıtları", "icon": "query_stats", "link": reverse_lazy("admin:accounts_usageevent_changelist")},
+        ]},
+        {"title": "Yetki", "collapsible": True, "items": [
+            {"title": "Gruplar", "icon": "group_work", "link": reverse_lazy("admin:auth_group_changelist")},
+        ]},
+    ]},
+}

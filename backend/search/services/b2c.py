@@ -935,6 +935,12 @@ def _evidence(estimate: dict, *, brand: str, series: str, year: int, package: st
         notes.append("Son 90 günde az sayıda benzer araç bulundu.")
     if days_old is not None and days_old > 14:
         notes.append(f"Piyasa verisi {days_old} gün önce güncellendi.")
+    liste_count = int(estimate.get("market_count") or 0)
+    if liste_count and estimate.get("market_weight"):
+        notes.append(
+            f"Tahmine son 30 günün {liste_count} güncel emsal ilanı da katıldı "
+            f"(ağırlık %{round(float(estimate.get('market_weight') or 0) * 100)})."
+        )
 
     return {
         "strength": strength,
@@ -991,7 +997,8 @@ def scenario(payload: dict) -> dict:
 def _data_version() -> str:
     """Referans dosyaları değişince (yeni snapshot) analiz cache'i kendiliğinden geçersiz olur."""
     parts = []
-    for path in (settings.B2C_GALERI_SUMMARY, settings.B2C_GALERI_LATEST_SNAPSHOT, settings.B2C_BASELINE_DB):
+    for path in (settings.B2C_GALERI_SUMMARY, settings.B2C_GALERI_LATEST_SNAPSHOT, settings.B2C_BASELINE_DB,
+                 getattr(settings, "B2C_LISTE_DB", "")):
         try:
             parts.append(str(os.stat(path).st_mtime_ns))
         except OSError:
@@ -1076,6 +1083,11 @@ def analyze(payload: dict) -> dict:
         "color_adjustment": color_adjustment,
         "fallback_reason": estimate.get("fallback_reason"),
         "package_fallback": estimate.get("package_fallback"),
+        "liste": ({
+            "count": int(estimate["market_count"]),
+            "weight": float(estimate.get("market_weight") or 0),
+            "period": estimate.get("market_period"),
+        } if estimate.get("market_count") and estimate.get("market_weight") else None),
     }
 
     return {

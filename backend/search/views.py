@@ -93,7 +93,17 @@ class AnalyzeView(ProtectedView):
         except ValueError:
             billing.refund(request.user, source)
             return Response({"error": "Araç bilgileri analiz edilemedi. Alanları kontrol edin."}, status=400)
+        _log_usage(request.user, plan)
         return Response({**_apply_plan_gates(result, plan), "billing": spent, "plan": plan})
+
+
+def _log_usage(user, plan: str) -> None:
+    """Yönetim paneli için kullanım kaydı; yazılamazsa analiz yine döner."""
+    try:
+        from accounts.models import UsageEvent
+        UsageEvent.objects.create(user=user, kind="analysis", plan=plan or "")
+    except Exception:  # noqa: BLE001
+        logger.exception("Kullanım kaydı yazılamadı")
 
 
 def _apply_plan_gates(result: dict, plan: str) -> dict:

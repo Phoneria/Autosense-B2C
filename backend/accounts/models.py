@@ -26,6 +26,8 @@ class User(AbstractUser):
     objects = UserManager()
     class Meta:
         constraints = [models.UniqueConstraint(Lower("email"), name="b2c_user_email_ci_unique")]
+        verbose_name = "kullanıcı"
+        verbose_name_plural = "kullanıcılar"
     def save(self, *args, **kwargs):
         self.email = UserManager.normalize_email(self.email)
         super().save(*args, **kwargs)
@@ -39,8 +41,55 @@ class Subscription(models.Model):
     yeniden doldurulur; sonradan eklenen kredi (`extra_credits`) sıfırlanmaz.
     """
     user = models.OneToOneField("accounts.User", on_delete=models.CASCADE, related_name="subscription")
-    plan = models.CharField(max_length=20, default="basic")
-    credits = models.PositiveIntegerField(default=3)
-    extra_credits = models.PositiveIntegerField(default=0)
-    period_start = models.DateTimeField()
-    updated_at = models.DateTimeField(auto_now=True)
+    plan = models.CharField("plan", max_length=20, default="basic")
+    credits = models.PositiveIntegerField("kalan kredi", default=3)
+    extra_credits = models.PositiveIntegerField("ek kredi", default=0)
+    period_start = models.DateTimeField("dönem başlangıcı")
+    updated_at = models.DateTimeField("son güncelleme", auto_now=True)
+
+    class Meta:
+        verbose_name = "üyelik"
+        verbose_name_plural = "üyelikler"
+
+    def __str__(self):
+        return f"{self.user} ({self.plan})"
+
+
+class PlanChange(models.Model):
+    """Plan geçmişi: her plan değişikliği bir satır. Yönetim panelinde gösterilir."""
+    SOURCE_CHOICES = [
+        ("user", "Kullanıcı"),
+        ("admin", "Yönetici"),
+        ("payment", "Ödeme"),
+        ("system", "Sistem"),
+    ]
+    user = models.ForeignKey("accounts.User", on_delete=models.CASCADE, related_name="plan_changes")
+    old_plan = models.CharField("eski plan", max_length=20, blank=True)
+    new_plan = models.CharField("yeni plan", max_length=20)
+    source = models.CharField("kaynak", max_length=10, choices=SOURCE_CHOICES, default="user")
+    changed_by = models.ForeignKey("accounts.User", null=True, blank=True, on_delete=models.SET_NULL,
+                                   related_name="+", verbose_name="değiştiren")
+    note = models.CharField("not", max_length=200, blank=True)
+    created_at = models.DateTimeField("tarih", auto_now_add=True, db_index=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "plan değişikliği"
+        verbose_name_plural = "plan geçmişi"
+
+    def __str__(self):
+        return f"{self.user} {self.old_plan or '-'} → {self.new_plan}"
+
+
+class UsageEvent(models.Model):
+    """Kullanım kaydı: başarılı her analiz bir satır (kimin ne kadar aktif olduğunu görmek için)."""
+    user = models.ForeignKey("accounts.User", on_delete=models.CASCADE, related_name="usage_events")
+    kind = models.CharField("tür", max_length=20, default="analysis")
+    plan = models.CharField("o anki plan", max_length=20, blank=True)
+    created_at = models.DateTimeField("tarih", auto_now_add=True, db_index=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "kullanım kaydı"
+        verbose_name_plural = "kullanım kayıtları"
+        indexes = [models.Index(fields=["user", "created_at"])]

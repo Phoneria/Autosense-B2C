@@ -11,6 +11,7 @@ import threading
 from typing import Any, Iterable
 
 from . import baseline_estimator as baseline
+from . import market_estimator as liste_market
 from django.conf import settings
 from pathlib import Path
 
@@ -64,6 +65,26 @@ def reload_estimators() -> None:
     with _lock:
         _baseline_cache = None
         _baseline_cache_mtime = None
+    liste_market.reload()
+
+
+# Son 30 gunun liste ilanlarindan emsal harmanlama ayarlari -- bkz.
+# market_estimator.py. Agirlik emsal sayisiyla artar: n/(n+K), en fazla MAX.
+LISTE_WEIGHT_K = 8
+LISTE_WEIGHT_MAX = 0.60
+LISTE_ONLY_MIN_SAMPLES = 8      # paket referansi yoksa tek basina kullanmak icin
+
+
+def _liste(category, brand, series, engine, package, year, km, damage, heavy) -> dict | None:
+    try:
+        dmg = list(damage) + ([{"parca": "Genel", "durum": "Ağır Hasarlı"}] if heavy else [])
+        return liste_market.market_estimate(
+            category=category, brand=brand, series=series, engine=engine,
+            package=package, year=year, km=km, damage=dmg,
+        )
+    except Exception as exc:  # emsal bileseni asla tahmini bozmamali
+        print(f"[central_price_estimator] liste emsal hatasi: {exc}")
+        return None
 
 
 def _predict_baseline(category, brand, series, engine, package, year, km, damage, heavy, gear, min_samples=None) -> dict[str, Any]:
@@ -122,9 +143,28 @@ def estimate_price(
         selected, source, confidence, reason = None, "unavailable", 0, "Paket referansı bulunamadı."
 
     interval = 0.18
+    mkt = _liste(category, brand, series, engine, package, int(year), float(km), damage, heavy)
+    liste_weight = 0.0
+    if mkt and selected:
+        n = mkt["count"]
+        liste_weight = min(LISTE_WEIGHT_MAX, n / (n + LISTE_WEIGHT_K))
+        selected = int(round(((1 - liste_weight) * selected + liste_weight * mkt["value"]) / 1000) * 1000)
+        source = "baseline+liste"
+        confidence = min(82, confidence + min(10, n // 3))
+    elif mkt and not selected and mkt["count"] >= LISTE_ONLY_MIN_SAMPLES:
+        liste_weight = 1.0
+        selected, source = mkt["value"], "liste"
+        confidence = min(55, 30 + mkt["count"])
+        interval = 0.22
+        reason = (f"Paket referansı yok; son {liste_market.WINDOW_DAYS} günün "
+                  f"{mkt['count']} emsal ilanından hesaplandı.")
     low = int(round(selected * (1 - interval) / 1000) * 1000) if selected else None
     high = int(round(selected * (1 + interval) / 1000) * 1000) if selected else None
-    selected_version = "baseline-package-v1" if source == "baseline" else "unavailable"
+    selected_version = {
+        "baseline": "baseline-package-v1",
+        "baseline+liste": "baseline-liste-v1",
+        "liste": "liste-v1",
+    }.get(source, "unavailable")
 
     result = dict(base)
     result.update({
@@ -135,6 +175,10 @@ def estimate_price(
         "fallback_reason": reason, "ai_prediction": None,
         "baseline_prediction": int(base_price) if base_price else None,
         "ai_known_model_count": 0,
+        "market_prediction": mkt["value"] if mkt else None,
+        "market_count": mkt["count"] if mkt else 0,
+        "market_weight": round(liste_weight, 3),
+        "market_period": [mkt["period_start"], mkt["period_end"]] if mkt else None,
         "input_echo": {"category": category, "brand": brand, "series": series, "engine": engine, "package": package, "year": int(year), "km": float(km), "gear": gear},
     })
     return result
