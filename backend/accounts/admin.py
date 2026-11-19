@@ -32,7 +32,7 @@ from unfold.forms import AdminPasswordChangeForm, UserChangeForm, UserCreationFo
 from unfold.sites import UnfoldAdminSite
 
 from . import billing
-from .models import PlanChange, Subscription, UsageEvent, User
+from .models import PaidSubscription, PlanChange, Subscription, UsageEvent, User
 
 PLAN_CHOICES = [(k, v["name"]) for k, v in billing.PLANS.items()]
 PLAN_RENK = {"Basic": "info", "Pro": "warning", "Premium": "success", "—": "danger"}
@@ -389,4 +389,13 @@ class UsageEventAdmin(ReadOnlyAdmin):
     list_filter = ("kind", "plan", ("created_at", RangeDateFilter))
     list_filter_submit = True
     search_fields = ("user__email",)
+    list_select_related = ("user",)
+
+
+@register(PaidSubscription, site=site)
+class PaidSubscriptionAdmin(ReadOnlyAdmin):
+    list_display = ("created_at", "user", "plan", "status", "paid_until", "reference_code")
+    list_filter = ("status", "plan", ("created_at", RangeDateFilter))
+    list_filter_submit = True
+    search_fields = ("user__email", "reference_code")
     list_select_related = ("user",)

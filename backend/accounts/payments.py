@@ -23,7 +23,7 @@ from django.db import transaction
 from django.utils import timezone
 
 from . import iyzico
-from .models import PaidSubscription, PaymentEvent, Subscription
+from .models import PaidSubscription, PaymentEvent, PlanChange, Subscription
 
 log = logging.getLogger(__name__)
 
@@ -77,6 +77,9 @@ def expire(sub: Subscription, now=None, save: bool = True) -> bool:
     if latest.paid_until and latest.paid_until + GRACE > now and latest.plan == sub.plan:
         return False
     from .billing import DEFAULT_PLAN, PLANS
+    if save:
+        PlanChange.objects.create(user_id=sub.user_id, old_plan=sub.plan, new_plan=DEFAULT_PLAN, source="system",
+                                  note="Ödenen abonelik dönemi bitti")
     sub.plan = DEFAULT_PLAN
     sub.credits = min(sub.credits, PLANS[DEFAULT_PLAN]["credits"])
     if save:
@@ -90,6 +93,7 @@ def _grant(user, plan: str):
     from .billing import PLANS, _locked
     sub = _locked(user)
     if sub.plan != plan:
+        PlanChange.objects.create(user=user, old_plan=sub.plan, new_plan=plan, source="payment", note="iyzico abonelik ödemesi")
         sub.plan = plan
         sub.credits = PLANS[plan]["credits"]
         sub.period_start = timezone.now()
