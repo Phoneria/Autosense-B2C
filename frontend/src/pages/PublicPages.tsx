@@ -24,7 +24,7 @@ const seq = (i: number) => ({ "--i": i }) as CSSProperties;
 export { CONTACT_EMAIL };
 
 export const OPERATOR = "İzzet Ahmet";
-const UPDATED = "13 Kasım 2026";
+const UPDATED = "21 Kasım 2026";
 
 function PublicShell({ children }: { children: ReactNode }) {
   const ref = useScrollReveal<HTMLDivElement>();
@@ -130,7 +130,7 @@ export function PricingSection({ headingLevel = 2 }: { headingLevel?: 1 | 2 }) {
           <p className="ld-kicker">Fiyatlar</p>
           <Heading id="ld-pricing-title">Planlar</Heading>
           <p className="ld-pricing-vat">{VAT_NOTE}</p>
-          <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Abonelikler aylıktır; istediğiniz zaman iptal edebilirsiniz.</p>
+          <p className="ld-pricing-sub">Ücretsiz Basic ile başlayın; daha fazla analiz ve özellik için Pro veya Premium'u seçin. Ücretli planlar aylık aboneliktir ve iptal edilene kadar her ay otomatik yenilenir; istediğiniz zaman iptal edebilirsiniz.</p>
           <p className="ld-pricing-sub ld-pricing-legal">Ödeme onaylandığında plan hesabınıza anında tanımlanır. <Link to="/on-bilgilendirme">Ön bilgilendirme</Link> · <Link to="/mesafeli-satis-sozlesmesi">Mesafeli satış sözleşmesi</Link> · <Link to="/iptal-iade">Teslimat ve iade</Link></p>
         </header>
         <PlanCards plans={PUBLIC_PLANS} onSelect={select} />
@@ -340,7 +340,7 @@ export function PrivacyPage() {
         <li><strong>Hesap bilgileri:</strong> e-posta adresiniz ve şifrelenmiş (geri çözülemez biçimde saklanan) parolanız. Google ile giriş yaparsanız Google'ın bize ilettiği ad ve e-posta adresiniz.</li>
         <li><strong>Kullanım bilgileri:</strong> analiz için girdiğiniz araç bilgileri (marka, model, yıl, kilometre, fiyat, il/ilçe), yapıştırdığınız ilan metinleri ve özelliklerin kullanım sayıları.</li>
         <li><strong>Teknik bilgiler:</strong> IP adresi, tarayıcı türü, istek zamanı ve hata kayıtları. Bunlar güvenlik ve kötüye kullanımı önlemek için tutulur.</li>
-        <li><strong>Ödeme ve fatura bilgileri:</strong> ücretli bir plan satın alırsanız fatura için ad soyad ve adres bilgileriniz ile ödeme işlem kayıtları (tutar, tarih, işlem numarası). Kart bilgileriniz iyzico'nun güvenli ödeme sayfasında girilir; AutoSense kart numaranızı görmez ve saklamaz.</li>
+        <li><strong>Ödeme ve fatura bilgileri:</strong> ücretli bir plan satın alırsanız fatura ve ödeme için ad soyad, T.C. kimlik numarası, cep telefonu ve adres bilgileriniz ile ödeme ve abonelik işlem kayıtları (tutar, tarih, işlem ve abonelik numarası). T.C. kimlik numarası ve iletişim bilgileri, ödeme kuruluşunun yasal yükümlülükleri gereği iyzico'ya iletilir. Kart bilgileriniz iyzico'nun güvenli ödeme sayfasında girilir; AutoSense kart numaranızı görmez ve saklamaz.</li>
       </ul>
 
       <h2>Bilgileri nasıl kullanıyoruz?</h2>
@@ -415,7 +415,7 @@ export function KvkkPage() {
         <li><strong>Müşteri işlem:</strong> analiz için girilen araç bilgileri ve ilan metinleri, kullanım sayıları.</li>
         <li><strong>İşlem güvenliği:</strong> şifrelenmiş parola, IP adresi, oturum ve erişim kayıtları.</li>
         <li><strong>Pazarlama:</strong> reklam gösterimi sırasında Google tarafından işlenen çerez verileri.</li>
-        <li><strong>Finans:</strong> ücretli plan satın alınırsa fatura bilgileri (ad soyad, adres) ve ödeme işlem kayıtları. Kart bilgileri AutoSense tarafından işlenmez ve saklanmaz; ödeme kuruluşu iyzico tarafından işlenir.</li>
+        <li><strong>Finans:</strong> ücretli plan satın alınırsa fatura ve ödeme bilgileri (ad soyad, T.C. kimlik numarası, cep telefonu, adres) ile ödeme ve abonelik işlem kayıtları. Bu bilgiler ödemenin alınması ve aboneliğin yürütülmesi için ödeme kuruluşu iyzi Ödeme ve Elektronik Para Hizmetleri A.Ş. (iyzico) ile paylaşılır. Kart bilgileri AutoSense tarafından işlenmez ve saklanmaz; doğrudan iyzico tarafından işlenir.</li>
       </ul>
 
       <h2>3. İşleme amaçları ve hukuki sebepler</h2>

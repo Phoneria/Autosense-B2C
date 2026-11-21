@@ -1,4 +1,4 @@
-import { priceOf } from "../billingDisplay";
+import { priceOf, RENEWAL_NOTE } from "../billingDisplay";
 
 export interface PlanCardData { id: string; name: string; credits: number; price_label: string; features: string[] }
 
@@ -33,6 +33,7 @@ export default function PlanCards({ plans, currentPlan, busy = "", onSelect }: {
             </div>
             <p className="pf-plan-credits">{unlimited ? <strong>Sınırsız</strong> : <><strong>{plan.credits}</strong> kredi / gün</>}</p>
             <p className="pf-plan-price">{priceOf(plan.id, plan.price_label)}</p>
+            {plan.id !== "basic" && <p className="pf-plan-renew">{RENEWAL_NOTE}</p>}
             <ul aria-label={`${plan.name} planına dahil olanlar`}>{cleanFeatures(plan.features, unlimited).map((f) => <li key={f}>{f}</li>)}</ul>
             <button type="button" className={active ? "pf-btn is-current" : plan.id === "basic" ? "pf-btn" : "pf-btn is-primary"}
               disabled={active || !!busy} onClick={() => onSelect(plan.id)}

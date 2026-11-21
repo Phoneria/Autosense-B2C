@@ -4,7 +4,7 @@ import { SELLER } from "../seller";
 import { PUBLIC_PLANS, VAT_NOTE } from "../billingDisplay";
 import { cleanFeatures } from "../components/PlanCards";
 
-const SALES_UPDATED = "13 Kasım 2026";
+const SALES_UPDATED = "21 Kasım 2026";
 
 function SellerBlock() {
   return (
@@ -30,7 +30,8 @@ function PlanTable() {
 }
 
 const DELIVERY = "Hizmet dijitaldir; fiziksel teslimat yapılmaz. Ödeme onaylandığında seçilen plan, Alıcı'nın AutoSense hesabına elektronik ortamda anında tanımlanır.";
-const RENEWAL = "Ücretli planlar aylık aboneliktir. Alıcı iptal etmediği sürece abonelik her ay aynı ödeme aracından yenilenir. İptal, içinde bulunulan dönemin sonunda geçerli olur; dönem sonuna kadar plan kullanılmaya devam eder.";
+const RENEWAL = "Ücretli planlar aylık aboneliktir. Alıcı iptal etmediği sürece abonelik her ay aynı ödeme aracından yenilenir. İptal, içinde bulunulan dönemin sonunda geçerli olur; dönem sonuna kadar plan kullanılmaya devam eder. Alıcı aboneliğini istediği zaman, sitedeki Hesabım sayfasından tek adımda veya e-postayla iptal edebilir.";
+const PRICE_CHANGE = "Satıcı abonelik ücretini değiştirmek isterse yeni ücreti, yürürlüğe girmesinden en az 30 gün önce Alıcı'nın kayıtlı e-posta adresine bildirir. Yeni ücret, bildirimden sonraki ilk yenileme döneminden itibaren uygulanır; kabul etmeyen Alıcı bu tarihten önce aboneliğini ücretsiz olarak iptal edebilir. Mevcut dönem için ödenmiş ücret değiştirilmez.";
 const WITHDRAWAL_EXCEPTION = "Mesafeli Sözleşmeler Yönetmeliği'nin 15. maddesinin birinci fıkrasının (ğ) bendi uyarınca, elektronik ortamda anında ifa edilen hizmetlere ilişkin sözleşmelerde cayma hakkı kullanılamaz. Alıcı, sipariş sırasında hizmetin hemen başlamasını ve bu nedenle cayma hakkının sona ereceğini ayrıca onaylar.";
 
 export function PreInfoPage() {
@@ -49,6 +50,7 @@ export function PreInfoPage() {
       <p>{DELIVERY}</p>
       <h2>5. Sözleşme süresi ve iptal</h2>
       <p>{RENEWAL} Ayrıntılar için <Link to="/iptal-iade">Teslimat, İptal ve İade Koşulları</Link>'na bakınız.</p>
+      <p>{PRICE_CHANGE}</p>
       <h2>6. Cayma hakkı</h2>
       <p>{WITHDRAWAL_EXCEPTION}</p>
       <h2>7. Şikayet ve itirazlar</h2>
@@ -71,6 +73,7 @@ export function DistanceSalesPage() {
       <p>{VAT_NOTE} Satın alınan plan, plan adı ve bedel sipariş özetinde ayrıca gösterilir.</p>
       <h2>4. Ödeme</h2>
       <p>Bedel, kredi kartı veya banka kartı ile peşin ödenir. {RENEWAL}</p>
+      <p>{PRICE_CHANGE}</p>
       <h2>5. İfa</h2>
       <p>{DELIVERY}</p>
       <h2>6. Cayma hakkı</h2>
@@ -100,7 +103,9 @@ export function CancelRefundPage() {
       <p>{DELIVERY} Kargo veya teslimat ücreti yoktur.</p>
       <h2>Aboneliği iptal etme</h2>
       <ul>
-        <li>Ücretli planınızı istediğiniz zaman iptal edebilirsiniz. İptal için <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20abonelik%20iptali`}>{CONTACT_EMAIL}</a> adresine hesabınızdaki e-posta adresinden yazmanız yeterlidir.</li>
+        <li>Ücretli planınızı istediğiniz zaman iptal edebilirsiniz. İptal için hesabınıza giriş yapıp <strong>Hesabım › Aboneliği iptal et</strong> düğmesini kullanabilir veya <a href={`mailto:${CONTACT_EMAIL}?subject=AutoSense%20abonelik%20iptali`}>{CONTACT_EMAIL}</a> adresine hesabınızdaki e-posta adresinden yazabilirsiniz.</li>
+        <li>Abonelik, siz iptal edene kadar her ay aynı karttan otomatik olarak yenilenir. Yenilenme tarihi Hesabım sayfasında görünür.</li>
+        <li>Ücret değişikliği olursa en az 30 gün önce e-postayla bildirilir; yeni ücreti kabul etmezseniz yenilenmeden önce ücretsiz iptal edebilirsiniz.</li>
         <li>İptal, içinde bulunulan aylık dönemin sonunda geçerli olur. Dönem sonuna kadar planınızı kullanmaya devam edersiniz; sonraki ay için ücret alınmaz.</li>
         <li>Dönem sonunda hesabınız ücretsiz Basic plana geçer; hesabınız ve geçmişiniz silinmez.</li>
       </ul>
@@ -165,7 +170,7 @@ export function ContactPage() {
         <li><strong>Vergi dairesi / Vergi kimlik no:</strong> {SELLER.taxOffice} / {SELLER.taxNo}</li>
       </ul>
       <p>
-        Abonelik iptali için hesabınızda kayıtlı e-posta adresinden yazmanız yeterlidir. Ayrıntılar için{" "}
+        Aboneliğinizi Hesabım sayfasındaki “Aboneliği iptal et” düğmesiyle veya hesabınızda kayıtlı e-posta adresinden yazarak iptal edebilirsiniz. Ayrıntılar için{" "}
         <Link to="/iptal-iade">Teslimat, İptal ve İade Koşulları</Link>.
       </p>
     </LegalPage>

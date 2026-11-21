@@ -37,6 +37,7 @@ export const PUBLIC_PLANS: PublicPlan[] = [
 ];
 
 export const VAT_NOTE = "Fiyatlara KDV dahildir.";
+export const RENEWAL_NOTE = "Aylık abonelik · her ay otomatik yenilenir · istediğiniz zaman iptal edebilirsiniz";
 
 /** "Satın Al"a basan ziyaretçi kayıt/giriş yaptıktan sonra seçtiği planın
  *  sipariş özetine dönsün diye plan geçici olarak saklanır (e-posta kodu ve
